@@ -7,7 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.lang.reflect.Modifier;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -47,7 +46,8 @@ public class Application {
 				+ "the types using the specified classpath. Additional "
 				+ "information such as argument names and Javadoc comments "
 				+ "can be extracted from corresponding Java source files "
-				+ "found recursively on the the specified source path. ")
+				+ "found within the directories of the specified source "
+				+ "path. ")
 		.defaultHelp(true);
 
 	argParser
@@ -236,7 +236,7 @@ public class Application {
 			Utils.getHaxeIdentifierRegex(),
 			Utils.getHaxeTypeIdentifierRegex(),
 			Utils.getHaxeTypeIdentifierRegex());
-		// System.out.println(rePackage);
+
 		Pattern regExp = Pattern.compile(rePackage);
 
 		typeName = new Scanner(typeName).findWithinHorizon(regExp, 0);
@@ -290,24 +290,9 @@ public class Application {
 
 	Set<String> dependencies = new TreeSet<String>();
 	dependencies.addAll(Arrays.asList(typeDef.getDependencies()));
-
-	StringWriter memberSourceWriter = new StringWriter();
-	for (Class<?> memberClass : classObj.getDeclaredClasses()) {
-	    if ((memberClass.getModifiers() & Modifier.PRIVATE) != 0)
-		continue;
-
-	    TypeDefinition memberTypeDef = TypeDefinitionFactory.create(
-		    memberClass, docExtractor);
-	    if (memberTypeDef != null) {
-		memberTypeDef.write(new PrintWriter(memberSourceWriter, true));
-		dependencies.addAll(Arrays.asList(memberTypeDef
-			.getDependencies()));
-	    } else {
-		System.err.println("Type \"" + memberClass.getName()
-			+ "\" is not convertible.");
-		continue;
-	    }
-	}
+	
+	StringWriter membersSourceWriter = new StringWriter();
+	convertMemberTypes(classObj, new PrintWriter(membersSourceWriter), docExtractor);
 
 	// Create the directory tree and the module file for the type. If the
 	// file already exists, do NOT regenerate it, for the user might have
@@ -347,7 +332,7 @@ public class Application {
 		}
 
 		printWriter.println();
-		printWriter.print(memberSourceWriter);
+		printWriter.print(membersSourceWriter);
 		printWriter.print(sourceWriter);
 		printWriter.flush();
 
@@ -377,5 +362,39 @@ public class Application {
 		convertType(dep, outputDir, classLoader, processedDependencies,
 			docExtractor);
 	}
+    }
+   
+    /**
+     * 
+     */
+    private static Set<String> convertMemberTypes(Class<?> classObj, PrintWriter writer, JavadocExtractor docExtractor)
+    {
+	Set<String> dependencies = new TreeSet<String>();
+
+	for (Class<?> memberClass : classObj.getDeclaredClasses())
+	{
+	    if (Utils.isPrivate(memberClass))
+		continue;
+
+	    TypeDefinition typeDef = TypeDefinitionFactory.create(memberClass, docExtractor);
+	    if (typeDef != null)
+	    {
+		typeDef.write(writer);
+		dependencies.addAll(Arrays.asList(typeDef.getDependencies()));
+	    }
+	    else
+	    {
+		System.err.println("Type \"" + memberClass.getName()
+			+ "\" is not convertible.");
+		continue;
+	    }
+
+	    // Continue recursion
+	    //
+
+	    convertMemberTypes(memberClass, writer, docExtractor);
+	}
+
+	return dependencies;
     }
 }

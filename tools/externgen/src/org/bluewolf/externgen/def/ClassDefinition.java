@@ -8,7 +8,10 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
 
+import org.bluewolf.externgen.Utils;
 import org.sadun.util.IndentedPrintWriter;
 
 import com.thoughtworks.qdox.model.JavaClass;
@@ -35,18 +38,14 @@ class ClassDefinition extends TypeDefinition {
 	// Modifiers, name and type variables.
 	//
 
-	if (classDocs != null)
-	    indentWriter.println(classDocs.getComment());
-
-	int modifiers = classObject.getModifiers();
-	if ((modifiers & Modifier.FINAL) != 0)
+	if (Utils.isFinal(classObject))
 	    indentWriter.println("@:final");
 
 	indentWriter.printf("extern class %s", classObject.getSimpleName());
 
 	if (classObject.getTypeParameters().length > 0)
-	    indentWriter.printf("<%s>",
-		    convertTypeVariables(classObject.getTypeParameters()));
+	    indentWriter.print(convertTypeVariables(classObject
+		    .getTypeParameters()));
 
 	// Super class and implemented interfaces.
 	//
@@ -80,19 +79,50 @@ class ClassDefinition extends TypeDefinition {
 	indentWriter.setIndentationChar('\t');
 	indentWriter.setIndentation(1);
 
+	// Construct the final set of methods for this class. It consists of
+	// all declared, non-private methods and all methods defined by the
+	// implemented interfaces which are not implemented by this class
+	// (deferred implenetation which Java allows).
+	//
+
+	Set<MethodWrapper> methodSet = new TreeSet<MethodWrapper>();
+	for (Method method : classObject.getDeclaredMethods()) {
+	    if (!Utils.isValidMember(method))
+		continue;
+	    methodSet.add(new MethodWrapper(method));
+	}
+
+	for (Class<?> implInterface : classObject.getInterfaces()) {
+	    for (Method method : implInterface.getMethods()) {
+		if (!Utils.isValidMember(method))
+		    continue;
+
+		MethodWrapper wrapper = new MethodWrapper(method);
+
+		if (!methodSet.contains(wrapper)) {
+		    methodSet.add(wrapper);
+		    break;
+		}
+	    }
+	}
+
 	// Declared, non-private fields.
 	//
 
 	for (Field field : classObject.getDeclaredFields()) {
-	    // Modifiers.
-	    //
 
-	    modifiers = field.getModifiers();
-
-	    if ((modifiers & Modifier.PRIVATE) != 0)
+	    if (!Utils.isValidMember(field))
 		continue;
 
-	    if ((modifiers & Modifier.PUBLIC) == 0)
+	    // Do not declare the field if there's a method of the same time.
+	    //
+
+	    for (MethodWrapper method : methodSet) {
+		if (method.getMethod().getName().equals(field.getName()))
+		    continue;
+	    }
+
+	    if (Utils.isPrivate(field))
 		indentWriter.print("private");
 	    else
 		indentWriter.print("public");
@@ -101,8 +131,7 @@ class ClassDefinition extends TypeDefinition {
 	    // value. Inline variables also require initializers.
 	    //
 
-	    if ((modifiers & Modifier.FINAL) != 0
-		    || (modifiers & Modifier.STATIC) != 0)
+	    if (Utils.isFinal(field) || Utils.isStatic(field))
 		indentWriter.print(" static");
 
 	    // Name and type.
@@ -116,19 +145,20 @@ class ClassDefinition extends TypeDefinition {
 
 	// Declared, non-private constructors.
 	//
+	// NOTE: all constructors of an abstract class are made private.
+	//
 
 	for (int i = 0; i < classObject.getDeclaredConstructors().length; i++) {
 	    Constructor<?> ctor = classObject.getDeclaredConstructors()[i];
 
-	    modifiers = classObject.getModifiers();
-	    if ((modifiers & Modifier.PRIVATE) != 0)
+	    if (Utils.isPrivate(ctor))
 		continue;
 
 	    if (i < classObject.getDeclaredConstructors().length - 1) {
 		indentWriter.printf("@:overload(function %s {})",
 			convertConstructor(ctor));
 	    } else {
-		if ((modifiers & Modifier.PUBLIC) == 0)
+		if (Utils.isAbstract(classObject) || !Utils.isPublic(ctor))
 		    indentWriter.print("private function new");
 		else
 		    indentWriter.print("public function new");
@@ -140,33 +170,44 @@ class ClassDefinition extends TypeDefinition {
 	    indentWriter.println();
 	}
 
-	// Declared, non-private methods.
+	// Methods.
+	//
+	// NOTE: static methods of the same name as non-static methods are
+	// excluded.
 	//
 
 	ArrayList<Method> methods = new ArrayList<Method>();
-	Collections.addAll(methods, classObject.getDeclaredMethods());
+	for (MethodWrapper wrapper : methodSet)
+	    methods.add(wrapper.getMethod());
+
 	Iterator<Method> iter = methods.iterator();
 	while (iter.hasNext()) {
 	    Method next = iter.next();
-	    if ((next.getModifiers() & Modifier.PRIVATE) != 0)
-		iter.remove();
+	    if (Utils.isStatic(next)) {
+		for (Method method : methods) {
+		    if (method.getName().equals(next)
+			    && !Utils.isStatic(method)) {
+			iter.remove();
+			break;
+		    }
+		}
+	    }
 	}
+
 	Collections.sort(methods, methodComparator);
 
 	while (methods.size() > 0) {
 	    String name = methods.get(0).getName();
-	    int staticModifier = methods.get(0).getModifiers()
-		    & Modifier.STATIC;
+	    boolean staticFlag = Utils.isStatic(methods.get(0));
 	    int numOverloads = 0;
 
 	    while (methods.size() > numOverloads
 		    && methods.get(numOverloads).getName().equals(name)
-		    && (methods.get(numOverloads).getModifiers() & Modifier.STATIC) == staticModifier)
+		    && Utils.isStatic(methods.get(numOverloads)) == staticFlag)
 		numOverloads++;
 
 	    while (numOverloads-- > 0) {
 		Method method = methods.remove(0);
-		modifiers = method.getModifiers();
 
 		if (numOverloads > 0) {
 		    indentWriter.printf("@:overload(function %s {})",
@@ -179,12 +220,12 @@ class ClassDefinition extends TypeDefinition {
 		    if (isOverride(method))
 			indentWriter.print("override ");
 
-		    if ((modifiers & Modifier.PUBLIC) == 0)
+		    if (!Utils.isPublic(method))
 			indentWriter.print("private");
 		    else
 			indentWriter.print("public");
 
-		    if ((modifiers & Modifier.STATIC) != 0)
+		    if (Utils.isStatic(method))
 			indentWriter.print(" static");
 
 		    indentWriter.printf(" function %s;", convertMethod(method));
@@ -220,4 +261,5 @@ class ClassDefinition extends TypeDefinition {
 
 	return false;
     }
+
 }

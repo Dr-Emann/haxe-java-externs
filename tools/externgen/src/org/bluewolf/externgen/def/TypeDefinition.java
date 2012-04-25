@@ -227,7 +227,7 @@ public abstract class TypeDefinition {
 		    StringUtils.join(convertTypes(typeVars[i].getBounds()),
 			    ", "));
 
-	return StringUtils.join(result, ", ");
+	return String.format("<%s>", StringUtils.join(result, ", "));
     }
 
     /**
@@ -250,7 +250,7 @@ public abstract class TypeDefinition {
     protected String convertConstructor(Constructor<?> ctor) {
 	String typeArgs = "";
 	if (ctor.getTypeParameters().length > 0)
-	    typeArgs = String.format(" <%s> ",
+	    typeArgs = String.format(" %s ",
 		    convertTypeVariables(ctor.getTypeParameters()));
 
 	return String.format("%s(%s):Void", typeArgs,
@@ -263,7 +263,7 @@ public abstract class TypeDefinition {
     protected String convertMethod(Method method) {
 	String typeArgs = "";
 	if (method.getTypeParameters().length > 0)
-	    typeArgs = String.format("<%s> ",
+	    typeArgs = String.format("%s ",
 		    convertTypeVariables(method.getTypeParameters()));
 
 	return String.format("%s%s(%s):%s", method.getName(), typeArgs,

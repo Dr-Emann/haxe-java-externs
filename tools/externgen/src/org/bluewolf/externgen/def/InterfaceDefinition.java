@@ -34,8 +34,8 @@ class InterfaceDefinition extends TypeDefinition {
 	indentWriter.printf("extern interface %s", classObject.getSimpleName());
 
 	if (classObject.getTypeParameters().length > 0) {
-	    indentWriter.printf("<%s>",
-		    convertTypeVariables(classObject.getTypeParameters()));
+	    indentWriter.print(convertTypeVariables(classObject
+		    .getTypeParameters()));
 	}
 
 	for (int i = 0; i < classObject.getGenericInterfaces().length; i++) {
