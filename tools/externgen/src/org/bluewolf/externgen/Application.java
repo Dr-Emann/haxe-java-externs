@@ -34,6 +34,11 @@ public class Application {
      */
     public static void main(String[] args) {
 
+	// TypeDefinitionFactory.create(Boolean.class, null).write(new
+	// PrintWriter(System.out, true));
+	// TypeDefinitionFactory.create(Comparable.class, null).write(new
+	// PrintWriter(System.out, true));
+
 	// Construct the parser.
 	//
 
@@ -47,8 +52,7 @@ public class Application {
 				+ "information such as argument names and Javadoc comments "
 				+ "can be extracted from corresponding Java source files "
 				+ "found within the directories of the specified source "
-				+ "path. ")
-		.defaultHelp(true);
+				+ "path. ").defaultHelp(true);
 
 	argParser
 		.addArgument("-cp", "-classpath")
@@ -77,7 +81,7 @@ public class Application {
 		.setDefault(".")
 		.dest("sourcepath")
 		.metavar("<directory>")
-		.help("the sourcepath containing the directories which will be searched for Java source code.");
+		.help("the sourcepath containing the directories which will be searched for Java source code");
 
 	// Parse the command line arguments.
 	//
@@ -231,15 +235,17 @@ public class Application {
 		// Extract the type name.
 		//
 
-		String rePackage = String.format(
-			"(?:(?:%s)[.])+(?:%s)(?:[.](?:%s))*",
+		String rePackage = String.format("(?:(?:%s)[.])+(?:%s)",
 			Utils.getHaxeIdentifierRegex(),
-			Utils.getHaxeTypeIdentifierRegex(),
 			Utils.getHaxeTypeIdentifierRegex());
 
 		Pattern regExp = Pattern.compile(rePackage);
 
-		typeName = new Scanner(typeName).findWithinHorizon(regExp, 0);
+		// Convert the extracted type name to Java standard notation.
+		//
+
+		typeName = Utils.convertHaxeToJavaClassName(new Scanner(
+			typeName).findWithinHorizon(regExp, 0));
 
 		System.out.println("Extracted type/package:" + typeName);
 
@@ -290,20 +296,16 @@ public class Application {
 
 	Set<String> dependencies = new TreeSet<String>();
 	dependencies.addAll(Arrays.asList(typeDef.getDependencies()));
-	
-	StringWriter membersSourceWriter = new StringWriter();
-	convertMemberTypes(classObj, new PrintWriter(membersSourceWriter), docExtractor);
 
 	// Create the directory tree and the module file for the type. If the
 	// file already exists, do NOT regenerate it, for the user might have
 	// modified it. This makes the tool incremental.
 	//
 
-	String path = classObj.getPackage().getName()
+	String path = Utils.convertJavaToHaxeClassName(classObj.getName())
 		.replace(".", System.getProperty("file.separator"));
 
-	File file = new File(outputDir, String.format("%s%s%s.hx", path,
-		System.getProperty("file.separator"), classObj.getSimpleName()));
+	File file = new File(outputDir, String.format("%s.hx", path));
 
 	FileWriter fileWriter = null;
 
@@ -311,8 +313,8 @@ public class Application {
 	    try {
 		file.getParentFile().mkdirs();
 
-		// Write out the generated source for the main type as well as
-		// the package and imports.
+		// Write out the generated source code well as the package and
+		// imports.
 		//
 
 		fileWriter = new FileWriter(file);
@@ -327,12 +329,12 @@ public class Application {
 		    if (dep.equals(classObj.getName()))
 			continue;
 
-		    printWriter.printf("import %s;", dep);
+		    printWriter.printf("import %s;",
+			    Utils.convertJavaToHaxeClassName(dep));
 		    printWriter.println();
 		}
 
 		printWriter.println();
-		printWriter.print(membersSourceWriter);
 		printWriter.print(sourceWriter);
 		printWriter.flush();
 
@@ -357,44 +359,10 @@ public class Application {
 	// Also convert all dependencies.
 	//
 
-	for (String dep : typeDef.getDependencies()) {
+	for (String dep : dependencies) {
 	    if (processedDependencies.add(dep))
 		convertType(dep, outputDir, classLoader, processedDependencies,
 			docExtractor);
 	}
-    }
-   
-    /**
-     * 
-     */
-    private static Set<String> convertMemberTypes(Class<?> classObj, PrintWriter writer, JavadocExtractor docExtractor)
-    {
-	Set<String> dependencies = new TreeSet<String>();
-
-	for (Class<?> memberClass : classObj.getDeclaredClasses())
-	{
-	    if (Utils.isPrivate(memberClass))
-		continue;
-
-	    TypeDefinition typeDef = TypeDefinitionFactory.create(memberClass, docExtractor);
-	    if (typeDef != null)
-	    {
-		typeDef.write(writer);
-		dependencies.addAll(Arrays.asList(typeDef.getDependencies()));
-	    }
-	    else
-	    {
-		System.err.println("Type \"" + memberClass.getName()
-			+ "\" is not convertible.");
-		continue;
-	    }
-
-	    // Continue recursion
-	    //
-
-	    convertMemberTypes(memberClass, writer, docExtractor);
-	}
-
-	return dependencies;
     }
 }

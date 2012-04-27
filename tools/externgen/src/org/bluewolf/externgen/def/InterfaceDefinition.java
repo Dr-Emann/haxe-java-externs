@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import org.bluewolf.externgen.Utils;
 import org.sadun.util.IndentedPrintWriter;
 
 import com.thoughtworks.qdox.model.JavaClass;
@@ -31,7 +32,12 @@ class InterfaceDefinition extends TypeDefinition {
 	// Name, type variables and extended interfaces.
 	//
 
-	indentWriter.printf("extern interface %s", classObject.getSimpleName());
+	indentWriter.printf("@:native(\"%s.%s\")", classObject.getPackage()
+		.getName(), Utils.getNativeName(classObject));
+
+	indentWriter.println();
+	indentWriter.printf("extern interface %s", Utils
+		.convertJavaToHaxeClassName(Utils.getClassName(classObject)));
 
 	if (classObject.getTypeParameters().length > 0) {
 	    indentWriter.print(convertTypeVariables(classObject

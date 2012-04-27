@@ -4,7 +4,6 @@ import java.io.PrintWriter;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -38,10 +37,15 @@ class ClassDefinition extends TypeDefinition {
 	// Modifiers, name and type variables.
 	//
 
+	indentWriter.printf("@:native(\"%s.%s\")", classObject.getPackage()
+		.getName(), Utils.getNativeName(classObject));
 	if (Utils.isFinal(classObject))
-	    indentWriter.println("@:final");
+	    indentWriter.print(" @:final");
 
-	indentWriter.printf("extern class %s", classObject.getSimpleName());
+	indentWriter.println();
+
+	indentWriter.printf("extern class %s", Utils
+		.convertJavaToHaxeClassName(Utils.getClassName(classObject)));
 
 	if (classObject.getTypeParameters().length > 0)
 	    indentWriter.print(convertTypeVariables(classObject
@@ -82,7 +86,7 @@ class ClassDefinition extends TypeDefinition {
 	// Construct the final set of methods for this class. It consists of
 	// all declared, non-private methods and all methods defined by the
 	// implemented interfaces which are not implemented by this class
-	// (deferred implenetation which Java allows).
+	// (deferred implementation which Java allows).
 	//
 
 	Set<MethodWrapper> methodSet = new TreeSet<MethodWrapper>();
@@ -94,7 +98,8 @@ class ClassDefinition extends TypeDefinition {
 
 	for (Class<?> implInterface : classObject.getInterfaces()) {
 	    for (Method method : implInterface.getMethods()) {
-		if (!Utils.isValidMember(method))
+		if (!Utils.isValidMember(method)
+			|| method.getGenericParameterTypes().length > 0)
 		    continue;
 
 		MethodWrapper wrapper = new MethodWrapper(method);
@@ -111,16 +116,23 @@ class ClassDefinition extends TypeDefinition {
 
 	for (Field field : classObject.getDeclaredFields()) {
 
-	    if (!Utils.isValidMember(field))
+	    if (!Utils.isValidField(field))
 		continue;
 
 	    // Do not declare the field if there's a method of the same time.
 	    //
 
+	    boolean found = false;
+
 	    for (MethodWrapper method : methodSet) {
-		if (method.getMethod().getName().equals(field.getName()))
-		    continue;
+		if (method.getMethod().getName().equals(field.getName())) {
+		    found = true;
+		    break;
+		}
 	    }
+
+	    if (found)
+		continue;
 
 	    if (Utils.isPrivate(field))
 		indentWriter.print("private");
@@ -148,13 +160,20 @@ class ClassDefinition extends TypeDefinition {
 	// NOTE: all constructors of an abstract class are made private.
 	//
 
-	for (int i = 0; i < classObject.getDeclaredConstructors().length; i++) {
+	int lastIndex = classObject.getDeclaredConstructors().length - 1;
+
+	for (; lastIndex >= 0
+		&& !Utils.isValidConstructor(classObject
+			.getDeclaredConstructors()[lastIndex]); lastIndex--)
+	    ;
+
+	for (int i = 0; i <= lastIndex; i++) {
 	    Constructor<?> ctor = classObject.getDeclaredConstructors()[i];
 
-	    if (Utils.isPrivate(ctor))
+	    if (!Utils.isValidConstructor(ctor))
 		continue;
 
-	    if (i < classObject.getDeclaredConstructors().length - 1) {
+	    if (i < lastIndex) {
 		indentWriter.printf("@:overload(function %s {})",
 			convertConstructor(ctor));
 	    } else {
@@ -198,12 +217,12 @@ class ClassDefinition extends TypeDefinition {
 
 	while (methods.size() > 0) {
 	    String name = methods.get(0).getName();
-	    boolean staticFlag = Utils.isStatic(methods.get(0));
+	    // boolean staticFlag = Utils.isStatic(methods.get(0));
 	    int numOverloads = 0;
 
 	    while (methods.size() > numOverloads
 		    && methods.get(numOverloads).getName().equals(name)
-		    && Utils.isStatic(methods.get(numOverloads)) == staticFlag)
+	    /* && Utils.isStatic(methods.get(numOverloads)) == staticFlag */)
 		numOverloads++;
 
 	    while (numOverloads-- > 0) {
@@ -220,10 +239,15 @@ class ClassDefinition extends TypeDefinition {
 		    if (isOverride(method))
 			indentWriter.print("override ");
 
-		    if (!Utils.isPublic(method))
-			indentWriter.print("private");
-		    else
+		    if (Utils.isPublic(method))
 			indentWriter.print("public");
+		    else if (!Utils.isStatic(method)
+			    && (method.getName().equals("equals")
+				    || method.getName().equals("clone") || method
+				    .getName().equals("finalize")))
+			indentWriter.print("public");
+		    else
+			indentWriter.print("private");
 
 		    if (Utils.isStatic(method))
 			indentWriter.print(" static");
@@ -244,19 +268,27 @@ class ClassDefinition extends TypeDefinition {
 	indentWriter.println();
     }
 
+    /**
+     * 
+     */
     protected static boolean isOverride(Method method) {
-	if ((method.getModifiers() & Modifier.STATIC) != 0)
+	if (Utils.isStatic(method))
 	    return false;
 
 	Class<?> decl = method.getDeclaringClass();
-
 	while (decl.getSuperclass() != null) {
 	    decl = decl.getSuperclass();
 	    for (Method declMethod : decl.getDeclaredMethods()) {
-		if ((declMethod.getModifiers() & Modifier.STATIC) == 0
+		if (!Utils.isStatic(declMethod)
 			&& declMethod.getName().equals(method.getName()))
 		    return true;
 	    }
+	}
+
+	for (Method declMethod : Object.class.getDeclaredMethods()) {
+	    if (!Utils.isStatic(declMethod)
+		    && declMethod.getName().equals(method.getName()))
+		return true;
 	}
 
 	return false;

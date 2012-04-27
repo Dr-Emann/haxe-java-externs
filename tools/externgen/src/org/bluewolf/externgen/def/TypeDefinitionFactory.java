@@ -22,14 +22,13 @@ public class TypeDefinitionFactory {
 	    JavadocExtractor docExtractor) {
 	JavaClass classDocs = null;
 
-	classDocs = docExtractor.getClassDocumentation(classObject);
+	// classDocs = docExtractor.getClassDocumentation(classObject);
 
 	if (classObject.isInterface())
 	    return new InterfaceDefinition(classObject, classDocs);
-	// else if (classObject.isEnum())
-	// return new EnumDefinition(classObject);
-	else if (!classObject.isAnonymousClass() && !classObject.isLocalClass()
-		&& !classObject.isMemberClass())
+	else if (classObject.isEnum())
+	    return new EnumDefinition(classObject, classDocs);
+	else if (!classObject.isAnonymousClass() && !classObject.isLocalClass())
 	    return new ClassDefinition(classObject, classDocs);
 
 	// Everything else is not convertible.

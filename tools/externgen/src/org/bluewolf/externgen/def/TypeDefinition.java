@@ -73,11 +73,13 @@ public abstract class TypeDefinition {
      */
     protected String convertClass(Class<?> obj) {
 
-	// Provide customized handling for the primitive types and for some of
-	// the reference types.
+	// Provide customized handling for anonymous objects, the primitive
+	// types and for some of the non-anonymous reference types.
 	//
 
-	if (obj.isPrimitive()) {
+	if (obj.isAnonymousClass() || obj.isLocalClass()) {
+	    return convertObject();
+	} else if (obj.isPrimitive()) {
 	    String name = obj.getSimpleName();
 	    if (name.equals("byte")) {
 		addDependency("java.StdTypes");
@@ -132,15 +134,9 @@ public abstract class TypeDefinition {
 	// defined in.
 	//
 
-	addDependency(Utils.getModule(obj));
+	addDependency(obj.getName());
 
-	// Return full name if there is no short name.
-	//
-
-	if (obj.getSimpleName() == null)
-	    return obj.getName();
-
-	return obj.getSimpleName();
+	return Utils.convertJavaToHaxeClassName(Utils.getClassName(obj));
     }
 
     /**
@@ -153,12 +149,20 @@ public abstract class TypeDefinition {
 	if (type == null)
 	    return convertObject();
 
+	// Case 1: Instances of GenericArrayType.
+	//
+
 	if (type instanceof GenericArrayType) {
 	    addDependency("java.NativeArray");
 	    return "NativeArray<"
 		    + convertType(((GenericArrayType) type)
 			    .getGenericComponentType()) + ">";
-	} else if (type instanceof ParameterizedType) {
+	}
+
+	// Case 2: Instances of ParameterizedType.
+	//
+
+	else if (type instanceof ParameterizedType) {
 	    Class<?> rawType = (Class<?>) ((ParameterizedType) type)
 		    .getRawType();
 
@@ -170,9 +174,19 @@ public abstract class TypeDefinition {
 	    }
 
 	    return String.format("%s%s", convertClass(rawType), params);
-	} else if (type instanceof TypeVariable) {
+	}
+
+	// Case 3: Instances of TypeVariable.
+	//
+
+	else if (type instanceof TypeVariable) {
 	    return ((TypeVariable<?>) type).getName();
-	} else if (type instanceof WildcardType) {
+	}
+
+	// Case 4: Instances of WildcardType.
+	//
+
+	else if (type instanceof WildcardType) {
 	    WildcardType wildcard = (WildcardType) type;
 
 	    // Wildcards with single upper and no lower bounds are converted to
@@ -241,7 +255,7 @@ public abstract class TypeDefinition {
 		    convertType(paramTypes[i]));
 	}
 
-	return StringUtils.join(params, ", ");
+	return String.format("(%s)", StringUtils.join(params, ", "));
     }
 
     /**
@@ -253,7 +267,7 @@ public abstract class TypeDefinition {
 	    typeArgs = String.format(" %s ",
 		    convertTypeVariables(ctor.getTypeParameters()));
 
-	return String.format("%s(%s):Void", typeArgs,
+	return String.format("%s%s:Void", typeArgs,
 		convertParams(ctor.getGenericParameterTypes()));
     }
 
@@ -261,12 +275,26 @@ public abstract class TypeDefinition {
      * 
      */
     protected String convertMethod(Method method) {
-	String typeArgs = "";
-	if (method.getTypeParameters().length > 0)
-	    typeArgs = String.format("%s ",
-		    convertTypeVariables(method.getTypeParameters()));
+	StringBuilder typeArgs = new StringBuilder();
+	if (method.getTypeParameters().length > 0) {
+	    typeArgs.append("<");
+	    typeArgs.append(method.getTypeParameters()[0].getName());
+	    for (int i = 1; i < method.getTypeParameters().length; i++) {
+		typeArgs.append(", ");
+		typeArgs.append(method.getTypeParameters()[i].getName());
+	    }
+	    typeArgs.append(">");
 
-	return String.format("%s%s(%s):%s", method.getName(), typeArgs,
+	    // NOTE:
+	    //
+	    // Haxe does cannot check bounds on type parameters in methods.
+	    //
+
+	    // typeArgs = String.format("%s ",
+	    // convertTypeVariables(method.getTypeParameters()));
+	}
+
+	return String.format("%s%s%s:%s", method.getName(), typeArgs,
 		convertParams(method.getGenericParameterTypes()),
 		convertType(method.getGenericReturnType()));
     }

@@ -173,6 +173,15 @@ public class MethodComparator implements Comparator<Method> {
 		    || typeB instanceof WildcardType)
 		return 1;
 
+	    if (((Class<?>) typeA).getName().equals(
+		    ((Class<?>) typeB).getName()))
+		return 0;
+	    else if (((Class<?>) typeA).isAssignableFrom((Class<?>) typeB))
+		return -1;
+	    else if (((Class<?>) typeB).isAssignableFrom((Class<?>) typeA))
+		return 1;
+
+	    // return -1;
 	    return ((Class<?>) typeA).getName().compareTo(
 		    ((Class<?>) typeB).getName());
 	}
