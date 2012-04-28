@@ -34,11 +34,6 @@ public class Application {
      */
     public static void main(String[] args) {
 
-	// TypeDefinitionFactory.create(Boolean.class, null).write(new
-	// PrintWriter(System.out, true));
-	// TypeDefinitionFactory.create(Comparable.class, null).write(new
-	// PrintWriter(System.out, true));
-
 	// Construct the parser.
 	//
 
@@ -332,6 +327,14 @@ public class Application {
 		    printWriter.printf("import %s;",
 			    Utils.convertJavaToHaxeClassName(dep));
 		    printWriter.println();
+		}
+
+		// Define StdFloat in Number.
+		//
+
+		if (classObj.getName().equals("java.lang.Number")) {
+		    printWriter.println();
+		    printWriter.println("typedef StdFloat = Float;");
 		}
 
 		printWriter.println();

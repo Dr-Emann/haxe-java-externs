@@ -1,6 +1,7 @@
 package org.bluewolf.externgen.def;
 
 import org.bluewolf.externgen.JavadocExtractor;
+import org.bluewolf.externgen.Utils;
 
 import com.thoughtworks.qdox.model.JavaClass;
 
@@ -22,7 +23,10 @@ public class TypeDefinitionFactory {
 	    JavadocExtractor docExtractor) {
 	JavaClass classDocs = null;
 
-	// classDocs = docExtractor.getClassDocumentation(classObject);
+	if (!Utils.isValidClass(classObject))
+	    return null;
+
+	classDocs = docExtractor.getClassDocumentation(classObject);
 
 	if (classObject.isInterface())
 	    return new InterfaceDefinition(classObject, classDocs);

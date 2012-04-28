@@ -78,13 +78,36 @@ class ClassDefinition extends TypeDefinition {
 		    convertType(classObject.getGenericInterfaces()[i]));
 	}
 
+	// Make the numeric types implement the respective interfaces.
+	//
+
+	if (classObject.getSuperclass() != null
+		&& classObject.getSuperclass().getName()
+			.equals("java.lang.Number")) {
+	    String name = classObject.getSuperclass().getName();
+
+	    if (name.equals("java.lang.Double")
+		    || name.equals("java.lang.Float"))
+		indentWriter.print(", implements StdFloat");
+	    else if (name.equals("java.lang.Character"))
+		indentWriter.print(", implements Char16");
+	    else if (name.equals("java.lang.Byte"))
+		indentWriter.print(", implements Int8");
+	    else if (name.equals("java.lang.Short"))
+		indentWriter.print(", implements Int16");
+	    else if (name.equals("java.lang.Integer"))
+		indentWriter.print(", implements Int");
+	    else if (name.equals("java.lang.Long"))
+		indentWriter.print(", implements haxe.Int64");
+	}
+
 	indentWriter.println();
 	indentWriter.println("{");
 	indentWriter.setIndentationChar('\t');
 	indentWriter.setIndentation(1);
 
-	// Construct the final set of methods for this class. It consists of
-	// all declared, non-private methods and all methods defined by the
+	// Defined the final set of methods for this class. It consists of all
+	// valid methods of this class as well as all methods required by the
 	// implemented interfaces which are not implemented by this class
 	// (deferred implementation which Java allows).
 	//
@@ -111,7 +134,7 @@ class ClassDefinition extends TypeDefinition {
 	    }
 	}
 
-	// Declared, non-private fields.
+	// Declared fields.
 	//
 
 	for (Field field : classObject.getDeclaredFields()) {
@@ -119,7 +142,7 @@ class ClassDefinition extends TypeDefinition {
 	    if (!Utils.isValidField(field))
 		continue;
 
-	    // Do not declare the field if there's a method of the same time.
+	    // Ignore fields whose names collide with method names.
 	    //
 
 	    boolean found = false;
@@ -155,7 +178,7 @@ class ClassDefinition extends TypeDefinition {
 	    indentWriter.println();
 	}
 
-	// Declared, non-private constructors.
+	// Declared constructors.
 	//
 	// NOTE: all constructors of an abstract class are made private.
 	//
@@ -241,12 +264,14 @@ class ClassDefinition extends TypeDefinition {
 
 		    if (Utils.isPublic(method))
 			indentWriter.print("public");
-		    else if (!Utils.isStatic(method)
-			    && (method.getName().equals("equals")
-				    || method.getName().equals("clone") || method
-				    .getName().equals("finalize")))
-			indentWriter.print("public");
-		    else
+		    else if (!Utils.isStatic(method)) {
+			if (method.getName().equals("equals")
+				|| method.getName().equals("clone")
+				|| method.getName().equals("finalize"))
+			    indentWriter.print("public");
+			else
+			    indentWriter.print("private");
+		    } else
 			indentWriter.print("private");
 
 		    if (Utils.isStatic(method))

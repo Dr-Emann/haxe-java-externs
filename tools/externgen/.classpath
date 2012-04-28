@@ -13,6 +13,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/sadun-util.jar"/>
-	<classpathentry kind="lib" path="libs/qdox.jar"/>
+	<classpathentry kind="lib" path="libs/qdox-2.0-20101128.200019-2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

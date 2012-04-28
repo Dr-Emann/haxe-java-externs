@@ -60,7 +60,7 @@ class InterfaceDefinition extends TypeDefinition {
 	//
 
 	ArrayList<Method> methods = new ArrayList<Method>();
-	Collections.addAll(methods, classObject.getMethods());
+	Collections.addAll(methods, classObject.getDeclaredMethods());
 	Collections.sort(methods, methodComparator);
 
 	while (methods.size() > 0) {

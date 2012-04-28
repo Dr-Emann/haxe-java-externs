@@ -32,19 +32,19 @@ public class MethodComparator implements Comparator<Method> {
 	if (result != 0)
 	    return result;
 
-	// Less type arguments last.
-	//
-
-	result = -1
-		* (mA.getTypeParameters().length - mB.getTypeParameters().length);
-	if (result != 0)
-	    return result;
-
 	// Less arguments last.
 	//
 
 	result = -1
 		* (mA.getParameterTypes().length - mB.getParameterTypes().length);
+	if (result != 0)
+	    return result;
+
+	// Less type arguments last.
+	//
+
+	result = -1
+		* (mA.getTypeParameters().length - mB.getTypeParameters().length);
 	if (result != 0)
 	    return result;
 
@@ -161,7 +161,7 @@ public class MethodComparator implements Comparator<Method> {
 		    else
 			return 0;
 		} else
-		    return 1;
+		    return -1;
 	    }
 
 	    // Class.

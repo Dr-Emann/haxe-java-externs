@@ -3,12 +3,15 @@ package org.bluewolf.externgen.def;
 import java.io.PrintWriter;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.GenericArrayType;
+import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.lang.reflect.TypeVariable;
 import java.lang.reflect.WildcardType;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -16,6 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.bluewolf.externgen.Utils;
 
 import com.thoughtworks.qdox.model.JavaClass;
+import com.thoughtworks.qdox.model.JavaMethod;
 
 /**
  * 
@@ -60,7 +64,7 @@ public abstract class TypeDefinition {
      * 
      */
     protected String convertObject() {
-	// After consulting with Cauê Waneck, Dynamic is returned everytime a
+	// After consulting with Cauê Waneck, Dynamic is returned every time a
 	// reference to Object is allowed. This is indeed the correct way to do
 	// it.
 	//
@@ -92,7 +96,8 @@ public abstract class TypeDefinition {
 	    } else if (name.equals("long")) {
 		return "haxe.Int64";
 	    } else if (name.equals("double") || name.equals("float")) {
-		return "Float";
+		addDependency("java.lang.Number");
+		return "StdFloat";
 	    } else if (name.equals("boolean")) {
 		return "Bool";
 	    } else if (name.equals("char")) {
@@ -154,9 +159,9 @@ public abstract class TypeDefinition {
 
 	if (type instanceof GenericArrayType) {
 	    addDependency("java.NativeArray");
-	    return "NativeArray<"
-		    + convertType(((GenericArrayType) type)
-			    .getGenericComponentType()) + ">";
+	    return String.format("NativeArray<%s>",
+		    convertType(((GenericArrayType) type)
+			    .getGenericComponentType()));
 	}
 
 	// Case 2: Instances of ParameterizedType.
@@ -170,7 +175,7 @@ public abstract class TypeDefinition {
 	    if (((ParameterizedType) type).getActualTypeArguments().length > 0) {
 		params = String.format("<%s>", StringUtils.join(
 			convertTypes(((ParameterizedType) type)
-				.getActualTypeArguments()), ","));
+				.getActualTypeArguments()), ", "));
 	    }
 
 	    return String.format("%s%s", convertClass(rawType), params);
@@ -247,12 +252,14 @@ public abstract class TypeDefinition {
     /**
      * 
      */
-    protected String convertParams(Type[] paramTypes) {
+    protected String convertParams(Type[] paramTypes, JavaMethod methodDocs) {
 	String[] params = new String[paramTypes.length];
 
 	for (int i = 0; i < paramTypes.length; i++) {
-	    params[i] = String.format("arg%d:%s", i + 1,
-		    convertType(paramTypes[i]));
+	    String name = (methodDocs != null) ? methodDocs.getParameters()
+		    .get(i).getName() : String.format("arg%d", i);
+	    params[i] = String
+		    .format("%s:%s", name, convertType(paramTypes[i]));
 	}
 
 	return String.format("(%s)", StringUtils.join(params, ", "));
@@ -262,21 +269,39 @@ public abstract class TypeDefinition {
      * 
      */
     protected String convertConstructor(Constructor<?> ctor) {
-	String typeArgs = "";
-	if (ctor.getTypeParameters().length > 0)
-	    typeArgs = String.format(" %s ",
-		    convertTypeVariables(ctor.getTypeParameters()));
+	StringBuilder typeArgs = new StringBuilder();
+	if (ctor.getTypeParameters().length > 0) {
+	    // NOTE:
+	    //
+	    // Haxe does cannot check bounds on type parameters in methods.
+	    //
+
+	    typeArgs.append("<");
+	    typeArgs.append(ctor.getTypeParameters()[0].getName());
+	    for (int i = 1; i < ctor.getTypeParameters().length; i++) {
+		typeArgs.append(", ");
+		typeArgs.append(ctor.getTypeParameters()[i].getName());
+	    }
+	    typeArgs.append(">");
+	}
 
 	return String.format("%s%s:Void", typeArgs,
-		convertParams(ctor.getGenericParameterTypes()));
+		convertParams(ctor.getGenericParameterTypes(), null));
     }
 
     /**
      * 
      */
     protected String convertMethod(Method method) {
+	JavaMethod methodDocs = getMethodDocumentation(method);
+
 	StringBuilder typeArgs = new StringBuilder();
 	if (method.getTypeParameters().length > 0) {
+	    // NOTE:
+	    //
+	    // Haxe does cannot check bounds on type parameters in methods.
+	    //
+
 	    typeArgs.append("<");
 	    typeArgs.append(method.getTypeParameters()[0].getName());
 	    for (int i = 1; i < method.getTypeParameters().length; i++) {
@@ -284,18 +309,10 @@ public abstract class TypeDefinition {
 		typeArgs.append(method.getTypeParameters()[i].getName());
 	    }
 	    typeArgs.append(">");
-
-	    // NOTE:
-	    //
-	    // Haxe does cannot check bounds on type parameters in methods.
-	    //
-
-	    // typeArgs = String.format("%s ",
-	    // convertTypeVariables(method.getTypeParameters()));
 	}
 
 	return String.format("%s%s%s:%s", method.getName(), typeArgs,
-		convertParams(method.getGenericParameterTypes()),
+		convertParams(method.getGenericParameterTypes(), methodDocs),
 		convertType(method.getGenericReturnType()));
     }
 
@@ -310,7 +327,7 @@ public abstract class TypeDefinition {
 		|| dep.isArray())
 	    return;
 
-	addDependency(dep.getCanonicalName());
+	addDependency(dep.getName());
     }
 
     /**
@@ -323,7 +340,21 @@ public abstract class TypeDefinition {
     /**
      * 
      */
-    public Class<?> getclassObjectect() {
+    protected void writeComment(PrintWriter writer) {
+
+    }
+
+    /**
+     * 
+     */
+    protected void writeComment(Member member, PrintWriter writer) {
+
+    }
+
+    /**
+     * 
+     */
+    public Class<?> getClassObject() {
 	return classObject;
     }
 
@@ -332,5 +363,129 @@ public abstract class TypeDefinition {
      */
     public String[] getDependencies() {
 	return dependencies.toArray(new String[0]);
+    }
+
+    /**
+     * 
+     */
+    protected JavaMethod getMethodDocumentation(Method method) {
+	if (classDocs == null)
+	    return null;
+	
+	// Get a description of each parameter. Modify the dimension of varargs
+	// to be 0 for compatibility with QDox.
+	//
+
+	List<com.thoughtworks.qdox.model.Type> types = new ArrayList<com.thoughtworks.qdox.model.Type>();
+	for (Type type : method.getGenericParameterTypes())
+	    types.add(getTypeDescription(type, 0));
+
+	if (method.isVarArgs()) {
+	    types.add(new com.thoughtworks.qdox.model.Type(types.get(
+		    types.size() - 1).getFullyQualifiedName(), 0));
+	    types.remove(types.size() - 2);
+
+	}
+
+	// Get a list of all QDox candidates to check.
+	//
+
+	List<JavaMethod> candidates = classDocs.getMethods(true);
+
+	for (JavaMethod candidate : candidates) {
+	    // Compare names, static modifier and make sure the numbers of type
+	    // parameters and arguments match.
+	    //
+
+	    if (!candidate.getName().equals(method.getName())
+		    || candidate.isStatic() != Utils.isStatic(method)
+		    || candidate.getTypeParameters().size() != method
+			    .getTypeParameters().length
+		    || candidate.getParameterTypes().size() != method
+			    .getGenericParameterTypes().length)
+		continue;
+
+	    // Check if the type parameters are the same.
+	    //
+
+	    boolean found = false;
+
+	    for (int i = 0; i < method.getTypeParameters().length; i++) {
+		if (!method.getTypeParameters()[i].getName().equals(
+			candidate.getTypeParameters().get(i).getName())) {
+		    found = true;
+		    break;
+		}
+
+	    }
+
+	    if (found)
+		continue;
+
+	    // Check if the argument types are the same.
+	    //
+
+	    for (int i = 0; i < candidate.getParameterTypes().size(); i++) {
+		if (!types
+			.get(i)
+			.getFullyQualifiedName()
+			.equals(candidate.getParameterTypes().get(i)
+				.getFullyQualifiedName())
+			|| types.get(i).getDimensions() != candidate
+				.getParameterTypes().get(i).getDimensions()) {
+		    found = true;
+		    break;
+		}
+
+	    }
+
+	    if (found)
+		continue;
+
+	    return candidate;
+	}
+
+	// No match found.
+	//
+
+	return null;
+    }
+
+    /**
+     * 
+     */
+    protected static com.thoughtworks.qdox.model.Type getTypeDescription(
+	    Type type, int inputDimension) {
+
+	if (type instanceof TypeVariable)
+	    return new com.thoughtworks.qdox.model.Type(
+		    ((TypeVariable<?>) type).getName(), inputDimension);
+	else if (type instanceof ParameterizedType) {
+	    Type rawType = ((ParameterizedType) type).getRawType();
+
+	    return new com.thoughtworks.qdox.model.Type(
+		    ((Class<?>) rawType).getName(), inputDimension);
+	} else if (type instanceof GenericArrayType) {
+	    return getTypeDescription(
+		    ((GenericArrayType) type).getGenericComponentType(),
+		    inputDimension + 1);
+	}
+
+	// Wildcard type won't occur so assume Class<?>
+	//
+
+	Class<?> classObj = (Class<?>) type;
+
+	int dimension = classObj.getName().lastIndexOf("[") + 1;
+
+	String name = null;
+
+	if (dimension > 0)
+	    name = classObj.getComponentType().getName();
+	else
+	    name = classObj.getName();
+
+	return new com.thoughtworks.qdox.model.Type(name, dimension
+		+ inputDimension);
     }
 }

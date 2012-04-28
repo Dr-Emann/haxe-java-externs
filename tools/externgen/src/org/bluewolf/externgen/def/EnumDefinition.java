@@ -88,7 +88,7 @@ public class EnumDefinition extends TypeDefinition {
 	// method.
 	//
 
-	for (Field field : classObject.getFields()) {
+	for (Field field : classObject.getDeclaredFields()) {
 	    if (!Utils.isValidField(field) || isEnumConstant(field.getName()))
 		continue;
 
@@ -169,10 +169,17 @@ public class EnumDefinition extends TypeDefinition {
 			    convertMethod(method));
 		} else {
 
-		    if (!Utils.isPublic(method))
-			indentWriter.print("private");
-		    else
+		    if (Utils.isPublic(method))
 			indentWriter.print("public");
+		    else if (!Utils.isStatic(method)) {
+			if (method.getName().equals("equals")
+				|| method.getName().equals("clone")
+				|| method.getName().equals("finalize"))
+			    indentWriter.print("public");
+			else
+			    indentWriter.print("private");
+		    } else
+			indentWriter.print("private");
 
 		    if (Utils.isStatic(method))
 			indentWriter.print(" static");

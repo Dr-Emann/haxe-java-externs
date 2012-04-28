@@ -57,6 +57,10 @@ public class JavadocExtractor {
 		try {
 		    builder.addSource(file);
 
+		    System.out.printf("Documentation was found for type %s.",
+			    classObj.getName());
+		    System.out.println();
+
 		    // If the source file was loaded, extract the documentation.
 		    //
 
