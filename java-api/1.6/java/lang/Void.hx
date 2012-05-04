@@ -1,15 +1,11 @@
 package java.lang;
 
-import java.lang.Class;
 import java.lang.Object;
-import java.lang.Void;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Void.html */
+@:native("java.lang.Void") @:final
 extern class Void extends Object
 {
-	public static var TYPE:Class<Void>;
-
-	public function new():Void;
 
 }
 

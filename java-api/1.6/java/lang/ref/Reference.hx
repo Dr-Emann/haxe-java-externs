@@ -1,30 +1,22 @@
 package java.lang.ref;
 
 import java.lang.Object;
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/Reference.html */
+@:native("java.lang.ref.Reference")
 extern class Reference<T : (Dynamic)> extends Object
 {
-	private var queue:ReferenceQueue<Dynamic>;
 
-	private var next:Reference<Dynamic>;
-
-	@:overload(function (arg1:T):Void {})
-	public function new(arg1:T, arg2:ReferenceQueue<Dynamic>):Void;
-
-	//private static function access$100():Dynamic;
-
-	//private static function access$200():Reference<Dynamic>;
-
-	//private static function access$202(arg1:Reference<Dynamic>):Reference<Dynamic>;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/Reference.html#clear() */
 	public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/Reference.html#enqueue() */
 	public function enqueue():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/Reference.html#get() */
 	public function get():T;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/Reference.html#isEnqueued() */
 	public function isEnqueued():Bool;
 
 }

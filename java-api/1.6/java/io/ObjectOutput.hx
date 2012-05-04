@@ -4,39 +4,25 @@ import java.NativeArray;
 import java.StdTypes;
 import java.io.DataOutput;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html */
+@:native("java.io.ObjectOutput")
 extern interface ObjectOutput implements DataOutput
 {
-	function close():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html#close() */
+	public function close():Void;
 
-	function flush():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html#flush() */
+	public function flush():Void;
 
-	@:overload(function write(arg1:Int):Void {})
-	@:overload(function write(arg1:NativeArray<Int8>):Void {})
-	function write(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html#write(byte[], int, int) */
+	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html#write(int) */
+	@:overload(function (b:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html#write(byte[]) */
+	public function write(b:NativeArray<Int8>):Void;
 
-	function writeBoolean(arg1:Bool):Void;
-
-	function writeByte(arg1:Int):Void;
-
-	function writeBytes(arg1:String):Void;
-
-	function writeChar(arg1:Int):Void;
-
-	function writeChars(arg1:String):Void;
-
-	function writeDouble(arg1:Float):Void;
-
-	function writeFloat(arg1:Float):Void;
-
-	function writeInt(arg1:Int):Void;
-
-	function writeLong(arg1:haxe.Int64):Void;
-
-	function writeObject(arg1:Dynamic):Void;
-
-	function writeShort(arg1:Int):Void;
-
-	function writeUTF(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutput.html#writeObject(java.lang.Object) */
+	public function writeObject(obj:Dynamic):Void;
 
 }
 

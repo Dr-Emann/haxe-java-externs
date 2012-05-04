@@ -5,80 +5,96 @@ import java.io.InputStream;
 import java.io.Serializable;
 import java.lang.Class;
 import java.lang.Object;
-import java.net.InetAddress;
 import java.net.Proxy;
 import java.net.URI;
-import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLStreamHandler;
 import java.net.URLStreamHandlerFactory;
-import java.util.Hashtable;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html */
+@:native("java.net.URL") @:final
 extern class URL extends Object, implements Serializable
 {
-	private static var serialVersionUID:haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#URL(java.lang.String, java.lang.String, java.lang.String) */
+	@:overload(function (protocol:String, host:String, file:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#URL(java.lang.String, java.lang.String, int, java.lang.String, java.net.URLStreamHandler) */
+	@:overload(function (protocol:String, host:String, port:Int, file:String, handler:URLStreamHandler):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#URL(java.lang.String) */
+	@:overload(function (spec:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#URL(java.net.URL, java.lang.String) */
+	@:overload(function (context:URL, spec:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#URL(java.net.URL, java.lang.String, java.net.URLStreamHandler) */
+	@:overload(function (protocol:URL, host:String, file:URLStreamHandler):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#URL(java.lang.String, java.lang.String, int, java.lang.String) */
+	public function new(protocol:String, host:String, port:Int, file:String):Void;
 
-	private var hostAddress:InetAddress;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	private var handler:URLStreamHandler;
-
-	private static var factory:URLStreamHandlerFactory;
-
-	private static var handlers:Hashtable<Dynamic, Dynamic>;
-
-	@:overload(function (arg1:String, arg2:String, arg3:String):Void {})
-	@:overload(function (arg1:String, arg2:String, arg3:Int, arg4:String, arg5:URLStreamHandler):Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:URL, arg2:String):Void {})
-	@:overload(function (arg1:URL, arg2:String, arg3:URLStreamHandler):Void {})
-	public function new(arg1:String, arg2:String, arg3:Int, arg4:String):Void;
-
-	override public function equals(arg1:Dynamic):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getAuthority() */
 	public function getAuthority():String;
 
-	@:overload(function getContent():Dynamic {})
-	public function getContent(arg1:NativeArray<Class<Dynamic>>):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getContent(java.lang.Class[]) */
+	@:overload(function (classes:NativeArray<Class<Dynamic>>):Dynamic {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getContent() */
+	public function getContent():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getDefaultPort() */
 	public function getDefaultPort():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getFile() */
 	public function getFile():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getHost() */
 	public function getHost():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getPath() */
 	public function getPath():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getPort() */
 	public function getPort():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getProtocol() */
 	public function getProtocol():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getQuery() */
 	public function getQuery():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getRef() */
 	public function getRef():String;
 
-	private static function getURLStreamHandler(arg1:String):URLStreamHandler;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#getUserInfo() */
 	public function getUserInfo():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#hashCode() */
 	override public function hashCode():Int;
 
-	@:overload(function openConnection():URLConnection {})
-	public function openConnection(arg1:Proxy):URLConnection;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#openConnection(java.net.Proxy) */
+	@:overload(function (proxy:Proxy):URLConnection {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#openConnection() */
+	public function openConnection():URLConnection;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#openStream() */
 	public function openStream():InputStream;
 
-	public function sameFile(arg1:URL):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#sameFile(java.net.URL) */
+	public function sameFile(other:URL):Bool;
 
-	@:overload(function set(arg1:String, arg2:String, arg3:Int, arg4:String, arg5:String, arg6:String, arg7:String, arg8:String):Void {})
-	private function set(arg1:String, arg2:String, arg3:Int, arg4:String, arg5:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
+	@:overload(function (protocol:String, host:String, port:Int, authority:String, userInfo:String, path:String, query:String, ref:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String) */
+	private function set(protocol:String, host:String, port:Int, file:String, ref:String):Void;
 
-	public static function setURLStreamHandlerFactory(arg1:URLStreamHandlerFactory):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory) */
+	static public function setURLStreamHandlerFactory(fac:URLStreamHandlerFactory):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#toExternalForm() */
 	public function toExternalForm():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#toString() */
 	override public function toString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URL.html#toURI() */
 	public function toURI():URI;
 
 }

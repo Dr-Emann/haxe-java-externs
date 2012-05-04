@@ -8,39 +8,58 @@ import java.io.Reader;
 import java.io.Writer;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Properties;
 import java.util.Set;
 
-extern class Properties extends Hashtable<Dynamic,Dynamic>
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html */
+@:native("java.util.Properties")
+extern class Properties extends Hashtable<Dynamic, Dynamic>
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#defaults */
 	private var defaults:Properties;
 
-	@:overload(function (arg1:Properties):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#Properties(java.util.Properties) */
+	@:overload(function (defaults:Properties):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#Properties() */
 	public function new():Void;
 
-	@:overload(function getProperty(arg1:String):String {})
-	public function getProperty(arg1:String, arg2:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#getProperty(java.lang.String, java.lang.String) */
+	@:overload(function (key:String, defaultValue:String):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#getProperty(java.lang.String) */
+	public function getProperty(key:String):String;
 
-	@:overload(function list(arg1:PrintStream):Void {})
-	public function list(arg1:PrintWriter):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#list(java.io.PrintStream) */
+	@:overload(function (out:PrintStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#list(java.io.PrintWriter) */
+	public function list(out:PrintWriter):Void;
 
-	@:overload(function load(arg1:InputStream):Void {})
-	public function load(arg1:Reader):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.InputStream) */
+	@:overload(function (inStream:InputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader) */
+	public function load(reader:Reader):Void;
 
-	public function loadFromXML(arg1:InputStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#loadFromXML(java.io.InputStream) */
+	public function loadFromXML(_in:InputStream):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#propertyNames() */
 	public function propertyNames():Enumeration<Dynamic>;
 
-	public function save(arg1:OutputStream, arg2:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#save(java.io.OutputStream, java.lang.String) */
+	public function save(out:OutputStream, comments:String):Void;
 
-	public function setProperty(arg1:String, arg2:String):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#setProperty(java.lang.String, java.lang.String) */
+	public function setProperty(key:String, value:String):Dynamic;
 
-	@:overload(function store(arg1:OutputStream, arg2:String):Void {})
-	public function store(arg1:Writer, arg2:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#store(java.io.OutputStream, java.lang.String) */
+	@:overload(function (out:OutputStream, comments:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#store(java.io.Writer, java.lang.String) */
+	public function store(writer:Writer, comments:String):Void;
 
-	@:overload(function storeToXML(arg1:OutputStream, arg2:String, arg3:String):Void {})
-	public function storeToXML(arg1:OutputStream, arg2:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#storeToXML(java.io.OutputStream, java.lang.String, java.lang.String) */
+	@:overload(function (os:OutputStream, comment:String, encoding:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#storeToXML(java.io.OutputStream, java.lang.String) */
+	public function storeToXML(os:OutputStream, comment:String):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#stringPropertyNames() */
 	public function stringPropertyNames():Set<String>;
 
 }

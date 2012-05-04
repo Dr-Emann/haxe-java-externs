@@ -6,123 +6,143 @@ import java.io.Serializable;
 import java.lang.AbstractStringBuilder;
 import java.lang.Appendable;
 import java.lang.CharSequence;
-import java.lang.StringBuffer;
+import java.lang.Number;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html */
+@:native("java.lang.StringBuffer") @:final
 extern class StringBuffer extends AbstractStringBuilder, implements Serializable, implements CharSequence
 {
-	private static var serialVersionUID:haxe.Int64;
-
-	@:overload(function (arg1:Int):Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:CharSequence):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#StringBuffer(int) */
+	@:overload(function (capacity:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#StringBuffer(java.lang.String) */
+	@:overload(function (capacity:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#StringBuffer(java.lang.CharSequence) */
+	@:overload(function (capacity:CharSequence):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#StringBuffer() */
 	public function new():Void;
 
-	@:overload(function append(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):AbstractStringBuilder {})
-	@:overload(function append(arg1:CharSequence, arg2:Int, arg3:Int):Appendable {})
-	@:overload(function append(arg1:CharSequence):AbstractStringBuilder {})
-	@:overload(function append(arg1:StringBuffer):AbstractStringBuilder {})
-	@:overload(function append(arg1:Dynamic):AbstractStringBuilder {})
-	@:overload(function append(arg1:String):AbstractStringBuilder {})
-	@:overload(function append(arg1:Float):AbstractStringBuilder {})
-	@:overload(function append(arg1:Float):AbstractStringBuilder {})
-	@:overload(function append(arg1:haxe.Int64):AbstractStringBuilder {})
-	@:overload(function append(arg1:Char16):Appendable {})
-	@:overload(function append(arg1:Dynamic):StringBuffer {})
-	@:overload(function append(arg1:String):StringBuffer {})
-	@:overload(function append(arg1:StringBuffer):StringBuffer {})
-	@:overload(function append(arg1:CharSequence):StringBuffer {})
-	@:overload(function append(arg1:CharSequence, arg2:Int, arg3:Int):StringBuffer {})
-	@:overload(function append(arg1:NativeArray<Char16>):StringBuffer {})
-	@:overload(function append(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):StringBuffer {})
-	@:overload(function append(arg1:Bool):StringBuffer {})
-	@:overload(function append(arg1:Char16):StringBuffer {})
-	@:overload(function append(arg1:Int):StringBuffer {})
-	@:overload(function append(arg1:Int):AbstractStringBuilder {})
-	@:overload(function append(arg1:haxe.Int64):StringBuffer {})
-	@:overload(function append(arg1:Float):StringBuffer {})
-	@:overload(function append(arg1:Float):StringBuffer {})
-	@:overload(function append(arg1:CharSequence, arg2:Int, arg3:Int):AbstractStringBuilder {})
-	@:overload(function append(arg1:NativeArray<Char16>):AbstractStringBuilder {})
-	@:overload(function append(arg1:Char16):AbstractStringBuilder {})
-	@:overload(function append(arg1:Bool):AbstractStringBuilder {})
-	override public function append(arg1:CharSequence):Appendable;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(char[], int, int) */
+	@:overload(function (str:NativeArray<Char16>, offset:Int, len:Int):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.CharSequence, int, int) */
+	@:overload(function (s:CharSequence, start:Int, end:Int):Appendable {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(boolean) */
+	@:overload(function (b:Bool):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(char) */
+	@:overload(function (c:Char16):Appendable {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(double) */
+	@:overload(function (d:StdFloat):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(float) */
+	@:overload(function (f:StdFloat):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(int) */
+	@:overload(function (i:Int):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(long) */
+	@:overload(function (lng:haxe.Int64):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.Object) */
+	@:overload(function (obj:Dynamic):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(char[]) */
+	@:overload(function (str:NativeArray<Char16>):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.CharSequence) */
+	@:overload(function (s:CharSequence):Appendable {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.String) */
+	@:overload(function (str:String):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.StringBuffer) */
+	override public function append(sb:StringBuffer):AbstractStringBuilder;
 
-	@:overload(function appendCodePoint(arg1:Int):StringBuffer {})
-	override public function appendCodePoint(arg1:Int):AbstractStringBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#appendCodePoint(int) */
+	override public function appendCodePoint(codePoint:Int):StringBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#capacity() */
 	override public function capacity():Int;
 
-	override public function charAt(arg1:Int):Char16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#charAt(int) */
+	override public function charAt(index:Int):Char16;
 
-	override public function codePointAt(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#codePointAt(int) */
+	override public function codePointAt(index:Int):Int;
 
-	override public function codePointBefore(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#codePointBefore(int) */
+	override public function codePointBefore(index:Int):Int;
 
-	override public function codePointCount(arg1:Int, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#codePointCount(int, int) */
+	override public function codePointCount(beginIndex:Int, endIndex:Int):Int;
 
-	@:overload(function delete(arg1:Int, arg2:Int):StringBuffer {})
-	override public function delete(arg1:Int, arg2:Int):AbstractStringBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#delete(int, int) */
+	override public function delete(start:Int, end:Int):StringBuffer;
 
-	@:overload(function deleteCharAt(arg1:Int):StringBuffer {})
-	override public function deleteCharAt(arg1:Int):AbstractStringBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#deleteCharAt(int) */
+	override public function deleteCharAt(index:Int):StringBuffer;
 
-	override public function ensureCapacity(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#ensureCapacity(int) */
+	override public function ensureCapacity(minimumCapacity:Int):Void;
 
-	override public function getChars(arg1:Int, arg2:Int, arg3:NativeArray<Char16>, arg4:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#getChars(int, int, char[], int) */
+	override public function getChars(srcBegin:Int, srcEnd:Int, dst:NativeArray<Char16>, dstBegin:Int):Void;
 
-	@:overload(function indexOf(arg1:String):Int {})
-	override public function indexOf(arg1:String, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#indexOf(java.lang.String, int) */
+	@:overload(function (str:String, fromIndex:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#indexOf(java.lang.String) */
+	override public function indexOf(str:String):Int;
 
-	@:overload(function insert(arg1:Int, arg2:Char16):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:Bool):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:CharSequence, arg3:Int, arg4:Int):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:CharSequence):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:NativeArray<Char16>):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:String):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:haxe.Int64):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:NativeArray<Char16>, arg3:Int, arg4:Int):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:Int):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:Float):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:Char16):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:haxe.Int64):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:Bool):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:CharSequence, arg3:Int, arg4:Int):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:CharSequence):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:NativeArray<Char16>):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:String):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:Dynamic):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:NativeArray<Char16>, arg3:Int, arg4:Int):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:Float):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:Float):AbstractStringBuilder {})
-	@:overload(function insert(arg1:Int, arg2:Float):StringBuffer {})
-	@:overload(function insert(arg1:Int, arg2:Int):StringBuffer {})
-	override public function insert(arg1:Int, arg2:Dynamic):AbstractStringBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, char[], int, int) */
+	@:overload(function (index:Int, str:NativeArray<Char16>, offset:Int, len:Int):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, java.lang.CharSequence, int, int) */
+	@:overload(function (dstOffset:Int, s:CharSequence, start:Int, end:Int):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, boolean) */
+	@:overload(function (offset:Int, b:Bool):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, char) */
+	@:overload(function (offset:Int, c:Char16):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, double) */
+	@:overload(function (offset:Int, d:StdFloat):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, float) */
+	@:overload(function (offset:Int, f:StdFloat):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, int) */
+	@:overload(function (offset:Int, i:Int):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, long) */
+	@:overload(function (offset:Int, l:haxe.Int64):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, java.lang.Object) */
+	@:overload(function (offset:Int, obj:Dynamic):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, char[]) */
+	@:overload(function (offset:Int, str:NativeArray<Char16>):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, java.lang.CharSequence) */
+	@:overload(function (dstOffset:Int, s:CharSequence):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#insert(int, java.lang.String) */
+	override public function insert(offset:Int, str:String):AbstractStringBuilder;
 
-	@:overload(function lastIndexOf(arg1:String):Int {})
-	override public function lastIndexOf(arg1:String, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#lastIndexOf(java.lang.String, int) */
+	@:overload(function (str:String, fromIndex:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#lastIndexOf(java.lang.String) */
+	override public function lastIndexOf(str:String):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#length() */
 	override public function length():Int;
 
-	override public function offsetByCodePoints(arg1:Int, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#offsetByCodePoints(int, int) */
+	override public function offsetByCodePoints(index:Int, codePointOffset:Int):Int;
 
-	@:overload(function replace(arg1:Int, arg2:Int, arg3:String):StringBuffer {})
-	override public function replace(arg1:Int, arg2:Int, arg3:String):AbstractStringBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#replace(int, int, java.lang.String) */
+	override public function replace(start:Int, end:Int, str:String):StringBuffer;
 
-	@:overload(function reverse():StringBuffer {})
-	override public function reverse():AbstractStringBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#reverse() */
+	override public function reverse():StringBuffer;
 
-	override public function setCharAt(arg1:Int, arg2:Char16):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#setCharAt(int, char) */
+	override public function setCharAt(index:Int, ch:Char16):Void;
 
-	override public function setLength(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#setLength(int) */
+	override public function setLength(newLength:Int):Void;
 
-	override public function subSequence(arg1:Int, arg2:Int):CharSequence;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#subSequence(int, int) */
+	override public function subSequence(start:Int, end:Int):CharSequence;
 
-	@:overload(function substring(arg1:Int):String {})
-	override public function substring(arg1:Int, arg2:Int):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#substring(int, int) */
+	@:overload(function (start:Int, end:Int):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#substring(int) */
+	override public function substring(start:Int):String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#toString() */
 	override public function toString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#trimToSize() */
 	override public function trimToSize():Void;
 
 }

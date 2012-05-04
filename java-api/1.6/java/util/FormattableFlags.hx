@@ -2,15 +2,10 @@ package java.util;
 
 import java.lang.Object;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/FormattableFlags.html */
+@:native("java.util.FormattableFlags")
 extern class FormattableFlags extends Object
 {
-	public static var LEFT_JUSTIFY:Int;
-
-	public static var UPPERCASE:Int;
-
-	public static var ALTERNATE:Int;
-
-	public function new():Void;
 
 }
 

@@ -3,50 +3,39 @@ package java.util;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.Map;
+import java.util.Map_Entry;
 import java.util.Set;
-import java.util.SortedMap;
 
-extern interface SortedMap<K : (Dynamic), V : (Dynamic)> implements Map<K,V>
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html */
+@:native("java.util.SortedMap")
+extern interface SortedMap<K : (Dynamic), V : (Dynamic)> implements Map<K, V>
 {
-	function clear():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#comparator() */
+	public function comparator():Comparator<Dynamic>;
 
-	function comparator():Comparator<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#entrySet() */
+	public function entrySet():Set<Map_Entry<K, V>>;
 
-	function containsKey(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#firstKey() */
+	public function firstKey():K;
 
-	function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#headMap(java.lang.Object) */
+	public function headMap(toKey:K):SortedMap<K, V>;
 
-	function entrySet():Set<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#keySet() */
+	public function keySet():Set<K>;
 
-	function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#lastKey() */
+	public function lastKey():K;
 
-	function firstKey():K;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#subMap(java.lang.Object, java.lang.Object) */
+	public function subMap(fromKey:K, toKey:K):SortedMap<K, V>;
 
-	function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#tailMap(java.lang.Object) */
+	public function tailMap(fromKey:K):SortedMap<K, V>;
 
-	function hashCode():Int;
-
-	function headMap(arg1:K):SortedMap<K,V>;
-
-	function isEmpty():Bool;
-
-	function keySet():Set<K>;
-
-	function lastKey():K;
-
-	function put(arg1:K, arg2:V):V;
-
-	function putAll(arg1:Map<K,V>):Void;
-
-	function remove(arg1:Dynamic):V;
-
-	function size():Int;
-
-	function subMap(arg1:K, arg2:K):SortedMap<K,V>;
-
-	function tailMap(arg1:K):SortedMap<K,V>;
-
-	function values():Collection<V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SortedMap.html#values() */
+	public function values():Collection<V>;
 
 }
 

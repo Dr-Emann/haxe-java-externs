@@ -4,162 +4,209 @@ import java.NativeArray;
 import java.StdTypes;
 import java.lang.Comparable;
 import java.lang.Number;
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.MathContext;
 import java.math.RoundingMode;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html */
+@:native("java.math.BigDecimal")
 extern class BigDecimal extends Number, implements Comparable<BigDecimal>
 {
-	private static var INFLATED:haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(char[], int, int) */
+	@:overload(function (_in:NativeArray<Char16>, offset:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(char[], int, int, java.math.MathContext) */
+	@:overload(function (intVal:NativeArray<Char16>, val:Int, scale:Int, prec:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(char[]) */
+	@:overload(function (_in:NativeArray<Char16>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(char[], java.math.MathContext) */
+	@:overload(function (_in:NativeArray<Char16>, mc:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(java.lang.String) */
+	@:overload(function (_in:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(java.lang.String, java.math.MathContext) */
+	@:overload(function (_in:String, mc:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(double) */
+	@:overload(function (_in:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(double, java.math.MathContext) */
+	@:overload(function (_in:StdFloat, mc:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(java.math.BigInteger) */
+	@:overload(function (_in:BigInteger):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(java.math.BigInteger, java.math.MathContext) */
+	@:overload(function (_in:BigInteger, mc:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(java.math.BigInteger, int) */
+	@:overload(function (_in:BigInteger, mc:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(java.math.BigInteger, int, java.math.MathContext) */
+	@:overload(function (_in:BigInteger, offset:Int, len:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(int) */
+	@:overload(function (_in:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(int, java.math.MathContext) */
+	@:overload(function (_in:Int, mc:MathContext):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(long) */
+	@:overload(function (_in:haxe.Int64):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#BigDecimal(long, java.math.MathContext) */
+	public function new(_in:haxe.Int64, mc:MathContext):Void;
 
-	public static var ZERO:BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#abs(java.math.MathContext) */
+	@:overload(function (mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#abs() */
+	public function abs():BigDecimal;
 
-	public static var ONE:BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#add(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (augend:BigDecimal, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#add(java.math.BigDecimal) */
+	public function add(augend:BigDecimal):BigDecimal;
 
-	public static var TEN:BigDecimal;
-
-	public static var ROUND_UP:Int;
-
-	public static var ROUND_DOWN:Int;
-
-	public static var ROUND_CEILING:Int;
-
-	public static var ROUND_FLOOR:Int;
-
-	public static var ROUND_HALF_UP:Int;
-
-	public static var ROUND_HALF_DOWN:Int;
-
-	public static var ROUND_HALF_EVEN:Int;
-
-	public static var ROUND_UNNECESSARY:Int;
-
-	//private static var $assertionsDisabled:Bool;
-
-	@:overload(function (arg1:BigInteger, arg2:haxe.Int64, arg3:Int, arg4:Int):Void {})
-	@:overload(function (arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Void {})
-	@:overload(function (arg1:NativeArray<Char16>, arg2:Int, arg3:Int, arg4:MathContext):Void {})
-	@:overload(function (arg1:NativeArray<Char16>):Void {})
-	@:overload(function (arg1:NativeArray<Char16>, arg2:MathContext):Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:String, arg2:MathContext):Void {})
-	@:overload(function (arg1:Float):Void {})
-	@:overload(function (arg1:Float, arg2:MathContext):Void {})
-	@:overload(function (arg1:BigInteger):Void {})
-	@:overload(function (arg1:BigInteger, arg2:MathContext):Void {})
-	@:overload(function (arg1:BigInteger, arg2:Int):Void {})
-	@:overload(function (arg1:BigInteger, arg2:Int, arg3:MathContext):Void {})
-	@:overload(function (arg1:Int):Void {})
-	@:overload(function (arg1:Int, arg2:MathContext):Void {})
-	@:overload(function (arg1:haxe.Int64):Void {})
-	public function new(arg1:haxe.Int64, arg2:MathContext):Void;
-
-	@:overload(function abs():BigDecimal {})
-	public function abs(arg1:MathContext):BigDecimal;
-
-	//private static function access$000(arg1:BigDecimal):BigInteger;
-
-	//private static function access$100(arg1:BigDecimal):BigInteger;
-
-	@:overload(function add(arg1:BigDecimal, arg2:MathContext):BigDecimal {})
-	public function add(arg1:BigDecimal):BigDecimal;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#byteValueExact() */
 	public function byteValueExact():Int8;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:BigDecimal):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#compareTo(java.math.BigDecimal) */
+	public function compareTo(val:BigDecimal):Int;
 
-	@:overload(function divide(arg1:BigDecimal, arg2:Int, arg3:RoundingMode):BigDecimal {})
-	@:overload(function divide(arg1:BigDecimal, arg2:Int, arg3:Int):BigDecimal {})
-	@:overload(function divide(arg1:BigDecimal, arg2:Int):BigDecimal {})
-	@:overload(function divide(arg1:BigDecimal, arg2:MathContext):BigDecimal {})
-	@:overload(function divide(arg1:BigDecimal):BigDecimal {})
-	public function divide(arg1:BigDecimal, arg2:RoundingMode):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divide(java.math.BigDecimal, int, int) */
+	@:overload(function (divisor:BigDecimal, scale:Int, roundingMode:Int):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divide(java.math.BigDecimal, int, java.math.RoundingMode) */
+	@:overload(function (divisor:BigDecimal, scale:Int, roundingMode:RoundingMode):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divide(java.math.BigDecimal, int) */
+	@:overload(function (divisor:BigDecimal, roundingMode:Int):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divide(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (divisor:BigDecimal, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divide(java.math.BigDecimal, java.math.RoundingMode) */
+	@:overload(function (divisor:BigDecimal, roundingMode:RoundingMode):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divide(java.math.BigDecimal) */
+	public function divide(divisor:BigDecimal):BigDecimal;
 
-	@:overload(function divideAndRemainder(arg1:BigDecimal):NativeArray<BigDecimal> {})
-	public function divideAndRemainder(arg1:BigDecimal, arg2:MathContext):NativeArray<BigDecimal>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (divisor:BigDecimal, mc:MathContext):NativeArray<BigDecimal> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal) */
+	public function divideAndRemainder(divisor:BigDecimal):NativeArray<BigDecimal>;
 
-	@:overload(function divideToIntegralValue(arg1:BigDecimal, arg2:MathContext):BigDecimal {})
-	public function divideToIntegralValue(arg1:BigDecimal):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (divisor:BigDecimal, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal) */
+	public function divideToIntegralValue(divisor:BigDecimal):BigDecimal;
 
-	override public function doubleValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#doubleValue() */
+	override public function doubleValue():StdFloat;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#equals(java.lang.Object) */
+	override public function equals(x:Dynamic):Bool;
 
-	override public function floatValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#floatValue() */
+	override public function floatValue():StdFloat;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#intValue() */
 	override public function intValue():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#intValueExact() */
 	public function intValueExact():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#longValue() */
 	override public function longValue():haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#longValueExact() */
 	public function longValueExact():haxe.Int64;
 
-	public function max(arg1:BigDecimal):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#max(java.math.BigDecimal) */
+	public function max(val:BigDecimal):BigDecimal;
 
-	public function min(arg1:BigDecimal):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#min(java.math.BigDecimal) */
+	public function min(val:BigDecimal):BigDecimal;
 
-	public function movePointLeft(arg1:Int):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#movePointLeft(int) */
+	public function movePointLeft(n:Int):BigDecimal;
 
-	public function movePointRight(arg1:Int):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#movePointRight(int) */
+	public function movePointRight(n:Int):BigDecimal;
 
-	@:overload(function multiply(arg1:BigDecimal):BigDecimal {})
-	public function multiply(arg1:BigDecimal, arg2:MathContext):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#multiply(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (multiplicand:BigDecimal, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#multiply(java.math.BigDecimal) */
+	public function multiply(multiplicand:BigDecimal):BigDecimal;
 
-	@:overload(function negate():BigDecimal {})
-	public function negate(arg1:MathContext):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#negate(java.math.MathContext) */
+	@:overload(function (mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#negate() */
+	public function negate():BigDecimal;
 
-	@:overload(function plus(arg1:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#plus(java.math.MathContext) */
+	@:overload(function (mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#plus() */
 	public function plus():BigDecimal;
 
-	@:overload(function pow(arg1:Int, arg2:MathContext):BigDecimal {})
-	public function pow(arg1:Int):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#pow(int, java.math.MathContext) */
+	@:overload(function (n:Int, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#pow(int) */
+	public function pow(n:Int):BigDecimal;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#precision() */
 	public function precision():Int;
 
-	@:overload(function remainder(arg1:BigDecimal):BigDecimal {})
-	public function remainder(arg1:BigDecimal, arg2:MathContext):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#remainder(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (divisor:BigDecimal, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#remainder(java.math.BigDecimal) */
+	public function remainder(divisor:BigDecimal):BigDecimal;
 
-	public function round(arg1:MathContext):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#round(java.math.MathContext) */
+	public function round(mc:MathContext):BigDecimal;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#scale() */
 	public function scale():Int;
 
-	public function scaleByPowerOfTen(arg1:Int):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#scaleByPowerOfTen(int) */
+	public function scaleByPowerOfTen(n:Int):BigDecimal;
 
-	@:overload(function setScale(arg1:Int, arg2:Int):BigDecimal {})
-	@:overload(function setScale(arg1:Int, arg2:RoundingMode):BigDecimal {})
-	public function setScale(arg1:Int):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#setScale(int, int) */
+	@:overload(function (newScale:Int, roundingMode:Int):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#setScale(int, java.math.RoundingMode) */
+	@:overload(function (newScale:Int, roundingMode:RoundingMode):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#setScale(int) */
+	public function setScale(newScale:Int):BigDecimal;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#shortValueExact() */
 	public function shortValueExact():Int16;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#signum() */
 	public function signum():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#stripTrailingZeros() */
 	public function stripTrailingZeros():BigDecimal;
 
-	@:overload(function subtract(arg1:BigDecimal, arg2:MathContext):BigDecimal {})
-	public function subtract(arg1:BigDecimal):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#subtract(java.math.BigDecimal, java.math.MathContext) */
+	@:overload(function (subtrahend:BigDecimal, mc:MathContext):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#subtract(java.math.BigDecimal) */
+	public function subtract(subtrahend:BigDecimal):BigDecimal;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#toBigInteger() */
 	public function toBigInteger():BigInteger;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#toBigIntegerExact() */
 	public function toBigIntegerExact():BigInteger;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#toEngineeringString() */
 	public function toEngineeringString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#toPlainString() */
 	public function toPlainString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#toString() */
 	override public function toString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#ulp() */
 	public function ulp():BigDecimal;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#unscaledValue() */
 	public function unscaledValue():BigInteger;
 
-	@:overload(function valueOf(arg1:haxe.Int64):BigDecimal {})
-	@:overload(function valueOf(arg1:haxe.Int64, arg2:Int):BigDecimal {})
-	public static function valueOf(arg1:Float):BigDecimal;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#valueOf(long, int) */
+	@:overload(function (unscaledVal:haxe.Int64, scale:Int):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#valueOf(double) */
+	@:overload(function (val:StdFloat):BigDecimal {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html#valueOf(long) */
+	static public function valueOf(val:haxe.Int64):BigDecimal;
 
 }
 

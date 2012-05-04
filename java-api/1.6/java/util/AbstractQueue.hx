@@ -4,29 +4,30 @@ import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.Queue;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html */
+@:native("java.util.AbstractQueue")
 extern class AbstractQueue<E : (Dynamic)> extends AbstractCollection<E>, implements Queue<E>
 {
-	public function new():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#AbstractQueue() */
+	private function new():Void;
 
-	override public function add(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#add(java.lang.Object) */
+	override public function add(e:E):Bool;
 
-	override public function addAll(arg1:Collection<E>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#addAll(java.util.Collection) */
+	override public function addAll(c:Collection<E>):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#clear() */
 	override public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#element() */
 	public function element():E;
 
-	@:overload(function remove():E {})
-	override public function remove(arg1:Dynamic):Bool;
-
-	//@@ M.I. Added from Queue.
-	//
-
-	public function offer(arg1:E):Bool;
-
-	public function peek():E;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#poll() */
 	public function poll():E;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractQueue.html#remove() */
+	override public function remove():E;
 
 }
 

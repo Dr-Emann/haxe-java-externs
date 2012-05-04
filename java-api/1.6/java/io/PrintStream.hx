@@ -6,68 +6,106 @@ import java.io.Closeable;
 import java.io.File;
 import java.io.FilterOutputStream;
 import java.io.OutputStream;
-import java.io.PrintStream;
 import java.lang.Appendable;
 import java.lang.CharSequence;
+import java.lang.Number;
 import java.util.Locale;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html */
+@:native("java.io.PrintStream")
 extern class PrintStream extends FilterOutputStream, implements Appendable, implements Closeable
 {
-	@:overload(function (arg1:OutputStream):Void {})
-	@:overload(function (arg1:Bool, arg2:OutputStream):Void {})
-	@:overload(function (arg1:File):Void {})
-	@:overload(function (arg1:OutputStream, arg2:Bool):Void {})
-	@:overload(function (arg1:OutputStream, arg2:Bool, arg3:String):Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:String, arg2:String):Void {})
-	public function new(arg1:File, arg2:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.io.OutputStream) */
+	@:overload(function (out:OutputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.io.File) */
+	@:overload(function (out:File):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.io.OutputStream, boolean) */
+	@:overload(function (out:OutputStream, autoFlush:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.io.OutputStream, boolean, java.lang.String) */
+	@:overload(function (out:OutputStream, autoFlush:Bool, encoding:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.lang.String) */
+	@:overload(function (out:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.lang.String, java.lang.String) */
+	@:overload(function (out:String, autoFlush:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#PrintStream(java.io.File, java.lang.String) */
+	public function new(out:File, autoFlush:String):Void;
 
-	@:overload(function append(arg1:Char16):PrintStream {})
-	@:overload(function append(arg1:Char16):Appendable {})
-	@:overload(function append(arg1:CharSequence, arg2:Int, arg3:Int):Appendable {})
-	@:overload(function append(arg1:CharSequence, arg2:Int, arg3:Int):PrintStream {})
-	@:overload(function append(arg1:CharSequence):PrintStream {})
-	public function append(arg1:CharSequence):Appendable;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#append(java.lang.CharSequence, int, int) */
+	@:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#append(char) */
+	@:overload(function (c:Char16):PrintStream {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#append(java.lang.CharSequence) */
+	public function append(csq:CharSequence):PrintStream;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#checkError() */
 	public function checkError():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#clearError() */
 	private function clearError():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#close() */
 	override public function close():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#flush() */
 	override public function flush():Void;
 
-	@:overload(function format(arg1:Locale, arg2:String, arg3:NativeArray<Dynamic>):PrintStream {})
-	public function format(arg1:String, arg2:NativeArray<Dynamic>):PrintStream;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#format(java.util.Locale, java.lang.String, java.lang.Object[]) */
+	@:overload(function (l:Locale, format:String, args:NativeArray<Dynamic>):PrintStream {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#format(java.lang.String, java.lang.Object[]) */
+	public function format(format:String, args:NativeArray<Dynamic>):PrintStream;
 
-	@:overload(function print(arg1:Int):Void {})
-	@:overload(function print(arg1:Dynamic):Void {})
-	@:overload(function print(arg1:String):Void {})
-	@:overload(function print(arg1:NativeArray<Char16>):Void {})
-	@:overload(function print(arg1:haxe.Int64):Void {})
-	@:overload(function print(arg1:Float):Void {})
-	@:overload(function print(arg1:Bool):Void {})
-	@:overload(function print(arg1:Char16):Void {})
-	public function print(arg1:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(boolean) */
+	@:overload(function (b:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(char) */
+	@:overload(function (c:Char16):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(double) */
+	@:overload(function (d:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(float) */
+	@:overload(function (f:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(int) */
+	@:overload(function (i:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(long) */
+	@:overload(function (l:haxe.Int64):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(java.lang.Object) */
+	@:overload(function (obj:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(char[]) */
+	@:overload(function (s:NativeArray<Char16>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#print(java.lang.String) */
+	public function print(s:String):Void;
 
-	@:overload(function printf(arg1:Locale, arg2:String, arg3:NativeArray<Dynamic>):PrintStream {})
-	public function printf(arg1:String, arg2:NativeArray<Dynamic>):PrintStream;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#printf(java.util.Locale, java.lang.String, java.lang.Object[]) */
+	@:overload(function (l:Locale, format:String, args:NativeArray<Dynamic>):PrintStream {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#printf(java.lang.String, java.lang.Object[]) */
+	public function printf(format:String, args:NativeArray<Dynamic>):PrintStream;
 
-	@:overload(function println(arg1:Bool):Void {})
-	@:overload(function println(arg1:Char16):Void {})
-	@:overload(function println(arg1:Int):Void {})
-	@:overload(function println():Void {})
-	@:overload(function println(arg1:haxe.Int64):Void {})
-	@:overload(function println(arg1:Dynamic):Void {})
-	@:overload(function println(arg1:String):Void {})
-	@:overload(function println(arg1:NativeArray<Char16>):Void {})
-	@:overload(function println(arg1:Float):Void {})
-	public function println(arg1:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(boolean) */
+	@:overload(function (x:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(char) */
+	@:overload(function (x:Char16):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(double) */
+	@:overload(function (x:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(float) */
+	@:overload(function (x:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(int) */
+	@:overload(function (x:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(long) */
+	@:overload(function (x:haxe.Int64):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(java.lang.Object) */
+	@:overload(function (x:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(char[]) */
+	@:overload(function (x:NativeArray<Char16>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println(java.lang.String) */
+	@:overload(function (x:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#println() */
+	public function println():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#setError() */
 	private function setError():Void;
 
-	@:overload(function write(arg1:Int):Void {})
-	override public function write(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#write(byte[], int, int) */
+	@:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintStream.html#write(int) */
+	override public function write(b:Int):Void;
 
 }
 

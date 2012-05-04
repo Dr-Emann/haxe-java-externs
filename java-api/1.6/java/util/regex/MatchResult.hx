@@ -1,18 +1,27 @@
 package java.util.regex;
 
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html */
+@:native("java.util.regex.MatchResult")
 extern interface MatchResult
 {
-	@:overload(function end():Int {})
-	function end(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#end(int) */
+	@:overload(function (group:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#end() */
+	public function end():Int;
 
-	@:overload(function group():String {})
-	function group(arg1:Int):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#group(int) */
+	@:overload(function (group:Int):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#group() */
+	public function group():String;
 
-	function groupCount():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#groupCount() */
+	public function groupCount():Int;
 
-	@:overload(function start():Int {})
-	function start(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#start(int) */
+	@:overload(function (group:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/MatchResult.html#start() */
+	public function start():Int;
 
 }
 

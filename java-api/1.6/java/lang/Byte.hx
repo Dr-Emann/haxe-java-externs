@@ -1,56 +1,66 @@
 package java.lang;
 
 import java.StdTypes;
-import java.lang.Byte;
-import java.lang.Class;
 import java.lang.Comparable;
 import java.lang.Number;
 
-@:final
-extern class Byte extends Number, implements Comparable<Byte>, implements Int
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html */
+@:native("java.lang.Byte") @:final
+extern class Byte extends Number, implements Comparable<Byte>
 {
-	public static var MIN_VALUE:Int8;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#Byte(java.lang.String) */
+	@:overload(function (value:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#Byte(byte) */
+	public function new(value:Int8):Void;
 
-	public static var MAX_VALUE:Int8;
-
-	public static var TYPE:Class<Byte>;
-
-	public static var SIZE:Int;
-
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:Int8):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#byteValue() */
 	override public function byteValue():Int8;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Byte):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#compareTo(java.lang.Byte) */
+	public function compareTo(anotherByte:Byte):Int;
 
-	public static function decode(arg1:String):Byte;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#decode(java.lang.String) */
+	static public function decode(nm:String):Byte;
 
-	override public function doubleValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#doubleValue() */
+	override public function doubleValue():StdFloat;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	override public function floatValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#floatValue() */
+	override public function floatValue():StdFloat;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#intValue() */
 	override public function intValue():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#longValue() */
 	override public function longValue():haxe.Int64;
 
-	@:overload(function parseByte(arg1:String, arg2:Int):Int8 {})
-	public static function parseByte(arg1:String):Int8;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#parseByte(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Int8 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#parseByte(java.lang.String) */
+	static public function parseByte(s:String):Int8;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#shortValue() */
 	override public function shortValue():Int16;
 
-	override public function toString():String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#toString() */
+	@:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#toString(byte) */
+	static public function toString(b:Int8):String;
 
-	//public static function toString(arg1:Int8):String;
-
-	@:overload(function valueOf(arg1:String):Byte {})
-	@:overload(function valueOf(arg1:Int8):Byte {})
-	public static function valueOf(arg1:String, arg2:Int):Byte;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#valueOf(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Byte {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#valueOf(byte) */
+	@:overload(function (b:Int8):Byte {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Byte.html#valueOf(java.lang.String) */
+	static public function valueOf(s:String):Byte;
 
 }
 

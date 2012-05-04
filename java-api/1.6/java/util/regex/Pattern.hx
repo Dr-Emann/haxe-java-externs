@@ -5,83 +5,38 @@ import java.io.Serializable;
 import java.lang.CharSequence;
 import java.lang.Object;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html */
+@:native("java.util.regex.Pattern") @:final
 extern class Pattern extends Object, implements Serializable
 {
-	public static var UNIX_LINES:Int;
 
-	public static var CASE_INSENSITIVE:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#compile(java.lang.String, int) */
+	@:overload(function (regex:String, flags:Int):Pattern {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#compile(java.lang.String) */
+	static public function compile(regex:String):Pattern;
 
-	public static var COMMENTS:Int;
-
-	public static var MULTILINE:Int;
-
-	public static var LITERAL:Int;
-
-	public static var DOTALL:Int;
-
-	public static var UNICODE_CASE:Int;
-
-	public static var CANON_EQ:Int;
-
-	private var root:Dynamic;
-
-	private var matchRoot:Dynamic;
-
-	private var buffer:NativeArray<Int>;
-
-	private var groupNodes:NativeArray<Dynamic>;
-
-	private var capturingGroupCount:Int;
-
-	private var localCount:Int;
-
-	private static var MAX_REPS:Int;
-
-	private static var GREEDY:Int;
-
-	private static var LAZY:Int;
-
-	private static var POSSESSIVE:Int;
-
-	private static var INDEPENDENT:Int;
-
-	private static var lookbehindEnd:Dynamic;
-
-	private static var accept:Dynamic;
-
-	private static var lastAccept:Dynamic;
-
-	//private static var $assertionsDisabled:Bool;
-
-	public function new(arg1:String, arg2:Int):Void;
-
-	//private static function access$200(arg1:Int, arg2:Int, arg3:Int):Bool;
-
-	//private static function access$300(arg1:CharSequence, arg2:Int, arg3:Int):Int;
-
-	//private static function access$400(arg1:Matcher, arg2:Int, arg3:CharSequence):Bool;
-
-	//private static function access$600(arg1:Int, arg2:Int):Dynamic;
-
-	@:overload(function compile(arg1:String):Pattern {})
-	public static function compile(arg1:String, arg2:Int):Pattern;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#flags() */
 	public function flags():Int;
 
-	public function matcher(arg1:CharSequence):Matcher;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#matcher(java.lang.CharSequence) */
+	public function matcher(input:CharSequence):Matcher;
 
-	public static function matches(arg1:String, arg2:CharSequence):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#matches(java.lang.String, java.lang.CharSequence) */
+	static public function matches(regex:String, input:CharSequence):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#pattern() */
 	public function pattern():String;
 
-	public static function quote(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#quote(java.lang.String) */
+	static public function quote(s:String):String;
 
-	@:overload(function split(arg1:CharSequence):NativeArray<String> {})
-	public function split(arg1:CharSequence, arg2:Int):NativeArray<String>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#split(java.lang.CharSequence, int) */
+	@:overload(function (input:CharSequence, limit:Int):NativeArray<String> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#split(java.lang.CharSequence) */
+	public function split(input:CharSequence):NativeArray<String>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#toString() */
 	override public function toString():String;
 
 }

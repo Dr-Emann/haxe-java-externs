@@ -1,91 +1,67 @@
 package java.util;
 
-import java.NativeArray;
 import java.io.Serializable;
 import java.lang.Cloneable;
+import java.lang.Number;
 import java.util.AbstractMap;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.Map;
+import java.util.Map_Entry;
 import java.util.Set;
 
-extern class HashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K,V>, implements Map<K,V>, implements Cloneable, implements Serializable
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html */
+@:native("java.util.HashMap")
+extern class HashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K, V>, implements Map<K, V>, implements Cloneable, implements Serializable
 {
-	private static var DEFAULT_INITIAL_CAPACITY:Int;
-
-	private static var MAXIMUM_CAPACITY:Int;
-
-	private static var DEFAULT_LOAD_FACTOR:Float;
-
-	private var table:NativeArray<Dynamic>;
-
-	//private var size:Int;
-
-	private var threshold:Int;
-
-	//private static var loadFactor:Float;
-
-	private var modCount:Int;
-
-	@:overload(function (arg1:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap(int) */
+	@:overload(function (initialCapacity:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:Map<K,V>):Void {})
-	public function new(arg1:Int, arg2:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap(java.util.Map) */
+	@:overload(function (initialCapacity:Map<K, V>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap(int, float) */
+	public function new(initialCapacity:Int, loadFactor:StdFloat):Void;
 
-	private function addEntry(arg1:Int, arg2:K, arg3:V, arg4:Int):Void;
-
-	private function capacity():Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#clear() */
 	override public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function containsKey(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#containsKey(java.lang.Object) */
+	override public function containsKey(key:Dynamic):Bool;
 
-	override public function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#containsValue(java.lang.Object) */
+	override public function containsValue(value:Dynamic):Bool;
 
-	private function createEntry(arg1:Int, arg2:K, arg3:V, arg4:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#entrySet() */
+	override public function entrySet():Set<Map_Entry<K, V>>;
 
-	override public function entrySet():Set<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#get(java.lang.Object) */
+	override public function get(key:Dynamic):V;
 
-	override public function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#hashCode() */
+	override public function hashCode():Int;
 
-	private function getEntry(arg1:Dynamic):Dynamic;
-
-	private static function hash(arg1:Int):Int;
-
-	private static function indexFor(arg1:Int, arg2:Int):Int;
-
-	private function init():Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#isEmpty() */
 	override public function isEmpty():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#keySet() */
 	override public function keySet():Set<K>;
 
-	private function loadFactor():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#put(java.lang.Object, java.lang.Object) */
+	override public function put(key:K, value:V):V;
 
-	private function newEntryIterator():java.util.Iterator<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#putAll(java.util.Map) */
+	override public function putAll(m:Map<K, V>):Void;
 
-	private function newKeyIterator():java.util.Iterator<K>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#remove(java.lang.Object) */
+	override public function remove(key:Dynamic):V;
 
-	private function newValueIterator():java.util.Iterator<V>;
-
-	override public function put(arg1:K, arg2:V):V;
-
-	override public function putAll(arg1:Map<K,V>):Void;
-
-	override public function remove(arg1:Dynamic):V;
-
-	private function removeEntryForKey(arg1:Dynamic):Dynamic;
-
-	private function removeMapping(arg1:Dynamic):Dynamic;
-
-	private function resize(arg1:Int):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#size() */
 	override public function size():Int;
 
-	private function transfer(arg1:NativeArray<Dynamic>):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#values() */
 	override public function values():Collection<V>;
 
 }

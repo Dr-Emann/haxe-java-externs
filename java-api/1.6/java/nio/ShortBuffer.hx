@@ -5,62 +5,80 @@ import java.StdTypes;
 import java.lang.Comparable;
 import java.nio.Buffer;
 import java.nio.ByteOrder;
-import java.nio.ShortBuffer;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html */
+@:native("java.nio.ShortBuffer")
 extern class ShortBuffer extends Buffer, implements Comparable<ShortBuffer>
 {
-	private static var hb:NativeArray<Int16>;
 
-	private static var offset:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#allocate(int) */
+	static public function allocate(capacity:Int):ShortBuffer;
 
-	//private var isReadOnly:Bool;
-
-	@:overload(function (arg1:Int, arg2:Int, arg3:Int, arg4:Int):Void {})
-	public function new(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:NativeArray<Int16>, arg6:Int):Void;
-
-	public static function allocate(arg1:Int):ShortBuffer;
-
-	@:overload(function array():NativeArray<Int16> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#array() */
 	override public function array():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#arrayOffset() */
 	override public function arrayOffset():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#asReadOnlyBuffer() */
 	public function asReadOnlyBuffer():ShortBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#compact() */
 	public function compact():ShortBuffer;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:ShortBuffer):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#compareTo(java.nio.ShortBuffer) */
+	public function compareTo(that:ShortBuffer):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#duplicate() */
 	public function duplicate():ShortBuffer;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#equals(java.lang.Object) */
+	override public function equals(ob:Dynamic):Bool;
 
-	@:overload(function get():Int16 {})
-	@:overload(function get(arg1:NativeArray<Int16>, arg2:Int, arg3:Int):ShortBuffer {})
-	@:overload(function get(arg1:NativeArray<Int16>):ShortBuffer {})
-	public function get(arg1:Int):Int16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#get(short[], int, int) */
+	@:overload(function (dst:NativeArray<Int16>, offset:Int, length:Int):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#get(int) */
+	@:overload(function (index:Int):Int16 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#get(short[]) */
+	@:overload(function (dst:NativeArray<Int16>):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#get() */
+	public function get():Int16;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#hasArray() */
 	override public function hasArray():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#isDirect() */
 	override public function isDirect():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#order() */
 	public function order():ByteOrder;
 
-	@:overload(function put(arg1:Int, arg2:Int16):ShortBuffer {})
-	@:overload(function put(arg1:NativeArray<Int16>):ShortBuffer {})
-	@:overload(function put(arg1:Int16):ShortBuffer {})
-	@:overload(function put(arg1:NativeArray<Int16>, arg2:Int, arg3:Int):ShortBuffer {})
-	public function put(arg1:ShortBuffer):ShortBuffer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#put(short[], int, int) */
+	@:overload(function (src:NativeArray<Int16>, offset:Int, length:Int):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#put(int, short) */
+	@:overload(function (index:Int, s:Int16):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#put(short) */
+	@:overload(function (s:Int16):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#put(short[]) */
+	@:overload(function (src:NativeArray<Int16>):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#put(java.nio.ShortBuffer) */
+	public function put(src:ShortBuffer):ShortBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#slice() */
 	public function slice():ShortBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#toString() */
 	override public function toString():String;
 
-	@:overload(function wrap(arg1:NativeArray<Int16>):ShortBuffer {})
-	public static function wrap(arg1:NativeArray<Int16>, arg2:Int, arg3:Int):ShortBuffer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#wrap(short[], int, int) */
+	@:overload(function (array:NativeArray<Int16>, offset:Int, length:Int):ShortBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ShortBuffer.html#wrap(short[]) */
+	static public function wrap(array:NativeArray<Int16>):ShortBuffer;
 
 }
 

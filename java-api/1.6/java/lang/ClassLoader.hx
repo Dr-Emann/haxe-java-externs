@@ -4,101 +4,104 @@ import java.NativeArray;
 import java.StdTypes;
 import java.io.InputStream;
 import java.lang.Class;
-import java.lang.ClassLoader;
 import java.lang.Object;
 import java.lang.Package;
-import java.lang.Void;
 import java.net.URL;
 import java.nio.ByteBuffer;
 import java.security.ProtectionDomain;
-import java.security.cert.Certificate;
 import java.util.Enumeration;
-import java.util.Map;
-import java.util.Stack;
-import java.util.Vector;
-//import sun.misc.URLClassPath;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html */
+@:native("java.lang.ClassLoader")
 extern class ClassLoader extends Object
 {
-	private var nocerts:NativeArray<Certificate>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#ClassLoader(java.lang.ClassLoader) */
+	@:overload(function (parent:ClassLoader):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#ClassLoader() */
+	private function new():Void;
 
-	private var classAssertionStatus:Map<Dynamic, Dynamic>;
-
-	@:overload(function (arg1:Void, arg2:ClassLoader):Void {})
-	@:overload(function (arg1:ClassLoader):Void {})
-	public function new():Void;
-
-//	private static function access$000():Vector<Dynamic>;
-
-//	private static function access$100():Stack<Dynamic>;
-
-	private function addClass(arg1:Class<Dynamic>):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#clearAssertionStatus() */
 	public function clearAssertionStatus():Void;
 
-	@:overload(function defineClass(arg1:String, arg2:NativeArray<Int8>, arg3:Int, arg4:Int):Class<Dynamic> {})
-	@:overload(function defineClass(arg1:String, arg2:NativeArray<Int8>, arg3:Int, arg4:Int, arg5:ProtectionDomain):Class<Dynamic> {})
-	@:overload(function defineClass(arg1:String, arg2:ByteBuffer, arg3:ProtectionDomain):Class<Dynamic> {})
-	private function defineClass(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#defineClass(java.lang.String, byte[], int, int, java.security.ProtectionDomain) */
+	@:overload(function (name:String, b:NativeArray<Int8>, off:Int, len:Int, protectionDomain:ProtectionDomain):Class<Dynamic> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#defineClass(java.lang.String, byte[], int, int) */
+	@:overload(function (name:String, b:NativeArray<Int8>, off:Int, len:Int):Class<Dynamic> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#defineClass(byte[], int, int) */
+	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Class<Dynamic> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#defineClass(java.lang.String, java.nio.ByteBuffer, java.security.ProtectionDomain) */
+	private function defineClass(name:String, b:ByteBuffer, protectionDomain:ProtectionDomain):Class<Dynamic>;
 
-	private function definePackage(arg1:String, arg2:String, arg3:String, arg4:String, arg5:String, arg6:String, arg7:String, arg8:URL):Package;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#definePackage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.net.URL) */
+	private function definePackage(name:String, specTitle:String, specVersion:String, specVendor:String, implTitle:String, implVersion:String, implVendor:String, sealBase:URL):Package;
 
-	private function desiredAssertionStatus(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findClass(java.lang.String) */
+	private function findClass(name:String):Class<Dynamic>;
 
-	private function findClass(arg1:String):Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findLibrary(java.lang.String) */
+	private function findLibrary(libname:String):String;
 
-	private function findLibrary(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findLoadedClass(java.lang.String) */
+	private function findLoadedClass(name:String):Class<Dynamic>;
 
-	private function findLoadedClass(arg1:String):Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findResource(java.lang.String) */
+	private function findResource(name:String):URL;
 
-	private static function findNative(arg1:ClassLoader, arg2:String):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findResources(java.lang.String) */
+	private function findResources(name:String):Enumeration<URL>;
 
-	private function findResource(arg1:String):URL;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findSystemClass(java.lang.String) */
+	private function findSystemClass(name:String):Class<Dynamic>;
 
-	private function findResources(arg1:String):Enumeration<URL>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getPackage(java.lang.String) */
+	private function getPackage(name:String):Package;
 
-	private function findSystemClass(arg1:String):Class<Dynamic>;
-
-	//private static function getBootstrapClassPath():URLClassPath;
-
-	private static function getCallerClassLoader():ClassLoader;
-
-	private function getPackage(arg1:String):Package;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getPackages() */
 	private function getPackages():NativeArray<Package>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getParent() */
 	public function getParent():ClassLoader;
 
-	public function getResource(arg1:String):URL;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getResource(java.lang.String) */
+	public function getResource(name:String):URL;
 
-	public function getResourceAsStream(arg1:String):InputStream;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getResourceAsStream(java.lang.String) */
+	public function getResourceAsStream(name:String):InputStream;
 
-	public function getResources(arg1:String):Enumeration<URL>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getResources(java.lang.String) */
+	public function getResources(name:String):Enumeration<URL>;
 
-	public static function getSystemClassLoader():ClassLoader;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getSystemClassLoader() */
+	static public function getSystemClassLoader():ClassLoader;
 
-	public static function getSystemResource(arg1:String):URL;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getSystemResource(java.lang.String) */
+	static public function getSystemResource(name:String):URL;
 
-	public static function getSystemResourceAsStream(arg1:String):InputStream;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String) */
+	static public function getSystemResourceAsStream(name:String):InputStream;
 
-	public static function getSystemResources(arg1:String):Enumeration<URL>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#getSystemResources(java.lang.String) */
+	static public function getSystemResources(name:String):Enumeration<URL>;
 
-	private function isAncestor(arg1:ClassLoader):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#loadClass(java.lang.String, boolean) */
+	@:overload(function (name:String, resolve:Bool):Class<Dynamic> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#loadClass(java.lang.String) */
+	public function loadClass(name:String):Class<Dynamic>;
 
-	@:overload(function loadClass(arg1:String):Class<Dynamic> {})
-	private function loadClass(arg1:String, arg2:Bool):Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#resolveClass(java.lang.Class) */
+	private function resolveClass(c:Class<Dynamic>):Void;
 
-	private static function loadLibrary(arg1:Class<Dynamic>, arg2:String, arg3:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#setClassAssertionStatus(java.lang.String, boolean) */
+	public function setClassAssertionStatus(className:String, enabled:Bool):Void;
 
-	private function resolveClass(arg1:Class<Dynamic>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#setDefaultAssertionStatus(boolean) */
+	public function setDefaultAssertionStatus(enabled:Bool):Void;
 
-	public function setClassAssertionStatus(arg1:String, arg2:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#setPackageAssertionStatus(java.lang.String, boolean) */
+	public function setPackageAssertionStatus(packageName:String, enabled:Bool):Void;
 
-	public function setDefaultAssertionStatus(arg1:Bool):Void;
-
-	public function setPackageAssertionStatus(arg1:String, arg2:Bool):Void;
-
-	private function setSigners(arg1:Class<Dynamic>, arg2:NativeArray<Dynamic>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#setSigners(java.lang.Class, java.lang.Object[]) */
+	private function setSigners(c:Class<Dynamic>, signers:NativeArray<Dynamic>):Void;
 
 }
 

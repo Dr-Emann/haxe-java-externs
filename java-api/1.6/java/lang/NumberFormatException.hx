@@ -1,16 +1,15 @@
 package java.lang;
 
 import java.lang.IllegalArgumentException;
-import java.lang.NumberFormatException;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html */
+@:native("java.lang.NumberFormatException")
 extern class NumberFormatException extends IllegalArgumentException
 {
-	private static var serialVersionUID:haxe.Int64;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html#NumberFormatException() */
 	@:overload(function ():Void {})
-	public function new(arg1:String):Void;
-
-	private static function forInputString(arg1:String):NumberFormatException;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html#NumberFormatException(java.lang.String) */
+	public function new(s:String):Void;
 
 }
 

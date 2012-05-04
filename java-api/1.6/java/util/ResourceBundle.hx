@@ -3,53 +3,68 @@ package java.util;
 import java.NativeArray;
 import java.lang.ClassLoader;
 import java.lang.Object;
-import java.lang.ref.ReferenceQueue;
 import java.util.Enumeration;
 import java.util.Locale;
-import java.util.ResourceBundle;
+import java.util.ResourceBundle_Control;
 import java.util.Set;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html */
+@:native("java.util.ResourceBundle")
 extern class ResourceBundle extends Object
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#parent */
 	private var parent:ResourceBundle;
 
-	//private static var $assertionsDisabled:Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#ResourceBundle() */
 	public function new():Void;
 
-	//private static function access$200():ReferenceQueue<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#clearCache(java.lang.ClassLoader) */
+	@:overload(function (loader:ClassLoader):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#clearCache() */
+	static public function clearCache():Void;
 
-	@:overload(function clearCache(arg1:ClassLoader):Void {})
-	public static function clearCache():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#containsKey(java.lang.String) */
+	public function containsKey(key:String):Bool;
 
-	public function containsKey(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale, java.lang.ClassLoader, java.util.ResourceBundle$Control) */
+	@:overload(function (baseName:String, targetLocale:Locale, loader:ClassLoader, control:ResourceBundle_Control):ResourceBundle {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale, java.lang.ClassLoader) */
+	@:overload(function (baseName:String, locale:Locale, loader:ClassLoader):ResourceBundle {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale, java.util.ResourceBundle$Control) */
+	@:overload(function (baseName:String, targetLocale:Locale, control:ResourceBundle_Control):ResourceBundle {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale) */
+	@:overload(function (baseName:String, locale:Locale):ResourceBundle {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.ResourceBundle$Control) */
+	@:overload(function (baseName:String, control:ResourceBundle_Control):ResourceBundle {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String) */
+	static public function getBundle(baseName:String):ResourceBundle;
 
-	@:overload(function getBundle(arg1:String, arg2:Locale, arg3:Dynamic):ResourceBundle {})
-	@:overload(function getBundle(arg1:String):ResourceBundle {})
-	@:overload(function getBundle(arg1:String, arg2:Dynamic):ResourceBundle {})
-	@:overload(function getBundle(arg1:String, arg2:Locale):ResourceBundle {})
-	@:overload(function getBundle(arg1:String, arg2:Locale, arg3:ClassLoader, arg4:Dynamic):ResourceBundle {})
-	public static function getBundle(arg1:String, arg2:Locale, arg3:ClassLoader):ResourceBundle;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getKeys() */
 	public function getKeys():Enumeration<String>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getLocale() */
 	public function getLocale():Locale;
 
-	public function getObject(arg1:String):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getObject(java.lang.String) */
+	public function getObject(key:String):Dynamic;
 
-	public function getString(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getString(java.lang.String) */
+	public function getString(key:String):String;
 
-	public function getStringArray(arg1:String):NativeArray<String>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getStringArray(java.lang.String) */
+	public function getStringArray(key:String):NativeArray<String>;
 
-	//@@ M.I. Problems with visibility.
-	//
-	/*private*/ function handleGetObject(arg1:String):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#handleGetObject(java.lang.String) */
+	private function handleGetObject(key:String):Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#handleKeySet() */
 	private function handleKeySet():Set<String>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#keySet() */
 	public function keySet():Set<String>;
 
-	private function setParent(arg1:ResourceBundle):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#setParent(java.util.ResourceBundle) */
+	private function setParent(parent:ResourceBundle):Void;
 
 }
 

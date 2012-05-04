@@ -1,61 +1,74 @@
 package java.util;
 
-import java.NativeArray;
 import java.util.Date;
 import java.util.TimeZone;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html */
+@:native("java.util.SimpleTimeZone")
 extern class SimpleTimeZone extends TimeZone
 {
-	public static var WALL_TIME:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#SimpleTimeZone(int, java.lang.String, int, int, int, int, int, int, int, int) */
+	@:overload(function (rawOffset:Int, ID:String, startMonth:Int, startDay:Int, startDayOfWeek:Int, startTime:Int, endMonth:Int, endDay:Int, endDayOfWeek:Int, endTime:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#SimpleTimeZone(int, java.lang.String, int, int, int, int, int, int, int, int, int) */
+	@:overload(function (rawOffset:Int, ID:String, startMonth:Int, startDay:Int, startDayOfWeek:Int, startTime:Int, endMonth:Int, endDay:Int, endDayOfWeek:Int, endTime:Int, dstSavings:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#SimpleTimeZone(int, java.lang.String, int, int, int, int, int, int, int, int, int, int, int) */
+	@:overload(function (rawOffset:Int, ID:String, startMonth:Int, startDay:Int, startDayOfWeek:Int, startTime:Int, startTimeMode:Int, endMonth:Int, endDay:Int, endDayOfWeek:Int, endTime:Int, endTimeMode:Int, dstSavings:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#SimpleTimeZone(int, java.lang.String) */
+	public function new(rawOffset:Int, ID:String):Void;
 
-	public static var STANDARD_TIME:Int;
-
-	public static var UTC_TIME:Int;
-
-	private static var serialVersionUID:haxe.Int64;
-
-	private static var currentSerialVersion:Int;
-
-	@:overload(function (arg1:Int, arg2:String, arg3:Int, arg4:Int, arg5:Int, arg6:Int, arg7:Int, arg8:Int, arg9:Int, arg10:Int):Void {})
-	@:overload(function (arg1:Int, arg2:String, arg3:Int, arg4:Int, arg5:Int, arg6:Int, arg7:Int, arg8:Int, arg9:Int, arg10:Int, arg11:Int):Void {})
-	@:overload(function (arg1:Int, arg2:String, arg3:Int, arg4:Int, arg5:Int, arg6:Int, arg7:Int, arg8:Int, arg9:Int, arg10:Int, arg11:Int, arg12:Int, arg13:Int):Void {})
-	public function new(arg1:Int, arg2:String):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#getDSTSavings() */
 	override public function getDSTSavings():Int;
 
-	@:overload(function getOffset(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int, arg6:Int):Int {})
-	override public function getOffset(arg1:haxe.Int64):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#getOffset(int, int, int, int, int, int) */
+	@:overload(function (era:Int, year:Int, month:Int, day:Int, dayOfWeek:Int, millis:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#getOffset(long) */
+	override public function getOffset(date:haxe.Int64):Int;
 
-	override private function getOffsets(arg1:haxe.Int64, arg2:NativeArray<Int>):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#getRawOffset() */
 	override public function getRawOffset():Int;
 
-	override public function hasSameRules(arg1:TimeZone):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#hasSameRules(java.util.TimeZone) */
+	override public function hasSameRules(other:TimeZone):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#hashCode() */
 	override public function hashCode():Int;
 
-	override public function inDaylightTime(arg1:Date):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#inDaylightTime(java.util.Date) */
+	override public function inDaylightTime(date:Date):Bool;
 
-	public function setDSTSavings(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setDSTSavings(int) */
+	public function setDSTSavings(millisSavedDuringDST:Int):Void;
 
-	@:overload(function setEndRule(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Bool):Void {})
-	@:overload(function setEndRule(arg1:Int, arg2:Int, arg3:Int):Void {})
-	public function setEndRule(arg1:Int, arg2:Int, arg3:Int, arg4:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setEndRule(int, int, int, int, boolean) */
+	@:overload(function (endMonth:Int, endDay:Int, endDayOfWeek:Int, endTime:Int, after:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setEndRule(int, int, int, int) */
+	@:overload(function (endMonth:Int, endDay:Int, endDayOfWeek:Int, endTime:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setEndRule(int, int, int) */
+	public function setEndRule(endMonth:Int, endDay:Int, endTime:Int):Void;
 
-	override public function setRawOffset(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setRawOffset(int) */
+	override public function setRawOffset(offsetMillis:Int):Void;
 
-	@:overload(function setStartRule(arg1:Int, arg2:Int, arg3:Int):Void {})
-	@:overload(function setStartRule(arg1:Int, arg2:Int, arg3:Int, arg4:Int):Void {})
-	public function setStartRule(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setStartRule(int, int, int, int, boolean) */
+	@:overload(function (startMonth:Int, startDay:Int, startDayOfWeek:Int, startTime:Int, after:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setStartRule(int, int, int, int) */
+	@:overload(function (startMonth:Int, startDay:Int, startDayOfWeek:Int, startTime:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setStartRule(int, int, int) */
+	public function setStartRule(startMonth:Int, startDay:Int, startTime:Int):Void;
 
-	public function setStartYear(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#setStartYear(int) */
+	public function setStartYear(year:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#toString() */
 	override public function toString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/SimpleTimeZone.html#useDaylightTime() */
 	override public function useDaylightTime():Bool;
 
 }

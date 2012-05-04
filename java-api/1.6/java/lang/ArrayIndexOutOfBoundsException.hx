@@ -2,11 +2,16 @@ package java.lang;
 
 import java.lang.IndexOutOfBoundsException;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html */
+@:native("java.lang.ArrayIndexOutOfBoundsException")
 extern class ArrayIndexOutOfBoundsException extends IndexOutOfBoundsException
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html#ArrayIndexOutOfBoundsException() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:Int):Void {})
-	public function new(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html#ArrayIndexOutOfBoundsException(int) */
+	@:overload(function (index:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html#ArrayIndexOutOfBoundsException(java.lang.String) */
+	public function new(index:String):Void;
 
 }
 

@@ -3,92 +3,112 @@ package java.io;
 import java.NativeArray;
 import java.StdTypes;
 import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
+import java.io.ObjectOutputStream_PutField;
 import java.io.ObjectStreamClass;
 import java.io.ObjectStreamConstants;
 import java.io.OutputStream;
 import java.lang.Class;
+import java.lang.Number;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html */
+@:native("java.io.ObjectOutputStream")
 extern class ObjectOutputStream extends OutputStream, implements ObjectOutput, implements ObjectStreamConstants
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#ObjectOutputStream() */
 	@:overload(function ():Void {})
-	public function new(arg1:OutputStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#ObjectOutputStream(java.io.OutputStream) */
+	public function new(out:OutputStream):Void;
 
-	//private static function access$000(arg1:ObjectOutputStream):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#annotateClass(java.lang.Class) */
+	private function annotateClass(cl:Class<Dynamic>):Void;
 
-	//private static function access$100():Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#annotateProxyClass(java.lang.Class) */
+	private function annotateProxyClass(cl:Class<Dynamic>):Void;
 
-	//private static function access$200(arg1:ObjectOutputStream):Dynamic;
-
-	//private static function access$300(arg1:ObjectOutputStream, arg2:Dynamic, arg3:Bool):Void;
-
-	//private static function access$400(arg1:NativeArray<Float>, arg2:Int, arg3:NativeArray<Int8>, arg4:Int, arg5:Int):Void;
-
-	//private static function access$500(arg1:NativeArray<Float>, arg2:Int, arg3:NativeArray<Int8>, arg4:Int, arg5:Int):Void;
-
-	private function annotateClass(arg1:Class<Dynamic>):Void;
-
-	private function annotateProxyClass(arg1:Class<Dynamic>):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#close() */
 	override public function close():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#defaultWriteObject() */
 	public function defaultWriteObject():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#drain() */
 	private function drain():Void;
 
-	private function enableReplaceObject(arg1:Bool):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#enableReplaceObject(boolean) */
+	private function enableReplaceObject(enable:Bool):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#flush() */
 	override public function flush():Void;
 
-	private function getProtocolVersion():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#putFields() */
+	public function putFields():ObjectOutputStream_PutField;
 
-	public function putFields():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#replaceObject(java.lang.Object) */
+	private function replaceObject(obj:Dynamic):Dynamic;
 
-	private function replaceObject(arg1:Dynamic):Dynamic;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#reset() */
 	public function reset():Void;
 
-	public function useProtocolVersion(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#useProtocolVersion(int) */
+	public function useProtocolVersion(version:Int):Void;
 
-	@:overload(function write(arg1:Int):Void {})
-	@:overload(function write(arg1:NativeArray<Int8>):Void {})
-	override public function write(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(byte[], int, int) */
+	@:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(int) */
+	@:overload(function (val:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(byte[]) */
+	override public function write(buf:NativeArray<Int8>):Void;
 
-	public function writeBoolean(arg1:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeBoolean(boolean) */
+	public function writeBoolean(val:Bool):Void;
 
-	public function writeByte(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeByte(int) */
+	public function writeByte(val:Int):Void;
 
-	public function writeBytes(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeBytes(java.lang.String) */
+	public function writeBytes(str:String):Void;
 
-	public function writeChar(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeChar(int) */
+	public function writeChar(val:Int):Void;
 
-	public function writeChars(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeChars(java.lang.String) */
+	public function writeChars(str:String):Void;
 
-	private function writeClassDescriptor(arg1:ObjectStreamClass):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeClassDescriptor(java.io.ObjectStreamClass) */
+	private function writeClassDescriptor(desc:ObjectStreamClass):Void;
 
-	public function writeDouble(arg1:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeDouble(double) */
+	public function writeDouble(val:StdFloat):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeFields() */
 	public function writeFields():Void;
 
-	public function writeFloat(arg1:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeFloat(float) */
+	public function writeFloat(val:StdFloat):Void;
 
-	public function writeInt(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeInt(int) */
+	public function writeInt(val:Int):Void;
 
-	public function writeLong(arg1:haxe.Int64):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeLong(long) */
+	public function writeLong(val:haxe.Int64):Void;
 
-	public function writeObject(arg1:Dynamic):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeObject(java.lang.Object) */
+	public function writeObject(obj:Dynamic):Void;
 
-	private function writeObjectOverride(arg1:Dynamic):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeObjectOverride(java.lang.Object) */
+	private function writeObjectOverride(obj:Dynamic):Void;
 
-	public function writeShort(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeShort(int) */
+	public function writeShort(val:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeStreamHeader() */
 	private function writeStreamHeader():Void;
 
-	private function writeTypeString(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeUTF(java.lang.String) */
+	public function writeUTF(str:String):Void;
 
-	public function writeUTF(arg1:String):Void;
-
-	public function writeUnshared(arg1:Dynamic):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeUnshared(java.lang.Object) */
+	public function writeUnshared(obj:Dynamic):Void;
 
 }
 

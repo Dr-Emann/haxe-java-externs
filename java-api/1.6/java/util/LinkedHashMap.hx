@@ -1,44 +1,40 @@
 package java.util;
 
-import java.NativeArray;
+import java.lang.Number;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map_Entry;
 
-extern class LinkedHashMap<K : (Dynamic), V : (Dynamic)> extends HashMap<K,V>, implements Map<K,V>
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html */
+@:native("java.util.LinkedHashMap")
+extern class LinkedHashMap<K : (Dynamic), V : (Dynamic)> extends HashMap<K, V>, implements Map<K, V>
 {
-	@:overload(function (arg1:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#LinkedHashMap(int) */
+	@:overload(function (initialCapacity:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#LinkedHashMap() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:Map<K,V>):Void {})
-	@:overload(function (arg1:Int, arg2:Float, arg3:Bool):Void {})
-	public function new(arg1:Int, arg2:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#LinkedHashMap(java.util.Map) */
+	@:overload(function (initialCapacity:Map<K, V>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#LinkedHashMap(int, float, boolean) */
+	@:overload(function (initialCapacity:Int, loadFactor:StdFloat, accessOrder:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#LinkedHashMap(int, float) */
+	public function new(initialCapacity:Int, loadFactor:StdFloat):Void;
 
-	//private static function access$000(arg1:LinkedHashMap<Dynamic, Dynamic>):Bool;
-
-	//private static function access$100(arg1:LinkedHashMap<Dynamic, Dynamic>):Dynamic;
-
-	override private function addEntry(arg1:Int, arg2:K, arg3:V, arg4:Int):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#clear() */
 	override public function clear():Void;
 
-	override public function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#containsValue(java.lang.Object) */
+	override public function containsValue(value:Dynamic):Bool;
 
-	override private function createEntry(arg1:Int, arg2:K, arg3:V, arg4:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#get(java.lang.Object) */
+	override public function get(key:Dynamic):V;
 
-	override public function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#removeEldestEntry(java.util.Map$Entry) */
+	private function removeEldestEntry(eldest:Map_Entry<K, V>):Bool;
 
-	override private function init():Void;
-
-	override private function newEntryIterator():java.util.Iterator<Dynamic>;
-
-	override private function newKeyIterator():java.util.Iterator<K>;
-
-	override private function newValueIterator():java.util.Iterator<V>;
-
-	private function removeEldestEntry(arg1:Dynamic):Bool;
-
-	override private function transfer(arg1:NativeArray<Dynamic>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html#values() */
+	public function values():Collection<V>;
 
 }
 

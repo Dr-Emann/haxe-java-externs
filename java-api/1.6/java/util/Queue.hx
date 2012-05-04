@@ -1,48 +1,28 @@
 package java.util;
 
-import java.NativeArray;
 import java.util.Collection;
-import java.util.Iterator;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html */
+@:native("java.util.Queue")
 extern interface Queue<E : (Dynamic)> implements Collection<E>
 {
-	function add(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#add(java.lang.Object) */
+	public function add(e:E):Bool;
 
-	function addAll(arg1:Collection<E>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#element() */
+	public function element():E;
 
-	function clear():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#offer(java.lang.Object) */
+	public function offer(e:E):Bool;
 
-	function contains(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#peek() */
+	public function peek():E;
 
-	function containsAll(arg1:Collection<Dynamic>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#poll() */
+	public function poll():E;
 
-	function element():E;
-
-	function equals(arg1:Dynamic):Bool;
-
-	function hashCode():Int;
-
-	function isEmpty():Bool;
-
-	function iterator():java.util.Iterator<E>;
-
-	function offer(arg1:E):Bool;
-
-	function peek():E;
-
-	function poll():E;
-
-	@:overload(function remove():E {})
-	function remove(arg1:Dynamic):Bool;
-
-	function removeAll(arg1:Collection<Dynamic>):Bool;
-
-	function retainAll(arg1:Collection<Dynamic>):Bool;
-
-	function size():Int;
-
-	@:overload(function toArray<T> (arg1:NativeArray<T>):NativeArray<T> {})
-	function toArray():NativeArray<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#remove() */
+	public function remove():E;
 
 }
 

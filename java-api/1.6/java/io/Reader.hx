@@ -7,29 +7,44 @@ import java.lang.Object;
 import java.lang.Readable;
 import java.nio.CharBuffer;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html */
+@:native("java.io.Reader")
 extern class Reader extends Object, implements Readable, implements Closeable
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#lock */
 	private var lock:Dynamic;
 
-	@:overload(function (arg1:Dynamic):Void {})
-	public function new():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#Reader(java.lang.Object) */
+	@:overload(function (lock:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#Reader() */
+	private function new():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#close() */
 	public function close():Void;
 
-	public function mark(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#mark(int) */
+	public function mark(readAheadLimit:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#markSupported() */
 	public function markSupported():Bool;
 
-	@:overload(function read():Int {})
-	@:overload(function read(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int {})
-	@:overload(function read(arg1:NativeArray<Char16>):Int {})
-	public function read(arg1:CharBuffer):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(char[], int, int) */
+	@:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(char[]) */
+	@:overload(function (cbuf:NativeArray<Char16>):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(java.nio.CharBuffer) */
+	@:overload(function (target:CharBuffer):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read() */
+	public function read():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#ready() */
 	public function ready():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#reset() */
 	public function reset():Void;
 
-	public function skip(arg1:haxe.Int64):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#skip(long) */
+	public function skip(n:haxe.Int64):haxe.Int64;
 
 }
 

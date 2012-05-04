@@ -2,67 +2,67 @@ package java.lang;
 
 import java.NativeArray;
 import java.lang.Class;
-import java.lang.ClassLoader;
 import java.lang.Object;
-import java.lang.Package;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
 import java.net.URL;
-import java.util.Map;
-import java.util.jar.Manifest;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html */
+@:native("java.lang.Package")
 extern class Package extends Object, implements AnnotatedElement
 {
-	@:overload(function (arg1:String, arg2:Manifest, arg3:URL, arg4:ClassLoader, arg5:Dynamic):Void {})
-	@:overload(function (arg1:String, arg2:Manifest, arg3:URL, arg4:ClassLoader):Void {})
-	public function new(arg1:String, arg2:String, arg3:String, arg4:String, arg5:String, arg6:String, arg7:String, arg8:URL, arg9:ClassLoader):Void;
 
-//	private static function access$000():Map<Dynamic, Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getAnnotation(java.lang.Class) */
+	public function getAnnotation<A>(annotationClass:Class<A>):A;
 
-//	private static function access$100(arg1:String):Manifest;
-
-//	private static function access$200():Map<Dynamic, Dynamic>;
-
-//	private static function access$400():Map<Dynamic, Dynamic>;
-
-	public function getAnnotation<A> (arg1:Class<A>):A;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getAnnotations() */
 	public function getAnnotations():NativeArray<Annotation>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getDeclaredAnnotations() */
 	public function getDeclaredAnnotations():NativeArray<Annotation>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getImplementationTitle() */
 	public function getImplementationTitle():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getImplementationVendor() */
 	public function getImplementationVendor():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getImplementationVersion() */
 	public function getImplementationVersion():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getName() */
 	public function getName():String;
 
-	@:overload(function getPackage(arg1:Class<Dynamic>):Package {})
-	public static function getPackage(arg1:String):Package;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getPackage(java.lang.String) */
+	static public function getPackage(name:String):Package;
 
-	public static function getPackages():NativeArray<Package>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getPackages() */
+	static public function getPackages():NativeArray<Package>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getSpecificationTitle() */
 	public function getSpecificationTitle():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getSpecificationVendor() */
 	public function getSpecificationVendor():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#getSpecificationVersion() */
 	public function getSpecificationVersion():String;
 
-	private static function getSystemPackage(arg1:String):Package;
-
-	private static function getSystemPackages():NativeArray<Package>;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#hashCode() */
 	override public function hashCode():Int;
 
-	public function isAnnotationPresent(arg1:Class<Annotation>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#isAnnotationPresent(java.lang.Class) */
+	public function isAnnotationPresent(annotationClass:Class<Annotation>):Bool;
 
-	public function isCompatibleWith(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#isCompatibleWith(java.lang.String) */
+	public function isCompatibleWith(desired:String):Bool;
 
-	@:overload(function isSealed():Bool {})
-	public function isSealed(arg1:URL):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#isSealed(java.net.URL) */
+	@:overload(function (url:URL):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#isSealed() */
+	public function isSealed():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Package.html#toString() */
 	override public function toString():String;
 
 }

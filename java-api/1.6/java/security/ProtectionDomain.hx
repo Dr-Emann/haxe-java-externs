@@ -8,23 +8,31 @@ import java.security.Permission;
 import java.security.PermissionCollection;
 import java.security.Principal;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html */
+@:native("java.security.ProtectionDomain")
 extern class ProtectionDomain extends Object
 {
-	private static var key:Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#ProtectionDomain(java.security.CodeSource, java.security.PermissionCollection, java.lang.ClassLoader, java.security.Principal[]) */
+	@:overload(function (codesource:CodeSource, permissions:PermissionCollection, classloader:ClassLoader, principals:NativeArray<Principal>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#ProtectionDomain(java.security.CodeSource, java.security.PermissionCollection) */
+	public function new(codesource:CodeSource, permissions:PermissionCollection):Void;
 
-	@:overload(function (arg1:CodeSource, arg2:PermissionCollection, arg3:ClassLoader, arg4:NativeArray<Principal>):Void {})
-	public function new(arg1:CodeSource, arg2:PermissionCollection):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getClassLoader() */
 	public function getClassLoader():ClassLoader;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getCodeSource() */
 	public function getCodeSource():CodeSource;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getPermissions() */
 	public function getPermissions():PermissionCollection;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getPrincipals() */
 	public function getPrincipals():NativeArray<Principal>;
 
-	public function implies(arg1:Permission):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#implies(java.security.Permission) */
+	public function implies(permission:Permission):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#toString() */
 	override public function toString():String;
 
 }

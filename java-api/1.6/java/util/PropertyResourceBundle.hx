@@ -6,15 +6,22 @@ import java.util.Enumeration;
 import java.util.ResourceBundle;
 import java.util.Set;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyResourceBundle.html */
+@:native("java.util.PropertyResourceBundle")
 extern class PropertyResourceBundle extends ResourceBundle
 {
-	@:overload(function (arg1:InputStream):Void {})
-	public function new(arg1:Reader):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyResourceBundle.html#PropertyResourceBundle(java.io.InputStream) */
+	@:overload(function (stream:InputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyResourceBundle.html#PropertyResourceBundle(java.io.Reader) */
+	public function new(stream:Reader):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyResourceBundle.html#getKeys() */
 	override public function getKeys():Enumeration<String>;
 
-	override public function handleGetObject(arg1:String):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyResourceBundle.html#handleGetObject(java.lang.String) */
+	override public function handleGetObject(key:String):Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyResourceBundle.html#handleKeySet() */
 	override private function handleKeySet():Set<String>;
 
 }

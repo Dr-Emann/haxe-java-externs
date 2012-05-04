@@ -2,9 +2,12 @@ package java.io;
 
 import java.io.File;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileFilter.html */
+@:native("java.io.FileFilter")
 extern interface FileFilter
 {
-	function accept(arg1:File):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileFilter.html#accept(java.io.File) */
+	public function accept(pathname:File):Bool;
 
 }
 

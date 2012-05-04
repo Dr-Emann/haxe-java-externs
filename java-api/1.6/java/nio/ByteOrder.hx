@@ -1,19 +1,16 @@
 package java.nio;
 
 import java.lang.Object;
-import java.nio.ByteOrder;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteOrder.html */
+@:native("java.nio.ByteOrder") @:final
 extern class ByteOrder extends Object
 {
-	public static var BIG_ENDIAN:ByteOrder;
 
-	public static var LITTLE_ENDIAN:ByteOrder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteOrder.html#nativeOrder() */
+	static public function nativeOrder():ByteOrder;
 
-	public function new(arg1:String):Void;
-
-	public static function nativeOrder():ByteOrder;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteOrder.html#toString() */
 	override public function toString():String;
 
 }

@@ -2,10 +2,14 @@ package java.lang;
 
 import java.lang.Exception;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalAccessException.html */
+@:native("java.lang.IllegalAccessException")
 extern class IllegalAccessException extends Exception
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalAccessException.html#IllegalAccessException() */
 	@:overload(function ():Void {})
-	public function new(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalAccessException.html#IllegalAccessException(java.lang.String) */
+	public function new(s:String):Void;
 
 }
 

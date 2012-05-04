@@ -6,274 +6,165 @@ import java.lang.Cloneable;
 import java.lang.Comparable;
 import java.lang.Integer;
 import java.lang.Object;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html */
+@:native("java.util.Calendar")
 extern class Calendar extends Object, implements Serializable, implements Cloneable, implements Comparable<Calendar>
 {
-	public static var ERA:Int;
-
-	public static var YEAR:Int;
-
-	public static var MONTH:Int;
-
-	public static var WEEK_OF_YEAR:Int;
-
-	public static var WEEK_OF_MONTH:Int;
-
-	public static var DATE:Int;
-
-	public static var DAY_OF_MONTH:Int;
-
-	public static var DAY_OF_YEAR:Int;
-
-	public static var DAY_OF_WEEK:Int;
-
-	public static var DAY_OF_WEEK_IN_MONTH:Int;
-
-	public static var AM_PM:Int;
-
-	public static var HOUR:Int;
-
-	public static var HOUR_OF_DAY:Int;
-
-	public static var MINUTE:Int;
-
-	public static var SECOND:Int;
-
-	public static var MILLISECOND:Int;
-
-	public static var ZONE_OFFSET:Int;
-
-	public static var DST_OFFSET:Int;
-
-	public static var FIELD_COUNT:Int;
-
-	public static var SUNDAY:Int;
-
-	public static var MONDAY:Int;
-
-	public static var TUESDAY:Int;
-
-	public static var WEDNESDAY:Int;
-
-	public static var THURSDAY:Int;
-
-	public static var FRIDAY:Int;
-
-	public static var SATURDAY:Int;
-
-	public static var JANUARY:Int;
-
-	public static var FEBRUARY:Int;
-
-	public static var MARCH:Int;
-
-	public static var APRIL:Int;
-
-	public static var MAY:Int;
-
-	public static var JUNE:Int;
-
-	public static var JULY:Int;
-
-	public static var AUGUST:Int;
-
-	public static var SEPTEMBER:Int;
-
-	public static var OCTOBER:Int;
-
-	public static var NOVEMBER:Int;
-
-	public static var DECEMBER:Int;
-
-	public static var UNDECIMBER:Int;
-
-	public static var AM:Int;
-
-	public static var PM:Int;
-
-	public static var ALL_STYLES:Int;
-
-	public static var SHORT:Int;
-
-	public static var LONG:Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#fields */
 	private var fields:NativeArray<Int>;
 
-	//private var isSet:NativeArray<Bool>;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#time */
 	private var time:haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#isTimeSet */
 	private var isTimeSet:Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#areFieldsSet */
 	private var areFieldsSet:Bool;
 
-	private var areAllFieldsSet:Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#Calendar(java.util.TimeZone, java.util.Locale) */
+	@:overload(function (zone:TimeZone, aLocale:Locale):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#Calendar() */
+	private function new():Void;
 
-	private static var ALL_FIELDS:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#add(int, int) */
+	public function add(field:Int, amount:Int):Void;
 
-	private static var currentSerialVersion:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#after(java.lang.Object) */
+	public function after(when:Dynamic):Bool;
 
-	private static var serialVersionUID:haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#before(java.lang.Object) */
+	public function before(when:Dynamic):Bool;
 
-	private static var ERA_MASK:Int;
-
-	private static var YEAR_MASK:Int;
-
-	private static var MONTH_MASK:Int;
-
-	private static var WEEK_OF_YEAR_MASK:Int;
-
-	private static var WEEK_OF_MONTH_MASK:Int;
-
-	private static var DAY_OF_MONTH_MASK:Int;
-
-	private static var DATE_MASK:Int;
-
-	private static var DAY_OF_YEAR_MASK:Int;
-
-	private static var DAY_OF_WEEK_MASK:Int;
-
-	private static var DAY_OF_WEEK_IN_MONTH_MASK:Int;
-
-	private static var AM_PM_MASK:Int;
-
-	private static var HOUR_MASK:Int;
-
-	private static var HOUR_OF_DAY_MASK:Int;
-
-	private static var MINUTE_MASK:Int;
-
-	private static var SECOND_MASK:Int;
-
-	private static var MILLISECOND_MASK:Int;
-
-	private static var ZONE_OFFSET_MASK:Int;
-
-	private static var DST_OFFSET_MASK:Int;
-
-	//private static var $assertionsDisabled:Bool;
-
-	@:overload(function (arg1:TimeZone, arg2:Locale):Void {})
-	public function new():Void;
-
-	public function add(arg1:Int, arg2:Int):Void;
-
-	public function after(arg1:Dynamic):Bool;
-
-	public function before(arg1:Dynamic):Bool;
-
-	private function checkDisplayNameParams(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Locale, arg6:Int):Bool;
-
-	@:overload(function clear(arg1:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#clear(int) */
+	@:overload(function (field:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#clear() */
 	public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#clone() */
 	override public function clone():Dynamic;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Calendar):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#compareTo(java.util.Calendar) */
+	public function compareTo(anotherCalendar:Calendar):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#complete() */
 	private function complete():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#computeFields() */
 	private function computeFields():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#computeTime() */
 	private function computeTime():Void;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	public function get(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#get(int) */
+	public function get(field:Int):Int;
 
-	public function getActualMaximum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getActualMaximum(int) */
+	public function getActualMaximum(field:Int):Int;
 
-	public function getActualMinimum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getActualMinimum(int) */
+	public function getActualMinimum(field:Int):Int;
 
-	public static function getAvailableLocales():NativeArray<Locale>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getAvailableLocales() */
+	static public function getAvailableLocales():NativeArray<Locale>;
 
-	public function getDisplayName(arg1:Int, arg2:Int, arg3:Locale):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getDisplayName(int, int, java.util.Locale) */
+	public function getDisplayName(field:Int, style:Int, locale:Locale):String;
 
-	public function getDisplayNames(arg1:Int, arg2:Int, arg3:Locale):Map<String,Integer>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getDisplayNames(int, int, java.util.Locale) */
+	public function getDisplayNames(field:Int, style:Int, locale:Locale):Map<String, Integer>;
 
-	private static function getFieldName(arg1:Int):String;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getFirstDayOfWeek() */
 	public function getFirstDayOfWeek():Int;
 
-	public function getGreatestMinimum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getGreatestMinimum(int) */
+	public function getGreatestMinimum(field:Int):Int;
 
-	@:overload(function getInstance():Calendar {})
-	@:overload(function getInstance(arg1:Locale):Calendar {})
-	@:overload(function getInstance(arg1:TimeZone):Calendar {})
-	public static function getInstance(arg1:TimeZone, arg2:Locale):Calendar;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getInstance(java.util.TimeZone, java.util.Locale) */
+	@:overload(function (zone:TimeZone, aLocale:Locale):Calendar {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getInstance(java.util.Locale) */
+	@:overload(function (aLocale:Locale):Calendar {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getInstance(java.util.TimeZone) */
+	@:overload(function (zone:TimeZone):Calendar {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getInstance() */
+	static public function getInstance():Calendar;
 
-	public function getLeastMaximum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getLeastMaximum(int) */
+	public function getLeastMaximum(field:Int):Int;
 
-	public function getMaximum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getMaximum(int) */
+	public function getMaximum(field:Int):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getMinimalDaysInFirstWeek() */
 	public function getMinimalDaysInFirstWeek():Int;
 
-	public function getMinimum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getMinimum(int) */
+	public function getMinimum(field:Int):Int;
 
-	private function getSetStateFields():Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getTime() */
 	public function getTime():Date;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getTimeInMillis() */
 	public function getTimeInMillis():haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#getTimeZone() */
 	public function getTimeZone():TimeZone;
 
-	private function getZone():TimeZone;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#hashCode() */
 	override public function hashCode():Int;
 
-	private function internalGet(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#internalGet(int) */
+	private function internalGet(field:Int):Int;
 
-	private function internalSet(arg1:Int, arg2:Int):Void;
-
-	private function isExternallySet(arg1:Int):Bool;
-
-	private static function isFieldSet(arg1:Int, arg2:Int):Bool;
-
-	private function isFullyNormalized():Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#isLenient() */
 	public function isLenient():Bool;
 
-	private function isPartiallyNormalized():Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#isSet(int) */
+	public function isSet(field:Int):Bool;
 
-	public function isSet(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#roll(int, boolean) */
+	@:overload(function (field:Int, up:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#roll(int, int) */
+	public function roll(field:Int, amount:Int):Void;
 
-	@:overload(function roll(arg1:Int, arg2:Int):Void {})
-	public function roll(arg1:Int, arg2:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#set(int, int, int, int, int, int) */
+	@:overload(function (year:Int, month:Int, date:Int, hourOfDay:Int, minute:Int, second:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#set(int, int, int, int, int) */
+	@:overload(function (year:Int, month:Int, date:Int, hourOfDay:Int, minute:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#set(int, int, int) */
+	@:overload(function (year:Int, month:Int, date:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#set(int, int) */
+	public function set(field:Int, value:Int):Void;
 
-	private function selectFields():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#setFirstDayOfWeek(int) */
+	public function setFirstDayOfWeek(value:Int):Void;
 
-	@:overload(function set(arg1:Int, arg2:Int):Void {})
-	@:overload(function set(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int, arg6:Int):Void {})
-	@:overload(function set(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int):Void {})
-	public function set(arg1:Int, arg2:Int, arg3:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#setLenient(boolean) */
+	public function setLenient(lenient:Bool):Void;
 
-	private function setFieldsComputed(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#setMinimalDaysInFirstWeek(int) */
+	public function setMinimalDaysInFirstWeek(value:Int):Void;
 
-	private function setFieldsNormalized(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#setTime(java.util.Date) */
+	public function setTime(date:Date):Void;
 
-	public function setFirstDayOfWeek(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#setTimeInMillis(long) */
+	public function setTimeInMillis(millis:haxe.Int64):Void;
 
-	public function setLenient(arg1:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#setTimeZone(java.util.TimeZone) */
+	public function setTimeZone(value:TimeZone):Void;
 
-	public function setMinimalDaysInFirstWeek(arg1:Int):Void;
-
-	public function setTime(arg1:Date):Void;
-
-	public function setTimeInMillis(arg1:haxe.Int64):Void;
-
-	public function setTimeZone(arg1:TimeZone):Void;
-
-	private function setUnnormalized():Void;
-
-	private function setZoneShared(arg1:Bool):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Calendar.html#toString() */
 	override public function toString():String;
 
 }

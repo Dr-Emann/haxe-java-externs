@@ -4,31 +4,39 @@ import java.NativeArray;
 import java.io.File;
 import java.lang.Object;
 import java.lang.Process;
-import java.lang.ProcessBuilder;
 import java.util.List;
 import java.util.Map;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html */
+@:native("java.lang.ProcessBuilder") @:final
 extern class ProcessBuilder extends Object
 {
-	//private static var $assertionsDisabled:Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#ProcessBuilder(java.lang.String[]) */
+	@:overload(function (command:NativeArray<String>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#ProcessBuilder(java.util.List) */
+	public function new(command:List<String>):Void;
 
-	@:overload(function (arg1:NativeArray<String>):Void {})
-	public function new(arg1:List<String>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#command(java.lang.String[]) */
+	@:overload(function (command:NativeArray<String>):ProcessBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#command(java.util.List) */
+	@:overload(function (command:List<String>):ProcessBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#command() */
+	public function command():List<String>;
 
-	@:overload(function command(arg1:NativeArray<String>):ProcessBuilder {})
-	@:overload(function command():List<String> {})
-	public function command(arg1:List<String>):ProcessBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#directory(java.io.File) */
+	@:overload(function (directory:File):ProcessBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#directory() */
+	public function directory():File;
 
-	@:overload(function directory():File {})
-	public function directory(arg1:File):ProcessBuilder;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#environment() */
+	public function environment():Map<String, String>;
 
-	@:overload(function environment(arg1:NativeArray<String>):ProcessBuilder {})
-	public function environment():Map<String,String>;
-
-	@:overload(function redirectErrorStream(arg1:Bool):ProcessBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#redirectErrorStream(boolean) */
+	@:overload(function (redirectErrorStream:Bool):ProcessBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#redirectErrorStream() */
 	public function redirectErrorStream():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ProcessBuilder.html#start() */
 	public function start():Process;
 
 }

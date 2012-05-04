@@ -4,288 +4,217 @@ import java.NativeArray;
 import java.StdTypes;
 import java.io.Serializable;
 import java.lang.CharSequence;
-import java.lang.Character;
-import java.lang.Class;
 import java.lang.Comparable;
 import java.lang.Object;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html */
+@:native("java.lang.Character") @:final
 extern class Character extends Object, implements Serializable, implements Comparable<Character>
 {
-	public static var MIN_RADIX:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#Character(char) */
+	public function new(value:Char16):Void;
 
-	public static var MAX_RADIX:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#charCount(int) */
+	static public function charCount(codePoint:Int):Int;
 
-	public static var MIN_VALUE:Char16;
-
-	public static var MAX_VALUE:Char16;
-
-	public static var TYPE:Class<Character>;
-
-	public static var UNASSIGNED:Int8;
-
-	public static var UPPERCASE_LETTER:Int8;
-
-	public static var LOWERCASE_LETTER:Int8;
-
-	public static var TITLECASE_LETTER:Int8;
-
-	public static var MODIFIER_LETTER:Int8;
-
-	public static var OTHER_LETTER:Int8;
-
-	public static var NON_SPACING_MARK:Int8;
-
-	public static var ENCLOSING_MARK:Int8;
-
-	public static var COMBINING_SPACING_MARK:Int8;
-
-	public static var DECIMAL_DIGIT_NUMBER:Int8;
-
-	public static var LETTER_NUMBER:Int8;
-
-	public static var OTHER_NUMBER:Int8;
-
-	public static var SPACE_SEPARATOR:Int8;
-
-	public static var LINE_SEPARATOR:Int8;
-
-	public static var PARAGRAPH_SEPARATOR:Int8;
-
-	public static var CONTROL:Int8;
-
-	public static var FORMAT:Int8;
-
-	public static var PRIVATE_USE:Int8;
-
-	public static var SURROGATE:Int8;
-
-	public static var DASH_PUNCTUATION:Int8;
-
-	public static var START_PUNCTUATION:Int8;
-
-	public static var END_PUNCTUATION:Int8;
-
-	public static var CONNECTOR_PUNCTUATION:Int8;
-
-	public static var OTHER_PUNCTUATION:Int8;
-
-	public static var MATH_SYMBOL:Int8;
-
-	public static var CURRENCY_SYMBOL:Int8;
-
-	public static var MODIFIER_SYMBOL:Int8;
-
-	public static var OTHER_SYMBOL:Int8;
-
-	public static var INITIAL_QUOTE_PUNCTUATION:Int8;
-
-	public static var FINAL_QUOTE_PUNCTUATION:Int8;
-
-	private static var ERROR:Int;
-
-	public static var DIRECTIONALITY_UNDEFINED:Int8;
-
-	public static var DIRECTIONALITY_LEFT_TO_RIGHT:Int8;
-
-	public static var DIRECTIONALITY_RIGHT_TO_LEFT:Int8;
-
-	public static var DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC:Int8;
-
-	public static var DIRECTIONALITY_EUROPEAN_NUMBER:Int8;
-
-	public static var DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR:Int8;
-
-	public static var DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR:Int8;
-
-	public static var DIRECTIONALITY_ARABIC_NUMBER:Int8;
-
-	public static var DIRECTIONALITY_COMMON_NUMBER_SEPARATOR:Int8;
-
-	public static var DIRECTIONALITY_NONSPACING_MARK:Int8;
-
-	public static var DIRECTIONALITY_BOUNDARY_NEUTRAL:Int8;
-
-	public static var DIRECTIONALITY_PARAGRAPH_SEPARATOR:Int8;
-
-	public static var DIRECTIONALITY_SEGMENT_SEPARATOR:Int8;
-
-	public static var DIRECTIONALITY_WHITESPACE:Int8;
-
-	public static var DIRECTIONALITY_OTHER_NEUTRALS:Int8;
-
-	public static var DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING:Int8;
-
-	public static var DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE:Int8;
-
-	public static var DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING:Int8;
-
-	public static var DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE:Int8;
-
-	public static var DIRECTIONALITY_POP_DIRECTIONAL_FORMAT:Int8;
-
-	public static var MIN_HIGH_SURROGATE:Char16;
-
-	public static var MAX_HIGH_SURROGATE:Char16;
-
-	public static var MIN_LOW_SURROGATE:Char16;
-
-	public static var MAX_LOW_SURROGATE:Char16;
-
-	public static var MIN_SURROGATE:Char16;
-
-	public static var MAX_SURROGATE:Char16;
-
-	public static var MIN_SUPPLEMENTARY_CODE_POINT:Int;
-
-	public static var MIN_CODE_POINT:Int;
-
-	public static var MAX_CODE_POINT:Int;
-
-	public static var SIZE:Int;
-
-	//private static var $assertionsDisabled:Bool;
-
-	public function new(arg1:Char16):Void;
-
-	public static function charCount(arg1:Int):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#charValue() */
 	public function charValue():Char16;
 
-	@:overload(function codePointAt(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int {})
-	@:overload(function codePointAt(arg1:NativeArray<Char16>, arg2:Int):Int {})
-	public static function codePointAt(arg1:CharSequence, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointAt(char[], int, int) */
+	@:overload(function (a:NativeArray<Char16>, index:Int, limit:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointAt(char[], int) */
+	@:overload(function (a:NativeArray<Char16>, index:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointAt(java.lang.CharSequence, int) */
+	static public function codePointAt(seq:CharSequence, index:Int):Int;
 
-	private static function codePointAtImpl(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointBefore(char[], int, int) */
+	@:overload(function (a:NativeArray<Char16>, index:Int, start:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointBefore(char[], int) */
+	@:overload(function (a:NativeArray<Char16>, index:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointBefore(java.lang.CharSequence, int) */
+	static public function codePointBefore(seq:CharSequence, index:Int):Int;
 
-	@:overload(function codePointBefore(arg1:NativeArray<Char16>, arg2:Int):Int {})
-	@:overload(function codePointBefore(arg1:CharSequence, arg2:Int):Int {})
-	public static function codePointBefore(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointCount(char[], int, int) */
+	@:overload(function (a:NativeArray<Char16>, offset:Int, count:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#codePointCount(java.lang.CharSequence, int, int) */
+	static public function codePointCount(seq:CharSequence, beginIndex:Int, endIndex:Int):Int;
 
-	private static function codePointBeforeImpl(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#compareTo(java.lang.Character) */
+	public function compareTo(anotherCharacter:Character):Int;
 
-	@:overload(function codePointCount(arg1:CharSequence, arg2:Int, arg3:Int):Int {})
-	public static function codePointCount(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#digit(char, int) */
+	@:overload(function (ch:Char16, radix:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#digit(int, int) */
+	static public function digit(codePoint:Int, radix:Int):Int;
 
-	private static function codePointCountImpl(arg1:NativeArray<Char16>, arg2:Int, arg3:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Character):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#forDigit(int, int) */
+	static public function forDigit(digit:Int, radix:Int):Char16;
 
-	@:overload(function digit(arg1:Int, arg2:Int):Int {})
-	public static function digit(arg1:Char16, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#getDirectionality(char) */
+	@:overload(function (ch:Char16):Int8 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#getDirectionality(int) */
+	static public function getDirectionality(codePoint:Int):Int8;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#getNumericValue(char) */
+	@:overload(function (ch:Char16):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#getNumericValue(int) */
+	static public function getNumericValue(codePoint:Int):Int;
 
-	public static function forDigit(arg1:Int, arg2:Int):Char16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#getType(char) */
+	@:overload(function (ch:Char16):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#getType(int) */
+	static public function getType(codePoint:Int):Int;
 
-	@:overload(function getDirectionality(arg1:Char16):Int8 {})
-	public static function getDirectionality(arg1:Int):Int8;
-
-	@:overload(function getNumericValue(arg1:Char16):Int {})
-	public static function getNumericValue(arg1:Int):Int;
-
-	@:overload(function getType(arg1:Char16):Int {})
-	public static function getType(arg1:Int):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#hashCode() */
 	override public function hashCode():Int;
 
-	@:overload(function isDefined(arg1:Char16):Bool {})
-	public static function isDefined(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isDefined(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isDefined(int) */
+	static public function isDefined(codePoint:Int):Bool;
 
-	@:overload(function isDigit(arg1:Char16):Bool {})
-	public static function isDigit(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isDigit(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isDigit(int) */
+	static public function isDigit(codePoint:Int):Bool;
 
-	public static function isHighSurrogate(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isHighSurrogate(char) */
+	static public function isHighSurrogate(ch:Char16):Bool;
 
-	@:overload(function isISOControl(arg1:Char16):Bool {})
-	public static function isISOControl(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isISOControl(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isISOControl(int) */
+	static public function isISOControl(codePoint:Int):Bool;
 
-	@:overload(function isIdentifierIgnorable(arg1:Int):Bool {})
-	public static function isIdentifierIgnorable(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isIdentifierIgnorable(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isIdentifierIgnorable(int) */
+	static public function isIdentifierIgnorable(codePoint:Int):Bool;
 
-	@:overload(function isJavaIdentifierPart(arg1:Char16):Bool {})
-	public static function isJavaIdentifierPart(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isJavaIdentifierPart(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isJavaIdentifierPart(int) */
+	static public function isJavaIdentifierPart(codePoint:Int):Bool;
 
-	@:overload(function isJavaIdentifierStart(arg1:Char16):Bool {})
-	public static function isJavaIdentifierStart(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isJavaIdentifierStart(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isJavaIdentifierStart(int) */
+	static public function isJavaIdentifierStart(codePoint:Int):Bool;
 
-	public static function isJavaLetter(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isJavaLetter(char) */
+	static public function isJavaLetter(ch:Char16):Bool;
 
-	public static function isJavaLetterOrDigit(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isJavaLetterOrDigit(char) */
+	static public function isJavaLetterOrDigit(ch:Char16):Bool;
 
-	@:overload(function isLetter(arg1:Char16):Bool {})
-	public static function isLetter(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLetter(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLetter(int) */
+	static public function isLetter(codePoint:Int):Bool;
 
-	@:overload(function isLetterOrDigit(arg1:Int):Bool {})
-	public static function isLetterOrDigit(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLetterOrDigit(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLetterOrDigit(int) */
+	static public function isLetterOrDigit(codePoint:Int):Bool;
 
-	public static function isLowSurrogate(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLowSurrogate(char) */
+	static public function isLowSurrogate(ch:Char16):Bool;
 
-	@:overload(function isLowerCase(arg1:Int):Bool {})
-	public static function isLowerCase(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLowerCase(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isLowerCase(int) */
+	static public function isLowerCase(codePoint:Int):Bool;
 
-	@:overload(function isMirrored(arg1:Int):Bool {})
-	public static function isMirrored(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isMirrored(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isMirrored(int) */
+	static public function isMirrored(codePoint:Int):Bool;
 
-	public static function isSpace(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isSpace(char) */
+	static public function isSpace(ch:Char16):Bool;
 
-	@:overload(function isSpaceChar(arg1:Int):Bool {})
-	public static function isSpaceChar(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isSpaceChar(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isSpaceChar(int) */
+	static public function isSpaceChar(codePoint:Int):Bool;
 
-	public static function isSupplementaryCodePoint(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isSupplementaryCodePoint(int) */
+	static public function isSupplementaryCodePoint(codePoint:Int):Bool;
 
-	public static function isSurrogatePair(arg1:Char16, arg2:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isSurrogatePair(char, char) */
+	static public function isSurrogatePair(high:Char16, low:Char16):Bool;
 
-	@:overload(function isTitleCase(arg1:Char16):Bool {})
-	public static function isTitleCase(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isTitleCase(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isTitleCase(int) */
+	static public function isTitleCase(codePoint:Int):Bool;
 
-	@:overload(function isUnicodeIdentifierPart(arg1:Int):Bool {})
-	public static function isUnicodeIdentifierPart(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isUnicodeIdentifierPart(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isUnicodeIdentifierPart(int) */
+	static public function isUnicodeIdentifierPart(codePoint:Int):Bool;
 
-	@:overload(function isUnicodeIdentifierStart(arg1:Int):Bool {})
-	public static function isUnicodeIdentifierStart(arg1:Char16):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isUnicodeIdentifierStart(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isUnicodeIdentifierStart(int) */
+	static public function isUnicodeIdentifierStart(codePoint:Int):Bool;
 
-	@:overload(function isUpperCase(arg1:Char16):Bool {})
-	public static function isUpperCase(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isUpperCase(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isUpperCase(int) */
+	static public function isUpperCase(codePoint:Int):Bool;
 
-	public static function isValidCodePoint(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isValidCodePoint(int) */
+	static public function isValidCodePoint(codePoint:Int):Bool;
 
-	@:overload(function isWhitespace(arg1:Char16):Bool {})
-	public static function isWhitespace(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isWhitespace(char) */
+	@:overload(function (ch:Char16):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#isWhitespace(int) */
+	static public function isWhitespace(codePoint:Int):Bool;
 
-	@:overload(function offsetByCodePoints(arg1:CharSequence, arg2:Int, arg3:Int):Int {})
-	public static function offsetByCodePoints(arg1:NativeArray<Char16>, arg2:Int, arg3:Int, arg4:Int, arg5:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#offsetByCodePoints(char[], int, int, int, int) */
+	@:overload(function (a:NativeArray<Char16>, start:Int, count:Int, index:Int, codePointOffset:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#offsetByCodePoints(java.lang.CharSequence, int, int) */
+	static public function offsetByCodePoints(seq:CharSequence, index:Int, codePointOffset:Int):Int;
 
-	private static function offsetByCodePointsImpl(arg1:NativeArray<Char16>, arg2:Int, arg3:Int, arg4:Int, arg5:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#reverseBytes(char) */
+	static public function reverseBytes(ch:Char16):Char16;
 
-	public static function reverseBytes(arg1:Char16):Char16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toChars(int, char[], int) */
+	@:overload(function (codePoint:Int, dst:NativeArray<Char16>, dstIndex:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toChars(int) */
+	static public function toChars(codePoint:Int):NativeArray<Char16>;
 
-	@:overload(function toChars(arg1:Int):NativeArray<Char16> {})
-	public static function toChars(arg1:Int, arg2:NativeArray<Char16>, arg3:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toCodePoint(char, char) */
+	static public function toCodePoint(high:Char16, low:Char16):Int;
 
-	public static function toCodePoint(arg1:Char16, arg2:Char16):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toLowerCase(char) */
+	@:overload(function (ch:Char16):Char16 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toLowerCase(int) */
+	static public function toLowerCase(codePoint:Int):Int;
 
-	@:overload(function toLowerCase(arg1:Char16):Char16 {})
-	public static function toLowerCase(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toString() */
+	@:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toString(char) */
+	static public function toString(c:Char16):String;
 
-	override public function toString():String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toTitleCase(char) */
+	@:overload(function (ch:Char16):Char16 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toTitleCase(int) */
+	static public function toTitleCase(codePoint:Int):Int;
 
-	//public static function toString(arg1:Char16):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toUpperCase(char) */
+	@:overload(function (ch:Char16):Char16 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#toUpperCase(int) */
+	static public function toUpperCase(codePoint:Int):Int;
 
-	private static function toSurrogates(arg1:Int, arg2:NativeArray<Char16>, arg3:Int):Void;
-
-	@:overload(function toTitleCase(arg1:Int):Int {})
-	public static function toTitleCase(arg1:Char16):Char16;
-
-	@:overload(function toUpperCase(arg1:Char16):Char16 {})
-	public static function toUpperCase(arg1:Int):Int;
-
-	private static function toUpperCaseCharArray(arg1:Int):NativeArray<Char16>;
-
-	private static function toUpperCaseEx(arg1:Int):Int;
-
-	public static function valueOf(arg1:Char16):Character;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Character.html#valueOf(char) */
+	static public function valueOf(c:Char16):Character;
 
 }
 

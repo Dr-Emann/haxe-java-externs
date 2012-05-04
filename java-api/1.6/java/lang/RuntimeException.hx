@@ -3,14 +3,18 @@ package java.lang;
 import java.lang.Exception;
 import java.lang.Throwable;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimeException.html */
+@:native("java.lang.RuntimeException")
 extern class RuntimeException extends Exception
 {
-	private static var serialVersionUID:haxe.Int64;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimeException.html#RuntimeException() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:String, arg2:Throwable):Void {})
-	public function new(arg1:Throwable):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimeException.html#RuntimeException(java.lang.String) */
+	@:overload(function (message:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimeException.html#RuntimeException(java.lang.String, java.lang.Throwable) */
+	@:overload(function (message:String, cause:Throwable):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimeException.html#RuntimeException(java.lang.Throwable) */
+	public function new(message:Throwable):Void;
 
 }
 

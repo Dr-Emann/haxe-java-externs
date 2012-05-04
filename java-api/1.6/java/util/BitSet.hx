@@ -3,59 +3,86 @@ package java.util;
 import java.io.Serializable;
 import java.lang.Cloneable;
 import java.lang.Object;
-import java.util.BitSet;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html */
+@:native("java.util.BitSet")
 extern class BitSet extends Object, implements Cloneable, implements Serializable
 {
-	//private static var $assertionsDisabled:Bool;
-
-	@:overload(function (arg1:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#BitSet(int) */
+	@:overload(function (nbits:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#BitSet() */
 	public function new():Void;
 
-	public function and(arg1:BitSet):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#and(java.util.BitSet) */
+	public function and(set:BitSet):Void;
 
-	public function andNot(arg1:BitSet):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#andNot(java.util.BitSet) */
+	public function andNot(set:BitSet):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#cardinality() */
 	public function cardinality():Int;
 
-	@:overload(function clear(arg1:Int):Void {})
-	@:overload(function clear(arg1:Int, arg2:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#clear(int, int) */
+	@:overload(function (fromIndex:Int, toIndex:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#clear(int) */
+	@:overload(function (bitIndex:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#clear() */
 	public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	@:overload(function flip(arg1:Int, arg2:Int):Void {})
-	public function flip(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#flip(int, int) */
+	@:overload(function (fromIndex:Int, toIndex:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#flip(int) */
+	public function flip(bitIndex:Int):Void;
 
-	@:overload(function get(arg1:Int):Bool {})
-	public function get(arg1:Int, arg2:Int):BitSet;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#get(int, int) */
+	@:overload(function (fromIndex:Int, toIndex:Int):BitSet {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#get(int) */
+	public function get(bitIndex:Int):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#hashCode() */
 	override public function hashCode():Int;
 
-	public function intersects(arg1:BitSet):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#intersects(java.util.BitSet) */
+	public function intersects(set:BitSet):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#isEmpty() */
 	public function isEmpty():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#length() */
 	public function length():Int;
 
-	public function nextClearBit(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#nextClearBit(int) */
+	public function nextClearBit(fromIndex:Int):Int;
 
-	public function nextSetBit(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#nextSetBit(int) */
+	public function nextSetBit(fromIndex:Int):Int;
 
-	public function or(arg1:BitSet):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#or(java.util.BitSet) */
+	public function or(set:BitSet):Void;
 
-	@:overload(function set(arg1:Int, arg2:Int, arg3:Bool):Void {})
-	@:overload(function set(arg1:Int):Void {})
-	@:overload(function set(arg1:Int, arg2:Bool):Void {})
-	public function set(arg1:Int, arg2:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#set(int, int, boolean) */
+	@:overload(function (fromIndex:Int, toIndex:Int, value:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#set(int, boolean) */
+	@:overload(function (bitIndex:Int, value:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#set(int, int) */
+	@:overload(function (fromIndex:Int, toIndex:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#set(int) */
+	public function set(bitIndex:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#size() */
 	public function size():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#toString() */
 	override public function toString():String;
 
-	public function xor(arg1:BitSet):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/BitSet.html#xor(java.util.BitSet) */
+	public function xor(set:BitSet):Void;
 
 }
 

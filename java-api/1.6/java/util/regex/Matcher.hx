@@ -1,122 +1,103 @@
 package java.util.regex;
 
-import java.NativeArray;
-import java.StdTypes;
 import java.lang.CharSequence;
 import java.lang.Object;
 import java.lang.StringBuffer;
 import java.util.regex.MatchResult;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html */
+@:native("java.util.regex.Matcher") @:final
 extern class Matcher extends Object, implements MatchResult
 {
-	private var parentPattern:Pattern;
 
-	private var groups:NativeArray<Int>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuffer, java.lang.String) */
+	public function appendReplacement(sb:StringBuffer, replacement:String):Matcher;
 
-	private var from:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#appendTail(java.lang.StringBuffer) */
+	public function appendTail(sb:StringBuffer):StringBuffer;
 
-	private var to:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#end(int) */
+	@:overload(function (group:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#end() */
+	public function end():Int;
 
-	private var lookbehindTo:Int;
-
-	private var text:CharSequence;
-
-	private static var ENDANCHOR:Int;
-
-	private static var NOANCHOR:Int;
-
-	private var acceptMode:Int;
-
-	private var first:Int;
-
-	private var last:Int;
-
-	private var oldLast:Int;
-
-	private var lastAppendPosition:Int;
-
-	private var locals:NativeArray<Int>;
-
-	//private var hitEnd:Bool;
-
-	//private var requireEnd:Bool;
-
-	private var transparentBounds:Bool;
-
-	private var anchoringBounds:Bool;
-
-	@:overload(function (arg1:Pattern, arg2:CharSequence):Void {})
-	public function new():Void;
-
-	public function appendReplacement(arg1:StringBuffer, arg2:String):Matcher;
-
-	public function appendTail(arg1:StringBuffer):StringBuffer;
-
-	private function charAt(arg1:Int):Char16;
-
-	@:overload(function end():Int {})
-	public function end(arg1:Int):Int;
-
-	@:overload(function find(arg1:Int):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#find(int) */
+	@:overload(function (start:Int):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#find() */
 	public function find():Bool;
 
-	private function getSubSequence(arg1:Int, arg2:Int):CharSequence;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#group(int) */
+	@:overload(function (group:Int):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#group() */
+	public function group():String;
 
-	private function getTextLength():Int;
-
-	@:overload(function group():String {})
-	public function group(arg1:Int):String;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#groupCount() */
 	public function groupCount():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#hasAnchoringBounds() */
 	public function hasAnchoringBounds():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#hasTransparentBounds() */
 	public function hasTransparentBounds():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#hitEnd() */
 	public function hitEnd():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#lookingAt() */
 	public function lookingAt():Bool;
 
-	private function match(arg1:Int, arg2:Int):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#matches() */
 	public function matches():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#pattern() */
 	public function pattern():Pattern;
 
-	public static function quoteReplacement(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#quoteReplacement(java.lang.String) */
+	static public function quoteReplacement(s:String):String;
 
-	public function region(arg1:Int, arg2:Int):Matcher;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#region(int, int) */
+	public function region(start:Int, end:Int):Matcher;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#regionEnd() */
 	public function regionEnd():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#regionStart() */
 	public function regionStart():Int;
 
-	public function replaceAll(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#replaceAll(java.lang.String) */
+	public function replaceAll(replacement:String):String;
 
-	public function replaceFirst(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#replaceFirst(java.lang.String) */
+	public function replaceFirst(replacement:String):String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#requireEnd() */
 	public function requireEnd():Bool;
 
-	@:overload(function reset():Matcher {})
-	public function reset(arg1:CharSequence):Matcher;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#reset(java.lang.CharSequence) */
+	@:overload(function (input:CharSequence):Matcher {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#reset() */
+	public function reset():Matcher;
 
-	private function search(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#start(int) */
+	@:overload(function (group:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#start() */
+	public function start():Int;
 
-	@:overload(function start():Int {})
-	public function start(arg1:Int):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#toMatchResult() */
 	public function toMatchResult():MatchResult;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#toString() */
 	override public function toString():String;
 
-	public function useAnchoringBounds(arg1:Bool):Matcher;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#useAnchoringBounds(boolean) */
+	public function useAnchoringBounds(b:Bool):Matcher;
 
-	public function usePattern(arg1:Pattern):Matcher;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#usePattern(java.util.regex.Pattern) */
+	public function usePattern(newPattern:Pattern):Matcher;
 
-	public function useTransparentBounds(arg1:Bool):Matcher;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/regex/Matcher.html#useTransparentBounds(boolean) */
+	public function useTransparentBounds(b:Bool):Matcher;
 
 }
 

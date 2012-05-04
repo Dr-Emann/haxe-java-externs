@@ -18,118 +18,160 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.SortedSet;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html */
+@:native("java.util.Collections")
 extern class Collections extends Object
 {
-	public static var EMPTY_SET:Set<Dynamic>;
 
-	public static var EMPTY_LIST:List<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#addAll(java.util.Collection, java.lang.Object[]) */
+	static public function addAll<T>(c:Collection<Dynamic>, elements:NativeArray<T>):Bool;
 
-	public static var EMPTY_MAP:Map<Dynamic, Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#asLifoQueue(java.util.Deque) */
+	static public function asLifoQueue<T>(deque:Deque<T>):Queue<T>;
 
-	public function new():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#binarySearch(java.util.List, java.lang.Object, java.util.Comparator) */
+	@:overload(function <T>(list:List<T>, key:T, c:Comparator<Dynamic>):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#binarySearch(java.util.List, java.lang.Object) */
+	static public function binarySearch<T>(list:List<Comparable<Dynamic>>, key:T):Int;
 
-	//private static function access$000(arg1:Dynamic, arg2:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#checkedCollection(java.util.Collection, java.lang.Class) */
+	static public function checkedCollection<E>(c:Collection<E>, type:Class<E>):Collection<E>;
 
-	public static function addAll<T> (arg1:Collection<Dynamic>, arg2:NativeArray<T>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#checkedList(java.util.List, java.lang.Class) */
+	static public function checkedList<E>(list:List<E>, type:Class<E>):List<E>;
 
-	public static function asLifoQueue<T> (arg1:Deque<T>):Queue<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#checkedMap(java.util.Map, java.lang.Class, java.lang.Class) */
+	static public function checkedMap<K, V>(m:Map<K, V>, keyType:Class<K>, valueType:Class<V>):Map<K, V>;
 
-	@:overload(function binarySearch<T> (arg1:List<Comparable<Dynamic>>, arg2:T):Int {})
-	public static function binarySearch<T> (arg1:List<T>, arg2:T, arg3:Comparator<Dynamic>):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#checkedSet(java.util.Set, java.lang.Class) */
+	static public function checkedSet<E>(s:Set<E>, type:Class<E>):Set<E>;
 
-	public static function checkedCollection<E> (arg1:Collection<E>, arg2:Class<E>):Collection<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#checkedSortedMap(java.util.SortedMap, java.lang.Class, java.lang.Class) */
+	static public function checkedSortedMap<K, V>(m:SortedMap<K, V>, keyType:Class<K>, valueType:Class<V>):SortedMap<K, V>;
 
-	public static function checkedList<E> (arg1:List<E>, arg2:Class<E>):List<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#checkedSortedSet(java.util.SortedSet, java.lang.Class) */
+	static public function checkedSortedSet<E>(s:SortedSet<E>, type:Class<E>):SortedSet<E>;
 
-	public static function checkedMap<K, V> (arg1:Map<K,V>, arg2:Class<K>, arg3:Class<V>):Map<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#copy(java.util.List, java.util.List) */
+	static public function copy<T>(dest:List<Dynamic>, src:List<T>):Void;
 
-	public static function checkedSet<E> (arg1:Set<E>, arg2:Class<E>):Set<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#disjoint(java.util.Collection, java.util.Collection) */
+	static public function disjoint(c1:Collection<Dynamic>, c2:Collection<Dynamic>):Bool;
 
-	public static function checkedSortedMap<K, V> (arg1:SortedMap<K,V>, arg2:Class<K>, arg3:Class<V>):SortedMap<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#emptyList() */
+	static public function emptyList<T>():List<T>;
 
-	public static function checkedSortedSet<E> (arg1:SortedSet<E>, arg2:Class<E>):SortedSet<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#emptyMap() */
+	static public function emptyMap<K, V>():Map<K, V>;
 
-	public static function copy<T> (arg1:List<Dynamic>, arg2:List<T>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#emptySet() */
+	static public function emptySet<T>():Set<T>;
 
-	public static function disjoint(arg1:Collection<Dynamic>, arg2:Collection<Dynamic>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#enumeration(java.util.Collection) */
+	static public function enumeration<T>(c:Collection<T>):Enumeration<T>;
 
-	public static function emptyList<T> ():List<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#fill(java.util.List, java.lang.Object) */
+	static public function fill<T>(list:List<Dynamic>, obj:T):Void;
 
-	public static function emptyMap<K, V> ():Map<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#frequency(java.util.Collection, java.lang.Object) */
+	static public function frequency(c:Collection<Dynamic>, o:Dynamic):Int;
 
-	public static function emptySet<T> ():Set<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#indexOfSubList(java.util.List, java.util.List) */
+	static public function indexOfSubList(source:List<Dynamic>, target:List<Dynamic>):Int;
 
-	public static function enumeration<T> (arg1:Collection<T>):Enumeration<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#lastIndexOfSubList(java.util.List, java.util.List) */
+	static public function lastIndexOfSubList(source:List<Dynamic>, target:List<Dynamic>):Int;
 
-	public static function fill<T> (arg1:List<Dynamic>, arg2:T):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#list(java.util.Enumeration) */
+	static public function list<T>(e:Enumeration<T>):ArrayList<T>;
 
-	public static function frequency(arg1:Collection<Dynamic>, arg2:Dynamic):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#max(java.util.Collection, java.util.Comparator) */
+	@:overload(function <T>(coll:Collection<T>, comp:Comparator<Dynamic>):T {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#max(java.util.Collection) */
+	static public function max<T>(coll:Collection<T>):T;
 
-	public static function indexOfSubList(arg1:List<Dynamic>, arg2:List<Dynamic>):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#min(java.util.Collection, java.util.Comparator) */
+	@:overload(function <T>(coll:Collection<T>, comp:Comparator<Dynamic>):T {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#min(java.util.Collection) */
+	static public function min<T>(coll:Collection<T>):T;
 
-	public static function lastIndexOfSubList(arg1:List<Dynamic>, arg2:List<Dynamic>):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#nCopies(int, java.lang.Object) */
+	static public function nCopies<T>(n:Int, o:T):List<T>;
 
-	public static function list<T> (arg1:Enumeration<T>):ArrayList<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#newSetFromMap(java.util.Map) */
+	static public function newSetFromMap<E>(map:Map<E, Boolean>):Set<E>;
 
-	@:overload(function max<T> (arg1:Collection<T>, arg2:Comparator<Dynamic>):T {})
-	public static function max<T> (arg1:Collection<T>):T;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#replaceAll(java.util.List, java.lang.Object, java.lang.Object) */
+	static public function replaceAll<T>(list:List<T>, oldVal:T, newVal:T):Bool;
 
-	@:overload(function min<T> (arg1:Collection<T>, arg2:Comparator<Dynamic>):T {})
-	public static function min<T> (arg1:Collection<T>):T;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#reverse(java.util.List) */
+	static public function reverse(list:List<Dynamic>):Void;
 
-	public static function nCopies<T> (arg1:Int, arg2:T):List<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#reverseOrder(java.util.Comparator) */
+	@:overload(function <T>(cmp:Comparator<T>):Comparator<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#reverseOrder() */
+	static public function reverseOrder<T>():Comparator<T>;
 
-	public static function newSetFromMap<E> (arg1:Map<E,Boolean>):Set<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#rotate(java.util.List, int) */
+	static public function rotate(list:List<Dynamic>, distance:Int):Void;
 
-	public static function replaceAll<T> (arg1:List<T>, arg2:T, arg3:T):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#shuffle(java.util.List, java.util.Random) */
+	@:overload(function (list:List<Dynamic>, rnd:Random):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#shuffle(java.util.List) */
+	static public function shuffle(list:List<Dynamic>):Void;
 
-	public static function reverse(arg1:List<Dynamic>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#singleton(java.lang.Object) */
+	static public function singleton<T>(o:T):Set<T>;
 
-	@:overload(function reverseOrder<T> ():Comparator<T> {})
-	public static function reverseOrder<T> (arg1:Comparator<T>):Comparator<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#singletonList(java.lang.Object) */
+	static public function singletonList<T>(o:T):List<T>;
 
-	public static function rotate(arg1:List<Dynamic>, arg2:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#singletonMap(java.lang.Object, java.lang.Object) */
+	static public function singletonMap<K, V>(key:K, value:V):Map<K, V>;
 
-	@:overload(function shuffle(arg1:List<Dynamic>):Void {})
-	public static function shuffle(arg1:List<Dynamic>, arg2:Random):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#sort(java.util.List, java.util.Comparator) */
+	@:overload(function <T>(list:List<T>, c:Comparator<Dynamic>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#sort(java.util.List) */
+	static public function sort<T>(list:List<T>):Void;
 
-	public static function singleton<T> (arg1:T):Set<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#swap(java.util.List, int, int) */
+	static public function swap(list:List<Dynamic>, i:Int, j:Int):Void;
 
-	public static function singletonList<T> (arg1:T):List<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#synchronizedCollection(java.util.Collection) */
+	static public function synchronizedCollection<T>(c:Collection<T>):Collection<T>;
 
-	public static function singletonMap<K, V> (arg1:K, arg2:V):Map<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#synchronizedList(java.util.List) */
+	static public function synchronizedList<T>(list:List<T>):List<T>;
 
-	@:overload(function sort<T> (arg1:List<T>, arg2:Comparator<Dynamic>):Void {})
-	public static function sort<T> (arg1:List<T>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#synchronizedMap(java.util.Map) */
+	static public function synchronizedMap<K, V>(m:Map<K, V>):Map<K, V>;
 
-	public static function swap(arg1:List<Dynamic>, arg2:Int, arg3:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#synchronizedSet(java.util.Set) */
+	static public function synchronizedSet<T>(s:Set<T>):Set<T>;
 
-	@:overload(function synchronizedCollection<T> (arg1:Collection<T>):Collection<T> {})
-	private static function synchronizedCollection<T> (arg1:Collection<T>, arg2:Dynamic):Collection<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap) */
+	static public function synchronizedSortedMap<K, V>(m:SortedMap<K, V>):SortedMap<K, V>;
 
-	@:overload(function synchronizedList<T> (arg1:List<T>):List<T> {})
-	private static function synchronizedList<T> (arg1:List<T>, arg2:Dynamic):List<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet) */
+	static public function synchronizedSortedSet<T>(s:SortedSet<T>):SortedSet<T>;
 
-	public static function synchronizedMap<K, V> (arg1:Map<K,V>):Map<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#unmodifiableCollection(java.util.Collection) */
+	static public function unmodifiableCollection<T>(c:Collection<T>):Collection<T>;
 
-	@:overload(function synchronizedSet<T> (arg1:Set<T>, arg2:Dynamic):Set<T> {})
-	public static function synchronizedSet<T> (arg1:Set<T>):Set<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#unmodifiableList(java.util.List) */
+	static public function unmodifiableList<T>(list:List<T>):List<T>;
 
-	public static function synchronizedSortedMap<K, V> (arg1:SortedMap<K,V>):SortedMap<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#unmodifiableMap(java.util.Map) */
+	static public function unmodifiableMap<K, V>(m:Map<K, V>):Map<K, V>;
 
-	public static function synchronizedSortedSet<T> (arg1:SortedSet<T>):SortedSet<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#unmodifiableSet(java.util.Set) */
+	static public function unmodifiableSet<T>(s:Set<T>):Set<T>;
 
-	public static function unmodifiableCollection<T> (arg1:Collection<T>):Collection<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap) */
+	static public function unmodifiableSortedMap<K, V>(m:SortedMap<K, V>):SortedMap<K, V>;
 
-	public static function unmodifiableList<T> (arg1:List<T>):List<T>;
-
-	public static function unmodifiableMap<K, V> (arg1:Map<K,V>):Map<K,V>;
-
-	public static function unmodifiableSet<T> (arg1:Set<T>):Set<T>;
-
-	public static function unmodifiableSortedMap<K, V> (arg1:SortedMap<K,V>):SortedMap<K,V>;
-
-	public static function unmodifiableSortedSet<T> (arg1:SortedSet<T>):SortedSet<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet) */
+	static public function unmodifiableSortedSet<T>(s:SortedSet<T>):SortedSet<T>;
 
 }
 

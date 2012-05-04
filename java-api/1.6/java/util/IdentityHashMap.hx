@@ -1,68 +1,67 @@
 package java.util;
 
-import java.NativeArray;
 import java.io.Serializable;
 import java.lang.Cloneable;
 import java.util.AbstractMap;
 import java.util.Collection;
-import java.util.IdentityHashMap;
 import java.util.Map;
+import java.util.Map_Entry;
 import java.util.Set;
 
-extern class IdentityHashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K,V>, implements Map<K,V>, implements Serializable, implements Cloneable
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html */
+@:native("java.util.IdentityHashMap")
+extern class IdentityHashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K, V>, implements Map<K, V>, implements Serializable, implements Cloneable
 {
-	@:overload(function (arg1:Map<K,V>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#IdentityHashMap(java.util.Map) */
+	@:overload(function (expectedMaxSize:Map<K, V>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#IdentityHashMap() */
 	@:overload(function ():Void {})
-	public function new(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#IdentityHashMap(int) */
+	public function new(expectedMaxSize:Int):Void;
 
-	//private static function access$000(arg1:IdentityHashMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$010(arg1:IdentityHashMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$100(arg1:IdentityHashMap<Dynamic, Dynamic>):NativeArray<Dynamic>;
-
-	//private static function access$1300(arg1:IdentityHashMap<Dynamic, Dynamic>, arg2:Dynamic, arg3:Dynamic):Bool;
-
-	//private static function access$1400(arg1:IdentityHashMap<Dynamic, Dynamic>, arg2:Dynamic, arg3:Dynamic):Bool;
-
-	//private static function access$200(arg1:IdentityHashMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$204(arg1:IdentityHashMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$300(arg1:Int, arg2:Int):Int;
-
-	//private static function access$400(arg1:Dynamic, arg2:Int):Int;
-
-	//private static function access$600(arg1:Dynamic):Dynamic;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#clear() */
 	override public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function containsKey(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#containsKey(java.lang.Object) */
+	override public function containsKey(key:Dynamic):Bool;
 
-	override public function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#containsValue(java.lang.Object) */
+	override public function containsValue(value:Dynamic):Bool;
 
-	override public function entrySet():Set<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#entrySet() */
+	override public function entrySet():Set<Map_Entry<K, V>>;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#equals(java.lang.Object) */
+	override public function equals(o:Dynamic):Bool;
 
-	override public function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#get(java.lang.Object) */
+	override public function get(key:Dynamic):V;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#isEmpty() */
 	override public function isEmpty():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#keySet() */
 	override public function keySet():Set<K>;
 
-	override public function put(arg1:K, arg2:V):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#put(java.lang.Object, java.lang.Object) */
+	override public function put(key:K, value:V):V;
 
-	override public function putAll(arg1:Map<K,V>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#putAll(java.util.Map) */
+	override public function putAll(m:Map<K, V>):Void;
 
-	override public function remove(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#remove(java.lang.Object) */
+	override public function remove(key:Dynamic):V;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#size() */
 	override public function size():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IdentityHashMap.html#values() */
 	override public function values():Collection<V>;
 
 }

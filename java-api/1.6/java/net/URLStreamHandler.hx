@@ -6,39 +6,46 @@ import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html */
+@:native("java.net.URLStreamHandler")
 extern class URLStreamHandler extends Object
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#URLStreamHandler() */
 	public function new():Void;
 
-	//@@ M.I. Problems with visibility.
-	//@@ M.I. Added from Object.
-	//
-	@:overload(function equals(arg1:URL, arg2:URL):Bool {})
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#equals(java.net.URL, java.net.URL) */
+	override public function equals(u1:URL, u2:URL):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#getDefaultPort() */
 	private function getDefaultPort():Int;
 
-	private function getHostAddress(arg1:URL):InetAddress;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#getHostAddress(java.net.URL) */
+	private function getHostAddress(u:URL):InetAddress;
 
-	//@@ M.I. Problems with visibility
-	//@@ M.I. Added from Object.
-	//
-	@:overload(function hashCode(arg1:URL):Int {})
-	override public function hashCode():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#hashCode(java.net.URL) */
+	override private function hashCode(u:URL):Int;
 
-	private function hostsEqual(arg1:URL, arg2:URL):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#hostsEqual(java.net.URL, java.net.URL) */
+	private function hostsEqual(u1:URL, u2:URL):Bool;
 
-	@:overload(function openConnection(arg1:URL, arg2:Proxy):URLConnection {})
-	private function openConnection(arg1:URL):URLConnection;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#openConnection(java.net.URL, java.net.Proxy) */
+	@:overload(function (u:URL, p:Proxy):URLConnection {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#openConnection(java.net.URL) */
+	private function openConnection(u:URL):URLConnection;
 
-	private function parseURL(arg1:URL, arg2:String, arg3:Int, arg4:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#parseURL(java.net.URL, java.lang.String, int, int) */
+	private function parseURL(u:URL, spec:String, start:Int, limit:Int):Void;
 
-	private function sameFile(arg1:URL, arg2:URL):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#sameFile(java.net.URL, java.net.URL) */
+	private function sameFile(u1:URL, u2:URL):Bool;
 
-	@:overload(function setURL(arg1:URL, arg2:String, arg3:String, arg4:Int, arg5:String, arg6:String):Void {})
-	private function setURL(arg1:URL, arg2:String, arg3:String, arg4:Int, arg5:String, arg6:String, arg7:String, arg8:String, arg9:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#setURL(java.net.URL, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
+	@:overload(function (u:URL, protocol:String, host:String, port:Int, authority:String, userInfo:String, path:String, query:String, ref:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#setURL(java.net.URL, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String) */
+	private function setURL(u:URL, protocol:String, host:String, port:Int, file:String, ref:String):Void;
 
-	private function toExternalForm(arg1:URL):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#toExternalForm(java.net.URL) */
+	private function toExternalForm(u:URL):String;
 
 }
 

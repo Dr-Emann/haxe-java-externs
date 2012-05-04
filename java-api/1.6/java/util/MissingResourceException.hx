@@ -1,15 +1,18 @@
 package java.util;
 
 import java.lang.RuntimeException;
-import java.lang.Throwable;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html */
+@:native("java.util.MissingResourceException")
 extern class MissingResourceException extends RuntimeException
 {
-	@:overload(function (arg1:String, arg2:String, arg3:String):Void {})
-	public function new(arg1:String, arg2:String, arg3:String, arg4:Throwable):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html#MissingResourceException(java.lang.String, java.lang.String, java.lang.String) */
+	public function new(s:String, className:String, key:String):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html#getClassName() */
 	public function getClassName():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html#getKey() */
 	public function getKey():String;
 
 }

@@ -2,9 +2,12 @@ package java.lang;
 
 import java.util.Iterator;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Iterable.html */
+@:native("java.lang.Iterable")
 extern interface Iterable<T : (Dynamic)>
 {
-	function iterator():java.util.Iterator<T>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Iterable.html#iterator() */
+	public function iterator():java.util.Iterator<T>;
 
 }
 

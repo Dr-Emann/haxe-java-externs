@@ -1,9 +1,12 @@
 package java.net;
 
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/FileNameMap.html */
+@:native("java.net.FileNameMap")
 extern interface FileNameMap
 {
-	function getContentTypeFor(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/FileNameMap.html#getContentTypeFor(java.lang.String) */
+	public function getContentTypeFor(fileName:String):String;
 
 }
 

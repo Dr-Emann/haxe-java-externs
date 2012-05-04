@@ -1,42 +1,47 @@
 package java.lang;
 
 import java.io.Serializable;
-import java.lang.Boolean;
-import java.lang.Class;
 import java.lang.Comparable;
 import java.lang.Object;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html */
+@:native("java.lang.Boolean") @:final
 extern class Boolean extends Object, implements Serializable, implements Comparable<Boolean>
 {
-	public static var TRUE:Boolean;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#Boolean(java.lang.String) */
+	@:overload(function (value:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#Boolean(boolean) */
+	public function new(value:Bool):Void;
 
-	public static var FALSE:Boolean;
-
-	public static var TYPE:Class<Boolean>;
-
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:Bool):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#booleanValue() */
 	public function booleanValue():Bool;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Boolean):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#compareTo(java.lang.Boolean) */
+	public function compareTo(b:Boolean):Int;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	public static function getBoolean(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#getBoolean(java.lang.String) */
+	static public function getBoolean(name:String):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#hashCode() */
 	override public function hashCode():Int;
 
-	public static function parseBoolean(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#parseBoolean(java.lang.String) */
+	static public function parseBoolean(s:String):Bool;
 
-	override public function toString():String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#toString() */
+	@:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#toString(boolean) */
+	static public function toString(b:Bool):String;
 
-	//public static function toString(arg1:Bool):String;
-
-	@:overload(function valueOf(arg1:String):Boolean {})
-	public static function valueOf(arg1:Bool):Boolean;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#valueOf(boolean) */
+	@:overload(function (b:Bool):Boolean {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html#valueOf(java.lang.String) */
+	static public function valueOf(s:String):Boolean;
 
 }
 

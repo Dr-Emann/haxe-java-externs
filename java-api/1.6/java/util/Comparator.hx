@@ -1,11 +1,15 @@
 package java.util;
 
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html */
+@:native("java.util.Comparator")
 extern interface Comparator<T : (Dynamic)>
 {
-	function compare(arg1:T, arg2:T):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html#compare(java.lang.Object, java.lang.Object) */
+	public function compare(o1:T, o2:T):Int;
 
-	function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html#equals(java.lang.Object) */
+	public function equals(obj:Dynamic):Bool;
 
 }
 

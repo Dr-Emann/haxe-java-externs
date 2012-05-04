@@ -1,92 +1,114 @@
 package java.lang;
 
-import java.NativeArray;
 import java.StdTypes;
-import java.lang.Class;
 import java.lang.Comparable;
-import java.lang.Long;
 import java.lang.Number;
 
-@:final
-extern class Long extends Number, implements Comparable<Long>, implements Int
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html */
+@:native("java.lang.Long") @:final
+extern class Long extends Number, implements Comparable<Long>
 {
-	public static var MIN_VALUE:haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#Long(java.lang.String) */
+	@:overload(function (value:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#Long(long) */
+	public function new(value:haxe.Int64):Void;
 
-	public static var MAX_VALUE:haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#bitCount(long) */
+	static public function bitCount(i:haxe.Int64):Int;
 
-	public static var TYPE:Class<Long>;
-
-	public static var SIZE:Int;
-
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:haxe.Int64):Void;
-
-	public static function bitCount(arg1:haxe.Int64):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#byteValue() */
 	override public function byteValue():Int8;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Long):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#compareTo(java.lang.Long) */
+	public function compareTo(anotherLong:Long):Int;
 
-	public static function decode(arg1:String):Long;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#decode(java.lang.String) */
+	static public function decode(nm:String):Long;
 
-	override public function doubleValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#doubleValue() */
+	override public function doubleValue():StdFloat;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	override public function floatValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#floatValue() */
+	override public function floatValue():StdFloat;
 
-	private static function getChars(arg1:haxe.Int64, arg2:Int, arg3:NativeArray<Char16>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#getLong(java.lang.String, long) */
+	@:overload(function (nm:String, val:haxe.Int64):Long {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#getLong(java.lang.String, java.lang.Long) */
+	@:overload(function (nm:String, val:Long):Long {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#getLong(java.lang.String) */
+	static public function getLong(nm:String):Long;
 
-	@:overload(function getLong(arg1:String, arg2:Long):Long {})
-	@:overload(function getLong(arg1:String, arg2:haxe.Int64):Long {})
-	public static function getLong(arg1:String):Long;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#hashCode() */
 	override public function hashCode():Int;
 
-	public static function highestOneBit(arg1:haxe.Int64):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#highestOneBit(long) */
+	static public function highestOneBit(i:haxe.Int64):haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#intValue() */
 	override public function intValue():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#longValue() */
 	override public function longValue():haxe.Int64;
 
-	public static function lowestOneBit(arg1:haxe.Int64):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#lowestOneBit(long) */
+	static public function lowestOneBit(i:haxe.Int64):haxe.Int64;
 
-	public static function numberOfLeadingZeros(arg1:haxe.Int64):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#numberOfLeadingZeros(long) */
+	static public function numberOfLeadingZeros(i:haxe.Int64):Int;
 
-	public static function numberOfTrailingZeros(arg1:haxe.Int64):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#numberOfTrailingZeros(long) */
+	static public function numberOfTrailingZeros(i:haxe.Int64):Int;
 
-	@:overload(function parseLong(arg1:String):haxe.Int64 {})
-	public static function parseLong(arg1:String, arg2:Int):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#parseLong(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):haxe.Int64 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#parseLong(java.lang.String) */
+	static public function parseLong(s:String):haxe.Int64;
 
-	public static function reverse(arg1:haxe.Int64):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#reverse(long) */
+	static public function reverse(i:haxe.Int64):haxe.Int64;
 
-	public static function reverseBytes(arg1:haxe.Int64):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#reverseBytes(long) */
+	static public function reverseBytes(i:haxe.Int64):haxe.Int64;
 
-	public static function rotateLeft(arg1:haxe.Int64, arg2:Int):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#rotateLeft(long, int) */
+	static public function rotateLeft(i:haxe.Int64, distance:Int):haxe.Int64;
 
-	public static function rotateRight(arg1:haxe.Int64, arg2:Int):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#rotateRight(long, int) */
+	static public function rotateRight(i:haxe.Int64, distance:Int):haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#shortValue() */
 	override public function shortValue():Int16;
 
-	public static function signum(arg1:haxe.Int64):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#signum(long) */
+	static public function signum(i:haxe.Int64):Int;
 
-	private static function stringSize(arg1:haxe.Int64):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toBinaryString(long) */
+	static public function toBinaryString(i:haxe.Int64):String;
 
-	public static function toBinaryString(arg1:haxe.Int64):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toHexString(long) */
+	static public function toHexString(i:haxe.Int64):String;
 
-	public static function toHexString(arg1:haxe.Int64):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toOctalString(long) */
+	static public function toOctalString(i:haxe.Int64):String;
 
-	public static function toOctalString(arg1:haxe.Int64):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toString() */
+	@:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toString(long, int) */
+	@:overload(function (i:haxe.Int64, radix:Int):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toString(long) */
+	static public function toString(i:haxe.Int64):String;
 
-	override public function toString():String;
-
-	//@:overload(function toString(arg1:haxe.Int64, arg2:Int):String {})
-	//public static function toString(arg1:haxe.Int64):String;
-
-	@:overload(function valueOf(arg1:String):Long {})
-	@:overload(function valueOf(arg1:haxe.Int64):Long {})
-	public static function valueOf(arg1:String, arg2:Int):Long;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#valueOf(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Long {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#valueOf(long) */
+	@:overload(function (l:haxe.Int64):Long {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#valueOf(java.lang.String) */
+	static public function valueOf(s:String):Long;
 
 }
 

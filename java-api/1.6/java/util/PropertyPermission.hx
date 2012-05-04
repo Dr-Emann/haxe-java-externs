@@ -4,23 +4,26 @@ import java.security.BasicPermission;
 import java.security.Permission;
 import java.security.PermissionCollection;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html */
+@:native("java.util.PropertyPermission") @:final
 extern class PropertyPermission extends BasicPermission
 {
-	public function new(arg1:String, arg2:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html#PropertyPermission(java.lang.String, java.lang.String) */
+	public function new(name:String, actions:String):Void;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html#getActions() */
 	override public function getActions():String;
 
-	//private static function getActions(arg1:Int):String;
-
-	private function getMask():Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html#hashCode() */
 	override public function hashCode():Int;
 
-	override public function implies(arg1:Permission):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html#implies(java.security.Permission) */
+	override public function implies(p:Permission):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PropertyPermission.html#newPermissionCollection() */
 	override public function newPermissionCollection():PermissionCollection;
 
 }

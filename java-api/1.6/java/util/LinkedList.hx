@@ -7,97 +7,134 @@ import java.util.AbstractSequentialList;
 import java.util.Collection;
 import java.util.Deque;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html */
+@:native("java.util.LinkedList")
 extern class LinkedList<E : (Dynamic)> extends AbstractSequentialList<E>, implements List<E>, implements Deque<E>, implements Cloneable, implements Serializable
 {
-	@:overload(function (arg1:Collection<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#LinkedList(java.util.Collection) */
+	@:overload(function (c:Collection<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#LinkedList() */
 	public function new():Void;
 
-	//private static function access$000(arg1:LinkedList<Dynamic>):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#add(int, java.lang.Object) */
+	@:overload(function (index:Int, element:E):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#add(java.lang.Object) */
+	override public function add(e:E):Bool;
 
-	//private static function access$100(arg1:LinkedList<Dynamic>):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#addAll(int, java.util.Collection) */
+	@:overload(function (index:Int, c:Collection<E>):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#addAll(java.util.Collection) */
+	override public function addAll(c:Collection<E>):Bool;
 
-	//private static function access$200(arg1:LinkedList<Dynamic>, arg2:Dynamic):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#addFirst(java.lang.Object) */
+	public function addFirst(e:E):Void;
 
-	//private static function access$300(arg1:LinkedList<Dynamic>, arg2:Dynamic, arg3:Dynamic):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#addLast(java.lang.Object) */
+	public function addLast(e:E):Void;
 
-	@:overload(function add(arg1:Int, arg2:E):Void {})
-	override public function add(arg1:E):Bool;
-
-	@:overload(function addAll(arg1:Int, arg2:Collection<E>):Bool {})
-	override public function addAll(arg1:Collection<E>):Bool;
-
-	public function addFirst(arg1:E):Void;
-
-	public function addLast(arg1:E):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#clear() */
 	override public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function contains(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#contains(java.lang.Object) */
+	override public function contains(o:Dynamic):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#descendingIterator() */
 	public function descendingIterator():java.util.Iterator<E>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#element() */
 	public function element():E;
 
-	override public function get(arg1:Int):E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#get(int) */
+	override public function get(index:Int):E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#getFirst() */
 	public function getFirst():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#getLast() */
 	public function getLast():E;
 
-	override public function indexOf(arg1:Dynamic):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#hashCode() */
+	override public function hashCode():Int;
 
-	override public function lastIndexOf(arg1:Dynamic):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#indexOf(java.lang.Object) */
+	override public function indexOf(o:Dynamic):Int;
 
-	//@@ M.I. Added from List.
-	//
-	@:overload(function listIterator(arg1:Int):ListIterator<E> {})
-	override public function listIterator():ListIterator<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#iterator() */
+	public function iterator():java.util.Iterator<E>;
 
-	public function offer(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#lastIndexOf(java.lang.Object) */
+	override public function lastIndexOf(o:Dynamic):Int;
 
-	public function offerFirst(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#listIterator(int) */
+	override public function listIterator(index:Int):ListIterator<E>;
 
-	public function offerLast(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#offer(java.lang.Object) */
+	public function offer(e:E):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#offerFirst(java.lang.Object) */
+	public function offerFirst(e:E):Bool;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#offerLast(java.lang.Object) */
+	public function offerLast(e:E):Bool;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#peek() */
 	public function peek():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#peekFirst() */
 	public function peekFirst():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#peekLast() */
 	public function peekLast():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#poll() */
 	public function poll():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#pollFirst() */
 	public function pollFirst():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#pollLast() */
 	public function pollLast():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#pop() */
 	public function pop():E;
 
-	public function push(arg1:E):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#push(java.lang.Object) */
+	public function push(e:E):Void;
 
-	@:overload(function remove():E {})
-	@:overload(function remove(arg1:Int):E {})
-	override public function remove(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove(int) */
+	@:overload(function (index:Int):E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove(java.lang.Object) */
+	@:overload(function (o:Dynamic):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove() */
+	override public function remove():E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#removeFirst() */
 	public function removeFirst():E;
 
-	public function removeFirstOccurrence(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#removeFirstOccurrence(java.lang.Object) */
+	public function removeFirstOccurrence(o:Dynamic):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#removeLast() */
 	public function removeLast():E;
 
-	public function removeLastOccurrence(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#removeLastOccurrence(java.lang.Object) */
+	public function removeLastOccurrence(o:Dynamic):Bool;
 
-	override public function set(arg1:Int, arg2:E):E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#set(int, java.lang.Object) */
+	override public function set(index:Int, element:E):E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#size() */
 	override public function size():Int;
 
-	@:overload(function toArray<T : (Dynamic)> (arg1:NativeArray<T>):NativeArray<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#toArray(java.lang.Object[]) */
+	@:overload(function <T>(a:NativeArray<T>):NativeArray<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#toArray() */
 	override public function toArray():NativeArray<Dynamic>;
 
 }

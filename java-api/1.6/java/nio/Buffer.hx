@@ -1,60 +1,60 @@
 package java.nio;
 
 import java.lang.Object;
-import java.nio.Buffer;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html */
+@:native("java.nio.Buffer")
 extern class Buffer extends Object
 {
-	private var address:haxe.Int64;
 
-	public function new(arg1:Int, arg2:Int, arg3:Int, arg4:Int):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#array() */
 	public function array():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#arrayOffset() */
 	public function arrayOffset():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#capacity() */
 	public function capacity():Int;
 
-	private static function checkBounds(arg1:Int, arg2:Int, arg3:Int):Void;
-
-	@:overload(function checkIndex(arg1:Int):Int {})
-	private function checkIndex(arg1:Int, arg2:Int):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#clear() */
 	public function clear():Buffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#flip() */
 	public function flip():Buffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#hasArray() */
 	public function hasArray():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#hasRemaining() */
 	public function hasRemaining():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#isDirect() */
 	public function isDirect():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#isReadOnly() */
 	public function isReadOnly():Bool;
 
-	@:overload(function limit(arg1:Int):Buffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#limit(int) */
+	@:overload(function (newLimit:Int):Buffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#limit() */
 	public function limit():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#mark() */
 	public function mark():Buffer;
 
-	private function markValue():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#position(int) */
+	@:overload(function (newPosition:Int):Buffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#position() */
+	public function position():Int;
 
-	@:overload(function nextGetIndex(arg1:Int):Int {})
-	private function nextGetIndex():Int;
-
-	@:overload(function nextPutIndex(arg1:Int):Int {})
-	private function nextPutIndex():Int;
-
-	@:overload(function position():Int {})
-	public function position(arg1:Int):Buffer;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#remaining() */
 	public function remaining():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#reset() */
 	public function reset():Buffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html#rewind() */
 	public function rewind():Buffer;
-
-	private function truncate():Void;
 
 }
 

@@ -3,30 +3,20 @@ package java.util;
 import java.lang.Object;
 import java.lang.Runnable;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimerTask.html */
+@:native("java.util.TimerTask")
 extern class TimerTask extends Object, implements Runnable
 {
-	private static var lock:Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimerTask.html#TimerTask() */
+	private function new():Void;
 
-	private var state:Int;
-
-	private static var VIRGIN:Int;
-
-	private static var SCHEDULED:Int;
-
-	private static var EXECUTED:Int;
-
-	private static var CANCELLED:Int;
-
-	private var nextExecutionTime:haxe.Int64;
-
-	private var period:haxe.Int64;
-
-	public function new():Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimerTask.html#cancel() */
 	public function cancel():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimerTask.html#run() */
 	public function run():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimerTask.html#scheduledExecutionTime() */
 	public function scheduledExecutionTime():haxe.Int64;
 
 }

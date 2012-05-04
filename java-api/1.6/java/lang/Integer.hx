@@ -1,104 +1,114 @@
 package java.lang;
 
-import java.NativeArray;
 import java.StdTypes;
-import java.lang.Class;
 import java.lang.Comparable;
-import java.lang.Integer;
 import java.lang.Number;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html */
+@:native("java.lang.Integer") @:final
 extern class Integer extends Number, implements Comparable<Integer>
 {
-	public static var MIN_VALUE:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#Integer(java.lang.String) */
+	@:overload(function (value:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#Integer(int) */
+	public function new(value:Int):Void;
 
-	public static var MAX_VALUE:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#bitCount(int) */
+	static public function bitCount(i:Int):Int;
 
-	public static var TYPE:Class<Integer>;
-
-	private static var digits:NativeArray<Char16>;
-
-	private static var DigitTens:NativeArray<Char16>;
-
-	private static var DigitOnes:NativeArray<Char16>;
-
-	private static var sizeTable:NativeArray<Int>;
-
-	public static var SIZE:Int;
-
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:Int):Void;
-
-	//private static function access$000():String;
-
-	public static function bitCount(arg1:Int):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#byteValue() */
 	override public function byteValue():Int8;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Integer):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#compareTo(java.lang.Integer) */
+	public function compareTo(anotherInteger:Integer):Int;
 
-	public static function decode(arg1:String):Integer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#decode(java.lang.String) */
+	static public function decode(nm:String):Integer;
 
-	override public function doubleValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#doubleValue() */
+	override public function doubleValue():StdFloat;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	override public function floatValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#floatValue() */
+	override public function floatValue():StdFloat;
 
-	private static function getAndRemoveCacheProperties():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#getInteger(java.lang.String, int) */
+	@:overload(function (nm:String, val:Int):Integer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#getInteger(java.lang.String, java.lang.Integer) */
+	@:overload(function (nm:String, val:Integer):Integer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#getInteger(java.lang.String) */
+	static public function getInteger(nm:String):Integer;
 
-	private static function getChars(arg1:Int, arg2:Int, arg3:NativeArray<Char16>):Void;
-
-	@:overload(function getInteger(arg1:String, arg2:Integer):Integer {})
-	@:overload(function getInteger(arg1:String):Integer {})
-	public static function getInteger(arg1:String, arg2:Int):Integer;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#hashCode() */
 	override public function hashCode():Int;
 
-	public static function highestOneBit(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#highestOneBit(int) */
+	static public function highestOneBit(i:Int):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#intValue() */
 	override public function intValue():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#longValue() */
 	override public function longValue():haxe.Int64;
 
-	public static function lowestOneBit(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#lowestOneBit(int) */
+	static public function lowestOneBit(i:Int):Int;
 
-	public static function numberOfLeadingZeros(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#numberOfLeadingZeros(int) */
+	static public function numberOfLeadingZeros(i:Int):Int;
 
-	public static function numberOfTrailingZeros(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#numberOfTrailingZeros(int) */
+	static public function numberOfTrailingZeros(i:Int):Int;
 
-	@:overload(function parseInt(arg1:String):Int {})
-	public static function parseInt(arg1:String, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#parseInt(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#parseInt(java.lang.String) */
+	static public function parseInt(s:String):Int;
 
-	public static function reverse(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#reverse(int) */
+	static public function reverse(i:Int):Int;
 
-	public static function reverseBytes(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#reverseBytes(int) */
+	static public function reverseBytes(i:Int):Int;
 
-	public static function rotateLeft(arg1:Int, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#rotateLeft(int, int) */
+	static public function rotateLeft(i:Int, distance:Int):Int;
 
-	public static function rotateRight(arg1:Int, arg2:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#rotateRight(int, int) */
+	static public function rotateRight(i:Int, distance:Int):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#shortValue() */
 	override public function shortValue():Int16;
 
-	public static function signum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#signum(int) */
+	static public function signum(i:Int):Int;
 
-	private static function stringSize(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#toBinaryString(int) */
+	static public function toBinaryString(i:Int):String;
 
-	public static function toBinaryString(arg1:Int):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#toHexString(int) */
+	static public function toHexString(i:Int):String;
 
-	public static function toHexString(arg1:Int):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#toOctalString(int) */
+	static public function toOctalString(i:Int):String;
 
-	public static function toOctalString(arg1:Int):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#toString() */
+	@:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#toString(int, int) */
+	@:overload(function (i:Int, radix:Int):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#toString(int) */
+	static public function toString(i:Int):String;
 
-	override public function toString():String;
-
-	//@:overload(function toString(arg1:Int, arg2:Int):String {})
-	//public static function toString(arg1:Int):String;
-
-	@:overload(function valueOf(arg1:String, arg2:Int):Integer {})
-	@:overload(function valueOf(arg1:String):Integer {})
-	public static function valueOf(arg1:Int):Integer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#valueOf(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Integer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#valueOf(int) */
+	@:overload(function (i:Int):Integer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#valueOf(java.lang.String) */
+	static public function valueOf(s:String):Integer;
 
 }
 

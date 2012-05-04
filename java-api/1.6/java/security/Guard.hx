@@ -1,9 +1,12 @@
 package java.security;
 
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Guard.html */
+@:native("java.security.Guard")
 extern interface Guard
 {
-	function checkGuard(arg1:Dynamic):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Guard.html#checkGuard(java.lang.Object) */
+	public function checkGuard(object:Dynamic):Void;
 
 }
 

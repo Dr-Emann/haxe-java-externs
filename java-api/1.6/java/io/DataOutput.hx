@@ -2,34 +2,51 @@ package java.io;
 
 import java.NativeArray;
 import java.StdTypes;
+import java.lang.Number;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html */
+@:native("java.io.DataOutput")
 extern interface DataOutput
 {
-	@:overload(function write(arg1:NativeArray<Int8>):Void {})
-	@:overload(function write(arg1:Int):Void {})
-	function write(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(byte[], int, int) */
+	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(int) */
+	@:overload(function (b:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(byte[]) */
+	public function write(b:NativeArray<Int8>):Void;
 
-	function writeBoolean(arg1:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeBoolean(boolean) */
+	public function writeBoolean(v:Bool):Void;
 
-	function writeByte(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeByte(int) */
+	public function writeByte(v:Int):Void;
 
-	function writeBytes(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeBytes(java.lang.String) */
+	public function writeBytes(s:String):Void;
 
-	function writeChar(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeChar(int) */
+	public function writeChar(v:Int):Void;
 
-	function writeChars(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeChars(java.lang.String) */
+	public function writeChars(s:String):Void;
 
-	function writeDouble(arg1:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeDouble(double) */
+	public function writeDouble(v:StdFloat):Void;
 
-	function writeFloat(arg1:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeFloat(float) */
+	public function writeFloat(v:StdFloat):Void;
 
-	function writeInt(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeInt(int) */
+	public function writeInt(v:Int):Void;
 
-	function writeLong(arg1:haxe.Int64):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeLong(long) */
+	public function writeLong(v:haxe.Int64):Void;
 
-	function writeShort(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeShort(int) */
+	public function writeShort(v:Int):Void;
 
-	function writeUTF(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeUTF(java.lang.String) */
+	public function writeUTF(s:String):Void;
 
 }
 

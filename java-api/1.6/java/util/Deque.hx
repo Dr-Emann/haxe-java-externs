@@ -1,83 +1,91 @@
 package java.util;
 
-import java.NativeArray;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.Queue;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html */
+@:native("java.util.Deque")
 extern interface Deque<E : (Dynamic)> implements Queue<E>
 {
-	function add(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#add(java.lang.Object) */
+	public function add(e:E):Bool;
 
-	function addAll(arg1:Collection<E>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#addFirst(java.lang.Object) */
+	public function addFirst(e:E):Void;
 
-	function addFirst(arg1:E):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#addLast(java.lang.Object) */
+	public function addLast(e:E):Void;
 
-	function addLast(arg1:E):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#contains(java.lang.Object) */
+	public function contains(o:Dynamic):Bool;
 
-	function clear():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#descendingIterator() */
+	public function descendingIterator():java.util.Iterator<E>;
 
-	function contains(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#element() */
+	public function element():E;
 
-	function containsAll(arg1:Collection<Dynamic>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#getFirst() */
+	public function getFirst():E;
 
-	function descendingIterator():java.util.Iterator<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#getLast() */
+	public function getLast():E;
 
-	function element():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#iterator() */
+	public function iterator():java.util.Iterator<E>;
 
-	function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#offer(java.lang.Object) */
+	public function offer(e:E):Bool;
 
-	function getFirst():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#offerFirst(java.lang.Object) */
+	public function offerFirst(e:E):Bool;
 
-	function getLast():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#offerLast(java.lang.Object) */
+	public function offerLast(e:E):Bool;
 
-	function hashCode():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#peek() */
+	public function peek():E;
 
-	function isEmpty():Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#peekFirst() */
+	public function peekFirst():E;
 
-	function iterator():java.util.Iterator<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#peekLast() */
+	public function peekLast():E;
 
-	function offer(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#poll() */
+	public function poll():E;
 
-	function offerFirst(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#pollFirst() */
+	public function pollFirst():E;
 
-	function offerLast(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#pollLast() */
+	public function pollLast():E;
 
-	function peek():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#pop() */
+	public function pop():E;
 
-	function peekFirst():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#push(java.lang.Object) */
+	public function push(e:E):Void;
 
-	function peekLast():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#remove(java.lang.Object) */
+	@:overload(function (o:Dynamic):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#remove() */
+	public function remove():E;
 
-	function poll():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#removeFirst() */
+	public function removeFirst():E;
 
-	function pollFirst():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#removeFirstOccurrence(java.lang.Object) */
+	public function removeFirstOccurrence(o:Dynamic):Bool;
 
-	function pollLast():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#removeLast() */
+	public function removeLast():E;
 
-	function pop():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#removeLastOccurrence(java.lang.Object) */
+	public function removeLastOccurrence(o:Dynamic):Bool;
 
-	function push(arg1:E):Void;
-
-	@:overload(function remove():E {})
-	function remove(arg1:Dynamic):Bool;
-
-	function removeAll(arg1:Collection<Dynamic>):Bool;
-
-	function removeFirst():E;
-
-	function removeFirstOccurrence(arg1:Dynamic):Bool;
-
-	function removeLast():E;
-
-	function removeLastOccurrence(arg1:Dynamic):Bool;
-
-	function retainAll(arg1:Collection<Dynamic>):Bool;
-
-	function size():Int;
-
-	@:overload(function toArray<T> (arg1:NativeArray<T>):NativeArray<T> {})
-	function toArray():NativeArray<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#size() */
+	public function size():Int;
 
 }
 

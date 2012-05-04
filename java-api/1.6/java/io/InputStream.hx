@@ -5,25 +5,37 @@ import java.StdTypes;
 import java.io.Closeable;
 import java.lang.Object;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html */
+@:native("java.io.InputStream")
 extern class InputStream extends Object, implements Closeable
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#InputStream() */
 	public function new():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#available() */
 	public function available():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#close() */
 	public function close():Void;
 
-	public function mark(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#mark(int) */
+	public function mark(readlimit:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#markSupported() */
 	public function markSupported():Bool;
 
-	@:overload(function read(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Int {})
-	@:overload(function read(arg1:NativeArray<Int8>):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#read(byte[], int, int) */
+	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#read(byte[]) */
+	@:overload(function (b:NativeArray<Int8>):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#read() */
 	public function read():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#reset() */
 	public function reset():Void;
 
-	public function skip(arg1:haxe.Int64):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html#skip(long) */
+	public function skip(n:haxe.Int64):haxe.Int64;
 
 }
 

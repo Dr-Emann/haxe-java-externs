@@ -1,66 +1,65 @@
 package java.util;
 
-import java.NativeArray;
 import java.io.Serializable;
 import java.lang.Class;
 import java.lang.Cloneable;
 import java.lang.Enum;
 import java.util.AbstractMap;
 import java.util.Collection;
-import java.util.EnumMap;
 import java.util.Map;
+import java.util.Map_Entry;
 import java.util.Set;
 
-extern class EnumMap<K : (Enum<K>), V : (Dynamic)> extends AbstractMap<K,V>, implements Serializable, implements Cloneable
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html */
+@:native("java.util.EnumMap")
+extern class EnumMap<K : (Enum<K>), V : (Dynamic)> extends AbstractMap<K, V>, implements Serializable, implements Cloneable
 {
-	@:overload(function (arg1:Map<K,V>):Void {})
-	@:overload(function (arg1:Class<K>):Void {})
-	public function new(arg1:EnumMap<K,V>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#EnumMap(java.util.Map) */
+	@:overload(function (keyType:Map<K, V>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#EnumMap(java.lang.Class) */
+	@:overload(function (keyType:Class<K>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#EnumMap(java.util.EnumMap) */
+	public function new(keyType:EnumMap<K, V>):Void;
 
-	//private static function access$1000(arg1:EnumMap<Dynamic, Dynamic>, arg2:Dynamic, arg3:Dynamic):Bool;
-
-	//private static function access$1100(arg1:EnumMap<Dynamic, Dynamic>):NativeArray<Enum<Dynamic>>;
-
-	//private static function access$1200(arg1:EnumMap<Dynamic, Dynamic>, arg2:Dynamic):Dynamic;
-
-	//private static function access$1400():Dynamic;
-
-	//private static function access$200(arg1:EnumMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$210(arg1:EnumMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$500(arg1:EnumMap<Dynamic, Dynamic>, arg2:Dynamic):Dynamic;
-
-	//private static function access$600(arg1:EnumMap<Dynamic, Dynamic>):NativeArray<Dynamic>;
-
-	//private static function access$900(arg1:EnumMap<Dynamic, Dynamic>, arg2:Dynamic, arg3:Dynamic):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#clear() */
 	override public function clear():Void;
 
-	@:overload(function clone():EnumMap<K,V> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function containsKey(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#containsKey(java.lang.Object) */
+	override public function containsKey(key:Dynamic):Bool;
 
-	override public function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#containsValue(java.lang.Object) */
+	override public function containsValue(value:Dynamic):Bool;
 
-	override public function entrySet():Set<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#entrySet() */
+	override public function entrySet():Set<Map_Entry<K, V>>;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#equals(java.lang.Object) */
+	override public function equals(o:Dynamic):Bool;
 
-	override public function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#get(java.lang.Object) */
+	override public function get(key:Dynamic):V;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#keySet() */
 	override public function keySet():Set<K>;
 
-	@:overload(function put(arg1:Dynamic, arg2:Dynamic):Dynamic {})
-	override public function put(arg1:K, arg2:V):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#put(java.lang.Object, java.lang.Object) */
+	@:overload(function (p0:Dynamic, p1:Dynamic):Dynamic {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#put(java.lang.Enum, java.lang.Object) */
+	override public function put(key:K, value:V):V;
 
-	override public function putAll(arg1:Map<K,V>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#putAll(java.util.Map) */
+	override public function putAll(m:Map<K, V>):Void;
 
-	override public function remove(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#remove(java.lang.Object) */
+	override public function remove(key:Dynamic):V;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#size() */
 	override public function size():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EnumMap.html#values() */
 	override public function values():Collection<V>;
 
 }

@@ -6,57 +6,58 @@ import java.util.AbstractQueue;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.Iterator;
-import java.util.PriorityQueue;
 import java.util.SortedSet;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html */
+@:native("java.util.PriorityQueue")
 extern class PriorityQueue<E : (Dynamic)> extends AbstractQueue<E>, implements Serializable
 {
-	//private static var $assertionsDisabled:Bool;
-
-	@:overload(function (arg1:Int):Void {})
-	@:overload(function (arg1:Int, arg2:Comparator<Dynamic>):Void {})
-	@:overload(function (arg1:Collection<E>):Void {})
-	@:overload(function (arg1:PriorityQueue<E>):Void {})
-	@:overload(function (arg1:SortedSet<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#PriorityQueue(int) */
+	@:overload(function (initialCapacity:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#PriorityQueue(int, java.util.Comparator) */
+	@:overload(function (initialCapacity:Int, comparator:Comparator<Dynamic>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#PriorityQueue(java.util.Collection) */
+	@:overload(function (initialCapacity:Collection<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#PriorityQueue(java.util.PriorityQueue) */
+	@:overload(function (initialCapacity:PriorityQueue<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#PriorityQueue(java.util.SortedSet) */
+	@:overload(function (initialCapacity:SortedSet<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#PriorityQueue() */
 	public function new():Void;
 
-	//private static function access$100(arg1:PriorityQueue<Dynamic>):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#add(java.lang.Object) */
+	override public function add(e:E):Bool;
 
-	//private static function access$200(arg1:PriorityQueue<Dynamic>):Int;
-
-	//private static function access$300(arg1:PriorityQueue<Dynamic>):NativeArray<Dynamic>;
-
-	//private static function access$400(arg1:PriorityQueue<Dynamic>, arg2:Int):Dynamic;
-
-	override public function add(arg1:E):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#clear() */
 	override public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#comparator() */
 	public function comparator():Comparator<Dynamic>;
 
-	override public function contains(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#contains(java.lang.Object) */
+	override public function contains(o:Dynamic):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#iterator() */
 	override public function iterator():java.util.Iterator<E>;
 
-	//@@ M.I. override missing from AbstractQueue.
-	//
-	override public function offer(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#offer(java.lang.Object) */
+	public function offer(e:E):Bool;
 
-	//@@ M.I. override missing from AbstractQueue.
-	//
-	override public function peek():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#peek() */
+	public function peek():E;
 
-	//@@ M.I. override missing from AbstractQueue.
-	//
-	override public function poll():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#poll() */
+	public function poll():E;
 
-	override public function remove(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#remove(java.lang.Object) */
+	override public function remove(o:Dynamic):Bool;
 
-	private function removeEq(arg1:Dynamic):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#size() */
 	override public function size():Int;
 
-	@:overload(function toArray<T : (Dynamic)> (arg1:NativeArray<T>):NativeArray<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#toArray(java.lang.Object[]) */
+	@:overload(function <T>(a:NativeArray<T>):NativeArray<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/PriorityQueue.html#toArray() */
 	override public function toArray():NativeArray<Dynamic>;
 
 }

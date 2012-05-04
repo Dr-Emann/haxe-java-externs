@@ -1,17 +1,22 @@
 package java.lang.annotation;
 
 import java.lang.Class;
-import java.lang.annotation.Annotation;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html */
+@:native("java.lang.annotation.Annotation")
 extern interface Annotation
 {
-	function annotationType():Class<Annotation>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#annotationType() */
+	public function annotationType():Class<Annotation>;
 
-	function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#equals(java.lang.Object) */
+	public function equals(obj:Dynamic):Bool;
 
-	function hashCode():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#hashCode() */
+	public function hashCode():Int;
 
-	function toString():String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#toString() */
+	public function toString():String;
 
 }
 

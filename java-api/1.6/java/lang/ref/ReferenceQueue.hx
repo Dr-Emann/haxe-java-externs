@@ -2,21 +2,20 @@ package java.lang.ref;
 
 import java.lang.Object;
 import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/ReferenceQueue.html */
+@:native("java.lang.ref.ReferenceQueue")
 extern class ReferenceQueue<T : (Dynamic)> extends Object
 {
-	private static var NULL:ReferenceQueue<Dynamic>;
-
-	private static var ENQUEUED:ReferenceQueue<Dynamic>;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/ReferenceQueue.html#ReferenceQueue() */
 	public function new():Void;
 
-	private function enqueue(arg1:Reference<T>):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/ReferenceQueue.html#poll() */
 	public function poll():Reference<T>;
 
-	@:overload(function remove(arg1:haxe.Int64):Reference<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/ReferenceQueue.html#remove(long) */
+	@:overload(function (timeout:haxe.Int64):Reference<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/ReferenceQueue.html#remove() */
 	public function remove():Reference<T>;
 
 }

@@ -4,96 +4,112 @@ import java.NativeArray;
 import java.StdTypes;
 import java.io.InputStream;
 import java.io.ObjectInput;
-import java.io.ObjectInputStream;
+import java.io.ObjectInputStream_GetField;
 import java.io.ObjectInputValidation;
 import java.io.ObjectStreamClass;
 import java.io.ObjectStreamConstants;
 import java.lang.Class;
+import java.lang.Number;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html */
+@:native("java.io.ObjectInputStream")
 extern class ObjectInputStream extends InputStream, implements ObjectInput, implements ObjectStreamConstants
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#ObjectInputStream() */
 	@:overload(function ():Void {})
-	public function new(arg1:InputStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#ObjectInputStream(java.io.InputStream) */
+	public function new(_in:InputStream):Void;
 
-	//private static function access$000(arg1:ObjectInputStream):Int;
-
-	//private static function access$002(arg1:ObjectInputStream, arg2:Int):Int;
-
-	//private static function access$100(arg1:ObjectInputStream):Dynamic;
-
-	//private static function access$200(arg1:ObjectInputStream):Dynamic;
-
-	//private static function access$300(arg1:ObjectInputStream, arg2:Bool):Dynamic;
-
-	//private static function access$500(arg1:ObjectInputStream):Bool;
-
-	//private static function access$600(arg1:ObjectInputStream):Void;
-
-	//private static function access$700(arg1:NativeArray<Int8>, arg2:Int, arg3:NativeArray<Float>, arg4:Int, arg5:Int):Void;
-
-	//private static function access$800(arg1:NativeArray<Int8>, arg2:Int, arg3:NativeArray<Float>, arg4:Int, arg5:Int):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#available() */
 	override public function available():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#close() */
 	override public function close():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#defaultReadObject() */
 	public function defaultReadObject():Void;
 
-	private function enableResolveObject(arg1:Bool):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#enableResolveObject(boolean) */
+	private function enableResolveObject(enable:Bool):Bool;
 
-	@:overload(function read(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#read(byte[], int, int) */
+	@:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#read() */
 	override public function read():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readBoolean() */
 	public function readBoolean():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readByte() */
 	public function readByte():Int8;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readChar() */
 	public function readChar():Char16;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readClassDescriptor() */
 	private function readClassDescriptor():ObjectStreamClass;
 
-	public function readDouble():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readDouble() */
+	public function readDouble():StdFloat;
 
-	public function readFields():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readFields() */
+	public function readFields():ObjectInputStream_GetField;
 
-	public function readFloat():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readFloat() */
+	public function readFloat():StdFloat;
 
-	@:overload(function readFully(arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void {})
-	public function readFully(arg1:NativeArray<Int8>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readFully(byte[], int, int) */
+	@:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readFully(byte[]) */
+	public function readFully(buf:NativeArray<Int8>):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readInt() */
 	public function readInt():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readLine() */
 	public function readLine():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readLong() */
 	public function readLong():haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readObject() */
 	public function readObject():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readObjectOverride() */
 	private function readObjectOverride():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readShort() */
 	public function readShort():Int16;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readStreamHeader() */
 	private function readStreamHeader():Void;
 
-	private function readTypeString():String;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readUTF() */
 	public function readUTF():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readUnshared() */
 	public function readUnshared():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readUnsignedByte() */
 	public function readUnsignedByte():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#readUnsignedShort() */
 	public function readUnsignedShort():Int;
 
-	public function registerValidation(arg1:ObjectInputValidation, arg2:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation, int) */
+	public function registerValidation(obj:ObjectInputValidation, prio:Int):Void;
 
-	private function resolveClass(arg1:ObjectStreamClass):Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#resolveClass(java.io.ObjectStreamClass) */
+	private function resolveClass(desc:ObjectStreamClass):Class<Dynamic>;
 
-	private function resolveObject(arg1:Dynamic):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#resolveObject(java.lang.Object) */
+	private function resolveObject(obj:Dynamic):Dynamic;
 
-	private function resolveProxyClass(arg1:NativeArray<String>):Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#resolveProxyClass(java.lang.String[]) */
+	private function resolveProxyClass(interfaces:NativeArray<String>):Class<Dynamic>;
 
-	public function skipBytes(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputStream.html#skipBytes(int) */
+	public function skipBytes(len:Int):Int;
 
 }
 

@@ -1,87 +1,72 @@
 package java.util;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Map;
-import java.util.NavigableMap;
+import java.util.Map_Entry;
 import java.util.NavigableSet;
-import java.util.Set;
 import java.util.SortedMap;
 
-extern interface NavigableMap<K : (Dynamic), V : (Dynamic)> implements SortedMap<K,V>
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html */
+@:native("java.util.NavigableMap")
+extern interface NavigableMap<K : (Dynamic), V : (Dynamic)> implements SortedMap<K, V>
 {
-	function ceilingEntry(arg1:K):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#ceilingEntry(java.lang.Object) */
+	public function ceilingEntry(key:K):Map_Entry<K, V>;
 
-	function ceilingKey(arg1:K):K;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#ceilingKey(java.lang.Object) */
+	public function ceilingKey(key:K):K;
 
-	function clear():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#descendingKeySet() */
+	public function descendingKeySet():NavigableSet<K>;
 
-	function comparator():Comparator<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#descendingMap() */
+	public function descendingMap():NavigableMap<K, V>;
 
-	function containsKey(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#firstEntry() */
+	public function firstEntry():Map_Entry<K, V>;
 
-	function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#floorEntry(java.lang.Object) */
+	public function floorEntry(key:K):Map_Entry<K, V>;
 
-	function descendingKeySet():NavigableSet<K>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#floorKey(java.lang.Object) */
+	public function floorKey(key:K):K;
 
-	function descendingMap():NavigableMap<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#headMap(java.lang.Object, boolean) */
+	@:overload(function (toKey:K, inclusive:Bool):NavigableMap<K, V> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#headMap(java.lang.Object) */
+	public function headMap(toKey:K):SortedMap<K, V>;
 
-	function entrySet():Set<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#higherEntry(java.lang.Object) */
+	public function higherEntry(key:K):Map_Entry<K, V>;
 
-	function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#higherKey(java.lang.Object) */
+	public function higherKey(key:K):K;
 
-	function firstEntry():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#lastEntry() */
+	public function lastEntry():Map_Entry<K, V>;
 
-	function firstKey():K;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#lowerEntry(java.lang.Object) */
+	public function lowerEntry(key:K):Map_Entry<K, V>;
 
-	function floorEntry(arg1:K):Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#lowerKey(java.lang.Object) */
+	public function lowerKey(key:K):K;
 
-	function floorKey(arg1:K):K;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#navigableKeySet() */
+	public function navigableKeySet():NavigableSet<K>;
 
-	function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#pollFirstEntry() */
+	public function pollFirstEntry():Map_Entry<K, V>;
 
-	function hashCode():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#pollLastEntry() */
+	public function pollLastEntry():Map_Entry<K, V>;
 
-	@:overload(function headMap(arg1:K, arg2:Bool):NavigableMap<K,V> {})
-	function headMap(arg1:K):SortedMap<K,V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#subMap(java.lang.Object, boolean, java.lang.Object, boolean) */
+	@:overload(function (fromKey:K, fromInclusive:Bool, toKey:K, toInclusive:Bool):NavigableMap<K, V> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#subMap(java.lang.Object, java.lang.Object) */
+	public function subMap(fromKey:K, toKey:K):SortedMap<K, V>;
 
-	function higherEntry(arg1:K):Dynamic;
-
-	function higherKey(arg1:K):K;
-
-	function isEmpty():Bool;
-
-	function keySet():Set<K>;
-
-	function lastEntry():Dynamic;
-
-	function lastKey():K;
-
-	function lowerEntry(arg1:K):Dynamic;
-
-	function lowerKey(arg1:K):K;
-
-	function navigableKeySet():NavigableSet<K>;
-
-	function pollFirstEntry():Dynamic;
-
-	function pollLastEntry():Dynamic;
-
-	function put(arg1:K, arg2:V):V;
-
-	function putAll(arg1:Map<K,V>):Void;
-
-	function remove(arg1:Dynamic):V;
-
-	function size():Int;
-
-	@:overload(function subMap(arg1:K, arg2:Bool, arg3:K, arg4:Bool):NavigableMap<K,V> {})
-	function subMap(arg1:K, arg2:K):SortedMap<K,V>;
-
-	@:overload(function tailMap(arg1:K, arg2:Bool):NavigableMap<K,V> {})
-	function tailMap(arg1:K):SortedMap<K,V>;
-
-	function values():Collection<V>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#tailMap(java.lang.Object, boolean) */
+	@:overload(function (fromKey:K, inclusive:Bool):NavigableMap<K, V> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableMap.html#tailMap(java.lang.Object) */
+	public function tailMap(fromKey:K):SortedMap<K, V>;
 
 }
 

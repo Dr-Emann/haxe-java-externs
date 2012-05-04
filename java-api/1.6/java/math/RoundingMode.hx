@@ -2,35 +2,42 @@ package java.math;
 
 import java.NativeArray;
 import java.lang.Enum;
-import java.math.RoundingMode;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html */
+@:native("java.math.RoundingMode") @:final
 extern class RoundingMode extends Enum<RoundingMode>
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#UP */
 	public static var UP:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#DOWN */
 	public static var DOWN:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#CEILING */
 	public static var CEILING:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#FLOOR */
 	public static var FLOOR:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#HALF_UP */
 	public static var HALF_UP:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#HALF_DOWN */
 	public static var HALF_DOWN:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#HALF_EVEN */
 	public static var HALF_EVEN:RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#UNNECESSARY */
 	public static var UNNECESSARY:RoundingMode;
 
-	private static var oldMode:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#valueOf(int) */
+	@:overload(function (rm:Int):RoundingMode {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#valueOf(java.lang.String) */
+	static public function valueOf(arg0:String):RoundingMode;
 
-	public function new(arg1:Int):Void;
-
-	@:overload(function valueOf(arg1:String):RoundingMode {})
-	public static function valueOf(arg1:Int):RoundingMode;
-
-	public static function values():NativeArray<RoundingMode>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#values() */
+	static public function values():NativeArray<RoundingMode>;
 
 }
 

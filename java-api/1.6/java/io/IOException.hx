@@ -3,14 +3,18 @@ package java.io;
 import java.lang.Exception;
 import java.lang.Throwable;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html */
+@:native("java.io.IOException")
 extern class IOException extends Exception
 {
-	private static var serialVersionUID:haxe.Int64;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html#IOException() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:String, arg2:Throwable):Void {})
-	public function new(arg1:Throwable):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html#IOException(java.lang.String) */
+	@:overload(function (message:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html#IOException(java.lang.String, java.lang.Throwable) */
+	@:overload(function (message:String, cause:Throwable):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html#IOException(java.lang.Throwable) */
+	public function new(message:Throwable):Void;
 
 }
 

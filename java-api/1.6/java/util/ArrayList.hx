@@ -8,46 +8,74 @@ import java.util.Collection;
 import java.util.List;
 import java.util.RandomAccess;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html */
+@:native("java.util.ArrayList")
 extern class ArrayList<E : (Dynamic)> extends AbstractList<E>, implements List<E>, implements RandomAccess, implements Cloneable, implements Serializable
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#ArrayList() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:Collection<E>):Void {})
-	public function new(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#ArrayList(java.util.Collection) */
+	@:overload(function (initialCapacity:Collection<E>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#ArrayList(int) */
+	public function new(initialCapacity:Int):Void;
 
-	@:overload(function add(arg1:Int, arg2:E):Void {})
-	override public function add(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#add(int, java.lang.Object) */
+	@:overload(function (index:Int, element:E):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#add(java.lang.Object) */
+	override public function add(e:E):Bool;
 
-	@:overload(function addAll(arg1:Int, arg2:Collection<E>):Bool {})
-	override public function addAll(arg1:Collection<E>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#addAll(int, java.util.Collection) */
+	@:overload(function (index:Int, c:Collection<E>):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#addAll(java.util.Collection) */
+	override public function addAll(c:Collection<E>):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#clear() */
 	override public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function contains(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#contains(java.lang.Object) */
+	override public function contains(o:Dynamic):Bool;
 
-	public function ensureCapacity(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#ensureCapacity(int) */
+	public function ensureCapacity(minCapacity:Int):Void;
 
-	override public function get(arg1:Int):E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#get(int) */
+	override public function get(index:Int):E;
 
-	override public function indexOf(arg1:Dynamic):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#hashCode() */
+	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#indexOf(java.lang.Object) */
+	override public function indexOf(o:Dynamic):Int;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#isEmpty() */
 	override public function isEmpty():Bool;
 
-	override public function lastIndexOf(arg1:Dynamic):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#lastIndexOf(java.lang.Object) */
+	override public function lastIndexOf(o:Dynamic):Int;
 
-	@:overload(function remove(arg1:Int):E {})
-	override public function remove(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#remove(int) */
+	@:overload(function (index:Int):E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#remove(java.lang.Object) */
+	override public function remove(o:Dynamic):Bool;
 
-	override private function removeRange(arg1:Int, arg2:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#removeRange(int, int) */
+	override private function removeRange(fromIndex:Int, toIndex:Int):Void;
 
-	override public function set(arg1:Int, arg2:E):E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#set(int, java.lang.Object) */
+	override public function set(index:Int, element:E):E;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#size() */
 	override public function size():Int;
 
-	@:overload(function toArray<T : (Dynamic)> (arg1:NativeArray<T>):NativeArray<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#toArray(java.lang.Object[]) */
+	@:overload(function <T>(a:NativeArray<T>):NativeArray<T> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#toArray() */
 	override public function toArray():NativeArray<Dynamic>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html#trimToSize() */
 	public function trimToSize():Void;
 
 }

@@ -3,75 +3,98 @@ package java.lang;
 import java.io.Console;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.lang.Class;
 import java.lang.Object;
 import java.lang.SecurityManager;
 import java.nio.channels.Channel;
 import java.util.Map;
 import java.util.Properties;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html */
+@:native("java.lang.System") @:final
 extern class System extends Object
 {
-	//public static var in:InputStream;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#out */
 	public static var out:PrintStream;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#err */
 	public static var err:PrintStream;
 
-	public function new():Void;
 
-	public static function arraycopy(arg1:Dynamic, arg2:Int, arg3:Dynamic, arg4:Int, arg5:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#arraycopy(java.lang.Object, int, java.lang.Object, int, int) */
+	static public function arraycopy(src:Dynamic, srcPos:Int, dest:Dynamic, destPos:Int, length:Int):Void;
 
-	public static function clearProperty(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#clearProperty(java.lang.String) */
+	static public function clearProperty(key:String):String;
 
-	public static function console():Console;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#console() */
+	static public function console():Console;
 
-	public static function currentTimeMillis():haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#currentTimeMillis() */
+	static public function currentTimeMillis():haxe.Int64;
 
-	public static function exit(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#exit(int) */
+	static public function exit(status:Int):Void;
 
-	public static function gc():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#gc() */
+	static public function gc():Void;
 
-	private static function getCallerClass():Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties() */
+	static public function getProperties():Properties;
 
-	public static function getProperties():Properties;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperty(java.lang.String, java.lang.String) */
+	@:overload(function (key:String, def:String):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperty(java.lang.String) */
+	static public function getProperty(key:String):String;
 
-	@:overload(function getProperty(arg1:String):String {})
-	public static function getProperty(arg1:String, arg2:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getSecurityManager() */
+	static public function getSecurityManager():SecurityManager;
 
-	public static function getSecurityManager():SecurityManager;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getenv(java.lang.String) */
+	@:overload(function (name:String):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getenv() */
+	static public function getenv():Map<String, String>;
 
-	@:overload(function getenv(arg1:String):String {})
-	public static function getenv():Map<String,String>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#identityHashCode(java.lang.Object) */
+	static public function identityHashCode(x:Dynamic):Int;
 
-	public static function identityHashCode(arg1:Dynamic):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#inheritedChannel() */
+	static public function inheritedChannel():Channel;
 
-	public static function inheritedChannel():Channel;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#load(java.lang.String) */
+	static public function load(filename:String):Void;
 
-	public static function load(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#loadLibrary(java.lang.String) */
+	static public function loadLibrary(libname:String):Void;
 
-	public static function loadLibrary(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#mapLibraryName(java.lang.String) */
+	static public function mapLibraryName(libname:String):String;
 
-	public static function mapLibraryName(arg1:String):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#nanoTime() */
+	static public function nanoTime():haxe.Int64;
 
-	public static function nanoTime():haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#runFinalization() */
+	static public function runFinalization():Void;
 
-	public static function runFinalization():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#runFinalizersOnExit(boolean) */
+	static public function runFinalizersOnExit(value:Bool):Void;
 
-	public static function runFinalizersOnExit(arg1:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#setErr(java.io.PrintStream) */
+	static public function setErr(err:PrintStream):Void;
 
-	public static function setErr(arg1:PrintStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#setIn(java.io.InputStream) */
+	static public function setIn(_in:InputStream):Void;
 
-	public static function setIn(arg1:InputStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#setOut(java.io.PrintStream) */
+	static public function setOut(out:PrintStream):Void;
 
-	public static function setOut(arg1:PrintStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#setProperties(java.util.Properties) */
+	static public function setProperties(props:Properties):Void;
 
-	public static function setProperties(arg1:Properties):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#setProperty(java.lang.String, java.lang.String) */
+	static public function setProperty(key:String, value:String):String;
 
-	public static function setProperty(arg1:String, arg2:String):String;
-
-	public static function setSecurityManager(arg1:SecurityManager):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#setSecurityManager(java.lang.SecurityManager) */
+	static public function setSecurityManager(s:SecurityManager):Void;
 
 }
 

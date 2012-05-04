@@ -1,57 +1,62 @@
 package java.util;
 
-import java.NativeArray;
+import java.lang.Number;
 import java.util.AbstractMap;
 import java.util.Collection;
 import java.util.Map;
+import java.util.Map_Entry;
 import java.util.Set;
-import java.util.WeakHashMap;
 
-extern class WeakHashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K,V>, implements Map<K,V>
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html */
+@:native("java.util.WeakHashMap")
+extern class WeakHashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K, V>, implements Map<K, V>
 {
-	@:overload(function (arg1:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#WeakHashMap(int) */
+	@:overload(function (initialCapacity:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#WeakHashMap() */
 	@:overload(function ():Void {})
-	@:overload(function (arg1:Map<K,V>):Void {})
-	public function new(arg1:Int, arg2:Float):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#WeakHashMap(java.util.Map) */
+	@:overload(function (initialCapacity:Map<K, V>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#WeakHashMap(int, float) */
+	public function new(initialCapacity:Int, loadFactor:StdFloat):Void;
 
-	//private static function access$300(arg1:Dynamic):Dynamic;
-
-	//private static function access$400(arg1:WeakHashMap<Dynamic, Dynamic>):Int;
-
-	//private static function access$500(arg1:WeakHashMap<Dynamic, Dynamic>):NativeArray<Dynamic>;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#clear() */
 	override public function clear():Void;
 
-	override public function containsKey(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#containsKey(java.lang.Object) */
+	override public function containsKey(key:Dynamic):Bool;
 
-	override public function containsValue(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#containsValue(java.lang.Object) */
+	override public function containsValue(value:Dynamic):Bool;
 
-	override public function entrySet():Set<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#entrySet() */
+	override public function entrySet():Set<Map_Entry<K, V>>;
 
-	private static function eq(arg1:Dynamic, arg2:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#get(java.lang.Object) */
+	override public function get(key:Dynamic):V;
 
-	override public function get(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#hashCode() */
+	override public function hashCode():Int;
 
-	private function getEntry(arg1:Dynamic):Dynamic;
-
-	private static function indexFor(arg1:Int, arg2:Int):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#isEmpty() */
 	override public function isEmpty():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#keySet() */
 	override public function keySet():Set<K>;
 
-	override public function put(arg1:K, arg2:V):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#put(java.lang.Object, java.lang.Object) */
+	override public function put(key:K, value:V):V;
 
-	override public function putAll(arg1:Map<K,V>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#putAll(java.util.Map) */
+	override public function putAll(m:Map<K, V>):Void;
 
-	override public function remove(arg1:Dynamic):V;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#remove(java.lang.Object) */
+	override public function remove(key:Dynamic):V;
 
-	private function removeMapping(arg1:Dynamic):Dynamic;
-
-	private function resize(arg1:Int):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#size() */
 	override public function size():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/WeakHashMap.html#values() */
 	override public function values():Collection<V>;
 
 }

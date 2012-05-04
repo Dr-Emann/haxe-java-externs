@@ -2,22 +2,25 @@ package java.lang.annotation;
 
 import java.NativeArray;
 import java.lang.Enum;
-import java.lang.annotation.RetentionPolicy;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html */
+@:native("java.lang.annotation.RetentionPolicy") @:final
 extern class RetentionPolicy extends Enum<RetentionPolicy>
 {
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#SOURCE */
 	public static var SOURCE:RetentionPolicy;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#CLASS */
 	public static var CLASS:RetentionPolicy;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#RUNTIME */
 	public static var RUNTIME:RetentionPolicy;
 
-	public function new():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#valueOf(java.lang.String) */
+	static public function valueOf(arg0:String):RetentionPolicy;
 
-	public static function valueOf(arg1:String):RetentionPolicy;
-
-	public static function values():NativeArray<RetentionPolicy>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#values() */
+	static public function values():NativeArray<RetentionPolicy>;
 
 }
 

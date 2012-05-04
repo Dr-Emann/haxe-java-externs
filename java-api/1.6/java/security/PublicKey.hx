@@ -1,16 +1,10 @@
 package java.security;
 
-import java.NativeArray;
-import java.StdTypes;
 import java.security.Key;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html */
+@:native("java.security.PublicKey")
 extern interface PublicKey implements Key
 {
-	function getAlgorithm():String;
-
-	function getEncoded():NativeArray<Int8>;
-
-	function getFormat():String;
-
 }
 

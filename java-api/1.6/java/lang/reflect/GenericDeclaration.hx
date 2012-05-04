@@ -3,9 +3,12 @@ package java.lang.reflect;
 import java.NativeArray;
 import java.lang.reflect.TypeVariable;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/GenericDeclaration.html */
+@:native("java.lang.reflect.GenericDeclaration")
 extern interface GenericDeclaration
 {
-	function getTypeParameters():NativeArray<TypeVariable<Dynamic>>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/GenericDeclaration.html#getTypeParameters() */
+	public function getTypeParameters():NativeArray<TypeVariable<Dynamic>>;
 
 }
 

@@ -1,42 +1,31 @@
 package java.util;
 
-import java.NativeArray;
 import java.io.Serializable;
 import java.lang.Object;
-import java.util.Currency;
 import java.util.Locale;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html */
+@:native("java.util.Currency") @:final
 extern class Currency extends Object, implements Serializable
 {
-	private static var mainTable:String;
 
-	private static var scCutOverTimes:NativeArray<haxe.Int64>;
-
-	private static var scOldCurrencies:NativeArray<String>;
-
-	private static var scNewCurrencies:NativeArray<String>;
-
-	private static var scOldCurrenciesDFD:NativeArray<Int>;
-
-	private static var scNewCurrenciesDFD:NativeArray<Int>;
-
-	private static var otherCurrencies:String;
-
-	private static var otherCurrenciesDFD:NativeArray<Int>;
-
-	public function new(arg1:String, arg2:Int):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#getCurrencyCode() */
 	public function getCurrencyCode():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#getDefaultFractionDigits() */
 	public function getDefaultFractionDigits():Int;
 
-	@:overload(function getInstance(arg1:Locale):Currency {})
-	public static function getInstance(arg1:String):Currency;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#getInstance(java.lang.String) */
+	@:overload(function (currencyCode:String):Currency {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#getInstance(java.util.Locale) */
+	static public function getInstance(locale:Locale):Currency;
 
-	@:overload(function getSymbol(arg1:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#getSymbol(java.util.Locale) */
+	@:overload(function (locale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#getSymbol() */
 	public function getSymbol():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Currency.html#toString() */
 	override public function toString():String;
 
 }

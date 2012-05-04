@@ -4,102 +4,78 @@ import java.NativeArray;
 import java.io.Serializable;
 import java.lang.Cloneable;
 import java.lang.Object;
-import java.util.Locale;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html */
+@:native("java.util.Locale") @:final
 extern class Locale extends Object, implements Cloneable, implements Serializable
 {
-	public static var ENGLISH:Locale;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#Locale(java.lang.String, java.lang.String) */
+	@:overload(function (language:String, country:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#Locale(java.lang.String) */
+	@:overload(function (language:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#Locale(java.lang.String, java.lang.String, java.lang.String) */
+	public function new(language:String, country:String, variant:String):Void;
 
-	public static var FRENCH:Locale;
-
-	public static var GERMAN:Locale;
-
-	public static var ITALIAN:Locale;
-
-	public static var JAPANESE:Locale;
-
-	public static var KOREAN:Locale;
-
-	public static var CHINESE:Locale;
-
-	public static var SIMPLIFIED_CHINESE:Locale;
-
-	public static var TRADITIONAL_CHINESE:Locale;
-
-	public static var FRANCE:Locale;
-
-	public static var GERMANY:Locale;
-
-	public static var ITALY:Locale;
-
-	public static var JAPAN:Locale;
-
-	public static var KOREA:Locale;
-
-	public static var CHINA:Locale;
-
-	public static var PRC:Locale;
-
-	public static var TAIWAN:Locale;
-
-	public static var UK:Locale;
-
-	public static var US:Locale;
-
-	public static var CANADA:Locale;
-
-	public static var CANADA_FRENCH:Locale;
-
-	public static var ROOT:Locale;
-
-	private static var serialVersionUID:haxe.Int64;
-
-	@:overload(function (arg1:String, arg2:String):Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:String, arg2:String, arg3:Bool):Void {})
-	public function new(arg1:String, arg2:String, arg3:String):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	public static function getAvailableLocales():NativeArray<Locale>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getAvailableLocales() */
+	static public function getAvailableLocales():NativeArray<Locale>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getCountry() */
 	public function getCountry():String;
 
-	public static function getDefault():Locale;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDefault() */
+	static public function getDefault():Locale;
 
-	@:overload(function getDisplayCountry():String {})
-	public function getDisplayCountry(arg1:Locale):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayCountry(java.util.Locale) */
+	@:overload(function (inLocale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayCountry() */
+	public function getDisplayCountry():String;
 
-	@:overload(function getDisplayLanguage(arg1:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayLanguage(java.util.Locale) */
+	@:overload(function (inLocale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayLanguage() */
 	public function getDisplayLanguage():String;
 
-	@:overload(function getDisplayName():String {})
-	public function getDisplayName(arg1:Locale):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayName(java.util.Locale) */
+	@:overload(function (inLocale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayName() */
+	public function getDisplayName():String;
 
-	@:overload(function getDisplayVariant():String {})
-	public function getDisplayVariant(arg1:Locale):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayVariant(java.util.Locale) */
+	@:overload(function (inLocale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getDisplayVariant() */
+	public function getDisplayVariant():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getISO3Country() */
 	public function getISO3Country():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getISO3Language() */
 	public function getISO3Language():String;
 
-	public static function getISOCountries():NativeArray<String>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getISOCountries() */
+	static public function getISOCountries():NativeArray<String>;
 
-	public static function getISOLanguages():NativeArray<String>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getISOLanguages() */
+	static public function getISOLanguages():NativeArray<String>;
 
-	private static function getInstance(arg1:String, arg2:String, arg3:String):Locale;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getLanguage() */
 	public function getLanguage():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#getVariant() */
 	public function getVariant():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#hashCode() */
 	override public function hashCode():Int;
 
-	public static function setDefault(arg1:Locale):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#setDefault(java.util.Locale) */
+	static public function setDefault(newLocale:Locale):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html#toString() */
 	override public function toString():String;
 
 }

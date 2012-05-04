@@ -1,82 +1,84 @@
 package java.util;
 
-import java.NativeArray;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html */
+@:native("java.util.GregorianCalendar")
 extern class GregorianCalendar extends Calendar
 {
-	public static var BC:Int;
-
-	private static var BCE:Int;
-
-	public static var AD:Int;
-
-	private static var CE:Int;
-
-	private static var MONTH_LENGTH:NativeArray<Int>;
-
-	private static var LEAP_MONTH_LENGTH:NativeArray<Int>;
-
-	private static var MIN_VALUES:NativeArray<Int>;
-
-	private static var LEAST_MAX_VALUES:NativeArray<Int>;
-
-	private static var MAX_VALUES:NativeArray<Int>;
-
-	private static var serialVersionUID:haxe.Int64;
-
-	private static var DEFAULT_GREGORIAN_CUTOVER:haxe.Int64;
-
-	//private static var $assertionsDisabled:Bool;
-
-	@:overload(function (arg1:TimeZone):Void {})
-	@:overload(function (arg1:Locale):Void {})
-	@:overload(function (arg1:TimeZone, arg2:Locale):Void {})
-	@:overload(function (arg1:Int, arg2:Int, arg3:Int):Void {})
-	@:overload(function (arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int):Void {})
-	@:overload(function (arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int, arg6:Int):Void {})
-	@:overload(function (arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int, arg6:Int, arg7:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar(java.util.TimeZone) */
+	@:overload(function (zone:TimeZone):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar(java.util.Locale) */
+	@:overload(function (zone:Locale):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar(java.util.TimeZone, java.util.Locale) */
+	@:overload(function (zone:TimeZone, aLocale:Locale):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar(int, int, int) */
+	@:overload(function (year:Int, month:Int, dayOfMonth:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar(int, int, int, int, int) */
+	@:overload(function (year:Int, month:Int, dayOfMonth:Int, hourOfDay:Int, minute:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar(int, int, int, int, int, int) */
+	@:overload(function (year:Int, month:Int, dayOfMonth:Int, hourOfDay:Int, minute:Int, second:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#GregorianCalendar() */
 	public function new():Void;
 
-	override public function add(arg1:Int, arg2:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#add(int, int) */
+	override public function add(field:Int, amount:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#clone() */
 	override public function clone():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#computeFields() */
 	override private function computeFields():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#computeTime() */
 	override private function computeTime():Void;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	override public function getActualMaximum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getActualMaximum(int) */
+	override public function getActualMaximum(field:Int):Int;
 
-	override public function getActualMinimum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getActualMinimum(int) */
+	override public function getActualMinimum(field:Int):Int;
 
-	override public function getGreatestMinimum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getGreatestMinimum(int) */
+	override public function getGreatestMinimum(field:Int):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getGregorianChange() */
 	public function getGregorianChange():Date;
 
-	override public function getLeastMaximum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getLeastMaximum(int) */
+	override public function getLeastMaximum(field:Int):Int;
 
-	override public function getMaximum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getMaximum(int) */
+	override public function getMaximum(field:Int):Int;
 
-	override public function getMinimum(arg1:Int):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getMinimum(int) */
+	override public function getMinimum(field:Int):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#getTimeZone() */
 	override public function getTimeZone():TimeZone;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#hashCode() */
 	override public function hashCode():Int;
 
-	public function isLeapYear(arg1:Int):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#isLeapYear(int) */
+	public function isLeapYear(year:Int):Bool;
 
-	@:overload(function roll(arg1:Int, arg2:Int):Void {})
-	override public function roll(arg1:Int, arg2:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#roll(int, boolean) */
+	@:overload(function (field:Int, up:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#roll(int, int) */
+	override public function roll(field:Int, amount:Int):Void;
 
-	public function setGregorianChange(arg1:Date):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#setGregorianChange(java.util.Date) */
+	public function setGregorianChange(date:Date):Void;
 
-	override public function setTimeZone(arg1:TimeZone):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/GregorianCalendar.html#setTimeZone(java.util.TimeZone) */
+	override public function setTimeZone(zone:TimeZone):Void;
 
 }
 

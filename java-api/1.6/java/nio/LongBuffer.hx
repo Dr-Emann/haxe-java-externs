@@ -4,62 +4,80 @@ import java.NativeArray;
 import java.lang.Comparable;
 import java.nio.Buffer;
 import java.nio.ByteOrder;
-import java.nio.LongBuffer;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html */
+@:native("java.nio.LongBuffer")
 extern class LongBuffer extends Buffer, implements Comparable<LongBuffer>
 {
-	private static var hb:NativeArray<haxe.Int64>;
 
-	private static var offset:Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#allocate(int) */
+	static public function allocate(capacity:Int):LongBuffer;
 
-	//private var isReadOnly:Bool;
-
-	@:overload(function (arg1:Int, arg2:Int, arg3:Int, arg4:Int):Void {})
-	public function new(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:NativeArray<haxe.Int64>, arg6:Int):Void;
-
-	public static function allocate(arg1:Int):LongBuffer;
-
-	@:overload(function array():NativeArray<haxe.Int64> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#array() */
 	override public function array():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#arrayOffset() */
 	override public function arrayOffset():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#asReadOnlyBuffer() */
 	public function asReadOnlyBuffer():LongBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#compact() */
 	public function compact():LongBuffer;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:LongBuffer):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#compareTo(java.nio.LongBuffer) */
+	public function compareTo(that:LongBuffer):Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#duplicate() */
 	public function duplicate():LongBuffer;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#equals(java.lang.Object) */
+	override public function equals(ob:Dynamic):Bool;
 
-	@:overload(function get():haxe.Int64 {})
-	@:overload(function get(arg1:NativeArray<haxe.Int64>, arg2:Int, arg3:Int):LongBuffer {})
-	@:overload(function get(arg1:NativeArray<haxe.Int64>):LongBuffer {})
-	public function get(arg1:Int):haxe.Int64;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get(long[], int, int) */
+	@:overload(function (dst:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get(int) */
+	@:overload(function (index:Int):haxe.Int64 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get(long[]) */
+	@:overload(function (dst:NativeArray<haxe.Int64>):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get() */
+	public function get():haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#hasArray() */
 	override public function hasArray():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#isDirect() */
 	override public function isDirect():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#order() */
 	public function order():ByteOrder;
 
-	@:overload(function put(arg1:Int, arg2:haxe.Int64):LongBuffer {})
-	@:overload(function put(arg1:NativeArray<haxe.Int64>):LongBuffer {})
-	@:overload(function put(arg1:haxe.Int64):LongBuffer {})
-	@:overload(function put(arg1:NativeArray<haxe.Int64>, arg2:Int, arg3:Int):LongBuffer {})
-	public function put(arg1:LongBuffer):LongBuffer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(long[], int, int) */
+	@:overload(function (src:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(int, long) */
+	@:overload(function (index:Int, l:haxe.Int64):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(long) */
+	@:overload(function (l:haxe.Int64):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(long[]) */
+	@:overload(function (src:NativeArray<haxe.Int64>):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(java.nio.LongBuffer) */
+	public function put(src:LongBuffer):LongBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#slice() */
 	public function slice():LongBuffer;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#toString() */
 	override public function toString():String;
 
-	@:overload(function wrap(arg1:NativeArray<haxe.Int64>):LongBuffer {})
-	public static function wrap(arg1:NativeArray<haxe.Int64>, arg2:Int, arg3:Int):LongBuffer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#wrap(long[], int, int) */
+	@:overload(function (array:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#wrap(long[]) */
+	static public function wrap(array:NativeArray<haxe.Int64>):LongBuffer;
 
 }
 

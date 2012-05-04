@@ -1,73 +1,53 @@
 package java.util;
 
-import java.NativeArray;
-import java.util.Collection;
-import java.util.Comparator;
 import java.util.Iterator;
-import java.util.NavigableSet;
 import java.util.SortedSet;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html */
+@:native("java.util.NavigableSet")
 extern interface NavigableSet<E : (Dynamic)> implements SortedSet<E>
 {
-	function add(arg1:E):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#ceiling(java.lang.Object) */
+	public function ceiling(e:E):E;
 
-	function addAll(arg1:Collection<E>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#descendingIterator() */
+	public function descendingIterator():java.util.Iterator<E>;
 
-	function ceiling(arg1:E):E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#descendingSet() */
+	public function descendingSet():NavigableSet<E>;
 
-	function clear():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#floor(java.lang.Object) */
+	public function floor(e:E):E;
 
-	function comparator():Comparator<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#headSet(java.lang.Object, boolean) */
+	@:overload(function (toElement:E, inclusive:Bool):NavigableSet<E> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#headSet(java.lang.Object) */
+	public function headSet(toElement:E):SortedSet<E>;
 
-	function contains(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#higher(java.lang.Object) */
+	public function higher(e:E):E;
 
-	function containsAll(arg1:Collection<Dynamic>):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#iterator() */
+	public function iterator():java.util.Iterator<E>;
 
-	function descendingIterator():java.util.Iterator<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#lower(java.lang.Object) */
+	public function lower(e:E):E;
 
-	function descendingSet():NavigableSet<E>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#pollFirst() */
+	public function pollFirst():E;
 
-	function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#pollLast() */
+	public function pollLast():E;
 
-	function first():E;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#subSet(java.lang.Object, boolean, java.lang.Object, boolean) */
+	@:overload(function (fromElement:E, fromInclusive:Bool, toElement:E, toInclusive:Bool):NavigableSet<E> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#subSet(java.lang.Object, java.lang.Object) */
+	public function subSet(fromElement:E, toElement:E):SortedSet<E>;
 
-	function floor(arg1:E):E;
-
-	function hashCode():Int;
-
-	@:overload(function headSet(arg1:E, arg2:Bool):NavigableSet<E> {})
-	function headSet(arg1:E):SortedSet<E>;
-
-	function higher(arg1:E):E;
-
-	function isEmpty():Bool;
-
-	function iterator():java.util.Iterator<E>;
-
-	function last():E;
-
-	function lower(arg1:E):E;
-
-	function pollFirst():E;
-
-	function pollLast():E;
-
-	function remove(arg1:Dynamic):Bool;
-
-	function removeAll(arg1:Collection<Dynamic>):Bool;
-
-	function retainAll(arg1:Collection<Dynamic>):Bool;
-
-	function size():Int;
-
-	@:overload(function subSet(arg1:E, arg2:Bool, arg3:E, arg4:Bool):NavigableSet<E> {})
-	function subSet(arg1:E, arg2:E):SortedSet<E>;
-
-	@:overload(function tailSet(arg1:E, arg2:Bool):NavigableSet<E> {})
-	function tailSet(arg1:E):SortedSet<E>;
-
-	@:overload(function toArray<T> (arg1:NativeArray<T>):NativeArray<T> {})
-	function toArray():NativeArray<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#tailSet(java.lang.Object, boolean) */
+	@:overload(function (fromElement:E, inclusive:Bool):NavigableSet<E> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/NavigableSet.html#tailSet(java.lang.Object) */
+	public function tailSet(fromElement:E):SortedSet<E>;
 
 }
 

@@ -6,61 +6,67 @@ import java.lang.Cloneable;
 import java.lang.Object;
 import java.util.Date;
 import java.util.Locale;
-import java.util.TimeZone;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html */
+@:native("java.util.TimeZone")
 extern class TimeZone extends Object, implements Serializable, implements Cloneable
 {
-	public static var SHORT:Int;
-
-	public static var LONG:Int;
-
-	private static var serialVersionUID:haxe.Int64;
-
-	private static var NO_TIMEZONE:TimeZone;
-
-	private static var GMT_ID:String;
-
-	//private static var $assertionsDisabled:Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#TimeZone() */
 	public function new():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#clone() */
 	override public function clone():Dynamic;
 
-	@:overload(function getAvailableIDs():NativeArray<String> {})
-	public static function getAvailableIDs(arg1:Int):NativeArray<String>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getAvailableIDs(int) */
+	@:overload(function (rawOffset:Int):NativeArray<String> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getAvailableIDs() */
+	static public function getAvailableIDs():NativeArray<String>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getDSTSavings() */
 	public function getDSTSavings():Int;
 
-	public static function getDefault():TimeZone;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getDefault() */
+	static public function getDefault():TimeZone;
 
-	private static function getDefaultRef():TimeZone;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getDisplayName(boolean, int, java.util.Locale) */
+	@:overload(function (daylight:Bool, style:Int, locale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getDisplayName(boolean, int) */
+	@:overload(function (daylight:Bool, style:Int):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getDisplayName(java.util.Locale) */
+	@:overload(function (locale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getDisplayName() */
+	public function getDisplayName():String;
 
-	@:overload(function getDisplayName(arg1:Bool, arg2:Int):String {})
-	@:overload(function getDisplayName():String {})
-	@:overload(function getDisplayName(arg1:Locale):String {})
-	public function getDisplayName(arg1:Bool, arg2:Int, arg3:Locale):String;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getID() */
 	public function getID():String;
 
-	@:overload(function getOffset(arg1:Int, arg2:Int, arg3:Int, arg4:Int, arg5:Int, arg6:Int):Int {})
-	public function getOffset(arg1:haxe.Int64):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getOffset(int, int, int, int, int, int) */
+	@:overload(function (era:Int, year:Int, month:Int, day:Int, dayOfWeek:Int, milliseconds:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getOffset(long) */
+	public function getOffset(date:haxe.Int64):Int;
 
-	private function getOffsets(arg1:haxe.Int64, arg2:NativeArray<Int>):Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getRawOffset() */
 	public function getRawOffset():Int;
 
-	public static function getTimeZone(arg1:String):TimeZone;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getTimeZone(java.lang.String) */
+	static public function getTimeZone(ID:String):TimeZone;
 
-	public function hasSameRules(arg1:TimeZone):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#hasSameRules(java.util.TimeZone) */
+	public function hasSameRules(other:TimeZone):Bool;
 
-	public function inDaylightTime(arg1:Date):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#inDaylightTime(java.util.Date) */
+	public function inDaylightTime(date:Date):Bool;
 
-	public static function setDefault(arg1:TimeZone):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#setDefault(java.util.TimeZone) */
+	static public function setDefault(zone:TimeZone):Void;
 
-	public function setID(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#setID(java.lang.String) */
+	public function setID(ID:String):Void;
 
-	public function setRawOffset(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#setRawOffset(int) */
+	public function setRawOffset(offsetMillis:Int):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#useDaylightTime() */
 	public function useDaylightTime():Bool;
 
 }

@@ -4,36 +4,46 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.Cloneable;
 import java.lang.Object;
-import java.lang.StringBuffer;
 import java.util.Map;
 import java.util.jar.Attributes;
-import java.util.jar.Manifest;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html */
+@:native("java.util.jar.Manifest")
 extern class Manifest extends Object, implements Cloneable
 {
-	@:overload(function (arg1:InputStream):Void {})
-	@:overload(function (arg1:Manifest):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#Manifest(java.io.InputStream) */
+	@:overload(function (is:InputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#Manifest(java.util.jar.Manifest) */
+	@:overload(function (is:Manifest):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#Manifest() */
 	public function new():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#clear() */
 	public function clear():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#clone() */
 	override public function clone():Dynamic;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#equals(java.lang.Object) */
+	override public function equals(o:Dynamic):Bool;
 
-	public function getAttributes(arg1:String):Attributes;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#getAttributes(java.lang.String) */
+	public function getAttributes(name:String):Attributes;
 
-	public function getEntries():Map<String,Attributes>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#getEntries() */
+	public function getEntries():Map<String, Attributes>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#getMainAttributes() */
 	public function getMainAttributes():Attributes;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#hashCode() */
 	override public function hashCode():Int;
 
-	private static function make72Safe(arg1:StringBuffer):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#read(java.io.InputStream) */
+	public function read(is:InputStream):Void;
 
-	public function read(arg1:InputStream):Void;
-
-	public function write(arg1:OutputStream):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Manifest.html#write(java.io.OutputStream) */
+	public function write(out:OutputStream):Void;
 
 }
 

@@ -2,15 +2,21 @@ package java.lang.reflect;
 
 import java.lang.Class;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html */
+@:native("java.lang.reflect.Member")
 extern interface Member
 {
-	function getDeclaringClass():Class<Dynamic>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#getDeclaringClass() */
+	public function getDeclaringClass():Class<Dynamic>;
 
-	function getModifiers():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#getModifiers() */
+	public function getModifiers():Int;
 
-	function getName():String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#getName() */
+	public function getName():String;
 
-	function isSynthetic():Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#isSynthetic() */
+	public function isSynthetic():Bool;
 
 }
 

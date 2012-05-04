@@ -5,120 +5,157 @@ import java.lang.ClassLoader;
 import java.lang.Object;
 import java.lang.Runnable;
 import java.lang.StackTraceElement;
-import java.lang.Thread;
+import java.lang.Thread_State;
+import java.lang.Thread_UncaughtExceptionHandler;
 import java.lang.ThreadGroup;
 import java.lang.Throwable;
 import java.util.Map;
-//import sun.nio.ch.Interruptible;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html */
+@:native("java.lang.Thread")
 extern class Thread extends Object, implements Runnable
 {
-	private var threadLocals:Dynamic;
-
-	private var inheritableThreadLocals:Dynamic;
-
-	private var parkBlocker:Dynamic;
-
-	public static var MIN_PRIORITY:Int;
-
-	public static var NORM_PRIORITY:Int;
-
-	public static var MAX_PRIORITY:Int;
-
-	@:overload(function (arg1:ThreadGroup, arg2:Runnable, arg3:String):Void {})
-	@:overload(function (arg1:Runnable, arg2:String):Void {})
-	@:overload(function (arg1:ThreadGroup, arg2:String):Void {})
-	@:overload(function (arg1:String):Void {})
-	@:overload(function (arg1:ThreadGroup, arg2:Runnable):Void {})
-	@:overload(function (arg1:Runnable):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String) */
+	@:overload(function (group:ThreadGroup, target:Runnable, name:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.Runnable, java.lang.String) */
+	@:overload(function (group:Runnable, target:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.ThreadGroup, java.lang.String) */
+	@:overload(function (group:ThreadGroup, target:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.String) */
+	@:overload(function (target:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.ThreadGroup, java.lang.Runnable) */
+	@:overload(function (group:ThreadGroup, target:Runnable):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.Runnable) */
+	@:overload(function (target:Runnable):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread() */
 	@:overload(function ():Void {})
-	public function new(arg1:ThreadGroup, arg2:Runnable, arg3:String, arg4:haxe.Int64):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String, long) */
+	public function new(group:ThreadGroup, target:Runnable, name:String, stackSize:haxe.Int64):Void;
 
-	public static function activeCount():Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#activeCount() */
+	static public function activeCount():Int;
 
-	//private function blockedOn(arg1:Interruptible):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#checkAccess() */
 	public function checkAccess():Void;
 
-	//@@ M.I. Problems with visibility.
-	//
-	override /*private*/ public function clone():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#clone() */
+	override public function clone():Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#countStackFrames() */
 	public function countStackFrames():Int;
 
-	public static function currentThread():Thread;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#currentThread() */
+	static public function currentThread():Thread;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#destroy() */
 	public function destroy():Void;
 
-	public static function dumpStack():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#dumpStack() */
+	static public function dumpStack():Void;
 
-	public static function enumerate(arg1:NativeArray<Thread>):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#enumerate(java.lang.Thread[]) */
+	static public function enumerate(tarray:NativeArray<Thread>):Int;
 
-	public static function getAllStackTraces():Map<Thread,NativeArray<StackTraceElement>>;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getAllStackTraces() */
+	static public function getAllStackTraces():Map<Thread, NativeArray<StackTraceElement>>;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getContextClassLoader() */
 	public function getContextClassLoader():ClassLoader;
 
-	public static function getDefaultUncaughtExceptionHandler():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getDefaultUncaughtExceptionHandler() */
+	static public function getDefaultUncaughtExceptionHandler():Thread_UncaughtExceptionHandler;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getId() */
 	public function getId():haxe.Int64;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getName() */
 	public function getName():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getPriority() */
 	public function getPriority():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getStackTrace() */
 	public function getStackTrace():NativeArray<StackTraceElement>;
 
-	public function getState():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getState() */
+	public function getState():Thread_State;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getThreadGroup() */
 	public function getThreadGroup():ThreadGroup;
 
-	public function getUncaughtExceptionHandler():Dynamic;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#getUncaughtExceptionHandler() */
+	public function getUncaughtExceptionHandler():Thread_UncaughtExceptionHandler;
 
-	public static function holdsLock(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#holdsLock(java.lang.Object) */
+	static public function holdsLock(obj:Dynamic):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#interrupt() */
 	public function interrupt():Void;
 
-	public static function interrupted():Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#interrupted() */
+	static public function interrupted():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#isAlive() */
 	public function isAlive():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#isDaemon() */
 	public function isDaemon():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#isInterrupted() */
 	public function isInterrupted():Bool;
 
-	@:overload(function join(arg1:haxe.Int64, arg2:Int):Void {})
-	@:overload(function join(arg1:haxe.Int64):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#join(long, int) */
+	@:overload(function (millis:haxe.Int64, nanos:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#join(long) */
+	@:overload(function (millis:haxe.Int64):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#join() */
 	public function join():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#resume() */
 	public function resume():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#run() */
 	public function run():Void;
 
-	public function setContextClassLoader(arg1:ClassLoader):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader) */
+	public function setContextClassLoader(cl:ClassLoader):Void;
 
-	public function setDaemon(arg1:Bool):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#setDaemon(boolean) */
+	public function setDaemon(on:Bool):Void;
 
-	public static function setDefaultUncaughtExceptionHandler(arg1:Dynamic):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler) */
+	static public function setDefaultUncaughtExceptionHandler(eh:Thread_UncaughtExceptionHandler):Void;
 
-	public function setName(arg1:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#setName(java.lang.String) */
+	public function setName(name:String):Void;
 
-	public function setPriority(arg1:Int):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#setPriority(int) */
+	public function setPriority(newPriority:Int):Void;
 
-	public function setUncaughtExceptionHandler(arg1:Dynamic):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#setUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler) */
+	public function setUncaughtExceptionHandler(eh:Thread_UncaughtExceptionHandler):Void;
 
-	@:overload(function sleep(arg1:haxe.Int64, arg2:Int):Void {})
-	public static function sleep(arg1:haxe.Int64):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#sleep(long, int) */
+	@:overload(function (millis:haxe.Int64, nanos:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#sleep(long) */
+	static public function sleep(millis:haxe.Int64):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#start() */
 	public function start():Void;
 
-	@:overload(function stop():Void {})
-	public function stop(arg1:Throwable):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#stop(java.lang.Throwable) */
+	@:overload(function (obj:Throwable):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#stop() */
+	public function stop():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#suspend() */
 	public function suspend():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#toString() */
 	override public function toString():String;
 
-	public static function yield():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#yield() */
+	static public function yield():Void;
 
 }
 

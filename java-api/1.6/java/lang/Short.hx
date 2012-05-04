@@ -1,58 +1,69 @@
 package java.lang;
 
 import java.StdTypes;
-import java.lang.Class;
 import java.lang.Comparable;
 import java.lang.Number;
-import java.lang.Short;
 
-@:final
-extern class Short extends Number, implements Comparable<Short>, implements Int
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html */
+@:native("java.lang.Short") @:final
+extern class Short extends Number, implements Comparable<Short>
 {
-	public static var MIN_VALUE:Int16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#Short(java.lang.String) */
+	@:overload(function (value:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#Short(short) */
+	public function new(value:Int16):Void;
 
-	public static var MAX_VALUE:Int16;
-
-	public static var TYPE:Class<Short>;
-
-	public static var SIZE:Int;
-
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:Int16):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#byteValue() */
 	override public function byteValue():Int8;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Short):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#compareTo(java.lang.Short) */
+	public function compareTo(anotherShort:Short):Int;
 
-	public static function decode(arg1:String):Short;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#decode(java.lang.String) */
+	static public function decode(nm:String):Short;
 
-	override public function doubleValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#doubleValue() */
+	override public function doubleValue():StdFloat;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#equals(java.lang.Object) */
+	override public function equals(obj:Dynamic):Bool;
 
-	override public function floatValue():Float;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#floatValue() */
+	override public function floatValue():StdFloat;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#intValue() */
 	override public function intValue():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#longValue() */
 	override public function longValue():haxe.Int64;
 
-	@:overload(function parseShort(arg1:String):Int16 {})
-	public static function parseShort(arg1:String, arg2:Int):Int16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#parseShort(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Int16 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#parseShort(java.lang.String) */
+	static public function parseShort(s:String):Int16;
 
-	public static function reverseBytes(arg1:Int16):Int16;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#reverseBytes(short) */
+	static public function reverseBytes(i:Int16):Int16;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#shortValue() */
 	override public function shortValue():Int16;
 
-	override public function toString():String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#toString() */
+	@:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#toString(short) */
+	static public function toString(s:Int16):String;
 
-	//public static function toString(arg1:Int16):String;
-
-	@:overload(function valueOf(arg1:Int16):Short {})
-	@:overload(function valueOf(arg1:String, arg2:Int):Short {})
-	public static function valueOf(arg1:String):Short;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#valueOf(java.lang.String, int) */
+	@:overload(function (s:String, radix:Int):Short {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#valueOf(short) */
+	@:overload(function (s:Int16):Short {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Short.html#valueOf(java.lang.String) */
+	static public function valueOf(s:String):Short;
 
 }
 

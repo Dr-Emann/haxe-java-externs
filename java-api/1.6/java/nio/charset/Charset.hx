@@ -5,67 +5,77 @@ import java.lang.Comparable;
 import java.lang.Object;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
-import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CharsetEncoder;
-import java.nio.charset.spi.CharsetProvider;
-import java.util.Iterator;
 import java.util.Locale;
-import java.util.Map;
 import java.util.Set;
 import java.util.SortedMap;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html */
+@:native("java.nio.charset.Charset")
 extern class Charset extends Object, implements Comparable<Charset>
 {
-	public function new(arg1:String, arg2:NativeArray<String>):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#Charset(java.lang.String, java.lang.String[]) */
+	private function new(canonicalName:String, aliases:NativeArray<String>):Void;
 
-	//private static function access$000():java.util.Iterator<Dynamic>;
-
-	//private static function access$102(arg1:CharsetProvider):CharsetProvider;
-
-	//private static function access$200():CharsetProvider;
-
-	//private static function access$300(arg1:java.util.Iterator<Dynamic>, arg2:Map<Dynamic, Dynamic>):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#aliases() */
 	public function aliases():Set<String>;
 
-	private static function atBugLevel(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#availableCharsets() */
+	static public function availableCharsets():SortedMap<String, Charset>;
 
-	public static function availableCharsets():SortedMap<String,Charset>;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#canEncode() */
 	public function canEncode():Bool;
 
-	@:overload(function compareTo(arg1:Dynamic):Int {})
-	public function compareTo(arg1:Charset):Int;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#compareTo(java.lang.Object) */
+	@:overload(function (p0:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#compareTo(java.nio.charset.Charset) */
+	public function compareTo(that:Charset):Int;
 
-	public function contains(arg1:Charset):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#contains(java.nio.charset.Charset) */
+	public function contains(cs:Charset):Bool;
 
-	public function decode(arg1:ByteBuffer):CharBuffer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#decode(java.nio.ByteBuffer) */
+	public function decode(bb:ByteBuffer):CharBuffer;
 
-	public static function defaultCharset():Charset;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#defaultCharset() */
+	static public function defaultCharset():Charset;
 
-	@:overload(function displayName():String {})
-	public function displayName(arg1:Locale):String;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#displayName(java.util.Locale) */
+	@:overload(function (locale:Locale):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#displayName() */
+	public function displayName():String;
 
-	@:overload(function encode(arg1:CharBuffer):ByteBuffer {})
-	public function encode(arg1:String):ByteBuffer;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#encode(java.lang.String) */
+	@:overload(function (str:String):ByteBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#encode(java.nio.CharBuffer) */
+	public function encode(cb:CharBuffer):ByteBuffer;
 
-	override public function equals(arg1:Dynamic):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#equals(java.lang.Object) */
+	override public function equals(ob:Dynamic):Bool;
 
-	public static function forName(arg1:String):Charset;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#forName(java.lang.String) */
+	static public function forName(charsetName:String):Charset;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#isRegistered() */
 	public function isRegistered():Bool;
 
-	public static function isSupported(arg1:String):Bool;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#isSupported(java.lang.String) */
+	static public function isSupported(charsetName:String):Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#name() */
 	public function name():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#newDecoder() */
 	public function newDecoder():CharsetDecoder;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#newEncoder() */
 	public function newEncoder():CharsetEncoder;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#toString() */
 	override public function toString():String;
 
 }

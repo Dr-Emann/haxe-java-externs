@@ -2,36 +2,32 @@ package java.math;
 
 import java.io.Serializable;
 import java.lang.Object;
-import java.math.MathContext;
 import java.math.RoundingMode;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html */
+@:native("java.math.MathContext") @:final
 extern class MathContext extends Object, implements Serializable
 {
-	public static var UNLIMITED:MathContext;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#MathContext(int, java.math.RoundingMode) */
+	@:overload(function (setPrecision:Int, setRoundingMode:RoundingMode):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#MathContext(java.lang.String) */
+	@:overload(function (setPrecision:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#MathContext(int) */
+	public function new(setPrecision:Int):Void;
 
-	public static var DECIMAL32:MathContext;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#equals(java.lang.Object) */
+	override public function equals(x:Dynamic):Bool;
 
-	public static var DECIMAL64:MathContext;
-
-	public static var DECIMAL128:MathContext;
-
-	private static var precision:Int;
-
-	private static var roundingMode:RoundingMode;
-
-	@:overload(function (arg1:Int, arg2:RoundingMode):Void {})
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:Int):Void;
-
-	override public function equals(arg1:Dynamic):Bool;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#getPrecision() */
 	public function getPrecision():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#getRoundingMode() */
 	public function getRoundingMode():RoundingMode;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#hashCode() */
 	override public function hashCode():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/MathContext.html#toString() */
 	override public function toString():String;
 
 }

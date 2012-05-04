@@ -2,11 +2,14 @@ package java.lang;
 
 import java.security.BasicPermission;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimePermission.html */
+@:native("java.lang.RuntimePermission") @:final
 extern class RuntimePermission extends BasicPermission
 {
-	@:overload(function (arg1:String):Void {})
-	public function new(arg1:String, arg2:String):Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimePermission.html#RuntimePermission(java.lang.String) */
+	@:overload(function (name:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/RuntimePermission.html#RuntimePermission(java.lang.String, java.lang.String) */
+	public function new(name:String, actions:String):Void;
 
 }
 

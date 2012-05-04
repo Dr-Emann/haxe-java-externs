@@ -1,26 +1,24 @@
 package java.io;
 
-import java.io.FileDescriptor;
 import java.lang.Object;
 
-@:final
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html */
+@:native("java.io.FileDescriptor") @:final
 extern class FileDescriptor extends Object
 {
-	//public static var in:FileDescriptor;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#out */
 	public static var out:FileDescriptor;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#err */
 	public static var err:FileDescriptor;
 
-	@:overload(function (arg1:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#FileDescriptor() */
 	public function new():Void;
 
-	private function decrementAndGetUseCount():Int;
-
-	private function incrementAndGetUseCount():Int;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#sync() */
 	public function sync():Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#valid() */
 	public function valid():Bool;
 
 }

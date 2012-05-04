@@ -1,18 +1,13 @@
 package java.nio.charset;
 
 import java.lang.Object;
-import java.nio.charset.CodingErrorAction;
 
+/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CodingErrorAction.html */
+@:native("java.nio.charset.CodingErrorAction")
 extern class CodingErrorAction extends Object
 {
-	public static var IGNORE:CodingErrorAction;
 
-	public static var REPLACE:CodingErrorAction;
-
-	public static var REPORT:CodingErrorAction;
-
-	public function new(arg1:String):Void;
-
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CodingErrorAction.html#toString() */
 	override public function toString():String;
 
 }
