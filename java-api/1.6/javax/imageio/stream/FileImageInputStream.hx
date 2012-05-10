@@ -11,26 +11,26 @@ import javax.imageio.stream.ImageInputStreamImpl;
 extern class FileImageInputStream extends ImageInputStreamImpl
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#FileImageInputStream(java.io.RandomAccessFile) */
-	@:overload(function (f:RandomAccessFile):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (f:RandomAccessFile):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#FileImageInputStream(java.io.File) */
-	public function new(f:File):Void;
+	/*@@@ modifiers=1 */ public function new(f:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#finalize() */
-	override public function finalize():Void;
+	/*@@@ modifiers=4 */ override public function finalize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#length() */
-	override public function length():haxe.Int64;
+	/*@@@ modifiers=1 */ override public function length():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#read(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#read() */
-	override public function read():Int;
+	/*@@@ modifiers=1 */ override public function read():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/FileImageInputStream.html#seek(long) */
-	override public function seek(pos:haxe.Int64):Void;
+	/*@@@ modifiers=1 */ override public function seek(pos:haxe.Int64):Void;
 
 }
 

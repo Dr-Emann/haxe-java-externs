@@ -20,34 +20,34 @@ extern class DefaultSingleSelectionModel extends Object, implements SingleSelect
 	private var listenerList:EventListenerList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#DefaultSingleSelectionModel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener) */
-	public function addChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#clearSelection() */
-	public function clearSelection():Void;
+	/*@@@ modifiers=1 */ public function clearSelection():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#fireStateChanged() */
-	private function fireStateChanged():Void;
+	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#getChangeListeners() */
-	public function getChangeListeners():NativeArray<ChangeListener>;
+	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#getSelectedIndex() */
-	public function getSelectedIndex():Int;
+	/*@@@ modifiers=1 */ public function getSelectedIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#isSelected() */
-	public function isSelected():Bool;
+	/*@@@ modifiers=1 */ public function isSelected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener) */
-	public function removeChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultSingleSelectionModel.html#setSelectedIndex(int) */
-	public function setSelectedIndex(index:Int):Void;
+	/*@@@ modifiers=1 */ public function setSelectedIndex(index:Int):Void;
 
 }
 

@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 extern interface Resources implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/Resources.html#value() */
-	public function value():NativeArray<Resource>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<Resource>;
 
 }
 

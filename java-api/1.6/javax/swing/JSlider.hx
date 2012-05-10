@@ -39,151 +39,151 @@ extern class JSlider extends JComponent, implements SwingConstants, implements A
 	private var changeEvent:ChangeEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#JSlider() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#JSlider(int) */
-	@:overload(function (orientation:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orientation:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#JSlider(int, int) */
-	@:overload(function (min:Int, max:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (min:Int, max:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#JSlider(int, int, int) */
-	@:overload(function (min:Int, max:Int, value:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (min:Int, max:Int, value:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#JSlider(javax.swing.BoundedRangeModel) */
-	@:overload(function (orientation:BoundedRangeModel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orientation:BoundedRangeModel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#JSlider(int, int, int, int) */
-	public function new(orientation:Int, min:Int, max:Int, value:Int):Void;
+	/*@@@ modifiers=1 */ public function new(orientation:Int, min:Int, max:Int, value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#addChangeListener(javax.swing.event.ChangeListener) */
-	public function addChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#createChangeListener() */
-	private function createChangeListener():ChangeListener;
+	/*@@@ modifiers=4 */ private function createChangeListener():ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#createStandardLabels(int, int) */
-	@:overload(function (increment:Int, start:Int):Hashtable<Dynamic, Dynamic> {})
+	/*@@@ modifiers=1 */ @:overload(function (increment:Int, start:Int):Hashtable<Dynamic, Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#createStandardLabels(int) */
-	public function createStandardLabels(increment:Int):Hashtable<Dynamic, Dynamic>;
+	/*@@@ modifiers=1 */ public function createStandardLabels(increment:Int):Hashtable<Dynamic, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#fireStateChanged() */
-	private function fireStateChanged():Void;
+	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getChangeListeners() */
-	public function getChangeListeners():NativeArray<ChangeListener>;
+	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getExtent() */
-	public function getExtent():Int;
+	/*@@@ modifiers=1 */ public function getExtent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getInverted() */
-	public function getInverted():Bool;
+	/*@@@ modifiers=1 */ public function getInverted():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getLabelTable() */
-	public function getLabelTable():Dictionary<Dynamic, Dynamic>;
+	/*@@@ modifiers=1 */ public function getLabelTable():Dictionary<Dynamic, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getMajorTickSpacing() */
-	public function getMajorTickSpacing():Int;
+	/*@@@ modifiers=1 */ public function getMajorTickSpacing():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getMaximum() */
-	public function getMaximum():Int;
+	/*@@@ modifiers=1 */ public function getMaximum():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getMinimum() */
-	public function getMinimum():Int;
+	/*@@@ modifiers=1 */ public function getMinimum():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getMinorTickSpacing() */
-	public function getMinorTickSpacing():Int;
+	/*@@@ modifiers=1 */ public function getMinorTickSpacing():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getModel() */
-	public function getModel():BoundedRangeModel;
+	/*@@@ modifiers=1 */ public function getModel():BoundedRangeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getOrientation() */
-	public function getOrientation():Int;
+	/*@@@ modifiers=1 */ public function getOrientation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getPaintLabels() */
-	public function getPaintLabels():Bool;
+	/*@@@ modifiers=1 */ public function getPaintLabels():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getPaintTicks() */
-	public function getPaintTicks():Bool;
+	/*@@@ modifiers=1 */ public function getPaintTicks():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getPaintTrack() */
-	public function getPaintTrack():Bool;
+	/*@@@ modifiers=1 */ public function getPaintTrack():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getSnapToTicks() */
-	public function getSnapToTicks():Bool;
+	/*@@@ modifiers=1 */ public function getSnapToTicks():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getUI() */
-	public function getUI():SliderUI;
+	/*@@@ modifiers=1 */ public function getUI():SliderUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getValue() */
-	public function getValue():Int;
+	/*@@@ modifiers=1 */ public function getValue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#getValueIsAdjusting() */
-	public function getValueIsAdjusting():Bool;
+	/*@@@ modifiers=1 */ public function getValueIsAdjusting():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#removeChangeListener(javax.swing.event.ChangeListener) */
-	public function removeChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setExtent(int) */
-	public function setExtent(extent:Int):Void;
+	/*@@@ modifiers=1 */ public function setExtent(extent:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setFont(java.awt.Font) */
-	override public function setFont(font:Font):Void;
+	/*@@@ modifiers=1 */ override public function setFont(font:Font):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setInverted(boolean) */
-	public function setInverted(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setInverted(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setLabelTable(java.util.Dictionary) */
-	public function setLabelTable(labels:Dictionary<Dynamic, Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function setLabelTable(labels:Dictionary<Dynamic, Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setMajorTickSpacing(int) */
-	public function setMajorTickSpacing(n:Int):Void;
+	/*@@@ modifiers=1 */ public function setMajorTickSpacing(n:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setMaximum(int) */
-	public function setMaximum(maximum:Int):Void;
+	/*@@@ modifiers=1 */ public function setMaximum(maximum:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setMinimum(int) */
-	public function setMinimum(minimum:Int):Void;
+	/*@@@ modifiers=1 */ public function setMinimum(minimum:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setMinorTickSpacing(int) */
-	public function setMinorTickSpacing(n:Int):Void;
+	/*@@@ modifiers=1 */ public function setMinorTickSpacing(n:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setModel(javax.swing.BoundedRangeModel) */
-	public function setModel(newModel:BoundedRangeModel):Void;
+	/*@@@ modifiers=1 */ public function setModel(newModel:BoundedRangeModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setOrientation(int) */
-	public function setOrientation(orientation:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setPaintLabels(boolean) */
-	public function setPaintLabels(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setPaintLabels(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setPaintTicks(boolean) */
-	public function setPaintTicks(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setPaintTicks(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setPaintTrack(boolean) */
-	public function setPaintTrack(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setPaintTrack(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setSnapToTicks(boolean) */
-	public function setSnapToTicks(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setSnapToTicks(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setUI(javax.swing.plaf.SliderUI) */
-	override public function setUI(ui:SliderUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:SliderUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setValue(int) */
-	public function setValue(n:Int):Void;
+	/*@@@ modifiers=1 */ public function setValue(n:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setValueIsAdjusting(boolean) */
-	public function setValueIsAdjusting(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setValueIsAdjusting(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#updateLabelUIs() */
-	private function updateLabelUIs():Void;
+	/*@@@ modifiers=4 */ private function updateLabelUIs():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

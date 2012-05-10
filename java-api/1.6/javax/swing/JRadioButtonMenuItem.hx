@@ -11,30 +11,30 @@ import javax.swing.JMenuItem;
 extern class JRadioButtonMenuItem extends JMenuItem, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(javax.swing.Icon) */
-	@:overload(function (icon:Icon):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (icon:Icon):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(java.lang.String) */
-	@:overload(function (icon:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (icon:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(javax.swing.Action) */
-	@:overload(function (icon:Action):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (icon:Action):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(java.lang.String, javax.swing.Icon) */
-	@:overload(function (text:String, icon:Icon):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, icon:Icon):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(java.lang.String, boolean) */
-	@:overload(function (text:String, icon:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, icon:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(javax.swing.Icon, boolean) */
-	@:overload(function (text:Icon, icon:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:Icon, icon:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#JRadioButtonMenuItem(java.lang.String, javax.swing.Icon, boolean) */
-	public function new(text:String, icon:Icon, selected:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(text:String, icon:Icon, selected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButtonMenuItem.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 }
 

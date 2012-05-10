@@ -6,10 +6,10 @@ package java.sql;
 extern interface Savepoint
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Savepoint.html#getSavepointId() */
-	public function getSavepointId():Int;
+	/*@@@ modifiers=1025 */ public function getSavepointId():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Savepoint.html#getSavepointName() */
-	public function getSavepointName():String;
+	/*@@@ modifiers=1025 */ public function getSavepointName():String;
 
 }
 

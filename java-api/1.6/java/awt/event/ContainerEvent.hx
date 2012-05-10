@@ -9,16 +9,16 @@ import java.awt.event.ComponentEvent;
 extern class ContainerEvent extends ComponentEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerEvent.html#ContainerEvent(java.awt.Component, int, java.awt.Component) */
-	public function new(source:Component, id:Int, child:Component):Void;
+	/*@@@ modifiers=1 */ public function new(source:Component, id:Int, child:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerEvent.html#getChild() */
-	public function getChild():Component;
+	/*@@@ modifiers=1 */ public function getChild():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerEvent.html#getContainer() */
-	public function getContainer():Container;
+	/*@@@ modifiers=1 */ public function getContainer():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerEvent.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 }
 

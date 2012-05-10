@@ -9,12 +9,12 @@ import javax.xml.ws.EndpointReference;
 extern class W3CEndpointReference extends EndpointReference
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReference.html#W3CEndpointReference() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=4 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReference.html#W3CEndpointReference(javax.xml.transform.Source) */
-	public function new(source:Source):Void;
+	/*@@@ modifiers=1 */ public function new(source:Source):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReference.html#writeTo(javax.xml.transform.Result) */
-	override public function writeTo(result:Result):Void;
+	/*@@@ modifiers=1 */ override public function writeTo(result:Result):Void;
 
 }
 

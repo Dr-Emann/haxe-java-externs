@@ -8,13 +8,13 @@ import javax.swing.JInternalFrame;
 extern class InternalFrameEvent extends AWTEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameEvent.html#InternalFrameEvent(javax.swing.JInternalFrame, int) */
-	public function new(source:JInternalFrame, id:Int):Void;
+	/*@@@ modifiers=1 */ public function new(source:JInternalFrame, id:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameEvent.html#getInternalFrame() */
-	public function getInternalFrame():JInternalFrame;
+	/*@@@ modifiers=1 */ public function getInternalFrame():JInternalFrame;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameEvent.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 }
 

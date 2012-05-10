@@ -7,13 +7,13 @@ import java.util.IllegalFormatException;
 extern class IllegalFormatWidthException extends IllegalFormatException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IllegalFormatWidthException.html#IllegalFormatWidthException(int) */
-	public function new(w:Int):Void;
+	/*@@@ modifiers=1 */ public function new(w:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IllegalFormatWidthException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IllegalFormatWidthException.html#getWidth() */
-	public function getWidth():Int;
+	/*@@@ modifiers=1 */ public function getWidth():Int;
 
 }
 

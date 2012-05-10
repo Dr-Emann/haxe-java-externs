@@ -7,13 +7,13 @@ import javax.xml.ws.handler.MessageContext;
 extern interface Handler<C : (MessageContext)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/Handler.html#close(javax.xml.ws.handler.MessageContext) */
-	public function close(context:MessageContext):Void;
+	/*@@@ modifiers=1025 */ public function close(context:MessageContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/Handler.html#handleFault(javax.xml.ws.handler.MessageContext) */
-	public function handleFault(context:C):Bool;
+	/*@@@ modifiers=1025 */ public function handleFault(context:C):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/Handler.html#handleMessage(javax.xml.ws.handler.MessageContext) */
-	public function handleMessage(context:C):Bool;
+	/*@@@ modifiers=1025 */ public function handleMessage(context:C):Bool;
 
 }
 

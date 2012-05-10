@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface TextListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent) */
-	public function textValueChanged(e:TextEvent):Void;
+	/*@@@ modifiers=1025 */ public function textValueChanged(e:TextEvent):Void;
 
 }
 

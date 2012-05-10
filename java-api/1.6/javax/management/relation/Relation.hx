@@ -14,40 +14,40 @@ import javax.management.relation.RoleResult;
 extern interface Relation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getAllRoles() */
-	public function getAllRoles():RoleResult;
+	/*@@@ modifiers=1025 */ public function getAllRoles():RoleResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getReferencedMBeans() */
-	public function getReferencedMBeans():Map<ObjectName, List<String>>;
+	/*@@@ modifiers=1025 */ public function getReferencedMBeans():Map<ObjectName, List<String>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getRelationId() */
-	public function getRelationId():String;
+	/*@@@ modifiers=1025 */ public function getRelationId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getRelationServiceName() */
-	public function getRelationServiceName():ObjectName;
+	/*@@@ modifiers=1025 */ public function getRelationServiceName():ObjectName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getRelationTypeName() */
-	public function getRelationTypeName():String;
+	/*@@@ modifiers=1025 */ public function getRelationTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getRole(java.lang.String) */
-	public function getRole(roleName:String):List<ObjectName>;
+	/*@@@ modifiers=1025 */ public function getRole(roleName:String):List<ObjectName>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String) */
-	public function getRoleCardinality(roleName:String):Integer;
+	/*@@@ modifiers=1025 */ public function getRoleCardinality(roleName:String):Integer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#getRoles(java.lang.String[]) */
-	public function getRoles(roleNameArray:NativeArray<String>):RoleResult;
+	/*@@@ modifiers=1025 */ public function getRoles(roleNameArray:NativeArray<String>):RoleResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#handleMBeanUnregistration(javax.management.ObjectName, java.lang.String) */
-	public function handleMBeanUnregistration(objectName:ObjectName, roleName:String):Void;
+	/*@@@ modifiers=1025 */ public function handleMBeanUnregistration(objectName:ObjectName, roleName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#retrieveAllRoles() */
-	public function retrieveAllRoles():RoleList;
+	/*@@@ modifiers=1025 */ public function retrieveAllRoles():RoleList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#setRole(javax.management.relation.Role) */
-	public function setRole(role:Role):Void;
+	/*@@@ modifiers=1025 */ public function setRole(role:Role):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Relation.html#setRoles(javax.management.relation.RoleList) */
-	public function setRoles(roleList:RoleList):RoleResult;
+	/*@@@ modifiers=1025 */ public function setRoles(roleList:RoleList):RoleResult;
 
 }
 

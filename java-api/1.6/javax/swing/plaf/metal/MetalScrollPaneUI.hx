@@ -11,25 +11,25 @@ import javax.swing.plaf.basic.BasicScrollPaneUI;
 extern class MetalScrollPaneUI extends BasicScrollPaneUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#MetalScrollPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#createScrollBarSwapListener() */
-	private function createScrollBarSwapListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createScrollBarSwapListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#installListeners(javax.swing.JScrollPane) */
-	override public function installListeners(scrollPane:JScrollPane):Void;
+	/*@@@ modifiers=1 */ override public function installListeners(scrollPane:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners(javax.swing.JScrollPane) */
-	override public function uninstallListeners(scrollPane:JScrollPane):Void;
+	/*@@@ modifiers=1 */ override public function uninstallListeners(scrollPane:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

@@ -7,7 +7,7 @@ import java.nio.channels.ClosedChannelException;
 extern class AsynchronousCloseException extends ClosedChannelException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/AsynchronousCloseException.html#AsynchronousCloseException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

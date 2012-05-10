@@ -8,22 +8,22 @@ import java.lang.annotation.Annotation;
 extern interface XmlElementDecl implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElementDecl.html#defaultValue() */
-	public function defaultValue():String;
+	/*@@@ modifiers=1025 */ public function defaultValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElementDecl.html#name() */
-	public function name():String;
+	/*@@@ modifiers=1025 */ public function name():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElementDecl.html#namespace() */
-	public function namespace():String;
+	/*@@@ modifiers=1025 */ public function namespace():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElementDecl.html#scope() */
-	public function scope():Class<Dynamic>;
+	/*@@@ modifiers=1025 */ public function scope():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElementDecl.html#substitutionHeadName() */
-	public function substitutionHeadName():String;
+	/*@@@ modifiers=1025 */ public function substitutionHeadName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElementDecl.html#substitutionHeadNamespace() */
-	public function substitutionHeadNamespace():String;
+	/*@@@ modifiers=1025 */ public function substitutionHeadNamespace():String;
 
 }
 

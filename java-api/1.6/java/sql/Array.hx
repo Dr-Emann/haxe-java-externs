@@ -9,31 +9,31 @@ import java.util.Map;
 extern interface Array
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#free() */
-	public function free():Void;
+	/*@@@ modifiers=1025 */ public function free():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getArray(long, int, java.util.Map) */
-	@:overload(function (index:haxe.Int64, count:Int, map:Map<String, Class<Dynamic>>):Dynamic {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:haxe.Int64, count:Int, map:Map<String, Class<Dynamic>>):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getArray(long, int) */
-	@:overload(function (index:haxe.Int64, count:Int):Dynamic {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:haxe.Int64, count:Int):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getArray(java.util.Map) */
-	@:overload(function (map:Map<String, Class<Dynamic>>):Dynamic {})
+	/*@@@ modifiers=1025 */ @:overload(function (map:Map<String, Class<Dynamic>>):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getArray() */
-	public function getArray():Dynamic;
+	/*@@@ modifiers=1025 */ public function getArray():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getBaseType() */
-	public function getBaseType():Int;
+	/*@@@ modifiers=1025 */ public function getBaseType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getBaseTypeName() */
-	public function getBaseTypeName():String;
+	/*@@@ modifiers=1025 */ public function getBaseTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getResultSet(long, int, java.util.Map) */
-	@:overload(function (index:haxe.Int64, count:Int, map:Map<String, Class<Dynamic>>):ResultSet {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:haxe.Int64, count:Int, map:Map<String, Class<Dynamic>>):ResultSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getResultSet(long, int) */
-	@:overload(function (index:haxe.Int64, count:Int):ResultSet {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:haxe.Int64, count:Int):ResultSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getResultSet(java.util.Map) */
-	@:overload(function (map:Map<String, Class<Dynamic>>):ResultSet {})
+	/*@@@ modifiers=1025 */ @:overload(function (map:Map<String, Class<Dynamic>>):ResultSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Array.html#getResultSet() */
-	public function getResultSet():ResultSet;
+	/*@@@ modifiers=1025 */ public function getResultSet():ResultSet;
 
 }
 

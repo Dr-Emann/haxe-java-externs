@@ -11,13 +11,13 @@ import javax.annotation.processing.Processor;
 extern interface JavaCompiler_CompilationTask implements Callable<Boolean>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.CompilationTask.html#call() */
-	public function call():Boolean;
+	/*@@@ modifiers=1025 */ public function call():Boolean;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.CompilationTask.html#setLocale(java.util.Locale) */
-	public function setLocale(locale:Locale):Void;
+	/*@@@ modifiers=1025 */ public function setLocale(locale:Locale):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.CompilationTask.html#setProcessors(java.lang.Iterable) */
-	public function setProcessors(processors:java.lang.Iterable<Processor>):Void;
+	/*@@@ modifiers=1025 */ public function setProcessors(processors:java.lang.Iterable<Processor>):Void;
 
 }
 

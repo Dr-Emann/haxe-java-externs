@@ -13,28 +13,28 @@ extern class RMIClassLoader extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#getClassAnnotation(java.lang.Class) */
-	static public function getClassAnnotation(cl:Class<Dynamic>):String;
+	/*@@@ modifiers=9 */ static public function getClassAnnotation(cl:Class<Dynamic>):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#getClassLoader(java.lang.String) */
-	static public function getClassLoader(codebase:String):ClassLoader;
+	/*@@@ modifiers=9 */ static public function getClassLoader(codebase:String):ClassLoader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#getDefaultProviderInstance() */
-	static public function getDefaultProviderInstance():RMIClassLoaderSpi;
+	/*@@@ modifiers=9 */ static public function getDefaultProviderInstance():RMIClassLoaderSpi;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#getSecurityContext(java.lang.ClassLoader) */
-	static public function getSecurityContext(loader:ClassLoader):Dynamic;
+	/*@@@ modifiers=9 */ static public function getSecurityContext(loader:ClassLoader):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String, java.lang.String, java.lang.ClassLoader) */
-	@:overload(function (codebase:String, name:String, defaultLoader:ClassLoader):Class<Dynamic> {})
+	/*@@@ modifiers=9 */ @:overload(function (codebase:String, name:String, defaultLoader:ClassLoader):Class<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String, java.lang.String) */
-	@:overload(function (codebase:String, name:String):Class<Dynamic> {})
+	/*@@@ modifiers=9 */ @:overload(function (codebase:String, name:String):Class<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#loadClass(java.net.URL, java.lang.String) */
-	@:overload(function (codebase:URL, name:String):Class<Dynamic> {})
+	/*@@@ modifiers=9 */ @:overload(function (codebase:URL, name:String):Class<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String) */
-	static public function loadClass(name:String):Class<Dynamic>;
+	/*@@@ modifiers=9 */ static public function loadClass(name:String):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIClassLoader.html#loadProxyClass(java.lang.String, java.lang.String[], java.lang.ClassLoader) */
-	static public function loadProxyClass(codebase:String, interfaces:NativeArray<String>, defaultLoader:ClassLoader):Class<Dynamic>;
+	/*@@@ modifiers=9 */ static public function loadProxyClass(codebase:String, interfaces:NativeArray<String>, defaultLoader:ClassLoader):Class<Dynamic>;
 
 }
 

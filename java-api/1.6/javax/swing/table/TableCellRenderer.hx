@@ -8,7 +8,7 @@ import javax.swing.JTable;
 extern interface TableCellRenderer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableCellRenderer.html#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int) */
-	public function getTableCellRendererComponent(table:JTable, value:Dynamic, isSelected:Bool, hasFocus:Bool, row:Int, column:Int):Component;
+	/*@@@ modifiers=1025 */ public function getTableCellRendererComponent(table:JTable, value:Dynamic, isSelected:Bool, hasFocus:Bool, row:Int, column:Int):Component;
 
 }
 

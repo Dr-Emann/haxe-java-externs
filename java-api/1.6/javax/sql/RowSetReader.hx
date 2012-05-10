@@ -7,7 +7,7 @@ import javax.sql.RowSetInternal;
 extern interface RowSetReader
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal) */
-	public function readData(caller:RowSetInternal):Void;
+	/*@@@ modifiers=1025 */ public function readData(caller:RowSetInternal):Void;
 
 }
 

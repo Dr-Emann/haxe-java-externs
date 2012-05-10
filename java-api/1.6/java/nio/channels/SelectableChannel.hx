@@ -11,36 +11,33 @@ import java.nio.channels.spi.SelectorProvider;
 extern class SelectableChannel extends AbstractInterruptibleChannel, implements Channel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#SelectableChannel() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#blockingLock() */
-	public function blockingLock():Dynamic;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function blockingLock():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#configureBlocking(boolean) */
-	public function configureBlocking(block:Bool):SelectableChannel;
+	/*@@@ modifiers=1025 */ public function configureBlocking(block:Bool):SelectableChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#isBlocking() */
-	public function isBlocking():Bool;
+	/*@@@ modifiers=1025 */ public function isBlocking():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#isRegistered() */
-	public function isRegistered():Bool;
+	/*@@@ modifiers=1025 */ public function isRegistered():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#keyFor(java.nio.channels.Selector) */
-	public function keyFor(sel:Selector):SelectionKey;
+	/*@@@ modifiers=1025 */ public function keyFor(sel:Selector):SelectionKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#provider() */
-	public function provider():SelectorProvider;
+	/*@@@ modifiers=1025 */ public function provider():SelectorProvider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector, int, java.lang.Object) */
-	@:overload(function (sel:Selector, ops:Int, att:Dynamic):SelectionKey {})
+	/*@@@ modifiers=1025 */ @:overload(function (sel:Selector, ops:Int, att:Dynamic):SelectionKey {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector, int) */
-	public function register(sel:Selector, ops:Int):SelectionKey;
+	/*@@@ modifiers=17 */ public function register(sel:Selector, ops:Int):SelectionKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#validOps() */
-	public function validOps():Int;
+	/*@@@ modifiers=1025 */ public function validOps():Int;
 
 }
 

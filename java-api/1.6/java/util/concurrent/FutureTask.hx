@@ -12,38 +12,38 @@ import java.util.concurrent.TimeUnit;
 extern class FutureTask<V : (Dynamic)> extends Object, implements RunnableFuture<V>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#FutureTask(java.lang.Runnable, java.lang.Object) */
-	@:overload(function (runnable:Runnable, result:V):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (runnable:Runnable, result:V):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#FutureTask(java.util.concurrent.Callable) */
-	public function new(callable:Callable<V>):Void;
+	/*@@@ modifiers=1 */ public function new(callable:Callable<V>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#cancel(boolean) */
-	public function cancel(mayInterruptIfRunning:Bool):Bool;
+	/*@@@ modifiers=1 */ public function cancel(mayInterruptIfRunning:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#done() */
-	private function done():Void;
+	/*@@@ modifiers=4 */ private function done():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#get(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (timeout:haxe.Int64, unit:TimeUnit):V {})
+	/*@@@ modifiers=1 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):V {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#get() */
-	public function get():V;
+	/*@@@ modifiers=1 */ public function get():V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#isCancelled() */
-	public function isCancelled():Bool;
+	/*@@@ modifiers=1 */ public function isCancelled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#isDone() */
-	public function isDone():Bool;
+	/*@@@ modifiers=1 */ public function isDone():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#run() */
-	public function run():Void;
+	/*@@@ modifiers=1 */ public function run():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#runAndReset() */
-	private function runAndReset():Bool;
+	/*@@@ modifiers=4 */ private function runAndReset():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#set(java.lang.Object) */
-	private function set(v:V):Void;
+	/*@@@ modifiers=4 */ private function set(v:V):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/FutureTask.html#setException(java.lang.Throwable) */
-	private function setException(t:Throwable):Void;
+	/*@@@ modifiers=4 */ private function setException(t:Throwable):Void;
 
 }
 

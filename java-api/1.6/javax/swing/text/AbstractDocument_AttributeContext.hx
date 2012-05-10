@@ -8,24 +8,24 @@ import javax.swing.text.AttributeSet;
 extern interface AbstractDocument_AttributeContext
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet, java.lang.Object, java.lang.Object) */
-	public function addAttribute(old:AttributeSet, name:Dynamic, value:Dynamic):AttributeSet;
+	/*@@@ modifiers=1025 */ public function addAttribute(old:AttributeSet, name:Dynamic, value:Dynamic):AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#addAttributes(javax.swing.text.AttributeSet, javax.swing.text.AttributeSet) */
-	public function addAttributes(old:AttributeSet, attr:AttributeSet):AttributeSet;
+	/*@@@ modifiers=1025 */ public function addAttributes(old:AttributeSet, attr:AttributeSet):AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#getEmptySet() */
-	public function getEmptySet():AttributeSet;
+	/*@@@ modifiers=1025 */ public function getEmptySet():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#reclaim(javax.swing.text.AttributeSet) */
-	public function reclaim(a:AttributeSet):Void;
+	/*@@@ modifiers=1025 */ public function reclaim(a:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttribute(javax.swing.text.AttributeSet, java.lang.Object) */
-	public function removeAttribute(old:AttributeSet, name:Dynamic):AttributeSet;
+	/*@@@ modifiers=1025 */ public function removeAttribute(old:AttributeSet, name:Dynamic):AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet, java.util.Enumeration) */
-	@:overload(function (old:AttributeSet, names:Enumeration<Dynamic>):AttributeSet {})
+	/*@@@ modifiers=1025 */ @:overload(function (old:AttributeSet, names:Enumeration<Dynamic>):AttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet, javax.swing.text.AttributeSet) */
-	public function removeAttributes(old:AttributeSet, attrs:AttributeSet):AttributeSet;
+	/*@@@ modifiers=1025 */ public function removeAttributes(old:AttributeSet, attrs:AttributeSet):AttributeSet;
 
 }
 

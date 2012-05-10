@@ -15,32 +15,32 @@ import java.util.Collection;
 extern class CertStore extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#CertStore(java.security.cert.CertStoreSpi, java.security.Provider, java.lang.String, java.security.cert.CertStoreParameters) */
-	private function new(storeSpi:CertStoreSpi, provider:Provider, type:String, params:CertStoreParameters):Void;
+	/*@@@ modifiers=4 */ private function new(storeSpi:CertStoreSpi, provider:Provider, type:String, params:CertStoreParameters):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getCRLs(java.security.cert.CRLSelector) */
-	public function getCRLs(selector:CRLSelector):Collection<CRL>;
+	/*@@@ modifiers=17 */ public function getCRLs(selector:CRLSelector):Collection<CRL>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getCertStoreParameters() */
-	public function getCertStoreParameters():CertStoreParameters;
+	/*@@@ modifiers=17 */ public function getCertStoreParameters():CertStoreParameters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getCertificates(java.security.cert.CertSelector) */
-	public function getCertificates(selector:CertSelector):Collection<Certificate>;
+	/*@@@ modifiers=17 */ public function getCertificates(selector:CertSelector):Collection<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getDefaultType() */
-	static public function getDefaultType():String;
+	/*@@@ modifiers=25 */ static public function getDefaultType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getInstance(java.lang.String, java.security.cert.CertStoreParameters, java.lang.String) */
-	@:overload(function (type:String, params:CertStoreParameters, provider:String):CertStore {})
+	/*@@@ modifiers=9 */ @:overload(function (type:String, params:CertStoreParameters, provider:String):CertStore {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getInstance(java.lang.String, java.security.cert.CertStoreParameters, java.security.Provider) */
-	@:overload(function (type:String, params:CertStoreParameters, provider:Provider):CertStore {})
+	/*@@@ modifiers=9 */ @:overload(function (type:String, params:CertStoreParameters, provider:Provider):CertStore {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getInstance(java.lang.String, java.security.cert.CertStoreParameters) */
-	static public function getInstance(type:String, params:CertStoreParameters):CertStore;
+	/*@@@ modifiers=9 */ static public function getInstance(type:String, params:CertStoreParameters):CertStore;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getProvider() */
-	public function getProvider():Provider;
+	/*@@@ modifiers=17 */ public function getProvider():Provider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStore.html#getType() */
-	public function getType():String;
+	/*@@@ modifiers=17 */ public function getType():String;
 
 }
 

@@ -7,13 +7,13 @@ import java.lang.annotation.Annotation;
 extern interface ResponseWrapper implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/ResponseWrapper.html#className() */
-	public function className():String;
+	/*@@@ modifiers=1025 */ public function className():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/ResponseWrapper.html#localName() */
-	public function localName():String;
+	/*@@@ modifiers=1025 */ public function localName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/ResponseWrapper.html#targetNamespace() */
-	public function targetNamespace():String;
+	/*@@@ modifiers=1025 */ public function targetNamespace():String;
 
 }
 

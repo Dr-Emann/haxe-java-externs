@@ -10,23 +10,23 @@ import javax.swing.text.Element;
 extern class HyperlinkEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL) */
-	@:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, u:URL):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, u:URL):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String) */
-	@:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, u:URL, desc:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, u:URL, desc:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, javax.swing.text.Element) */
-	public function new(source:Dynamic, type:HyperlinkEvent_EventType, u:URL, desc:String, sourceElement:Element):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic, type:HyperlinkEvent_EventType, u:URL, desc:String, sourceElement:Element):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=1 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#getEventType() */
-	public function getEventType():HyperlinkEvent_EventType;
+	/*@@@ modifiers=1 */ public function getEventType():HyperlinkEvent_EventType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#getSourceElement() */
-	public function getSourceElement():Element;
+	/*@@@ modifiers=1 */ public function getSourceElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkEvent.html#getURL() */
-	public function getURL():URL;
+	/*@@@ modifiers=1 */ public function getURL():URL;
 
 }
 

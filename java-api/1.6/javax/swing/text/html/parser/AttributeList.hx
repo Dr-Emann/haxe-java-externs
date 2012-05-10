@@ -29,36 +29,36 @@ extern class AttributeList extends Object, implements DTDConstants, implements S
 	public var next:AttributeList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#AttributeList(java.lang.String) */
-	@:overload(function (name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#AttributeList(java.lang.String, int, int, java.lang.String, java.util.Vector, javax.swing.text.html.parser.AttributeList) */
-	public function new(name:String, type:Int, modifier:Int, value:String, values:Vector<Dynamic>, next:AttributeList):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, type:Int, modifier:Int, value:String, values:Vector<Dynamic>, next:AttributeList):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#getModifier() */
-	public function getModifier():Int;
+	/*@@@ modifiers=1 */ public function getModifier():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#getNext() */
-	public function getNext():AttributeList;
+	/*@@@ modifiers=1 */ public function getNext():AttributeList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#getType() */
-	public function getType():Int;
+	/*@@@ modifiers=1 */ public function getType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#getValue() */
-	public function getValue():String;
+	/*@@@ modifiers=1 */ public function getValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#getValues() */
-	public function getValues():Enumeration<Dynamic>;
+	/*@@@ modifiers=1 */ public function getValues():Enumeration<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#name2type(java.lang.String) */
-	static public function name2type(nm:String):Int;
+	/*@@@ modifiers=9 */ static public function name2type(nm:String):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/AttributeList.html#type2name(int) */
-	static public function type2name(tp:Int):String;
+	/*@@@ modifiers=9 */ static public function type2name(tp:Int):String;
 
 }
 

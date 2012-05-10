@@ -9,10 +9,10 @@ import java.util.spi.LocaleServiceProvider;
 extern class DateFormatSymbolsProvider extends LocaleServiceProvider
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/spi/DateFormatSymbolsProvider.html#DateFormatSymbolsProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/spi/DateFormatSymbolsProvider.html#getInstance(java.util.Locale) */
-	public function getInstance(locale:Locale):DateFormatSymbols;
+	/*@@@ modifiers=1025 */ public function getInstance(locale:Locale):DateFormatSymbols;
 
 }
 

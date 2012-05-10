@@ -45,117 +45,117 @@ extern class JTableHeader extends JComponent, implements TableColumnModelListene
 	private var draggedDistance:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#JTableHeader(javax.swing.table.TableColumnModel) */
-	@:overload(function (cm:TableColumnModel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (cm:TableColumnModel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#JTableHeader() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#columnAdded(javax.swing.event.TableColumnModelEvent) */
-	public function columnAdded(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=1 */ public function columnAdded(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#columnAtPoint(java.awt.Point) */
-	public function columnAtPoint(point:Point):Int;
+	/*@@@ modifiers=1 */ public function columnAtPoint(point:Point):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#columnMarginChanged(javax.swing.event.ChangeEvent) */
-	public function columnMarginChanged(e:ChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function columnMarginChanged(e:ChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#columnMoved(javax.swing.event.TableColumnModelEvent) */
-	public function columnMoved(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=1 */ public function columnMoved(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#columnRemoved(javax.swing.event.TableColumnModelEvent) */
-	public function columnRemoved(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=1 */ public function columnRemoved(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent) */
-	public function columnSelectionChanged(e:ListSelectionEvent):Void;
+	/*@@@ modifiers=1 */ public function columnSelectionChanged(e:ListSelectionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#createDefaultColumnModel() */
-	private function createDefaultColumnModel():TableColumnModel;
+	/*@@@ modifiers=4 */ private function createDefaultColumnModel():TableColumnModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#createDefaultRenderer() */
-	private function createDefaultRenderer():TableCellRenderer;
+	/*@@@ modifiers=4 */ private function createDefaultRenderer():TableCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getColumnModel() */
-	public function getColumnModel():TableColumnModel;
+	/*@@@ modifiers=1 */ public function getColumnModel():TableColumnModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getDefaultRenderer() */
-	public function getDefaultRenderer():TableCellRenderer;
+	/*@@@ modifiers=1 */ public function getDefaultRenderer():TableCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getDraggedColumn() */
-	public function getDraggedColumn():TableColumn;
+	/*@@@ modifiers=1 */ public function getDraggedColumn():TableColumn;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getDraggedDistance() */
-	public function getDraggedDistance():Int;
+	/*@@@ modifiers=1 */ public function getDraggedDistance():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getHeaderRect(int) */
-	public function getHeaderRect(column:Int):Rectangle;
+	/*@@@ modifiers=1 */ public function getHeaderRect(column:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getReorderingAllowed() */
-	public function getReorderingAllowed():Bool;
+	/*@@@ modifiers=1 */ public function getReorderingAllowed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getResizingAllowed() */
-	public function getResizingAllowed():Bool;
+	/*@@@ modifiers=1 */ public function getResizingAllowed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getResizingColumn() */
-	public function getResizingColumn():TableColumn;
+	/*@@@ modifiers=1 */ public function getResizingColumn():TableColumn;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getTable() */
-	public function getTable():JTable;
+	/*@@@ modifiers=1 */ public function getTable():JTable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getToolTipText(java.awt.event.MouseEvent) */
-	override public function getToolTipText(event:MouseEvent):String;
+	/*@@@ modifiers=1 */ override public function getToolTipText(event:MouseEvent):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getUI() */
-	public function getUI():TableHeaderUI;
+	/*@@@ modifiers=1 */ public function getUI():TableHeaderUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#getUpdateTableInRealTime() */
-	public function getUpdateTableInRealTime():Bool;
+	/*@@@ modifiers=1 */ public function getUpdateTableInRealTime():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#initializeLocalVars() */
-	private function initializeLocalVars():Void;
+	/*@@@ modifiers=4 */ private function initializeLocalVars():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#resizeAndRepaint() */
-	public function resizeAndRepaint():Void;
+	/*@@@ modifiers=1 */ public function resizeAndRepaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setColumnModel(javax.swing.table.TableColumnModel) */
-	public function setColumnModel(columnModel:TableColumnModel):Void;
+	/*@@@ modifiers=1 */ public function setColumnModel(columnModel:TableColumnModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setDefaultRenderer(javax.swing.table.TableCellRenderer) */
-	public function setDefaultRenderer(defaultRenderer:TableCellRenderer):Void;
+	/*@@@ modifiers=1 */ public function setDefaultRenderer(defaultRenderer:TableCellRenderer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setDraggedColumn(javax.swing.table.TableColumn) */
-	public function setDraggedColumn(aColumn:TableColumn):Void;
+	/*@@@ modifiers=1 */ public function setDraggedColumn(aColumn:TableColumn):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setDraggedDistance(int) */
-	public function setDraggedDistance(distance:Int):Void;
+	/*@@@ modifiers=1 */ public function setDraggedDistance(distance:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setReorderingAllowed(boolean) */
-	public function setReorderingAllowed(reorderingAllowed:Bool):Void;
+	/*@@@ modifiers=1 */ public function setReorderingAllowed(reorderingAllowed:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setResizingAllowed(boolean) */
-	public function setResizingAllowed(resizingAllowed:Bool):Void;
+	/*@@@ modifiers=1 */ public function setResizingAllowed(resizingAllowed:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setResizingColumn(javax.swing.table.TableColumn) */
-	public function setResizingColumn(aColumn:TableColumn):Void;
+	/*@@@ modifiers=1 */ public function setResizingColumn(aColumn:TableColumn):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setTable(javax.swing.JTable) */
-	public function setTable(table:JTable):Void;
+	/*@@@ modifiers=1 */ public function setTable(table:JTable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setUI(javax.swing.plaf.TableHeaderUI) */
-	override public function setUI(ui:TableHeaderUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:TableHeaderUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setUpdateTableInRealTime(boolean) */
-	public function setUpdateTableInRealTime(flag:Bool):Void;
+	/*@@@ modifiers=1 */ public function setUpdateTableInRealTime(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

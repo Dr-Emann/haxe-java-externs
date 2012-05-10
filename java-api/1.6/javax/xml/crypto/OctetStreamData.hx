@@ -9,18 +9,18 @@ import javax.xml.crypto.Data;
 extern class OctetStreamData extends Object, implements Data
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/OctetStreamData.html#OctetStreamData(java.io.InputStream) */
-	@:overload(function (octetStream:InputStream):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (octetStream:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/OctetStreamData.html#OctetStreamData(java.io.InputStream, java.lang.String, java.lang.String) */
-	public function new(octetStream:InputStream, uri:String, mimeType:String):Void;
+	/*@@@ modifiers=1 */ public function new(octetStream:InputStream, uri:String, mimeType:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/OctetStreamData.html#getMimeType() */
-	public function getMimeType():String;
+	/*@@@ modifiers=1 */ public function getMimeType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/OctetStreamData.html#getOctetStream() */
-	public function getOctetStream():InputStream;
+	/*@@@ modifiers=1 */ public function getOctetStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/OctetStreamData.html#getURI() */
-	public function getURI():String;
+	/*@@@ modifiers=1 */ public function getURI():String;
 
 }
 

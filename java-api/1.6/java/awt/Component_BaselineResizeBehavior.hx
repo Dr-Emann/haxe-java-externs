@@ -20,10 +20,10 @@ extern class Component_BaselineResizeBehavior extends Enum<Component_BaselineRes
 	public static var OTHER:Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.BaselineResizeBehavior.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.BaselineResizeBehavior.html#values() */
-	static public function values():NativeArray<Component_BaselineResizeBehavior>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Component_BaselineResizeBehavior>;
 
 }
 

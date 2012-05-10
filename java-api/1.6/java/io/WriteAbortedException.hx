@@ -12,13 +12,13 @@ extern class WriteAbortedException extends ObjectStreamException
 	public var detail:Exception;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/WriteAbortedException.html#WriteAbortedException(java.lang.String, java.lang.Exception) */
-	public function new(s:String, ex:Exception):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, ex:Exception):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/WriteAbortedException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/WriteAbortedException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

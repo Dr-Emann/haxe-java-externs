@@ -15,50 +15,44 @@ import java.nio.channels.spi.SelectorProvider;
 extern class SocketChannel extends AbstractSelectableChannel, implements ByteChannel, implements ScatteringByteChannel, implements GatheringByteChannel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#SocketChannel(java.nio.channels.spi.SelectorProvider) */
-	private function new(provider:SelectorProvider):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=4 */ private function new(provider:SelectorProvider):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress) */
-	public function connect(remote:SocketAddress):Bool;
+	/*@@@ modifiers=1025 */ public function connect(remote:SocketAddress):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#finishConnect() */
-	public function finishConnect():Bool;
+	/*@@@ modifiers=1025 */ public function finishConnect():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#isConnected() */
-	public function isConnected():Bool;
+	/*@@@ modifiers=1025 */ public function isConnected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#isConnectionPending() */
-	public function isConnectionPending():Bool;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=1025 */ public function isConnectionPending():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress) */
-	@:overload(function (remote:SocketAddress):SocketChannel {})
+	/*@@@ modifiers=9 */ @:overload(function (remote:SocketAddress):SocketChannel {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#open() */
-	static public function open():SocketChannel;
+	/*@@@ modifiers=9 */ static public function open():SocketChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[], int, int) */
-	@:overload(function (dsts:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
+	/*@@@ modifiers=1025 */ @:overload(function (dsts:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[]) */
-	@:overload(function (dsts:NativeArray<ByteBuffer>):haxe.Int64 {})
+	/*@@@ modifiers=17 */ @:overload(function (dsts:NativeArray<ByteBuffer>):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer) */
-	public function read(dst:ByteBuffer):Int;
+	/*@@@ modifiers=1025 */ public function read(dst:ByteBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#socket() */
-	public function socket():Socket;
+	/*@@@ modifiers=1025 */ public function socket():Socket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#validOps() */
-	override public function validOps():Int;
+	/*@@@ modifiers=17 */ override public function validOps():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[], int, int) */
-	@:overload(function (srcs:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
+	/*@@@ modifiers=1025 */ @:overload(function (srcs:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[]) */
-	@:overload(function (srcs:NativeArray<ByteBuffer>):haxe.Int64 {})
+	/*@@@ modifiers=17 */ @:overload(function (srcs:NativeArray<ByteBuffer>):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer) */
-	public function write(src:ByteBuffer):Int;
+	/*@@@ modifiers=1025 */ public function write(src:ByteBuffer):Int;
 
 }
 

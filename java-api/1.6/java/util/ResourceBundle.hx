@@ -16,55 +16,55 @@ extern class ResourceBundle extends Object
 	private var parent:ResourceBundle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#ResourceBundle() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#clearCache(java.lang.ClassLoader) */
-	@:overload(function (loader:ClassLoader):Void {})
+	/*@@@ modifiers=25 */ @:overload(function (loader:ClassLoader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#clearCache() */
-	static public function clearCache():Void;
+	/*@@@ modifiers=25 */ static public function clearCache():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#containsKey(java.lang.String) */
-	public function containsKey(key:String):Bool;
+	/*@@@ modifiers=1 */ public function containsKey(key:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale, java.lang.ClassLoader, java.util.ResourceBundle$Control) */
-	@:overload(function (baseName:String, targetLocale:Locale, loader:ClassLoader, control:ResourceBundle_Control):ResourceBundle {})
+	/*@@@ modifiers=9 */ @:overload(function (baseName:String, targetLocale:Locale, loader:ClassLoader, control:ResourceBundle_Control):ResourceBundle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale, java.lang.ClassLoader) */
-	@:overload(function (baseName:String, locale:Locale, loader:ClassLoader):ResourceBundle {})
+	/*@@@ modifiers=9 */ @:overload(function (baseName:String, locale:Locale, loader:ClassLoader):ResourceBundle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale, java.util.ResourceBundle$Control) */
-	@:overload(function (baseName:String, targetLocale:Locale, control:ResourceBundle_Control):ResourceBundle {})
+	/*@@@ modifiers=25 */ @:overload(function (baseName:String, targetLocale:Locale, control:ResourceBundle_Control):ResourceBundle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.Locale) */
-	@:overload(function (baseName:String, locale:Locale):ResourceBundle {})
+	/*@@@ modifiers=25 */ @:overload(function (baseName:String, locale:Locale):ResourceBundle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String, java.util.ResourceBundle$Control) */
-	@:overload(function (baseName:String, control:ResourceBundle_Control):ResourceBundle {})
+	/*@@@ modifiers=25 */ @:overload(function (baseName:String, control:ResourceBundle_Control):ResourceBundle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String) */
-	static public function getBundle(baseName:String):ResourceBundle;
+	/*@@@ modifiers=25 */ static public function getBundle(baseName:String):ResourceBundle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getKeys() */
-	public function getKeys():Enumeration<String>;
+	/*@@@ modifiers=1025 */ public function getKeys():Enumeration<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getLocale() */
-	public function getLocale():Locale;
+	/*@@@ modifiers=1 */ public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getObject(java.lang.String) */
-	public function getObject(key:String):Dynamic;
+	/*@@@ modifiers=17 */ public function getObject(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getString(java.lang.String) */
-	public function getString(key:String):String;
+	/*@@@ modifiers=17 */ public function getString(key:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#getStringArray(java.lang.String) */
-	public function getStringArray(key:String):NativeArray<String>;
+	/*@@@ modifiers=17 */ public function getStringArray(key:String):NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#handleGetObject(java.lang.String) */
-	private function handleGetObject(key:String):Dynamic;
+	/*@@@ modifiers=1028 */ private function handleGetObject(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#handleKeySet() */
-	private function handleKeySet():Set<String>;
+	/*@@@ modifiers=4 */ private function handleKeySet():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#keySet() */
-	public function keySet():Set<String>;
+	/*@@@ modifiers=1 */ public function keySet():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#setParent(java.util.ResourceBundle) */
-	private function setParent(parent:ResourceBundle):Void;
+	/*@@@ modifiers=4 */ private function setParent(parent:ResourceBundle):Void;
 
 }
 

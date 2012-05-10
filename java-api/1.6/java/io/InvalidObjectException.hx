@@ -7,7 +7,7 @@ import java.io.ObjectStreamException;
 extern class InvalidObjectException extends ObjectStreamException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InvalidObjectException.html#InvalidObjectException(java.lang.String) */
-	public function new(reason:String):Void;
+	/*@@@ modifiers=1 */ public function new(reason:String):Void;
 
 }
 

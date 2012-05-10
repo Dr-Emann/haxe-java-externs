@@ -11,22 +11,22 @@ import javax.swing.text.html.HTML_Tag;
 extern class HTML extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.html#HTML() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.html#getAllAttributeKeys() */
-	static public function getAllAttributeKeys():NativeArray<HTML_Attribute>;
+	/*@@@ modifiers=9 */ static public function getAllAttributeKeys():NativeArray<HTML_Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.html#getAllTags() */
-	static public function getAllTags():NativeArray<HTML_Tag>;
+	/*@@@ modifiers=9 */ static public function getAllTags():NativeArray<HTML_Tag>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.html#getAttributeKey(java.lang.String) */
-	static public function getAttributeKey(attName:String):HTML_Attribute;
+	/*@@@ modifiers=9 */ static public function getAttributeKey(attName:String):HTML_Attribute;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.html#getIntegerAttributeValue(javax.swing.text.AttributeSet, javax.swing.text.html.HTML$Attribute, int) */
-	static public function getIntegerAttributeValue(attr:AttributeSet, key:HTML_Attribute, def:Int):Int;
+	/*@@@ modifiers=9 */ static public function getIntegerAttributeValue(attr:AttributeSet, key:HTML_Attribute, def:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.html#getTag(java.lang.String) */
-	static public function getTag(tagName:String):HTML_Tag;
+	/*@@@ modifiers=9 */ static public function getTag(tagName:String):HTML_Tag;
 
 }
 

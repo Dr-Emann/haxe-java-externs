@@ -7,7 +7,7 @@ import java.nio.channels.AsynchronousCloseException;
 extern class ClosedByInterruptException extends AsynchronousCloseException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/ClosedByInterruptException.html#ClosedByInterruptException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

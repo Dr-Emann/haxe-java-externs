@@ -6,13 +6,13 @@ package javax.accessibility;
 extern interface AccessibleAction
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleAction.html#doAccessibleAction(int) */
-	public function doAccessibleAction(i:Int):Bool;
+	/*@@@ modifiers=1025 */ public function doAccessibleAction(i:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleAction.html#getAccessibleActionCount() */
-	public function getAccessibleActionCount():Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleActionCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleAction.html#getAccessibleActionDescription(int) */
-	public function getAccessibleActionDescription(i:Int):String;
+	/*@@@ modifiers=1025 */ public function getAccessibleActionDescription(i:Int):String;
 
 }
 

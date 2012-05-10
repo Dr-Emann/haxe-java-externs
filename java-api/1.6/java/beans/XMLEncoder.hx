@@ -10,28 +10,28 @@ import java.io.OutputStream;
 extern class XMLEncoder extends Encoder
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#XMLEncoder(java.io.OutputStream) */
-	public function new(out:OutputStream):Void;
+	/*@@@ modifiers=1 */ public function new(out:OutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#flush() */
-	public function flush():Void;
+	/*@@@ modifiers=1 */ public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#getOwner() */
-	public function getOwner():Dynamic;
+	/*@@@ modifiers=1 */ public function getOwner():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#setOwner(java.lang.Object) */
-	public function setOwner(owner:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setOwner(owner:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#writeExpression(java.beans.Expression) */
-	override public function writeExpression(oldExp:Expression):Void;
+	/*@@@ modifiers=1 */ override public function writeExpression(oldExp:Expression):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#writeObject(java.lang.Object) */
-	override public function writeObject(o:Dynamic):Void;
+	/*@@@ modifiers=1 */ override public function writeObject(o:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLEncoder.html#writeStatement(java.beans.Statement) */
-	override public function writeStatement(oldStm:Statement):Void;
+	/*@@@ modifiers=1 */ override public function writeStatement(oldStm:Statement):Void;
 
 }
 

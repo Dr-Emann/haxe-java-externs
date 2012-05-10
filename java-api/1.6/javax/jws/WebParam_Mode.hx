@@ -17,10 +17,10 @@ extern class WebParam_Mode extends Enum<WebParam_Mode>
 	public static var INOUT:WebParam_Mode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebParam.Mode.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):WebParam_Mode;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):WebParam_Mode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebParam.Mode.html#values() */
-	static public function values():NativeArray<WebParam_Mode>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<WebParam_Mode>;
 
 }
 

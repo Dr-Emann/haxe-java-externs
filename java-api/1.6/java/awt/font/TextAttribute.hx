@@ -7,10 +7,10 @@ import java.text.AttributedCharacterIterator_Attribute;
 extern class TextAttribute extends AttributedCharacterIterator_Attribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextAttribute.html#TextAttribute(java.lang.String) */
-	private function new(name:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextAttribute.html#readResolve() */
-	override private function readResolve():Dynamic;
+	/*@@@ modifiers=4 */ override private function readResolve():Dynamic;
 
 }
 

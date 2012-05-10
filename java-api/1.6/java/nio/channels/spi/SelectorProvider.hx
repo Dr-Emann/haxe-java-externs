@@ -13,28 +13,28 @@ import java.nio.channels.spi.AbstractSelector;
 extern class SelectorProvider extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#SelectorProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#inheritedChannel() */
-	public function inheritedChannel():Channel;
+	/*@@@ modifiers=1 */ public function inheritedChannel():Channel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel() */
-	public function openDatagramChannel():DatagramChannel;
+	/*@@@ modifiers=1025 */ public function openDatagramChannel():DatagramChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#openPipe() */
-	public function openPipe():Pipe;
+	/*@@@ modifiers=1025 */ public function openPipe():Pipe;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#openSelector() */
-	public function openSelector():AbstractSelector;
+	/*@@@ modifiers=1025 */ public function openSelector():AbstractSelector;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#openServerSocketChannel() */
-	public function openServerSocketChannel():ServerSocketChannel;
+	/*@@@ modifiers=1025 */ public function openServerSocketChannel():ServerSocketChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#openSocketChannel() */
-	public function openSocketChannel():SocketChannel;
+	/*@@@ modifiers=1025 */ public function openSocketChannel():SocketChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/SelectorProvider.html#provider() */
-	static public function provider():SelectorProvider;
+	/*@@@ modifiers=9 */ static public function provider():SelectorProvider;
 
 }
 

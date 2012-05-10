@@ -32,10 +32,10 @@ extern class ElementType extends Enum<ElementType>
 	public static var PACKAGE:ElementType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/ElementType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):ElementType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):ElementType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/ElementType.html#values() */
-	static public function values():NativeArray<ElementType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<ElementType>;
 
 }
 

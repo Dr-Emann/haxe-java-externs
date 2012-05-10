@@ -10,16 +10,16 @@ import javax.swing.plaf.basic.BasicProgressBarUI;
 extern class MetalProgressBarUI extends BasicProgressBarUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalProgressBarUI.html#MetalProgressBarUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalProgressBarUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalProgressBarUI.html#paintDeterminate(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paintDeterminate(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paintDeterminate(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalProgressBarUI.html#paintIndeterminate(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paintIndeterminate(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paintIndeterminate(g:Graphics, c:JComponent):Void;
 
 }
 

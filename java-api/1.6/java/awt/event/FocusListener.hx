@@ -8,10 +8,10 @@ import java.util.EventListener;
 extern interface FocusListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent) */
-	public function focusGained(e:FocusEvent):Void;
+	/*@@@ modifiers=1025 */ public function focusGained(e:FocusEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent) */
-	public function focusLost(e:FocusEvent):Void;
+	/*@@@ modifiers=1025 */ public function focusLost(e:FocusEvent):Void;
 
 }
 

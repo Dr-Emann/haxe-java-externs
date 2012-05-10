@@ -8,10 +8,10 @@ import java.lang.ref.ReferenceQueue;
 extern class PhantomReference<T : (Dynamic)> extends Reference<T>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/PhantomReference.html#PhantomReference(java.lang.Object, java.lang.ref.ReferenceQueue) */
-	public function new(referent:T, q:ReferenceQueue<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(referent:T, q:ReferenceQueue<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/PhantomReference.html#get() */
-	override public function get():T;
+	/*@@@ modifiers=1 */ override public function get():T;
 
 }
 

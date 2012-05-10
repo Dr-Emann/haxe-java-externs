@@ -11,14 +11,14 @@ import javax.sound.midi.Soundbank;
 extern class SoundbankReader extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/spi/SoundbankReader.html#SoundbankReader() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.io.File) */
-	@:overload(function (file:File):Soundbank {})
+	/*@@@ modifiers=1025 */ @:overload(function (file:File):Soundbank {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.io.InputStream) */
-	@:overload(function (stream:InputStream):Soundbank {})
+	/*@@@ modifiers=1025 */ @:overload(function (stream:InputStream):Soundbank {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.net.URL) */
-	public function getSoundbank(url:URL):Soundbank;
+	/*@@@ modifiers=1025 */ public function getSoundbank(url:URL):Soundbank;
 
 }
 

@@ -7,7 +7,7 @@ import java.io.IOException;
 extern class SyncFailedException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/SyncFailedException.html#SyncFailedException(java.lang.String) */
-	public function new(desc:String):Void;
+	/*@@@ modifiers=1 */ public function new(desc:String):Void;
 
 }
 

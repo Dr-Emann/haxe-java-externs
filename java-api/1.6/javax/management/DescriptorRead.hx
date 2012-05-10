@@ -7,7 +7,7 @@ import javax.management.Descriptor;
 extern interface DescriptorRead
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/DescriptorRead.html#getDescriptor() */
-	public function getDescriptor():Descriptor;
+	/*@@@ modifiers=1025 */ public function getDescriptor():Descriptor;
 
 }
 

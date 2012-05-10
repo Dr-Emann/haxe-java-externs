@@ -31,146 +31,146 @@ extern class AbstractDocument extends Object, implements Document, implements Se
 	private var listenerList:EventListenerList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#AbstractDocument(javax.swing.text.AbstractDocument$Content, javax.swing.text.AbstractDocument$AttributeContext) */
-	@:overload(function (data:AbstractDocument_Content, context:AbstractDocument_AttributeContext):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (data:AbstractDocument_Content, context:AbstractDocument_AttributeContext):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#AbstractDocument(javax.swing.text.AbstractDocument$Content) */
-	private function new(data:AbstractDocument_Content):Void;
+	/*@@@ modifiers=4 */ private function new(data:AbstractDocument_Content):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#addDocumentListener(javax.swing.event.DocumentListener) */
-	public function addDocumentListener(listener:DocumentListener):Void;
+	/*@@@ modifiers=1 */ public function addDocumentListener(listener:DocumentListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#addUndoableEditListener(javax.swing.event.UndoableEditListener) */
-	public function addUndoableEditListener(listener:UndoableEditListener):Void;
+	/*@@@ modifiers=1 */ public function addUndoableEditListener(listener:UndoableEditListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#createBranchElement(javax.swing.text.Element, javax.swing.text.AttributeSet) */
-	private function createBranchElement(parent:Element, a:AttributeSet):Element;
+	/*@@@ modifiers=4 */ private function createBranchElement(parent:Element, a:AttributeSet):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#createLeafElement(javax.swing.text.Element, javax.swing.text.AttributeSet, int, int) */
-	private function createLeafElement(parent:Element, a:AttributeSet, p0:Int, p1:Int):Element;
+	/*@@@ modifiers=4 */ private function createLeafElement(parent:Element, a:AttributeSet, p0:Int, p1:Int):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#createPosition(int) */
-	public function createPosition(offs:Int):Position;
+	/*@@@ modifiers=33 */ public function createPosition(offs:Int):Position;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#dump(java.io.PrintStream) */
-	public function dump(out:PrintStream):Void;
+	/*@@@ modifiers=1 */ public function dump(out:PrintStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#fireChangedUpdate(javax.swing.event.DocumentEvent) */
-	private function fireChangedUpdate(e:DocumentEvent):Void;
+	/*@@@ modifiers=4 */ private function fireChangedUpdate(e:DocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#fireInsertUpdate(javax.swing.event.DocumentEvent) */
-	private function fireInsertUpdate(e:DocumentEvent):Void;
+	/*@@@ modifiers=4 */ private function fireInsertUpdate(e:DocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#fireRemoveUpdate(javax.swing.event.DocumentEvent) */
-	private function fireRemoveUpdate(e:DocumentEvent):Void;
+	/*@@@ modifiers=4 */ private function fireRemoveUpdate(e:DocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#fireUndoableEditUpdate(javax.swing.event.UndoableEditEvent) */
-	private function fireUndoableEditUpdate(e:UndoableEditEvent):Void;
+	/*@@@ modifiers=4 */ private function fireUndoableEditUpdate(e:UndoableEditEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getAsynchronousLoadPriority() */
-	public function getAsynchronousLoadPriority():Int;
+	/*@@@ modifiers=1 */ public function getAsynchronousLoadPriority():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getAttributeContext() */
-	private function getAttributeContext():AbstractDocument_AttributeContext;
+	/*@@@ modifiers=20 */ private function getAttributeContext():AbstractDocument_AttributeContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getBidiRootElement() */
-	public function getBidiRootElement():Element;
+	/*@@@ modifiers=1 */ public function getBidiRootElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getContent() */
-	private function getContent():AbstractDocument_Content;
+	/*@@@ modifiers=20 */ private function getContent():AbstractDocument_Content;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getCurrentWriter() */
-	private function getCurrentWriter():Thread;
+	/*@@@ modifiers=52 */ private function getCurrentWriter():Thread;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getDefaultRootElement() */
-	public function getDefaultRootElement():Element;
+	/*@@@ modifiers=1025 */ public function getDefaultRootElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getDocumentFilter() */
-	public function getDocumentFilter():DocumentFilter;
+	/*@@@ modifiers=1 */ public function getDocumentFilter():DocumentFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getDocumentListeners() */
-	public function getDocumentListeners():NativeArray<DocumentListener>;
+	/*@@@ modifiers=1 */ public function getDocumentListeners():NativeArray<DocumentListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getDocumentProperties() */
-	public function getDocumentProperties():Dictionary<Dynamic, Dynamic>;
+	/*@@@ modifiers=1 */ public function getDocumentProperties():Dictionary<Dynamic, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getEndPosition() */
-	public function getEndPosition():Position;
+	/*@@@ modifiers=17 */ public function getEndPosition():Position;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1 */ public function getLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getParagraphElement(int) */
-	public function getParagraphElement(pos:Int):Element;
+	/*@@@ modifiers=1025 */ public function getParagraphElement(pos:Int):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getProperty(java.lang.Object) */
-	public function getProperty(key:Dynamic):Dynamic;
+	/*@@@ modifiers=17 */ public function getProperty(key:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getRootElements() */
-	public function getRootElements():NativeArray<Element>;
+	/*@@@ modifiers=1 */ public function getRootElements():NativeArray<Element>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getStartPosition() */
-	public function getStartPosition():Position;
+	/*@@@ modifiers=17 */ public function getStartPosition():Position;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getText(int, int, javax.swing.text.Segment) */
-	@:overload(function (offset:Int, length:Int, txt:Segment):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (offset:Int, length:Int, txt:Segment):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getText(int, int) */
-	public function getText(offset:Int, length:Int):String;
+	/*@@@ modifiers=1 */ public function getText(offset:Int, length:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#getUndoableEditListeners() */
-	public function getUndoableEditListeners():NativeArray<UndoableEditListener>;
+	/*@@@ modifiers=1 */ public function getUndoableEditListeners():NativeArray<UndoableEditListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#insertString(int, java.lang.String, javax.swing.text.AttributeSet) */
-	public function insertString(offs:Int, str:String, a:AttributeSet):Void;
+	/*@@@ modifiers=1 */ public function insertString(offs:Int, str:String, a:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#insertUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent, javax.swing.text.AttributeSet) */
-	private function insertUpdate(chng:AbstractDocument_DefaultDocumentEvent, attr:AttributeSet):Void;
+	/*@@@ modifiers=4 */ private function insertUpdate(chng:AbstractDocument_DefaultDocumentEvent, attr:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#postRemoveUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	private function postRemoveUpdate(chng:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=4 */ private function postRemoveUpdate(chng:AbstractDocument_DefaultDocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#putProperty(java.lang.Object, java.lang.Object) */
-	public function putProperty(key:Dynamic, value:Dynamic):Void;
+	/*@@@ modifiers=17 */ public function putProperty(key:Dynamic, value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#readLock() */
-	public function readLock():Void;
+	/*@@@ modifiers=49 */ public function readLock():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#readUnlock() */
-	public function readUnlock():Void;
+	/*@@@ modifiers=49 */ public function readUnlock():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#remove(int, int) */
-	public function remove(offs:Int, len:Int):Void;
+	/*@@@ modifiers=1 */ public function remove(offs:Int, len:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#removeDocumentListener(javax.swing.event.DocumentListener) */
-	public function removeDocumentListener(listener:DocumentListener):Void;
+	/*@@@ modifiers=1 */ public function removeDocumentListener(listener:DocumentListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener) */
-	public function removeUndoableEditListener(listener:UndoableEditListener):Void;
+	/*@@@ modifiers=1 */ public function removeUndoableEditListener(listener:UndoableEditListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#removeUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	private function removeUpdate(chng:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=4 */ private function removeUpdate(chng:AbstractDocument_DefaultDocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#render(java.lang.Runnable) */
-	public function render(r:Runnable):Void;
+	/*@@@ modifiers=1 */ public function render(r:Runnable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#replace(int, int, java.lang.String, javax.swing.text.AttributeSet) */
-	public function replace(offset:Int, length:Int, text:String, attrs:AttributeSet):Void;
+	/*@@@ modifiers=1 */ public function replace(offset:Int, length:Int, text:String, attrs:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#setAsynchronousLoadPriority(int) */
-	public function setAsynchronousLoadPriority(p:Int):Void;
+	/*@@@ modifiers=1 */ public function setAsynchronousLoadPriority(p:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#setDocumentFilter(javax.swing.text.DocumentFilter) */
-	public function setDocumentFilter(filter:DocumentFilter):Void;
+	/*@@@ modifiers=1 */ public function setDocumentFilter(filter:DocumentFilter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#setDocumentProperties(java.util.Dictionary) */
-	public function setDocumentProperties(x:Dictionary<Dynamic, Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function setDocumentProperties(x:Dictionary<Dynamic, Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#writeLock() */
-	private function writeLock():Void;
+	/*@@@ modifiers=52 */ private function writeLock():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.html#writeUnlock() */
-	private function writeUnlock():Void;
+	/*@@@ modifiers=52 */ private function writeUnlock():Void;
 
 }
 

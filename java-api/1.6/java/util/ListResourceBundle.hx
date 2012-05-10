@@ -10,19 +10,19 @@ import java.util.Set;
 extern class ListResourceBundle extends ResourceBundle
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#ListResourceBundle() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#getContents() */
-	private function getContents():NativeArray<NativeArray<Dynamic>>;
+	/*@@@ modifiers=1028 */ private function getContents():NativeArray<NativeArray<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#getKeys() */
-	override public function getKeys():Enumeration<String>;
+	/*@@@ modifiers=1 */ override public function getKeys():Enumeration<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#handleGetObject(java.lang.String) */
-	override public function handleGetObject(key:String):Dynamic;
+	/*@@@ modifiers=17 */ override public function handleGetObject(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#handleKeySet() */
-	override private function handleKeySet():Set<String>;
+	/*@@@ modifiers=4 */ override private function handleKeySet():Set<String>;
 
 }
 

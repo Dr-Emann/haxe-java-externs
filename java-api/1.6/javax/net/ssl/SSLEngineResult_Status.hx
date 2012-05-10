@@ -20,10 +20,10 @@ extern class SSLEngineResult_Status extends Enum<SSLEngineResult_Status>
 	public static var CLOSED:SSLEngineResult_Status;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLEngineResult.Status.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SSLEngineResult_Status;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SSLEngineResult_Status;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLEngineResult.Status.html#values() */
-	static public function values():NativeArray<SSLEngineResult_Status>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SSLEngineResult_Status>;
 
 }
 

@@ -7,7 +7,7 @@ import java.util.EventObject;
 extern class ChangeEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/ChangeEvent.html#ChangeEvent(java.lang.Object) */
-	public function new(source:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic):Void;
 
 }
 

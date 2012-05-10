@@ -63,55 +63,55 @@ extern class DTD extends Object, implements DTDConstants
 	public static var title:Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#DTD(java.lang.String) */
-	private function new(name:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defAttributeList(java.lang.String, int, int, java.lang.String, java.lang.String, javax.swing.text.html.parser.AttributeList) */
-	private function defAttributeList(name:String, type:Int, modifier:Int, value:String, values:String, atts:AttributeList):AttributeList;
+	/*@@@ modifiers=4 */ private function defAttributeList(name:String, type:Int, modifier:Int, value:String, values:String, atts:AttributeList):AttributeList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defContentModel(int, java.lang.Object, javax.swing.text.html.parser.ContentModel) */
-	private function defContentModel(type:Int, obj:Dynamic, next:ContentModel):ContentModel;
+	/*@@@ modifiers=4 */ private function defContentModel(type:Int, obj:Dynamic, next:ContentModel):ContentModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defElement(java.lang.String, int, boolean, boolean, javax.swing.text.html.parser.ContentModel, java.lang.String[], java.lang.String[], javax.swing.text.html.parser.AttributeList) */
-	private function defElement(name:String, type:Int, omitStart:Bool, omitEnd:Bool, content:ContentModel, exclusions:NativeArray<String>, inclusions:NativeArray<String>, atts:AttributeList):Element;
+	/*@@@ modifiers=4 */ private function defElement(name:String, type:Int, omitStart:Bool, omitEnd:Bool, content:ContentModel, exclusions:NativeArray<String>, inclusions:NativeArray<String>, atts:AttributeList):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defEntity(java.lang.String, int, int) */
-	@:overload(function (name:String, type:Int, ch:Int):Entity {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, type:Int, ch:Int):Entity {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defEntity(java.lang.String, int, java.lang.String) */
-	private function defEntity(name:String, type:Int, str:String):Entity;
+	/*@@@ modifiers=4 */ private function defEntity(name:String, type:Int, str:String):Entity;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defineAttributes(java.lang.String, javax.swing.text.html.parser.AttributeList) */
-	public function defineAttributes(name:String, atts:AttributeList):Void;
+	/*@@@ modifiers=1 */ public function defineAttributes(name:String, atts:AttributeList):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defineElement(java.lang.String, int, boolean, boolean, javax.swing.text.html.parser.ContentModel, java.util.BitSet, java.util.BitSet, javax.swing.text.html.parser.AttributeList) */
-	public function defineElement(name:String, type:Int, omitStart:Bool, omitEnd:Bool, content:ContentModel, exclusions:BitSet, inclusions:BitSet, atts:AttributeList):Element;
+	/*@@@ modifiers=1 */ public function defineElement(name:String, type:Int, omitStart:Bool, omitEnd:Bool, content:ContentModel, exclusions:BitSet, inclusions:BitSet, atts:AttributeList):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#defineEntity(java.lang.String, int, char[]) */
-	public function defineEntity(name:String, type:Int, data:NativeArray<Char16>):Entity;
+	/*@@@ modifiers=1 */ public function defineEntity(name:String, type:Int, data:NativeArray<Char16>):Entity;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#getDTD(java.lang.String) */
-	static public function getDTD(name:String):DTD;
+	/*@@@ modifiers=9 */ static public function getDTD(name:String):DTD;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#getElement(int) */
-	@:overload(function (index:Int):Element {})
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):Element {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#getElement(java.lang.String) */
-	public function getElement(name:String):Element;
+	/*@@@ modifiers=1 */ public function getElement(name:String):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#getEntity(int) */
-	@:overload(function (ch:Int):Entity {})
+	/*@@@ modifiers=1 */ @:overload(function (ch:Int):Entity {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#getEntity(java.lang.String) */
-	public function getEntity(name:String):Entity;
+	/*@@@ modifiers=1 */ public function getEntity(name:String):Entity;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#putDTDHash(java.lang.String, javax.swing.text.html.parser.DTD) */
-	static public function putDTDHash(name:String, dtd:DTD):Void;
+	/*@@@ modifiers=9 */ static public function putDTDHash(name:String, dtd:DTD):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#read(java.io.DataInputStream) */
-	public function read(_in:DataInputStream):Void;
+	/*@@@ modifiers=1 */ public function read(_in:DataInputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DTD.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

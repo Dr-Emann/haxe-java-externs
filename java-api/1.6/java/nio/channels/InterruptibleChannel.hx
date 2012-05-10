@@ -7,7 +7,7 @@ import java.nio.channels.Channel;
 extern interface InterruptibleChannel implements Channel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/InterruptibleChannel.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 }
 

@@ -8,21 +8,21 @@ import java.util.concurrent.locks.Condition;
 extern interface Lock
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Lock.html#locks.Lock.lock() */
-	public function lock():Void;
+	/*@@@ modifiers=1025 */ public function lock():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Lock.html#lockInterruptibly() */
-	public function lockInterruptibly():Void;
+	/*@@@ modifiers=1025 */ public function lockInterruptibly():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Lock.html#newCondition() */
-	public function newCondition():Condition;
+	/*@@@ modifiers=1025 */ public function newCondition():Condition;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Lock.html#tryLock(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (time:haxe.Int64, unit:TimeUnit):Bool {})
+	/*@@@ modifiers=1025 */ @:overload(function (time:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Lock.html#tryLock() */
-	public function tryLock():Bool;
+	/*@@@ modifiers=1025 */ public function tryLock():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Lock.html#unlock() */
-	public function unlock():Void;
+	/*@@@ modifiers=1025 */ public function unlock():Void;
 
 }
 

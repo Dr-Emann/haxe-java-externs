@@ -7,7 +7,7 @@ import java.lang.Exception;
 extern class InvalidApplicationException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/InvalidApplicationException.html#InvalidApplicationException(java.lang.Object) */
-	public function new(val:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(val:Dynamic):Void;
 
 }
 

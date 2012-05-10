@@ -7,10 +7,10 @@ import javax.lang.model.type.TypeMirror;
 extern interface WildcardType implements TypeMirror
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/WildcardType.html#getExtendsBound() */
-	public function getExtendsBound():TypeMirror;
+	/*@@@ modifiers=1025 */ public function getExtendsBound():TypeMirror;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/WildcardType.html#getSuperBound() */
-	public function getSuperBound():TypeMirror;
+	/*@@@ modifiers=1025 */ public function getSuperBound():TypeMirror;
 
 }
 

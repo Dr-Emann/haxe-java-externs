@@ -7,7 +7,7 @@ import java.lang.RuntimeException;
 extern class BufferOverflowException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/BufferOverflowException.html#BufferOverflowException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

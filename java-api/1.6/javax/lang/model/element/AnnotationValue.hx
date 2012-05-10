@@ -7,13 +7,13 @@ import javax.lang.model.element.AnnotationValueVisitor;
 extern interface AnnotationValue
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationValue.html#accept(javax.lang.model.element.AnnotationValueVisitor, java.lang.Object) */
-	public function accept<R, P>(v:AnnotationValueVisitor<R, P>, p:P):R;
+	/*@@@ modifiers=1025 */ public function accept<R, P>(v:AnnotationValueVisitor<R, P>, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationValue.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1025 */ public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationValue.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

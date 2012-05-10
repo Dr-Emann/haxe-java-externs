@@ -65,13 +65,13 @@ extern class TypeKind extends Enum<TypeKind>
 	public static var OTHER:TypeKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/TypeKind.html#isPrimitive() */
-	public function isPrimitive():Bool;
+	/*@@@ modifiers=1 */ public function isPrimitive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/TypeKind.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):TypeKind;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):TypeKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/TypeKind.html#values() */
-	static public function values():NativeArray<TypeKind>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<TypeKind>;
 
 }
 

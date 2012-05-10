@@ -12,20 +12,20 @@ extern class FilterOutputStream extends OutputStream
 	private var out:OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#FilterOutputStream(java.io.OutputStream) */
-	public function new(out:OutputStream):Void;
+	/*@@@ modifiers=1 */ public function new(out:OutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#flush() */
-	override public function flush():Void;
+	/*@@@ modifiers=1 */ override public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(int) */
-	@:overload(function (b:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(byte[]) */
-	override public function write(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ override public function write(b:NativeArray<Int8>):Void;
 
 }
 

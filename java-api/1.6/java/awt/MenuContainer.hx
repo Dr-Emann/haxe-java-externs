@@ -9,13 +9,13 @@ import java.awt.MenuComponent;
 extern interface MenuContainer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuContainer.html#getFont() */
-	public function getFont():Font;
+	/*@@@ modifiers=1025 */ public function getFont():Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuContainer.html#postEvent(java.awt.Event) */
-	public function postEvent(evt:Event):Bool;
+	/*@@@ modifiers=1025 */ public function postEvent(evt:Event):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuContainer.html#remove(java.awt.MenuComponent) */
-	public function remove(comp:MenuComponent):Void;
+	/*@@@ modifiers=1025 */ public function remove(comp:MenuComponent):Void;
 
 }
 

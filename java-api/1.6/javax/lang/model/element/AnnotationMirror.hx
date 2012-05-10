@@ -10,10 +10,10 @@ import javax.lang.model.type.DeclaredType;
 extern interface AnnotationMirror
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationMirror.html#getAnnotationType() */
-	public function getAnnotationType():DeclaredType;
+	/*@@@ modifiers=1025 */ public function getAnnotationType():DeclaredType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationMirror.html#getElementValues() */
-	public function getElementValues():Map<ExecutableElement, AnnotationValue>;
+	/*@@@ modifiers=1025 */ public function getElementValues():Map<ExecutableElement, AnnotationValue>;
 
 }
 

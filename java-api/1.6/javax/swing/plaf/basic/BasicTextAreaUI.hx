@@ -14,34 +14,34 @@ import javax.swing.text.View;
 extern class BasicTextAreaUI extends BasicTextUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#BasicTextAreaUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#create(javax.swing.text.Element) */
-	override public function create(elem:Element):View;
+	/*@@@ modifiers=1 */ override public function create(elem:Element):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(ta:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(ta:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
+	/*@@@ modifiers=1 */ override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#getBaselineResizeBehavior(javax.swing.JComponent) */
-	override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#installDefaults() */
-	override private function installDefaults():Void;
+	/*@@@ modifiers=4 */ override private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	override private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ override private function propertyChange(evt:PropertyChangeEvent):Void;
 
 }
 

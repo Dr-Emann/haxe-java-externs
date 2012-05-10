@@ -9,10 +9,10 @@ import javax.swing.text.Element;
 extern class ObjectView extends ComponentView
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/ObjectView.html#ObjectView(javax.swing.text.Element) */
-	public function new(elem:Element):Void;
+	/*@@@ modifiers=1 */ public function new(elem:Element):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/ObjectView.html#createComponent() */
-	override private function createComponent():Component;
+	/*@@@ modifiers=4 */ override private function createComponent():Component;
 
 }
 

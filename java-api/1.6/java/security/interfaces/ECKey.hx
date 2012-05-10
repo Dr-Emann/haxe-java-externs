@@ -7,7 +7,7 @@ import java.security.spec.ECParameterSpec;
 extern interface ECKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECKey.html#getParams() */
-	public function getParams():ECParameterSpec;
+	/*@@@ modifiers=1025 */ public function getParams():ECParameterSpec;
 
 }
 

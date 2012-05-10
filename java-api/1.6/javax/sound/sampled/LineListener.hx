@@ -8,7 +8,7 @@ import javax.sound.sampled.LineEvent;
 extern interface LineListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent) */
-	public function update(event:LineEvent):Void;
+	/*@@@ modifiers=1025 */ public function update(event:LineEvent):Void;
 
 }
 

@@ -7,9 +7,9 @@ import javax.management.OperationsException;
 extern class InstanceAlreadyExistsException extends OperationsException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/InstanceAlreadyExistsException.html#InstanceAlreadyExistsException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/InstanceAlreadyExistsException.html#InstanceAlreadyExistsException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

@@ -8,9 +8,9 @@ import java.lang.Throwable;
 extern class InvalidPropertiesFormatException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/InvalidPropertiesFormatException.html#InvalidPropertiesFormatException(java.lang.Throwable) */
-	@:overload(function (cause:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (cause:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/InvalidPropertiesFormatException.html#InvalidPropertiesFormatException(java.lang.String) */
-	public function new(cause:String):Void;
+	/*@@@ modifiers=1 */ public function new(cause:String):Void;
 
 }
 

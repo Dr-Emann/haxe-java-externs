@@ -8,10 +8,10 @@ import java.security.spec.AlgorithmParameterSpec;
 extern class ECGenParameterSpec extends Object, implements AlgorithmParameterSpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECGenParameterSpec.html#ECGenParameterSpec(java.lang.String) */
-	public function new(stdName:String):Void;
+	/*@@@ modifiers=1 */ public function new(stdName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECGenParameterSpec.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 }
 

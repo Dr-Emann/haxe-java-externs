@@ -12,22 +12,22 @@ import java.lang.Object;
 extern class ViewportLayout extends Object, implements LayoutManager, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ViewportLayout.html#ViewportLayout() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ViewportLayout.html#addLayoutComponent(java.lang.String, java.awt.Component) */
-	public function addLayoutComponent(name:String, c:Component):Void;
+	/*@@@ modifiers=1 */ public function addLayoutComponent(name:String, c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ViewportLayout.html#layoutContainer(java.awt.Container) */
-	public function layoutContainer(parent:Container):Void;
+	/*@@@ modifiers=1 */ public function layoutContainer(parent:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ViewportLayout.html#minimumLayoutSize(java.awt.Container) */
-	public function minimumLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1 */ public function minimumLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ViewportLayout.html#preferredLayoutSize(java.awt.Container) */
-	public function preferredLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1 */ public function preferredLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ViewportLayout.html#removeLayoutComponent(java.awt.Component) */
-	public function removeLayoutComponent(c:Component):Void;
+	/*@@@ modifiers=1 */ public function removeLayoutComponent(c:Component):Void;
 
 }
 

@@ -6,19 +6,19 @@ package java.lang.management;
 extern interface ClassLoadingMXBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ClassLoadingMXBean.html#getLoadedClassCount() */
-	public function getLoadedClassCount():Int;
+	/*@@@ modifiers=1025 */ public function getLoadedClassCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ClassLoadingMXBean.html#getTotalLoadedClassCount() */
-	public function getTotalLoadedClassCount():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getTotalLoadedClassCount():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ClassLoadingMXBean.html#getUnloadedClassCount() */
-	public function getUnloadedClassCount():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getUnloadedClassCount():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ClassLoadingMXBean.html#isVerbose() */
-	public function isVerbose():Bool;
+	/*@@@ modifiers=1025 */ public function isVerbose():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ClassLoadingMXBean.html#setVerbose(boolean) */
-	public function setVerbose(value:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setVerbose(value:Bool):Void;
 
 }
 

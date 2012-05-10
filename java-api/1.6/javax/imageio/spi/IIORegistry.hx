@@ -8,10 +8,10 @@ extern class IIORegistry extends ServiceRegistry
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/IIORegistry.html#getDefaultInstance() */
-	static public function getDefaultInstance():IIORegistry;
+	/*@@@ modifiers=9 */ static public function getDefaultInstance():IIORegistry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/IIORegistry.html#registerApplicationClasspathSpis() */
-	public function registerApplicationClasspathSpis():Void;
+	/*@@@ modifiers=1 */ public function registerApplicationClasspathSpis():Void;
 
 }
 

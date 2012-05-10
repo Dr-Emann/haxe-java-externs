@@ -17,10 +17,10 @@ import javax.tools.Tool;
 extern interface JavaCompiler implements Tool, implements OptionChecker
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.html#getStandardFileManager(javax.tools.DiagnosticListener, java.util.Locale, java.nio.charset.Charset) */
-	public function getStandardFileManager(diagnosticListener:DiagnosticListener<Dynamic>, locale:Locale, charset:Charset):StandardJavaFileManager;
+	/*@@@ modifiers=1025 */ public function getStandardFileManager(diagnosticListener:DiagnosticListener<Dynamic>, locale:Locale, charset:Charset):StandardJavaFileManager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.html#getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener, java.lang.Iterable, java.lang.Iterable, java.lang.Iterable) */
-	public function getTask(out:Writer, fileManager:JavaFileManager, diagnosticListener:DiagnosticListener<Dynamic>, options:java.lang.Iterable<String>, classes:java.lang.Iterable<String>, compilationUnits:java.lang.Iterable<JavaFileObject>):JavaCompiler_CompilationTask;
+	/*@@@ modifiers=1025 */ public function getTask(out:Writer, fileManager:JavaFileManager, diagnosticListener:DiagnosticListener<Dynamic>, options:java.lang.Iterable<String>, classes:java.lang.Iterable<String>, compilationUnits:java.lang.Iterable<JavaFileObject>):JavaCompiler_CompilationTask;
 
 }
 

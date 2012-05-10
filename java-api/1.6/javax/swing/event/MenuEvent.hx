@@ -7,7 +7,7 @@ import java.util.EventObject;
 extern class MenuEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/MenuEvent.html#MenuEvent(java.lang.Object) */
-	public function new(source:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic):Void;
 
 }
 

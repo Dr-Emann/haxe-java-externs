@@ -12,15 +12,15 @@ import javax.swing.plaf.UIResource;
 extern class BasicBorders_MenuBarBorder extends AbstractBorder, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#BasicBorders$MenuBarBorder(java.awt.Color, java.awt.Color) */
-	public function new(shadow:Color, highlight:Color):Void;
+	/*@@@ modifiers=1 */ public function new(shadow:Color, highlight:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#getBorderInsets(java.awt.Component, java.awt.Insets) */
-	@:overload(function (c:Component, insets:Insets):Insets {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, insets:Insets):Insets {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#getBorderInsets(java.awt.Component) */
-	override public function getBorderInsets(c:Component):Insets;
+	/*@@@ modifiers=1 */ override public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 }
 

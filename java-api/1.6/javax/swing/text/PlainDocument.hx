@@ -18,27 +18,27 @@ extern class PlainDocument extends AbstractDocument
 	public static var lineLimitAttribute:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#PlainDocument(javax.swing.text.AbstractDocument$Content) */
-	@:overload(function (c:AbstractDocument_Content):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (c:AbstractDocument_Content):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#PlainDocument() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#createDefaultRoot() */
-	private function createDefaultRoot():AbstractDocument_AbstractElement;
+	/*@@@ modifiers=4 */ private function createDefaultRoot():AbstractDocument_AbstractElement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#getDefaultRootElement() */
-	override public function getDefaultRootElement():Element;
+	/*@@@ modifiers=1 */ override public function getDefaultRootElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#getParagraphElement(int) */
-	override public function getParagraphElement(pos:Int):Element;
+	/*@@@ modifiers=1 */ override public function getParagraphElement(pos:Int):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#insertString(int, java.lang.String, javax.swing.text.AttributeSet) */
-	override public function insertString(offs:Int, str:String, a:AttributeSet):Void;
+	/*@@@ modifiers=1 */ override public function insertString(offs:Int, str:String, a:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#insertUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent, javax.swing.text.AttributeSet) */
-	override private function insertUpdate(p0:AbstractDocument_DefaultDocumentEvent, p1:AttributeSet):Void;
+	/*@@@ modifiers=4 */ override private function insertUpdate(p0:AbstractDocument_DefaultDocumentEvent, p1:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/PlainDocument.html#removeUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	override private function removeUpdate(p0:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=4 */ override private function removeUpdate(p0:AbstractDocument_DefaultDocumentEvent):Void;
 
 }
 

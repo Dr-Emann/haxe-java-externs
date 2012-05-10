@@ -6,7 +6,7 @@ package java.rmi.server;
 extern interface Unreferenced
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/Unreferenced.html#unreferenced() */
-	public function unreferenced():Void;
+	/*@@@ modifiers=1025 */ public function unreferenced():Void;
 
 }
 

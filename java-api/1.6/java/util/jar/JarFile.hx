@@ -13,30 +13,30 @@ import java.util.zip.ZipFile;
 extern class JarFile extends ZipFile
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#JarFile(java.lang.String, boolean) */
-	@:overload(function (name:String, verify:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, verify:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#JarFile(java.io.File) */
-	@:overload(function (name:File):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:File):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#JarFile(java.io.File, boolean) */
-	@:overload(function (name:File, verify:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:File, verify:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#JarFile(java.io.File, boolean, int) */
-	@:overload(function (file:File, verify:Bool, mode:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (file:File, verify:Bool, mode:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#JarFile(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#entries() */
-	override public function entries():Enumeration<JarEntry>;
+	/*@@@ modifiers=1 */ override public function entries():Enumeration<JarEntry>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#getEntry(java.lang.String) */
-	override public function getEntry(name:String):ZipEntry;
+	/*@@@ modifiers=1 */ override public function getEntry(name:String):ZipEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#getInputStream(java.util.zip.ZipEntry) */
-	override public function getInputStream(ze:ZipEntry):InputStream;
+	/*@@@ modifiers=33 */ override public function getInputStream(ze:ZipEntry):InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#getJarEntry(java.lang.String) */
-	public function getJarEntry(name:String):JarEntry;
+	/*@@@ modifiers=1 */ public function getJarEntry(name:String):JarEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#getManifest() */
-	public function getManifest():Manifest;
+	/*@@@ modifiers=1 */ public function getManifest():Manifest;
 
 }
 

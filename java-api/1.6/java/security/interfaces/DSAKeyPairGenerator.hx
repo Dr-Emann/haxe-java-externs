@@ -8,9 +8,9 @@ import java.security.interfaces.DSAParams;
 extern interface DSAKeyPairGenerator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int, boolean, java.security.SecureRandom) */
-	@:overload(function (modlen:Int, genParams:Bool, random:SecureRandom):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (modlen:Int, genParams:Bool, random:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams, java.security.SecureRandom) */
-	public function initialize(params:DSAParams, random:SecureRandom):Void;
+	/*@@@ modifiers=1025 */ public function initialize(params:DSAParams, random:SecureRandom):Void;
 
 }
 

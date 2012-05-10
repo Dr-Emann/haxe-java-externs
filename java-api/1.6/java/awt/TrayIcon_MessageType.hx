@@ -20,10 +20,10 @@ extern class TrayIcon_MessageType extends Enum<TrayIcon_MessageType>
 	public static var NONE:TrayIcon_MessageType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/TrayIcon.MessageType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):TrayIcon_MessageType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):TrayIcon_MessageType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/TrayIcon.MessageType.html#values() */
-	static public function values():NativeArray<TrayIcon_MessageType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<TrayIcon_MessageType>;
 
 }
 

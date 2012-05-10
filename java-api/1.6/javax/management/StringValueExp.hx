@@ -10,21 +10,21 @@ import javax.management.ValueExp;
 extern class StringValueExp extends Object, implements ValueExp
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/StringValueExp.html#StringValueExp() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/StringValueExp.html#StringValueExp(java.lang.String) */
-	public function new(val:String):Void;
+	/*@@@ modifiers=1 */ public function new(val:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/StringValueExp.html#apply(javax.management.ObjectName) */
-	public function apply(name:ObjectName):ValueExp;
+	/*@@@ modifiers=1 */ public function apply(name:ObjectName):ValueExp;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/StringValueExp.html#getValue() */
-	public function getValue():String;
+	/*@@@ modifiers=1 */ public function getValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/StringValueExp.html#setMBeanServer(javax.management.MBeanServer) */
-	public function setMBeanServer(s:MBeanServer):Void;
+	/*@@@ modifiers=1 */ public function setMBeanServer(s:MBeanServer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/StringValueExp.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

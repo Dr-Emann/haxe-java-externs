@@ -13,57 +13,54 @@ import javax.management.openmbean.OpenType;
 extern class OpenMBeanParameterInfoSupport extends MBeanParameterInfo, implements OpenMBeanParameterInfo
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType, javax.management.Descriptor) */
-	@:overload(function (name:String, description:String, openType:OpenType<Dynamic>, descriptor:Descriptor):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, description:String, openType:OpenType<Dynamic>, descriptor:Descriptor):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType, java.lang.Object) */
-	@:overload(function <T>(name:String, description:String, openType:OpenType<T>, defaultValue:T):Void {})
+	/*@@@ modifiers=1 */ @:overload(function <T>(name:String, description:String, openType:OpenType<T>, defaultValue:T):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType, java.lang.Object, java.lang.Object[]) */
-	@:overload(function <T>(name:String, description:String, openType:OpenType<T>, defaultValue:T, legalValues:NativeArray<T>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function <T>(name:String, description:String, openType:OpenType<T>, defaultValue:T, legalValues:NativeArray<T>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType, java.lang.Object, java.lang.Comparable, java.lang.Comparable) */
-	@:overload(function <T>(name:String, description:String, openType:OpenType<T>, defaultValue:T, minValue:Comparable<T>, maxValue:Comparable<T>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function <T>(name:String, description:String, openType:OpenType<T>, defaultValue:T, minValue:Comparable<T>, maxValue:Comparable<T>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType) */
-	public function new(name:String, description:String, openType:OpenType<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, description:String, openType:OpenType<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getDefaultValue() */
-	public function getDefaultValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getDefaultValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getLegalValues() */
-	public function getLegalValues():Set<Dynamic>;
+	/*@@@ modifiers=1 */ public function getLegalValues():Set<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMaxValue() */
-	public function getMaxValue():Comparable<Dynamic>;
+	/*@@@ modifiers=1 */ public function getMaxValue():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMinValue() */
-	public function getMinValue():Comparable<Dynamic>;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getMinValue():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getOpenType() */
-	public function getOpenType():OpenType<Dynamic>;
+	/*@@@ modifiers=1 */ public function getOpenType():OpenType<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasDefaultValue() */
-	public function hasDefaultValue():Bool;
+	/*@@@ modifiers=1 */ public function hasDefaultValue():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasLegalValues() */
-	public function hasLegalValues():Bool;
+	/*@@@ modifiers=1 */ public function hasLegalValues():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasMaxValue() */
-	public function hasMaxValue():Bool;
+	/*@@@ modifiers=1 */ public function hasMaxValue():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasMinValue() */
-	public function hasMinValue():Bool;
+	/*@@@ modifiers=1 */ public function hasMinValue():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#isValue(java.lang.Object) */
-	public function isValue(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function isValue(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

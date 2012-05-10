@@ -9,19 +9,19 @@ import java.security.Principal;
 extern class JMXPrincipal extends Object, implements Principal, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXPrincipal.html#JMXPrincipal(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXPrincipal.html#equals(java.lang.Object) */
-	override public function equals(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXPrincipal.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXPrincipal.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXPrincipal.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

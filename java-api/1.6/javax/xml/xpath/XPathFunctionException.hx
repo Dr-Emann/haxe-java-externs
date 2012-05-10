@@ -8,9 +8,9 @@ import javax.xml.xpath.XPathExpressionException;
 extern class XPathFunctionException extends XPathExpressionException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFunctionException.html#XPathFunctionException(java.lang.String) */
-	@:overload(function (message:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFunctionException.html#XPathFunctionException(java.lang.Throwable) */
-	public function new(message:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(message:Throwable):Void;
 
 }
 

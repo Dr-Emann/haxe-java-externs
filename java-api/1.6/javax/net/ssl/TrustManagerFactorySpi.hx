@@ -11,15 +11,15 @@ import javax.net.ssl.TrustManager;
 extern class TrustManagerFactorySpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactorySpi.html#TrustManagerFactorySpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactorySpi.html#engineGetTrustManagers() */
-	private function engineGetTrustManagers():NativeArray<TrustManager>;
+	/*@@@ modifiers=1028 */ private function engineGetTrustManagers():NativeArray<TrustManager>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactorySpi.html#engineInit(java.security.KeyStore) */
-	@:overload(function (arg0:KeyStore):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (arg0:KeyStore):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactorySpi.html#engineInit(javax.net.ssl.ManagerFactoryParameters) */
-	private function engineInit(arg0:ManagerFactoryParameters):Void;
+	/*@@@ modifiers=1028 */ private function engineInit(arg0:ManagerFactoryParameters):Void;
 
 }
 

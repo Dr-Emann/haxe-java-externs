@@ -7,7 +7,7 @@ import java.lang.RuntimeException;
 extern class BufferUnderflowException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/BufferUnderflowException.html#BufferUnderflowException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

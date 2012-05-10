@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 extern interface RespectBinding implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/RespectBinding.html#enabled() */
-	public function enabled():Bool;
+	/*@@@ modifiers=1025 */ public function enabled():Bool;
 
 }
 

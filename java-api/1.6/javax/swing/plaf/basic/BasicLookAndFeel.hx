@@ -12,37 +12,37 @@ import javax.swing.UIDefaults;
 extern class BasicLookAndFeel extends LookAndFeel, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#BasicLookAndFeel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#createAudioAction(java.lang.Object) */
-	private function createAudioAction(key:Dynamic):Action;
+	/*@@@ modifiers=4 */ private function createAudioAction(key:Dynamic):Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#getAudioActionMap() */
-	private function getAudioActionMap():ActionMap;
+	/*@@@ modifiers=4 */ private function getAudioActionMap():ActionMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#getDefaults() */
-	override public function getDefaults():UIDefaults;
+	/*@@@ modifiers=1 */ override public function getDefaults():UIDefaults;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#initClassDefaults(javax.swing.UIDefaults) */
-	private function initClassDefaults(table:UIDefaults):Void;
+	/*@@@ modifiers=4 */ private function initClassDefaults(table:UIDefaults):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#initComponentDefaults(javax.swing.UIDefaults) */
-	private function initComponentDefaults(table:UIDefaults):Void;
+	/*@@@ modifiers=4 */ private function initComponentDefaults(table:UIDefaults):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#initSystemColorDefaults(javax.swing.UIDefaults) */
-	private function initSystemColorDefaults(table:UIDefaults):Void;
+	/*@@@ modifiers=4 */ private function initSystemColorDefaults(table:UIDefaults):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#initialize() */
-	override public function initialize():Void;
+	/*@@@ modifiers=1 */ override public function initialize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#loadSystemColors(javax.swing.UIDefaults, java.lang.String[], boolean) */
-	private function loadSystemColors(table:UIDefaults, systemColors:NativeArray<String>, useNative:Bool):Void;
+	/*@@@ modifiers=4 */ private function loadSystemColors(table:UIDefaults, systemColors:NativeArray<String>, useNative:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#playSound(javax.swing.Action) */
-	private function playSound(audioAction:Action):Void;
+	/*@@@ modifiers=4 */ private function playSound(audioAction:Action):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicLookAndFeel.html#uninitialize() */
-	override public function uninitialize():Void;
+	/*@@@ modifiers=1 */ override public function uninitialize():Void;
 
 }
 

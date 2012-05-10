@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 extern interface RejectedExecutionHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/RejectedExecutionHandler.html#rejectedExecution(java.lang.Runnable, java.util.concurrent.ThreadPoolExecutor) */
-	public function rejectedExecution(r:Runnable, executor:ThreadPoolExecutor):Void;
+	/*@@@ modifiers=1025 */ public function rejectedExecution(r:Runnable, executor:ThreadPoolExecutor):Void;
 
 }
 

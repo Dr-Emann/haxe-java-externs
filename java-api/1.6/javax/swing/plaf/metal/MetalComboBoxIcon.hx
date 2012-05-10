@@ -11,16 +11,16 @@ import javax.swing.Icon;
 extern class MetalComboBoxIcon extends Object, implements Icon, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxIcon.html#MetalComboBoxIcon() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxIcon.html#getIconHeight() */
-	public function getIconHeight():Int;
+	/*@@@ modifiers=1 */ public function getIconHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxIcon.html#getIconWidth() */
-	public function getIconWidth():Int;
+	/*@@@ modifiers=1 */ public function getIconWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxIcon.html#paintIcon(java.awt.Component, java.awt.Graphics, int, int) */
-	public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
 
 }
 

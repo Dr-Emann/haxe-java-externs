@@ -9,9 +9,9 @@ import javax.xml.transform.sax.SAXSource;
 extern class JAXBSource extends SAXSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/JAXBSource.html#JAXBSource(javax.xml.bind.JAXBContext, java.lang.Object) */
-	@:overload(function (context:JAXBContext, contentObject:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (context:JAXBContext, contentObject:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/JAXBSource.html#JAXBSource(javax.xml.bind.Marshaller, java.lang.Object) */
-	public function new(context:Marshaller, contentObject:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(context:Marshaller, contentObject:Dynamic):Void;
 
 }
 

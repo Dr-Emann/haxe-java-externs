@@ -6,7 +6,7 @@ package java.security.spec;
 extern interface ECField
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECField.html#getFieldSize() */
-	public function getFieldSize():Int;
+	/*@@@ modifiers=1025 */ public function getFieldSize():Int;
 
 }
 

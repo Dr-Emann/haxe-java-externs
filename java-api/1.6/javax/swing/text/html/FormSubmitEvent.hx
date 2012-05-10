@@ -9,10 +9,10 @@ extern class FormSubmitEvent extends HTMLFrameHyperlinkEvent
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/FormSubmitEvent.html#getData() */
-	public function getData():String;
+	/*@@@ modifiers=1 */ public function getData():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/FormSubmitEvent.html#getMethod() */
-	public function getMethod():FormSubmitEvent_MethodType;
+	/*@@@ modifiers=1 */ public function getMethod():FormSubmitEvent_MethodType;
 
 }
 

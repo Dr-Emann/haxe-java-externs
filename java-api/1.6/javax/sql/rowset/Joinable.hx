@@ -7,28 +7,28 @@ import java.NativeArray;
 extern interface Joinable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#getMatchColumnIndexes() */
-	public function getMatchColumnIndexes():NativeArray<Int>;
+	/*@@@ modifiers=1025 */ public function getMatchColumnIndexes():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#getMatchColumnNames() */
-	public function getMatchColumnNames():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getMatchColumnNames():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#setMatchColumn(int) */
-	@:overload(function (columnIdx:Int):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (columnIdx:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#setMatchColumn(int[]) */
-	@:overload(function (columnIdxes:NativeArray<Int>):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (columnIdxes:NativeArray<Int>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#setMatchColumn(java.lang.String[]) */
-	@:overload(function (columnNames:NativeArray<String>):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (columnNames:NativeArray<String>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#setMatchColumn(java.lang.String) */
-	public function setMatchColumn(columnName:String):Void;
+	/*@@@ modifiers=1025 */ public function setMatchColumn(columnName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#unsetMatchColumn(int) */
-	@:overload(function (columnIdx:Int):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (columnIdx:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#unsetMatchColumn(int[]) */
-	@:overload(function (columnIdxes:NativeArray<Int>):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (columnIdxes:NativeArray<Int>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#unsetMatchColumn(java.lang.String[]) */
-	@:overload(function (columnName:NativeArray<String>):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (columnName:NativeArray<String>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/Joinable.html#unsetMatchColumn(java.lang.String) */
-	public function unsetMatchColumn(columnName:String):Void;
+	/*@@@ modifiers=1025 */ public function unsetMatchColumn(columnName:String):Void;
 
 }
 

@@ -11,24 +11,24 @@ import javax.swing.table.TableStringConverter;
 extern class TableRowSorter<M : (TableModel)> extends DefaultRowSorter<M, Integer>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#TableRowSorter(javax.swing.table.TableModel) */
-	@:overload(function (model:M):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (model:M):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#TableRowSorter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#getComparator(int) */
-	override public function getComparator(column:Int):Comparator<Dynamic>;
+	/*@@@ modifiers=1 */ override public function getComparator(column:Int):Comparator<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#getStringConverter() */
-	public function getStringConverter():TableStringConverter;
+	/*@@@ modifiers=1 */ public function getStringConverter():TableStringConverter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#setModel(javax.swing.table.TableModel) */
-	public function setModel(model:M):Void;
+	/*@@@ modifiers=1 */ public function setModel(model:M):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#setStringConverter(javax.swing.table.TableStringConverter) */
-	public function setStringConverter(stringConverter:TableStringConverter):Void;
+	/*@@@ modifiers=1 */ public function setStringConverter(stringConverter:TableStringConverter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableRowSorter.html#useToString(int) */
-	override private function useToString(column:Int):Bool;
+	/*@@@ modifiers=4 */ override private function useToString(column:Int):Bool;
 
 }
 

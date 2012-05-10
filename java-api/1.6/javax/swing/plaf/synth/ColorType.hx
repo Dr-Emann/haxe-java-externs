@@ -7,13 +7,13 @@ import java.lang.Object;
 extern class ColorType extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/ColorType.html#ColorType(java.lang.String) */
-	private function new(description:String):Void;
+	/*@@@ modifiers=4 */ private function new(description:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/ColorType.html#getID() */
-	public function getID():Int;
+	/*@@@ modifiers=17 */ public function getID():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/ColorType.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

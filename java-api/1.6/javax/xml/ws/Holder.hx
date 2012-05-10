@@ -10,9 +10,9 @@ extern class Holder<T : (Dynamic)> extends Object
 	public var value:T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Holder.html#Holder() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Holder.html#Holder(java.lang.Object) */
-	public function new(value:T):Void;
+	/*@@@ modifiers=1 */ public function new(value:T):Void;
 
 }
 

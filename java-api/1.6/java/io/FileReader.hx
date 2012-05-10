@@ -9,11 +9,11 @@ import java.io.InputStreamReader;
 extern class FileReader extends InputStreamReader
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileReader.html#FileReader(java.lang.String) */
-	@:overload(function (fileName:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fileName:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileReader.html#FileReader(java.io.File) */
-	@:overload(function (fileName:File):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fileName:File):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileReader.html#FileReader(java.io.FileDescriptor) */
-	public function new(fileName:FileDescriptor):Void;
+	/*@@@ modifiers=1 */ public function new(fileName:FileDescriptor):Void;
 
 }
 

@@ -7,9 +7,9 @@ import java.lang.ClassFormatError;
 extern class UnsupportedClassVersionError extends ClassFormatError
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/UnsupportedClassVersionError.html#UnsupportedClassVersionError() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/UnsupportedClassVersionError.html#UnsupportedClassVersionError(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

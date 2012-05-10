@@ -7,7 +7,7 @@ import java.lang.Error;
 extern class ThreadDeath extends Error
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadDeath.html#ThreadDeath() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

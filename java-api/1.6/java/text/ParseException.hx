@@ -7,10 +7,10 @@ import java.lang.Exception;
 extern class ParseException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/ParseException.html#ParseException(java.lang.String, int) */
-	public function new(s:String, errorOffset:Int):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, errorOffset:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/ParseException.html#getErrorOffset() */
-	public function getErrorOffset():Int;
+	/*@@@ modifiers=1 */ public function getErrorOffset():Int;
 
 }
 

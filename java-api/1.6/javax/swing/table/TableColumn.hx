@@ -45,100 +45,100 @@ extern class TableColumn extends Object, implements Serializable
 	private var resizedPostingDisableCount:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#TableColumn(int) */
-	@:overload(function (modelIndex:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (modelIndex:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#TableColumn(int, int) */
-	@:overload(function (modelIndex:Int, width:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (modelIndex:Int, width:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#TableColumn(int, int, javax.swing.table.TableCellRenderer, javax.swing.table.TableCellEditor) */
-	@:overload(function (modelIndex:Int, width:Int, cellRenderer:TableCellRenderer, cellEditor:TableCellEditor):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (modelIndex:Int, width:Int, cellRenderer:TableCellRenderer, cellEditor:TableCellEditor):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#TableColumn() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=33 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#createDefaultHeaderRenderer() */
-	private function createDefaultHeaderRenderer():TableCellRenderer;
+	/*@@@ modifiers=4 */ private function createDefaultHeaderRenderer():TableCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#disableResizedPosting() */
-	public function disableResizedPosting():Void;
+	/*@@@ modifiers=1 */ public function disableResizedPosting():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#enableResizedPosting() */
-	public function enableResizedPosting():Void;
+	/*@@@ modifiers=1 */ public function enableResizedPosting():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getCellEditor() */
-	public function getCellEditor():TableCellEditor;
+	/*@@@ modifiers=1 */ public function getCellEditor():TableCellEditor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getCellRenderer() */
-	public function getCellRenderer():TableCellRenderer;
+	/*@@@ modifiers=1 */ public function getCellRenderer():TableCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getHeaderRenderer() */
-	public function getHeaderRenderer():TableCellRenderer;
+	/*@@@ modifiers=1 */ public function getHeaderRenderer():TableCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getHeaderValue() */
-	public function getHeaderValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getHeaderValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getIdentifier() */
-	public function getIdentifier():Dynamic;
+	/*@@@ modifiers=1 */ public function getIdentifier():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getMaxWidth() */
-	public function getMaxWidth():Int;
+	/*@@@ modifiers=1 */ public function getMaxWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getMinWidth() */
-	public function getMinWidth():Int;
+	/*@@@ modifiers=1 */ public function getMinWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getModelIndex() */
-	public function getModelIndex():Int;
+	/*@@@ modifiers=1 */ public function getModelIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getPreferredWidth() */
-	public function getPreferredWidth():Int;
+	/*@@@ modifiers=1 */ public function getPreferredWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getPropertyChangeListeners() */
-	public function getPropertyChangeListeners():NativeArray<PropertyChangeListener>;
+	/*@@@ modifiers=33 */ public function getPropertyChangeListeners():NativeArray<PropertyChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getResizable() */
-	public function getResizable():Bool;
+	/*@@@ modifiers=1 */ public function getResizable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#getWidth() */
-	public function getWidth():Int;
+	/*@@@ modifiers=1 */ public function getWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=33 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setCellEditor(javax.swing.table.TableCellEditor) */
-	public function setCellEditor(cellEditor:TableCellEditor):Void;
+	/*@@@ modifiers=1 */ public function setCellEditor(cellEditor:TableCellEditor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setCellRenderer(javax.swing.table.TableCellRenderer) */
-	public function setCellRenderer(cellRenderer:TableCellRenderer):Void;
+	/*@@@ modifiers=1 */ public function setCellRenderer(cellRenderer:TableCellRenderer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setHeaderRenderer(javax.swing.table.TableCellRenderer) */
-	public function setHeaderRenderer(headerRenderer:TableCellRenderer):Void;
+	/*@@@ modifiers=1 */ public function setHeaderRenderer(headerRenderer:TableCellRenderer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setHeaderValue(java.lang.Object) */
-	public function setHeaderValue(headerValue:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setHeaderValue(headerValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setIdentifier(java.lang.Object) */
-	public function setIdentifier(identifier:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setIdentifier(identifier:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setMaxWidth(int) */
-	public function setMaxWidth(maxWidth:Int):Void;
+	/*@@@ modifiers=1 */ public function setMaxWidth(maxWidth:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setMinWidth(int) */
-	public function setMinWidth(minWidth:Int):Void;
+	/*@@@ modifiers=1 */ public function setMinWidth(minWidth:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setModelIndex(int) */
-	public function setModelIndex(modelIndex:Int):Void;
+	/*@@@ modifiers=1 */ public function setModelIndex(modelIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setPreferredWidth(int) */
-	public function setPreferredWidth(preferredWidth:Int):Void;
+	/*@@@ modifiers=1 */ public function setPreferredWidth(preferredWidth:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setResizable(boolean) */
-	public function setResizable(isResizable:Bool):Void;
+	/*@@@ modifiers=1 */ public function setResizable(isResizable:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#setWidth(int) */
-	public function setWidth(width:Int):Void;
+	/*@@@ modifiers=1 */ public function setWidth(width:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableColumn.html#sizeWidthToFit() */
-	public function sizeWidthToFit():Void;
+	/*@@@ modifiers=1 */ public function sizeWidthToFit():Void;
 
 }
 

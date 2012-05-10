@@ -10,36 +10,36 @@ import java.util.Set;
 extern class Selector extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#Selector() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=1025 */ public function isOpen():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#keys() */
-	public function keys():Set<SelectionKey>;
+	/*@@@ modifiers=1025 */ public function keys():Set<SelectionKey>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#open() */
-	static public function open():Selector;
+	/*@@@ modifiers=9 */ static public function open():Selector;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#provider() */
-	public function provider():SelectorProvider;
+	/*@@@ modifiers=1025 */ public function provider():SelectorProvider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#select(long) */
-	@:overload(function (timeout:haxe.Int64):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (timeout:haxe.Int64):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#select() */
-	public function select():Int;
+	/*@@@ modifiers=1025 */ public function select():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#selectNow() */
-	public function selectNow():Int;
+	/*@@@ modifiers=1025 */ public function selectNow():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#selectedKeys() */
-	public function selectedKeys():Set<SelectionKey>;
+	/*@@@ modifiers=1025 */ public function selectedKeys():Set<SelectionKey>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html#wakeup() */
-	public function wakeup():Selector;
+	/*@@@ modifiers=1025 */ public function wakeup():Selector;
 
 }
 

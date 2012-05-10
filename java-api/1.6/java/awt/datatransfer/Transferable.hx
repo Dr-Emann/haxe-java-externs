@@ -8,13 +8,13 @@ import java.awt.datatransfer.DataFlavor;
 extern interface Transferable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Transferable.html#getTransferData(java.awt.datatransfer.DataFlavor) */
-	public function getTransferData(flavor:DataFlavor):Dynamic;
+	/*@@@ modifiers=1025 */ public function getTransferData(flavor:DataFlavor):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Transferable.html#getTransferDataFlavors() */
-	public function getTransferDataFlavors():NativeArray<DataFlavor>;
+	/*@@@ modifiers=1025 */ public function getTransferDataFlavors():NativeArray<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Transferable.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor) */
-	public function isDataFlavorSupported(flavor:DataFlavor):Bool;
+	/*@@@ modifiers=1025 */ public function isDataFlavorSupported(flavor:DataFlavor):Bool;
 
 }
 

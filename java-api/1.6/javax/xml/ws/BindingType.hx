@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 extern interface BindingType implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/BindingType.html#value() */
-	public function value():String;
+	/*@@@ modifiers=1025 */ public function value():String;
 
 }
 

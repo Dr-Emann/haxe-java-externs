@@ -7,7 +7,7 @@ import javax.lang.model.element.Element;
 extern interface VariableElement implements Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/VariableElement.html#getConstantValue() */
-	public function getConstantValue():Dynamic;
+	/*@@@ modifiers=1025 */ public function getConstantValue():Dynamic;
 
 }
 

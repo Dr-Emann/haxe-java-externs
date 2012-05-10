@@ -8,7 +8,7 @@ import java.awt.peer.MenuPeer;
 extern interface PopupMenuPeer implements MenuPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/PopupMenuPeer.html#show(java.awt.Event) */
-	public function show(e:Event):Void;
+	/*@@@ modifiers=1025 */ public function show(e:Event):Void;
 
 }
 

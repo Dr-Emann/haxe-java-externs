@@ -12,29 +12,29 @@ import java.nio.charset.CharsetEncoder;
 extern class OutputStreamWriter extends Writer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#OutputStreamWriter(java.io.OutputStream) */
-	@:overload(function (out:OutputStream):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (out:OutputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#OutputStreamWriter(java.io.OutputStream, java.nio.charset.Charset) */
-	@:overload(function (out:OutputStream, charsetName:Charset):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (out:OutputStream, charsetName:Charset):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#OutputStreamWriter(java.io.OutputStream, java.nio.charset.CharsetEncoder) */
-	@:overload(function (out:OutputStream, charsetName:CharsetEncoder):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (out:OutputStream, charsetName:CharsetEncoder):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#OutputStreamWriter(java.io.OutputStream, java.lang.String) */
-	public function new(out:OutputStream, charsetName:String):Void;
+	/*@@@ modifiers=1 */ public function new(out:OutputStream, charsetName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#flush() */
-	override public function flush():Void;
+	/*@@@ modifiers=1 */ override public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#getEncoding() */
-	public function getEncoding():String;
+	/*@@@ modifiers=1 */ public function getEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#write(char[], int, int) */
-	@:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#write(java.lang.String, int, int) */
-	@:overload(function (str:String, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (str:String, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/OutputStreamWriter.html#write(int) */
-	override public function write(c:Int):Void;
+	/*@@@ modifiers=1 */ override public function write(c:Int):Void;
 
 }
 

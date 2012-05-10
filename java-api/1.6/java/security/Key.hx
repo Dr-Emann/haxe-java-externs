@@ -9,13 +9,13 @@ import java.io.Serializable;
 extern interface Key implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Key.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=1025 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Key.html#getEncoded() */
-	public function getEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Key.html#getFormat() */
-	public function getFormat():String;
+	/*@@@ modifiers=1025 */ public function getFormat():String;
 
 }
 

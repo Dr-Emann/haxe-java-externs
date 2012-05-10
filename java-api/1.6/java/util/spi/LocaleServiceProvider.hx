@@ -9,10 +9,10 @@ import java.util.Locale;
 extern class LocaleServiceProvider extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/spi/LocaleServiceProvider.html#LocaleServiceProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/spi/LocaleServiceProvider.html#getAvailableLocales() */
-	public function getAvailableLocales():NativeArray<Locale>;
+	/*@@@ modifiers=1025 */ public function getAvailableLocales():NativeArray<Locale>;
 
 }
 

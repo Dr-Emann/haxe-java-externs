@@ -10,28 +10,28 @@ import org.w3c.dom.ls.LSSerializerFilter;
 extern interface LSSerializer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#getDomConfig() */
-	public function getDomConfig():DOMConfiguration;
+	/*@@@ modifiers=1025 */ public function getDomConfig():DOMConfiguration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#getFilter() */
-	public function getFilter():LSSerializerFilter;
+	/*@@@ modifiers=1025 */ public function getFilter():LSSerializerFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#getNewLine() */
-	public function getNewLine():String;
+	/*@@@ modifiers=1025 */ public function getNewLine():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#setFilter(org.w3c.dom.ls.LSSerializerFilter) */
-	public function setFilter(filter:LSSerializerFilter):Void;
+	/*@@@ modifiers=1025 */ public function setFilter(filter:LSSerializerFilter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String) */
-	public function setNewLine(newLine:String):Void;
+	/*@@@ modifiers=1025 */ public function setNewLine(newLine:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#write(org.w3c.dom.Node, org.w3c.dom.ls.LSOutput) */
-	public function write(nodeArg:Node, destination:LSOutput):Bool;
+	/*@@@ modifiers=1025 */ public function write(nodeArg:Node, destination:LSOutput):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node) */
-	public function writeToString(nodeArg:Node):String;
+	/*@@@ modifiers=1025 */ public function writeToString(nodeArg:Node):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node, java.lang.String) */
-	public function writeToURI(nodeArg:Node, uri:String):Bool;
+	/*@@@ modifiers=1025 */ public function writeToURI(nodeArg:Node, uri:String):Bool;
 
 }
 

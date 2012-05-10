@@ -10,13 +10,13 @@ import javax.swing.text.html.CSS_Attribute;
 extern class CSS extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/CSS.html#CSS() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/CSS.html#getAllAttributeKeys() */
-	static public function getAllAttributeKeys():NativeArray<CSS_Attribute>;
+	/*@@@ modifiers=9 */ static public function getAllAttributeKeys():NativeArray<CSS_Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/CSS.html#getAttribute(java.lang.String) */
-	static public function getAttribute(name:String):CSS_Attribute;
+	/*@@@ modifiers=25 */ static public function getAttribute(name:String):CSS_Attribute;
 
 }
 

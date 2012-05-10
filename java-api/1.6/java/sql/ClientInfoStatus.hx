@@ -20,10 +20,10 @@ extern class ClientInfoStatus extends Enum<ClientInfoStatus>
 	public static var REASON_VALUE_TRUNCATED:ClientInfoStatus;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/ClientInfoStatus.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):ClientInfoStatus;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):ClientInfoStatus;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/ClientInfoStatus.html#values() */
-	static public function values():NativeArray<ClientInfoStatus>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<ClientInfoStatus>;
 
 }
 

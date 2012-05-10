@@ -17,7 +17,7 @@ extern class AccessibleAttributeSequence extends Object
 	public var attributes:AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleAttributeSequence.html#AccessibleAttributeSequence(int, int, javax.swing.text.AttributeSet) */
-	public function new(start:Int, end:Int, attr:AttributeSet):Void;
+	/*@@@ modifiers=1 */ public function new(start:Int, end:Int, attr:AttributeSet):Void;
 
 }
 

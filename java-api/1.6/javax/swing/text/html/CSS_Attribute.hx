@@ -8,13 +8,13 @@ extern class CSS_Attribute extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/CSS.Attribute.html#getDefaultValue() */
-	public function getDefaultValue():String;
+	/*@@@ modifiers=1 */ public function getDefaultValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/CSS.Attribute.html#isInherited() */
-	public function isInherited():Bool;
+	/*@@@ modifiers=1 */ public function isInherited():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/CSS.Attribute.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

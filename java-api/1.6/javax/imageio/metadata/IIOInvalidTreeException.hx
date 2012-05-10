@@ -12,12 +12,12 @@ extern class IIOInvalidTreeException extends IIOException
 	private var offendingNode:Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/metadata/IIOInvalidTreeException.html#IIOInvalidTreeException(java.lang.String, org.w3c.dom.Node) */
-	@:overload(function (message:String, offendingNode:Node):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String, offendingNode:Node):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/metadata/IIOInvalidTreeException.html#IIOInvalidTreeException(java.lang.String, java.lang.Throwable, org.w3c.dom.Node) */
-	public function new(message:String, cause:Throwable, offendingNode:Node):Void;
+	/*@@@ modifiers=1 */ public function new(message:String, cause:Throwable, offendingNode:Node):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/metadata/IIOInvalidTreeException.html#getOffendingNode() */
-	public function getOffendingNode():Node;
+	/*@@@ modifiers=1 */ public function getOffendingNode():Node;
 
 }
 

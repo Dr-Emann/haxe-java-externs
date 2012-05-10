@@ -7,7 +7,7 @@ import org.w3c.dom.DOMError;
 extern interface DOMErrorHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMErrorHandler.html#handleError(org.w3c.dom.DOMError) */
-	public function handleError(error:DOMError):Bool;
+	/*@@@ modifiers=1025 */ public function handleError(error:DOMError):Bool;
 
 }
 

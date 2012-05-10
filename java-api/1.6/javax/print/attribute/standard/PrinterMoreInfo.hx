@@ -11,16 +11,16 @@ import javax.print.attribute.URISyntax;
 extern class PrinterMoreInfo extends URISyntax, implements PrintServiceAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterMoreInfo.html#PrinterMoreInfo(java.net.URI) */
-	public function new(uri:URI):Void;
+	/*@@@ modifiers=1 */ public function new(uri:URI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterMoreInfo.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterMoreInfo.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterMoreInfo.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

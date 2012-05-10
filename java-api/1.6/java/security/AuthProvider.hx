@@ -10,16 +10,16 @@ import javax.security.auth.callback.CallbackHandler;
 extern class AuthProvider extends Provider
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AuthProvider.html#AuthProvider(java.lang.String, double, java.lang.String) */
-	private function new(name:String, version:StdFloat, info:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String, version:StdFloat, info:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AuthProvider.html#login(javax.security.auth.Subject, javax.security.auth.callback.CallbackHandler) */
-	public function login(subject:Subject, handler:CallbackHandler):Void;
+	/*@@@ modifiers=1025 */ public function login(subject:Subject, handler:CallbackHandler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AuthProvider.html#logout() */
-	public function logout():Void;
+	/*@@@ modifiers=1025 */ public function logout():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AuthProvider.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler) */
-	public function setCallbackHandler(handler:CallbackHandler):Void;
+	/*@@@ modifiers=1025 */ public function setCallbackHandler(handler:CallbackHandler):Void;
 
 }
 

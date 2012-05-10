@@ -19,90 +19,90 @@ import javax.swing.plaf.ToolBarUI;
 extern class JToolBar extends JComponent, implements SwingConstants, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#JToolBar(int) */
-	@:overload(function (orientation:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orientation:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#JToolBar(java.lang.String) */
-	@:overload(function (orientation:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orientation:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#JToolBar(java.lang.String, int) */
-	@:overload(function (name:String, orientation:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, orientation:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#JToolBar() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#add(javax.swing.Action) */
-	override public function add(a:Action):JButton;
+	/*@@@ modifiers=1 */ override public function add(a:Action):JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#addImpl(java.awt.Component, java.lang.Object, int) */
-	override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;
+	/*@@@ modifiers=4 */ override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#addSeparator(java.awt.Dimension) */
-	@:overload(function (size:Dimension):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (size:Dimension):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#addSeparator() */
-	public function addSeparator():Void;
+	/*@@@ modifiers=1 */ public function addSeparator():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#createActionChangeListener(javax.swing.JButton) */
-	private function createActionChangeListener(b:JButton):PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createActionChangeListener(b:JButton):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#createActionComponent(javax.swing.Action) */
-	private function createActionComponent(a:Action):JButton;
+	/*@@@ modifiers=4 */ private function createActionComponent(a:Action):JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getComponentAtIndex(int) */
-	public function getComponentAtIndex(i:Int):Component;
+	/*@@@ modifiers=1 */ public function getComponentAtIndex(i:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getComponentIndex(java.awt.Component) */
-	public function getComponentIndex(c:Component):Int;
+	/*@@@ modifiers=1 */ public function getComponentIndex(c:Component):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getMargin() */
-	public function getMargin():Insets;
+	/*@@@ modifiers=1 */ public function getMargin():Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getOrientation() */
-	public function getOrientation():Int;
+	/*@@@ modifiers=1 */ public function getOrientation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getUI() */
-	public function getUI():ToolBarUI;
+	/*@@@ modifiers=1 */ public function getUI():ToolBarUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#isBorderPainted() */
-	public function isBorderPainted():Bool;
+	/*@@@ modifiers=1 */ public function isBorderPainted():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#isFloatable() */
-	public function isFloatable():Bool;
+	/*@@@ modifiers=1 */ public function isFloatable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#isRollover() */
-	public function isRollover():Bool;
+	/*@@@ modifiers=1 */ public function isRollover():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#paintBorder(java.awt.Graphics) */
-	override private function paintBorder(g:Graphics):Void;
+	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setBorderPainted(boolean) */
-	public function setBorderPainted(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setBorderPainted(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setFloatable(boolean) */
-	public function setFloatable(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setFloatable(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setLayout(java.awt.LayoutManager) */
-	override public function setLayout(mgr:LayoutManager):Void;
+	/*@@@ modifiers=1 */ override public function setLayout(mgr:LayoutManager):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setMargin(java.awt.Insets) */
-	public function setMargin(m:Insets):Void;
+	/*@@@ modifiers=1 */ public function setMargin(m:Insets):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setOrientation(int) */
-	public function setOrientation(o:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(o:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setRollover(boolean) */
-	public function setRollover(rollover:Bool):Void;
+	/*@@@ modifiers=1 */ public function setRollover(rollover:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setUI(javax.swing.plaf.ToolBarUI) */
-	override public function setUI(ui:ToolBarUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:ToolBarUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

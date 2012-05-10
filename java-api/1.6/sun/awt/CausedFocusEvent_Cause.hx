@@ -50,10 +50,10 @@ extern class CausedFocusEvent_Cause extends Enum<CausedFocusEvent_Cause>
 	public static var RETARGETED:CausedFocusEvent_Cause;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/sun/awt/CausedFocusEvent.Cause.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):CausedFocusEvent_Cause;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):CausedFocusEvent_Cause;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/sun/awt/CausedFocusEvent.Cause.html#values() */
-	static public function values():NativeArray<CausedFocusEvent_Cause>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<CausedFocusEvent_Cause>;
 
 }
 

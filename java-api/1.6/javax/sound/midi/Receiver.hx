@@ -7,10 +7,10 @@ import javax.sound.midi.MidiMessage;
 extern interface Receiver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Receiver.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage, long) */
-	public function send(message:MidiMessage, timeStamp:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function send(message:MidiMessage, timeStamp:haxe.Int64):Void;
 
 }
 

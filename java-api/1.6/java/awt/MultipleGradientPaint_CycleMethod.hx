@@ -17,10 +17,10 @@ extern class MultipleGradientPaint_CycleMethod extends Enum<MultipleGradientPain
 	public static var REPEAT:MultipleGradientPaint_CycleMethod;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MultipleGradientPaint.CycleMethod.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):MultipleGradientPaint_CycleMethod;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):MultipleGradientPaint_CycleMethod;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MultipleGradientPaint.CycleMethod.html#values() */
-	static public function values():NativeArray<MultipleGradientPaint_CycleMethod>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<MultipleGradientPaint_CycleMethod>;
 
 }
 

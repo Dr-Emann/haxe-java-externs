@@ -10,13 +10,13 @@ extern class WebServiceFeature extends Object
 	private var enabled:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebServiceFeature.html#WebServiceFeature() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebServiceFeature.html#getID() */
-	public function getID():String;
+	/*@@@ modifiers=1025 */ public function getID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebServiceFeature.html#isEnabled() */
-	public function isEnabled():Bool;
+	/*@@@ modifiers=1 */ public function isEnabled():Bool;
 
 }
 

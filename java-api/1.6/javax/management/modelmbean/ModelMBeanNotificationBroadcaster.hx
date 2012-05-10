@@ -11,20 +11,20 @@ import javax.management.NotificationListener;
 extern interface ModelMBeanNotificationBroadcaster implements NotificationBroadcaster
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#addAttributeChangeNotificationListener(javax.management.NotificationListener, java.lang.String, java.lang.Object) */
-	public function addAttributeChangeNotificationListener(listener:NotificationListener, attributeName:String, handback:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function addAttributeChangeNotificationListener(listener:NotificationListener, attributeName:String, handback:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#removeAttributeChangeNotificationListener(javax.management.NotificationListener, java.lang.String) */
-	public function removeAttributeChangeNotificationListener(listener:NotificationListener, attributeName:String):Void;
+	/*@@@ modifiers=1025 */ public function removeAttributeChangeNotificationListener(listener:NotificationListener, attributeName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.Attribute, javax.management.Attribute) */
-	@:overload(function (oldValue:Attribute, newValue:Attribute):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (oldValue:Attribute, newValue:Attribute):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.AttributeChangeNotification) */
-	public function sendAttributeChangeNotification(notification:AttributeChangeNotification):Void;
+	/*@@@ modifiers=1025 */ public function sendAttributeChangeNotification(notification:AttributeChangeNotification):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(java.lang.String) */
-	@:overload(function (ntfyText:String):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (ntfyText:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(javax.management.Notification) */
-	public function sendNotification(ntfyObj:Notification):Void;
+	/*@@@ modifiers=1025 */ public function sendNotification(ntfyObj:Notification):Void;
 
 }
 

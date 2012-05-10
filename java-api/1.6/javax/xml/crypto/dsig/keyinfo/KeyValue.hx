@@ -8,7 +8,7 @@ import javax.xml.crypto.XMLStructure;
 extern interface KeyValue implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/KeyValue.html#getPublicKey() */
-	public function getPublicKey():PublicKey;
+	/*@@@ modifiers=1025 */ public function getPublicKey():PublicKey;
 
 }
 

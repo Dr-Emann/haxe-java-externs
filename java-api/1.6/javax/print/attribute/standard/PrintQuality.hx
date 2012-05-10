@@ -13,22 +13,22 @@ import javax.print.attribute.PrintRequestAttribute;
 extern class PrintQuality extends EnumSyntax, implements DocAttribute, implements PrintRequestAttribute, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrintQuality.html#PrintQuality(int) */
-	private function new(value:Int):Void;
+	/*@@@ modifiers=4 */ private function new(value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrintQuality.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrintQuality.html#getEnumValueTable() */
-	override private function getEnumValueTable():NativeArray<EnumSyntax>;
+	/*@@@ modifiers=4 */ override private function getEnumValueTable():NativeArray<EnumSyntax>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrintQuality.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrintQuality.html#getOffset() */
-	override private function getOffset():Int;
+	/*@@@ modifiers=4 */ override private function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrintQuality.html#getStringTable() */
-	override private function getStringTable():NativeArray<String>;
+	/*@@@ modifiers=4 */ override private function getStringTable():NativeArray<String>;
 
 }
 

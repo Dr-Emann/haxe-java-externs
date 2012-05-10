@@ -14,13 +14,13 @@ extern class MemoryType extends Enum<MemoryType>
 	public static var NON_HEAP:MemoryType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryType.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1 */ public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):MemoryType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):MemoryType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryType.html#values() */
-	static public function values():NativeArray<MemoryType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<MemoryType>;
 
 }
 

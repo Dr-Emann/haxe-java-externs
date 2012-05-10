@@ -11,40 +11,40 @@ import java.awt.event.KeyEvent;
 extern class DefaultKeyboardFocusManager extends KeyboardFocusManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#DefaultKeyboardFocusManager() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#dequeueKeyEvents(long, java.awt.Component) */
-	override private function dequeueKeyEvents(after:haxe.Int64, untilFocused:Component):Void;
+	/*@@@ modifiers=36 */ override private function dequeueKeyEvents(after:haxe.Int64, untilFocused:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#discardKeyEvents(java.awt.Component) */
-	override private function discardKeyEvents(comp:Component):Void;
+	/*@@@ modifiers=36 */ override private function discardKeyEvents(comp:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#dispatchEvent(java.awt.AWTEvent) */
-	override public function dispatchEvent(e:AWTEvent):Bool;
+	/*@@@ modifiers=1 */ override public function dispatchEvent(e:AWTEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#dispatchKeyEvent(java.awt.event.KeyEvent) */
-	override public function dispatchKeyEvent(e:KeyEvent):Bool;
+	/*@@@ modifiers=1 */ override public function dispatchKeyEvent(e:KeyEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#downFocusCycle(java.awt.Container) */
-	override public function downFocusCycle(aContainer:Container):Void;
+	/*@@@ modifiers=1 */ override public function downFocusCycle(aContainer:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#enqueueKeyEvents(long, java.awt.Component) */
-	override private function enqueueKeyEvents(after:haxe.Int64, untilFocused:Component):Void;
+	/*@@@ modifiers=36 */ override private function enqueueKeyEvents(after:haxe.Int64, untilFocused:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#focusNextComponent(java.awt.Component) */
-	override public function focusNextComponent(aComponent:Component):Void;
+	/*@@@ modifiers=1 */ override public function focusNextComponent(aComponent:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#focusPreviousComponent(java.awt.Component) */
-	override public function focusPreviousComponent(aComponent:Component):Void;
+	/*@@@ modifiers=1 */ override public function focusPreviousComponent(aComponent:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#postProcessKeyEvent(java.awt.event.KeyEvent) */
-	override public function postProcessKeyEvent(e:KeyEvent):Bool;
+	/*@@@ modifiers=1 */ override public function postProcessKeyEvent(e:KeyEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#processKeyEvent(java.awt.Component, java.awt.event.KeyEvent) */
-	override public function processKeyEvent(focusedComponent:Component, e:KeyEvent):Void;
+	/*@@@ modifiers=1 */ override public function processKeyEvent(focusedComponent:Component, e:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultKeyboardFocusManager.html#upFocusCycle(java.awt.Component) */
-	override public function upFocusCycle(aComponent:Component):Void;
+	/*@@@ modifiers=1 */ override public function upFocusCycle(aComponent:Component):Void;
 
 }
 

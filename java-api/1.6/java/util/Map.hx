@@ -9,46 +9,46 @@ import java.util.Set;
 extern interface Map<K : (Dynamic), V : (Dynamic)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#clear() */
-	public function clear():Void;
+	/*@@@ modifiers=1025 */ public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#containsKey(java.lang.Object) */
-	public function containsKey(key:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function containsKey(key:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#containsValue(java.lang.Object) */
-	public function containsValue(value:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function containsValue(value:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#entrySet() */
-	public function entrySet():Set<Map_Entry<K, V>>;
+	/*@@@ modifiers=1025 */ public function entrySet():Set<Map_Entry<K, V>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#equals(java.lang.Object) */
-	public function equals(o:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#get(java.lang.Object) */
-	public function get(key:Dynamic):V;
+	/*@@@ modifiers=1025 */ public function get(key:Dynamic):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#isEmpty() */
-	public function isEmpty():Bool;
+	/*@@@ modifiers=1025 */ public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#keySet() */
-	public function keySet():Set<K>;
+	/*@@@ modifiers=1025 */ public function keySet():Set<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#put(java.lang.Object, java.lang.Object) */
-	public function put(key:K, value:V):V;
+	/*@@@ modifiers=1025 */ public function put(key:K, value:V):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#putAll(java.util.Map) */
-	public function putAll(m:Map<K, V>):Void;
+	/*@@@ modifiers=1025 */ public function putAll(m:Map<K, V>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#remove(java.lang.Object) */
-	public function remove(key:Dynamic):V;
+	/*@@@ modifiers=1025 */ public function remove(key:Dynamic):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1025 */ public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Map.html#values() */
-	public function values():Collection<V>;
+	/*@@@ modifiers=1025 */ public function values():Collection<V>;
 
 }
 

@@ -8,16 +8,16 @@ import javax.xml.stream.events.XMLEvent;
 extern interface DTD implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/DTD.html#getDocumentTypeDeclaration() */
-	public function getDocumentTypeDeclaration():String;
+	/*@@@ modifiers=1025 */ public function getDocumentTypeDeclaration():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/DTD.html#getEntities() */
-	public function getEntities():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getEntities():List<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/DTD.html#getNotations() */
-	public function getNotations():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getNotations():List<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/DTD.html#getProcessedDTD() */
-	public function getProcessedDTD():Dynamic;
+	/*@@@ modifiers=1025 */ public function getProcessedDTD():Dynamic;
 
 }
 

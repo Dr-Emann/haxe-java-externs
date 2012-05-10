@@ -8,13 +8,13 @@ import javax.accessibility.AccessibleKeyBinding;
 extern interface AccessibleExtendedComponent implements AccessibleComponent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleExtendedComponent.html#getAccessibleKeyBinding() */
-	public function getAccessibleKeyBinding():AccessibleKeyBinding;
+	/*@@@ modifiers=1025 */ public function getAccessibleKeyBinding():AccessibleKeyBinding;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleExtendedComponent.html#getTitledBorderText() */
-	public function getTitledBorderText():String;
+	/*@@@ modifiers=1025 */ public function getTitledBorderText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleExtendedComponent.html#getToolTipText() */
-	public function getToolTipText():String;
+	/*@@@ modifiers=1025 */ public function getToolTipText():String;
 
 }
 

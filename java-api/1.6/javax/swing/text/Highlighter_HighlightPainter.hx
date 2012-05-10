@@ -9,7 +9,7 @@ import javax.swing.text.JTextComponent;
 extern interface Highlighter_HighlightPainter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Highlighter.HighlightPainter.html#paint(java.awt.Graphics, int, int, java.awt.Shape, javax.swing.text.JTextComponent) */
-	public function paint(g:Graphics, p0:Int, p1:Int, bounds:Shape, c:JTextComponent):Void;
+	/*@@@ modifiers=1025 */ public function paint(g:Graphics, p0:Int, p1:Int, bounds:Shape, c:JTextComponent):Void;
 
 }
 

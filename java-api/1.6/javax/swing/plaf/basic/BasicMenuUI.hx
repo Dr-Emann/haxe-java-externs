@@ -23,55 +23,55 @@ extern class BasicMenuUI extends BasicMenuItemUI
 	private var menuListener:MenuListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#BasicMenuUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createChangeListener(javax.swing.JComponent) */
-	private function createChangeListener(c:JComponent):ChangeListener;
+	/*@@@ modifiers=4 */ private function createChangeListener(c:JComponent):ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createMenuDragMouseListener(javax.swing.JComponent) */
-	override private function createMenuDragMouseListener(c:JComponent):MenuDragMouseListener;
+	/*@@@ modifiers=4 */ override private function createMenuDragMouseListener(c:JComponent):MenuDragMouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createMenuKeyListener(javax.swing.JComponent) */
-	override private function createMenuKeyListener(c:JComponent):MenuKeyListener;
+	/*@@@ modifiers=4 */ override private function createMenuKeyListener(c:JComponent):MenuKeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createMenuListener(javax.swing.JComponent) */
-	private function createMenuListener(c:JComponent):MenuListener;
+	/*@@@ modifiers=4 */ private function createMenuListener(c:JComponent):MenuListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createMouseInputListener(javax.swing.JComponent) */
-	override private function createMouseInputListener(c:JComponent):MouseInputListener;
+	/*@@@ modifiers=4 */ override private function createMouseInputListener(c:JComponent):MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createPropertyChangeListener(javax.swing.JComponent) */
-	override private function createPropertyChangeListener(c:JComponent):PropertyChangeListener;
+	/*@@@ modifiers=4 */ override private function createPropertyChangeListener(c:JComponent):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#installDefaults() */
-	override private function installDefaults():Void;
+	/*@@@ modifiers=4 */ override private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#installKeyboardActions() */
-	override private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ override private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#installListeners() */
-	override private function installListeners():Void;
+	/*@@@ modifiers=4 */ override private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#setupPostTimer(javax.swing.JMenu) */
-	private function setupPostTimer(menu:JMenu):Void;
+	/*@@@ modifiers=4 */ private function setupPostTimer(menu:JMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#uninstallDefaults() */
-	override private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ override private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#uninstallKeyboardActions() */
-	override private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ override private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#uninstallListeners() */
-	override private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ override private function uninstallListeners():Void;
 
 }
 

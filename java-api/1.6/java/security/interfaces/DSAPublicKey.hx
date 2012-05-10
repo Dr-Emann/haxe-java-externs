@@ -9,7 +9,7 @@ import java.security.interfaces.DSAKey;
 extern interface DSAPublicKey implements DSAKey, implements PublicKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAPublicKey.html#getY() */
-	public function getY():BigInteger;
+	/*@@@ modifiers=1025 */ public function getY():BigInteger;
 
 }
 

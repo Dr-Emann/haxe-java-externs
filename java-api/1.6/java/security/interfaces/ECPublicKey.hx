@@ -9,7 +9,7 @@ import java.security.spec.ECPoint;
 extern interface ECPublicKey implements PublicKey, implements ECKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPublicKey.html#getW() */
-	public function getW():ECPoint;
+	/*@@@ modifiers=1025 */ public function getW():ECPoint;
 
 }
 

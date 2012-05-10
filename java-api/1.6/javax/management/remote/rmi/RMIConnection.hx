@@ -18,81 +18,81 @@ import javax.security.auth.Subject;
 extern interface RMIConnection implements Closeable, implements Remote
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName, javax.management.ObjectName, java.rmi.MarshalledObject, java.rmi.MarshalledObject, javax.security.auth.Subject) */
-	public function addNotificationListener(name:ObjectName, listener:ObjectName, filter:MarshalledObject<Dynamic>, handback:MarshalledObject<Dynamic>, delegationSubject:Subject):Void;
+	/*@@@ modifiers=1025 */ public function addNotificationListener(name:ObjectName, listener:ObjectName, filter:MarshalledObject<Dynamic>, handback:MarshalledObject<Dynamic>, delegationSubject:Subject):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[], java.rmi.MarshalledObject[], javax.security.auth.Subject[]) */
-	public function addNotificationListeners(names:NativeArray<ObjectName>, filters:NativeArray<MarshalledObject<Dynamic>>, delegationSubjects:NativeArray<Subject>):NativeArray<Integer>;
+	/*@@@ modifiers=1025 */ public function addNotificationListeners(names:NativeArray<ObjectName>, filters:NativeArray<MarshalledObject<Dynamic>>, delegationSubjects:NativeArray<Subject>):NativeArray<Integer>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String, javax.management.ObjectName, javax.management.ObjectName, java.rmi.MarshalledObject, java.lang.String[], javax.security.auth.Subject) */
-	@:overload(function (className:String, name:ObjectName, loaderName:ObjectName, params:MarshalledObject<Dynamic>, signature:NativeArray<String>, delegationSubject:Subject):ObjectInstance {})
+	/*@@@ modifiers=1025 */ @:overload(function (className:String, name:ObjectName, loaderName:ObjectName, params:MarshalledObject<Dynamic>, signature:NativeArray<String>, delegationSubject:Subject):ObjectInstance {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String, javax.management.ObjectName, java.rmi.MarshalledObject, java.lang.String[], javax.security.auth.Subject) */
-	@:overload(function (className:String, name:ObjectName, params:MarshalledObject<Dynamic>, signature:NativeArray<String>, delegationSubject:Subject):ObjectInstance {})
+	/*@@@ modifiers=1025 */ @:overload(function (className:String, name:ObjectName, params:MarshalledObject<Dynamic>, signature:NativeArray<String>, delegationSubject:Subject):ObjectInstance {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String, javax.management.ObjectName, javax.management.ObjectName, javax.security.auth.Subject) */
-	@:overload(function (className:String, name:ObjectName, loaderName:ObjectName, delegationSubject:Subject):ObjectInstance {})
+	/*@@@ modifiers=1025 */ @:overload(function (className:String, name:ObjectName, loaderName:ObjectName, delegationSubject:Subject):ObjectInstance {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String, javax.management.ObjectName, javax.security.auth.Subject) */
-	public function createMBean(className:String, name:ObjectName, delegationSubject:Subject):ObjectInstance;
+	/*@@@ modifiers=1025 */ public function createMBean(className:String, name:ObjectName, delegationSubject:Subject):ObjectInstance;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long, int, long) */
-	public function fetchNotifications(clientSequenceNumber:haxe.Int64, maxNotifications:Int, timeout:haxe.Int64):NotificationResult;
+	/*@@@ modifiers=1025 */ public function fetchNotifications(clientSequenceNumber:haxe.Int64, maxNotifications:Int, timeout:haxe.Int64):NotificationResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName, java.lang.String, javax.security.auth.Subject) */
-	public function getAttribute(name:ObjectName, attribute:String, delegationSubject:Subject):Dynamic;
+	/*@@@ modifiers=1025 */ public function getAttribute(name:ObjectName, attribute:String, delegationSubject:Subject):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName, java.lang.String[], javax.security.auth.Subject) */
-	public function getAttributes(name:ObjectName, attributes:NativeArray<String>, delegationSubject:Subject):AttributeList;
+	/*@@@ modifiers=1025 */ public function getAttributes(name:ObjectName, attributes:NativeArray<String>, delegationSubject:Subject):AttributeList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getConnectionId() */
-	public function getConnectionId():String;
+	/*@@@ modifiers=1025 */ public function getConnectionId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject) */
-	public function getDefaultDomain(delegationSubject:Subject):String;
+	/*@@@ modifiers=1025 */ public function getDefaultDomain(delegationSubject:Subject):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject) */
-	public function getDomains(delegationSubject:Subject):NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getDomains(delegationSubject:Subject):NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject) */
-	public function getMBeanCount(delegationSubject:Subject):Integer;
+	/*@@@ modifiers=1025 */ public function getMBeanCount(delegationSubject:Subject):Integer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName, javax.security.auth.Subject) */
-	public function getMBeanInfo(name:ObjectName, delegationSubject:Subject):MBeanInfo;
+	/*@@@ modifiers=1025 */ public function getMBeanInfo(name:ObjectName, delegationSubject:Subject):MBeanInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName, javax.security.auth.Subject) */
-	public function getObjectInstance(name:ObjectName, delegationSubject:Subject):ObjectInstance;
+	/*@@@ modifiers=1025 */ public function getObjectInstance(name:ObjectName, delegationSubject:Subject):ObjectInstance;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName, java.lang.String, java.rmi.MarshalledObject, java.lang.String[], javax.security.auth.Subject) */
-	public function invoke(name:ObjectName, operationName:String, params:MarshalledObject<Dynamic>, signature:NativeArray<String>, delegationSubject:Subject):Dynamic;
+	/*@@@ modifiers=1025 */ public function invoke(name:ObjectName, operationName:String, params:MarshalledObject<Dynamic>, signature:NativeArray<String>, delegationSubject:Subject):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName, java.lang.String, javax.security.auth.Subject) */
-	public function isInstanceOf(name:ObjectName, className:String, delegationSubject:Subject):Bool;
+	/*@@@ modifiers=1025 */ public function isInstanceOf(name:ObjectName, className:String, delegationSubject:Subject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName, javax.security.auth.Subject) */
-	public function isRegistered(name:ObjectName, delegationSubject:Subject):Bool;
+	/*@@@ modifiers=1025 */ public function isRegistered(name:ObjectName, delegationSubject:Subject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName, java.rmi.MarshalledObject, javax.security.auth.Subject) */
-	public function queryMBeans(name:ObjectName, query:MarshalledObject<Dynamic>, delegationSubject:Subject):Set<ObjectInstance>;
+	/*@@@ modifiers=1025 */ public function queryMBeans(name:ObjectName, query:MarshalledObject<Dynamic>, delegationSubject:Subject):Set<ObjectInstance>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName, java.rmi.MarshalledObject, javax.security.auth.Subject) */
-	public function queryNames(name:ObjectName, query:MarshalledObject<Dynamic>, delegationSubject:Subject):Set<ObjectName>;
+	/*@@@ modifiers=1025 */ public function queryNames(name:ObjectName, query:MarshalledObject<Dynamic>, delegationSubject:Subject):Set<ObjectName>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName, javax.management.ObjectName, java.rmi.MarshalledObject, java.rmi.MarshalledObject, javax.security.auth.Subject) */
-	@:overload(function (name:ObjectName, listener:ObjectName, filter:MarshalledObject<Dynamic>, handback:MarshalledObject<Dynamic>, delegationSubject:Subject):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (name:ObjectName, listener:ObjectName, filter:MarshalledObject<Dynamic>, handback:MarshalledObject<Dynamic>, delegationSubject:Subject):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName, javax.management.ObjectName, javax.security.auth.Subject) */
-	public function removeNotificationListener(name:ObjectName, listener:ObjectName, delegationSubject:Subject):Void;
+	/*@@@ modifiers=1025 */ public function removeNotificationListener(name:ObjectName, listener:ObjectName, delegationSubject:Subject):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName, java.lang.Integer[], javax.security.auth.Subject) */
-	public function removeNotificationListeners(name:ObjectName, listenerIDs:NativeArray<Integer>, delegationSubject:Subject):Void;
+	/*@@@ modifiers=1025 */ public function removeNotificationListeners(name:ObjectName, listenerIDs:NativeArray<Integer>, delegationSubject:Subject):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName, java.rmi.MarshalledObject, javax.security.auth.Subject) */
-	public function setAttribute(name:ObjectName, attribute:MarshalledObject<Dynamic>, delegationSubject:Subject):Void;
+	/*@@@ modifiers=1025 */ public function setAttribute(name:ObjectName, attribute:MarshalledObject<Dynamic>, delegationSubject:Subject):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName, java.rmi.MarshalledObject, javax.security.auth.Subject) */
-	public function setAttributes(name:ObjectName, attributes:MarshalledObject<Dynamic>, delegationSubject:Subject):AttributeList;
+	/*@@@ modifiers=1025 */ public function setAttributes(name:ObjectName, attributes:MarshalledObject<Dynamic>, delegationSubject:Subject):AttributeList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName, javax.security.auth.Subject) */
-	public function unregisterMBean(name:ObjectName, delegationSubject:Subject):Void;
+	/*@@@ modifiers=1025 */ public function unregisterMBean(name:ObjectName, delegationSubject:Subject):Void;
 
 }
 

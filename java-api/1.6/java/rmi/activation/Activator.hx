@@ -9,7 +9,7 @@ import java.rmi.activation.ActivationID;
 extern interface Activator implements Remote
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/Activator.html#activate(java.rmi.activation.ActivationID, boolean) */
-	public function activate(id:ActivationID, force:Bool):MarshalledObject<Remote>;
+	/*@@@ modifiers=1025 */ public function activate(id:ActivationID, force:Bool):MarshalledObject<Remote>;
 
 }
 

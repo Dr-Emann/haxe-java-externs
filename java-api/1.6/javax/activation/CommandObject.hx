@@ -7,7 +7,7 @@ import javax.activation.DataHandler;
 extern interface CommandObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/CommandObject.html#setCommandContext(java.lang.String, javax.activation.DataHandler) */
-	public function setCommandContext(arg0:String, arg1:DataHandler):Void;
+	/*@@@ modifiers=1025 */ public function setCommandContext(arg0:String, arg1:DataHandler):Void;
 
 }
 

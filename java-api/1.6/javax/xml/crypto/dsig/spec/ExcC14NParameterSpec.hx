@@ -9,12 +9,12 @@ import javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
 extern class ExcC14NParameterSpec extends Object, implements C14NMethodParameterSpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#ExcC14NParameterSpec() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#ExcC14NParameterSpec(java.util.List) */
-	public function new(prefixList:List<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(prefixList:List<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#getPrefixList() */
-	public function getPrefixList():List<Dynamic>;
+	/*@@@ modifiers=1 */ public function getPrefixList():List<Dynamic>;
 
 }
 

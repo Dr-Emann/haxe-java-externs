@@ -9,13 +9,13 @@ import javax.xml.crypto.XMLStructure;
 extern interface KeyInfo implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getContent() */
-	public function getContent():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getContent():List<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getId() */
-	public function getId():String;
+	/*@@@ modifiers=1025 */ public function getId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#marshal(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) */
-	public function marshal(parent:XMLStructure, context:XMLCryptoContext):Void;
+	/*@@@ modifiers=1025 */ public function marshal(parent:XMLStructure, context:XMLCryptoContext):Void;
 
 }
 

@@ -8,7 +8,7 @@ import javax.naming.event.NamingExceptionEvent;
 extern interface NamingListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent) */
-	public function namingExceptionThrown(evt:NamingExceptionEvent):Void;
+	/*@@@ modifiers=1025 */ public function namingExceptionThrown(evt:NamingExceptionEvent):Void;
 
 }
 

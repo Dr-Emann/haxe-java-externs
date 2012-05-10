@@ -105,136 +105,136 @@ extern class BasicFileChooserUI extends FileChooserUI
 	private var directoryOpenButtonToolTipText:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#BasicFileChooserUI(javax.swing.JFileChooser) */
-	public function new(b:JFileChooser):Void;
+	/*@@@ modifiers=1 */ public function new(b:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#clearIconCache() */
-	public function clearIconCache():Void;
+	/*@@@ modifiers=1 */ public function clearIconCache():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#createDoubleClickListener(javax.swing.JFileChooser, javax.swing.JList) */
-	private function createDoubleClickListener(fc:JFileChooser, list:JList):MouseListener;
+	/*@@@ modifiers=4 */ private function createDoubleClickListener(fc:JFileChooser, list:JList):MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser) */
-	public function createListSelectionListener(fc:JFileChooser):ListSelectionListener;
+	/*@@@ modifiers=1 */ public function createListSelectionListener(fc:JFileChooser):ListSelectionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#createModel() */
-	private function createModel():Void;
+	/*@@@ modifiers=4 */ private function createModel():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser) */
-	public function createPropertyChangeListener(fc:JFileChooser):PropertyChangeListener;
+	/*@@@ modifiers=1 */ public function createPropertyChangeListener(fc:JFileChooser):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#ensureFileIsVisible(javax.swing.JFileChooser, java.io.File) */
-	override public function ensureFileIsVisible(fc:JFileChooser, f:File):Void;
+	/*@@@ modifiers=1 */ override public function ensureFileIsVisible(fc:JFileChooser, f:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getAcceptAllFileFilter(javax.swing.JFileChooser) */
-	override public function getAcceptAllFileFilter(fc:JFileChooser):FileFilter;
+	/*@@@ modifiers=1 */ override public function getAcceptAllFileFilter(fc:JFileChooser):FileFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getAccessoryPanel() */
-	public function getAccessoryPanel():JPanel;
+	/*@@@ modifiers=1 */ public function getAccessoryPanel():JPanel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButton(javax.swing.JFileChooser) */
-	private function getApproveButton(fc:JFileChooser):JButton;
+	/*@@@ modifiers=4 */ private function getApproveButton(fc:JFileChooser):JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonMnemonic(javax.swing.JFileChooser) */
-	public function getApproveButtonMnemonic(fc:JFileChooser):Int;
+	/*@@@ modifiers=1 */ public function getApproveButtonMnemonic(fc:JFileChooser):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonText(javax.swing.JFileChooser) */
-	override public function getApproveButtonText(fc:JFileChooser):String;
+	/*@@@ modifiers=1 */ override public function getApproveButtonText(fc:JFileChooser):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser) */
-	public function getApproveButtonToolTipText(fc:JFileChooser):String;
+	/*@@@ modifiers=1 */ public function getApproveButtonToolTipText(fc:JFileChooser):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveSelectionAction() */
-	public function getApproveSelectionAction():Action;
+	/*@@@ modifiers=1 */ public function getApproveSelectionAction():Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getCancelSelectionAction() */
-	public function getCancelSelectionAction():Action;
+	/*@@@ modifiers=1 */ public function getCancelSelectionAction():Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getChangeToParentDirectoryAction() */
-	public function getChangeToParentDirectoryAction():Action;
+	/*@@@ modifiers=1 */ public function getChangeToParentDirectoryAction():Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getDialogTitle(javax.swing.JFileChooser) */
-	override public function getDialogTitle(fc:JFileChooser):String;
+	/*@@@ modifiers=1 */ override public function getDialogTitle(fc:JFileChooser):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectory() */
-	private function getDirectory():File;
+	/*@@@ modifiers=4 */ private function getDirectory():File;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName() */
-	public function getDirectoryName():String;
+	/*@@@ modifiers=1 */ public function getDirectoryName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileChooser() */
-	public function getFileChooser():JFileChooser;
+	/*@@@ modifiers=1 */ public function getFileChooser():JFileChooser;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName() */
-	public function getFileName():String;
+	/*@@@ modifiers=1 */ public function getFileName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileView(javax.swing.JFileChooser) */
-	override public function getFileView(fc:JFileChooser):FileView;
+	/*@@@ modifiers=1 */ override public function getFileView(fc:JFileChooser):FileView;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getGoHomeAction() */
-	public function getGoHomeAction():Action;
+	/*@@@ modifiers=1 */ public function getGoHomeAction():Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getModel() */
-	public function getModel():BasicDirectoryModel;
+	/*@@@ modifiers=1 */ public function getModel():BasicDirectoryModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getNewFolderAction() */
-	public function getNewFolderAction():Action;
+	/*@@@ modifiers=1 */ public function getNewFolderAction():Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#getUpdateAction() */
-	public function getUpdateAction():Action;
+	/*@@@ modifiers=1 */ public function getUpdateAction():Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#installComponents(javax.swing.JFileChooser) */
-	public function installComponents(fc:JFileChooser):Void;
+	/*@@@ modifiers=1 */ public function installComponents(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#installDefaults(javax.swing.JFileChooser) */
-	private function installDefaults(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function installDefaults(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#installIcons(javax.swing.JFileChooser) */
-	private function installIcons(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function installIcons(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#installListeners(javax.swing.JFileChooser) */
-	private function installListeners(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function installListeners(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#installStrings(javax.swing.JFileChooser) */
-	private function installStrings(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function installStrings(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#isDirectorySelected() */
-	private function isDirectorySelected():Bool;
+	/*@@@ modifiers=4 */ private function isDirectorySelected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#rescanCurrentDirectory(javax.swing.JFileChooser) */
-	override public function rescanCurrentDirectory(fc:JFileChooser):Void;
+	/*@@@ modifiers=1 */ override public function rescanCurrentDirectory(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectory(java.io.File) */
-	private function setDirectory(f:File):Void;
+	/*@@@ modifiers=4 */ private function setDirectory(f:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String) */
-	public function setDirectoryName(dirname:String):Void;
+	/*@@@ modifiers=1 */ public function setDirectoryName(dirname:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectorySelected(boolean) */
-	private function setDirectorySelected(b:Bool):Void;
+	/*@@@ modifiers=4 */ private function setDirectorySelected(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String) */
-	public function setFileName(filename:String):Void;
+	/*@@@ modifiers=1 */ public function setFileName(filename:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallComponents(javax.swing.JFileChooser) */
-	public function uninstallComponents(fc:JFileChooser):Void;
+	/*@@@ modifiers=1 */ public function uninstallComponents(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallDefaults(javax.swing.JFileChooser) */
-	private function uninstallDefaults(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallIcons(javax.swing.JFileChooser) */
-	private function uninstallIcons(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function uninstallIcons(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallListeners(javax.swing.JFileChooser) */
-	private function uninstallListeners(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallStrings(javax.swing.JFileChooser) */
-	private function uninstallStrings(fc:JFileChooser):Void;
+	/*@@@ modifiers=4 */ private function uninstallStrings(fc:JFileChooser):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

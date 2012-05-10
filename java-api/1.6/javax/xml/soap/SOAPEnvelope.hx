@@ -10,21 +10,21 @@ import javax.xml.soap.SOAPHeader;
 extern interface SOAPEnvelope implements SOAPElement
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPEnvelope.html#addBody() */
-	public function addBody():SOAPBody;
+	/*@@@ modifiers=1025 */ public function addBody():SOAPBody;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPEnvelope.html#addHeader() */
-	public function addHeader():SOAPHeader;
+	/*@@@ modifiers=1025 */ public function addHeader():SOAPHeader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPEnvelope.html#createName(java.lang.String, java.lang.String, java.lang.String) */
-	@:overload(function (localName:String, prefix:String, uri:String):Name {})
+	/*@@@ modifiers=1025 */ @:overload(function (localName:String, prefix:String, uri:String):Name {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPEnvelope.html#createName(java.lang.String) */
-	public function createName(localName:String):Name;
+	/*@@@ modifiers=1025 */ public function createName(localName:String):Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPEnvelope.html#getBody() */
-	public function getBody():SOAPBody;
+	/*@@@ modifiers=1025 */ public function getBody():SOAPBody;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPEnvelope.html#getHeader() */
-	public function getHeader():SOAPHeader;
+	/*@@@ modifiers=1025 */ public function getHeader():SOAPHeader;
 
 }
 

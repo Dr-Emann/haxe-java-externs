@@ -8,7 +8,7 @@ import org.w3c.dom.Node;
 extern interface DOMLocator implements SourceLocator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode() */
-	public function getOriginatingNode():Node;
+	/*@@@ modifiers=1025 */ public function getOriginatingNode():Node;
 
 }
 

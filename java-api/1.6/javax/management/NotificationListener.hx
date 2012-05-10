@@ -8,7 +8,7 @@ import javax.management.Notification;
 extern interface NotificationListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationListener.html#handleNotification(javax.management.Notification, java.lang.Object) */
-	public function handleNotification(notification:Notification, handback:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function handleNotification(notification:Notification, handback:Dynamic):Void;
 
 }
 

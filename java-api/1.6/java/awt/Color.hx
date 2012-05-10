@@ -10,7 +10,6 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.ColorModel;
 import java.io.Serializable;
-import java.lang.Number;
 import java.lang.Object;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html */
@@ -57,87 +56,87 @@ extern class Color extends Object, implements Paint, implements Serializable
 	public static var blue:Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(int, int, int, int) */
-	@:overload(function (r:Int, g:Int, b:Int, a:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Int, g:Int, b:Int, a:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(float, float, float) */
-	@:overload(function (r:StdFloat, g:StdFloat, b:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Single, g:Single, b:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(java.awt.color.ColorSpace, float[], float) */
-	@:overload(function (r:ColorSpace, g:NativeArray<StdFloat>, b:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:ColorSpace, g:NativeArray<Single>, b:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(int, int, int) */
-	@:overload(function (r:Int, g:Int, b:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Int, g:Int, b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(float, float, float, float) */
-	@:overload(function (r:StdFloat, g:StdFloat, b:StdFloat, a:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Single, g:Single, b:Single, a:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(int) */
-	@:overload(function (rgb:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (rgb:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#Color(int, boolean) */
-	public function new(rgba:Int, hasalpha:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(rgba:Int, hasalpha:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#brighter() */
-	public function brighter():Color;
+	/*@@@ modifiers=1 */ public function brighter():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints) */
-	public function createContext(cm:ColorModel, r:Rectangle, r2d:Rectangle2D, xform:AffineTransform, hints:RenderingHints):PaintContext;
+	/*@@@ modifiers=33 */ public function createContext(cm:ColorModel, r:Rectangle, r2d:Rectangle2D, xform:AffineTransform, hints:RenderingHints):PaintContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#darker() */
-	public function darker():Color;
+	/*@@@ modifiers=1 */ public function darker():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#decode(java.lang.String) */
-	static public function decode(nm:String):Color;
+	/*@@@ modifiers=9 */ static public function decode(nm:String):Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getAlpha() */
-	public function getAlpha():Int;
+	/*@@@ modifiers=1 */ public function getAlpha():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getBlue() */
-	public function getBlue():Int;
+	/*@@@ modifiers=1 */ public function getBlue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getColor(java.lang.String, int) */
-	@:overload(function (nm:String, v:Int):Color {})
+	/*@@@ modifiers=9 */ @:overload(function (nm:String, v:Int):Color {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getColor(java.lang.String, java.awt.Color) */
-	@:overload(function (nm:String, v:Color):Color {})
+	/*@@@ modifiers=9 */ @:overload(function (nm:String, v:Color):Color {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getColor(java.lang.String) */
-	static public function getColor(nm:String):Color;
+	/*@@@ modifiers=9 */ static public function getColor(nm:String):Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getColorComponents(java.awt.color.ColorSpace, float[]) */
-	@:overload(function (cspace:ColorSpace, compArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (cspace:ColorSpace, compArray:NativeArray<Single>):NativeArray<Single> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getColorComponents(float[]) */
-	public function getColorComponents(compArray:NativeArray<StdFloat>):NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getColorComponents(compArray:NativeArray<Single>):NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getColorSpace() */
-	public function getColorSpace():ColorSpace;
+	/*@@@ modifiers=1 */ public function getColorSpace():ColorSpace;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getComponents(java.awt.color.ColorSpace, float[]) */
-	@:overload(function (cspace:ColorSpace, compArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (cspace:ColorSpace, compArray:NativeArray<Single>):NativeArray<Single> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getComponents(float[]) */
-	public function getComponents(compArray:NativeArray<StdFloat>):NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getComponents(compArray:NativeArray<Single>):NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getGreen() */
-	public function getGreen():Int;
+	/*@@@ modifiers=1 */ public function getGreen():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getHSBColor(float, float, float) */
-	static public function getHSBColor(h:StdFloat, s:StdFloat, b:StdFloat):Color;
+	/*@@@ modifiers=9 */ static public function getHSBColor(h:Single, s:Single, b:Single):Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getRGB() */
-	public function getRGB():Int;
+	/*@@@ modifiers=1 */ public function getRGB():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getRGBColorComponents(float[]) */
-	public function getRGBColorComponents(compArray:NativeArray<StdFloat>):NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getRGBColorComponents(compArray:NativeArray<Single>):NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getRGBComponents(float[]) */
-	public function getRGBComponents(compArray:NativeArray<StdFloat>):NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getRGBComponents(compArray:NativeArray<Single>):NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getRed() */
-	public function getRed():Int;
+	/*@@@ modifiers=1 */ public function getRed():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#getTransparency() */
-	public function getTransparency():Int;
+	/*@@@ modifiers=1 */ public function getTransparency():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -8,10 +8,10 @@ import java.util.EventListener;
 extern class EventListenerProxy extends Object, implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EventListenerProxy.html#EventListenerProxy(java.util.EventListener) */
-	public function new(listener:EventListener):Void;
+	/*@@@ modifiers=1 */ public function new(listener:EventListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EventListenerProxy.html#getListener() */
-	public function getListener():EventListener;
+	/*@@@ modifiers=1 */ public function getListener():EventListener;
 
 }
 

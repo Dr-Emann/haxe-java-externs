@@ -9,13 +9,13 @@ import javax.xml.validation.ValidatorHandler;
 extern class Schema extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/Schema.html#Schema() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/Schema.html#newValidator() */
-	public function newValidator():Validator;
+	/*@@@ modifiers=1025 */ public function newValidator():Validator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/Schema.html#newValidatorHandler() */
-	public function newValidatorHandler():ValidatorHandler;
+	/*@@@ modifiers=1025 */ public function newValidatorHandler():ValidatorHandler;
 
 }
 

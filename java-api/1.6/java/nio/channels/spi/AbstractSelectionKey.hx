@@ -7,13 +7,13 @@ import java.nio.channels.SelectionKey;
 extern class AbstractSelectionKey extends SelectionKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelectionKey.html#AbstractSelectionKey() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelectionKey.html#cancel() */
-	override public function cancel():Void;
+	/*@@@ modifiers=17 */ override public function cancel():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelectionKey.html#isValid() */
-	override public function isValid():Bool;
+	/*@@@ modifiers=17 */ override public function isValid():Bool;
 
 }
 

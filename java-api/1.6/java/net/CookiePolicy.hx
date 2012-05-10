@@ -8,7 +8,7 @@ import java.net.URI;
 extern interface CookiePolicy
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookiePolicy.html#shouldAccept(java.net.URI, java.net.HttpCookie) */
-	public function shouldAccept(uri:URI, cookie:HttpCookie):Bool;
+	/*@@@ modifiers=1025 */ public function shouldAccept(uri:URI, cookie:HttpCookie):Bool;
 
 }
 

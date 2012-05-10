@@ -12,46 +12,46 @@ import java.lang.Object;
 extern class GraphicsDevice extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#GraphicsDevice() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getAvailableAcceleratedMemory() */
-	public function getAvailableAcceleratedMemory():Int;
+	/*@@@ modifiers=1 */ public function getAvailableAcceleratedMemory():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getBestConfiguration(java.awt.GraphicsConfigTemplate) */
-	public function getBestConfiguration(gct:GraphicsConfigTemplate):GraphicsConfiguration;
+	/*@@@ modifiers=1 */ public function getBestConfiguration(gct:GraphicsConfigTemplate):GraphicsConfiguration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getConfigurations() */
-	public function getConfigurations():NativeArray<GraphicsConfiguration>;
+	/*@@@ modifiers=1025 */ public function getConfigurations():NativeArray<GraphicsConfiguration>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getDefaultConfiguration() */
-	public function getDefaultConfiguration():GraphicsConfiguration;
+	/*@@@ modifiers=1025 */ public function getDefaultConfiguration():GraphicsConfiguration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getDisplayMode() */
-	public function getDisplayMode():DisplayMode;
+	/*@@@ modifiers=1 */ public function getDisplayMode():DisplayMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getDisplayModes() */
-	public function getDisplayModes():NativeArray<DisplayMode>;
+	/*@@@ modifiers=1 */ public function getDisplayModes():NativeArray<DisplayMode>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getFullScreenWindow() */
-	public function getFullScreenWindow():Window;
+	/*@@@ modifiers=1 */ public function getFullScreenWindow():Window;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getIDstring() */
-	public function getIDstring():String;
+	/*@@@ modifiers=1025 */ public function getIDstring():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#getType() */
-	public function getType():Int;
+	/*@@@ modifiers=1025 */ public function getType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#isDisplayChangeSupported() */
-	public function isDisplayChangeSupported():Bool;
+	/*@@@ modifiers=1 */ public function isDisplayChangeSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#isFullScreenSupported() */
-	public function isFullScreenSupported():Bool;
+	/*@@@ modifiers=1 */ public function isFullScreenSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#setDisplayMode(java.awt.DisplayMode) */
-	public function setDisplayMode(dm:DisplayMode):Void;
+	/*@@@ modifiers=1 */ public function setDisplayMode(dm:DisplayMode):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsDevice.html#setFullScreenWindow(java.awt.Window) */
-	public function setFullScreenWindow(w:Window):Void;
+	/*@@@ modifiers=1 */ public function setFullScreenWindow(w:Window):Void;
 
 }
 

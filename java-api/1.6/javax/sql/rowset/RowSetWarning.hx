@@ -7,19 +7,19 @@ import java.sql.SQLException;
 extern class RowSetWarning extends SQLException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/RowSetWarning.html#RowSetWarning(java.lang.String) */
-	@:overload(function (reason:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (reason:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/RowSetWarning.html#RowSetWarning() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/RowSetWarning.html#RowSetWarning(java.lang.String, java.lang.String) */
-	@:overload(function (reason:String, SQLState:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (reason:String, SQLState:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/RowSetWarning.html#RowSetWarning(java.lang.String, java.lang.String, int) */
-	public function new(reason:String, SQLState:String, vendorCode:Int):Void;
+	/*@@@ modifiers=1 */ public function new(reason:String, SQLState:String, vendorCode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/RowSetWarning.html#getNextWarning() */
-	public function getNextWarning():RowSetWarning;
+	/*@@@ modifiers=1 */ public function getNextWarning():RowSetWarning;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/RowSetWarning.html#setNextWarning(javax.sql.rowset.RowSetWarning) */
-	public function setNextWarning(warning:RowSetWarning):Void;
+	/*@@@ modifiers=1 */ public function setNextWarning(warning:RowSetWarning):Void;
 
 }
 

@@ -9,10 +9,10 @@ import javax.lang.model.type.TypeMirror;
 extern class MirroredTypesException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/MirroredTypesException.html#MirroredTypesException(java.util.List) */
-	public function new(types:List<TypeMirror>):Void;
+	/*@@@ modifiers=1 */ public function new(types:List<TypeMirror>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/MirroredTypesException.html#getTypeMirrors() */
-	public function getTypeMirrors():List<TypeMirror>;
+	/*@@@ modifiers=1 */ public function getTypeMirrors():List<TypeMirror>;
 
 }
 

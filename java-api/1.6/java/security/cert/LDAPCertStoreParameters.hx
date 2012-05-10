@@ -8,23 +8,23 @@ import java.security.cert.CertStoreParameters;
 extern class LDAPCertStoreParameters extends Object, implements CertStoreParameters
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#LDAPCertStoreParameters(java.lang.String, int) */
-	@:overload(function (serverName:String, port:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (serverName:String, port:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#LDAPCertStoreParameters(java.lang.String) */
-	@:overload(function (serverName:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (serverName:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#LDAPCertStoreParameters() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#getPort() */
-	public function getPort():Int;
+	/*@@@ modifiers=1 */ public function getPort():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#getServerName() */
-	public function getServerName():String;
+	/*@@@ modifiers=1 */ public function getServerName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/LDAPCertStoreParameters.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

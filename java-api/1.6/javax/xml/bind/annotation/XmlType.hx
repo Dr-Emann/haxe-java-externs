@@ -9,19 +9,19 @@ import java.lang.annotation.Annotation;
 extern interface XmlType implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlType.html#factoryClass() */
-	public function factoryClass():Class<Dynamic>;
+	/*@@@ modifiers=1025 */ public function factoryClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlType.html#factoryMethod() */
-	public function factoryMethod():String;
+	/*@@@ modifiers=1025 */ public function factoryMethod():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlType.html#name() */
-	public function name():String;
+	/*@@@ modifiers=1025 */ public function name():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlType.html#namespace() */
-	public function namespace():String;
+	/*@@@ modifiers=1025 */ public function namespace():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlType.html#propOrder() */
-	public function propOrder():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function propOrder():NativeArray<String>;
 
 }
 

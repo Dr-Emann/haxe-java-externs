@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class InterruptedException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/InterruptedException.html#InterruptedException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/InterruptedException.html#InterruptedException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

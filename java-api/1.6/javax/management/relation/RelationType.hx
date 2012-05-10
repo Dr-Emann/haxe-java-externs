@@ -9,13 +9,13 @@ import javax.management.relation.RoleInfo;
 extern interface RelationType implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationType.html#getRelationTypeName() */
-	public function getRelationTypeName():String;
+	/*@@@ modifiers=1025 */ public function getRelationTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String) */
-	public function getRoleInfo(roleInfoName:String):RoleInfo;
+	/*@@@ modifiers=1025 */ public function getRoleInfo(roleInfoName:String):RoleInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationType.html#getRoleInfos() */
-	public function getRoleInfos():List<RoleInfo>;
+	/*@@@ modifiers=1025 */ public function getRoleInfos():List<RoleInfo>;
 
 }
 

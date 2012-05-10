@@ -21,28 +21,28 @@ extern class AbstractProcessor extends Object, implements Processor
 	private var processingEnv:ProcessingEnvironment;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#AbstractProcessor() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#getCompletions(javax.lang.model.element.Element, javax.lang.model.element.AnnotationMirror, javax.lang.model.element.ExecutableElement, java.lang.String) */
-	public function getCompletions(element:Element, annotation:AnnotationMirror, member:ExecutableElement, userText:String):java.lang.Iterable<Completion>;
+	/*@@@ modifiers=1 */ public function getCompletions(element:Element, annotation:AnnotationMirror, member:ExecutableElement, userText:String):java.lang.Iterable<Completion>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#getSupportedAnnotationTypes() */
-	public function getSupportedAnnotationTypes():Set<String>;
+	/*@@@ modifiers=1 */ public function getSupportedAnnotationTypes():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#getSupportedOptions() */
-	public function getSupportedOptions():Set<String>;
+	/*@@@ modifiers=1 */ public function getSupportedOptions():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#getSupportedSourceVersion() */
-	public function getSupportedSourceVersion():SourceVersion;
+	/*@@@ modifiers=1 */ public function getSupportedSourceVersion():SourceVersion;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#init(javax.annotation.processing.ProcessingEnvironment) */
-	public function init(processingEnv:ProcessingEnvironment):Void;
+	/*@@@ modifiers=33 */ public function init(processingEnv:ProcessingEnvironment):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#isInitialized() */
-	private function isInitialized():Bool;
+	/*@@@ modifiers=36 */ private function isInitialized():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/AbstractProcessor.html#processing.AbstractProcessor.process(java.util.Set, javax.annotation.processing.RoundEnvironment) */
-	public function process(annotations:Set<TypeElement>, roundEnv:RoundEnvironment):Bool;
+	/*@@@ modifiers=1025 */ public function process(annotations:Set<TypeElement>, roundEnv:RoundEnvironment):Bool;
 
 }
 

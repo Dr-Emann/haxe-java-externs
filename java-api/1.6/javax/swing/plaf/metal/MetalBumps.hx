@@ -31,24 +31,24 @@ extern class MetalBumps extends Object, implements Icon
 	private var buffer:BumpBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#MetalBumps(int, int, java.awt.Color, java.awt.Color, java.awt.Color) */
-	public function new(width:Int, height:Int, newTopColor:Color, newShadowColor:Color, newBackColor:Color):Void;
+	/*@@@ modifiers=1 */ public function new(width:Int, height:Int, newTopColor:Color, newShadowColor:Color, newBackColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#getIconHeight() */
-	public function getIconHeight():Int;
+	/*@@@ modifiers=1 */ public function getIconHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#getIconWidth() */
-	public function getIconWidth():Int;
+	/*@@@ modifiers=1 */ public function getIconWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#paintIcon(java.awt.Component, java.awt.Graphics, int, int) */
-	public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#setBumpArea(int, int) */
-	@:overload(function (width:Int, height:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#setBumpArea(java.awt.Dimension) */
-	public function setBumpArea(bumpArea:Dimension):Void;
+	/*@@@ modifiers=1 */ public function setBumpArea(bumpArea:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBumps.html#setBumpColors(java.awt.Color, java.awt.Color, java.awt.Color) */
-	public function setBumpColors(newTopColor:Color, newShadowColor:Color, newBackColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setBumpColors(newTopColor:Color, newShadowColor:Color, newBackColor:Color):Void;
 
 }
 

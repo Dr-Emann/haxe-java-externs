@@ -8,7 +8,7 @@ import java.beans.BeanInfo;
 extern interface BeanContextServiceProviderBeanInfo implements BeanInfo
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html#getServicesBeanInfo() */
-	public function getServicesBeanInfo():NativeArray<BeanInfo>;
+	/*@@@ modifiers=1025 */ public function getServicesBeanInfo():NativeArray<BeanInfo>;
 
 }
 

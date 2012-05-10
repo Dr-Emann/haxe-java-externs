@@ -11,25 +11,25 @@ typedef StdFloat = Float;
 extern class Number extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#Number() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#byteValue() */
-	public function byteValue():Int8;
+	/*@@@ modifiers=1 */ public function byteValue():Int8;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#doubleValue() */
-	public function doubleValue():StdFloat;
+	/*@@@ modifiers=1025 */ public function doubleValue():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#floatValue() */
-	public function floatValue():StdFloat;
+	/*@@@ modifiers=1025 */ public function floatValue():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#intValue() */
-	public function intValue():Int;
+	/*@@@ modifiers=1025 */ public function intValue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#longValue() */
-	public function longValue():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function longValue():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html#shortValue() */
-	public function shortValue():Int16;
+	/*@@@ modifiers=1 */ public function shortValue():Int16;
 
 }
 

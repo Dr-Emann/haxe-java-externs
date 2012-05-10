@@ -13,66 +13,66 @@ import java.util.Vector;
 extern interface RenderedImage
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#copyData(java.awt.image.WritableRaster) */
-	public function copyData(raster:WritableRaster):WritableRaster;
+	/*@@@ modifiers=1025 */ public function copyData(raster:WritableRaster):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getColorModel() */
-	public function getColorModel():ColorModel;
+	/*@@@ modifiers=1025 */ public function getColorModel():ColorModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getData(java.awt.Rectangle) */
-	@:overload(function (rect:Rectangle):Raster {})
+	/*@@@ modifiers=1025 */ @:overload(function (rect:Rectangle):Raster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getData() */
-	public function getData():Raster;
+	/*@@@ modifiers=1025 */ public function getData():Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getHeight() */
-	public function getHeight():Int;
+	/*@@@ modifiers=1025 */ //TODO: public function getHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getMinTileX() */
-	public function getMinTileX():Int;
+	/*@@@ modifiers=1025 */ public function getMinTileX():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getMinTileY() */
-	public function getMinTileY():Int;
+	/*@@@ modifiers=1025 */ public function getMinTileY():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getMinX() */
-	public function getMinX():Int;
+	/*@@@ modifiers=1025 */ public function getMinX():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getMinY() */
-	public function getMinY():Int;
+	/*@@@ modifiers=1025 */ public function getMinY():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getNumXTiles() */
-	public function getNumXTiles():Int;
+	/*@@@ modifiers=1025 */ public function getNumXTiles():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getNumYTiles() */
-	public function getNumYTiles():Int;
+	/*@@@ modifiers=1025 */ public function getNumYTiles():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getProperty(java.lang.String) */
-	public function getProperty(name:String):Dynamic;
+	/*@@@ modifiers=1025 */ //TODO: public function getProperty(name:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getPropertyNames() */
-	public function getPropertyNames():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getPropertyNames():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getSampleModel() */
-	public function getSampleModel():SampleModel;
+	/*@@@ modifiers=1025 */ public function getSampleModel():SampleModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getSources() */
-	public function getSources():Vector<RenderedImage>;
+	/*@@@ modifiers=1025 */ public function getSources():Vector<RenderedImage>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getTile(int, int) */
-	public function getTile(tileX:Int, tileY:Int):Raster;
+	/*@@@ modifiers=1025 */ public function getTile(tileX:Int, tileY:Int):Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getTileGridXOffset() */
-	public function getTileGridXOffset():Int;
+	/*@@@ modifiers=1025 */ public function getTileGridXOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getTileGridYOffset() */
-	public function getTileGridYOffset():Int;
+	/*@@@ modifiers=1025 */ public function getTileGridYOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getTileHeight() */
-	public function getTileHeight():Int;
+	/*@@@ modifiers=1025 */ public function getTileHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getTileWidth() */
-	public function getTileWidth():Int;
+	/*@@@ modifiers=1025 */ public function getTileWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/RenderedImage.html#getWidth() */
-	public function getWidth():Int;
+	/*@@@ modifiers=1025 */ //TODO: public function getWidth():Int;
 
 }
 

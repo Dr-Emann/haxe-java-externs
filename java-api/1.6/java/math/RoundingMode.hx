@@ -32,12 +32,12 @@ extern class RoundingMode extends Enum<RoundingMode>
 	public static var UNNECESSARY:RoundingMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#valueOf(int) */
-	@:overload(function (rm:Int):RoundingMode {})
+	/*@@@ modifiers=9 */ @:overload(function (rm:Int):RoundingMode {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):RoundingMode;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):RoundingMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/math/RoundingMode.html#values() */
-	static public function values():NativeArray<RoundingMode>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<RoundingMode>;
 
 }
 

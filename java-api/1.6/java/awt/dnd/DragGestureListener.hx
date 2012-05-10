@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface DragGestureListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent) */
-	public function dragGestureRecognized(dge:DragGestureEvent):Void;
+	/*@@@ modifiers=1025 */ public function dragGestureRecognized(dge:DragGestureEvent):Void;
 
 }
 

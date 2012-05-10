@@ -10,12 +10,12 @@ import javax.net.ssl.ManagerFactoryParameters;
 extern class KeyStoreBuilderParameters extends Object, implements ManagerFactoryParameters
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/KeyStoreBuilderParameters.html#KeyStoreBuilderParameters(java.security.KeyStore$Builder) */
-	@:overload(function (arg0:KeyStore_Builder):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg0:KeyStore_Builder):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/KeyStoreBuilderParameters.html#KeyStoreBuilderParameters(java.util.List) */
-	public function new(arg0:List<KeyStore_Builder>):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:List<KeyStore_Builder>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/KeyStoreBuilderParameters.html#getParameters() */
-	public function getParameters():List<KeyStore_Builder>;
+	/*@@@ modifiers=1 */ public function getParameters():List<KeyStore_Builder>;
 
 }
 

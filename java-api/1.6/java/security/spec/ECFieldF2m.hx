@@ -10,29 +10,29 @@ import java.security.spec.ECField;
 extern class ECFieldF2m extends Object, implements ECField
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#ECFieldF2m(int, java.math.BigInteger) */
-	@:overload(function (m:Int, rp:BigInteger):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (m:Int, rp:BigInteger):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#ECFieldF2m(int, int[]) */
-	@:overload(function (m:Int, rp:NativeArray<Int>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (m:Int, rp:NativeArray<Int>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#ECFieldF2m(int) */
-	public function new(m:Int):Void;
+	/*@@@ modifiers=1 */ public function new(m:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#getFieldSize() */
-	public function getFieldSize():Int;
+	/*@@@ modifiers=1 */ public function getFieldSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#getM() */
-	public function getM():Int;
+	/*@@@ modifiers=1 */ public function getM():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#getMidTermsOfReductionPolynomial() */
-	public function getMidTermsOfReductionPolynomial():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getMidTermsOfReductionPolynomial():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#getReductionPolynomial() */
-	public function getReductionPolynomial():BigInteger;
+	/*@@@ modifiers=1 */ public function getReductionPolynomial():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/ECFieldF2m.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 }
 

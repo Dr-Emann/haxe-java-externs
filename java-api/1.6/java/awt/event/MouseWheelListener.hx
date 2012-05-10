@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface MouseWheelListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent) */
-	public function mouseWheelMoved(e:MouseWheelEvent):Void;
+	/*@@@ modifiers=1025 */ public function mouseWheelMoved(e:MouseWheelEvent):Void;
 
 }
 

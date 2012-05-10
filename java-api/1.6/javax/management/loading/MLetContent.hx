@@ -10,37 +10,37 @@ import java.util.Map;
 extern class MLetContent extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#MLetContent(java.net.URL, java.util.Map, java.util.List, java.util.List) */
-	public function new(url:URL, attributes:Map<String, String>, types:List<String>, values:List<String>):Void;
+	/*@@@ modifiers=1 */ public function new(url:URL, attributes:Map<String, String>, types:List<String>, values:List<String>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getAttributes() */
-	public function getAttributes():Map<String, String>;
+	/*@@@ modifiers=1 */ public function getAttributes():Map<String, String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getCode() */
-	public function getCode():String;
+	/*@@@ modifiers=1 */ public function getCode():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getCodeBase() */
-	public function getCodeBase():URL;
+	/*@@@ modifiers=1 */ public function getCodeBase():URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getDocumentBase() */
-	public function getDocumentBase():URL;
+	/*@@@ modifiers=1 */ public function getDocumentBase():URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getJarFiles() */
-	public function getJarFiles():String;
+	/*@@@ modifiers=1 */ public function getJarFiles():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getParameterTypes() */
-	public function getParameterTypes():List<String>;
+	/*@@@ modifiers=1 */ public function getParameterTypes():List<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getParameterValues() */
-	public function getParameterValues():List<String>;
+	/*@@@ modifiers=1 */ public function getParameterValues():List<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getSerializedObject() */
-	public function getSerializedObject():String;
+	/*@@@ modifiers=1 */ public function getSerializedObject():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLetContent.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1 */ public function getVersion():String;
 
 }
 

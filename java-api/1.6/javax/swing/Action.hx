@@ -8,22 +8,22 @@ import java.beans.PropertyChangeListener;
 extern interface Action implements ActionListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#getValue(java.lang.String) */
-	public function getValue(key:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function getValue(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#isEnabled() */
-	public function isEnabled():Bool;
+	/*@@@ modifiers=1025 */ public function isEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#putValue(java.lang.String, java.lang.Object) */
-	public function putValue(key:String, value:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function putValue(key:String, value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#setEnabled(boolean) */
-	public function setEnabled(b:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setEnabled(b:Bool):Void;
 
 }
 

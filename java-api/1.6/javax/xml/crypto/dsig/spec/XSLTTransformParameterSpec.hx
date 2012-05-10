@@ -9,10 +9,10 @@ import javax.xml.crypto.dsig.spec.TransformParameterSpec;
 extern class XSLTTransformParameterSpec extends Object, implements TransformParameterSpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#XSLTTransformParameterSpec(javax.xml.crypto.XMLStructure) */
-	public function new(stylesheet:XMLStructure):Void;
+	/*@@@ modifiers=1 */ public function new(stylesheet:XMLStructure):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#getStylesheet() */
-	public function getStylesheet():XMLStructure;
+	/*@@@ modifiers=1 */ public function getStylesheet():XMLStructure;
 
 }
 

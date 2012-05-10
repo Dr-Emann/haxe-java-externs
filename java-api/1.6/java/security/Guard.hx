@@ -6,7 +6,7 @@ package java.security;
 extern interface Guard
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Guard.html#checkGuard(java.lang.Object) */
-	public function checkGuard(object:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function checkGuard(object:Dynamic):Void;
 
 }
 

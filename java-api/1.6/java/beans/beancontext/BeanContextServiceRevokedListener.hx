@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface BeanContextServiceRevokedListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent) */
-	public function serviceRevoked(bcsre:BeanContextServiceRevokedEvent):Void;
+	/*@@@ modifiers=1025 */ public function serviceRevoked(bcsre:BeanContextServiceRevokedEvent):Void;
 
 }
 

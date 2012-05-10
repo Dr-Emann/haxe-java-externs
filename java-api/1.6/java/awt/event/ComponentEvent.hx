@@ -8,13 +8,13 @@ import java.awt.Component;
 extern class ComponentEvent extends AWTEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentEvent.html#ComponentEvent(java.awt.Component, int) */
-	public function new(source:Component, id:Int):Void;
+	/*@@@ modifiers=1 */ public function new(source:Component, id:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentEvent.html#getComponent() */
-	public function getComponent():Component;
+	/*@@@ modifiers=1 */ public function getComponent():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentEvent.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 }
 

@@ -8,13 +8,13 @@ import java.awt.peer.ComponentPeer;
 extern interface CheckboxPeer implements ComponentPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/CheckboxPeer.html#setCheckboxGroup(java.awt.CheckboxGroup) */
-	public function setCheckboxGroup(g:CheckboxGroup):Void;
+	/*@@@ modifiers=1025 */ public function setCheckboxGroup(g:CheckboxGroup):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/CheckboxPeer.html#setLabel(java.lang.String) */
-	public function setLabel(label:String):Void;
+	/*@@@ modifiers=1025 */ public function setLabel(label:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/CheckboxPeer.html#setState(boolean) */
-	public function setState(state:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setState(state:Bool):Void;
 
 }
 

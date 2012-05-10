@@ -7,13 +7,13 @@ import java.lang.Object;
 extern class Annotation extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Annotation.html#Annotation(java.lang.Object) */
-	public function new(value:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Annotation.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Annotation.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

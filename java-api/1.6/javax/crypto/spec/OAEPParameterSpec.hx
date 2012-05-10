@@ -9,19 +9,19 @@ import javax.crypto.spec.PSource;
 extern class OAEPParameterSpec extends Object, implements AlgorithmParameterSpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/OAEPParameterSpec.html#OAEPParameterSpec(java.lang.String, java.lang.String, java.security.spec.AlgorithmParameterSpec, javax.crypto.spec.PSource) */
-	public function new(arg0:String, arg1:String, arg2:AlgorithmParameterSpec, arg3:PSource):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:String, arg1:String, arg2:AlgorithmParameterSpec, arg3:PSource):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/OAEPParameterSpec.html#getDigestAlgorithm() */
-	public function getDigestAlgorithm():String;
+	/*@@@ modifiers=1 */ public function getDigestAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/OAEPParameterSpec.html#getMGFAlgorithm() */
-	public function getMGFAlgorithm():String;
+	/*@@@ modifiers=1 */ public function getMGFAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/OAEPParameterSpec.html#getMGFParameters() */
-	public function getMGFParameters():AlgorithmParameterSpec;
+	/*@@@ modifiers=1 */ public function getMGFParameters():AlgorithmParameterSpec;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/OAEPParameterSpec.html#getPSource() */
-	public function getPSource():PSource;
+	/*@@@ modifiers=1 */ public function getPSource():PSource;
 
 }
 

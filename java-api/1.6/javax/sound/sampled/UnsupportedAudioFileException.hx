@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class UnsupportedAudioFileException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/UnsupportedAudioFileException.html#UnsupportedAudioFileException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/UnsupportedAudioFileException.html#UnsupportedAudioFileException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

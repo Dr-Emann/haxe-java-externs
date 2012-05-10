@@ -7,7 +7,7 @@ import java.awt.PrintJob;
 extern interface PrintGraphics
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PrintGraphics.html#getPrintJob() */
-	public function getPrintJob():PrintJob;
+	/*@@@ modifiers=1025 */ public function getPrintJob():PrintJob;
 
 }
 

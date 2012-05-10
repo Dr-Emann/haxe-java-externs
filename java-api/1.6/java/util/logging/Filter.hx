@@ -7,7 +7,7 @@ import java.util.logging.LogRecord;
 extern interface Filter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord) */
-	public function isLoggable(record:LogRecord):Bool;
+	/*@@@ modifiers=1025 */ public function isLoggable(record:LogRecord):Bool;
 
 }
 

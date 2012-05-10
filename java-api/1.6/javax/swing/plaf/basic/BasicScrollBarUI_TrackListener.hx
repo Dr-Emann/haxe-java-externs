@@ -19,22 +19,22 @@ extern class BasicScrollBarUI_TrackListener extends MouseAdapter, implements Mou
 	private var currentMouseY:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.TrackListener.html#BasicScrollBarUI$TrackListener(javax.swing.plaf.basic.BasicScrollBarUI) */
-	private function new(arg0:BasicScrollBarUI):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:BasicScrollBarUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.TrackListener.html#mouseDragged(java.awt.event.MouseEvent) */
-	override public function mouseDragged(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseDragged(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.TrackListener.html#mouseExited(java.awt.event.MouseEvent) */
-	override public function mouseExited(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseExited(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.TrackListener.html#mouseMoved(java.awt.event.MouseEvent) */
-	override public function mouseMoved(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseMoved(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.TrackListener.html#mousePressed(java.awt.event.MouseEvent) */
-	override public function mousePressed(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mousePressed(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.TrackListener.html#mouseReleased(java.awt.event.MouseEvent) */
-	override public function mouseReleased(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseReleased(e:MouseEvent):Void;
 
 }
 

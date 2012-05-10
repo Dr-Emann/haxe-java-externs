@@ -13,40 +13,40 @@ import javax.swing.text.NavigationFilter;
 extern class JFormattedTextField_AbstractFormatter extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#JFormattedTextField$AbstractFormatter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=4 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#getActions() */
-	private function getActions():NativeArray<Action>;
+	/*@@@ modifiers=4 */ private function getActions():NativeArray<Action>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#getDocumentFilter() */
-	private function getDocumentFilter():DocumentFilter;
+	/*@@@ modifiers=4 */ private function getDocumentFilter():DocumentFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#getFormattedTextField() */
-	private function getFormattedTextField():JFormattedTextField;
+	/*@@@ modifiers=4 */ private function getFormattedTextField():JFormattedTextField;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#getNavigationFilter() */
-	private function getNavigationFilter():NavigationFilter;
+	/*@@@ modifiers=4 */ private function getNavigationFilter():NavigationFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#install(javax.swing.JFormattedTextField) */
-	public function install(ftf:JFormattedTextField):Void;
+	/*@@@ modifiers=1 */ public function install(ftf:JFormattedTextField):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#invalidEdit() */
-	private function invalidEdit():Void;
+	/*@@@ modifiers=4 */ private function invalidEdit():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#setEditValid(boolean) */
-	private function setEditValid(valid:Bool):Void;
+	/*@@@ modifiers=4 */ private function setEditValid(valid:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#stringToValue(java.lang.String) */
-	public function stringToValue(text:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function stringToValue(text:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#uninstall() */
-	public function uninstall():Void;
+	/*@@@ modifiers=1 */ public function uninstall():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#valueToString(java.lang.Object) */
-	public function valueToString(value:Dynamic):String;
+	/*@@@ modifiers=1025 */ public function valueToString(value:Dynamic):String;
 
 }
 

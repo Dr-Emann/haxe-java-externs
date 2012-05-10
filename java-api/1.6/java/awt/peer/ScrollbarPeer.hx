@@ -7,13 +7,13 @@ import java.awt.peer.ComponentPeer;
 extern interface ScrollbarPeer implements ComponentPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ScrollbarPeer.html#setLineIncrement(int) */
-	public function setLineIncrement(l:Int):Void;
+	/*@@@ modifiers=1025 */ public function setLineIncrement(l:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ScrollbarPeer.html#setPageIncrement(int) */
-	public function setPageIncrement(l:Int):Void;
+	/*@@@ modifiers=1025 */ public function setPageIncrement(l:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ScrollbarPeer.html#setValues(int, int, int, int) */
-	public function setValues(value:Int, visible:Int, minimum:Int, maximum:Int):Void;
+	/*@@@ modifiers=1025 */ public function setValues(value:Int, visible:Int, minimum:Int, maximum:Int):Void;
 
 }
 

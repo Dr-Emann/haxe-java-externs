@@ -14,16 +14,16 @@ import javax.swing.plaf.basic.BasicMenuItemUI;
 extern class BasicCheckBoxMenuItemUI extends BasicMenuItemUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicCheckBoxMenuItemUI.html#BasicCheckBoxMenuItemUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicCheckBoxMenuItemUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicCheckBoxMenuItemUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicCheckBoxMenuItemUI.html#processMouseEvent(javax.swing.JMenuItem, java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	public function processMouseEvent(item:JMenuItem, e:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
+	/*@@@ modifiers=1 */ public function processMouseEvent(item:JMenuItem, e:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
 
 }
 

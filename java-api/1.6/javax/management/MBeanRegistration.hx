@@ -9,16 +9,16 @@ import javax.management.ObjectName;
 extern interface MBeanRegistration
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanRegistration.html#postDeregister() */
-	public function postDeregister():Void;
+	/*@@@ modifiers=1025 */ public function postDeregister():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanRegistration.html#postRegister(java.lang.Boolean) */
-	public function postRegister(registrationDone:Boolean):Void;
+	/*@@@ modifiers=1025 */ public function postRegister(registrationDone:Boolean):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanRegistration.html#preDeregister() */
-	public function preDeregister():Void;
+	/*@@@ modifiers=1025 */ public function preDeregister():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanRegistration.html#preRegister(javax.management.MBeanServer, javax.management.ObjectName) */
-	public function preRegister(server:MBeanServer, name:ObjectName):ObjectName;
+	/*@@@ modifiers=1025 */ public function preRegister(server:MBeanServer, name:ObjectName):ObjectName;
 
 }
 

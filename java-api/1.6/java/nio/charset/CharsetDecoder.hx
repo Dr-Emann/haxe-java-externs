@@ -1,6 +1,5 @@
 package java.nio.charset;
 
-import java.lang.Number;
 import java.lang.Object;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -13,72 +12,72 @@ import java.nio.charset.CodingErrorAction;
 extern class CharsetDecoder extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#CharsetDecoder(java.nio.charset.Charset, float, float) */
-	private function new(cs:Charset, averageCharsPerByte:StdFloat, maxCharsPerByte:StdFloat):Void;
+	/*@@@ modifiers=4 */ private function new(cs:Charset, averageCharsPerByte:Single, maxCharsPerByte:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#averageCharsPerByte() */
-	public function averageCharsPerByte():StdFloat;
+	/*@@@ modifiers=17 */ public function averageCharsPerByte():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#charset.Charset java.nio.charset.CharsetDecoder.charset() */
-	public function charset():Charset;
+	/*@@@ modifiers=17 */ public function charset():Charset;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer, java.nio.CharBuffer, boolean) */
-	@:overload(function (_in:ByteBuffer, out:CharBuffer, endOfInput:Bool):CoderResult {})
+	/*@@@ modifiers=17 */ @:overload(function (_in:ByteBuffer, out:CharBuffer, endOfInput:Bool):CoderResult {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer) */
-	public function decode(_in:ByteBuffer):CharBuffer;
+	/*@@@ modifiers=17 */ public function decode(_in:ByteBuffer):CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#decodeLoop(java.nio.ByteBuffer, java.nio.CharBuffer) */
-	private function decodeLoop(_in:ByteBuffer, out:CharBuffer):CoderResult;
+	/*@@@ modifiers=1028 */ private function decodeLoop(_in:ByteBuffer, out:CharBuffer):CoderResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#detectedCharset() */
-	public function detectedCharset():Charset;
+	/*@@@ modifiers=1 */ public function detectedCharset():Charset;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#flush(java.nio.CharBuffer) */
-	public function flush(out:CharBuffer):CoderResult;
+	/*@@@ modifiers=17 */ public function flush(out:CharBuffer):CoderResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#implFlush(java.nio.CharBuffer) */
-	private function implFlush(out:CharBuffer):CoderResult;
+	/*@@@ modifiers=4 */ private function implFlush(out:CharBuffer):CoderResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#implOnMalformedInput(java.nio.charset.CodingErrorAction) */
-	private function implOnMalformedInput(newAction:CodingErrorAction):Void;
+	/*@@@ modifiers=4 */ private function implOnMalformedInput(newAction:CodingErrorAction):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#implOnUnmappableCharacter(java.nio.charset.CodingErrorAction) */
-	private function implOnUnmappableCharacter(newAction:CodingErrorAction):Void;
+	/*@@@ modifiers=4 */ private function implOnUnmappableCharacter(newAction:CodingErrorAction):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#implReplaceWith(java.lang.String) */
-	private function implReplaceWith(newReplacement:String):Void;
+	/*@@@ modifiers=4 */ private function implReplaceWith(newReplacement:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#implReset() */
-	private function implReset():Void;
+	/*@@@ modifiers=4 */ private function implReset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#isAutoDetecting() */
-	public function isAutoDetecting():Bool;
+	/*@@@ modifiers=1 */ public function isAutoDetecting():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#isCharsetDetected() */
-	public function isCharsetDetected():Bool;
+	/*@@@ modifiers=1 */ public function isCharsetDetected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#malformedInputAction() */
-	public function malformedInputAction():CodingErrorAction;
+	/*@@@ modifiers=1 */ public function malformedInputAction():CodingErrorAction;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#maxCharsPerByte() */
-	public function maxCharsPerByte():StdFloat;
+	/*@@@ modifiers=17 */ public function maxCharsPerByte():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#onMalformedInput(java.nio.charset.CodingErrorAction) */
-	public function onMalformedInput(newAction:CodingErrorAction):CharsetDecoder;
+	/*@@@ modifiers=17 */ public function onMalformedInput(newAction:CodingErrorAction):CharsetDecoder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#onUnmappableCharacter(java.nio.charset.CodingErrorAction) */
-	public function onUnmappableCharacter(newAction:CodingErrorAction):CharsetDecoder;
+	/*@@@ modifiers=17 */ public function onUnmappableCharacter(newAction:CodingErrorAction):CharsetDecoder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#replaceWith(java.lang.String) */
-	public function replaceWith(newReplacement:String):CharsetDecoder;
+	/*@@@ modifiers=17 */ public function replaceWith(newReplacement:String):CharsetDecoder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#replacement() */
-	public function replacement():String;
+	/*@@@ modifiers=17 */ public function replacement():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#reset() */
-	public function reset():CharsetDecoder;
+	/*@@@ modifiers=17 */ public function reset():CharsetDecoder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html#unmappableCharacterAction() */
-	public function unmappableCharacterAction():CodingErrorAction;
+	/*@@@ modifiers=1 */ public function unmappableCharacterAction():CodingErrorAction;
 
 }
 

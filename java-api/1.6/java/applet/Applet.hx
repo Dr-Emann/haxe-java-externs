@@ -16,75 +16,75 @@ import javax.accessibility.AccessibleContext;
 extern class Applet extends Panel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#Applet() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#destroy() */
-	public function destroy():Void;
+	/*@@@ modifiers=1 */ public function destroy():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getAppletContext() */
-	public function getAppletContext():AppletContext;
+	/*@@@ modifiers=1 */ public function getAppletContext():AppletContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getAppletInfo() */
-	public function getAppletInfo():String;
+	/*@@@ modifiers=1 */ public function getAppletInfo():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getAudioClip(java.net.URL, java.lang.String) */
-	@:overload(function (url:URL, name:String):AudioClip {})
+	/*@@@ modifiers=1 */ @:overload(function (url:URL, name:String):AudioClip {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getAudioClip(java.net.URL) */
-	public function getAudioClip(url:URL):AudioClip;
+	/*@@@ modifiers=1 */ public function getAudioClip(url:URL):AudioClip;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getCodeBase() */
-	public function getCodeBase():URL;
+	/*@@@ modifiers=1 */ public function getCodeBase():URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getDocumentBase() */
-	public function getDocumentBase():URL;
+	/*@@@ modifiers=1 */ public function getDocumentBase():URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getImage(java.net.URL, java.lang.String) */
-	@:overload(function (url:URL, name:String):Image {})
+	/*@@@ modifiers=1 */ @:overload(function (url:URL, name:String):Image {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getImage(java.net.URL) */
-	public function getImage(url:URL):Image;
+	/*@@@ modifiers=1 */ public function getImage(url:URL):Image;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getLocale() */
-	override public function getLocale():Locale;
+	/*@@@ modifiers=1 */ override public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getParameter(java.lang.String) */
-	public function getParameter(name:String):String;
+	/*@@@ modifiers=1 */ public function getParameter(name:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#getParameterInfo() */
-	public function getParameterInfo():NativeArray<NativeArray<String>>;
+	/*@@@ modifiers=1 */ public function getParameterInfo():NativeArray<NativeArray<String>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#init() */
-	public function init():Void;
+	/*@@@ modifiers=1 */ public function init():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=1 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#newAudioClip(java.net.URL) */
-	static public function newAudioClip(url:URL):AudioClip;
+	/*@@@ modifiers=25 */ static public function newAudioClip(url:URL):AudioClip;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#play(java.net.URL, java.lang.String) */
-	@:overload(function (url:URL, name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (url:URL, name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#play(java.net.URL) */
-	public function play(url:URL):Void;
+	/*@@@ modifiers=1 */ public function play(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#resize(int, int) */
-	@:overload(function (width:Int, height:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#resize(java.awt.Dimension) */
-	override public function resize(d:Dimension):Void;
+	/*@@@ modifiers=1 */ override public function resize(d:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#setStub(java.applet.AppletStub) */
-	public function setStub(stub:AppletStub):Void;
+	/*@@@ modifiers=17 */ public function setStub(stub:AppletStub):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#showStatus(java.lang.String) */
-	public function showStatus(msg:String):Void;
+	/*@@@ modifiers=1 */ public function showStatus(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#start() */
-	public function start():Void;
+	/*@@@ modifiers=1 */ public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/Applet.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1 */ public function stop():Void;
 
 }
 

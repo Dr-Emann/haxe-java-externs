@@ -12,19 +12,19 @@ import java.util.List;
 extern class ProxySelector extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProxySelector.html#ProxySelector() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProxySelector.html#connectFailed(java.net.URI, java.net.SocketAddress, java.io.IOException) */
-	public function connectFailed(uri:URI, sa:SocketAddress, ioe:IOException):Void;
+	/*@@@ modifiers=1025 */ public function connectFailed(uri:URI, sa:SocketAddress, ioe:IOException):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProxySelector.html#getDefault() */
-	static public function getDefault():ProxySelector;
+	/*@@@ modifiers=9 */ static public function getDefault():ProxySelector;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProxySelector.html#select(java.net.URI) */
-	public function select(uri:URI):List<Proxy>;
+	/*@@@ modifiers=1025 */ public function select(uri:URI):List<Proxy>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProxySelector.html#setDefault(java.net.ProxySelector) */
-	static public function setDefault(ps:ProxySelector):Void;
+	/*@@@ modifiers=9 */ static public function setDefault(ps:ProxySelector):Void;
 
 }
 

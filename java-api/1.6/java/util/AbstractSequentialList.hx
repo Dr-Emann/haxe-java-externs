@@ -10,28 +10,28 @@ import java.util.ListIterator;
 extern class AbstractSequentialList<E : (Dynamic)> extends AbstractList<E>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#AbstractSequentialList() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#add(int, java.lang.Object) */
-	override public function add(index:Int, element:E):Void;
+	/*@@@ modifiers=1 */ override public function add(index:Int, element:E):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#addAll(int, java.util.Collection) */
-	override public function addAll(index:Int, c:Collection<E>):Bool;
+	/*@@@ modifiers=1 */ override public function addAll(index:Int, c:Collection<E>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#get(int) */
-	override public function get(index:Int):E;
+	/*@@@ modifiers=1 */ override public function get(index:Int):E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#iterator() */
-	override public function iterator():java.util.Iterator<E>;
+	/*@@@ modifiers=1 */ override public function iterator():java.util.Iterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#listIterator(int) */
-	override public function listIterator(index:Int):ListIterator<E>;
+	/*@@@ modifiers=1025 */ override public function listIterator(index:Int):ListIterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#remove(int) */
-	override public function remove(index:Int):E;
+	/*@@@ modifiers=1 */ override public function remove(index:Int):E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractSequentialList.html#set(int, java.lang.Object) */
-	override public function set(index:Int, element:E):E;
+	/*@@@ modifiers=1 */ override public function set(index:Int, element:E):E;
 
 }
 

@@ -11,22 +11,22 @@ import javax.activation.DataSource;
 extern class URLDataSource extends Object, implements DataSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/URLDataSource.html#URLDataSource(java.net.URL) */
-	public function new(arg0:URL):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/URLDataSource.html#getContentType() */
-	public function getContentType():String;
+	/*@@@ modifiers=1 */ public function getContentType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/URLDataSource.html#getInputStream() */
-	public function getInputStream():InputStream;
+	/*@@@ modifiers=1 */ public function getInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/URLDataSource.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/URLDataSource.html#getOutputStream() */
-	public function getOutputStream():OutputStream;
+	/*@@@ modifiers=1 */ public function getOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/URLDataSource.html#getURL() */
-	public function getURL():URL;
+	/*@@@ modifiers=1 */ public function getURL():URL;
 
 }
 

@@ -8,10 +8,10 @@ import javax.swing.text.TextAction;
 extern class DefaultEditorKit_BeepAction extends TextAction
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.BeepAction.html#DefaultEditorKit$BeepAction() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.BeepAction.html#actionPerformed(java.awt.event.ActionEvent) */
-	public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
 
 }
 

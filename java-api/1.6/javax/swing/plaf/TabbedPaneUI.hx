@@ -9,16 +9,16 @@ import javax.swing.plaf.ComponentUI;
 extern class TabbedPaneUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/TabbedPaneUI.html#TabbedPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/TabbedPaneUI.html#getTabBounds(javax.swing.JTabbedPane, int) */
-	public function getTabBounds(pane:JTabbedPane, index:Int):Rectangle;
+	/*@@@ modifiers=1025 */ public function getTabBounds(pane:JTabbedPane, index:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/TabbedPaneUI.html#getTabRunCount(javax.swing.JTabbedPane) */
-	public function getTabRunCount(pane:JTabbedPane):Int;
+	/*@@@ modifiers=1025 */ public function getTabRunCount(pane:JTabbedPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/TabbedPaneUI.html#tabForCoordinate(javax.swing.JTabbedPane, int, int) */
-	public function tabForCoordinate(pane:JTabbedPane, x:Int, y:Int):Int;
+	/*@@@ modifiers=1025 */ public function tabForCoordinate(pane:JTabbedPane, x:Int, y:Int):Int;
 
 }
 

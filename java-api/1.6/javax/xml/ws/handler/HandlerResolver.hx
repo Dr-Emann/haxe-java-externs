@@ -9,7 +9,7 @@ import javax.xml.ws.handler.PortInfo;
 extern interface HandlerResolver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/HandlerResolver.html#getHandlerChain(javax.xml.ws.handler.PortInfo) */
-	public function getHandlerChain(portInfo:PortInfo):List<Handler<Dynamic>>;
+	/*@@@ modifiers=1025 */ public function getHandlerChain(portInfo:PortInfo):List<Handler<Dynamic>>;
 
 }
 

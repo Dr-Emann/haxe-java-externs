@@ -6,7 +6,7 @@ package javax.imageio.spi;
 extern interface ServiceRegistry_Filter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/ServiceRegistry.Filter.html#filter(java.lang.Object) */
-	public function filter(provider:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function filter(provider:Dynamic):Bool;
 
 }
 

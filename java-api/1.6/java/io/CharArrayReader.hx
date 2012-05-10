@@ -21,32 +21,32 @@ extern class CharArrayReader extends Reader
 	private var count:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#CharArrayReader(char[], int, int) */
-	@:overload(function (buf:NativeArray<Char16>, offset:Int, length:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (buf:NativeArray<Char16>, offset:Int, length:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#CharArrayReader(char[]) */
-	public function new(buf:NativeArray<Char16>):Void;
+	/*@@@ modifiers=1 */ public function new(buf:NativeArray<Char16>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#mark(int) */
-	override public function mark(readAheadLimit:Int):Void;
+	/*@@@ modifiers=1 */ override public function mark(readAheadLimit:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#markSupported() */
-	override public function markSupported():Bool;
+	/*@@@ modifiers=1 */ override public function markSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#read(char[], int, int) */
-	@:overload(function (b:NativeArray<Char16>, off:Int, len:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Char16>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#read() */
-	override public function read():Int;
+	/*@@@ modifiers=1 */ override public function read():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#ready() */
-	override public function ready():Bool;
+	/*@@@ modifiers=1 */ override public function ready():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#reset() */
-	override public function reset():Void;
+	/*@@@ modifiers=1 */ override public function reset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/CharArrayReader.html#skip(long) */
-	override public function skip(n:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ override public function skip(n:haxe.Int64):haxe.Int64;
 
 }
 

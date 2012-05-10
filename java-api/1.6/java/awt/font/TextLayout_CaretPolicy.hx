@@ -9,10 +9,10 @@ import java.lang.Object;
 extern class TextLayout_CaretPolicy extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.CaretPolicy.html#TextLayout$CaretPolicy() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.CaretPolicy.html#getStrongCaret(java.awt.font.TextHitInfo, java.awt.font.TextHitInfo, java.awt.font.TextLayout) */
-	public function getStrongCaret(hit1:TextHitInfo, hit2:TextHitInfo, layout:TextLayout):TextHitInfo;
+	/*@@@ modifiers=1 */ public function getStrongCaret(hit1:TextHitInfo, hit2:TextHitInfo, layout:TextLayout):TextHitInfo;
 
 }
 

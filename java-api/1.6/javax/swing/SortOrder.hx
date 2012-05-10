@@ -17,10 +17,10 @@ extern class SortOrder extends Enum<SortOrder>
 	public static var UNSORTED:SortOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SortOrder.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SortOrder;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SortOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SortOrder.html#values() */
-	static public function values():NativeArray<SortOrder>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SortOrder>;
 
 }
 

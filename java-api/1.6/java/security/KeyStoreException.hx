@@ -8,13 +8,13 @@ import java.security.GeneralSecurityException;
 extern class KeyStoreException extends GeneralSecurityException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStoreException.html#KeyStoreException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStoreException.html#KeyStoreException(java.lang.String) */
-	@:overload(function (msg:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (msg:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStoreException.html#KeyStoreException(java.lang.String, java.lang.Throwable) */
-	@:overload(function (message:String, cause:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String, cause:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStoreException.html#KeyStoreException(java.lang.Throwable) */
-	public function new(msg:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(msg:Throwable):Void;
 
 }
 

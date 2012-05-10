@@ -10,21 +10,21 @@ import javax.accessibility.AccessibleContext;
 extern class PopupMenu extends Menu
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PopupMenu.html#PopupMenu(java.lang.String) */
-	@:overload(function (label:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (label:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PopupMenu.html#PopupMenu() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PopupMenu.html#addNotify() */
-	override public function addNotify():Void;
+	/*@@@ modifiers=1 */ override public function addNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PopupMenu.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PopupMenu.html#getParent() */
-	override public function getParent():MenuContainer;
+	/*@@@ modifiers=1 */ override public function getParent():MenuContainer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PopupMenu.html#show(java.awt.Component, int, int) */
-	public function show(origin:Component, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function show(origin:Component, x:Int, y:Int):Void;
 
 }
 

@@ -8,7 +8,7 @@ import javax.swing.text.DefaultCaret;
 extern class BasicTextUI_BasicCaret extends DefaultCaret, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.BasicCaret.html#BasicTextUI$BasicCaret() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

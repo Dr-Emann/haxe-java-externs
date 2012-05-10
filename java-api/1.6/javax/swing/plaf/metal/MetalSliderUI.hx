@@ -40,55 +40,55 @@ extern class MetalSliderUI extends BasicSliderUI
 	private static var vertThumbIcon:Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#MetalSliderUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#createPropertyChangeListener(javax.swing.JSlider) */
-	override private function createPropertyChangeListener(slider:JSlider):PropertyChangeListener;
+	/*@@@ modifiers=4 */ override private function createPropertyChangeListener(slider:JSlider):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#getThumbOverhang() */
-	private function getThumbOverhang():Int;
+	/*@@@ modifiers=4 */ private function getThumbOverhang():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#getThumbSize() */
-	override private function getThumbSize():Dimension;
+	/*@@@ modifiers=4 */ override private function getThumbSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#getTickLength() */
-	override public function getTickLength():Int;
+	/*@@@ modifiers=1 */ override public function getTickLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#getTrackLength() */
-	private function getTrackLength():Int;
+	/*@@@ modifiers=4 */ private function getTrackLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#getTrackWidth() */
-	private function getTrackWidth():Int;
+	/*@@@ modifiers=4 */ private function getTrackWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintFocus(java.awt.Graphics) */
-	override public function paintFocus(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paintFocus(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintMajorTickForHorizSlider(java.awt.Graphics, java.awt.Rectangle, int) */
-	override private function paintMajorTickForHorizSlider(g:Graphics, tickBounds:Rectangle, x:Int):Void;
+	/*@@@ modifiers=4 */ override private function paintMajorTickForHorizSlider(g:Graphics, tickBounds:Rectangle, x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintMajorTickForVertSlider(java.awt.Graphics, java.awt.Rectangle, int) */
-	override private function paintMajorTickForVertSlider(g:Graphics, tickBounds:Rectangle, y:Int):Void;
+	/*@@@ modifiers=4 */ override private function paintMajorTickForVertSlider(g:Graphics, tickBounds:Rectangle, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintMinorTickForHorizSlider(java.awt.Graphics, java.awt.Rectangle, int) */
-	override private function paintMinorTickForHorizSlider(g:Graphics, tickBounds:Rectangle, x:Int):Void;
+	/*@@@ modifiers=4 */ override private function paintMinorTickForHorizSlider(g:Graphics, tickBounds:Rectangle, x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintMinorTickForVertSlider(java.awt.Graphics, java.awt.Rectangle, int) */
-	override private function paintMinorTickForVertSlider(g:Graphics, tickBounds:Rectangle, y:Int):Void;
+	/*@@@ modifiers=4 */ override private function paintMinorTickForVertSlider(g:Graphics, tickBounds:Rectangle, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintThumb(java.awt.Graphics) */
-	override public function paintThumb(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paintThumb(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#paintTrack(java.awt.Graphics) */
-	override public function paintTrack(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paintTrack(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#scrollDueToClickInTrack(int) */
-	override private function scrollDueToClickInTrack(dir:Int):Void;
+	/*@@@ modifiers=4 */ override private function scrollDueToClickInTrack(dir:Int):Void;
 
 }
 

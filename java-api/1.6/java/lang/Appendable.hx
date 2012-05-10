@@ -8,11 +8,11 @@ import java.lang.CharSequence;
 extern interface Appendable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Appendable.html#append(java.lang.CharSequence, int, int) */
-	@:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
+	/*@@@ modifiers=1025 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Appendable.html#append(char) */
-	@:overload(function (c:Char16):Appendable {})
+	/*@@@ modifiers=1025 */ @:overload(function (c:Char16):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Appendable.html#append(java.lang.CharSequence) */
-	public function append(csq:CharSequence):Appendable;
+	/*@@@ modifiers=1025 */ public function append(csq:CharSequence):Appendable;
 
 }
 

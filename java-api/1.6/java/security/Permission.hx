@@ -10,31 +10,31 @@ import java.security.PermissionCollection;
 extern class Permission extends Object, implements Guard, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#Permission(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#checkGuard(java.lang.Object) */
-	public function checkGuard(object:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function checkGuard(object:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#getActions() */
-	public function getActions():String;
+	/*@@@ modifiers=1025 */ public function getActions():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1025 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#implies(java.security.Permission) */
-	public function implies(permission:Permission):Bool;
+	/*@@@ modifiers=1025 */ public function implies(permission:Permission):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#newPermissionCollection() */
-	public function newPermissionCollection():PermissionCollection;
+	/*@@@ modifiers=1 */ public function newPermissionCollection():PermissionCollection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Permission.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

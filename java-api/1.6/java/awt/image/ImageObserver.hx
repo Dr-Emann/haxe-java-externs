@@ -7,7 +7,7 @@ import java.awt.Image;
 extern interface ImageObserver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ImageObserver.html#imageUpdate(java.awt.Image, int, int, int, int, int) */
-	public function imageUpdate(img:Image, infoflags:Int, x:Int, y:Int, width:Int, height:Int):Bool;
+	/*@@@ modifiers=1025 */ public function imageUpdate(img:Image, infoflags:Int, x:Int, y:Int, width:Int, height:Int):Bool;
 
 }
 

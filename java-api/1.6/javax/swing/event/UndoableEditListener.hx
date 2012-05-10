@@ -8,7 +8,7 @@ import javax.swing.event.UndoableEditEvent;
 extern interface UndoableEditListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent) */
-	public function undoableEditHappened(e:UndoableEditEvent):Void;
+	/*@@@ modifiers=1025 */ public function undoableEditHappened(e:UndoableEditEvent):Void;
 
 }
 

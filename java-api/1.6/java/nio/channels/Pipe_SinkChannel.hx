@@ -10,16 +10,10 @@ import java.nio.channels.spi.SelectorProvider;
 extern class Pipe_SinkChannel extends AbstractSelectableChannel, implements WritableByteChannel, implements GatheringByteChannel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SinkChannel.html#Pipe$SinkChannel(java.nio.channels.spi.SelectorProvider) */
-	private function new(provider:SelectorProvider):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SinkChannel.html#close() */
-	public function close():Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SinkChannel.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=4 */ private function new(provider:SelectorProvider):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SinkChannel.html#validOps() */
-	override public function validOps():Int;
+	/*@@@ modifiers=17 */ override public function validOps():Int;
 
 }
 

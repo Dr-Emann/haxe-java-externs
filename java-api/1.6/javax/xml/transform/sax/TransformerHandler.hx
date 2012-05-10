@@ -11,16 +11,16 @@ import org.xml.sax.ext.LexicalHandler;
 extern interface TransformerHandler implements ContentHandler, implements LexicalHandler, implements DTDHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TransformerHandler.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TransformerHandler.html#getTransformer() */
-	public function getTransformer():Transformer;
+	/*@@@ modifiers=1025 */ public function getTransformer():Transformer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result) */
-	public function setResult(result:Result):Void;
+	/*@@@ modifiers=1025 */ public function setResult(result:Result):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TransformerHandler.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemID:String):Void;
+	/*@@@ modifiers=1025 */ public function setSystemId(systemID:String):Void;
 
 }
 

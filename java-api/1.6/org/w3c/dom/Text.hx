@@ -7,16 +7,16 @@ import org.w3c.dom.CharacterData;
 extern interface Text implements CharacterData
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Text.html#getWholeText() */
-	public function getWholeText():String;
+	/*@@@ modifiers=1025 */ public function getWholeText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Text.html#isElementContentWhitespace() */
-	public function isElementContentWhitespace():Bool;
+	/*@@@ modifiers=1025 */ public function isElementContentWhitespace():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Text.html#replaceWholeText(java.lang.String) */
-	public function replaceWholeText(content:String):Text;
+	/*@@@ modifiers=1025 */ public function replaceWholeText(content:String):Text;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Text.html#splitText(int) */
-	public function splitText(offset:Int):Text;
+	/*@@@ modifiers=1025 */ public function splitText(offset:Int):Text;
 
 }
 

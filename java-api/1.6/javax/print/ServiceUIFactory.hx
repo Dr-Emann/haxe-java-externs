@@ -8,13 +8,13 @@ import java.lang.Object;
 extern class ServiceUIFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/ServiceUIFactory.html#ServiceUIFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/ServiceUIFactory.html#getUI(int, java.lang.String) */
-	public function getUI(role:Int, ui:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function getUI(role:Int, ui:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/ServiceUIFactory.html#getUIClassNamesForRole(int) */
-	public function getUIClassNamesForRole(role:Int):NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getUIClassNamesForRole(role:Int):NativeArray<String>;
 
 }
 

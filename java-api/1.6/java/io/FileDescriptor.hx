@@ -13,13 +13,13 @@ extern class FileDescriptor extends Object
 	public static var err:FileDescriptor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#FileDescriptor() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#sync() */
-	public function sync():Void;
+	/*@@@ modifiers=257 */ public function sync():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileDescriptor.html#valid() */
-	public function valid():Bool;
+	/*@@@ modifiers=1 */ public function valid():Bool;
 
 }
 

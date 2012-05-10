@@ -40,184 +40,181 @@ extern class BeanContextSupport extends BeanContextChildSupport, implements Bean
 	private var designTime:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#BeanContextSupport(java.beans.beancontext.BeanContext, java.util.Locale, boolean) */
-	@:overload(function (peer:BeanContext, lcle:Locale, dtime:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (peer:BeanContext, lcle:Locale, dtime:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#BeanContextSupport(java.beans.beancontext.BeanContext, java.util.Locale) */
-	@:overload(function (peer:BeanContext, lcle:Locale):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (peer:BeanContext, lcle:Locale):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#BeanContextSupport(java.beans.beancontext.BeanContext) */
-	@:overload(function (peer:BeanContext):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (peer:BeanContext):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#BeanContextSupport() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#BeanContextSupport(java.beans.beancontext.BeanContext, java.util.Locale, boolean, boolean) */
-	public function new(peer:BeanContext, lcle:Locale, dTime:Bool, visible:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(peer:BeanContext, lcle:Locale, dTime:Bool, visible:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#add(java.lang.Object) */
-	public function add(targetChild:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function add(targetChild:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#addAll(java.util.Collection) */
-	public function addAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function addAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener) */
-	public function addBeanContextMembershipListener(bcml:BeanContextMembershipListener):Void;
+	/*@@@ modifiers=1 */ public function addBeanContextMembershipListener(bcml:BeanContextMembershipListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#avoidingGui() */
-	public function avoidingGui():Bool;
+	/*@@@ modifiers=1 */ public function avoidingGui():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#bcsChildren() */
-	private function bcsChildren():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=4 */ private function bcsChildren():java.util.Iterator<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#bcsPreDeserializationHook(java.io.ObjectInputStream) */
-	private function bcsPreDeserializationHook(ois:ObjectInputStream):Void;
+	/*@@@ modifiers=4 */ private function bcsPreDeserializationHook(ois:ObjectInputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#bcsPreSerializationHook(java.io.ObjectOutputStream) */
-	private function bcsPreSerializationHook(oos:ObjectOutputStream):Void;
+	/*@@@ modifiers=4 */ private function bcsPreSerializationHook(oos:ObjectOutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#childDeserializedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild) */
-	private function childDeserializedHook(child:Dynamic, bcsc:BeanContextSupport_BCSChild):Void;
+	/*@@@ modifiers=4 */ private function childDeserializedHook(child:Dynamic, bcsc:BeanContextSupport_BCSChild):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#childJustAddedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild) */
-	private function childJustAddedHook(child:Dynamic, bcsc:BeanContextSupport_BCSChild):Void;
+	/*@@@ modifiers=4 */ private function childJustAddedHook(child:Dynamic, bcsc:BeanContextSupport_BCSChild):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild) */
-	private function childJustRemovedHook(child:Dynamic, bcsc:BeanContextSupport_BCSChild):Void;
+	/*@@@ modifiers=4 */ private function childJustRemovedHook(child:Dynamic, bcsc:BeanContextSupport_BCSChild):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#classEquals(java.lang.Class, java.lang.Class) */
-	static private function classEquals(first:Class<Dynamic>, second:Class<Dynamic>):Bool;
+	/*@@@ modifiers=28 */ static private function classEquals(first:Class<Dynamic>, second:Class<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#clear() */
-	public function clear():Void;
+	/*@@@ modifiers=1 */ public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#contains(java.lang.Object) */
-	public function contains(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function contains(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#containsAll(java.util.Collection) */
-	public function containsAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function containsAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#containsKey(java.lang.Object) */
-	public function containsKey(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function containsKey(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#copyChildren() */
-	private function copyChildren():NativeArray<Dynamic>;
+	/*@@@ modifiers=20 */ private function copyChildren():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#createBCSChild(java.lang.Object, java.lang.Object) */
-	private function createBCSChild(targetChild:Dynamic, peer:Dynamic):BeanContextSupport_BCSChild;
+	/*@@@ modifiers=4 */ private function createBCSChild(targetChild:Dynamic, peer:Dynamic):BeanContextSupport_BCSChild;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#deserialize(java.io.ObjectInputStream, java.util.Collection) */
-	private function deserialize(ois:ObjectInputStream, coll:Collection<Dynamic>):Void;
+	/*@@@ modifiers=20 */ private function deserialize(ois:ObjectInputStream, coll:Collection<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#dontUseGui() */
-	public function dontUseGui():Void;
+	/*@@@ modifiers=33 */ public function dontUseGui():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#fireChildrenAdded(java.beans.beancontext.BeanContextMembershipEvent) */
-	private function fireChildrenAdded(bcme:BeanContextMembershipEvent):Void;
+	/*@@@ modifiers=20 */ private function fireChildrenAdded(bcme:BeanContextMembershipEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#fireChildrenRemoved(java.beans.beancontext.BeanContextMembershipEvent) */
-	private function fireChildrenRemoved(bcme:BeanContextMembershipEvent):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getBeanContext() */
-	public function getBeanContext():BeanContext;
+	/*@@@ modifiers=20 */ private function fireChildrenRemoved(bcme:BeanContextMembershipEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getBeanContextPeer() */
-	public function getBeanContextPeer():BeanContext;
+	/*@@@ modifiers=1 */ public function getBeanContextPeer():BeanContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getChildBeanContextChild(java.lang.Object) */
-	static private function getChildBeanContextChild(child:Dynamic):BeanContextChild;
+	/*@@@ modifiers=28 */ static private function getChildBeanContextChild(child:Dynamic):BeanContextChild;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getChildBeanContextMembershipListener(java.lang.Object) */
-	static private function getChildBeanContextMembershipListener(child:Dynamic):BeanContextMembershipListener;
+	/*@@@ modifiers=28 */ static private function getChildBeanContextMembershipListener(child:Dynamic):BeanContextMembershipListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getChildPropertyChangeListener(java.lang.Object) */
-	static private function getChildPropertyChangeListener(child:Dynamic):PropertyChangeListener;
+	/*@@@ modifiers=28 */ static private function getChildPropertyChangeListener(child:Dynamic):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getChildSerializable(java.lang.Object) */
-	static private function getChildSerializable(child:Dynamic):Serializable;
+	/*@@@ modifiers=28 */ static private function getChildSerializable(child:Dynamic):Serializable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getChildVetoableChangeListener(java.lang.Object) */
-	static private function getChildVetoableChangeListener(child:Dynamic):VetoableChangeListener;
+	/*@@@ modifiers=28 */ static private function getChildVetoableChangeListener(child:Dynamic):VetoableChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getChildVisibility(java.lang.Object) */
-	static private function getChildVisibility(child:Dynamic):Visibility;
+	/*@@@ modifiers=28 */ static private function getChildVisibility(child:Dynamic):Visibility;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getLocale() */
-	public function getLocale():Locale;
+	/*@@@ modifiers=33 */ public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getResource(java.lang.String, java.beans.beancontext.BeanContextChild) */
-	public function getResource(name:String, bcc:BeanContextChild):URL;
+	/*@@@ modifiers=1 */ public function getResource(name:String, bcc:BeanContextChild):URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream(java.lang.String, java.beans.beancontext.BeanContextChild) */
-	public function getResourceAsStream(name:String, bcc:BeanContextChild):InputStream;
+	/*@@@ modifiers=1 */ public function getResourceAsStream(name:String, bcc:BeanContextChild):InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#initialize() */
-	private function initialize():Void;
+	/*@@@ modifiers=36 */ private function initialize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#instantiateChild(java.lang.String) */
-	public function instantiateChild(beanName:String):Dynamic;
+	/*@@@ modifiers=1 */ public function instantiateChild(beanName:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#isDesignTime() */
-	public function isDesignTime():Bool;
+	/*@@@ modifiers=33 */ public function isDesignTime():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#isEmpty() */
-	public function isEmpty():Bool;
+	/*@@@ modifiers=1 */ public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#isSerializing() */
-	public function isSerializing():Bool;
+	/*@@@ modifiers=1 */ public function isSerializing():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#iterator() */
-	public function iterator():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1 */ public function iterator():java.util.Iterator<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#needsGui() */
-	public function needsGui():Bool;
+	/*@@@ modifiers=33 */ public function needsGui():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#okToUseGui() */
-	public function okToUseGui():Void;
+	/*@@@ modifiers=33 */ public function okToUseGui():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#propertyChange(java.beans.PropertyChangeEvent) */
-	public function propertyChange(pce:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function propertyChange(pce:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#readChildren(java.io.ObjectInputStream) */
-	public function readChildren(ois:ObjectInputStream):Void;
+	/*@@@ modifiers=17 */ public function readChildren(ois:ObjectInputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#remove(java.lang.Object, boolean) */
-	@:overload(function (targetChild:Dynamic, callChildSetBC:Bool):Bool {})
+	/*@@@ modifiers=4 */ @:overload(function (targetChild:Dynamic, callChildSetBC:Bool):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#remove(java.lang.Object) */
-	public function remove(targetChild:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function remove(targetChild:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#removeAll(java.util.Collection) */
-	public function removeAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function removeAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener) */
-	public function removeBeanContextMembershipListener(bcml:BeanContextMembershipListener):Void;
+	/*@@@ modifiers=1 */ public function removeBeanContextMembershipListener(bcml:BeanContextMembershipListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#retainAll(java.util.Collection) */
-	public function retainAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function retainAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#serialize(java.io.ObjectOutputStream, java.util.Collection) */
-	private function serialize(oos:ObjectOutputStream, coll:Collection<Dynamic>):Void;
+	/*@@@ modifiers=20 */ private function serialize(oos:ObjectOutputStream, coll:Collection<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#setDesignTime(boolean) */
-	public function setDesignTime(dTime:Bool):Void;
+	/*@@@ modifiers=33 */ public function setDesignTime(dTime:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#setLocale(java.util.Locale) */
-	public function setLocale(newLocale:Locale):Void;
+	/*@@@ modifiers=33 */ public function setLocale(newLocale:Locale):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1 */ public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#toArray(java.lang.Object[]) */
-	@:overload(function (arry:NativeArray<Dynamic>):NativeArray<Dynamic> {})
+	/*@@@ modifiers=1 */ @:overload(function (arry:NativeArray<Dynamic>):NativeArray<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#toArray() */
-	public function toArray():NativeArray<Dynamic>;
+	/*@@@ modifiers=1 */ public function toArray():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#validatePendingAdd(java.lang.Object) */
-	private function validatePendingAdd(targetChild:Dynamic):Bool;
+	/*@@@ modifiers=4 */ private function validatePendingAdd(targetChild:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#validatePendingRemove(java.lang.Object) */
-	private function validatePendingRemove(targetChild:Dynamic):Bool;
+	/*@@@ modifiers=4 */ private function validatePendingRemove(targetChild:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#vetoableChange(java.beans.PropertyChangeEvent) */
-	public function vetoableChange(pce:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function vetoableChange(pce:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#writeChildren(java.io.ObjectOutputStream) */
-	public function writeChildren(oos:ObjectOutputStream):Void;
+	/*@@@ modifiers=17 */ public function writeChildren(oos:ObjectOutputStream):Void;
 
 }
 

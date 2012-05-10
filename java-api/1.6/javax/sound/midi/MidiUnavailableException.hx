@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class MidiUnavailableException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiUnavailableException.html#MidiUnavailableException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiUnavailableException.html#MidiUnavailableException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

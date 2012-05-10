@@ -10,25 +10,25 @@ import javax.sound.midi.SoundbankResource;
 extern interface Soundbank
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=1025 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getInstrument(javax.sound.midi.Patch) */
-	public function getInstrument(patch:Patch):Instrument;
+	/*@@@ modifiers=1025 */ public function getInstrument(patch:Patch):Instrument;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getInstruments() */
-	public function getInstruments():NativeArray<Instrument>;
+	/*@@@ modifiers=1025 */ public function getInstruments():NativeArray<Instrument>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getResources() */
-	public function getResources():NativeArray<SoundbankResource>;
+	/*@@@ modifiers=1025 */ public function getResources():NativeArray<SoundbankResource>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getVendor() */
-	public function getVendor():String;
+	/*@@@ modifiers=1025 */ public function getVendor():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Soundbank.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1025 */ public function getVersion():String;
 
 }
 

@@ -9,13 +9,13 @@ import java.lang.Object;
 extern class ContainerAdapter extends Object, implements ContainerListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerAdapter.html#ContainerAdapter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerAdapter.html#componentAdded(java.awt.event.ContainerEvent) */
-	public function componentAdded(e:ContainerEvent):Void;
+	/*@@@ modifiers=1 */ public function componentAdded(e:ContainerEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerAdapter.html#componentRemoved(java.awt.event.ContainerEvent) */
-	public function componentRemoved(e:ContainerEvent):Void;
+	/*@@@ modifiers=1 */ public function componentRemoved(e:ContainerEvent):Void;
 
 }
 

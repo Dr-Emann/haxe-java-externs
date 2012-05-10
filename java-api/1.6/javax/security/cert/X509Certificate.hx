@@ -13,44 +13,44 @@ import javax.security.cert.Certificate;
 extern class X509Certificate extends Certificate
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#X509Certificate() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#checkValidity(java.util.Date) */
-	@:overload(function (arg0:Date):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:Date):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#checkValidity() */
-	public function checkValidity():Void;
+	/*@@@ modifiers=1025 */ public function checkValidity():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getInstance(byte[]) */
-	@:overload(function (arg0:NativeArray<Int8>):X509Certificate {})
+	/*@@@ modifiers=25 */ @:overload(function (arg0:NativeArray<Int8>):X509Certificate {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getInstance(java.io.InputStream) */
-	static public function getInstance(arg0:InputStream):X509Certificate;
+	/*@@@ modifiers=25 */ static public function getInstance(arg0:InputStream):X509Certificate;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getIssuerDN() */
-	public function getIssuerDN():Principal;
+	/*@@@ modifiers=1025 */ public function getIssuerDN():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getNotAfter() */
-	public function getNotAfter():Date;
+	/*@@@ modifiers=1025 */ public function getNotAfter():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getNotBefore() */
-	public function getNotBefore():Date;
+	/*@@@ modifiers=1025 */ public function getNotBefore():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getSerialNumber() */
-	public function getSerialNumber():BigInteger;
+	/*@@@ modifiers=1025 */ public function getSerialNumber():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getSigAlgName() */
-	public function getSigAlgName():String;
+	/*@@@ modifiers=1025 */ public function getSigAlgName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getSigAlgOID() */
-	public function getSigAlgOID():String;
+	/*@@@ modifiers=1025 */ public function getSigAlgOID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getSigAlgParams() */
-	public function getSigAlgParams():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getSigAlgParams():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getSubjectDN() */
-	public function getSubjectDN():Principal;
+	/*@@@ modifiers=1025 */ public function getSubjectDN():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/X509Certificate.html#getVersion() */
-	public function getVersion():Int;
+	/*@@@ modifiers=1025 */ public function getVersion():Int;
 
 }
 

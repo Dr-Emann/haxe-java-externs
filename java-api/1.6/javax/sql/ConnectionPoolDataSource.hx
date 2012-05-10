@@ -8,9 +8,9 @@ import javax.sql.PooledConnection;
 extern interface ConnectionPoolDataSource implements CommonDataSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String, java.lang.String) */
-	@:overload(function (user:String, password:String):PooledConnection {})
+	/*@@@ modifiers=1025 */ @:overload(function (user:String, password:String):PooledConnection {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/ConnectionPoolDataSource.html#getPooledConnection() */
-	public function getPooledConnection():PooledConnection;
+	/*@@@ modifiers=1025 */ public function getPooledConnection():PooledConnection;
 
 }
 

@@ -12,16 +12,16 @@ import javax.xml.ws.handler.MessageContext;
 extern interface SOAPMessageContext implements MessageContext
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/soap/SOAPMessageContext.html#getHeaders(javax.xml.namespace.QName, javax.xml.bind.JAXBContext, boolean) */
-	public function getHeaders(header:QName, context:JAXBContext, allRoles:Bool):NativeArray<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getHeaders(header:QName, context:JAXBContext, allRoles:Bool):NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/soap/SOAPMessageContext.html#getMessage() */
-	public function getMessage():SOAPMessage;
+	/*@@@ modifiers=1025 */ public function getMessage():SOAPMessage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/soap/SOAPMessageContext.html#getRoles() */
-	public function getRoles():Set<String>;
+	/*@@@ modifiers=1025 */ public function getRoles():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/soap/SOAPMessageContext.html#setMessage(javax.xml.soap.SOAPMessage) */
-	public function setMessage(message:SOAPMessage):Void;
+	/*@@@ modifiers=1025 */ public function setMessage(message:SOAPMessage):Void;
 
 }
 

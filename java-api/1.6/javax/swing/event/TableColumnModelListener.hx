@@ -10,19 +10,19 @@ import javax.swing.event.TableColumnModelEvent;
 extern interface TableColumnModelListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent) */
-	public function columnAdded(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function columnAdded(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent) */
-	public function columnMarginChanged(e:ChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function columnMarginChanged(e:ChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent) */
-	public function columnMoved(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function columnMoved(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent) */
-	public function columnRemoved(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function columnRemoved(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent) */
-	public function columnSelectionChanged(e:ListSelectionEvent):Void;
+	/*@@@ modifiers=1025 */ public function columnSelectionChanged(e:ListSelectionEvent):Void;
 
 }
 

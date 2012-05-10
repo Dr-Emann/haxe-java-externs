@@ -12,19 +12,19 @@ import javax.lang.model.type.TypeMirror;
 extern interface TypeElement implements Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html#getInterfaces() */
-	public function getInterfaces():List<TypeMirror>;
+	/*@@@ modifiers=1025 */ public function getInterfaces():List<TypeMirror>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html#getNestingKind() */
-	public function getNestingKind():NestingKind;
+	/*@@@ modifiers=1025 */ public function getNestingKind():NestingKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html#getQualifiedName() */
-	public function getQualifiedName():Name;
+	/*@@@ modifiers=1025 */ public function getQualifiedName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html#getSuperclass() */
-	public function getSuperclass():TypeMirror;
+	/*@@@ modifiers=1025 */ public function getSuperclass():TypeMirror;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeElement.html#getTypeParameters() */
-	public function getTypeParameters():List<TypeParameterElement>;
+	/*@@@ modifiers=1025 */ public function getTypeParameters():List<TypeParameterElement>;
 
 }
 

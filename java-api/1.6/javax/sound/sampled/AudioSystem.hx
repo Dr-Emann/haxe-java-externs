@@ -25,83 +25,83 @@ extern class AudioSystem extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.File) */
-	@:overload(function (file:File):AudioFileFormat {})
+	/*@@@ modifiers=9 */ @:overload(function (file:File):AudioFileFormat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.InputStream) */
-	@:overload(function (stream:InputStream):AudioFileFormat {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:InputStream):AudioFileFormat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.net.URL) */
-	static public function getAudioFileFormat(url:URL):AudioFileFormat;
+	/*@@@ modifiers=9 */ static public function getAudioFileFormat(url:URL):AudioFileFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioFileTypes(javax.sound.sampled.AudioInputStream) */
-	@:overload(function (stream:AudioInputStream):NativeArray<AudioFileFormat_Type> {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:AudioInputStream):NativeArray<AudioFileFormat_Type> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioFileTypes() */
-	static public function getAudioFileTypes():NativeArray<AudioFileFormat_Type>;
+	/*@@@ modifiers=9 */ static public function getAudioFileTypes():NativeArray<AudioFileFormat_Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat, javax.sound.sampled.AudioInputStream) */
-	@:overload(function (targetFormat:AudioFormat, sourceStream:AudioInputStream):AudioInputStream {})
+	/*@@@ modifiers=9 */ @:overload(function (targetFormat:AudioFormat, sourceStream:AudioInputStream):AudioInputStream {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioInputStream) */
-	@:overload(function (targetEncoding:AudioFormat_Encoding, sourceStream:AudioInputStream):AudioInputStream {})
+	/*@@@ modifiers=9 */ @:overload(function (targetEncoding:AudioFormat_Encoding, sourceStream:AudioInputStream):AudioInputStream {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.File) */
-	@:overload(function (file:File):AudioInputStream {})
+	/*@@@ modifiers=9 */ @:overload(function (file:File):AudioInputStream {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.InputStream) */
-	@:overload(function (stream:InputStream):AudioInputStream {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:InputStream):AudioInputStream {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.net.URL) */
-	static public function getAudioInputStream(url:URL):AudioInputStream;
+	/*@@@ modifiers=9 */ static public function getAudioInputStream(url:URL):AudioInputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getClip(javax.sound.sampled.Mixer$Info) */
-	@:overload(function (mixerInfo:Mixer_Info):Clip {})
+	/*@@@ modifiers=9 */ @:overload(function (mixerInfo:Mixer_Info):Clip {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getClip() */
-	static public function getClip():Clip;
+	/*@@@ modifiers=9 */ static public function getClip():Clip;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getLine(javax.sound.sampled.Line$Info) */
-	static public function getLine(info:Line_Info):Line;
+	/*@@@ modifiers=9 */ static public function getLine(info:Line_Info):Line;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getMixer(javax.sound.sampled.Mixer$Info) */
-	static public function getMixer(info:Mixer_Info):Mixer;
+	/*@@@ modifiers=9 */ static public function getMixer(info:Mixer_Info):Mixer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getMixerInfo() */
-	static public function getMixerInfo():NativeArray<Mixer_Info>;
+	/*@@@ modifiers=9 */ static public function getMixerInfo():NativeArray<Mixer_Info>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat, javax.sound.sampled.Mixer$Info) */
-	@:overload(function (format:AudioFormat, mixerinfo:Mixer_Info):SourceDataLine {})
+	/*@@@ modifiers=9 */ @:overload(function (format:AudioFormat, mixerinfo:Mixer_Info):SourceDataLine {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat) */
-	static public function getSourceDataLine(format:AudioFormat):SourceDataLine;
+	/*@@@ modifiers=9 */ static public function getSourceDataLine(format:AudioFormat):SourceDataLine;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getSourceLineInfo(javax.sound.sampled.Line$Info) */
-	static public function getSourceLineInfo(info:Line_Info):NativeArray<Line_Info>;
+	/*@@@ modifiers=9 */ static public function getSourceLineInfo(info:Line_Info):NativeArray<Line_Info>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat, javax.sound.sampled.Mixer$Info) */
-	@:overload(function (format:AudioFormat, mixerinfo:Mixer_Info):TargetDataLine {})
+	/*@@@ modifiers=9 */ @:overload(function (format:AudioFormat, mixerinfo:Mixer_Info):TargetDataLine {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat) */
-	static public function getTargetDataLine(format:AudioFormat):TargetDataLine;
+	/*@@@ modifiers=9 */ static public function getTargetDataLine(format:AudioFormat):TargetDataLine;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat) */
-	@:overload(function (sourceFormat:AudioFormat):NativeArray<AudioFormat_Encoding> {})
+	/*@@@ modifiers=9 */ @:overload(function (sourceFormat:AudioFormat):NativeArray<AudioFormat_Encoding> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat$Encoding) */
-	static public function getTargetEncodings(sourceEncoding:AudioFormat_Encoding):NativeArray<AudioFormat_Encoding>;
+	/*@@@ modifiers=9 */ static public function getTargetEncodings(sourceEncoding:AudioFormat_Encoding):NativeArray<AudioFormat_Encoding>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getTargetFormats(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioFormat) */
-	static public function getTargetFormats(targetEncoding:AudioFormat_Encoding, sourceFormat:AudioFormat):NativeArray<AudioFormat>;
+	/*@@@ modifiers=9 */ static public function getTargetFormats(targetEncoding:AudioFormat_Encoding, sourceFormat:AudioFormat):NativeArray<AudioFormat>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#getTargetLineInfo(javax.sound.sampled.Line$Info) */
-	static public function getTargetLineInfo(info:Line_Info):NativeArray<Line_Info>;
+	/*@@@ modifiers=9 */ static public function getTargetLineInfo(info:Line_Info):NativeArray<Line_Info>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat, javax.sound.sampled.AudioFormat) */
-	@:overload(function (targetFormat:AudioFormat, sourceFormat:AudioFormat):Bool {})
+	/*@@@ modifiers=9 */ @:overload(function (targetFormat:AudioFormat, sourceFormat:AudioFormat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioFormat) */
-	static public function isConversionSupported(targetEncoding:AudioFormat_Encoding, sourceFormat:AudioFormat):Bool;
+	/*@@@ modifiers=9 */ static public function isConversionSupported(targetEncoding:AudioFormat_Encoding, sourceFormat:AudioFormat):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type, javax.sound.sampled.AudioInputStream) */
-	@:overload(function (fileType:AudioFileFormat_Type, stream:AudioInputStream):Bool {})
+	/*@@@ modifiers=9 */ @:overload(function (fileType:AudioFileFormat_Type, stream:AudioInputStream):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type) */
-	static public function isFileTypeSupported(fileType:AudioFileFormat_Type):Bool;
+	/*@@@ modifiers=9 */ static public function isFileTypeSupported(fileType:AudioFileFormat_Type):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#isLineSupported(javax.sound.sampled.Line$Info) */
-	static public function isLineSupported(info:Line_Info):Bool;
+	/*@@@ modifiers=9 */ static public function isLineSupported(info:Line_Info):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.File) */
-	@:overload(function (stream:AudioInputStream, fileType:AudioFileFormat_Type, out:File):Int {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:AudioInputStream, fileType:AudioFileFormat_Type, out:File):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.OutputStream) */
-	static public function write(stream:AudioInputStream, fileType:AudioFileFormat_Type, out:OutputStream):Int;
+	/*@@@ modifiers=9 */ static public function write(stream:AudioInputStream, fileType:AudioFileFormat_Type, out:OutputStream):Int;
 
 }
 

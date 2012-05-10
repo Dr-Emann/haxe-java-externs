@@ -14,13 +14,13 @@ extern class TableColumnModelEvent extends EventObject
 	private var toIndex:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelEvent.html#TableColumnModelEvent(javax.swing.table.TableColumnModel, int, int) */
-	public function new(source:TableColumnModel, from:Int, to:Int):Void;
+	/*@@@ modifiers=1 */ public function new(source:TableColumnModel, from:Int, to:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelEvent.html#getFromIndex() */
-	public function getFromIndex():Int;
+	/*@@@ modifiers=1 */ public function getFromIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableColumnModelEvent.html#getToIndex() */
-	public function getToIndex():Int;
+	/*@@@ modifiers=1 */ public function getToIndex():Int;
 
 }
 

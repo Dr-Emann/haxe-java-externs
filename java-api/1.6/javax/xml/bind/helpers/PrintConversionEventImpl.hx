@@ -10,12 +10,9 @@ import javax.xml.bind.helpers.ValidationEventImpl;
 extern class PrintConversionEventImpl extends ValidationEventImpl, implements PrintConversionEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/PrintConversionEventImpl.html#PrintConversionEventImpl(int, java.lang.String, javax.xml.bind.ValidationEventLocator) */
-	@:overload(function (_severity:Int, _message:String, _locator:ValidationEventLocator):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_severity:Int, _message:String, _locator:ValidationEventLocator):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/PrintConversionEventImpl.html#PrintConversionEventImpl(int, java.lang.String, javax.xml.bind.ValidationEventLocator, java.lang.Throwable) */
-	public function new(_severity:Int, _message:String, _locator:ValidationEventLocator, _linkedException:Throwable):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/PrintConversionEventImpl.html#getMessage() */
-	public function getMessage():String;
+	/*@@@ modifiers=1 */ public function new(_severity:Int, _message:String, _locator:ValidationEventLocator, _linkedException:Throwable):Void;
 
 }
 

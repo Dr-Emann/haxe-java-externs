@@ -12,19 +12,19 @@ import javax.swing.plaf.basic.BasicSeparatorUI;
 extern class MetalSeparatorUI extends BasicSeparatorUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSeparatorUI.html#MetalSeparatorUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSeparatorUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSeparatorUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSeparatorUI.html#installDefaults(javax.swing.JSeparator) */
-	override private function installDefaults(s:JSeparator):Void;
+	/*@@@ modifiers=4 */ override private function installDefaults(s:JSeparator):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSeparatorUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 }
 

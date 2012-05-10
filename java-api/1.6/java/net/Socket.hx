@@ -15,148 +15,148 @@ import java.nio.channels.SocketChannel;
 extern class Socket extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.net.Proxy) */
-	@:overload(function (proxy:Proxy):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (proxy:Proxy):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.net.SocketImpl) */
-	@:overload(function (proxy:SocketImpl):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (proxy:SocketImpl):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.lang.String, int) */
-	@:overload(function (host:String, port:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:String, port:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.net.InetAddress, int) */
-	@:overload(function (host:InetAddress, port:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:InetAddress, port:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.lang.String, int, java.net.InetAddress, int) */
-	@:overload(function (host:String, port:Int, localAddr:InetAddress, localPort:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:String, port:Int, localAddr:InetAddress, localPort:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.net.InetAddress, int, java.net.InetAddress, int) */
-	@:overload(function (host:InetAddress, port:Int, localAddr:InetAddress, localPort:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:InetAddress, port:Int, localAddr:InetAddress, localPort:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.lang.String, int, boolean) */
-	@:overload(function (host:String, port:Int, stream:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:String, port:Int, stream:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#Socket(java.net.InetAddress, int, boolean) */
-	public function new(host:InetAddress, port:Int, stream:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(host:InetAddress, port:Int, stream:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#bind(java.net.SocketAddress) */
-	public function bind(bindpoint:SocketAddress):Void;
+	/*@@@ modifiers=1 */ public function bind(bindpoint:SocketAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=33 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#connect(java.net.SocketAddress, int) */
-	@:overload(function (endpoint:SocketAddress, timeout:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (endpoint:SocketAddress, timeout:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#connect(java.net.SocketAddress) */
-	public function connect(endpoint:SocketAddress):Void;
+	/*@@@ modifiers=1 */ public function connect(endpoint:SocketAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getChannel() */
-	public function getChannel():SocketChannel;
+	/*@@@ modifiers=1 */ public function getChannel():SocketChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getInetAddress() */
-	public function getInetAddress():InetAddress;
+	/*@@@ modifiers=1 */ public function getInetAddress():InetAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getInputStream() */
-	public function getInputStream():InputStream;
+	/*@@@ modifiers=1 */ public function getInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getKeepAlive() */
-	public function getKeepAlive():Bool;
+	/*@@@ modifiers=1 */ public function getKeepAlive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getLocalAddress() */
-	public function getLocalAddress():InetAddress;
+	/*@@@ modifiers=1 */ public function getLocalAddress():InetAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getLocalPort() */
-	public function getLocalPort():Int;
+	/*@@@ modifiers=1 */ public function getLocalPort():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getLocalSocketAddress() */
-	public function getLocalSocketAddress():SocketAddress;
+	/*@@@ modifiers=1 */ public function getLocalSocketAddress():SocketAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getOOBInline() */
-	public function getOOBInline():Bool;
+	/*@@@ modifiers=1 */ public function getOOBInline():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getOutputStream() */
-	public function getOutputStream():OutputStream;
+	/*@@@ modifiers=1 */ public function getOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getPort() */
-	public function getPort():Int;
+	/*@@@ modifiers=1 */ public function getPort():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getReceiveBufferSize() */
-	public function getReceiveBufferSize():Int;
+	/*@@@ modifiers=33 */ public function getReceiveBufferSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getRemoteSocketAddress() */
-	public function getRemoteSocketAddress():SocketAddress;
+	/*@@@ modifiers=1 */ public function getRemoteSocketAddress():SocketAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getReuseAddress() */
-	public function getReuseAddress():Bool;
+	/*@@@ modifiers=1 */ public function getReuseAddress():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getSendBufferSize() */
-	public function getSendBufferSize():Int;
+	/*@@@ modifiers=33 */ public function getSendBufferSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getSoLinger() */
-	public function getSoLinger():Int;
+	/*@@@ modifiers=1 */ public function getSoLinger():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getSoTimeout() */
-	public function getSoTimeout():Int;
+	/*@@@ modifiers=33 */ public function getSoTimeout():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getTcpNoDelay() */
-	public function getTcpNoDelay():Bool;
+	/*@@@ modifiers=1 */ public function getTcpNoDelay():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#getTrafficClass() */
-	public function getTrafficClass():Int;
+	/*@@@ modifiers=1 */ public function getTrafficClass():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#isBound() */
-	public function isBound():Bool;
+	/*@@@ modifiers=1 */ public function isBound():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#isClosed() */
-	public function isClosed():Bool;
+	/*@@@ modifiers=1 */ public function isClosed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#isConnected() */
-	public function isConnected():Bool;
+	/*@@@ modifiers=1 */ public function isConnected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#isInputShutdown() */
-	public function isInputShutdown():Bool;
+	/*@@@ modifiers=1 */ public function isInputShutdown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#isOutputShutdown() */
-	public function isOutputShutdown():Bool;
+	/*@@@ modifiers=1 */ public function isOutputShutdown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#sendUrgentData(int) */
-	public function sendUrgentData(data:Int):Void;
+	/*@@@ modifiers=1 */ public function sendUrgentData(data:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setKeepAlive(boolean) */
-	public function setKeepAlive(on:Bool):Void;
+	/*@@@ modifiers=1 */ public function setKeepAlive(on:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setOOBInline(boolean) */
-	public function setOOBInline(on:Bool):Void;
+	/*@@@ modifiers=1 */ public function setOOBInline(on:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setPerformancePreferences(int, int, int) */
-	public function setPerformancePreferences(connectionTime:Int, latency:Int, bandwidth:Int):Void;
+	/*@@@ modifiers=1 */ public function setPerformancePreferences(connectionTime:Int, latency:Int, bandwidth:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setReceiveBufferSize(int) */
-	public function setReceiveBufferSize(size:Int):Void;
+	/*@@@ modifiers=33 */ public function setReceiveBufferSize(size:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setReuseAddress(boolean) */
-	public function setReuseAddress(on:Bool):Void;
+	/*@@@ modifiers=1 */ public function setReuseAddress(on:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setSendBufferSize(int) */
-	public function setSendBufferSize(size:Int):Void;
+	/*@@@ modifiers=33 */ public function setSendBufferSize(size:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setSoLinger(boolean, int) */
-	public function setSoLinger(on:Bool, linger:Int):Void;
+	/*@@@ modifiers=1 */ public function setSoLinger(on:Bool, linger:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setSoTimeout(int) */
-	public function setSoTimeout(timeout:Int):Void;
+	/*@@@ modifiers=33 */ public function setSoTimeout(timeout:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory) */
-	static public function setSocketImplFactory(fac:SocketImplFactory):Void;
+	/*@@@ modifiers=41 */ static public function setSocketImplFactory(fac:SocketImplFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setTcpNoDelay(boolean) */
-	public function setTcpNoDelay(on:Bool):Void;
+	/*@@@ modifiers=1 */ public function setTcpNoDelay(on:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#setTrafficClass(int) */
-	public function setTrafficClass(tc:Int):Void;
+	/*@@@ modifiers=1 */ public function setTrafficClass(tc:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#shutdownInput() */
-	public function shutdownInput():Void;
+	/*@@@ modifiers=1 */ public function shutdownInput():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#shutdownOutput() */
-	public function shutdownOutput():Void;
+	/*@@@ modifiers=1 */ public function shutdownOutput():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Socket.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

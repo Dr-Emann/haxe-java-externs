@@ -11,16 +11,16 @@ import javax.print.attribute.PrintRequestAttribute;
 extern class JobKOctets extends IntegerSyntax, implements PrintRequestAttribute, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobKOctets.html#JobKOctets(int) */
-	public function new(value:Int):Void;
+	/*@@@ modifiers=1 */ public function new(value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobKOctets.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobKOctets.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobKOctets.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

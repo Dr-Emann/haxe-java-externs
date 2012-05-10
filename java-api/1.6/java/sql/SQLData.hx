@@ -8,13 +8,13 @@ import java.sql.SQLOutput;
 extern interface SQLData
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLData.html#getSQLTypeName() */
-	public function getSQLTypeName():String;
+	/*@@@ modifiers=1025 */ public function getSQLTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLData.html#readSQL(java.sql.SQLInput, java.lang.String) */
-	public function readSQL(stream:SQLInput, typeName:String):Void;
+	/*@@@ modifiers=1025 */ public function readSQL(stream:SQLInput, typeName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput) */
-	public function writeSQL(stream:SQLOutput):Void;
+	/*@@@ modifiers=1025 */ public function writeSQL(stream:SQLOutput):Void;
 
 }
 

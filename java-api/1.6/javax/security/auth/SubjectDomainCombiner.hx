@@ -11,13 +11,13 @@ import javax.security.auth.Subject;
 extern class SubjectDomainCombiner extends Object, implements DomainCombiner
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/SubjectDomainCombiner.html#SubjectDomainCombiner(javax.security.auth.Subject) */
-	public function new(subject:Subject):Void;
+	/*@@@ modifiers=1 */ public function new(subject:Subject):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[], java.security.ProtectionDomain[]) */
-	public function combine(currentDomains:NativeArray<ProtectionDomain>, assignedDomains:NativeArray<ProtectionDomain>):NativeArray<ProtectionDomain>;
+	/*@@@ modifiers=1 */ public function combine(currentDomains:NativeArray<ProtectionDomain>, assignedDomains:NativeArray<ProtectionDomain>):NativeArray<ProtectionDomain>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/SubjectDomainCombiner.html#getSubject() */
-	public function getSubject():Subject;
+	/*@@@ modifiers=1 */ public function getSubject():Subject;
 
 }
 

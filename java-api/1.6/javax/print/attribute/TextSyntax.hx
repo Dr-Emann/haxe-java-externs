@@ -10,22 +10,22 @@ import java.util.Locale;
 extern class TextSyntax extends Object, implements Serializable, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/TextSyntax.html#TextSyntax(java.lang.String, java.util.Locale) */
-	private function new(value:String, locale:Locale):Void;
+	/*@@@ modifiers=4 */ private function new(value:String, locale:Locale):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/TextSyntax.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/TextSyntax.html#getLocale() */
-	public function getLocale():Locale;
+	/*@@@ modifiers=1 */ public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/TextSyntax.html#getValue() */
-	public function getValue():String;
+	/*@@@ modifiers=1 */ public function getValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/TextSyntax.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/TextSyntax.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

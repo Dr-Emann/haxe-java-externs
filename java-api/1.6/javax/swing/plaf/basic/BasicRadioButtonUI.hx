@@ -17,31 +17,31 @@ extern class BasicRadioButtonUI extends BasicToggleButtonUI
 	private var icon:Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#BasicRadioButtonUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(b:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(b:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#getDefaultIcon() */
-	public function getDefaultIcon():Icon;
+	/*@@@ modifiers=1 */ public function getDefaultIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#installDefaults(javax.swing.AbstractButton) */
-	override private function installDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override private function installDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=33 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#paintFocus(java.awt.Graphics, java.awt.Rectangle, java.awt.Dimension) */
-	override private function paintFocus(g:Graphics, textRect:Rectangle, size:Dimension):Void;
+	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, textRect:Rectangle, size:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
 
 }
 

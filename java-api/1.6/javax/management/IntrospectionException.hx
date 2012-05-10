@@ -7,9 +7,9 @@ import javax.management.OperationsException;
 extern class IntrospectionException extends OperationsException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/IntrospectionException.html#IntrospectionException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/IntrospectionException.html#IntrospectionException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

@@ -10,16 +10,10 @@ import java.nio.channels.spi.SelectorProvider;
 extern class Pipe_SourceChannel extends AbstractSelectableChannel, implements ReadableByteChannel, implements ScatteringByteChannel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SourceChannel.html#Pipe$SourceChannel(java.nio.channels.spi.SelectorProvider) */
-	private function new(provider:SelectorProvider):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SourceChannel.html#close() */
-	public function close():Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SourceChannel.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=4 */ private function new(provider:SelectorProvider):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Pipe.SourceChannel.html#validOps() */
-	override public function validOps():Int;
+	/*@@@ modifiers=17 */ override public function validOps():Int;
 
 }
 

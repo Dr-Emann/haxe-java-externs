@@ -7,7 +7,7 @@ import java.beans.beancontext.BeanContextChild;
 extern interface BeanContextProxy
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextProxy.html#getBeanContextProxy() */
-	public function getBeanContextProxy():BeanContextChild;
+	/*@@@ modifiers=1025 */ public function getBeanContextProxy():BeanContextChild;
 
 }
 

@@ -7,10 +7,10 @@ import java.lang.IllegalArgumentException;
 extern class IllegalCharsetNameException extends IllegalArgumentException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/IllegalCharsetNameException.html#IllegalCharsetNameException(java.lang.String) */
-	public function new(charsetName:String):Void;
+	/*@@@ modifiers=1 */ public function new(charsetName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/IllegalCharsetNameException.html#getCharsetName() */
-	public function getCharsetName():String;
+	/*@@@ modifiers=1 */ public function getCharsetName():String;
 
 }
 

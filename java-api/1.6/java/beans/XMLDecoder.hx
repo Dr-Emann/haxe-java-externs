@@ -10,31 +10,31 @@ import java.lang.Object;
 extern class XMLDecoder extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#XMLDecoder(java.io.InputStream, java.lang.Object) */
-	@:overload(function (_in:InputStream, owner:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, owner:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#XMLDecoder(java.io.InputStream, java.lang.Object, java.beans.ExceptionListener) */
-	@:overload(function (_in:InputStream, owner:Dynamic, exceptionListener:ExceptionListener):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, owner:Dynamic, exceptionListener:ExceptionListener):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#XMLDecoder(java.io.InputStream, java.lang.Object, java.beans.ExceptionListener, java.lang.ClassLoader) */
-	@:overload(function (_in:InputStream, owner:Dynamic, exceptionListener:ExceptionListener, cl:ClassLoader):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, owner:Dynamic, exceptionListener:ExceptionListener, cl:ClassLoader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#XMLDecoder(java.io.InputStream) */
-	public function new(_in:InputStream):Void;
+	/*@@@ modifiers=1 */ public function new(_in:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#getExceptionListener() */
-	public function getExceptionListener():ExceptionListener;
+	/*@@@ modifiers=1 */ public function getExceptionListener():ExceptionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#getOwner() */
-	public function getOwner():Dynamic;
+	/*@@@ modifiers=1 */ public function getOwner():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#readObject() */
-	public function readObject():Dynamic;
+	/*@@@ modifiers=1 */ public function readObject():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#setExceptionListener(java.beans.ExceptionListener) */
-	public function setExceptionListener(exceptionListener:ExceptionListener):Void;
+	/*@@@ modifiers=1 */ public function setExceptionListener(exceptionListener:ExceptionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/XMLDecoder.html#setOwner(java.lang.Object) */
-	public function setOwner(owner:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setOwner(owner:Dynamic):Void;
 
 }
 

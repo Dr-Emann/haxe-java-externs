@@ -12,34 +12,34 @@ import java.nio.channels.FileChannel;
 extern class FileOutputStream extends OutputStream
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#FileOutputStream(java.lang.String) */
-	@:overload(function (name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#FileOutputStream(java.lang.String, boolean) */
-	@:overload(function (name:String, append:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, append:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#FileOutputStream(java.io.File) */
-	@:overload(function (name:File):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:File):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#FileOutputStream(java.io.File, boolean) */
-	@:overload(function (name:File, append:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:File, append:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#FileOutputStream(java.io.FileDescriptor) */
-	public function new(name:FileDescriptor):Void;
+	/*@@@ modifiers=1 */ public function new(name:FileDescriptor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#finalize() */
-	override public function finalize():Void;
+	/*@@@ modifiers=4 */ override public function finalize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#getChannel() */
-	public function getChannel():FileChannel;
+	/*@@@ modifiers=1 */ public function getChannel():FileChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#getFD() */
-	public function getFD():FileDescriptor;
+	/*@@@ modifiers=17 */ public function getFD():FileDescriptor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#write(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#write(int) */
-	@:overload(function (b:Int):Void {})
+	/*@@@ modifiers=257 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html#write(byte[]) */
-	override public function write(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ override public function write(b:NativeArray<Int8>):Void;
 
 }
 

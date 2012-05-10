@@ -7,7 +7,7 @@ import java.awt.image.WritableRenderedImage;
 extern interface TileObserver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/TileObserver.html#tileUpdate(java.awt.image.WritableRenderedImage, int, int, boolean) */
-	public function tileUpdate(source:WritableRenderedImage, tileX:Int, tileY:Int, willBeWritable:Bool):Void;
+	/*@@@ modifiers=1025 */ public function tileUpdate(source:WritableRenderedImage, tileX:Int, tileY:Int, willBeWritable:Bool):Void;
 
 }
 

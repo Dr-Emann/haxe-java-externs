@@ -22,33 +22,33 @@ extern class CannotProceedException extends NamingException
 	private var altNameCtx:Context;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#CannotProceedException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#CannotProceedException(java.lang.String) */
-	public function new(explanation:String):Void;
+	/*@@@ modifiers=1 */ public function new(explanation:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#getAltName() */
-	public function getAltName():Name;
+	/*@@@ modifiers=1 */ public function getAltName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#getAltNameCtx() */
-	public function getAltNameCtx():Context;
+	/*@@@ modifiers=1 */ public function getAltNameCtx():Context;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#getEnvironment() */
-	public function getEnvironment():Hashtable<Dynamic, Dynamic>;
+	/*@@@ modifiers=1 */ public function getEnvironment():Hashtable<Dynamic, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#getRemainingNewName() */
-	public function getRemainingNewName():Name;
+	/*@@@ modifiers=1 */ public function getRemainingNewName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#setAltName(javax.naming.Name) */
-	public function setAltName(altName:Name):Void;
+	/*@@@ modifiers=1 */ public function setAltName(altName:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#setAltNameCtx(javax.naming.Context) */
-	public function setAltNameCtx(altNameCtx:Context):Void;
+	/*@@@ modifiers=1 */ public function setAltNameCtx(altNameCtx:Context):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#setEnvironment(java.util.Hashtable) */
-	public function setEnvironment(environment:Hashtable<Dynamic, Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function setEnvironment(environment:Hashtable<Dynamic, Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/CannotProceedException.html#setRemainingNewName(javax.naming.Name) */
-	public function setRemainingNewName(newName:Name):Void;
+	/*@@@ modifiers=1 */ public function setRemainingNewName(newName:Name):Void;
 
 }
 

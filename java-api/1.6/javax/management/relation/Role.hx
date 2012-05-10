@@ -10,28 +10,28 @@ import javax.management.ObjectName;
 extern class Role extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#Role(java.lang.String, java.util.List) */
-	public function new(roleName:String, roleValue:List<ObjectName>):Void;
+	/*@@@ modifiers=1 */ public function new(roleName:String, roleValue:List<ObjectName>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#getRoleName() */
-	public function getRoleName():String;
+	/*@@@ modifiers=1 */ public function getRoleName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#getRoleValue() */
-	public function getRoleValue():List<ObjectName>;
+	/*@@@ modifiers=1 */ public function getRoleValue():List<ObjectName>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#roleValueToString(java.util.List) */
-	static public function roleValueToString(roleValue:List<ObjectName>):String;
+	/*@@@ modifiers=9 */ static public function roleValueToString(roleValue:List<ObjectName>):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#setRoleName(java.lang.String) */
-	public function setRoleName(roleName:String):Void;
+	/*@@@ modifiers=1 */ public function setRoleName(roleName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#setRoleValue(java.util.List) */
-	public function setRoleValue(roleValue:List<ObjectName>):Void;
+	/*@@@ modifiers=1 */ public function setRoleValue(roleValue:List<ObjectName>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/Role.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

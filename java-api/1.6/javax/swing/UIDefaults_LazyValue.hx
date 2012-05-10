@@ -7,7 +7,7 @@ import javax.swing.UIDefaults;
 extern interface UIDefaults_LazyValue
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/UIDefaults.LazyValue.html#createValue(javax.swing.UIDefaults) */
-	public function createValue(table:UIDefaults):Dynamic;
+	/*@@@ modifiers=1025 */ public function createValue(table:UIDefaults):Dynamic;
 
 }
 

@@ -8,15 +8,15 @@ import java.lang.Class;
 extern interface Invocable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/Invocable.html#getInterface(java.lang.Object, java.lang.Class) */
-	@:overload(function <T>(thiz:Dynamic, clasz:Class<T>):T {})
+	/*@@@ modifiers=1025 */ @:overload(function <T>(thiz:Dynamic, clasz:Class<T>):T {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/Invocable.html#getInterface(java.lang.Class) */
-	public function getInterface<T>(clasz:Class<T>):T;
+	/*@@@ modifiers=1025 */ public function getInterface<T>(clasz:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/Invocable.html#invokeFunction(java.lang.String, java.lang.Object[]) */
-	public function invokeFunction(name:String, args:NativeArray<Dynamic>):Dynamic;
+	/*@@@ modifiers=1153 */ public function invokeFunction(name:String, args:NativeArray<Dynamic>):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/Invocable.html#invokeMethod(java.lang.Object, java.lang.String, java.lang.Object[]) */
-	public function invokeMethod(thiz:Dynamic, name:String, args:NativeArray<Dynamic>):Dynamic;
+	/*@@@ modifiers=1153 */ public function invokeMethod(thiz:Dynamic, name:String, args:NativeArray<Dynamic>):Dynamic;
 
 }
 

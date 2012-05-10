@@ -7,7 +7,7 @@ import java.lang.Cloneable;
 extern interface CertPathValidatorResult implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertPathValidatorResult.html#clone() */
-	public function clone():Dynamic;
+	/*@@@ modifiers=1025 */ public function clone():Dynamic;
 
 }
 

@@ -9,16 +9,16 @@ import javax.lang.model.type.TypeVariable;
 extern interface ExecutableType implements TypeMirror
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/ExecutableType.html#getParameterTypes() */
-	public function getParameterTypes():List<TypeMirror>;
+	/*@@@ modifiers=1025 */ public function getParameterTypes():List<TypeMirror>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/ExecutableType.html#getReturnType() */
-	public function getReturnType():TypeMirror;
+	/*@@@ modifiers=1025 */ public function getReturnType():TypeMirror;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/ExecutableType.html#getThrownTypes() */
-	public function getThrownTypes():List<TypeMirror>;
+	/*@@@ modifiers=1025 */ public function getThrownTypes():List<TypeMirror>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/ExecutableType.html#getTypeVariables() */
-	public function getTypeVariables():List<TypeVariable>;
+	/*@@@ modifiers=1025 */ public function getTypeVariables():List<TypeVariable>;
 
 }
 

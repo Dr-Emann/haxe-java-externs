@@ -44,97 +44,97 @@ extern class DefaultTableColumnModel extends Object, implements TableColumnModel
 	private var totalColumnWidth:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#DefaultTableColumnModel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#addColumn(javax.swing.table.TableColumn) */
-	public function addColumn(aColumn:TableColumn):Void;
+	/*@@@ modifiers=1 */ public function addColumn(aColumn:TableColumn):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#addColumnModelListener(javax.swing.event.TableColumnModelListener) */
-	public function addColumnModelListener(x:TableColumnModelListener):Void;
+	/*@@@ modifiers=1 */ public function addColumnModelListener(x:TableColumnModelListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#createSelectionModel() */
-	private function createSelectionModel():ListSelectionModel;
+	/*@@@ modifiers=4 */ private function createSelectionModel():ListSelectionModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#fireColumnAdded(javax.swing.event.TableColumnModelEvent) */
-	private function fireColumnAdded(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=4 */ private function fireColumnAdded(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#fireColumnMarginChanged() */
-	private function fireColumnMarginChanged():Void;
+	/*@@@ modifiers=4 */ private function fireColumnMarginChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#fireColumnMoved(javax.swing.event.TableColumnModelEvent) */
-	private function fireColumnMoved(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=4 */ private function fireColumnMoved(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#fireColumnRemoved(javax.swing.event.TableColumnModelEvent) */
-	private function fireColumnRemoved(e:TableColumnModelEvent):Void;
+	/*@@@ modifiers=4 */ private function fireColumnRemoved(e:TableColumnModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#fireColumnSelectionChanged(javax.swing.event.ListSelectionEvent) */
-	private function fireColumnSelectionChanged(e:ListSelectionEvent):Void;
+	/*@@@ modifiers=4 */ private function fireColumnSelectionChanged(e:ListSelectionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumn(int) */
-	public function getColumn(columnIndex:Int):TableColumn;
+	/*@@@ modifiers=1 */ public function getColumn(columnIndex:Int):TableColumn;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumnCount() */
-	public function getColumnCount():Int;
+	/*@@@ modifiers=1 */ public function getColumnCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumnIndex(java.lang.Object) */
-	public function getColumnIndex(identifier:Dynamic):Int;
+	/*@@@ modifiers=1 */ public function getColumnIndex(identifier:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumnIndexAtX(int) */
-	public function getColumnIndexAtX(x:Int):Int;
+	/*@@@ modifiers=1 */ public function getColumnIndexAtX(x:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumnMargin() */
-	public function getColumnMargin():Int;
+	/*@@@ modifiers=1 */ public function getColumnMargin():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumnModelListeners() */
-	public function getColumnModelListeners():NativeArray<TableColumnModelListener>;
+	/*@@@ modifiers=1 */ public function getColumnModelListeners():NativeArray<TableColumnModelListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumnSelectionAllowed() */
-	public function getColumnSelectionAllowed():Bool;
+	/*@@@ modifiers=1 */ public function getColumnSelectionAllowed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getColumns() */
-	public function getColumns():Enumeration<TableColumn>;
+	/*@@@ modifiers=1 */ public function getColumns():Enumeration<TableColumn>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getSelectedColumnCount() */
-	public function getSelectedColumnCount():Int;
+	/*@@@ modifiers=1 */ public function getSelectedColumnCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getSelectedColumns() */
-	public function getSelectedColumns():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getSelectedColumns():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getSelectionModel() */
-	public function getSelectionModel():ListSelectionModel;
+	/*@@@ modifiers=1 */ public function getSelectionModel():ListSelectionModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#getTotalColumnWidth() */
-	public function getTotalColumnWidth():Int;
+	/*@@@ modifiers=1 */ public function getTotalColumnWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#moveColumn(int, int) */
-	public function moveColumn(columnIndex:Int, newIndex:Int):Void;
+	/*@@@ modifiers=1 */ public function moveColumn(columnIndex:Int, newIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#propertyChange(java.beans.PropertyChangeEvent) */
-	public function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function propertyChange(evt:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#recalcWidthCache() */
-	private function recalcWidthCache():Void;
+	/*@@@ modifiers=4 */ private function recalcWidthCache():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#removeColumn(javax.swing.table.TableColumn) */
-	public function removeColumn(column:TableColumn):Void;
+	/*@@@ modifiers=1 */ public function removeColumn(column:TableColumn):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#removeColumnModelListener(javax.swing.event.TableColumnModelListener) */
-	public function removeColumnModelListener(x:TableColumnModelListener):Void;
+	/*@@@ modifiers=1 */ public function removeColumnModelListener(x:TableColumnModelListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#setColumnMargin(int) */
-	public function setColumnMargin(newMargin:Int):Void;
+	/*@@@ modifiers=1 */ public function setColumnMargin(newMargin:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#setColumnSelectionAllowed(boolean) */
-	public function setColumnSelectionAllowed(flag:Bool):Void;
+	/*@@@ modifiers=1 */ public function setColumnSelectionAllowed(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#setSelectionModel(javax.swing.ListSelectionModel) */
-	public function setSelectionModel(newModel:ListSelectionModel):Void;
+	/*@@@ modifiers=1 */ public function setSelectionModel(newModel:ListSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableColumnModel.html#valueChanged(javax.swing.event.ListSelectionEvent) */
-	public function valueChanged(e:ListSelectionEvent):Void;
+	/*@@@ modifiers=1 */ public function valueChanged(e:ListSelectionEvent):Void;
 
 }
 

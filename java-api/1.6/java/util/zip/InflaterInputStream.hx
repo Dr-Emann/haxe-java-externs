@@ -20,37 +20,37 @@ extern class InflaterInputStream extends FilterInputStream
 	private var len:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#InflaterInputStream(java.io.InputStream, java.util.zip.Inflater, int) */
-	@:overload(function (_in:InputStream, inf:Inflater, size:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, inf:Inflater, size:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#InflaterInputStream(java.io.InputStream, java.util.zip.Inflater) */
-	@:overload(function (_in:InputStream, inf:Inflater):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, inf:Inflater):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#InflaterInputStream(java.io.InputStream) */
-	public function new(_in:InputStream):Void;
+	/*@@@ modifiers=1 */ public function new(_in:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#available() */
-	override public function available():Int;
+	/*@@@ modifiers=1 */ override public function available():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#fill() */
-	private function fill():Void;
+	/*@@@ modifiers=4 */ private function fill():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#mark(int) */
-	override public function mark(readlimit:Int):Void;
+	/*@@@ modifiers=33 */ override public function mark(readlimit:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#markSupported() */
-	override public function markSupported():Bool;
+	/*@@@ modifiers=1 */ override public function markSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#read(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#read() */
-	override public function read():Int;
+	/*@@@ modifiers=1 */ override public function read():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#reset() */
-	override public function reset():Void;
+	/*@@@ modifiers=33 */ override public function reset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#skip(long) */
-	override public function skip(n:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ override public function skip(n:haxe.Int64):haxe.Int64;
 
 }
 

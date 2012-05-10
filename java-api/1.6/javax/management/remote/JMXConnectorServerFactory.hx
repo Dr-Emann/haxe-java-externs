@@ -12,7 +12,7 @@ extern class JMXConnectorServerFactory extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerFactory.html#newJMXConnectorServer(javax.management.remote.JMXServiceURL, java.util.Map, javax.management.MBeanServer) */
-	static public function newJMXConnectorServer(serviceURL:JMXServiceURL, environment:Map<String, Dynamic>, mbeanServer:MBeanServer):JMXConnectorServer;
+	/*@@@ modifiers=9 */ static public function newJMXConnectorServer(serviceURL:JMXServiceURL, environment:Map<String, Dynamic>, mbeanServer:MBeanServer):JMXConnectorServer;
 
 }
 

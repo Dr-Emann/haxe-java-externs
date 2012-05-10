@@ -8,15 +8,15 @@ import javax.xml.bind.JAXBException;
 extern class UnmarshalException extends JAXBException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/UnmarshalException.html#UnmarshalException(java.lang.String) */
-	@:overload(function (message:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/UnmarshalException.html#UnmarshalException(java.lang.String, java.lang.String) */
-	@:overload(function (message:String, errorCode:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String, errorCode:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/UnmarshalException.html#UnmarshalException(java.lang.Throwable) */
-	@:overload(function (message:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/UnmarshalException.html#UnmarshalException(java.lang.String, java.lang.Throwable) */
-	@:overload(function (message:String, errorCode:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String, errorCode:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/UnmarshalException.html#UnmarshalException(java.lang.String, java.lang.String, java.lang.Throwable) */
-	public function new(message:String, errorCode:String, exception:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(message:String, errorCode:String, exception:Throwable):Void;
 
 }
 

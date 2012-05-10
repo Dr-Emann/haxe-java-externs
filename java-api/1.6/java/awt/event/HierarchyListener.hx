@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface HierarchyListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent) */
-	public function hierarchyChanged(e:HierarchyEvent):Void;
+	/*@@@ modifiers=1025 */ public function hierarchyChanged(e:HierarchyEvent):Void;
 
 }
 

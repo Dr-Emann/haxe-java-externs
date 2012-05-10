@@ -10,19 +10,19 @@ import javax.swing.plaf.basic.BasicEditorPaneUI;
 extern class BasicTextPaneUI extends BasicEditorPaneUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextPaneUI.html#BasicTextPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextPaneUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextPaneUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	override private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ override private function propertyChange(evt:PropertyChangeEvent):Void;
 
 }
 

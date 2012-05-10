@@ -13,27 +13,27 @@ import java.security.Principal;
 extern class ProtectionDomain extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#ProtectionDomain(java.security.CodeSource, java.security.PermissionCollection, java.lang.ClassLoader, java.security.Principal[]) */
-	@:overload(function (codesource:CodeSource, permissions:PermissionCollection, classloader:ClassLoader, principals:NativeArray<Principal>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (codesource:CodeSource, permissions:PermissionCollection, classloader:ClassLoader, principals:NativeArray<Principal>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#ProtectionDomain(java.security.CodeSource, java.security.PermissionCollection) */
-	public function new(codesource:CodeSource, permissions:PermissionCollection):Void;
+	/*@@@ modifiers=1 */ public function new(codesource:CodeSource, permissions:PermissionCollection):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getClassLoader() */
-	public function getClassLoader():ClassLoader;
+	/*@@@ modifiers=17 */ public function getClassLoader():ClassLoader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getCodeSource() */
-	public function getCodeSource():CodeSource;
+	/*@@@ modifiers=17 */ public function getCodeSource():CodeSource;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getPermissions() */
-	public function getPermissions():PermissionCollection;
+	/*@@@ modifiers=17 */ public function getPermissions():PermissionCollection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#getPrincipals() */
-	public function getPrincipals():NativeArray<Principal>;
+	/*@@@ modifiers=17 */ public function getPrincipals():NativeArray<Principal>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#implies(java.security.Permission) */
-	public function implies(permission:Permission):Bool;
+	/*@@@ modifiers=1 */ public function implies(permission:Permission):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/ProtectionDomain.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

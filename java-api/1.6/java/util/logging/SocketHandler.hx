@@ -8,15 +8,15 @@ import java.util.logging.StreamHandler;
 extern class SocketHandler extends StreamHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/SocketHandler.html#SocketHandler() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/SocketHandler.html#SocketHandler(java.lang.String, int) */
-	public function new(host:String, port:Int):Void;
+	/*@@@ modifiers=1 */ public function new(host:String, port:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/SocketHandler.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=33 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/SocketHandler.html#publish(java.util.logging.LogRecord) */
-	override public function publish(record:LogRecord):Void;
+	/*@@@ modifiers=33 */ override public function publish(record:LogRecord):Void;
 
 }
 

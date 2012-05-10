@@ -8,7 +8,7 @@ import javax.xml.xpath.XPathFunction;
 extern interface XPathFunctionResolver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName, int) */
-	public function resolveFunction(functionName:QName, arity:Int):XPathFunction;
+	/*@@@ modifiers=1025 */ public function resolveFunction(functionName:QName, arity:Int):XPathFunction;
 
 }
 

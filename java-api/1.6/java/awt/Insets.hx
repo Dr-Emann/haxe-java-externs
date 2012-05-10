@@ -21,22 +21,22 @@ extern class Insets extends Object, implements Cloneable, implements Serializabl
 	public var right:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Insets.html#Insets(int, int, int, int) */
-	public function new(top:Int, left:Int, bottom:Int, right:Int):Void;
+	/*@@@ modifiers=1 */ public function new(top:Int, left:Int, bottom:Int, right:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Insets.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Insets.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Insets.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Insets.html#sets.set(int, int, int, int) */
-	public function set(top:Int, left:Int, bottom:Int, right:Int):Void;
+	/*@@@ modifiers=1 */ public function set(top:Int, left:Int, bottom:Int, right:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Insets.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -13,16 +13,16 @@ extern class PresentationDirection extends EnumSyntax, implements PrintJobAttrib
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PresentationDirection.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PresentationDirection.html#getEnumValueTable() */
-	override private function getEnumValueTable():NativeArray<EnumSyntax>;
+	/*@@@ modifiers=4 */ override private function getEnumValueTable():NativeArray<EnumSyntax>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PresentationDirection.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PresentationDirection.html#getStringTable() */
-	override private function getStringTable():NativeArray<String>;
+	/*@@@ modifiers=4 */ override private function getStringTable():NativeArray<String>;
 
 }
 

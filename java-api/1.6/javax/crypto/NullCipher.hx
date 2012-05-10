@@ -7,7 +7,7 @@ import javax.crypto.Cipher;
 extern class NullCipher extends Cipher
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/NullCipher.html#NullCipher() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

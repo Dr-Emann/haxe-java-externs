@@ -8,13 +8,13 @@ import javax.xml.ws.handler.Handler;
 extern interface Binding
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Binding.html#getBindingID() */
-	public function getBindingID():String;
+	/*@@@ modifiers=1025 */ public function getBindingID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Binding.html#getHandlerChain() */
-	public function getHandlerChain():List<Handler<Dynamic>>;
+	/*@@@ modifiers=1025 */ public function getHandlerChain():List<Handler<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Binding.html#setHandlerChain(java.util.List) */
-	public function setHandlerChain(chain:List<Handler<Dynamic>>):Void;
+	/*@@@ modifiers=1025 */ public function setHandlerChain(chain:List<Handler<Dynamic>>):Void;
 
 }
 

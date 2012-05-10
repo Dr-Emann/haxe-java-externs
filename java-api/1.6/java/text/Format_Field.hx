@@ -7,7 +7,7 @@ import java.text.AttributedCharacterIterator_Attribute;
 extern class Format_Field extends AttributedCharacterIterator_Attribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.Field.html#Format$Field(java.lang.String) */
-	private function new(name:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String):Void;
 
 }
 

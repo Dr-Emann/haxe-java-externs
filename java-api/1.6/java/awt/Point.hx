@@ -15,39 +15,39 @@ extern class Point extends Point2D, implements Serializable
 	public var y:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#Point(java.awt.Point) */
-	@:overload(function (p:Point):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (p:Point):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#Point(int, int) */
-	@:overload(function (x:Int, y:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#Point() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#getLocation() */
-	public function getLocation():Point;
+	/*@@@ modifiers=1 */ public function getLocation():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#getX() */
-	override public function getX():StdFloat;
+	/*@@@ modifiers=1 */ override public function getX():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#getY() */
-	override public function getY():StdFloat;
+	/*@@@ modifiers=1 */ override public function getY():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#move(int, int) */
-	public function move(x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function move(x:Int, y:Int):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(int, int) */
-	@:overload(function (x:Int, y:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(java.awt.Point) */
-	@:overload(function (p:Point):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(double, double) */
-	override public function setLocation(x:StdFloat, y:StdFloat):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(int, int) */
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(java.awt.Point) */
+	/*@@@ modifiers=1 */ override public function setLocation(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#translate(int, int) */
-	public function translate(dx:Int, dy:Int):Void;
+	/*@@@ modifiers=1 */ public function translate(dx:Int, dy:Int):Void;
 
 }
 

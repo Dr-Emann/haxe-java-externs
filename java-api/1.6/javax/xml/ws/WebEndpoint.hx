@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 extern interface WebEndpoint implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebEndpoint.html#name() */
-	public function name():String;
+	/*@@@ modifiers=1025 */ public function name():String;
 
 }
 

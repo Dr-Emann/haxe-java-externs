@@ -11,27 +11,27 @@ import java.lang.reflect.AnnotatedElement;
 extern class AccessibleObject extends Object, implements AnnotatedElement
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#AccessibleObject() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class) */
-	public function getAnnotation<T>(annotationClass:Class<T>):T;
+	/*@@@ modifiers=1 */ public function getAnnotation<T>(annotationClass:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotations() */
-	public function getAnnotations():NativeArray<Annotation>;
+	/*@@@ modifiers=1 */ public function getAnnotations():NativeArray<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations() */
-	public function getDeclaredAnnotations():NativeArray<Annotation>;
+	/*@@@ modifiers=1 */ public function getDeclaredAnnotations():NativeArray<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#isAccessible() */
-	public function isAccessible():Bool;
+	/*@@@ modifiers=1 */ public function isAccessible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class) */
-	public function isAnnotationPresent(annotationClass:Class<Annotation>):Bool;
+	/*@@@ modifiers=1 */ public function isAnnotationPresent(annotationClass:Class<Annotation>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#setAccessible(boolean) */
-	@:overload(function (flag:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (flag:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[], boolean) */
-	static public function setAccessible(array:NativeArray<AccessibleObject>, flag:Bool):Void;
+	/*@@@ modifiers=9 */ static public function setAccessible(array:NativeArray<AccessibleObject>, flag:Bool):Void;
 
 }
 

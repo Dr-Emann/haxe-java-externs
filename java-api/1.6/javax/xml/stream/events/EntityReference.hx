@@ -8,10 +8,10 @@ import javax.xml.stream.events.XMLEvent;
 extern interface EntityReference implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/EntityReference.html#getDeclaration() */
-	public function getDeclaration():EntityDeclaration;
+	/*@@@ modifiers=1025 */ public function getDeclaration():EntityDeclaration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/EntityReference.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 }
 

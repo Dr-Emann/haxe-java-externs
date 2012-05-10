@@ -8,10 +8,10 @@ import javax.print.attribute.AttributeSet;
 extern interface PrintJobAttributeSet implements AttributeSet
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/PrintJobAttributeSet.html#add(javax.print.attribute.Attribute) */
-	public function add(attribute:Attribute):Bool;
+	/*@@@ modifiers=1025 */ public function add(attribute:Attribute):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/PrintJobAttributeSet.html#addAll(javax.print.attribute.AttributeSet) */
-	public function addAll(attributes:AttributeSet):Bool;
+	/*@@@ modifiers=1025 */ public function addAll(attributes:AttributeSet):Bool;
 
 }
 

@@ -8,10 +8,10 @@ import java.util.EventListener;
 extern interface ContainerListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerListener.html#componentAdded(java.awt.event.ContainerEvent) */
-	public function componentAdded(e:ContainerEvent):Void;
+	/*@@@ modifiers=1025 */ public function componentAdded(e:ContainerEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ContainerListener.html#componentRemoved(java.awt.event.ContainerEvent) */
-	public function componentRemoved(e:ContainerEvent):Void;
+	/*@@@ modifiers=1025 */ public function componentRemoved(e:ContainerEvent):Void;
 
 }
 

@@ -8,9 +8,9 @@ import javax.xml.xpath.XPathException;
 extern class XPathFactoryConfigurationException extends XPathException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactoryConfigurationException.html#XPathFactoryConfigurationException(java.lang.String) */
-	@:overload(function (message:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactoryConfigurationException.html#XPathFactoryConfigurationException(java.lang.Throwable) */
-	public function new(message:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(message:Throwable):Void;
 
 }
 

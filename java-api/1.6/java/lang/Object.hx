@@ -7,38 +7,38 @@ import java.lang.Class;
 extern class Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#Object() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#clone() */
-	public function clone():Dynamic;
+	/*@@@ modifiers=260 */ public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#finalize() */
-	public function finalize():Void;
+	/*@@@ modifiers=4 */ public function finalize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#getClass() */
-	public function getClass():Class<Dynamic>;
+	/*@@@ modifiers=273 */ public function getClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=257 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#notify() */
-	public function notify():Void;
+	/*@@@ modifiers=273 */ public function notify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#notifyAll() */
-	public function notifyAll():Void;
+	/*@@@ modifiers=273 */ public function notifyAll():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1 */ public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#wait(long, int) */
-	@:overload(function (timeout:haxe.Int64, nanos:Int):Void {})
+	/*@@@ modifiers=17 */ @:overload(function (timeout:haxe.Int64, nanos:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#wait(long) */
-	@:overload(function (timeout:haxe.Int64):Void {})
+	/*@@@ modifiers=273 */ @:overload(function (timeout:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#wait() */
-	public function wait():Void;
+	/*@@@ modifiers=17 */ public function wait():Void;
 
 }
 

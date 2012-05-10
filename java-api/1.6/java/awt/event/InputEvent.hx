@@ -8,37 +8,37 @@ extern class InputEvent extends ComponentEvent
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#consume() */
-	override public function consume():Void;
+	/*@@@ modifiers=1 */ override public function consume():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#getModifiers() */
-	public function getModifiers():Int;
+	/*@@@ modifiers=1 */ public function getModifiers():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#getModifiersEx() */
-	public function getModifiersEx():Int;
+	/*@@@ modifiers=1 */ public function getModifiersEx():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#getModifiersExText(int) */
-	static public function getModifiersExText(modifiers:Int):String;
+	/*@@@ modifiers=9 */ static public function getModifiersExText(modifiers:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#getWhen() */
-	public function getWhen():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getWhen():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#isAltDown() */
-	public function isAltDown():Bool;
+	/*@@@ modifiers=1 */ public function isAltDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#isAltGraphDown() */
-	public function isAltGraphDown():Bool;
+	/*@@@ modifiers=1 */ public function isAltGraphDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#isConsumed() */
-	override public function isConsumed():Bool;
+	/*@@@ modifiers=1 */ override public function isConsumed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#isControlDown() */
-	public function isControlDown():Bool;
+	/*@@@ modifiers=1 */ public function isControlDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#isMetaDown() */
-	public function isMetaDown():Bool;
+	/*@@@ modifiers=1 */ public function isMetaDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/InputEvent.html#isShiftDown() */
-	public function isShiftDown():Bool;
+	/*@@@ modifiers=1 */ public function isShiftDown():Bool;
 
 }
 

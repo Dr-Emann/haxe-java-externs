@@ -11,13 +11,13 @@ import javax.management.openmbean.CompositeData;
 extern class CompositeDataInvocationHandler extends Object, implements InvocationHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/CompositeDataInvocationHandler.html#CompositeDataInvocationHandler(javax.management.openmbean.CompositeData) */
-	public function new(compositeData:CompositeData):Void;
+	/*@@@ modifiers=1 */ public function new(compositeData:CompositeData):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/CompositeDataInvocationHandler.html#getCompositeData() */
-	public function getCompositeData():CompositeData;
+	/*@@@ modifiers=1 */ public function getCompositeData():CompositeData;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/CompositeDataInvocationHandler.html#invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) */
-	public function invoke(proxy:Dynamic, method:Method, args:NativeArray<Dynamic>):Dynamic;
+	/*@@@ modifiers=1 */ public function invoke(proxy:Dynamic, method:Method, args:NativeArray<Dynamic>):Dynamic;
 
 }
 

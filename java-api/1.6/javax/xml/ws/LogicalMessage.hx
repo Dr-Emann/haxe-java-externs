@@ -8,14 +8,14 @@ import javax.xml.transform.Source;
 extern interface LogicalMessage
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/LogicalMessage.html#getPayload(javax.xml.bind.JAXBContext) */
-	@:overload(function (context:JAXBContext):Dynamic {})
+	/*@@@ modifiers=1025 */ @:overload(function (context:JAXBContext):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/LogicalMessage.html#getPayload() */
-	public function getPayload():Source;
+	/*@@@ modifiers=1025 */ public function getPayload():Source;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/LogicalMessage.html#setPayload(java.lang.Object, javax.xml.bind.JAXBContext) */
-	@:overload(function (payload:Dynamic, context:JAXBContext):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (payload:Dynamic, context:JAXBContext):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/LogicalMessage.html#setPayload(javax.xml.transform.Source) */
-	public function setPayload(payload:Source):Void;
+	/*@@@ modifiers=1025 */ public function setPayload(payload:Source):Void;
 
 }
 

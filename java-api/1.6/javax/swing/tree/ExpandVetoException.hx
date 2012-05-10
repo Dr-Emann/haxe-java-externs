@@ -11,9 +11,9 @@ extern class ExpandVetoException extends Exception
 	private var event:TreeExpansionEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/ExpandVetoException.html#ExpandVetoException(javax.swing.event.TreeExpansionEvent) */
-	@:overload(function (event:TreeExpansionEvent):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (event:TreeExpansionEvent):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/ExpandVetoException.html#ExpandVetoException(javax.swing.event.TreeExpansionEvent, java.lang.String) */
-	public function new(event:TreeExpansionEvent, message:String):Void;
+	/*@@@ modifiers=1 */ public function new(event:TreeExpansionEvent, message:String):Void;
 
 }
 

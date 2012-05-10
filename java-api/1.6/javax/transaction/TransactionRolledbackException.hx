@@ -7,9 +7,9 @@ import java.rmi.RemoteException;
 extern class TransactionRolledbackException extends RemoteException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/transaction/TransactionRolledbackException.html#TransactionRolledbackException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/transaction/TransactionRolledbackException.html#TransactionRolledbackException(java.lang.String) */
-	public function new(arg0:String):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:String):Void;
 
 }
 

@@ -7,7 +7,7 @@ import java.lang.RuntimeException;
 extern class CannotRedoException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/CannotRedoException.html#CannotRedoException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

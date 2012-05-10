@@ -7,9 +7,9 @@ import java.io.ObjectStreamException;
 extern class NotSerializableException extends ObjectStreamException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/NotSerializableException.html#NotSerializableException(java.lang.String) */
-	@:overload(function (classname:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (classname:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/NotSerializableException.html#NotSerializableException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

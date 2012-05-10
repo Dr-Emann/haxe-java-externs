@@ -9,12 +9,12 @@ import java.util.Map;
 extern interface Struct
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Struct.html#getAttributes(java.util.Map) */
-	@:overload(function (map:Map<String, Class<Dynamic>>):NativeArray<Dynamic> {})
+	/*@@@ modifiers=1025 */ @:overload(function (map:Map<String, Class<Dynamic>>):NativeArray<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Struct.html#getAttributes() */
-	public function getAttributes():NativeArray<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getAttributes():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Struct.html#getSQLTypeName() */
-	public function getSQLTypeName():String;
+	/*@@@ modifiers=1025 */ public function getSQLTypeName():String;
 
 }
 

@@ -9,10 +9,10 @@ import java.security.Guard;
 extern class GuardedObject extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/GuardedObject.html#GuardedObject(java.lang.Object, java.security.Guard) */
-	public function new(object:Dynamic, guard:Guard):Void;
+	/*@@@ modifiers=1 */ public function new(object:Dynamic, guard:Guard):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/GuardedObject.html#getObject() */
-	public function getObject():Dynamic;
+	/*@@@ modifiers=1 */ public function getObject():Dynamic;
 
 }
 

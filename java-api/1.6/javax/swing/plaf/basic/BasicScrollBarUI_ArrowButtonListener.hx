@@ -9,13 +9,13 @@ import javax.swing.plaf.basic.BasicScrollBarUI;
 extern class BasicScrollBarUI_ArrowButtonListener extends MouseAdapter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ArrowButtonListener.html#BasicScrollBarUI$ArrowButtonListener(javax.swing.plaf.basic.BasicScrollBarUI) */
-	private function new(arg0:BasicScrollBarUI):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:BasicScrollBarUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ArrowButtonListener.html#mousePressed(java.awt.event.MouseEvent) */
-	override public function mousePressed(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mousePressed(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ArrowButtonListener.html#mouseReleased(java.awt.event.MouseEvent) */
-	override public function mouseReleased(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseReleased(e:MouseEvent):Void;
 
 }
 

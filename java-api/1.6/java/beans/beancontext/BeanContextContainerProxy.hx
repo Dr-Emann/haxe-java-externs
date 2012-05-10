@@ -7,7 +7,7 @@ import java.awt.Container;
 extern interface BeanContextContainerProxy
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextContainerProxy.html#getContainer() */
-	public function getContainer():Container;
+	/*@@@ modifiers=1025 */ public function getContainer():Container;
 
 }
 

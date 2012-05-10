@@ -7,7 +7,7 @@ import java.lang.Object;
 extern class XmlElement_DEFAULT extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElement.DEFAULT.html#XmlElement$DEFAULT() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

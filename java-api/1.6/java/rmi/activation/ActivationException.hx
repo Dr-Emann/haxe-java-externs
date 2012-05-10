@@ -11,17 +11,17 @@ extern class ActivationException extends Exception
 	public var detail:Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationException.html#ActivationException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationException.html#ActivationException(java.lang.String) */
-	@:overload(function (s:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (s:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationException.html#ActivationException(java.lang.String, java.lang.Throwable) */
-	public function new(s:String, cause:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, cause:Throwable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

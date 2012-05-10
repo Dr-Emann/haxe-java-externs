@@ -8,25 +8,25 @@ import javax.swing.event.CellEditorListener;
 extern interface CellEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener) */
-	public function addCellEditorListener(l:CellEditorListener):Void;
+	/*@@@ modifiers=1025 */ public function addCellEditorListener(l:CellEditorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#cancelCellEditing() */
-	public function cancelCellEditing():Void;
+	/*@@@ modifiers=1025 */ public function cancelCellEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#getCellEditorValue() */
-	public function getCellEditorValue():Dynamic;
+	/*@@@ modifiers=1025 */ public function getCellEditorValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#isCellEditable(java.util.EventObject) */
-	public function isCellEditable(anEvent:EventObject):Bool;
+	/*@@@ modifiers=1025 */ public function isCellEditable(anEvent:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener) */
-	public function removeCellEditorListener(l:CellEditorListener):Void;
+	/*@@@ modifiers=1025 */ public function removeCellEditorListener(l:CellEditorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#shouldSelectCell(java.util.EventObject) */
-	public function shouldSelectCell(anEvent:EventObject):Bool;
+	/*@@@ modifiers=1025 */ public function shouldSelectCell(anEvent:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#stopCellEditing() */
-	public function stopCellEditing():Bool;
+	/*@@@ modifiers=1025 */ public function stopCellEditing():Bool;
 
 }
 

@@ -15,37 +15,37 @@ import javax.lang.model.type.TypeMirror;
 extern interface Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#accept(javax.lang.model.element.ElementVisitor, java.lang.Object) */
-	public function accept<R, P>(v:ElementVisitor<R, P>, p:P):R;
+	/*@@@ modifiers=1025 */ public function accept<R, P>(v:ElementVisitor<R, P>, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#asType() */
-	public function asType():TypeMirror;
+	/*@@@ modifiers=1025 */ public function asType():TypeMirror;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class) */
-	public function getAnnotation<A>(annotationType:Class<A>):A;
+	/*@@@ modifiers=1025 */ public function getAnnotation<A>(annotationType:Class<A>):A;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getAnnotationMirrors() */
-	public function getAnnotationMirrors():List<AnnotationMirror>;
+	/*@@@ modifiers=1025 */ public function getAnnotationMirrors():List<AnnotationMirror>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getEnclosedElements() */
-	public function getEnclosedElements():List<Element>;
+	/*@@@ modifiers=1025 */ public function getEnclosedElements():List<Element>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getEnclosingElement() */
-	public function getEnclosingElement():Element;
+	/*@@@ modifiers=1025 */ public function getEnclosingElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getKind() */
-	public function getKind():ElementKind;
+	/*@@@ modifiers=1025 */ public function getKind():ElementKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getModifiers() */
-	public function getModifiers():Set<Modifier>;
+	/*@@@ modifiers=1025 */ public function getModifiers():Set<Modifier>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#getSimpleName() */
-	public function getSimpleName():Name;
+	/*@@@ modifiers=1025 */ public function getSimpleName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Element.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 }
 

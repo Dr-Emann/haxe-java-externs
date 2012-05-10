@@ -8,16 +8,16 @@ import java.io.OutputStream;
 extern interface DataSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/DataSource.html#getContentType() */
-	public function getContentType():String;
+	/*@@@ modifiers=1025 */ public function getContentType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/DataSource.html#getInputStream() */
-	public function getInputStream():InputStream;
+	/*@@@ modifiers=1025 */ public function getInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/DataSource.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/DataSource.html#getOutputStream() */
-	public function getOutputStream():OutputStream;
+	/*@@@ modifiers=1025 */ public function getOutputStream():OutputStream;
 
 }
 

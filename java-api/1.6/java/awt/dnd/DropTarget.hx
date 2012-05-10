@@ -18,84 +18,84 @@ import java.lang.Object;
 extern class DropTarget extends Object, implements DropTargetListener, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#DropTarget(java.awt.Component, int, java.awt.dnd.DropTargetListener, boolean) */
-	@:overload(function (c:Component, ops:Int, dtl:DropTargetListener, act:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, ops:Int, dtl:DropTargetListener, act:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#DropTarget() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#DropTarget(java.awt.Component, java.awt.dnd.DropTargetListener) */
-	@:overload(function (c:Component, dtl:DropTargetListener):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, dtl:DropTargetListener):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#DropTarget(java.awt.Component, int, java.awt.dnd.DropTargetListener) */
-	@:overload(function (c:Component, ops:Int, dtl:DropTargetListener):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, ops:Int, dtl:DropTargetListener):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#DropTarget(java.awt.Component, int, java.awt.dnd.DropTargetListener, boolean, java.awt.datatransfer.FlavorMap) */
-	public function new(c:Component, ops:Int, dtl:DropTargetListener, act:Bool, fm:FlavorMap):Void;
+	/*@@@ modifiers=1 */ public function new(c:Component, ops:Int, dtl:DropTargetListener, act:Bool, fm:FlavorMap):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#addDropTargetListener(java.awt.dnd.DropTargetListener) */
-	public function addDropTargetListener(dtl:DropTargetListener):Void;
+	/*@@@ modifiers=33 */ public function addDropTargetListener(dtl:DropTargetListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#addNotify(java.awt.peer.ComponentPeer) */
-	public function addNotify(peer:ComponentPeer):Void;
+	/*@@@ modifiers=1 */ public function addNotify(peer:ComponentPeer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#clearAutoscroll() */
-	private function clearAutoscroll():Void;
+	/*@@@ modifiers=4 */ private function clearAutoscroll():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#createDropTargetAutoScroller(java.awt.Component, java.awt.Point) */
-	private function createDropTargetAutoScroller(c:Component, p:Point):DropTarget_DropTargetAutoScroller;
+	/*@@@ modifiers=4 */ private function createDropTargetAutoScroller(c:Component, p:Point):DropTarget_DropTargetAutoScroller;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#createDropTargetContext() */
-	private function createDropTargetContext():DropTargetContext;
+	/*@@@ modifiers=4 */ private function createDropTargetContext():DropTargetContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#dragEnter(java.awt.dnd.DropTargetDragEvent) */
-	public function dragEnter(dtde:DropTargetDragEvent):Void;
+	/*@@@ modifiers=33 */ public function dragEnter(dtde:DropTargetDragEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#dragExit(java.awt.dnd.DropTargetEvent) */
-	public function dragExit(dte:DropTargetEvent):Void;
+	/*@@@ modifiers=33 */ public function dragExit(dte:DropTargetEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#dragOver(java.awt.dnd.DropTargetDragEvent) */
-	public function dragOver(dtde:DropTargetDragEvent):Void;
+	/*@@@ modifiers=33 */ public function dragOver(dtde:DropTargetDragEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#drop(java.awt.dnd.DropTargetDropEvent) */
-	public function drop(dtde:DropTargetDropEvent):Void;
+	/*@@@ modifiers=33 */ public function drop(dtde:DropTargetDropEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent) */
-	public function dropActionChanged(dtde:DropTargetDragEvent):Void;
+	/*@@@ modifiers=33 */ public function dropActionChanged(dtde:DropTargetDragEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#getComponent() */
-	public function getComponent():Component;
+	/*@@@ modifiers=33 */ public function getComponent():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#getDefaultActions() */
-	public function getDefaultActions():Int;
+	/*@@@ modifiers=1 */ public function getDefaultActions():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#getDropTargetContext() */
-	public function getDropTargetContext():DropTargetContext;
+	/*@@@ modifiers=1 */ public function getDropTargetContext():DropTargetContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#getFlavorMap() */
-	public function getFlavorMap():FlavorMap;
+	/*@@@ modifiers=1 */ public function getFlavorMap():FlavorMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#initializeAutoscrolling(java.awt.Point) */
-	private function initializeAutoscrolling(p:Point):Void;
+	/*@@@ modifiers=4 */ private function initializeAutoscrolling(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=1 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#removeDropTargetListener(java.awt.dnd.DropTargetListener) */
-	public function removeDropTargetListener(dtl:DropTargetListener):Void;
+	/*@@@ modifiers=33 */ public function removeDropTargetListener(dtl:DropTargetListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#removeNotify(java.awt.peer.ComponentPeer) */
-	public function removeNotify(peer:ComponentPeer):Void;
+	/*@@@ modifiers=1 */ public function removeNotify(peer:ComponentPeer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#setActive(boolean) */
-	public function setActive(isActive:Bool):Void;
+	/*@@@ modifiers=33 */ public function setActive(isActive:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#setComponent(java.awt.Component) */
-	public function setComponent(c:Component):Void;
+	/*@@@ modifiers=33 */ public function setComponent(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#setDefaultActions(int) */
-	public function setDefaultActions(ops:Int):Void;
+	/*@@@ modifiers=1 */ public function setDefaultActions(ops:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#setFlavorMap(java.awt.datatransfer.FlavorMap) */
-	public function setFlavorMap(fm:FlavorMap):Void;
+	/*@@@ modifiers=1 */ public function setFlavorMap(fm:FlavorMap):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.html#updateAutoscroll(java.awt.Point) */
-	private function updateAutoscroll(dragCursorLocn:Point):Void;
+	/*@@@ modifiers=4 */ private function updateAutoscroll(dragCursorLocn:Point):Void;
 
 }
 

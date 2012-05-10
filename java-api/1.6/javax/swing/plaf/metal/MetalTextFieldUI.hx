@@ -10,13 +10,13 @@ import javax.swing.plaf.basic.BasicTextFieldUI;
 extern class MetalTextFieldUI extends BasicTextFieldUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTextFieldUI.html#MetalTextFieldUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTextFieldUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTextFieldUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	override public function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ override public function propertyChange(evt:PropertyChangeEvent):Void;
 
 }
 

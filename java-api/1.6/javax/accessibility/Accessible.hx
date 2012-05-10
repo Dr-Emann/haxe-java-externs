@@ -7,7 +7,7 @@ import javax.accessibility.AccessibleContext;
 extern interface Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/Accessible.html#getAccessibleContext() */
-	public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1025 */ public function getAccessibleContext():AccessibleContext;
 
 }
 

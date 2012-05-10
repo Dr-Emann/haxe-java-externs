@@ -8,13 +8,13 @@ import java.awt.Graphics;
 extern interface Icon
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Icon.html#getIconHeight() */
-	public function getIconHeight():Int;
+	/*@@@ modifiers=1025 */ public function getIconHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Icon.html#getIconWidth() */
-	public function getIconWidth():Int;
+	/*@@@ modifiers=1025 */ public function getIconWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Icon.html#paintIcon(java.awt.Component, java.awt.Graphics, int, int) */
-	public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
+	/*@@@ modifiers=1025 */ public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
 
 }
 

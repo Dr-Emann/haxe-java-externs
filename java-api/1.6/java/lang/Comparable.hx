@@ -6,7 +6,7 @@ package java.lang;
 extern interface Comparable<T : (Dynamic)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html#compareTo(java.lang.Object) */
-	public function compareTo(o:T):Int;
+	/*@@@ modifiers=1025 */ public function compareTo(o:T):Int;
 
 }
 

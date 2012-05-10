@@ -12,19 +12,19 @@ import java.security.spec.KeySpec;
 extern class KeyFactorySpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactorySpi.html#KeyFactorySpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactorySpi.html#engineGeneratePrivate(java.security.spec.KeySpec) */
-	private function engineGeneratePrivate(keySpec:KeySpec):PrivateKey;
+	/*@@@ modifiers=1028 */ private function engineGeneratePrivate(keySpec:KeySpec):PrivateKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactorySpi.html#engineGeneratePublic(java.security.spec.KeySpec) */
-	private function engineGeneratePublic(keySpec:KeySpec):PublicKey;
+	/*@@@ modifiers=1028 */ private function engineGeneratePublic(keySpec:KeySpec):PublicKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactorySpi.html#engineGetKeySpec(java.security.Key, java.lang.Class) */
-	private function engineGetKeySpec<T>(key:Key, keySpec:Class<T>):T;
+	/*@@@ modifiers=1028 */ private function engineGetKeySpec<T>(key:Key, keySpec:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactorySpi.html#engineTranslateKey(java.security.Key) */
-	private function engineTranslateKey(key:Key):Key;
+	/*@@@ modifiers=1028 */ private function engineTranslateKey(key:Key):Key;
 
 }
 

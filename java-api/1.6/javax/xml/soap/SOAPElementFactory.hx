@@ -10,14 +10,14 @@ extern class SOAPElementFactory extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElementFactory.html#create(java.lang.String, java.lang.String, java.lang.String) */
-	@:overload(function (localName:String, prefix:String, uri:String):SOAPElement {})
+	/*@@@ modifiers=1 */ @:overload(function (localName:String, prefix:String, uri:String):SOAPElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElementFactory.html#create(java.lang.String) */
-	@:overload(function (localName:String):SOAPElement {})
+	/*@@@ modifiers=1 */ @:overload(function (localName:String):SOAPElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElementFactory.html#create(javax.xml.soap.Name) */
-	public function create(name:Name):SOAPElement;
+	/*@@@ modifiers=1 */ public function create(name:Name):SOAPElement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElementFactory.html#newInstance() */
-	static public function newInstance():SOAPElementFactory;
+	/*@@@ modifiers=9 */ static public function newInstance():SOAPElementFactory;
 
 }
 

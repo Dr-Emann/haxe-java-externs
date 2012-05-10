@@ -17,10 +17,10 @@ extern class SwingWorker_StateValue extends Enum<SwingWorker_StateValue>
 	public static var DONE:SwingWorker_StateValue;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.StateValue.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SwingWorker_StateValue;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SwingWorker_StateValue;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.StateValue.html#values() */
-	static public function values():NativeArray<SwingWorker_StateValue>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SwingWorker_StateValue>;
 
 }
 

@@ -8,10 +8,10 @@ import javax.swing.undo.UndoableEdit;
 extern class UndoableEditEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/UndoableEditEvent.html#UndoableEditEvent(java.lang.Object, javax.swing.undo.UndoableEdit) */
-	public function new(source:Dynamic, edit:UndoableEdit):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic, edit:UndoableEdit):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/UndoableEditEvent.html#getEdit() */
-	public function getEdit():UndoableEdit;
+	/*@@@ modifiers=1 */ public function getEdit():UndoableEdit;
 
 }
 

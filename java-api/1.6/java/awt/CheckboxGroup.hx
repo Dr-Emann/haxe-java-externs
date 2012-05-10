@@ -9,22 +9,22 @@ import java.lang.Object;
 extern class CheckboxGroup extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/CheckboxGroup.html#CheckboxGroup() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/CheckboxGroup.html#getCurrent() */
-	public function getCurrent():Checkbox;
+	/*@@@ modifiers=1 */ public function getCurrent():Checkbox;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/CheckboxGroup.html#getSelectedCheckbox() */
-	public function getSelectedCheckbox():Checkbox;
+	/*@@@ modifiers=1 */ public function getSelectedCheckbox():Checkbox;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/CheckboxGroup.html#setCurrent(java.awt.Checkbox) */
-	public function setCurrent(box:Checkbox):Void;
+	/*@@@ modifiers=33 */ public function setCurrent(box:Checkbox):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/CheckboxGroup.html#setSelectedCheckbox(java.awt.Checkbox) */
-	public function setSelectedCheckbox(box:Checkbox):Void;
+	/*@@@ modifiers=1 */ public function setSelectedCheckbox(box:Checkbox):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/CheckboxGroup.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

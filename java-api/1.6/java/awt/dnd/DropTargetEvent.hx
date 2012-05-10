@@ -11,10 +11,10 @@ extern class DropTargetEvent extends EventObject
 	private var context:DropTargetContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetEvent.html#DropTargetEvent(java.awt.dnd.DropTargetContext) */
-	public function new(dtc:DropTargetContext):Void;
+	/*@@@ modifiers=1 */ public function new(dtc:DropTargetContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetEvent.html#getDropTargetContext() */
-	public function getDropTargetContext():DropTargetContext;
+	/*@@@ modifiers=1 */ public function getDropTargetContext():DropTargetContext;
 
 }
 

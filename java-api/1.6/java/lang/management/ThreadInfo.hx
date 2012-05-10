@@ -14,58 +14,58 @@ extern class ThreadInfo extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#from(javax.management.openmbean.CompositeData) */
-	static public function from(cd:CompositeData):ThreadInfo;
+	/*@@@ modifiers=9 */ static public function from(cd:CompositeData):ThreadInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getBlockedCount() */
-	public function getBlockedCount():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getBlockedCount():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getBlockedTime() */
-	public function getBlockedTime():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getBlockedTime():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getLockInfo() */
-	public function getLockInfo():LockInfo;
+	/*@@@ modifiers=1 */ public function getLockInfo():LockInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getLockName() */
-	public function getLockName():String;
+	/*@@@ modifiers=1 */ public function getLockName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getLockOwnerId() */
-	public function getLockOwnerId():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getLockOwnerId():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getLockOwnerName() */
-	public function getLockOwnerName():String;
+	/*@@@ modifiers=1 */ public function getLockOwnerName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getLockedMonitors() */
-	public function getLockedMonitors():NativeArray<MonitorInfo>;
+	/*@@@ modifiers=1 */ public function getLockedMonitors():NativeArray<MonitorInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getLockedSynchronizers() */
-	public function getLockedSynchronizers():NativeArray<LockInfo>;
+	/*@@@ modifiers=1 */ public function getLockedSynchronizers():NativeArray<LockInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getStackTrace() */
-	public function getStackTrace():NativeArray<StackTraceElement>;
+	/*@@@ modifiers=1 */ public function getStackTrace():NativeArray<StackTraceElement>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getThreadId() */
-	public function getThreadId():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getThreadId():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getThreadName() */
-	public function getThreadName():String;
+	/*@@@ modifiers=1 */ public function getThreadName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getThreadState() */
-	public function getThreadState():Thread_State;
+	/*@@@ modifiers=1 */ public function getThreadState():Thread_State;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getWaitedCount() */
-	public function getWaitedCount():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getWaitedCount():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#getWaitedTime() */
-	public function getWaitedTime():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getWaitedTime():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#isInNative() */
-	public function isInNative():Bool;
+	/*@@@ modifiers=1 */ public function isInNative():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#isSuspended() */
-	public function isSuspended():Bool;
+	/*@@@ modifiers=1 */ public function isSuspended():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/ThreadInfo.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

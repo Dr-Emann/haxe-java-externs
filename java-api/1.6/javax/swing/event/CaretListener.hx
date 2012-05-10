@@ -8,7 +8,7 @@ import javax.swing.event.CaretEvent;
 extern interface CaretListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent) */
-	public function caretUpdate(e:CaretEvent):Void;
+	/*@@@ modifiers=1025 */ public function caretUpdate(e:CaretEvent):Void;
 
 }
 

@@ -9,13 +9,13 @@ import java.security.spec.KeySpec;
 extern class RSAPrivateKeySpec extends Object, implements KeySpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateKeySpec.html#RSAPrivateKeySpec(java.math.BigInteger, java.math.BigInteger) */
-	public function new(modulus:BigInteger, privateExponent:BigInteger):Void;
+	/*@@@ modifiers=1 */ public function new(modulus:BigInteger, privateExponent:BigInteger):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateKeySpec.html#getModulus() */
-	public function getModulus():BigInteger;
+	/*@@@ modifiers=1 */ public function getModulus():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateKeySpec.html#getPrivateExponent() */
-	public function getPrivateExponent():BigInteger;
+	/*@@@ modifiers=1 */ public function getPrivateExponent():BigInteger;
 
 }
 

@@ -8,7 +8,7 @@ import java.awt.datatransfer.Transferable;
 extern interface ClipboardOwner
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/ClipboardOwner.html#lostOwnership(java.awt.datatransfer.Clipboard, java.awt.datatransfer.Transferable) */
-	public function lostOwnership(clipboard:Clipboard, contents:Transferable):Void;
+	/*@@@ modifiers=1025 */ public function lostOwnership(clipboard:Clipboard, contents:Transferable):Void;
 
 }
 

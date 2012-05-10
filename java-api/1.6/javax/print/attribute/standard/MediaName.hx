@@ -10,16 +10,13 @@ import javax.print.attribute.standard.Media;
 extern class MediaName extends Media, implements Attribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaName.html#MediaName(int) */
-	private function new(value:Int):Void;
+	/*@@@ modifiers=4 */ private function new(value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaName.html#getEnumValueTable() */
-	override private function getEnumValueTable():NativeArray<EnumSyntax>;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaName.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=4 */ override private function getEnumValueTable():NativeArray<EnumSyntax>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaName.html#getStringTable() */
-	override private function getStringTable():NativeArray<String>;
+	/*@@@ modifiers=4 */ override private function getStringTable():NativeArray<String>;
 
 }
 

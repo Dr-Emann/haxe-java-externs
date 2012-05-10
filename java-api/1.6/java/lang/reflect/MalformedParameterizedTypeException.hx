@@ -7,7 +7,7 @@ import java.lang.RuntimeException;
 extern class MalformedParameterizedTypeException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/MalformedParameterizedTypeException.html#MalformedParameterizedTypeException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

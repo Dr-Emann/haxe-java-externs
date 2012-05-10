@@ -10,19 +10,19 @@ import java.net.URI;
 extern class URISyntax extends Object, implements Serializable, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/URISyntax.html#URISyntax(java.net.URI) */
-	private function new(uri:URI):Void;
+	/*@@@ modifiers=4 */ private function new(uri:URI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/URISyntax.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/URISyntax.html#getURI() */
-	public function getURI():URI;
+	/*@@@ modifiers=1 */ public function getURI():URI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/URISyntax.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/URISyntax.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -8,7 +8,7 @@ import java.util.EventObject;
 extern class FlavorEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/FlavorEvent.html#FlavorEvent(java.awt.datatransfer.Clipboard) */
-	public function new(source:Clipboard):Void;
+	/*@@@ modifiers=1 */ public function new(source:Clipboard):Void;
 
 }
 

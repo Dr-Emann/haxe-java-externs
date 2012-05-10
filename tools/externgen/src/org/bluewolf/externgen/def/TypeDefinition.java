@@ -14,6 +14,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 import org.bluewolf.externgen.Utils;
@@ -47,11 +48,18 @@ public abstract class TypeDefinition {
     protected JavaClass classDocs;
 
     /**
+     *
+     */
+    protected String docsBaseUrl;
+
+    /**
      * 
      */
-    public TypeDefinition(Class<?> classObject, JavaClass classDocs) {
+    public TypeDefinition(Class<?> classObject, JavaClass classDocs,
+	    String docsBaseUrl) {
 	this.classObject = classObject;
 	this.classDocs = classDocs;
+	this.docsBaseUrl = docsBaseUrl;
 	dependencies = new TreeSet<String>();
     }
 
@@ -95,9 +103,11 @@ public abstract class TypeDefinition {
 		return "Int";
 	    } else if (name.equals("long")) {
 		return "haxe.Int64";
-	    } else if (name.equals("double") || name.equals("float")) {
+	    } else if (name.equals("double")) {
 		addDependency("java.lang.Number");
 		return "StdFloat";
+	    } else if (name.equals("float")) {
+		return "Single";
 	    } else if (name.equals("boolean")) {
 		return "Bool";
 	    } else if (name.equals("char")) {
@@ -118,6 +128,18 @@ public abstract class TypeDefinition {
 	    //
 
 	    return "String";
+	} else if (obj.getName().equals("java.lang.Byte")) {
+	    return String.format("Null<%s>", convertClass(byte.class));
+	} else if (obj.getName().equals("java.lang.Double")) {
+	    return String.format("Null<%s>", convertClass(double.class));
+	} else if (obj.getName().equals("java.lang.Float")) {
+	    return String.format("Null<%s>", convertClass(float.class));
+	} else if (obj.getName().equals("java.lang.Integerr")) {
+	    return String.format("Null<%s>", convertClass(int.class));
+	} else if (obj.getName().equals("java.lang.Long")) {
+	    return String.format("Null<%s>", convertClass(long.class));
+	} else if (obj.getName().equals("java.lang.Short")) {
+	    return String.format("Null<%s>", convertClass(short.class));
 	} else if (obj.getName().equals("java.lang.Object")) {
 
 	    // Delegate the conversion to the specialized method.
@@ -258,8 +280,9 @@ public abstract class TypeDefinition {
 	for (int i = 0; i < paramTypes.length; i++) {
 	    String name = (methodDocs != null) ? methodDocs.getParameters()
 		    .get(i).getName() : String.format("arg%d", i);
-	    params[i] = String
-		    .format("%s:%s", name, convertType(paramTypes[i]));
+	    params[i] = String.format("%s:%s",
+		    Utils.isHaxeKeyword(name) ? String.format("_%s", name)
+			    : name, convertType(paramTypes[i]));
 	}
 
 	return String.format("(%s)", StringUtils.join(params, ", "));
@@ -268,7 +291,9 @@ public abstract class TypeDefinition {
     /**
      * 
      */
-    protected String convertConstructor(Constructor<?> ctor) {
+    protected String convertConstructor(Constructor<?> ctor, boolean overload) {
+	JavaMethod ctorDocs = getConstructorDocumentation(ctor);
+
 	StringBuilder typeArgs = new StringBuilder();
 	if (ctor.getTypeParameters().length > 0) {
 	    // NOTE:
@@ -285,14 +310,24 @@ public abstract class TypeDefinition {
 	    typeArgs.append(">");
 	}
 
-	return String.format("%s%s:Void", typeArgs,
-		convertParams(ctor.getGenericParameterTypes(), null));
+	if (overload) {
+	    return String.format(
+		    "/*@@@ modifiers=%d */ @:overload(function %s%s:Void {})",
+		    ctor.getModifiers(), typeArgs,
+		    convertParams(ctor.getGenericParameterTypes(), ctorDocs));
+	}
+
+	return String.format("/*@@@ modifiers=%d */ %s function new%s%s:Void;",
+		ctor.getModifiers(), Utils.isPublic(ctor) ? "public"
+			: "private", typeArgs,
+		convertParams(ctor.getGenericParameterTypes(), ctorDocs));
     }
 
     /**
      * 
      */
-    protected String convertMethod(Method method) {
+    protected String convertMethod(Method method, boolean override,
+	    boolean overload) {
 	JavaMethod methodDocs = getMethodDocumentation(method);
 
 	StringBuilder typeArgs = new StringBuilder();
@@ -311,7 +346,25 @@ public abstract class TypeDefinition {
 	    typeArgs.append(">");
 	}
 
-	return String.format("%s%s%s:%s", method.getName(), typeArgs,
+	if (overload) {
+	    return String
+		    .format("/*@@@ modifiers=%d */ @:overload(function %s%s:%s {})",
+			    method.getModifiers(),
+			    typeArgs,
+			    convertParams(method.getGenericParameterTypes(),
+				    methodDocs), convertType(method
+				    .getGenericReturnType()));
+	}
+
+	boolean isPublic = Utils.isPublic(method)
+		|| (!Utils.isStatic(method) && Pattern.matches(
+			"clone|equals|finalize", method.getName()));
+
+	return String.format(
+		"/*@@@ modifiers=%d */ %s%s%s function %s%s%s:%s;", method
+			.getModifiers(), override ? "override " : "", Utils
+			.isStatic(method) ? "static " : "", isPublic ? "public"
+			: "private", method.getName(), typeArgs,
 		convertParams(method.getGenericParameterTypes(), methodDocs),
 		convertType(method.getGenericReturnType()));
     }
@@ -340,15 +393,31 @@ public abstract class TypeDefinition {
     /**
      * 
      */
-    protected void writeComment(PrintWriter writer) {
-
+    public String getComment() {
+	String packageName = classObject.getPackage().getName()
+		.replace(".", "/");
+	String name = Utils.getClassName(classObject).replace("$", ".");
+	return String.format("%s/%s/%s.html", docsBaseUrl, packageName, name);
     }
 
     /**
      * 
      */
-    protected void writeComment(Member member, PrintWriter writer) {
+    public String getComment(Member member) {
+	if (member instanceof Method || member instanceof Constructor<?>) {
+	    String desc = member.toString();
+	    desc = desc.substring(desc.indexOf(member.getName()));
+	    if (member instanceof Constructor<?>) {
+		desc = desc.substring(classObject.getPackage().getName()
+			.length() + 1);
+	    }
+	    desc = desc.substring(0, desc.indexOf(")") + 1);
+	    desc = desc.replace(",", ", ");
 
+	    return String.format("%s#%s", getComment(), desc);
+	}
+
+	return String.format("%s#%s", getComment(), member.getName());
     }
 
     /**
@@ -371,7 +440,7 @@ public abstract class TypeDefinition {
     protected JavaMethod getMethodDocumentation(Method method) {
 	if (classDocs == null)
 	    return null;
-	
+
 	// Get a description of each parameter. Modify the dimension of varargs
 	// to be 0 for compatibility with QDox.
 	//
@@ -393,11 +462,12 @@ public abstract class TypeDefinition {
 	List<JavaMethod> candidates = classDocs.getMethods(true);
 
 	for (JavaMethod candidate : candidates) {
-	    // Compare names, static modifier and make sure the numbers of type
-	    // parameters and arguments match.
+	    // Ignore constructs, compare names, static modifier and make sure
+	    // the numbers of type parameters and arguments match.
 	    //
 
-	    if (!candidate.getName().equals(method.getName())
+	    if (candidate.isConstructor()
+		    || !candidate.getName().equals(method.getName())
 		    || candidate.isStatic() != Utils.isStatic(method)
 		    || candidate.getTypeParameters().size() != method
 			    .getTypeParameters().length
@@ -454,6 +524,80 @@ public abstract class TypeDefinition {
     /**
      * 
      */
+    public JavaMethod getConstructorDocumentation(Constructor<?> ctor) {
+	if (classDocs == null)
+	    return null;
+
+	// Get a description of each parameter. Modify the dimension of varargs
+	// to be 0 for compatibility with QDox.
+	//
+
+	List<com.thoughtworks.qdox.model.Type> types = new ArrayList<com.thoughtworks.qdox.model.Type>();
+	for (Type type : ctor.getGenericParameterTypes())
+	    types.add(getTypeDescription(type, 0));
+
+	if (ctor.isVarArgs()) {
+	    types.add(new com.thoughtworks.qdox.model.Type(types.get(
+		    types.size() - 1).getFullyQualifiedName(), 0));
+	    types.remove(types.size() - 2);
+	}
+
+	// Get a list of all QDox candidates to check.
+	//
+
+	List<JavaMethod> candidates = classDocs.getMethods(true);
+
+	for (JavaMethod candidate : candidates) {
+	    if (!candidate.isConstructor()
+		    || candidate.getTypeParameters().size() != ctor
+			    .getTypeParameters().length
+		    || candidate.getParameterTypes().size() != ctor
+			    .getGenericParameterTypes().length)
+		continue;
+
+	    // Check if the type parameters are the same.
+	    //
+
+	    boolean found = false;
+
+	    for (int i = 0; i < ctor.getTypeParameters().length; i++) {
+		if (!ctor.getTypeParameters()[i].getName().equals(
+			candidate.getTypeParameters().get(i).getName())) {
+		    found = true;
+		    break;
+		}
+
+	    }
+
+	    if (found)
+		continue;
+
+	    // Check if the argument types are the same.
+	    //
+
+	    for (int i = 0; i < candidate.getParameterTypes().size(); i++) {
+		if (!types
+			.get(i)
+			.getFullyQualifiedName()
+			.equals(candidate.getParameterTypes().get(i)
+				.getFullyQualifiedName())
+			|| types.get(i).getDimensions() != candidate
+				.getParameterTypes().get(i).getDimensions()) {
+		    found = true;
+		    break;
+		}
+	    }
+
+	    return candidate;
+	}
+
+	return null;
+
+    }
+
+    /**
+     * 
+     */
     protected static com.thoughtworks.qdox.model.Type getTypeDescription(
 	    Type type, int inputDimension) {
 
@@ -471,7 +615,7 @@ public abstract class TypeDefinition {
 		    inputDimension + 1);
 	}
 
-	// Wildcard type won't occur so assume Class<?>
+	// Wildcard constraints won't occur so assume Class<?>
 	//
 
 	Class<?> classObj = (Class<?>) type;

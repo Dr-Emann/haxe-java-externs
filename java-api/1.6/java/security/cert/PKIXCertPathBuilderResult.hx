@@ -12,16 +12,13 @@ import java.security.cert.TrustAnchor;
 extern class PKIXCertPathBuilderResult extends PKIXCertPathValidatorResult, implements CertPathBuilderResult
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXCertPathBuilderResult.html#PKIXCertPathBuilderResult(java.security.cert.CertPath, java.security.cert.TrustAnchor, java.security.cert.PolicyNode, java.security.PublicKey) */
-	public function new(certPath:CertPath, trustAnchor:TrustAnchor, policyTree:PolicyNode, subjectPublicKey:PublicKey):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXCertPathBuilderResult.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ public function new(certPath:CertPath, trustAnchor:TrustAnchor, policyTree:PolicyNode, subjectPublicKey:PublicKey):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXCertPathBuilderResult.html#getCertPath() */
-	public function getCertPath():CertPath;
+	/*@@@ modifiers=1 */ public function getCertPath():CertPath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXCertPathBuilderResult.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -11,40 +11,40 @@ import java.beans.PropertyChangeListener;
 extern interface PropertyEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#getAsText() */
-	public function getAsText():String;
+	/*@@@ modifiers=1025 */ public function getAsText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#getCustomEditor() */
-	public function getCustomEditor():Component;
+	/*@@@ modifiers=1025 */ public function getCustomEditor():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#getJavaInitializationString() */
-	public function getJavaInitializationString():String;
+	/*@@@ modifiers=1025 */ public function getJavaInitializationString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#getTags() */
-	public function getTags():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getTags():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1025 */ public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#isPaintable() */
-	public function isPaintable():Bool;
+	/*@@@ modifiers=1025 */ public function isPaintable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#paintValue(java.awt.Graphics, java.awt.Rectangle) */
-	public function paintValue(gfx:Graphics, box:Rectangle):Void;
+	/*@@@ modifiers=1025 */ public function paintValue(gfx:Graphics, box:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#setAsText(java.lang.String) */
-	public function setAsText(text:String):Void;
+	/*@@@ modifiers=1025 */ public function setAsText(text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#setValue(java.lang.Object) */
-	public function setValue(value:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function setValue(value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditor.html#supportsCustomEditor() */
-	public function supportsCustomEditor():Bool;
+	/*@@@ modifiers=1025 */ public function supportsCustomEditor():Bool;
 
 }
 

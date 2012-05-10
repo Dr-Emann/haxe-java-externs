@@ -9,10 +9,10 @@ import java.util.spi.LocaleServiceProvider;
 extern class DecimalFormatSymbolsProvider extends LocaleServiceProvider
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/spi/DecimalFormatSymbolsProvider.html#DecimalFormatSymbolsProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/spi/DecimalFormatSymbolsProvider.html#getInstance(java.util.Locale) */
-	public function getInstance(locale:Locale):DecimalFormatSymbols;
+	/*@@@ modifiers=1025 */ public function getInstance(locale:Locale):DecimalFormatSymbols;
 
 }
 

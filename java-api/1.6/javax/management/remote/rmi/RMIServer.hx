@@ -8,10 +8,10 @@ import javax.management.remote.rmi.RMIConnection;
 extern interface RMIServer implements Remote
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServer.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1025 */ public function getVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServer.html#newClient(java.lang.Object) */
-	public function newClient(credentials:Dynamic):RMIConnection;
+	/*@@@ modifiers=1025 */ public function newClient(credentials:Dynamic):RMIConnection;
 
 }
 

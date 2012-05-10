@@ -11,10 +11,10 @@ import javax.lang.model.SourceVersion;
 extern interface Tool
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/Tool.html#getSourceVersions() */
-	public function getSourceVersions():Set<SourceVersion>;
+	/*@@@ modifiers=1025 */ public function getSourceVersions():Set<SourceVersion>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/Tool.html#run(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String[]) */
-	public function run(_in:InputStream, out:OutputStream, err:OutputStream, arguments:NativeArray<String>):Int;
+	/*@@@ modifiers=1153 */ public function run(_in:InputStream, out:OutputStream, err:OutputStream, arguments:NativeArray<String>):Int;
 
 }
 

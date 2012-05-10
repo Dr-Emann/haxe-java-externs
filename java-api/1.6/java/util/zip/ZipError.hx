@@ -7,7 +7,7 @@ import java.lang.InternalError;
 extern class ZipError extends InternalError
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipError.html#ZipError(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

@@ -10,12 +10,12 @@ import javax.sound.sampled.DataLine;
 extern interface TargetDataLine implements DataLine
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat, int) */
-	@:overload(function (format:AudioFormat, bufferSize:Int):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (format:AudioFormat, bufferSize:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat) */
-	public function open(format:AudioFormat):Void;
+	/*@@@ modifiers=1025 */ public function open(format:AudioFormat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/TargetDataLine.html#read(byte[], int, int) */
-	public function read(b:NativeArray<Int8>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1025 */ public function read(b:NativeArray<Int8>, off:Int, len:Int):Int;
 
 }
 

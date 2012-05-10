@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface AWTEventListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent) */
-	public function eventDispatched(event:AWTEvent):Void;
+	/*@@@ modifiers=1025 */ public function eventDispatched(event:AWTEvent):Void;
 
 }
 

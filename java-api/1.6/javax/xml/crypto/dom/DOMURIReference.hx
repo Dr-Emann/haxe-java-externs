@@ -8,7 +8,7 @@ import org.w3c.dom.Node;
 extern interface DOMURIReference implements URIReference
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dom/DOMURIReference.html#getHere() */
-	public function getHere():Node;
+	/*@@@ modifiers=1025 */ public function getHere():Node;
 
 }
 

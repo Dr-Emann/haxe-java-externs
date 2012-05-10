@@ -20,41 +20,41 @@ extern class AbstractAction extends Object, implements Action, implements Clonea
 	private var changeSupport:SwingPropertyChangeSupport;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#AbstractAction() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#AbstractAction(java.lang.String, javax.swing.Icon) */
-	@:overload(function (name:String, icon:Icon):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, icon:Icon):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#AbstractAction(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=33 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=4 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#getKeys() */
-	public function getKeys():NativeArray<Dynamic>;
+	/*@@@ modifiers=1 */ public function getKeys():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#getPropertyChangeListeners() */
-	public function getPropertyChangeListeners():NativeArray<PropertyChangeListener>;
+	/*@@@ modifiers=33 */ public function getPropertyChangeListeners():NativeArray<PropertyChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#getValue(java.lang.String) */
-	public function getValue(key:String):Dynamic;
+	/*@@@ modifiers=1 */ public function getValue(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#isEnabled() */
-	public function isEnabled():Bool;
+	/*@@@ modifiers=1 */ public function isEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#putValue(java.lang.String, java.lang.Object) */
-	public function putValue(key:String, newValue:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function putValue(key:String, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=33 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#setEnabled(boolean) */
-	public function setEnabled(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setEnabled(newValue:Bool):Void;
 
 }
 

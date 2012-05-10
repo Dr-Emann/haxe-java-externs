@@ -25,85 +25,85 @@ import java.sql.Timestamp;
 extern interface SQLOutput
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeArray(java.sql.Array) */
-	public function writeArray(x:Array):Void;
+	/*@@@ modifiers=1025 */ public function writeArray(x:Array):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeAsciiStream(java.io.InputStream) */
-	public function writeAsciiStream(x:InputStream):Void;
+	/*@@@ modifiers=1025 */ public function writeAsciiStream(x:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeBigDecimal(java.math.BigDecimal) */
-	public function writeBigDecimal(x:BigDecimal):Void;
+	/*@@@ modifiers=1025 */ public function writeBigDecimal(x:BigDecimal):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeBinaryStream(java.io.InputStream) */
-	public function writeBinaryStream(x:InputStream):Void;
+	/*@@@ modifiers=1025 */ public function writeBinaryStream(x:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeBlob(java.sql.Blob) */
-	public function writeBlob(x:Blob):Void;
+	/*@@@ modifiers=1025 */ public function writeBlob(x:Blob):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeBoolean(boolean) */
-	public function writeBoolean(x:Bool):Void;
+	/*@@@ modifiers=1025 */ public function writeBoolean(x:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeByte(byte) */
-	public function writeByte(x:Int8):Void;
+	/*@@@ modifiers=1025 */ public function writeByte(x:Int8):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeBytes(byte[]) */
-	public function writeBytes(x:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1025 */ public function writeBytes(x:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeCharacterStream(java.io.Reader) */
-	public function writeCharacterStream(x:Reader):Void;
+	/*@@@ modifiers=1025 */ public function writeCharacterStream(x:Reader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeClob(java.sql.Clob) */
-	public function writeClob(x:Clob):Void;
+	/*@@@ modifiers=1025 */ public function writeClob(x:Clob):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeDate(java.sql.Date) */
-	public function writeDate(x:Date):Void;
+	/*@@@ modifiers=1025 */ public function writeDate(x:Date):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeDouble(double) */
-	public function writeDouble(x:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function writeDouble(x:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeFloat(float) */
-	public function writeFloat(x:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function writeFloat(x:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeInt(int) */
-	public function writeInt(x:Int):Void;
+	/*@@@ modifiers=1025 */ public function writeInt(x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeLong(long) */
-	public function writeLong(x:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function writeLong(x:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeNClob(java.sql.NClob) */
-	public function writeNClob(x:NClob):Void;
+	/*@@@ modifiers=1025 */ public function writeNClob(x:NClob):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeNString(java.lang.String) */
-	public function writeNString(x:String):Void;
+	/*@@@ modifiers=1025 */ public function writeNString(x:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeObject(java.sql.SQLData) */
-	public function writeObject(x:SQLData):Void;
+	/*@@@ modifiers=1025 */ public function writeObject(x:SQLData):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeRef(java.sql.Ref) */
-	public function writeRef(x:Ref):Void;
+	/*@@@ modifiers=1025 */ public function writeRef(x:Ref):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeRowId(java.sql.RowId) */
-	public function writeRowId(x:RowId):Void;
+	/*@@@ modifiers=1025 */ public function writeRowId(x:RowId):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeSQLXML(java.sql.SQLXML) */
-	public function writeSQLXML(x:SQLXML):Void;
+	/*@@@ modifiers=1025 */ public function writeSQLXML(x:SQLXML):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeShort(short) */
-	public function writeShort(x:Int16):Void;
+	/*@@@ modifiers=1025 */ public function writeShort(x:Int16):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeString(java.lang.String) */
-	public function writeString(x:String):Void;
+	/*@@@ modifiers=1025 */ public function writeString(x:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeStruct(java.sql.Struct) */
-	public function writeStruct(x:Struct):Void;
+	/*@@@ modifiers=1025 */ public function writeStruct(x:Struct):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeTime(java.sql.Time) */
-	public function writeTime(x:Time):Void;
+	/*@@@ modifiers=1025 */ public function writeTime(x:Time):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeTimestamp(java.sql.Timestamp) */
-	public function writeTimestamp(x:Timestamp):Void;
+	/*@@@ modifiers=1025 */ public function writeTimestamp(x:Timestamp):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLOutput.html#writeURL(java.net.URL) */
-	public function writeURL(x:URL):Void;
+	/*@@@ modifiers=1025 */ public function writeURL(x:URL):Void;
 
 }
 

@@ -14,10 +14,10 @@ extern class RowSorterEvent_Type extends Enum<RowSorterEvent_Type>
 	public static var SORTED:RowSorterEvent_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/RowSorterEvent.Type.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):RowSorterEvent_Type;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):RowSorterEvent_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/RowSorterEvent.Type.html#values() */
-	static public function values():NativeArray<RowSorterEvent_Type>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<RowSorterEvent_Type>;
 
 }
 

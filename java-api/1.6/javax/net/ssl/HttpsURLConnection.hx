@@ -16,46 +16,46 @@ extern class HttpsURLConnection extends HttpURLConnection
 	private var hostnameVerifier:HostnameVerifier;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#HttpsURLConnection(java.net.URL) */
-	private function new(arg0:URL):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getCipherSuite() */
-	public function getCipherSuite():String;
+	/*@@@ modifiers=1025 */ public function getCipherSuite():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier() */
-	static public function getDefaultHostnameVerifier():HostnameVerifier;
+	/*@@@ modifiers=9 */ static public function getDefaultHostnameVerifier():HostnameVerifier;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory() */
-	static public function getDefaultSSLSocketFactory():SSLSocketFactory;
+	/*@@@ modifiers=9 */ static public function getDefaultSSLSocketFactory():SSLSocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier() */
-	public function getHostnameVerifier():HostnameVerifier;
+	/*@@@ modifiers=1 */ public function getHostnameVerifier():HostnameVerifier;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates() */
-	public function getLocalCertificates():NativeArray<Certificate>;
+	/*@@@ modifiers=1025 */ public function getLocalCertificates():NativeArray<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal() */
-	public function getLocalPrincipal():Principal;
+	/*@@@ modifiers=1 */ public function getLocalPrincipal():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal() */
-	public function getPeerPrincipal():Principal;
+	/*@@@ modifiers=1 */ public function getPeerPrincipal():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory() */
-	public function getSSLSocketFactory():SSLSocketFactory;
+	/*@@@ modifiers=1 */ public function getSSLSocketFactory():SSLSocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#getServerCertificates() */
-	public function getServerCertificates():NativeArray<Certificate>;
+	/*@@@ modifiers=1025 */ public function getServerCertificates():NativeArray<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier) */
-	static public function setDefaultHostnameVerifier(arg0:HostnameVerifier):Void;
+	/*@@@ modifiers=9 */ static public function setDefaultHostnameVerifier(arg0:HostnameVerifier):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory) */
-	static public function setDefaultSSLSocketFactory(arg0:SSLSocketFactory):Void;
+	/*@@@ modifiers=9 */ static public function setDefaultSSLSocketFactory(arg0:SSLSocketFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier) */
-	public function setHostnameVerifier(arg0:HostnameVerifier):Void;
+	/*@@@ modifiers=1 */ public function setHostnameVerifier(arg0:HostnameVerifier):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory) */
-	public function setSSLSocketFactory(arg0:SSLSocketFactory):Void;
+	/*@@@ modifiers=1 */ public function setSSLSocketFactory(arg0:SSLSocketFactory):Void;
 
 }
 

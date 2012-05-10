@@ -9,9 +9,9 @@ extern class ParserFactory extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/helpers/ParserFactory.html#makeParser(java.lang.String) */
-	@:overload(function (className:String):Parser {})
+	/*@@@ modifiers=9 */ @:overload(function (className:String):Parser {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/helpers/ParserFactory.html#makeParser() */
-	static public function makeParser():Parser;
+	/*@@@ modifiers=9 */ static public function makeParser():Parser;
 
 }
 

@@ -7,7 +7,7 @@ import javax.print.DocFlavor;
 extern class DocFlavor_STRING extends DocFlavor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.STRING.html#DocFlavor$STRING(java.lang.String) */
-	public function new(mimeType:String):Void;
+	/*@@@ modifiers=1 */ public function new(mimeType:String):Void;
 
 }
 

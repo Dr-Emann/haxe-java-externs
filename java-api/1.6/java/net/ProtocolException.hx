@@ -7,9 +7,9 @@ import java.io.IOException;
 extern class ProtocolException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProtocolException.html#ProtocolException(java.lang.String) */
-	@:overload(function (host:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ProtocolException.html#ProtocolException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

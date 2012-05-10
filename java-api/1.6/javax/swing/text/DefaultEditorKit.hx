@@ -160,32 +160,32 @@ extern class DefaultEditorKit extends EditorKit
 	public static var defaultKeyTypedAction:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#DefaultEditorKit() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#createCaret() */
-	override public function createCaret():Caret;
+	/*@@@ modifiers=1 */ override public function createCaret():Caret;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#createDefaultDocument() */
-	override public function createDefaultDocument():Document;
+	/*@@@ modifiers=1 */ override public function createDefaultDocument():Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#getActions() */
-	override public function getActions():NativeArray<Action>;
+	/*@@@ modifiers=1 */ override public function getActions():NativeArray<Action>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#getContentType() */
-	override public function getContentType():String;
+	/*@@@ modifiers=1 */ override public function getContentType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#getViewFactory() */
-	override public function getViewFactory():ViewFactory;
+	/*@@@ modifiers=1 */ override public function getViewFactory():ViewFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#read(java.io.InputStream, javax.swing.text.Document, int) */
-	@:overload(function (_in:InputStream, doc:Document, pos:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, doc:Document, pos:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#read(java.io.Reader, javax.swing.text.Document, int) */
-	override public function read(_in:Reader, doc:Document, pos:Int):Void;
+	/*@@@ modifiers=1 */ override public function read(_in:Reader, doc:Document, pos:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#write(java.io.OutputStream, javax.swing.text.Document, int, int) */
-	@:overload(function (out:OutputStream, doc:Document, pos:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (out:OutputStream, doc:Document, pos:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultEditorKit.html#write(java.io.Writer, javax.swing.text.Document, int, int) */
-	override public function write(out:Writer, doc:Document, pos:Int, len:Int):Void;
+	/*@@@ modifiers=1 */ override public function write(out:Writer, doc:Document, pos:Int, len:Int):Void;
 
 }
 

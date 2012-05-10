@@ -10,13 +10,13 @@ import javax.management.NotificationListener;
 extern interface NotificationBroadcaster
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationBroadcaster.html#addNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) */
-	public function addNotificationListener(listener:NotificationListener, filter:NotificationFilter, handback:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function addNotificationListener(listener:NotificationListener, filter:NotificationFilter, handback:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationBroadcaster.html#getNotificationInfo() */
-	public function getNotificationInfo():NativeArray<MBeanNotificationInfo>;
+	/*@@@ modifiers=1025 */ public function getNotificationInfo():NativeArray<MBeanNotificationInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationBroadcaster.html#removeNotificationListener(javax.management.NotificationListener) */
-	public function removeNotificationListener(listener:NotificationListener):Void;
+	/*@@@ modifiers=1025 */ public function removeNotificationListener(listener:NotificationListener):Void;
 
 }
 

@@ -10,16 +10,16 @@ import javax.activation.DataHandler;
 extern class AttachmentUnmarshaller extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/attachment/AttachmentUnmarshaller.html#AttachmentUnmarshaller() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/attachment/AttachmentUnmarshaller.html#getAttachmentAsByteArray(java.lang.String) */
-	public function getAttachmentAsByteArray(cid:String):NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getAttachmentAsByteArray(cid:String):NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/attachment/AttachmentUnmarshaller.html#getAttachmentAsDataHandler(java.lang.String) */
-	public function getAttachmentAsDataHandler(cid:String):DataHandler;
+	/*@@@ modifiers=1025 */ public function getAttachmentAsDataHandler(cid:String):DataHandler;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/attachment/AttachmentUnmarshaller.html#isXOPPackage() */
-	public function isXOPPackage():Bool;
+	/*@@@ modifiers=1 */ public function isXOPPackage():Bool;
 
 }
 

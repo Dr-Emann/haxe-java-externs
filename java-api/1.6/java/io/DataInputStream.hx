@@ -12,58 +12,58 @@ import java.lang.Number;
 extern class DataInputStream extends FilterInputStream, implements DataInput
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#DataInputStream(java.io.InputStream) */
-	public function new(_in:InputStream):Void;
+	/*@@@ modifiers=1 */ public function new(_in:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#read(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/*@@@ modifiers=17 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#read(byte[]) */
-	override public function read(b:NativeArray<Int8>):Int;
+	/*@@@ modifiers=17 */ override public function read(b:NativeArray<Int8>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readBoolean() */
-	public function readBoolean():Bool;
+	/*@@@ modifiers=17 */ public function readBoolean():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readByte() */
-	public function readByte():Int8;
+	/*@@@ modifiers=17 */ public function readByte():Int8;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readChar() */
-	public function readChar():Char16;
+	/*@@@ modifiers=17 */ public function readChar():Char16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readDouble() */
-	public function readDouble():StdFloat;
+	/*@@@ modifiers=17 */ public function readDouble():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readFloat() */
-	public function readFloat():StdFloat;
+	/*@@@ modifiers=17 */ public function readFloat():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readFully(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=17 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readFully(byte[]) */
-	public function readFully(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=17 */ public function readFully(b:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readInt() */
-	public function readInt():Int;
+	/*@@@ modifiers=17 */ public function readInt():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readLine() */
-	public function readLine():String;
+	/*@@@ modifiers=17 */ public function readLine():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readLong() */
-	public function readLong():haxe.Int64;
+	/*@@@ modifiers=17 */ public function readLong():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readShort() */
-	public function readShort():Int16;
+	/*@@@ modifiers=17 */ public function readShort():Int16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readUTF() */
-	@:overload(function ():String {})
+	/*@@@ modifiers=17 */ @:overload(function ():String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readUTF(java.io.DataInput) */
-	static public function readUTF(_in:DataInput):String;
+	/*@@@ modifiers=25 */ static public function readUTF(_in:DataInput):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readUnsignedByte() */
-	public function readUnsignedByte():Int;
+	/*@@@ modifiers=17 */ public function readUnsignedByte():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#readUnsignedShort() */
-	public function readUnsignedShort():Int;
+	/*@@@ modifiers=17 */ public function readUnsignedShort():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataInputStream.html#skipBytes(int) */
-	public function skipBytes(n:Int):Int;
+	/*@@@ modifiers=17 */ public function skipBytes(n:Int):Int;
 
 }
 

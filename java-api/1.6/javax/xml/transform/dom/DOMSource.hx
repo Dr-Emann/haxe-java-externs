@@ -9,23 +9,23 @@ import org.w3c.dom.Node;
 extern class DOMSource extends Object, implements Source
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#DOMSource() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#DOMSource(org.w3c.dom.Node) */
-	@:overload(function (n:Node):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (n:Node):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#DOMSource(org.w3c.dom.Node, java.lang.String) */
-	public function new(node:Node, systemID:String):Void;
+	/*@@@ modifiers=1 */ public function new(node:Node, systemID:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#getNode() */
-	public function getNode():Node;
+	/*@@@ modifiers=1 */ public function getNode():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#setNode(org.w3c.dom.Node) */
-	public function setNode(node:Node):Void;
+	/*@@@ modifiers=1 */ public function setNode(node:Node):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMSource.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemID:String):Void;
+	/*@@@ modifiers=1 */ public function setSystemId(systemID:String):Void;
 
 }
 

@@ -8,7 +8,7 @@ import java.lang.annotation.RetentionPolicy;
 extern interface Retention implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Retention.html#value() */
-	public function value():RetentionPolicy;
+	/*@@@ modifiers=1025 */ public function value():RetentionPolicy;
 
 }
 

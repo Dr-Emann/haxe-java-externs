@@ -15,52 +15,52 @@ import javax.swing.text.ViewFactory;
 extern class LabelView extends GlyphView, implements TabableView
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#LabelView(javax.swing.text.Element) */
-	public function new(elem:Element):Void;
+	/*@@@ modifiers=1 */ public function new(elem:Element):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory) */
-	override public function changedUpdate(e:DocumentEvent, a:Shape, f:ViewFactory):Void;
+	/*@@@ modifiers=1 */ override public function changedUpdate(e:DocumentEvent, a:Shape, f:ViewFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#getBackground() */
-	override public function getBackground():Color;
+	/*@@@ modifiers=1 */ override public function getBackground():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#getFont() */
-	override public function getFont():Font;
+	/*@@@ modifiers=1 */ override public function getFont():Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#getFontMetrics() */
-	private function getFontMetrics():FontMetrics;
+	/*@@@ modifiers=4 */ private function getFontMetrics():FontMetrics;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#getForeground() */
-	override public function getForeground():Color;
+	/*@@@ modifiers=1 */ override public function getForeground():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#isStrikeThrough() */
-	override public function isStrikeThrough():Bool;
+	/*@@@ modifiers=1 */ override public function isStrikeThrough():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#isSubscript() */
-	override public function isSubscript():Bool;
+	/*@@@ modifiers=1 */ override public function isSubscript():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#isSuperscript() */
-	override public function isSuperscript():Bool;
+	/*@@@ modifiers=1 */ override public function isSuperscript():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#isUnderline() */
-	override public function isUnderline():Bool;
+	/*@@@ modifiers=1 */ override public function isUnderline():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#setBackground(java.awt.Color) */
-	private function setBackground(bg:Color):Void;
+	/*@@@ modifiers=4 */ private function setBackground(bg:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#setPropertiesFromAttributes() */
-	private function setPropertiesFromAttributes():Void;
+	/*@@@ modifiers=4 */ private function setPropertiesFromAttributes():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#setStrikeThrough(boolean) */
-	private function setStrikeThrough(s:Bool):Void;
+	/*@@@ modifiers=4 */ private function setStrikeThrough(s:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#setSubscript(boolean) */
-	private function setSubscript(s:Bool):Void;
+	/*@@@ modifiers=4 */ private function setSubscript(s:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#setSuperscript(boolean) */
-	private function setSuperscript(s:Bool):Void;
+	/*@@@ modifiers=4 */ private function setSuperscript(s:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/LabelView.html#setUnderline(boolean) */
-	private function setUnderline(u:Bool):Void;
+	/*@@@ modifiers=4 */ private function setUnderline(u:Bool):Void;
 
 }
 

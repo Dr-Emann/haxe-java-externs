@@ -8,7 +8,7 @@ import javax.lang.model.SourceVersion;
 extern interface SupportedSourceVersion implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/SupportedSourceVersion.html#value() */
-	public function value():SourceVersion;
+	/*@@@ modifiers=1025 */ public function value():SourceVersion;
 
 }
 

@@ -9,19 +9,19 @@ import javax.management.openmbean.CompositeData;
 extern class MemoryNotificationInfo extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryNotificationInfo.html#MemoryNotificationInfo(java.lang.String, java.lang.management.MemoryUsage, long) */
-	public function new(poolName:String, usage:MemoryUsage, count:haxe.Int64):Void;
+	/*@@@ modifiers=1 */ public function new(poolName:String, usage:MemoryUsage, count:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryNotificationInfo.html#from(javax.management.openmbean.CompositeData) */
-	static public function from(cd:CompositeData):MemoryNotificationInfo;
+	/*@@@ modifiers=9 */ static public function from(cd:CompositeData):MemoryNotificationInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryNotificationInfo.html#getCount() */
-	public function getCount():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getCount():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryNotificationInfo.html#getPoolName() */
-	public function getPoolName():String;
+	/*@@@ modifiers=1 */ public function getPoolName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryNotificationInfo.html#getUsage() */
-	public function getUsage():MemoryUsage;
+	/*@@@ modifiers=1 */ public function getUsage():MemoryUsage;
 
 }
 

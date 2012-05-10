@@ -9,13 +9,13 @@ import java.lang.Object;
 extern class MouseMotionAdapter extends Object, implements MouseMotionListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/MouseMotionAdapter.html#MouseMotionAdapter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/MouseMotionAdapter.html#mouseDragged(java.awt.event.MouseEvent) */
-	public function mouseDragged(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseDragged(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/MouseMotionAdapter.html#mouseMoved(java.awt.event.MouseEvent) */
-	public function mouseMoved(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseMoved(e:MouseEvent):Void;
 
 }
 

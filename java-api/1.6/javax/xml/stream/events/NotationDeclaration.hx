@@ -7,13 +7,13 @@ import javax.xml.stream.events.XMLEvent;
 extern interface NotationDeclaration implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/NotationDeclaration.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/NotationDeclaration.html#getPublicId() */
-	public function getPublicId():String;
+	/*@@@ modifiers=1025 */ public function getPublicId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/NotationDeclaration.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 }
 

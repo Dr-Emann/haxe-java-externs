@@ -9,10 +9,10 @@ import javax.lang.model.type.TypeMirror;
 extern interface TypeParameterElement implements Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeParameterElement.html#getBounds() */
-	public function getBounds():List<TypeMirror>;
+	/*@@@ modifiers=1025 */ public function getBounds():List<TypeMirror>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/TypeParameterElement.html#getGenericElement() */
-	public function getGenericElement():Element;
+	/*@@@ modifiers=1025 */ public function getGenericElement():Element;
 
 }
 

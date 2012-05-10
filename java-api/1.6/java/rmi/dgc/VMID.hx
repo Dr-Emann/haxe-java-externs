@@ -8,19 +8,19 @@ import java.lang.Object;
 extern class VMID extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/dgc/VMID.html#VMID() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/dgc/VMID.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/dgc/VMID.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/dgc/VMID.html#isUnique() */
-	static public function isUnique():Bool;
+	/*@@@ modifiers=9 */ static public function isUnique():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/dgc/VMID.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

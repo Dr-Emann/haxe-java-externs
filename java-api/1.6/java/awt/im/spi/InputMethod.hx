@@ -12,52 +12,52 @@ import java.util.Locale;
 extern interface InputMethod
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#activate() */
-	public function activate():Void;
+	/*@@@ modifiers=1025 */ public function activate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#deactivate(boolean) */
-	public function deactivate(isTemporary:Bool):Void;
+	/*@@@ modifiers=1025 */ public function deactivate(isTemporary:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#dispatchEvent(java.awt.AWTEvent) */
-	public function dispatchEvent(event:AWTEvent):Void;
+	/*@@@ modifiers=1025 */ public function dispatchEvent(event:AWTEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#dispose() */
-	public function dispose():Void;
+	/*@@@ modifiers=1025 */ public function dispose():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#endComposition() */
-	public function endComposition():Void;
+	/*@@@ modifiers=1025 */ public function endComposition():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#getControlObject() */
-	public function getControlObject():Dynamic;
+	/*@@@ modifiers=1025 */ public function getControlObject():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#getLocale() */
-	public function getLocale():Locale;
+	/*@@@ modifiers=1025 */ public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#hideWindows() */
-	public function hideWindows():Void;
+	/*@@@ modifiers=1025 */ public function hideWindows():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#isCompositionEnabled() */
-	public function isCompositionEnabled():Bool;
+	/*@@@ modifiers=1025 */ public function isCompositionEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#notifyClientWindowChange(java.awt.Rectangle) */
-	public function notifyClientWindowChange(bounds:Rectangle):Void;
+	/*@@@ modifiers=1025 */ public function notifyClientWindowChange(bounds:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#reconvert() */
-	public function reconvert():Void;
+	/*@@@ modifiers=1025 */ public function reconvert():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#removeNotify() */
-	public function removeNotify():Void;
+	/*@@@ modifiers=1025 */ public function removeNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#setCharacterSubsets(java.lang.Character$Subset[]) */
-	public function setCharacterSubsets(subsets:NativeArray<Character_Subset>):Void;
+	/*@@@ modifiers=1025 */ public function setCharacterSubsets(subsets:NativeArray<Character_Subset>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#setCompositionEnabled(boolean) */
-	public function setCompositionEnabled(enable:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setCompositionEnabled(enable:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#setInputMethodContext(java.awt.im.spi.InputMethodContext) */
-	public function setInputMethodContext(context:InputMethodContext):Void;
+	/*@@@ modifiers=1025 */ public function setInputMethodContext(context:InputMethodContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethod.html#setLocale(java.util.Locale) */
-	public function setLocale(locale:Locale):Bool;
+	/*@@@ modifiers=1025 */ public function setLocale(locale:Locale):Bool;
 
 }
 

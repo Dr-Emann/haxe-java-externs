@@ -12,21 +12,21 @@ import java.util.Map;
 extern class CookieManager extends CookieHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookieManager.html#CookieManager(java.net.CookieStore, java.net.CookiePolicy) */
-	@:overload(function (store:CookieStore, cookiePolicy:CookiePolicy):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (store:CookieStore, cookiePolicy:CookiePolicy):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookieManager.html#CookieManager() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookieManager.html#get(java.net.URI, java.util.Map) */
-	override public function get(uri:URI, requestHeaders:Map<String, List<String>>):Map<String, List<String>>;
+	/*@@@ modifiers=1 */ override public function get(uri:URI, requestHeaders:Map<String, List<String>>):Map<String, List<String>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookieManager.html#getCookieStore() */
-	public function getCookieStore():CookieStore;
+	/*@@@ modifiers=1 */ public function getCookieStore():CookieStore;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookieManager.html#put(java.net.URI, java.util.Map) */
-	override public function put(uri:URI, responseHeaders:Map<String, List<String>>):Void;
+	/*@@@ modifiers=1 */ override public function put(uri:URI, responseHeaders:Map<String, List<String>>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CookieManager.html#setCookiePolicy(java.net.CookiePolicy) */
-	public function setCookiePolicy(cookiePolicy:CookiePolicy):Void;
+	/*@@@ modifiers=1 */ public function setCookiePolicy(cookiePolicy:CookiePolicy):Void;
 
 }
 

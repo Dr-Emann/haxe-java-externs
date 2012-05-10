@@ -25,7 +25,7 @@ extern class VoiceStatus extends Object
 	public var volume:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/VoiceStatus.html#VoiceStatus() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

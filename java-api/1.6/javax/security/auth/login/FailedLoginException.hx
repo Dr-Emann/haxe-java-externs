@@ -7,9 +7,9 @@ import javax.security.auth.login.LoginException;
 extern class FailedLoginException extends LoginException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/FailedLoginException.html#FailedLoginException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/FailedLoginException.html#FailedLoginException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

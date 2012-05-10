@@ -6,7 +6,7 @@ package java.io;
 extern interface Flushable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Flushable.html#flush() */
-	public function flush():Void;
+	/*@@@ modifiers=1025 */ public function flush():Void;
 
 }
 

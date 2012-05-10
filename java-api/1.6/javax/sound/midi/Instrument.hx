@@ -10,10 +10,10 @@ import javax.sound.midi.SoundbankResource;
 extern class Instrument extends SoundbankResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Instrument.html#Instrument(javax.sound.midi.Soundbank, javax.sound.midi.Patch, java.lang.String, java.lang.Class) */
-	private function new(soundbank:Soundbank, patch:Patch, name:String, dataClass:Class<Dynamic>):Void;
+	/*@@@ modifiers=4 */ private function new(soundbank:Soundbank, patch:Patch, name:String, dataClass:Class<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Instrument.html#getPatch() */
-	public function getPatch():Patch;
+	/*@@@ modifiers=1 */ public function getPatch():Patch;
 
 }
 

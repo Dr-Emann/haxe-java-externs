@@ -7,16 +7,16 @@ import java.lang.Class;
 extern interface Member
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#getDeclaringClass() */
-	public function getDeclaringClass():Class<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getDeclaringClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#getModifiers() */
-	public function getModifiers():Int;
+	/*@@@ modifiers=1025 */ public function getModifiers():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Member.html#isSynthetic() */
-	public function isSynthetic():Bool;
+	/*@@@ modifiers=1025 */ public function isSynthetic():Bool;
 
 }
 

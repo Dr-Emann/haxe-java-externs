@@ -9,18 +9,18 @@ import javax.naming.directory.ModificationItem;
 extern class AttributeModificationException extends NamingException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/AttributeModificationException.html#AttributeModificationException(java.lang.String) */
-	@:overload(function (explanation:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (explanation:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/AttributeModificationException.html#AttributeModificationException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/AttributeModificationException.html#getUnexecutedModifications() */
-	public function getUnexecutedModifications():NativeArray<ModificationItem>;
+	/*@@@ modifiers=1 */ public function getUnexecutedModifications():NativeArray<ModificationItem>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/AttributeModificationException.html#setUnexecutedModifications(javax.naming.directory.ModificationItem[]) */
-	public function setUnexecutedModifications(e:NativeArray<ModificationItem>):Void;
+	/*@@@ modifiers=1 */ public function setUnexecutedModifications(e:NativeArray<ModificationItem>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/AttributeModificationException.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

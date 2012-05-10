@@ -8,31 +8,31 @@ import javax.accessibility.AccessibleAction;
 extern class AccessibleHyperlink extends Object, implements AccessibleAction
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#AccessibleHyperlink() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#doAccessibleAction(int) */
-	public function doAccessibleAction(i:Int):Bool;
+	/*@@@ modifiers=1025 */ public function doAccessibleAction(i:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionAnchor(int) */
-	public function getAccessibleActionAnchor(i:Int):Dynamic;
+	/*@@@ modifiers=1025 */ public function getAccessibleActionAnchor(i:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionCount() */
-	public function getAccessibleActionCount():Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleActionCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionDescription(int) */
-	public function getAccessibleActionDescription(i:Int):String;
+	/*@@@ modifiers=1025 */ public function getAccessibleActionDescription(i:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionObject(int) */
-	public function getAccessibleActionObject(i:Int):Dynamic;
+	/*@@@ modifiers=1025 */ public function getAccessibleActionObject(i:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#getEndIndex() */
-	public function getEndIndex():Int;
+	/*@@@ modifiers=1025 */ public function getEndIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#getStartIndex() */
-	public function getStartIndex():Int;
+	/*@@@ modifiers=1025 */ public function getStartIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHyperlink.html#isValid() */
-	public function isValid():Bool;
+	/*@@@ modifiers=1025 */ public function isValid():Bool;
 
 }
 

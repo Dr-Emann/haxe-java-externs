@@ -7,21 +7,21 @@ import java.lang.Exception;
 extern class URISyntaxException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html#URISyntaxException(java.lang.String, java.lang.String, int) */
-	@:overload(function (input:String, reason:String, index:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (input:String, reason:String, index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html#URISyntaxException(java.lang.String, java.lang.String) */
-	public function new(input:String, reason:String):Void;
+	/*@@@ modifiers=1 */ public function new(input:String, reason:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html#getIndex() */
-	public function getIndex():Int;
+	/*@@@ modifiers=1 */ public function getIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html#getInput() */
-	public function getInput():String;
+	/*@@@ modifiers=1 */ public function getInput():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html#getReason() */
-	public function getReason():String;
+	/*@@@ modifiers=1 */ public function getReason():String;
 
 }
 

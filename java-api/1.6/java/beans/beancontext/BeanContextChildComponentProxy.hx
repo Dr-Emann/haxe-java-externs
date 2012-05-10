@@ -7,7 +7,7 @@ import java.awt.Component;
 extern interface BeanContextChildComponentProxy
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildComponentProxy.html#getComponent() */
-	public function getComponent():Component;
+	/*@@@ modifiers=1025 */ public function getComponent():Component;
 
 }
 

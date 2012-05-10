@@ -8,7 +8,7 @@ extern class CodingErrorAction extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CodingErrorAction.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

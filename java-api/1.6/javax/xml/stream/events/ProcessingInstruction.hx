@@ -7,10 +7,10 @@ import javax.xml.stream.events.XMLEvent;
 extern interface ProcessingInstruction implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/ProcessingInstruction.html#getData() */
-	public function getData():String;
+	/*@@@ modifiers=1025 */ public function getData():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/ProcessingInstruction.html#getTarget() */
-	public function getTarget():String;
+	/*@@@ modifiers=1025 */ public function getTarget():String;
 
 }
 

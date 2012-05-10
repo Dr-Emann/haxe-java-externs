@@ -8,30 +8,30 @@ import java.lang.Object;
 extern class AtomicBoolean extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#AtomicBoolean() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#AtomicBoolean(boolean) */
-	public function new(initialValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(initialValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean, boolean) */
-	public function compareAndSet(expect:Bool, update:Bool):Bool;
+	/*@@@ modifiers=17 */ public function compareAndSet(expect:Bool, update:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#get() */
-	public function get():Bool;
+	/*@@@ modifiers=17 */ public function get():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean) */
-	public function getAndSet(newValue:Bool):Bool;
+	/*@@@ modifiers=17 */ public function getAndSet(newValue:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean) */
-	public function lazySet(newValue:Bool):Void;
+	/*@@@ modifiers=17 */ public function lazySet(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#set(boolean) */
-	public function set(newValue:Bool):Void;
+	/*@@@ modifiers=17 */ public function set(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSet(boolean, boolean) */
-	public function weakCompareAndSet(expect:Bool, update:Bool):Bool;
+	/*@@@ modifiers=1 */ public function weakCompareAndSet(expect:Bool, update:Bool):Bool;
 
 }
 

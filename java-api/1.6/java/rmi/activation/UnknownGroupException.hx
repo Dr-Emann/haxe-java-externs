@@ -7,7 +7,7 @@ import java.rmi.activation.ActivationException;
 extern class UnknownGroupException extends ActivationException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/UnknownGroupException.html#UnknownGroupException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

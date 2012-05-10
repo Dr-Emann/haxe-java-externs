@@ -12,42 +12,42 @@ import java.util.logging.LoggingMXBean;
 extern class LogManager extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#LogManager() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger) */
-	public function addLogger(logger:Logger):Bool;
+	/*@@@ modifiers=33 */ public function addLogger(logger:Logger):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(l:PropertyChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addPropertyChangeListener(l:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#checkAccess() */
-	public function checkAccess():Void;
+	/*@@@ modifiers=1 */ public function checkAccess():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#getLogManager() */
-	static public function getLogManager():LogManager;
+	/*@@@ modifiers=9 */ static public function getLogManager():LogManager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#getLogger(java.lang.String) */
-	public function getLogger(name:String):Logger;
+	/*@@@ modifiers=33 */ public function getLogger(name:String):Logger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#getLoggerNames() */
-	public function getLoggerNames():Enumeration<String>;
+	/*@@@ modifiers=33 */ public function getLoggerNames():Enumeration<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#getLoggingMXBean() */
-	static public function getLoggingMXBean():LoggingMXBean;
+	/*@@@ modifiers=41 */ static public function getLoggingMXBean():LoggingMXBean;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#getProperty(java.lang.String) */
-	public function getProperty(name:String):String;
+	/*@@@ modifiers=1 */ public function getProperty(name:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream) */
-	@:overload(function (ins:InputStream):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (ins:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#readConfiguration() */
-	public function readConfiguration():Void;
+	/*@@@ modifiers=1 */ public function readConfiguration():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(l:PropertyChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removePropertyChangeListener(l:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LogManager.html#reset() */
-	public function reset():Void;
+	/*@@@ modifiers=1 */ public function reset():Void;
 
 }
 

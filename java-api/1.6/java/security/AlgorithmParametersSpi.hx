@@ -11,25 +11,25 @@ import java.security.spec.AlgorithmParameterSpec;
 extern class AlgorithmParametersSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#AlgorithmParametersSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineGetEncoded(java.lang.String) */
-	@:overload(function (format:String):NativeArray<Int8> {})
+	/*@@@ modifiers=1028 */ @:overload(function (format:String):NativeArray<Int8> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineGetEncoded() */
-	private function engineGetEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=1028 */ private function engineGetEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineGetParameterSpec(java.lang.Class) */
-	private function engineGetParameterSpec<T>(paramSpec:Class<T>):T;
+	/*@@@ modifiers=1028 */ private function engineGetParameterSpec<T>(paramSpec:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineInit(byte[], java.lang.String) */
-	@:overload(function (params:NativeArray<Int8>, format:String):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (params:NativeArray<Int8>, format:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineInit(byte[]) */
-	@:overload(function (params:NativeArray<Int8>):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (params:NativeArray<Int8>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineInit(java.security.spec.AlgorithmParameterSpec) */
-	private function engineInit(paramSpec:AlgorithmParameterSpec):Void;
+	/*@@@ modifiers=1028 */ private function engineInit(paramSpec:AlgorithmParameterSpec):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParametersSpi.html#engineToString() */
-	private function engineToString():String;
+	/*@@@ modifiers=1028 */ private function engineToString():String;
 
 }
 

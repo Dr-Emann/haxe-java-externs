@@ -7,10 +7,10 @@ import java.lang.Exception;
 extern class BadAttributeValueExpException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/BadAttributeValueExpException.html#BadAttributeValueExpException(java.lang.Object) */
-	public function new(val:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(val:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/BadAttributeValueExpException.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

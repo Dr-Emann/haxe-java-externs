@@ -7,7 +7,7 @@ import java.lang.Error;
 extern class AWTError extends Error
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTError.html#AWTError(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

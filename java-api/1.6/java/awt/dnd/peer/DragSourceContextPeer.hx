@@ -10,16 +10,16 @@ import java.awt.dnd.DragSourceContext;
 extern interface DragSourceContextPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DragSourceContextPeer.html#getCursor() */
-	public function getCursor():Cursor;
+	/*@@@ modifiers=1025 */ public function getCursor():Cursor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DragSourceContextPeer.html#setCursor(java.awt.Cursor) */
-	public function setCursor(c:Cursor):Void;
+	/*@@@ modifiers=1025 */ public function setCursor(c:Cursor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext, java.awt.Cursor, java.awt.Image, java.awt.Point) */
-	public function startDrag(dsc:DragSourceContext, c:Cursor, dragImage:Image, imageOffset:Point):Void;
+	/*@@@ modifiers=1025 */ public function startDrag(dsc:DragSourceContext, c:Cursor, dragImage:Image, imageOffset:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DragSourceContextPeer.html#transferablesFlavorsChanged() */
-	public function transferablesFlavorsChanged():Void;
+	/*@@@ modifiers=1025 */ public function transferablesFlavorsChanged():Void;
 
 }
 

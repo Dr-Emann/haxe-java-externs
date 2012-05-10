@@ -16,67 +16,67 @@ import javax.xml.soap.SOAPPart;
 extern class SOAPMessage extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#SOAPMessage() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#addAttachmentPart(javax.xml.soap.AttachmentPart) */
-	public function addAttachmentPart(AttachmentPart:AttachmentPart):Void;
+	/*@@@ modifiers=1025 */ public function addAttachmentPart(AttachmentPart:AttachmentPart):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#countAttachments() */
-	public function countAttachments():Int;
+	/*@@@ modifiers=1025 */ public function countAttachments():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#createAttachmentPart(java.lang.Object, java.lang.String) */
-	@:overload(function (content:Dynamic, contentType:String):AttachmentPart {})
+	/*@@@ modifiers=1 */ @:overload(function (content:Dynamic, contentType:String):AttachmentPart {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#createAttachmentPart(javax.activation.DataHandler) */
-	@:overload(function (dataHandler:DataHandler):AttachmentPart {})
+	/*@@@ modifiers=1 */ @:overload(function (dataHandler:DataHandler):AttachmentPart {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#createAttachmentPart() */
-	public function createAttachmentPart():AttachmentPart;
+	/*@@@ modifiers=1025 */ public function createAttachmentPart():AttachmentPart;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getAttachment(javax.xml.soap.SOAPElement) */
-	public function getAttachment(element:SOAPElement):AttachmentPart;
+	/*@@@ modifiers=1025 */ public function getAttachment(element:SOAPElement):AttachmentPart;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getAttachments(javax.xml.soap.MimeHeaders) */
-	@:overload(function (headers:MimeHeaders):java.util.Iterator<Dynamic> {})
+	/*@@@ modifiers=1025 */ @:overload(function (headers:MimeHeaders):java.util.Iterator<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getAttachments() */
-	public function getAttachments():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getAttachments():java.util.Iterator<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getContentDescription() */
-	public function getContentDescription():String;
+	/*@@@ modifiers=1025 */ public function getContentDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getMimeHeaders() */
-	public function getMimeHeaders():MimeHeaders;
+	/*@@@ modifiers=1025 */ public function getMimeHeaders():MimeHeaders;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getProperty(java.lang.String) */
-	public function getProperty(property:String):Dynamic;
+	/*@@@ modifiers=1 */ public function getProperty(property:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getSOAPBody() */
-	public function getSOAPBody():SOAPBody;
+	/*@@@ modifiers=1 */ public function getSOAPBody():SOAPBody;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getSOAPHeader() */
-	public function getSOAPHeader():SOAPHeader;
+	/*@@@ modifiers=1 */ public function getSOAPHeader():SOAPHeader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#getSOAPPart() */
-	public function getSOAPPart():SOAPPart;
+	/*@@@ modifiers=1025 */ public function getSOAPPart():SOAPPart;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#removeAllAttachments() */
-	public function removeAllAttachments():Void;
+	/*@@@ modifiers=1025 */ public function removeAllAttachments():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#removeAttachments(javax.xml.soap.MimeHeaders) */
-	public function removeAttachments(headers:MimeHeaders):Void;
+	/*@@@ modifiers=1025 */ public function removeAttachments(headers:MimeHeaders):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#saveChanges() */
-	public function saveChanges():Void;
+	/*@@@ modifiers=1025 */ public function saveChanges():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#saveRequired() */
-	public function saveRequired():Bool;
+	/*@@@ modifiers=1025 */ public function saveRequired():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#setContentDescription(java.lang.String) */
-	public function setContentDescription(description:String):Void;
+	/*@@@ modifiers=1025 */ public function setContentDescription(description:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#setProperty(java.lang.String, java.lang.Object) */
-	public function setProperty(property:String, value:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setProperty(property:String, value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html#writeTo(java.io.OutputStream) */
-	public function writeTo(out:OutputStream):Void;
+	/*@@@ modifiers=1025 */ public function writeTo(out:OutputStream):Void;
 
 }
 

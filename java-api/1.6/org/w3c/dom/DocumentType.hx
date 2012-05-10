@@ -8,22 +8,22 @@ import org.w3c.dom.Node;
 extern interface DocumentType implements Node
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DocumentType.html#getEntities() */
-	public function getEntities():NamedNodeMap;
+	/*@@@ modifiers=1025 */ public function getEntities():NamedNodeMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DocumentType.html#getInternalSubset() */
-	public function getInternalSubset():String;
+	/*@@@ modifiers=1025 */ public function getInternalSubset():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DocumentType.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DocumentType.html#getNotations() */
-	public function getNotations():NamedNodeMap;
+	/*@@@ modifiers=1025 */ public function getNotations():NamedNodeMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DocumentType.html#getPublicId() */
-	public function getPublicId():String;
+	/*@@@ modifiers=1025 */ public function getPublicId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DocumentType.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 }
 

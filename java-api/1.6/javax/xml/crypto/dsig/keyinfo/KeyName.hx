@@ -7,7 +7,7 @@ import javax.xml.crypto.XMLStructure;
 extern interface KeyName implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/KeyName.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 }
 

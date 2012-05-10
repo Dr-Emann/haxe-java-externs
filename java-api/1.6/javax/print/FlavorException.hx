@@ -8,7 +8,7 @@ import javax.print.DocFlavor;
 extern interface FlavorException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/FlavorException.html#getUnsupportedFlavors() */
-	public function getUnsupportedFlavors():NativeArray<DocFlavor>;
+	/*@@@ modifiers=1025 */ public function getUnsupportedFlavors():NativeArray<DocFlavor>;
 
 }
 

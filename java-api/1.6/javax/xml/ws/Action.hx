@@ -9,13 +9,13 @@ import javax.xml.ws.FaultAction;
 extern interface Action implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Action.html#fault() */
-	public function fault():NativeArray<FaultAction>;
+	/*@@@ modifiers=1025 */ public function fault():NativeArray<FaultAction>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Action.html#input() */
-	public function input():String;
+	/*@@@ modifiers=1025 */ public function input():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Action.html#output() */
-	public function output():String;
+	/*@@@ modifiers=1025 */ public function output():String;
 
 }
 

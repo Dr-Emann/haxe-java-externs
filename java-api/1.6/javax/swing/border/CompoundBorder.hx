@@ -17,26 +17,26 @@ extern class CompoundBorder extends AbstractBorder
 	private var insideBorder:Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#CompoundBorder(javax.swing.border.Border, javax.swing.border.Border) */
-	@:overload(function (outsideBorder:Border, insideBorder:Border):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (outsideBorder:Border, insideBorder:Border):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#CompoundBorder() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#getBorderInsets(java.awt.Component, java.awt.Insets) */
-	@:overload(function (c:Component, insets:Insets):Insets {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, insets:Insets):Insets {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#getBorderInsets(java.awt.Component) */
-	override public function getBorderInsets(c:Component):Insets;
+	/*@@@ modifiers=1 */ override public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#getInsideBorder() */
-	public function getInsideBorder():Border;
+	/*@@@ modifiers=1 */ public function getInsideBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#getOutsideBorder() */
-	public function getOutsideBorder():Border;
+	/*@@@ modifiers=1 */ public function getOutsideBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#isBorderOpaque() */
-	override public function isBorderOpaque():Bool;
+	/*@@@ modifiers=1 */ override public function isBorderOpaque():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/CompoundBorder.html#paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 }
 

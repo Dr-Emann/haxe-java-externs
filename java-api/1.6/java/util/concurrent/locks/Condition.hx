@@ -8,24 +8,24 @@ import java.util.concurrent.TimeUnit;
 extern interface Condition
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#await(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (time:haxe.Int64, unit:TimeUnit):Bool {})
+	/*@@@ modifiers=1025 */ @:overload(function (time:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#await() */
-	public function await():Void;
+	/*@@@ modifiers=1025 */ public function await():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#awaitNanos(long) */
-	public function awaitNanos(nanosTimeout:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1025 */ public function awaitNanos(nanosTimeout:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#awaitUninterruptibly() */
-	public function awaitUninterruptibly():Void;
+	/*@@@ modifiers=1025 */ public function awaitUninterruptibly():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#awaitUntil(java.util.Date) */
-	public function awaitUntil(deadline:Date):Bool;
+	/*@@@ modifiers=1025 */ public function awaitUntil(deadline:Date):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#signal() */
-	public function signal():Void;
+	/*@@@ modifiers=1025 */ public function signal():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/Condition.html#signalAll() */
-	public function signalAll():Void;
+	/*@@@ modifiers=1025 */ public function signalAll():Void;
 
 }
 

@@ -10,13 +10,13 @@ import javax.swing.plaf.basic.BasicSplitPaneUI;
 extern class MetalSplitPaneUI extends BasicSplitPaneUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSplitPaneUI.html#MetalSplitPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSplitPaneUI.html#createDefaultDivider() */
-	override public function createDefaultDivider():BasicSplitPaneDivider;
+	/*@@@ modifiers=1 */ override public function createDefaultDivider():BasicSplitPaneDivider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalSplitPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 }
 

@@ -7,9 +7,9 @@ import java.security.BasicPermission;
 extern class AuthPermission extends BasicPermission
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/AuthPermission.html#AuthPermission(java.lang.String) */
-	@:overload(function (name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/AuthPermission.html#AuthPermission(java.lang.String, java.lang.String) */
-	public function new(name:String, actions:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, actions:String):Void;
 
 }
 

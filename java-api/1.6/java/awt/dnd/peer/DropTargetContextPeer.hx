@@ -10,37 +10,37 @@ import java.awt.dnd.DropTarget;
 extern interface DropTargetContextPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrag(int) */
-	public function acceptDrag(dragAction:Int):Void;
+	/*@@@ modifiers=1025 */ public function acceptDrag(dragAction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrop(int) */
-	public function acceptDrop(dropAction:Int):Void;
+	/*@@@ modifiers=1025 */ public function acceptDrop(dropAction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#dropComplete(boolean) */
-	public function dropComplete(success:Bool):Void;
+	/*@@@ modifiers=1025 */ public function dropComplete(success:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#getDropTarget() */
-	public function getDropTarget():DropTarget;
+	/*@@@ modifiers=1025 */ public function getDropTarget():DropTarget;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#getTargetActions() */
-	public function getTargetActions():Int;
+	/*@@@ modifiers=1025 */ public function getTargetActions():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferDataFlavors() */
-	public function getTransferDataFlavors():NativeArray<DataFlavor>;
+	/*@@@ modifiers=1025 */ public function getTransferDataFlavors():NativeArray<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferable() */
-	public function getTransferable():Transferable;
+	/*@@@ modifiers=1025 */ public function getTransferable():Transferable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal() */
-	public function isTransferableJVMLocal():Bool;
+	/*@@@ modifiers=1025 */ public function isTransferableJVMLocal():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#rejectDrag() */
-	public function rejectDrag():Void;
+	/*@@@ modifiers=1025 */ public function rejectDrag():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#rejectDrop() */
-	public function rejectDrop():Void;
+	/*@@@ modifiers=1025 */ public function rejectDrop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/peer/DropTargetContextPeer.html#setTargetActions(int) */
-	public function setTargetActions(actions:Int):Void;
+	/*@@@ modifiers=1025 */ public function setTargetActions(actions:Int):Void;
 
 }
 

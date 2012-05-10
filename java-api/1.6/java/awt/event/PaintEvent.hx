@@ -9,16 +9,16 @@ import java.awt.event.ComponentEvent;
 extern class PaintEvent extends ComponentEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/PaintEvent.html#PaintEvent(java.awt.Component, int, java.awt.Rectangle) */
-	public function new(source:Component, id:Int, updateRect:Rectangle):Void;
+	/*@@@ modifiers=1 */ public function new(source:Component, id:Int, updateRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/PaintEvent.html#getUpdateRect() */
-	public function getUpdateRect():Rectangle;
+	/*@@@ modifiers=1 */ public function getUpdateRect():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/PaintEvent.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/PaintEvent.html#setUpdateRect(java.awt.Rectangle) */
-	public function setUpdateRect(updateRect:Rectangle):Void;
+	/*@@@ modifiers=1 */ public function setUpdateRect(updateRect:Rectangle):Void;
 
 }
 

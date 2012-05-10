@@ -7,19 +7,19 @@ import java.lang.Object;
 extern class ThreadLocal<T : (Dynamic)> extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html#ThreadLocal() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html#get() */
-	public function get():T;
+	/*@@@ modifiers=1 */ public function get():T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html#initialValue() */
-	private function initialValue():T;
+	/*@@@ modifiers=4 */ private function initialValue():T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html#remove() */
-	public function remove():Void;
+	/*@@@ modifiers=1 */ public function remove():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html#set(java.lang.Object) */
-	public function set(value:T):Void;
+	/*@@@ modifiers=1 */ public function set(value:T):Void;
 
 }
 

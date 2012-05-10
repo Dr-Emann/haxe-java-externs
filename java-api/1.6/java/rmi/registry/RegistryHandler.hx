@@ -7,10 +7,10 @@ import java.rmi.registry.Registry;
 extern interface RegistryHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/registry/RegistryHandler.html#registryImpl(int) */
-	public function registryImpl(port:Int):Registry;
+	/*@@@ modifiers=1025 */ public function registryImpl(port:Int):Registry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/registry/RegistryHandler.html#registryStub(java.lang.String, int) */
-	public function registryStub(host:String, port:Int):Registry;
+	/*@@@ modifiers=1025 */ public function registryStub(host:String, port:Int):Registry;
 
 }
 

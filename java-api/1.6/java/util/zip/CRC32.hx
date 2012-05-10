@@ -10,20 +10,20 @@ import java.util.zip.Checksum;
 extern class CRC32 extends Object, implements Checksum
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/CRC32.html#CRC32() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/CRC32.html#getValue() */
-	public function getValue():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getValue():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/CRC32.html#reset() */
-	public function reset():Void;
+	/*@@@ modifiers=1 */ public function reset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/CRC32.html#update(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/CRC32.html#update(int) */
-	@:overload(function (b:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/CRC32.html#update(byte[]) */
-	public function update(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function update(b:NativeArray<Int8>):Void;
 
 }
 

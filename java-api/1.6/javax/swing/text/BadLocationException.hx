@@ -7,10 +7,10 @@ import java.lang.Exception;
 extern class BadLocationException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/BadLocationException.html#BadLocationException(java.lang.String, int) */
-	public function new(s:String, offs:Int):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, offs:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/BadLocationException.html#offsetRequested() */
-	public function offsetRequested():Int;
+	/*@@@ modifiers=1 */ public function offsetRequested():Int;
 
 }
 

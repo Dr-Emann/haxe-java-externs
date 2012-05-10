@@ -2,7 +2,6 @@ package javax.imageio;
 
 import java.NativeArray;
 import java.awt.Dimension;
-import java.lang.Number;
 import java.util.Locale;
 import javax.imageio.IIOParam;
 
@@ -44,102 +43,102 @@ extern class ImageWriteParam extends IIOParam
 	private var compressionType:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#compressionQuality */
-	private var compressionQuality:StdFloat;
+	private var compressionQuality:Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#locale */
 	private var locale:Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#ImageWriteParam(java.util.Locale) */
-	@:overload(function (locale:Locale):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (locale:Locale):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#ImageWriteParam() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#canOffsetTiles() */
-	public function canOffsetTiles():Bool;
+	/*@@@ modifiers=1 */ public function canOffsetTiles():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#canWriteCompressed() */
-	public function canWriteCompressed():Bool;
+	/*@@@ modifiers=1 */ public function canWriteCompressed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#canWriteProgressive() */
-	public function canWriteProgressive():Bool;
+	/*@@@ modifiers=1 */ public function canWriteProgressive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#canWriteTiles() */
-	public function canWriteTiles():Bool;
+	/*@@@ modifiers=1 */ public function canWriteTiles():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getBitRate(float) */
-	public function getBitRate(quality:StdFloat):StdFloat;
+	/*@@@ modifiers=1 */ public function getBitRate(quality:Single):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getCompressionMode() */
-	public function getCompressionMode():Int;
+	/*@@@ modifiers=1 */ public function getCompressionMode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getCompressionQuality() */
-	public function getCompressionQuality():StdFloat;
+	/*@@@ modifiers=1 */ public function getCompressionQuality():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getCompressionQualityDescriptions() */
-	public function getCompressionQualityDescriptions():NativeArray<String>;
+	/*@@@ modifiers=1 */ public function getCompressionQualityDescriptions():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getCompressionQualityValues() */
-	public function getCompressionQualityValues():NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getCompressionQualityValues():NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getCompressionType() */
-	public function getCompressionType():String;
+	/*@@@ modifiers=1 */ public function getCompressionType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getCompressionTypes() */
-	public function getCompressionTypes():NativeArray<String>;
+	/*@@@ modifiers=1 */ public function getCompressionTypes():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getLocale() */
-	public function getLocale():Locale;
+	/*@@@ modifiers=1 */ public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getLocalizedCompressionTypeName() */
-	public function getLocalizedCompressionTypeName():String;
+	/*@@@ modifiers=1 */ public function getLocalizedCompressionTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getPreferredTileSizes() */
-	public function getPreferredTileSizes():NativeArray<Dimension>;
+	/*@@@ modifiers=1 */ public function getPreferredTileSizes():NativeArray<Dimension>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getProgressiveMode() */
-	public function getProgressiveMode():Int;
+	/*@@@ modifiers=1 */ public function getProgressiveMode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getTileGridXOffset() */
-	public function getTileGridXOffset():Int;
+	/*@@@ modifiers=1 */ public function getTileGridXOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getTileGridYOffset() */
-	public function getTileGridYOffset():Int;
+	/*@@@ modifiers=1 */ public function getTileGridYOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getTileHeight() */
-	public function getTileHeight():Int;
+	/*@@@ modifiers=1 */ public function getTileHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getTileWidth() */
-	public function getTileWidth():Int;
+	/*@@@ modifiers=1 */ public function getTileWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#getTilingMode() */
-	public function getTilingMode():Int;
+	/*@@@ modifiers=1 */ public function getTilingMode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#isCompressionLossless() */
-	public function isCompressionLossless():Bool;
+	/*@@@ modifiers=1 */ public function isCompressionLossless():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#setCompressionMode(int) */
-	public function setCompressionMode(mode:Int):Void;
+	/*@@@ modifiers=1 */ public function setCompressionMode(mode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#setCompressionQuality(float) */
-	public function setCompressionQuality(quality:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setCompressionQuality(quality:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#setCompressionType(java.lang.String) */
-	public function setCompressionType(compressionType:String):Void;
+	/*@@@ modifiers=1 */ public function setCompressionType(compressionType:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#setProgressiveMode(int) */
-	public function setProgressiveMode(mode:Int):Void;
+	/*@@@ modifiers=1 */ public function setProgressiveMode(mode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#setTiling(int, int, int, int) */
-	public function setTiling(tileWidth:Int, tileHeight:Int, tileGridXOffset:Int, tileGridYOffset:Int):Void;
+	/*@@@ modifiers=1 */ public function setTiling(tileWidth:Int, tileHeight:Int, tileGridXOffset:Int, tileGridYOffset:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#setTilingMode(int) */
-	public function setTilingMode(mode:Int):Void;
+	/*@@@ modifiers=1 */ public function setTilingMode(mode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#unsetCompression() */
-	public function unsetCompression():Void;
+	/*@@@ modifiers=1 */ public function unsetCompression():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageWriteParam.html#unsetTiling() */
-	public function unsetTiling():Void;
+	/*@@@ modifiers=1 */ public function unsetTiling():Void;
 
 }
 

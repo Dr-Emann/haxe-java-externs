@@ -10,16 +10,16 @@ import javax.naming.event.NamingListener;
 extern class NamingExceptionEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingExceptionEvent.html#NamingExceptionEvent(javax.naming.event.EventContext, javax.naming.NamingException) */
-	public function new(source:EventContext, exc:NamingException):Void;
+	/*@@@ modifiers=1 */ public function new(source:EventContext, exc:NamingException):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingExceptionEvent.html#dispatch(javax.naming.event.NamingListener) */
-	public function dispatch(listener:NamingListener):Void;
+	/*@@@ modifiers=1 */ public function dispatch(listener:NamingListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingExceptionEvent.html#getEventContext() */
-	public function getEventContext():EventContext;
+	/*@@@ modifiers=1 */ public function getEventContext():EventContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingExceptionEvent.html#getException() */
-	public function getException():NamingException;
+	/*@@@ modifiers=1 */ public function getException():NamingException;
 
 }
 

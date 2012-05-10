@@ -7,16 +7,16 @@ import java.io.PrintWriter;
 extern interface CommonDataSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/CommonDataSource.html#getLogWriter() */
-	public function getLogWriter():PrintWriter;
+	/*@@@ modifiers=1025 */ public function getLogWriter():PrintWriter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/CommonDataSource.html#getLoginTimeout() */
-	public function getLoginTimeout():Int;
+	/*@@@ modifiers=1025 */ public function getLoginTimeout():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter) */
-	public function setLogWriter(arg0:PrintWriter):Void;
+	/*@@@ modifiers=1025 */ public function setLogWriter(arg0:PrintWriter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/CommonDataSource.html#setLoginTimeout(int) */
-	public function setLoginTimeout(seconds:Int):Void;
+	/*@@@ modifiers=1025 */ public function setLoginTimeout(seconds:Int):Void;
 
 }
 

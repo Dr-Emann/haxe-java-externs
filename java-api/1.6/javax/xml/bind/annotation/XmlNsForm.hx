@@ -17,10 +17,10 @@ extern class XmlNsForm extends Enum<XmlNsForm>
 	public static var UNSET:XmlNsForm;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlNsForm.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):XmlNsForm;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):XmlNsForm;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlNsForm.html#values() */
-	static public function values():NativeArray<XmlNsForm>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<XmlNsForm>;
 
 }
 

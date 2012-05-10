@@ -12,12 +12,12 @@ import javax.xml.crypto.XMLStructure;
 extern interface Transform implements XMLStructure, implements AlgorithmMethod
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/Transform.html#getParameterSpec() */
-	public function getParameterSpec():AlgorithmParameterSpec;
+	/*@@@ modifiers=1025 */ public function getParameterSpec():AlgorithmParameterSpec;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext, java.io.OutputStream) */
-	@:overload(function (data:Data, context:XMLCryptoContext, os:OutputStream):Data {})
+	/*@@@ modifiers=1025 */ @:overload(function (data:Data, context:XMLCryptoContext, os:OutputStream):Data {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext) */
-	public function transform(data:Data, context:XMLCryptoContext):Data;
+	/*@@@ modifiers=1025 */ public function transform(data:Data, context:XMLCryptoContext):Data;
 
 }
 

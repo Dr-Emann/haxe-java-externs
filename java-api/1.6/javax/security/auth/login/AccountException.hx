@@ -7,9 +7,9 @@ import javax.security.auth.login.LoginException;
 extern class AccountException extends LoginException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/AccountException.html#AccountException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/AccountException.html#AccountException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

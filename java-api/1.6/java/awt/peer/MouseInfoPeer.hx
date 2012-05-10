@@ -8,10 +8,10 @@ import java.awt.Window;
 extern interface MouseInfoPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MouseInfoPeer.html#fillPointWithCoords(java.awt.Point) */
-	public function fillPointWithCoords(point:Point):Int;
+	/*@@@ modifiers=1025 */ public function fillPointWithCoords(point:Point):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MouseInfoPeer.html#isWindowUnderMouse(java.awt.Window) */
-	public function isWindowUnderMouse(w:Window):Bool;
+	/*@@@ modifiers=1025 */ public function isWindowUnderMouse(w:Window):Bool;
 
 }
 

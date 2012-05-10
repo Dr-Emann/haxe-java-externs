@@ -12,16 +12,16 @@ import javax.print.attribute.ResolutionSyntax;
 extern class PrinterResolution extends ResolutionSyntax, implements DocAttribute, implements PrintRequestAttribute, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterResolution.html#PrinterResolution(int, int, int) */
-	public function new(crossFeedResolution:Int, feedResolution:Int, units:Int):Void;
+	/*@@@ modifiers=1 */ public function new(crossFeedResolution:Int, feedResolution:Int, units:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterResolution.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterResolution.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterResolution.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

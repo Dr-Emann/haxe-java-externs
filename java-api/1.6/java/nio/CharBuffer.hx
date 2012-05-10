@@ -15,100 +15,108 @@ extern class CharBuffer extends Buffer, implements Comparable<CharBuffer>, imple
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#allocate(int) */
-	static public function allocate(capacity:Int):CharBuffer;
+	/*@@@ modifiers=9 */ static public function allocate(capacity:Int):CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence, int, int) */
-	@:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
+	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence, start:Int, end:Int):CharBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence, int, int) */
+	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(char) */
-	@:overload(function (c:Char16):Appendable {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Char16):CharBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(char) */
+	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence) */
-	public function append(csq:CharSequence):Appendable;
+	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence):CharBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence) */
+	/*@@@ modifiers=4161 */ public function append(csq:CharSequence):Appendable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#array() */
-	override public function array():NativeArray<Char16>;
+	/*@@@ modifiers=4161 */ @:overload(function ():Dynamic {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#array() */
+	/*@@@ modifiers=17 */ override public function array():NativeArray<Char16>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#arrayOffset() */
-	override public function arrayOffset():Int;
+	/*@@@ modifiers=17 */ override public function arrayOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#asReadOnlyBuffer() */
-	public function asReadOnlyBuffer():CharBuffer;
+	/*@@@ modifiers=1025 */ public function asReadOnlyBuffer():CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#charAt(int) */
-	public function charAt(index:Int):Char16;
+	/*@@@ modifiers=17 */ public function charAt(index:Int):Char16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#compact() */
-	public function compact():CharBuffer;
+	/*@@@ modifiers=1025 */ public function compact():CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#compareTo(java.lang.Object) */
-	@:overload(function (p0:Dynamic):Int {})
+	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#compareTo(java.nio.CharBuffer) */
-	public function compareTo(that:CharBuffer):Int;
+	/*@@@ modifiers=1 */ public function compareTo(that:CharBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#duplicate() */
-	public function duplicate():CharBuffer;
+	/*@@@ modifiers=1025 */ public function duplicate():CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#equals(java.lang.Object) */
-	override public function equals(ob:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(ob:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#get(char[], int, int) */
-	@:overload(function (dst:NativeArray<Char16>, offset:Int, length:Int):CharBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (dst:NativeArray<Char16>, offset:Int, length:Int):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#get(int) */
-	@:overload(function (index:Int):Char16 {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int):Char16 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#get(char[]) */
-	@:overload(function (dst:NativeArray<Char16>):CharBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (dst:NativeArray<Char16>):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#get() */
-	public function get():Char16;
+	/*@@@ modifiers=1025 */ public function get():Char16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#hasArray() */
-	override public function hasArray():Bool;
+	/*@@@ modifiers=17 */ override public function hasArray():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#isDirect() */
-	override public function isDirect():Bool;
+	/*@@@ modifiers=1025 */ override public function isDirect():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#length() */
-	public function length():Int;
+	/*@@@ modifiers=17 */ public function length():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#order() */
-	public function order():ByteOrder;
+	/*@@@ modifiers=1025 */ public function order():ByteOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(char[], int, int) */
-	@:overload(function (src:NativeArray<Char16>, offset:Int, length:Int):CharBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (src:NativeArray<Char16>, offset:Int, length:Int):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(java.lang.String, int, int) */
-	@:overload(function (src:String, start:Int, end:Int):CharBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (src:String, start:Int, end:Int):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(int, char) */
-	@:overload(function (index:Int, c:Char16):CharBuffer {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int, c:Char16):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(char) */
-	@:overload(function (c:Char16):CharBuffer {})
+	/*@@@ modifiers=1025 */ @:overload(function (c:Char16):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(char[]) */
-	@:overload(function (src:NativeArray<Char16>):CharBuffer {})
+	/*@@@ modifiers=17 */ @:overload(function (src:NativeArray<Char16>):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(java.lang.String) */
-	@:overload(function (src:String):CharBuffer {})
+	/*@@@ modifiers=17 */ @:overload(function (src:String):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#put(java.nio.CharBuffer) */
-	public function put(src:CharBuffer):CharBuffer;
+	/*@@@ modifiers=1 */ public function put(src:CharBuffer):CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#read(java.nio.CharBuffer) */
-	public function read(target:CharBuffer):Int;
+	/*@@@ modifiers=1 */ public function read(target:CharBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#slice() */
-	public function slice():CharBuffer;
+	/*@@@ modifiers=1025 */ public function slice():CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#subSequence(int, int) */
-	public function subSequence(start:Int, end:Int):CharSequence;
+	/*@@@ modifiers=1025 */ public function subSequence(start:Int, end:Int):CharSequence;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#wrap(char[], int, int) */
-	@:overload(function (array:NativeArray<Char16>, offset:Int, length:Int):CharBuffer {})
+	/*@@@ modifiers=9 */ @:overload(function (array:NativeArray<Char16>, offset:Int, length:Int):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#wrap(java.lang.CharSequence, int, int) */
-	@:overload(function (csq:CharSequence, start:Int, end:Int):CharBuffer {})
+	/*@@@ modifiers=9 */ @:overload(function (csq:CharSequence, start:Int, end:Int):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#wrap(char[]) */
-	@:overload(function (array:NativeArray<Char16>):CharBuffer {})
+	/*@@@ modifiers=9 */ @:overload(function (array:NativeArray<Char16>):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#wrap(java.lang.CharSequence) */
-	static public function wrap(csq:CharSequence):CharBuffer;
+	/*@@@ modifiers=9 */ static public function wrap(csq:CharSequence):CharBuffer;
 
 }
 

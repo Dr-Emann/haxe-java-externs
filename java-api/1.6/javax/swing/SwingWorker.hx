@@ -14,60 +14,60 @@ import javax.swing.SwingWorker_StateValue;
 extern class SwingWorker<T : (Dynamic), V : (Dynamic)> extends Object, implements RunnableFuture<T>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#SwingWorker() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=17 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#cancel(boolean) */
-	public function cancel(mayInterruptIfRunning:Bool):Bool;
+	/*@@@ modifiers=17 */ public function cancel(mayInterruptIfRunning:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#doInBackground() */
-	private function doInBackground():T;
+	/*@@@ modifiers=1028 */ private function doInBackground():T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#done() */
-	private function done():Void;
+	/*@@@ modifiers=4 */ private function done():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#execute() */
-	public function execute():Void;
+	/*@@@ modifiers=17 */ public function execute():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=17 */ public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#get(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (timeout:haxe.Int64, unit:TimeUnit):T {})
+	/*@@@ modifiers=17 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):T {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#get() */
-	public function get():T;
+	/*@@@ modifiers=17 */ public function get():T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#getProgress() */
-	public function getProgress():Int;
+	/*@@@ modifiers=17 */ public function getProgress():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#getPropertyChangeSupport() */
-	public function getPropertyChangeSupport():PropertyChangeSupport;
+	/*@@@ modifiers=17 */ public function getPropertyChangeSupport():PropertyChangeSupport;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#getState() */
-	public function getState():SwingWorker_StateValue;
+	/*@@@ modifiers=17 */ public function getState():SwingWorker_StateValue;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#isCancelled() */
-	public function isCancelled():Bool;
+	/*@@@ modifiers=17 */ public function isCancelled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#isDone() */
-	public function isDone():Bool;
+	/*@@@ modifiers=17 */ public function isDone():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#process(java.util.List) */
-	private function process(chunks:List<V>):Void;
+	/*@@@ modifiers=4 */ private function process(chunks:List<V>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#publish(java.lang.Object[]) */
-	private function publish(chunks:NativeArray<V>):Void;
+	/*@@@ modifiers=148 */ private function publish(chunks:NativeArray<V>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=17 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#run() */
-	public function run():Void;
+	/*@@@ modifiers=17 */ public function run():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingWorker.html#setProgress(int) */
-	private function setProgress(progress:Int):Void;
+	/*@@@ modifiers=20 */ private function setProgress(progress:Int):Void;
 
 }
 

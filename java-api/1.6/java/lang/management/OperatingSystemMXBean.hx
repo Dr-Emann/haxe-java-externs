@@ -7,19 +7,19 @@ import java.lang.Number;
 extern interface OperatingSystemMXBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/OperatingSystemMXBean.html#getArch() */
-	public function getArch():String;
+	/*@@@ modifiers=1025 */ public function getArch():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/OperatingSystemMXBean.html#getAvailableProcessors() */
-	public function getAvailableProcessors():Int;
+	/*@@@ modifiers=1025 */ public function getAvailableProcessors():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/OperatingSystemMXBean.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage() */
-	public function getSystemLoadAverage():StdFloat;
+	/*@@@ modifiers=1025 */ public function getSystemLoadAverage():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/OperatingSystemMXBean.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1025 */ public function getVersion():String;
 
 }
 

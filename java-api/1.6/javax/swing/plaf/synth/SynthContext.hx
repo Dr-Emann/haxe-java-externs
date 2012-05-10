@@ -10,19 +10,19 @@ import javax.swing.plaf.synth.SynthStyle;
 extern class SynthContext extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthContext.html#SynthContext(javax.swing.JComponent, javax.swing.plaf.synth.Region, javax.swing.plaf.synth.SynthStyle, int) */
-	public function new(component:JComponent, region:Region, style:SynthStyle, state:Int):Void;
+	/*@@@ modifiers=1 */ public function new(component:JComponent, region:Region, style:SynthStyle, state:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthContext.html#getComponent() */
-	public function getComponent():JComponent;
+	/*@@@ modifiers=1 */ public function getComponent():JComponent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthContext.html#getComponentState() */
-	public function getComponentState():Int;
+	/*@@@ modifiers=1 */ public function getComponentState():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthContext.html#getRegion() */
-	public function getRegion():Region;
+	/*@@@ modifiers=1 */ public function getRegion():Region;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthContext.html#getStyle() */
-	public function getStyle():SynthStyle;
+	/*@@@ modifiers=1 */ public function getStyle():SynthStyle;
 
 }
 

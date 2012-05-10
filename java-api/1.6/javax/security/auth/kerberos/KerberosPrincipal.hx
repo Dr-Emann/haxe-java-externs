@@ -9,27 +9,27 @@ import java.security.Principal;
 extern class KerberosPrincipal extends Object, implements Principal, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#KerberosPrincipal(java.lang.String, int) */
-	@:overload(function (name:String, nameType:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, nameType:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#KerberosPrincipal(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#equals(java.lang.Object) */
-	override public function equals(other:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(other:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#getNameType() */
-	public function getNameType():Int;
+	/*@@@ modifiers=1 */ public function getNameType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#getRealm() */
-	public function getRealm():String;
+	/*@@@ modifiers=1 */ public function getRealm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

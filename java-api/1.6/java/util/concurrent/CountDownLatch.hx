@@ -8,21 +8,21 @@ import java.util.concurrent.TimeUnit;
 extern class CountDownLatch extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html#CountDownLatch(int) */
-	public function new(count:Int):Void;
+	/*@@@ modifiers=1 */ public function new(count:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html#await(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (timeout:haxe.Int64, unit:TimeUnit):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html#await() */
-	public function await():Void;
+	/*@@@ modifiers=1 */ public function await():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html#countDown() */
-	public function countDown():Void;
+	/*@@@ modifiers=1 */ public function countDown():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html#getCount() */
-	public function getCount():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getCount():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -74,136 +74,133 @@ extern class BasicComboPopup extends JPopupMenu, implements ComboPopup
 	private var scrollDirection:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#BasicComboPopup(javax.swing.JComboBox) */
-	public function new(combo:JComboBox):Void;
+	/*@@@ modifiers=1 */ public function new(combo:JComboBox):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#autoScrollDown() */
-	private function autoScrollDown():Void;
+	/*@@@ modifiers=4 */ private function autoScrollDown():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#autoScrollUp() */
-	private function autoScrollUp():Void;
+	/*@@@ modifiers=4 */ private function autoScrollUp():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#computePopupBounds(int, int, int, int) */
-	private function computePopupBounds(px:Int, py:Int, pw:Int, ph:Int):Rectangle;
+	/*@@@ modifiers=4 */ private function computePopupBounds(px:Int, py:Int, pw:Int, ph:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#configureList() */
-	private function configureList():Void;
+	/*@@@ modifiers=4 */ private function configureList():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#configurePopup() */
-	private function configurePopup():Void;
+	/*@@@ modifiers=4 */ private function configurePopup():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#configureScroller() */
-	private function configureScroller():Void;
+	/*@@@ modifiers=4 */ private function configureScroller():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#convertMouseEvent(java.awt.event.MouseEvent) */
-	private function convertMouseEvent(e:MouseEvent):MouseEvent;
+	/*@@@ modifiers=4 */ private function convertMouseEvent(e:MouseEvent):MouseEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createItemListener() */
-	private function createItemListener():ItemListener;
+	/*@@@ modifiers=4 */ private function createItemListener():ItemListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createKeyListener() */
-	private function createKeyListener():KeyListener;
+	/*@@@ modifiers=4 */ private function createKeyListener():KeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createList() */
-	private function createList():JList;
+	/*@@@ modifiers=4 */ private function createList():JList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createListDataListener() */
-	private function createListDataListener():ListDataListener;
+	/*@@@ modifiers=4 */ private function createListDataListener():ListDataListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createListMouseListener() */
-	private function createListMouseListener():MouseListener;
+	/*@@@ modifiers=4 */ private function createListMouseListener():MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createListMouseMotionListener() */
-	private function createListMouseMotionListener():MouseMotionListener;
+	/*@@@ modifiers=4 */ private function createListMouseMotionListener():MouseMotionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createListSelectionListener() */
-	private function createListSelectionListener():ListSelectionListener;
+	/*@@@ modifiers=4 */ private function createListSelectionListener():ListSelectionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createMouseListener() */
-	private function createMouseListener():MouseListener;
+	/*@@@ modifiers=4 */ private function createMouseListener():MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createMouseMotionListener() */
-	private function createMouseMotionListener():MouseMotionListener;
+	/*@@@ modifiers=4 */ private function createMouseMotionListener():MouseMotionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#createScroller() */
-	private function createScroller():JScrollPane;
+	/*@@@ modifiers=4 */ private function createScroller():JScrollPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#delegateFocus(java.awt.event.MouseEvent) */
-	private function delegateFocus(e:MouseEvent):Void;
+	/*@@@ modifiers=4 */ private function delegateFocus(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#firePopupMenuCanceled() */
-	override private function firePopupMenuCanceled():Void;
+	/*@@@ modifiers=4 */ override private function firePopupMenuCanceled():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#firePopupMenuWillBecomeInvisible() */
-	override private function firePopupMenuWillBecomeInvisible():Void;
+	/*@@@ modifiers=4 */ override private function firePopupMenuWillBecomeInvisible():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#firePopupMenuWillBecomeVisible() */
-	override private function firePopupMenuWillBecomeVisible():Void;
+	/*@@@ modifiers=4 */ override private function firePopupMenuWillBecomeVisible():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#getKeyListener() */
-	public function getKeyListener():KeyListener;
+	/*@@@ modifiers=1 */ public function getKeyListener():KeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#getList() */
-	public function getList():JList;
+	/*@@@ modifiers=1 */ public function getList():JList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#getMouseListener() */
-	public function getMouseListener():MouseListener;
+	/*@@@ modifiers=1 */ public function getMouseListener():MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#getMouseMotionListener() */
-	public function getMouseMotionListener():MouseMotionListener;
+	/*@@@ modifiers=1 */ public function getMouseMotionListener():MouseMotionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#getPopupHeightForRowCount(int) */
-	private function getPopupHeightForRowCount(maxRowCount:Int):Int;
+	/*@@@ modifiers=4 */ private function getPopupHeightForRowCount(maxRowCount:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#hide() */
-	override public function hide():Void;
+	/*@@@ modifiers=1 */ override public function hide():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#installComboBoxListeners() */
-	private function installComboBoxListeners():Void;
+	/*@@@ modifiers=4 */ private function installComboBoxListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#installComboBoxModelListeners(javax.swing.ComboBoxModel) */
-	private function installComboBoxModelListeners(model:ComboBoxModel):Void;
+	/*@@@ modifiers=4 */ private function installComboBoxModelListeners(model:ComboBoxModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#installListListeners() */
-	private function installListListeners():Void;
+	/*@@@ modifiers=4 */ private function installListListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#isFocusTraversable() */
-	override public function isFocusTraversable():Bool;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#isVisible() */
-	public function isVisible():Bool;
+	/*@@@ modifiers=1 */ override public function isFocusTraversable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#show() */
-	override public function show():Void;
+	/*@@@ modifiers=1 */ override public function show():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#startAutoScrolling(int) */
-	private function startAutoScrolling(direction:Int):Void;
+	/*@@@ modifiers=4 */ private function startAutoScrolling(direction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#stopAutoScrolling() */
-	private function stopAutoScrolling():Void;
+	/*@@@ modifiers=4 */ private function stopAutoScrolling():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#togglePopup() */
-	private function togglePopup():Void;
+	/*@@@ modifiers=4 */ private function togglePopup():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#uninstallComboBoxModelListeners(javax.swing.ComboBoxModel) */
-	private function uninstallComboBoxModelListeners(model:ComboBoxModel):Void;
+	/*@@@ modifiers=4 */ private function uninstallComboBoxModelListeners(model:ComboBoxModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#uninstallingUI() */
-	public function uninstallingUI():Void;
+	/*@@@ modifiers=1 */ public function uninstallingUI():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#updateListBoxSelectionForEvent(java.awt.event.MouseEvent, boolean) */
-	private function updateListBoxSelectionForEvent(anEvent:MouseEvent, shouldScroll:Bool):Void;
+	/*@@@ modifiers=4 */ private function updateListBoxSelectionForEvent(anEvent:MouseEvent, shouldScroll:Bool):Void;
 
 }
 

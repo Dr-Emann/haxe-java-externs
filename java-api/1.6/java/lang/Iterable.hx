@@ -7,7 +7,7 @@ import java.util.Iterator;
 extern interface Iterable<T : (Dynamic)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Iterable.html#iterator() */
-	public function iterator():java.util.Iterator<T>;
+	/*@@@ modifiers=1025 */ public function iterator():java.util.Iterator<T>;
 
 }
 

@@ -16,71 +16,71 @@ import javax.accessibility.AccessibleContext;
 extern class ScrollPane extends Container, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#ScrollPane() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#ScrollPane(int) */
-	public function new(scrollbarDisplayPolicy:Int):Void;
+	/*@@@ modifiers=1 */ public function new(scrollbarDisplayPolicy:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#addImpl(java.awt.Component, java.lang.Object, int) */
-	override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;
+	/*@@@ modifiers=20 */ override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#addNotify() */
-	override public function addNotify():Void;
+	/*@@@ modifiers=1 */ override public function addNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#doLayout() */
-	override public function doLayout():Void;
+	/*@@@ modifiers=1 */ override public function doLayout():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#eventTypeEnabled(int) */
-	override private function eventTypeEnabled(type:Int):Bool;
+	/*@@@ modifiers=4 */ override private function eventTypeEnabled(type:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getHAdjustable() */
-	public function getHAdjustable():Adjustable;
+	/*@@@ modifiers=1 */ public function getHAdjustable():Adjustable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getHScrollbarHeight() */
-	public function getHScrollbarHeight():Int;
+	/*@@@ modifiers=1 */ public function getHScrollbarHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getScrollPosition() */
-	public function getScrollPosition():Point;
+	/*@@@ modifiers=1 */ public function getScrollPosition():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getScrollbarDisplayPolicy() */
-	public function getScrollbarDisplayPolicy():Int;
+	/*@@@ modifiers=1 */ public function getScrollbarDisplayPolicy():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getVAdjustable() */
-	public function getVAdjustable():Adjustable;
+	/*@@@ modifiers=1 */ public function getVAdjustable():Adjustable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getVScrollbarWidth() */
-	public function getVScrollbarWidth():Int;
+	/*@@@ modifiers=1 */ public function getVScrollbarWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getViewportSize() */
-	public function getViewportSize():Dimension;
+	/*@@@ modifiers=1 */ public function getViewportSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#isWheelScrollingEnabled() */
-	public function isWheelScrollingEnabled():Bool;
+	/*@@@ modifiers=1 */ public function isWheelScrollingEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#layout() */
-	override public function layout():Void;
+	/*@@@ modifiers=1 */ override public function layout():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#printComponents(java.awt.Graphics) */
-	override public function printComponents(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function printComponents(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#processMouseWheelEvent(java.awt.event.MouseWheelEvent) */
-	override private function processMouseWheelEvent(e:MouseWheelEvent):Void;
+	/*@@@ modifiers=4 */ override private function processMouseWheelEvent(e:MouseWheelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#setLayout(java.awt.LayoutManager) */
-	override public function setLayout(mgr:LayoutManager):Void;
+	/*@@@ modifiers=17 */ override public function setLayout(mgr:LayoutManager):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#setScrollPosition(int, int) */
-	@:overload(function (x:Int, y:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#setScrollPosition(java.awt.Point) */
-	public function setScrollPosition(p:Point):Void;
+	/*@@@ modifiers=1 */ public function setScrollPosition(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#setWheelScrollingEnabled(boolean) */
-	public function setWheelScrollingEnabled(handleWheel:Bool):Void;
+	/*@@@ modifiers=1 */ public function setWheelScrollingEnabled(handleWheel:Bool):Void;
 
 }
 

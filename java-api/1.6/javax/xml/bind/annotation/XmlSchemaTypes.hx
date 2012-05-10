@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlSchemaType;
 extern interface XmlSchemaTypes implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlSchemaTypes.html#value() */
-	public function value():NativeArray<XmlSchemaType>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<XmlSchemaType>;
 
 }
 

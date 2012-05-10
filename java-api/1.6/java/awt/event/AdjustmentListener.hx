@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface AdjustmentListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent) */
-	public function adjustmentValueChanged(e:AdjustmentEvent):Void;
+	/*@@@ modifiers=1025 */ public function adjustmentValueChanged(e:AdjustmentEvent):Void;
 
 }
 

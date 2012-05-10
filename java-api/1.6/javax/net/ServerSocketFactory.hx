@@ -9,19 +9,19 @@ import java.net.ServerSocket;
 extern class ServerSocketFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ServerSocketFactory.html#ServerSocketFactory() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ServerSocketFactory.html#createServerSocket(int, int, java.net.InetAddress) */
-	@:overload(function (arg0:Int, arg1:Int, arg2:InetAddress):ServerSocket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:Int, arg1:Int, arg2:InetAddress):ServerSocket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ServerSocketFactory.html#createServerSocket(int, int) */
-	@:overload(function (arg0:Int, arg1:Int):ServerSocket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:Int, arg1:Int):ServerSocket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ServerSocketFactory.html#createServerSocket(int) */
-	@:overload(function (arg0:Int):ServerSocket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:Int):ServerSocket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ServerSocketFactory.html#createServerSocket() */
-	public function createServerSocket():ServerSocket;
+	/*@@@ modifiers=1 */ public function createServerSocket():ServerSocket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ServerSocketFactory.html#getDefault() */
-	static public function getDefault():ServerSocketFactory;
+	/*@@@ modifiers=9 */ static public function getDefault():ServerSocketFactory;
 
 }
 

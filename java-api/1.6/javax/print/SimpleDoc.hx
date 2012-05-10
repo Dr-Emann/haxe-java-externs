@@ -12,22 +12,22 @@ import javax.print.attribute.DocAttributeSet;
 extern class SimpleDoc extends Object, implements Doc
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/SimpleDoc.html#SimpleDoc(java.lang.Object, javax.print.DocFlavor, javax.print.attribute.DocAttributeSet) */
-	public function new(printData:Dynamic, flavor:DocFlavor, attributes:DocAttributeSet):Void;
+	/*@@@ modifiers=1 */ public function new(printData:Dynamic, flavor:DocFlavor, attributes:DocAttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/SimpleDoc.html#getAttributes() */
-	public function getAttributes():DocAttributeSet;
+	/*@@@ modifiers=1 */ public function getAttributes():DocAttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/SimpleDoc.html#getDocFlavor() */
-	public function getDocFlavor():DocFlavor;
+	/*@@@ modifiers=1 */ public function getDocFlavor():DocFlavor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/SimpleDoc.html#getPrintData() */
-	public function getPrintData():Dynamic;
+	/*@@@ modifiers=1 */ public function getPrintData():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/SimpleDoc.html#getReaderForText() */
-	public function getReaderForText():Reader;
+	/*@@@ modifiers=1 */ public function getReaderForText():Reader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/SimpleDoc.html#getStreamForBytes() */
-	public function getStreamForBytes():InputStream;
+	/*@@@ modifiers=1 */ public function getStreamForBytes():InputStream;
 
 }
 

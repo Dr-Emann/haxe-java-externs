@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 extern interface XmlJavaTypeAdapters implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/adapters/XmlJavaTypeAdapters.html#value() */
-	public function value():NativeArray<XmlJavaTypeAdapter>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<XmlJavaTypeAdapter>;
 
 }
 

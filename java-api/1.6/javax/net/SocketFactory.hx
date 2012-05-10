@@ -9,21 +9,21 @@ import java.net.Socket;
 extern class SocketFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#SocketFactory() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#createSocket(java.lang.String, int, java.net.InetAddress, int) */
-	@:overload(function (arg0:String, arg1:Int, arg2:InetAddress, arg3:Int):Socket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:Int, arg2:InetAddress, arg3:Int):Socket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#createSocket(java.net.InetAddress, int, java.net.InetAddress, int) */
-	@:overload(function (arg0:InetAddress, arg1:Int, arg2:InetAddress, arg3:Int):Socket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:InetAddress, arg1:Int, arg2:InetAddress, arg3:Int):Socket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#createSocket(java.lang.String, int) */
-	@:overload(function (arg0:String, arg1:Int):Socket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:Int):Socket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#createSocket(java.net.InetAddress, int) */
-	@:overload(function (arg0:InetAddress, arg1:Int):Socket {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:InetAddress, arg1:Int):Socket {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#createSocket() */
-	public function createSocket():Socket;
+	/*@@@ modifiers=1 */ public function createSocket():Socket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/SocketFactory.html#getDefault() */
-	static public function getDefault():SocketFactory;
+	/*@@@ modifiers=9 */ static public function getDefault():SocketFactory;
 
 }
 

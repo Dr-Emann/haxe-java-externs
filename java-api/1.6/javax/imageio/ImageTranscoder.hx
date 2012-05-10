@@ -9,10 +9,10 @@ import javax.imageio.metadata.IIOMetadata;
 extern interface ImageTranscoder
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageTranscoder.html#convertImageMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageTypeSpecifier, javax.imageio.ImageWriteParam) */
-	public function convertImageMetadata(inData:IIOMetadata, imageType:ImageTypeSpecifier, param:ImageWriteParam):IIOMetadata;
+	/*@@@ modifiers=1025 */ public function convertImageMetadata(inData:IIOMetadata, imageType:ImageTypeSpecifier, param:ImageWriteParam):IIOMetadata;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageTranscoder.html#convertStreamMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageWriteParam) */
-	public function convertStreamMetadata(inData:IIOMetadata, param:ImageWriteParam):IIOMetadata;
+	/*@@@ modifiers=1025 */ public function convertStreamMetadata(inData:IIOMetadata, param:ImageWriteParam):IIOMetadata;
 
 }
 

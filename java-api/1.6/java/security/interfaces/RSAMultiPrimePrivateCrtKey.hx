@@ -10,25 +10,25 @@ import java.security.spec.RSAOtherPrimeInfo;
 extern interface RSAMultiPrimePrivateCrtKey implements RSAPrivateKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getCrtCoefficient() */
-	public function getCrtCoefficient():BigInteger;
+	/*@@@ modifiers=1025 */ public function getCrtCoefficient():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getOtherPrimeInfo() */
-	public function getOtherPrimeInfo():NativeArray<RSAOtherPrimeInfo>;
+	/*@@@ modifiers=1025 */ public function getOtherPrimeInfo():NativeArray<RSAOtherPrimeInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentP() */
-	public function getPrimeExponentP():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeExponentP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentQ() */
-	public function getPrimeExponentQ():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeExponentQ():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeP() */
-	public function getPrimeP():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeQ() */
-	public function getPrimeQ():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeQ():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPublicExponent() */
-	public function getPublicExponent():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPublicExponent():BigInteger;
 
 }
 

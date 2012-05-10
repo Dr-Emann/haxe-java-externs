@@ -30,43 +30,43 @@ extern class TimeUnit extends Enum<TimeUnit>
 	public static var DAYS:TimeUnit;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#convert(long, java.util.concurrent.TimeUnit) */
-	public function convert(sourceDuration:haxe.Int64, sourceUnit:TimeUnit):haxe.Int64;
+	/*@@@ modifiers=1 */ public function convert(sourceDuration:haxe.Int64, sourceUnit:TimeUnit):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#sleep(long) */
-	public function sleep(timeout:haxe.Int64):Void;
+	/*@@@ modifiers=1 */ public function sleep(timeout:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread, long) */
-	public function timedJoin(thread:Thread, timeout:haxe.Int64):Void;
+	/*@@@ modifiers=1 */ public function timedJoin(thread:Thread, timeout:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object, long) */
-	public function timedWait(obj:Dynamic, timeout:haxe.Int64):Void;
+	/*@@@ modifiers=1 */ public function timedWait(obj:Dynamic, timeout:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toDays(long) */
-	public function toDays(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toDays(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toHours(long) */
-	public function toHours(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toHours(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toMicros(long) */
-	public function toMicros(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toMicros(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toMillis(long) */
-	public function toMillis(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toMillis(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toMinutes(long) */
-	public function toMinutes(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toMinutes(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toNanos(long) */
-	public function toNanos(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toNanos(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#toSeconds(long) */
-	public function toSeconds(duration:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ public function toSeconds(duration:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):TimeUnit;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):TimeUnit;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeUnit.html#values() */
-	static public function values():NativeArray<TimeUnit>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<TimeUnit>;
 
 }
 

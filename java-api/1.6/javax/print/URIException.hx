@@ -7,10 +7,10 @@ import java.net.URI;
 extern interface URIException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/URIException.html#getReason() */
-	public function getReason():Int;
+	/*@@@ modifiers=1025 */ public function getReason():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/URIException.html#getUnsupportedURI() */
-	public function getUnsupportedURI():URI;
+	/*@@@ modifiers=1025 */ public function getUnsupportedURI():URI;
 
 }
 

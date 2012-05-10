@@ -26,40 +26,40 @@ extern class BasicColorChooserUI extends ColorChooserUI
 	private var propertyChangeListener:PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#BasicColorChooserUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#createDefaultChoosers() */
-	private function createDefaultChoosers():NativeArray<AbstractColorChooserPanel>;
+	/*@@@ modifiers=4 */ private function createDefaultChoosers():NativeArray<AbstractColorChooserPanel>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#installPreviewPanel() */
-	private function installPreviewPanel():Void;
+	/*@@@ modifiers=4 */ private function installPreviewPanel():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#uninstallDefaultChoosers() */
-	private function uninstallDefaultChoosers():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaultChoosers():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicColorChooserUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

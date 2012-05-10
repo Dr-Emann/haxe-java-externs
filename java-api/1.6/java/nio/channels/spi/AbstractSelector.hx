@@ -12,34 +12,34 @@ import java.util.Set;
 extern class AbstractSelector extends Selector
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#AbstractSelector(java.nio.channels.spi.SelectorProvider) */
-	private function new(provider:SelectorProvider):Void;
+	/*@@@ modifiers=4 */ private function new(provider:SelectorProvider):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#begin() */
-	private function begin():Void;
+	/*@@@ modifiers=20 */ private function begin():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#cancelledKeys() */
-	private function cancelledKeys():Set<SelectionKey>;
+	/*@@@ modifiers=20 */ private function cancelledKeys():Set<SelectionKey>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=17 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#deregister(java.nio.channels.spi.AbstractSelectionKey) */
-	private function deregister(key:AbstractSelectionKey):Void;
+	/*@@@ modifiers=20 */ private function deregister(key:AbstractSelectionKey):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#end() */
-	private function end():Void;
+	/*@@@ modifiers=20 */ private function end():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#implCloseSelector() */
-	private function implCloseSelector():Void;
+	/*@@@ modifiers=1028 */ private function implCloseSelector():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#isOpen() */
-	override public function isOpen():Bool;
+	/*@@@ modifiers=17 */ override public function isOpen():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#provider() */
-	override public function provider():SelectorProvider;
+	/*@@@ modifiers=17 */ override public function provider():SelectorProvider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelector.html#register(java.nio.channels.spi.AbstractSelectableChannel, int, java.lang.Object) */
-	private function register(ch:AbstractSelectableChannel, ops:Int, att:Dynamic):SelectionKey;
+	/*@@@ modifiers=1028 */ private function register(ch:AbstractSelectableChannel, ops:Int, att:Dynamic):SelectionKey;
 
 }
 

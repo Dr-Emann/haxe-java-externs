@@ -7,9 +7,9 @@ import javax.management.OperationsException;
 extern class MalformedObjectNameException extends OperationsException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MalformedObjectNameException.html#MalformedObjectNameException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MalformedObjectNameException.html#MalformedObjectNameException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

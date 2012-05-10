@@ -18,31 +18,31 @@ import javax.swing.text.ViewFactory;
 extern class TableView extends BoxView
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#TableView(javax.swing.text.Element) */
-	public function new(elem:Element):Void;
+	/*@@@ modifiers=1 */ public function new(elem:Element):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#calculateMinorAxisRequirements(int, javax.swing.SizeRequirements) */
-	override private function calculateMinorAxisRequirements(axis:Int, r:SizeRequirements):SizeRequirements;
+	/*@@@ modifiers=4 */ override private function calculateMinorAxisRequirements(axis:Int, r:SizeRequirements):SizeRequirements;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#createTableCell(javax.swing.text.Element) */
-	private function createTableCell(elem:Element):TableView_TableCell;
+	/*@@@ modifiers=4 */ private function createTableCell(elem:Element):TableView_TableCell;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#createTableRow(javax.swing.text.Element) */
-	private function createTableRow(elem:Element):TableView_TableRow;
+	/*@@@ modifiers=4 */ private function createTableRow(elem:Element):TableView_TableRow;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#forwardUpdate(javax.swing.event.DocumentEvent$ElementChange, javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory) */
-	override private function forwardUpdate(ec:DocumentEvent_ElementChange, e:DocumentEvent, a:Shape, f:ViewFactory):Void;
+	/*@@@ modifiers=4 */ override private function forwardUpdate(ec:DocumentEvent_ElementChange, e:DocumentEvent, a:Shape, f:ViewFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#getViewAtPosition(int, java.awt.Rectangle) */
-	override private function getViewAtPosition(pos:Int, a:Rectangle):View;
+	/*@@@ modifiers=4 */ override private function getViewAtPosition(pos:Int, a:Rectangle):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#layoutColumns(int, int[], int[], javax.swing.SizeRequirements[]) */
-	private function layoutColumns(targetSpan:Int, offsets:NativeArray<Int>, spans:NativeArray<Int>, reqs:NativeArray<SizeRequirements>):Void;
+	/*@@@ modifiers=4 */ private function layoutColumns(targetSpan:Int, offsets:NativeArray<Int>, spans:NativeArray<Int>, reqs:NativeArray<SizeRequirements>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#layoutMinorAxis(int, int, int[], int[]) */
-	override private function layoutMinorAxis(targetSpan:Int, axis:Int, offsets:NativeArray<Int>, spans:NativeArray<Int>):Void;
+	/*@@@ modifiers=4 */ override private function layoutMinorAxis(targetSpan:Int, axis:Int, offsets:NativeArray<Int>, spans:NativeArray<Int>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.html#replace(int, int, javax.swing.text.View[]) */
-	override public function replace(offset:Int, length:Int, views:NativeArray<View>):Void;
+	/*@@@ modifiers=1 */ override public function replace(offset:Int, length:Int, views:NativeArray<View>):Void;
 
 }
 

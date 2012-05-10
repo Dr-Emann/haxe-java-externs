@@ -14,33 +14,33 @@ extern class BasicArrowButton extends JButton, implements SwingConstants
 	private var direction:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#BasicArrowButton(int) */
-	@:overload(function (direction:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (direction:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#BasicArrowButton(int, java.awt.Color, java.awt.Color, java.awt.Color, java.awt.Color) */
-	public function new(direction:Int, background:Color, shadow:Color, darkShadow:Color, highlight:Color):Void;
+	/*@@@ modifiers=1 */ public function new(direction:Int, background:Color, shadow:Color, darkShadow:Color, highlight:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#getDirection() */
-	public function getDirection():Int;
+	/*@@@ modifiers=1 */ public function getDirection():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#getMaximumSize() */
-	override public function getMaximumSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#getMinimumSize() */
-	override public function getMinimumSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#getPreferredSize() */
-	override public function getPreferredSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#isFocusTraversable() */
-	override public function isFocusTraversable():Bool;
+	/*@@@ modifiers=1 */ override public function isFocusTraversable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#paint(java.awt.Graphics) */
-	override public function paint(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#paintTriangle(java.awt.Graphics, int, int, int, int, boolean) */
-	public function paintTriangle(g:Graphics, x:Int, y:Int, size:Int, direction:Int, isEnabled:Bool):Void;
+	/*@@@ modifiers=1 */ public function paintTriangle(g:Graphics, x:Int, y:Int, size:Int, direction:Int, isEnabled:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#setDirection(int) */
-	public function setDirection(dir:Int):Void;
+	/*@@@ modifiers=1 */ public function setDirection(dir:Int):Void;
 
 }
 

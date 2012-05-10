@@ -7,9 +7,9 @@ import java.lang.RuntimeException;
 extern class IndexOutOfBoundsException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/IndexOutOfBoundsException.html#IndexOutOfBoundsException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/IndexOutOfBoundsException.html#IndexOutOfBoundsException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

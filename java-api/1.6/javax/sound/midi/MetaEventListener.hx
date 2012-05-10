@@ -8,7 +8,7 @@ import javax.sound.midi.MetaMessage;
 extern interface MetaEventListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage) */
-	public function meta(meta:MetaMessage):Void;
+	/*@@@ modifiers=1025 */ public function meta(meta:MetaMessage):Void;
 
 }
 

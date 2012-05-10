@@ -12,37 +12,49 @@ import java.lang.StringBuffer;
 extern class StringWriter extends Writer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#StringWriter(int) */
-	@:overload(function (initialSize:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (initialSize:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#StringWriter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(java.lang.CharSequence, int, int) */
-	@:overload(function (csq:CharSequence, start:Int, end:Int):Writer {})
+	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(java.lang.CharSequence, int, int) */
+	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence, start:Int, end:Int):StringWriter {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(java.lang.CharSequence, int, int) */
+	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Writer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(char) */
-	@:overload(function (c:Char16):Writer {})
+	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(char) */
+	/*@@@ modifiers=1 */ @:overload(function (c:Char16):StringWriter {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(char) */
+	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Writer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(java.lang.CharSequence) */
-	override public function append(csq:CharSequence):Appendable;
+	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence):Writer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(java.lang.CharSequence) */
+	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence):StringWriter {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#append(java.lang.CharSequence) */
+	/*@@@ modifiers=4161 */ override public function append(csq:CharSequence):Appendable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#flush() */
-	override public function flush():Void;
+	/*@@@ modifiers=1 */ override public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#getBuffer() */
-	public function getBuffer():StringBuffer;
+	/*@@@ modifiers=1 */ public function getBuffer():StringBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(char[], int, int) */
-	@:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(java.lang.String, int, int) */
-	@:overload(function (str:String, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (str:String, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(int) */
-	@:overload(function (c:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(java.lang.String) */
-	override public function write(str:String):Void;
+	/*@@@ modifiers=1 */ override public function write(str:String):Void;
 
 }
 

@@ -7,7 +7,7 @@ import java.lang.IllegalStateException;
 extern class NoConnectionPendingException extends IllegalStateException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/NoConnectionPendingException.html#NoConnectionPendingException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

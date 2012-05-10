@@ -23,10 +23,10 @@ extern class Diagnostic_Kind extends Enum<Diagnostic_Kind>
 	public static var OTHER:Diagnostic_Kind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/Diagnostic.Kind.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Diagnostic_Kind;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Diagnostic_Kind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/Diagnostic.Kind.html#values() */
-	static public function values():NativeArray<Diagnostic_Kind>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Diagnostic_Kind>;
 
 }
 

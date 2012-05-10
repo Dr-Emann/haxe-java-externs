@@ -12,42 +12,42 @@ import javax.security.auth.kerberos.KerberosPrincipal;
 extern class KerberosKey extends Object, implements SecretKey, implements Destroyable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#KerberosKey(javax.security.auth.kerberos.KerberosPrincipal, char[], java.lang.String) */
-	@:overload(function (principal:KerberosPrincipal, password:NativeArray<Char16>, algorithm:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (principal:KerberosPrincipal, password:NativeArray<Char16>, algorithm:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#KerberosKey(javax.security.auth.kerberos.KerberosPrincipal, byte[], int, int) */
-	public function new(principal:KerberosPrincipal, keyBytes:NativeArray<Int8>, keyType:Int, versionNum:Int):Void;
+	/*@@@ modifiers=1 */ public function new(principal:KerberosPrincipal, keyBytes:NativeArray<Int8>, keyType:Int, versionNum:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#destroy() */
-	public function destroy():Void;
+	/*@@@ modifiers=1 */ public function destroy():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#equals(java.lang.Object) */
-	override public function equals(other:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(other:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=17 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#getEncoded() */
-	public function getEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=17 */ public function getEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#getFormat() */
-	public function getFormat():String;
+	/*@@@ modifiers=17 */ public function getFormat():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#getKeyType() */
-	public function getKeyType():Int;
+	/*@@@ modifiers=17 */ public function getKeyType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#getPrincipal() */
-	public function getPrincipal():KerberosPrincipal;
+	/*@@@ modifiers=17 */ public function getPrincipal():KerberosPrincipal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#getVersionNumber() */
-	public function getVersionNumber():Int;
+	/*@@@ modifiers=17 */ public function getVersionNumber():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#isDestroyed() */
-	public function isDestroyed():Bool;
+	/*@@@ modifiers=1 */ public function isDestroyed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosKey.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -9,7 +9,7 @@ import java.security.interfaces.RSAKey;
 extern interface RSAPrivateKey implements PrivateKey, implements RSAKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html#getPrivateExponent() */
-	public function getPrivateExponent():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrivateExponent():BigInteger;
 
 }
 

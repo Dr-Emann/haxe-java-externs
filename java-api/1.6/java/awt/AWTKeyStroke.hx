@@ -12,53 +12,53 @@ import java.lang.Object;
 extern class AWTKeyStroke extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#AWTKeyStroke() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=4 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#AWTKeyStroke(char, int, int, boolean) */
-	private function new(keyChar:Char16, keyCode:Int, modifiers:Int, onKeyRelease:Bool):Void;
+	/*@@@ modifiers=4 */ private function new(keyChar:Char16, keyCode:Int, modifiers:Int, onKeyRelease:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#equals(java.lang.Object) */
-	override public function equals(anObject:Dynamic):Bool;
+	/*@@@ modifiers=17 */ override public function equals(anObject:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getAWTKeyStroke(int, int, boolean) */
-	@:overload(function (keyCode:Int, modifiers:Int, onKeyRelease:Bool):AWTKeyStroke {})
+	/*@@@ modifiers=9 */ @:overload(function (keyCode:Int, modifiers:Int, onKeyRelease:Bool):AWTKeyStroke {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getAWTKeyStroke(int, int) */
-	@:overload(function (keyCode:Int, modifiers:Int):AWTKeyStroke {})
+	/*@@@ modifiers=9 */ @:overload(function (keyCode:Int, modifiers:Int):AWTKeyStroke {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.Character, int) */
-	@:overload(function (keyChar:Character, modifiers:Int):AWTKeyStroke {})
+	/*@@@ modifiers=9 */ @:overload(function (keyChar:Character, modifiers:Int):AWTKeyStroke {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getAWTKeyStroke(char) */
-	@:overload(function (keyChar:Char16):AWTKeyStroke {})
+	/*@@@ modifiers=9 */ @:overload(function (keyChar:Char16):AWTKeyStroke {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.String) */
-	static public function getAWTKeyStroke(s:String):AWTKeyStroke;
+	/*@@@ modifiers=9 */ static public function getAWTKeyStroke(s:String):AWTKeyStroke;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getAWTKeyStrokeForEvent(java.awt.event.KeyEvent) */
-	static public function getAWTKeyStrokeForEvent(anEvent:KeyEvent):AWTKeyStroke;
+	/*@@@ modifiers=9 */ static public function getAWTKeyStrokeForEvent(anEvent:KeyEvent):AWTKeyStroke;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getKeyChar() */
-	public function getKeyChar():Char16;
+	/*@@@ modifiers=17 */ public function getKeyChar():Char16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getKeyCode() */
-	public function getKeyCode():Int;
+	/*@@@ modifiers=17 */ public function getKeyCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getKeyEventType() */
-	public function getKeyEventType():Int;
+	/*@@@ modifiers=17 */ public function getKeyEventType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#getModifiers() */
-	public function getModifiers():Int;
+	/*@@@ modifiers=17 */ public function getModifiers():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#isOnKeyRelease() */
-	public function isOnKeyRelease():Bool;
+	/*@@@ modifiers=17 */ public function isOnKeyRelease():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#readResolve() */
-	private function readResolve():Dynamic;
+	/*@@@ modifiers=4 */ private function readResolve():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#registerSubclass(java.lang.Class) */
-	static private function registerSubclass(subclass:Class<Dynamic>):Void;
+	/*@@@ modifiers=12 */ static private function registerSubclass(subclass:Class<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTKeyStroke.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

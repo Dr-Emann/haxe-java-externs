@@ -9,15 +9,15 @@ import javax.management.JMRuntimeException;
 extern class RuntimeErrorException extends JMRuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/RuntimeErrorException.html#RuntimeErrorException(java.lang.Error) */
-	@:overload(function (e:Error):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (e:Error):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/RuntimeErrorException.html#RuntimeErrorException(java.lang.Error, java.lang.String) */
-	public function new(e:Error, message:String):Void;
+	/*@@@ modifiers=1 */ public function new(e:Error, message:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/RuntimeErrorException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/RuntimeErrorException.html#getTargetError() */
-	public function getTargetError():Error;
+	/*@@@ modifiers=1 */ public function getTargetError():Error;
 
 }
 

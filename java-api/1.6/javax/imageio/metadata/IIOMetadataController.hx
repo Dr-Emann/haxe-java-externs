@@ -7,7 +7,7 @@ import javax.imageio.metadata.IIOMetadata;
 extern interface IIOMetadataController
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/metadata/IIOMetadataController.html#activate(javax.imageio.metadata.IIOMetadata) */
-	public function activate(metadata:IIOMetadata):Bool;
+	/*@@@ modifiers=1025 */ public function activate(metadata:IIOMetadata):Bool;
 
 }
 

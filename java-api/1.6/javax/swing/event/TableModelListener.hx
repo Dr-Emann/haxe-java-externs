@@ -8,7 +8,7 @@ import javax.swing.event.TableModelEvent;
 extern interface TableModelListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent) */
-	public function tableChanged(e:TableModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function tableChanged(e:TableModelEvent):Void;
 
 }
 

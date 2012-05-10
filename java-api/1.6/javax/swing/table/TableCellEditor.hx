@@ -9,7 +9,7 @@ import javax.swing.JTable;
 extern interface TableCellEditor implements CellEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/TableCellEditor.html#getTableCellEditorComponent(javax.swing.JTable, java.lang.Object, boolean, int, int) */
-	public function getTableCellEditorComponent(table:JTable, value:Dynamic, isSelected:Bool, row:Int, column:Int):Component;
+	/*@@@ modifiers=1025 */ public function getTableCellEditorComponent(table:JTable, value:Dynamic, isSelected:Bool, row:Int, column:Int):Component;
 
 }
 

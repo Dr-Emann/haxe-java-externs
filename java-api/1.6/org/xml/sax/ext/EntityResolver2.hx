@@ -8,10 +8,10 @@ import org.xml.sax.InputSource;
 extern interface EntityResolver2 implements EntityResolver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/EntityResolver2.html#getExternalSubset(java.lang.String, java.lang.String) */
-	public function getExternalSubset(name:String, baseURI:String):InputSource;
+	/*@@@ modifiers=1025 */ public function getExternalSubset(name:String, baseURI:String):InputSource;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	public function resolveEntity(name:String, publicId:String, baseURI:String, systemId:String):InputSource;
+	/*@@@ modifiers=1025 */ public function resolveEntity(name:String, publicId:String, baseURI:String, systemId:String):InputSource;
 
 }
 

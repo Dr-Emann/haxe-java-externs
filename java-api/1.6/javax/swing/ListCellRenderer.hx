@@ -8,7 +8,7 @@ import javax.swing.JList;
 extern interface ListCellRenderer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList, java.lang.Object, int, boolean, boolean) */
-	public function getListCellRendererComponent(list:JList, value:Dynamic, index:Int, isSelected:Bool, cellHasFocus:Bool):Component;
+	/*@@@ modifiers=1025 */ public function getListCellRendererComponent(list:JList, value:Dynamic, index:Int, isSelected:Bool, cellHasFocus:Bool):Component;
 
 }
 

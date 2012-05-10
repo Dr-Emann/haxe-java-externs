@@ -7,7 +7,7 @@ import javax.xml.stream.events.XMLEvent;
 extern interface EventFilter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/EventFilter.html#accept(javax.xml.stream.events.XMLEvent) */
-	public function accept(event:XMLEvent):Bool;
+	/*@@@ modifiers=1025 */ public function accept(event:XMLEvent):Bool;
 
 }
 

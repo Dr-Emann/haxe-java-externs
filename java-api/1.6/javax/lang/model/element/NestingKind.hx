@@ -20,13 +20,13 @@ extern class NestingKind extends Enum<NestingKind>
 	public static var ANONYMOUS:NestingKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/NestingKind.html#isNested() */
-	public function isNested():Bool;
+	/*@@@ modifiers=1 */ public function isNested():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/NestingKind.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):NestingKind;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):NestingKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/NestingKind.html#values() */
-	static public function values():NativeArray<NestingKind>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<NestingKind>;
 
 }
 

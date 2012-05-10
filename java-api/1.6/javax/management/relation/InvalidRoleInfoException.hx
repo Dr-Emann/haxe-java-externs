@@ -7,9 +7,9 @@ import javax.management.relation.RelationException;
 extern class InvalidRoleInfoException extends RelationException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/InvalidRoleInfoException.html#InvalidRoleInfoException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/InvalidRoleInfoException.html#InvalidRoleInfoException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

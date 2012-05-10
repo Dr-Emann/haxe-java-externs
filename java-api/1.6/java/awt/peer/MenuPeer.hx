@@ -8,13 +8,13 @@ import java.awt.peer.MenuItemPeer;
 extern interface MenuPeer implements MenuItemPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuPeer.html#addItem(java.awt.MenuItem) */
-	public function addItem(item:MenuItem):Void;
+	/*@@@ modifiers=1025 */ public function addItem(item:MenuItem):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuPeer.html#addSeparator() */
-	public function addSeparator():Void;
+	/*@@@ modifiers=1025 */ public function addSeparator():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuPeer.html#delItem(int) */
-	public function delItem(index:Int):Void;
+	/*@@@ modifiers=1025 */ public function delItem(index:Int):Void;
 
 }
 

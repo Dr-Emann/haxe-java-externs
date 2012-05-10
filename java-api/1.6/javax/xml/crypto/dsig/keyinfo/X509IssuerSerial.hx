@@ -8,10 +8,10 @@ import javax.xml.crypto.XMLStructure;
 extern interface X509IssuerSerial implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getIssuerName() */
-	public function getIssuerName():String;
+	/*@@@ modifiers=1025 */ public function getIssuerName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber() */
-	public function getSerialNumber():BigInteger;
+	/*@@@ modifiers=1025 */ public function getSerialNumber():BigInteger;
 
 }
 

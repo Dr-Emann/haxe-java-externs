@@ -8,12 +8,12 @@ import javax.swing.text.InternationalFormatter;
 extern class DateFormatter extends InternationalFormatter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DateFormatter.html#DateFormatter() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DateFormatter.html#DateFormatter(java.text.DateFormat) */
-	public function new(format:DateFormat):Void;
+	/*@@@ modifiers=1 */ public function new(format:DateFormat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DateFormatter.html#setFormat(java.text.DateFormat) */
-	override public function setFormat(format:DateFormat):Void;
+	/*@@@ modifiers=1 */ override public function setFormat(format:DateFormat):Void;
 
 }
 

@@ -7,13 +7,13 @@ import java.util.IllegalFormatException;
 extern class UnknownFormatConversionException extends IllegalFormatException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/UnknownFormatConversionException.html#UnknownFormatConversionException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/UnknownFormatConversionException.html#getConversion() */
-	public function getConversion():String;
+	/*@@@ modifiers=1 */ public function getConversion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/UnknownFormatConversionException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

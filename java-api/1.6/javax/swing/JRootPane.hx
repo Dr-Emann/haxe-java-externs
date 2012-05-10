@@ -38,97 +38,97 @@ extern class JRootPane extends JComponent, implements Accessible
 	private var defaultReleaseAction:JRootPane_DefaultAction;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#JRootPane() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#addImpl(java.awt.Component, java.lang.Object, int) */
-	override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;
+	/*@@@ modifiers=4 */ override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#addNotify() */
-	override public function addNotify():Void;
+	/*@@@ modifiers=1 */ override public function addNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#createContentPane() */
-	private function createContentPane():Container;
+	/*@@@ modifiers=4 */ private function createContentPane():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#createGlassPane() */
-	private function createGlassPane():Component;
+	/*@@@ modifiers=4 */ private function createGlassPane():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#createLayeredPane() */
-	private function createLayeredPane():JLayeredPane;
+	/*@@@ modifiers=4 */ private function createLayeredPane():JLayeredPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#createRootLayout() */
-	private function createRootLayout():LayoutManager;
+	/*@@@ modifiers=4 */ private function createRootLayout():LayoutManager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getContentPane() */
-	public function getContentPane():Container;
+	/*@@@ modifiers=1 */ public function getContentPane():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getDefaultButton() */
-	public function getDefaultButton():JButton;
+	/*@@@ modifiers=1 */ public function getDefaultButton():JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getGlassPane() */
-	public function getGlassPane():Component;
+	/*@@@ modifiers=1 */ public function getGlassPane():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getJMenuBar() */
-	public function getJMenuBar():JMenuBar;
+	/*@@@ modifiers=1 */ public function getJMenuBar():JMenuBar;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getLayeredPane() */
-	public function getLayeredPane():JLayeredPane;
+	/*@@@ modifiers=1 */ public function getLayeredPane():JLayeredPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getMenuBar() */
-	public function getMenuBar():JMenuBar;
+	/*@@@ modifiers=1 */ public function getMenuBar():JMenuBar;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getUI() */
-	public function getUI():RootPaneUI;
+	/*@@@ modifiers=1 */ public function getUI():RootPaneUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#getWindowDecorationStyle() */
-	public function getWindowDecorationStyle():Int;
+	/*@@@ modifiers=1 */ public function getWindowDecorationStyle():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#isOptimizedDrawingEnabled() */
-	override public function isOptimizedDrawingEnabled():Bool;
+	/*@@@ modifiers=1 */ override public function isOptimizedDrawingEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#isValidateRoot() */
-	override public function isValidateRoot():Bool;
+	/*@@@ modifiers=1 */ override public function isValidateRoot():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#removeNotify() */
-	override public function removeNotify():Void;
+	/*@@@ modifiers=1 */ override public function removeNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setContentPane(java.awt.Container) */
-	public function setContentPane(content:Container):Void;
+	/*@@@ modifiers=1 */ public function setContentPane(content:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton) */
-	public function setDefaultButton(defaultButton:JButton):Void;
+	/*@@@ modifiers=1 */ public function setDefaultButton(defaultButton:JButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setDoubleBuffered(boolean) */
-	override public function setDoubleBuffered(aFlag:Bool):Void;
+	/*@@@ modifiers=1 */ override public function setDoubleBuffered(aFlag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setGlassPane(java.awt.Component) */
-	public function setGlassPane(glass:Component):Void;
+	/*@@@ modifiers=1 */ public function setGlassPane(glass:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar) */
-	public function setJMenuBar(menu:JMenuBar):Void;
+	/*@@@ modifiers=1 */ public function setJMenuBar(menu:JMenuBar):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane) */
-	public function setLayeredPane(layered:JLayeredPane):Void;
+	/*@@@ modifiers=1 */ public function setLayeredPane(layered:JLayeredPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setMenuBar(javax.swing.JMenuBar) */
-	public function setMenuBar(menu:JMenuBar):Void;
+	/*@@@ modifiers=1 */ public function setMenuBar(menu:JMenuBar):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setUI(javax.swing.plaf.RootPaneUI) */
-	override public function setUI(ui:RootPaneUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:RootPaneUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setWindowDecorationStyle(int) */
-	public function setWindowDecorationStyle(windowDecorationStyle:Int):Void;
+	/*@@@ modifiers=1 */ public function setWindowDecorationStyle(windowDecorationStyle:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

@@ -7,10 +7,10 @@ import java.util.EventObject;
 extern class PrintEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/event/PrintEvent.html#PrintEvent(java.lang.Object) */
-	public function new(source:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/event/PrintEvent.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

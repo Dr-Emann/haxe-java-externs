@@ -8,22 +8,22 @@ import javax.management.MBeanParameterInfo;
 extern interface OpenMBeanConstructorInfo
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanConstructorInfo.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanConstructorInfo.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=1025 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanConstructorInfo.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanConstructorInfo.html#getSignature() */
-	public function getSignature():NativeArray<MBeanParameterInfo>;
+	/*@@@ modifiers=1025 */ public function getSignature():NativeArray<MBeanParameterInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanConstructorInfo.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanConstructorInfo.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

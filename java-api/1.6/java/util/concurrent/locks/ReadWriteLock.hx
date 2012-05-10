@@ -7,10 +7,10 @@ import java.util.concurrent.locks.Lock;
 extern interface ReadWriteLock
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReadWriteLock.html#readLock() */
-	public function readLock():Lock;
+	/*@@@ modifiers=1025 */ public function readLock():Lock;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReadWriteLock.html#writeLock() */
-	public function writeLock():Lock;
+	/*@@@ modifiers=1025 */ public function writeLock():Lock;
 
 }
 

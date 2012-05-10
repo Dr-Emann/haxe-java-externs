@@ -7,22 +7,22 @@ import org.w3c.dom.Node;
 extern interface Entity implements Node
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Entity.html#getInputEncoding() */
-	public function getInputEncoding():String;
+	/*@@@ modifiers=1025 */ public function getInputEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Entity.html#getNotationName() */
-	public function getNotationName():String;
+	/*@@@ modifiers=1025 */ public function getNotationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Entity.html#getPublicId() */
-	public function getPublicId():String;
+	/*@@@ modifiers=1025 */ public function getPublicId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Entity.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Entity.html#getXmlEncoding() */
-	public function getXmlEncoding():String;
+	/*@@@ modifiers=1025 */ public function getXmlEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Entity.html#getXmlVersion() */
-	public function getXmlVersion():String;
+	/*@@@ modifiers=1025 */ public function getXmlVersion():String;
 
 }
 

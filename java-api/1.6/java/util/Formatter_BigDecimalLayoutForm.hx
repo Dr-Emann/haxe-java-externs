@@ -14,10 +14,10 @@ extern class Formatter_BigDecimalLayoutForm extends Enum<Formatter_BigDecimalLay
 	public static var DECIMAL_FLOAT:Formatter_BigDecimalLayoutForm;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Formatter_BigDecimalLayoutForm;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Formatter_BigDecimalLayoutForm;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Formatter.BigDecimalLayoutForm.html#values() */
-	static public function values():NativeArray<Formatter_BigDecimalLayoutForm>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Formatter_BigDecimalLayoutForm>;
 
 }
 

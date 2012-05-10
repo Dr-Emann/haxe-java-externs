@@ -8,13 +8,13 @@ import javax.swing.event.PopupMenuEvent;
 extern interface PopupMenuListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent) */
-	public function popupMenuCanceled(e:PopupMenuEvent):Void;
+	/*@@@ modifiers=1025 */ public function popupMenuCanceled(e:PopupMenuEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent) */
-	public function popupMenuWillBecomeInvisible(e:PopupMenuEvent):Void;
+	/*@@@ modifiers=1025 */ public function popupMenuWillBecomeInvisible(e:PopupMenuEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent) */
-	public function popupMenuWillBecomeVisible(e:PopupMenuEvent):Void;
+	/*@@@ modifiers=1025 */ public function popupMenuWillBecomeVisible(e:PopupMenuEvent):Void;
 
 }
 

@@ -9,13 +9,13 @@ import org.w3c.dom.Node;
 extern class DOMStructure extends Object, implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dom/DOMStructure.html#DOMStructure(org.w3c.dom.Node) */
-	public function new(node:Node):Void;
+	/*@@@ modifiers=1 */ public function new(node:Node):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dom/DOMStructure.html#getNode() */
-	public function getNode():Node;
+	/*@@@ modifiers=1 */ public function getNode():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dom/DOMStructure.html#isFeatureSupported(java.lang.String) */
-	public function isFeatureSupported(feature:String):Bool;
+	/*@@@ modifiers=1 */ public function isFeatureSupported(feature:String):Bool;
 
 }
 

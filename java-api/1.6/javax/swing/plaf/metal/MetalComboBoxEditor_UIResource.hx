@@ -8,7 +8,7 @@ import javax.swing.plaf.metal.MetalComboBoxEditor;
 extern class MetalComboBoxEditor_UIResource extends MetalComboBoxEditor, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxEditor.UIResource.html#MetalComboBoxEditor$UIResource() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

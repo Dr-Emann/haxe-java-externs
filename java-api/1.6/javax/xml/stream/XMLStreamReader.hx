@@ -12,135 +12,135 @@ import javax.xml.stream.XMLStreamConstants;
 extern interface XMLStreamReader implements XMLStreamConstants
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeCount() */
-	public function getAttributeCount():Int;
+	/*@@@ modifiers=1025 */ public function getAttributeCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeLocalName(int) */
-	public function getAttributeLocalName(index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAttributeLocalName(index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeName(int) */
-	public function getAttributeName(index:Int):QName;
+	/*@@@ modifiers=1025 */ public function getAttributeName(index:Int):QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeNamespace(int) */
-	public function getAttributeNamespace(index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAttributeNamespace(index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributePrefix(int) */
-	public function getAttributePrefix(index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAttributePrefix(index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeType(int) */
-	public function getAttributeType(index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAttributeType(index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeValue(java.lang.String, java.lang.String) */
-	@:overload(function (namespaceURI:String, localName:String):String {})
+	/*@@@ modifiers=1025 */ @:overload(function (namespaceURI:String, localName:String):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getAttributeValue(int) */
-	public function getAttributeValue(index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAttributeValue(index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getCharacterEncodingScheme() */
-	public function getCharacterEncodingScheme():String;
+	/*@@@ modifiers=1025 */ public function getCharacterEncodingScheme():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getElementText() */
-	public function getElementText():String;
+	/*@@@ modifiers=1025 */ public function getElementText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getEncoding() */
-	public function getEncoding():String;
+	/*@@@ modifiers=1025 */ public function getEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getEventType() */
-	public function getEventType():Int;
+	/*@@@ modifiers=1025 */ public function getEventType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getLocalName() */
-	public function getLocalName():String;
+	/*@@@ modifiers=1025 */ public function getLocalName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getLocation() */
-	public function getLocation():Location;
+	/*@@@ modifiers=1025 */ public function getLocation():Location;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getName() */
-	public function getName():QName;
+	/*@@@ modifiers=1025 */ public function getName():QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getNamespaceContext() */
-	public function getNamespaceContext():NamespaceContext;
+	/*@@@ modifiers=1025 */ public function getNamespaceContext():NamespaceContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getNamespaceCount() */
-	public function getNamespaceCount():Int;
+	/*@@@ modifiers=1025 */ public function getNamespaceCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getNamespacePrefix(int) */
-	public function getNamespacePrefix(index:Int):String;
+	/*@@@ modifiers=1025 */ public function getNamespacePrefix(index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getNamespaceURI(int) */
-	@:overload(function (index:Int):String {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getNamespaceURI(java.lang.String) */
-	@:overload(function (prefix:String):String {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getNamespaceURI() */
-	public function getNamespaceURI():String;
+	/*@@@ modifiers=1025 */ public function getNamespaceURI():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getPIData() */
-	public function getPIData():String;
+	/*@@@ modifiers=1025 */ public function getPIData():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getPITarget() */
-	public function getPITarget():String;
+	/*@@@ modifiers=1025 */ public function getPITarget():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getPrefix() */
-	public function getPrefix():String;
+	/*@@@ modifiers=1025 */ public function getPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getProperty(java.lang.String) */
-	public function getProperty(name:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function getProperty(name:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getText() */
-	public function getText():String;
+	/*@@@ modifiers=1025 */ public function getText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getTextCharacters(int, char[], int, int) */
-	@:overload(function (sourceStart:Int, target:NativeArray<Char16>, targetStart:Int, length:Int):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (sourceStart:Int, target:NativeArray<Char16>, targetStart:Int, length:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getTextCharacters() */
-	public function getTextCharacters():NativeArray<Char16>;
+	/*@@@ modifiers=1025 */ public function getTextCharacters():NativeArray<Char16>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getTextLength() */
-	public function getTextLength():Int;
+	/*@@@ modifiers=1025 */ public function getTextLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getTextStart() */
-	public function getTextStart():Int;
+	/*@@@ modifiers=1025 */ public function getTextStart():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1025 */ public function getVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#hasName() */
-	public function hasName():Bool;
+	/*@@@ modifiers=1025 */ public function hasName():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#hasNext() */
-	public function hasNext():Bool;
+	/*@@@ modifiers=1025 */ public function hasNext():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#hasText() */
-	public function hasText():Bool;
+	/*@@@ modifiers=1025 */ public function hasText():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#isAttributeSpecified(int) */
-	public function isAttributeSpecified(index:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isAttributeSpecified(index:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#isCharacters() */
-	public function isCharacters():Bool;
+	/*@@@ modifiers=1025 */ public function isCharacters():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#isEndElement() */
-	public function isEndElement():Bool;
+	/*@@@ modifiers=1025 */ public function isEndElement():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#isStandalone() */
-	public function isStandalone():Bool;
+	/*@@@ modifiers=1025 */ public function isStandalone():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#isStartElement() */
-	public function isStartElement():Bool;
+	/*@@@ modifiers=1025 */ public function isStartElement():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#isWhiteSpace() */
-	public function isWhiteSpace():Bool;
+	/*@@@ modifiers=1025 */ public function isWhiteSpace():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#next() */
-	public function next():Int;
+	/*@@@ modifiers=1025 */ public function next():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#nextTag() */
-	public function nextTag():Int;
+	/*@@@ modifiers=1025 */ public function nextTag():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#require(int, java.lang.String, java.lang.String) */
-	public function require(type:Int, namespaceURI:String, localName:String):Void;
+	/*@@@ modifiers=1025 */ public function require(type:Int, namespaceURI:String, localName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html#standaloneSet() */
-	public function standaloneSet():Bool;
+	/*@@@ modifiers=1025 */ public function standaloneSet():Bool;
 
 }
 

@@ -11,20 +11,20 @@ import java.util.zip.ZipEntry;
 extern class JarEntry extends ZipEntry
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarEntry.html#JarEntry(java.lang.String) */
-	@:overload(function (name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarEntry.html#JarEntry(java.util.zip.ZipEntry) */
-	@:overload(function (name:ZipEntry):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:ZipEntry):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarEntry.html#JarEntry(java.util.jar.JarEntry) */
-	public function new(name:JarEntry):Void;
+	/*@@@ modifiers=1 */ public function new(name:JarEntry):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarEntry.html#getAttributes() */
-	public function getAttributes():Attributes;
+	/*@@@ modifiers=1 */ public function getAttributes():Attributes;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarEntry.html#getCertificates() */
-	public function getCertificates():NativeArray<Certificate>;
+	/*@@@ modifiers=1 */ public function getCertificates():NativeArray<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarEntry.html#getCodeSigners() */
-	public function getCodeSigners():NativeArray<CodeSigner>;
+	/*@@@ modifiers=1 */ public function getCodeSigners():NativeArray<CodeSigner>;
 
 }
 

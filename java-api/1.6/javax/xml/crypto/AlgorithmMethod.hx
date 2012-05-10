@@ -7,10 +7,10 @@ import java.security.spec.AlgorithmParameterSpec;
 extern interface AlgorithmMethod
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/AlgorithmMethod.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=1025 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/AlgorithmMethod.html#getParameterSpec() */
-	public function getParameterSpec():AlgorithmParameterSpec;
+	/*@@@ modifiers=1025 */ public function getParameterSpec():AlgorithmParameterSpec;
 
 }
 

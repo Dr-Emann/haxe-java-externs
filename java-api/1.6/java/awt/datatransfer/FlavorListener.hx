@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface FlavorListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent) */
-	public function flavorsChanged(e:FlavorEvent):Void;
+	/*@@@ modifiers=1025 */ public function flavorsChanged(e:FlavorEvent):Void;
 
 }
 

@@ -8,13 +8,13 @@ import java.security.GeneralSecurityException;
 extern class InvalidAlgorithmParameterException extends GeneralSecurityException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/InvalidAlgorithmParameterException.html#InvalidAlgorithmParameterException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/InvalidAlgorithmParameterException.html#InvalidAlgorithmParameterException(java.lang.String) */
-	@:overload(function (msg:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (msg:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/InvalidAlgorithmParameterException.html#InvalidAlgorithmParameterException(java.lang.String, java.lang.Throwable) */
-	@:overload(function (message:String, cause:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (message:String, cause:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/InvalidAlgorithmParameterException.html#InvalidAlgorithmParameterException(java.lang.Throwable) */
-	public function new(msg:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(msg:Throwable):Void;
 
 }
 

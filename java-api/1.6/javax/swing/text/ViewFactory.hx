@@ -8,7 +8,7 @@ import javax.swing.text.View;
 extern interface ViewFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ViewFactory.html#create(javax.swing.text.Element) */
-	public function create(elem:Element):View;
+	/*@@@ modifiers=1025 */ public function create(elem:Element):View;
 
 }
 

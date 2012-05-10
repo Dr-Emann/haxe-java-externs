@@ -20,37 +20,34 @@ extern class AbstractCellEditor extends Object, implements CellEditor, implement
 	private var changeEvent:ChangeEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#AbstractCellEditor() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener) */
-	public function addCellEditorListener(l:CellEditorListener):Void;
+	/*@@@ modifiers=1 */ public function addCellEditorListener(l:CellEditorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#cancelCellEditing() */
-	public function cancelCellEditing():Void;
+	/*@@@ modifiers=1 */ public function cancelCellEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#fireEditingCanceled() */
-	private function fireEditingCanceled():Void;
+	/*@@@ modifiers=4 */ private function fireEditingCanceled():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#fireEditingStopped() */
-	private function fireEditingStopped():Void;
+	/*@@@ modifiers=4 */ private function fireEditingStopped():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#getCellEditorListeners() */
-	public function getCellEditorListeners():NativeArray<CellEditorListener>;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#getCellEditorValue() */
-	public function getCellEditorValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getCellEditorListeners():NativeArray<CellEditorListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#isCellEditable(java.util.EventObject) */
-	public function isCellEditable(e:EventObject):Bool;
+	/*@@@ modifiers=1 */ public function isCellEditable(e:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener) */
-	public function removeCellEditorListener(l:CellEditorListener):Void;
+	/*@@@ modifiers=1 */ public function removeCellEditorListener(l:CellEditorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#shouldSelectCell(java.util.EventObject) */
-	public function shouldSelectCell(anEvent:EventObject):Bool;
+	/*@@@ modifiers=1 */ public function shouldSelectCell(anEvent:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#stopCellEditing() */
-	public function stopCellEditing():Bool;
+	/*@@@ modifiers=1 */ public function stopCellEditing():Bool;
 
 }
 

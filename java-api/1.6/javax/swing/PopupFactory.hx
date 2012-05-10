@@ -9,16 +9,16 @@ import javax.swing.Popup;
 extern class PopupFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/PopupFactory.html#PopupFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/PopupFactory.html#getPopup(java.awt.Component, java.awt.Component, int, int) */
-	public function getPopup(owner:Component, contents:Component, x:Int, y:Int):Popup;
+	/*@@@ modifiers=1 */ public function getPopup(owner:Component, contents:Component, x:Int, y:Int):Popup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/PopupFactory.html#getSharedInstance() */
-	static public function getSharedInstance():PopupFactory;
+	/*@@@ modifiers=9 */ static public function getSharedInstance():PopupFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/PopupFactory.html#setSharedInstance(javax.swing.PopupFactory) */
-	static public function setSharedInstance(factory:PopupFactory):Void;
+	/*@@@ modifiers=9 */ static public function setSharedInstance(factory:PopupFactory):Void;
 
 }
 

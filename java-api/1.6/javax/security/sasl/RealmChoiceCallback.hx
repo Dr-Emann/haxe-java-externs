@@ -8,7 +8,7 @@ import javax.security.auth.callback.ChoiceCallback;
 extern class RealmChoiceCallback extends ChoiceCallback
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/RealmChoiceCallback.html#RealmChoiceCallback(java.lang.String, java.lang.String[], int, boolean) */
-	public function new(prompt:String, choices:NativeArray<String>, defaultChoice:Int, multiple:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(prompt:String, choices:NativeArray<String>, defaultChoice:Int, multiple:Bool):Void;
 
 }
 

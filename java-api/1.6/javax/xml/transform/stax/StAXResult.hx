@@ -10,21 +10,21 @@ import javax.xml.transform.Result;
 extern class StAXResult extends Object, implements Result
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXResult.html#StAXResult(javax.xml.stream.XMLEventWriter) */
-	@:overload(function (xmlEventWriter:XMLEventWriter):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (xmlEventWriter:XMLEventWriter):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXResult.html#StAXResult(javax.xml.stream.XMLStreamWriter) */
-	public function new(xmlEventWriter:XMLStreamWriter):Void;
+	/*@@@ modifiers=1 */ public function new(xmlEventWriter:XMLStreamWriter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXResult.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXResult.html#getXMLEventWriter() */
-	public function getXMLEventWriter():XMLEventWriter;
+	/*@@@ modifiers=1 */ public function getXMLEventWriter():XMLEventWriter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXResult.html#getXMLStreamWriter() */
-	public function getXMLStreamWriter():XMLStreamWriter;
+	/*@@@ modifiers=1 */ public function getXMLStreamWriter():XMLStreamWriter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXResult.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemId:String):Void;
+	/*@@@ modifiers=1 */ public function setSystemId(systemId:String):Void;
 
 }
 

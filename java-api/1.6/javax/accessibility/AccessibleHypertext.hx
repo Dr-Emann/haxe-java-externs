@@ -8,13 +8,13 @@ import javax.accessibility.AccessibleText;
 extern interface AccessibleHypertext implements AccessibleText
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHypertext.html#getLink(int) */
-	public function getLink(linkIndex:Int):AccessibleHyperlink;
+	/*@@@ modifiers=1025 */ public function getLink(linkIndex:Int):AccessibleHyperlink;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHypertext.html#getLinkCount() */
-	public function getLinkCount():Int;
+	/*@@@ modifiers=1025 */ public function getLinkCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleHypertext.html#getLinkIndex(int) */
-	public function getLinkIndex(charIndex:Int):Int;
+	/*@@@ modifiers=1025 */ public function getLinkIndex(charIndex:Int):Int;
 
 }
 

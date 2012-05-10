@@ -15,19 +15,19 @@ extern class BasicHTML extends Object
 	public static var documentBaseKey:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicHTML.html#BasicHTML() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicHTML.html#createHTMLView(javax.swing.JComponent, java.lang.String) */
-	static public function createHTMLView(c:JComponent, html:String):View;
+	/*@@@ modifiers=9 */ static public function createHTMLView(c:JComponent, html:String):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicHTML.html#getHTMLBaseline(javax.swing.text.View, int, int) */
-	static public function getHTMLBaseline(view:View, w:Int, h:Int):Int;
+	/*@@@ modifiers=9 */ static public function getHTMLBaseline(view:View, w:Int, h:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicHTML.html#isHTMLString(java.lang.String) */
-	static public function isHTMLString(s:String):Bool;
+	/*@@@ modifiers=9 */ static public function isHTMLString(s:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicHTML.html#updateRenderer(javax.swing.JComponent, java.lang.String) */
-	static public function updateRenderer(c:JComponent, text:String):Void;
+	/*@@@ modifiers=9 */ static public function updateRenderer(c:JComponent, text:String):Void;
 
 }
 

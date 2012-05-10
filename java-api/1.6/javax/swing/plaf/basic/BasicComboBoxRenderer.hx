@@ -16,13 +16,13 @@ extern class BasicComboBoxRenderer extends JLabel, implements ListCellRenderer, 
 	private static var noFocusBorder:Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxRenderer.html#BasicComboBoxRenderer() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxRenderer.html#getListCellRendererComponent(javax.swing.JList, java.lang.Object, int, boolean, boolean) */
-	public function getListCellRendererComponent(list:JList, value:Dynamic, index:Int, isSelected:Bool, cellHasFocus:Bool):Component;
+	/*@@@ modifiers=1 */ public function getListCellRendererComponent(list:JList, value:Dynamic, index:Int, isSelected:Bool, cellHasFocus:Bool):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxRenderer.html#getPreferredSize() */
-	override public function getPreferredSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize():Dimension;
 
 }
 

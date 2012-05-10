@@ -11,18 +11,18 @@ import java.util.Set;
 extern class PKIXBuilderParameters extends PKIXParameters
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXBuilderParameters.html#PKIXBuilderParameters(java.util.Set, java.security.cert.CertSelector) */
-	@:overload(function (trustAnchors:Set<TrustAnchor>, targetConstraints:CertSelector):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (trustAnchors:Set<TrustAnchor>, targetConstraints:CertSelector):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXBuilderParameters.html#PKIXBuilderParameters(java.security.KeyStore, java.security.cert.CertSelector) */
-	public function new(trustAnchors:KeyStore, targetConstraints:CertSelector):Void;
+	/*@@@ modifiers=1 */ public function new(trustAnchors:KeyStore, targetConstraints:CertSelector):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXBuilderParameters.html#getMaxPathLength() */
-	public function getMaxPathLength():Int;
+	/*@@@ modifiers=1 */ public function getMaxPathLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXBuilderParameters.html#setMaxPathLength(int) */
-	public function setMaxPathLength(maxPathLength:Int):Void;
+	/*@@@ modifiers=1 */ public function setMaxPathLength(maxPathLength:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PKIXBuilderParameters.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

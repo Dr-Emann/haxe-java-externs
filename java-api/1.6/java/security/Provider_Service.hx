@@ -10,31 +10,31 @@ import java.util.Map;
 extern class Provider_Service extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#Provider$Service(java.security.Provider, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.Map) */
-	public function new(provider:Provider, type:String, algorithm:String, className:String, aliases:List<String>, attributes:Map<String, String>):Void;
+	/*@@@ modifiers=1 */ public function new(provider:Provider, type:String, algorithm:String, className:String, aliases:List<String>, attributes:Map<String, String>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=17 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#getAttribute(java.lang.String) */
-	public function getAttribute(name:String):String;
+	/*@@@ modifiers=17 */ public function getAttribute(name:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#getClassName() */
-	public function getClassName():String;
+	/*@@@ modifiers=17 */ public function getClassName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#getProvider() */
-	public function getProvider():Provider;
+	/*@@@ modifiers=17 */ public function getProvider():Provider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#getType() */
-	public function getType():String;
+	/*@@@ modifiers=17 */ public function getType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#newInstance(java.lang.Object) */
-	public function newInstance(constructorParameter:Dynamic):Dynamic;
+	/*@@@ modifiers=1 */ public function newInstance(constructorParameter:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#supportsParameter(java.lang.Object) */
-	public function supportsParameter(parameter:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function supportsParameter(parameter:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Provider.Service.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

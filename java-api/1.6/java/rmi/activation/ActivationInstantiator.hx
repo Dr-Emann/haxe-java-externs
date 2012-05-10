@@ -10,7 +10,7 @@ import java.rmi.activation.ActivationID;
 extern interface ActivationInstantiator implements Remote
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationInstantiator.html#newInstance(java.rmi.activation.ActivationID, java.rmi.activation.ActivationDesc) */
-	public function newInstance(id:ActivationID, desc:ActivationDesc):MarshalledObject<Remote>;
+	/*@@@ modifiers=1025 */ public function newInstance(id:ActivationID, desc:ActivationDesc):MarshalledObject<Remote>;
 
 }
 

@@ -11,18 +11,18 @@ import java.util.jar.JarOutputStream;
 extern interface Pack200_Unpacker
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Pack200.Unpacker.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Pack200.Unpacker.html#properties() */
-	public function properties():SortedMap<String, String>;
+	/*@@@ modifiers=1025 */ public function properties():SortedMap<String, String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Pack200.Unpacker.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Pack200.Unpacker.html#unpack(java.io.File, java.util.jar.JarOutputStream) */
-	@:overload(function (_in:File, out:JarOutputStream):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (_in:File, out:JarOutputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/Pack200.Unpacker.html#unpack(java.io.InputStream, java.util.jar.JarOutputStream) */
-	public function unpack(_in:InputStream, out:JarOutputStream):Void;
+	/*@@@ modifiers=1025 */ public function unpack(_in:InputStream, out:JarOutputStream):Void;
 
 }
 

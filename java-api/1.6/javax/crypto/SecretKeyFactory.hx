@@ -12,29 +12,29 @@ import javax.crypto.SecretKeyFactorySpi;
 extern class SecretKeyFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#SecretKeyFactory(javax.crypto.SecretKeyFactorySpi, java.security.Provider, java.lang.String) */
-	private function new(arg0:SecretKeyFactorySpi, arg1:Provider, arg2:String):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:SecretKeyFactorySpi, arg1:Provider, arg2:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec) */
-	public function generateSecret(arg0:KeySpec):SecretKey;
+	/*@@@ modifiers=17 */ public function generateSecret(arg0:KeySpec):SecretKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=17 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String, java.lang.String) */
-	@:overload(function (arg0:String, arg1:String):SecretKeyFactory {})
+	/*@@@ modifiers=25 */ @:overload(function (arg0:String, arg1:String):SecretKeyFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String, java.security.Provider) */
-	@:overload(function (arg0:String, arg1:Provider):SecretKeyFactory {})
+	/*@@@ modifiers=25 */ @:overload(function (arg0:String, arg1:Provider):SecretKeyFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String) */
-	static public function getInstance(arg0:String):SecretKeyFactory;
+	/*@@@ modifiers=25 */ static public function getInstance(arg0:String):SecretKeyFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#getKeySpec(javax.crypto.SecretKey, java.lang.Class) */
-	public function getKeySpec(arg0:SecretKey, arg1:Class<Dynamic>):KeySpec;
+	/*@@@ modifiers=17 */ public function getKeySpec(arg0:SecretKey, arg1:Class<Dynamic>):KeySpec;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#getProvider() */
-	public function getProvider():Provider;
+	/*@@@ modifiers=17 */ public function getProvider():Provider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKeyFactory.html#translateKey(javax.crypto.SecretKey) */
-	public function translateKey(arg0:SecretKey):SecretKey;
+	/*@@@ modifiers=17 */ public function translateKey(arg0:SecretKey):SecretKey;
 
 }
 

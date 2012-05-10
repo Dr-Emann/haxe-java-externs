@@ -7,13 +7,13 @@ import java.util.EventObject;
 extern class CaretEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/CaretEvent.html#CaretEvent(java.lang.Object) */
-	public function new(source:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/CaretEvent.html#getDot() */
-	public function getDot():Int;
+	/*@@@ modifiers=1025 */ public function getDot():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/CaretEvent.html#getMark() */
-	public function getMark():Int;
+	/*@@@ modifiers=1025 */ public function getMark():Int;
 
 }
 

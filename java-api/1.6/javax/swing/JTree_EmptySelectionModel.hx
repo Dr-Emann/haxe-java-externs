@@ -9,19 +9,19 @@ import javax.swing.tree.TreePath;
 extern class JTree_EmptySelectionModel extends DefaultTreeSelectionModel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.EmptySelectionModel.html#JTree$EmptySelectionModel() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.EmptySelectionModel.html#addSelectionPaths(javax.swing.tree.TreePath[]) */
-	override public function addSelectionPaths(paths:NativeArray<TreePath>):Void;
+	/*@@@ modifiers=1 */ override public function addSelectionPaths(paths:NativeArray<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.EmptySelectionModel.html#removeSelectionPaths(javax.swing.tree.TreePath[]) */
-	override public function removeSelectionPaths(paths:NativeArray<TreePath>):Void;
+	/*@@@ modifiers=1 */ override public function removeSelectionPaths(paths:NativeArray<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.EmptySelectionModel.html#setSelectionPaths(javax.swing.tree.TreePath[]) */
-	override public function setSelectionPaths(pPaths:NativeArray<TreePath>):Void;
+	/*@@@ modifiers=1 */ override public function setSelectionPaths(pPaths:NativeArray<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.EmptySelectionModel.html#sharedInstance() */
-	static public function sharedInstance():JTree_EmptySelectionModel;
+	/*@@@ modifiers=9 */ static public function sharedInstance():JTree_EmptySelectionModel;
 
 }
 

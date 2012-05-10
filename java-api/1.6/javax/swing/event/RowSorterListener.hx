@@ -8,7 +8,7 @@ import javax.swing.event.RowSorterEvent;
 extern interface RowSorterListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent) */
-	public function sorterChanged(e:RowSorterEvent):Void;
+	/*@@@ modifiers=1025 */ public function sorterChanged(e:RowSorterEvent):Void;
 
 }
 

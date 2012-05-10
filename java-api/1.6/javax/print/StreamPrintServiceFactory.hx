@@ -11,19 +11,19 @@ import javax.print.StreamPrintService;
 extern class StreamPrintServiceFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintServiceFactory.html#StreamPrintServiceFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintServiceFactory.html#getOutputFormat() */
-	public function getOutputFormat():String;
+	/*@@@ modifiers=1025 */ public function getOutputFormat():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintServiceFactory.html#getPrintService(java.io.OutputStream) */
-	public function getPrintService(out:OutputStream):StreamPrintService;
+	/*@@@ modifiers=1025 */ public function getPrintService(out:OutputStream):StreamPrintService;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintServiceFactory.html#getSupportedDocFlavors() */
-	public function getSupportedDocFlavors():NativeArray<DocFlavor>;
+	/*@@@ modifiers=1025 */ public function getSupportedDocFlavors():NativeArray<DocFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintServiceFactory.html#lookupStreamPrintServiceFactories(javax.print.DocFlavor, java.lang.String) */
-	static public function lookupStreamPrintServiceFactories(flavor:DocFlavor, outputMimeType:String):NativeArray<StreamPrintServiceFactory>;
+	/*@@@ modifiers=9 */ static public function lookupStreamPrintServiceFactories(flavor:DocFlavor, outputMimeType:String):NativeArray<StreamPrintServiceFactory>;
 
 }
 

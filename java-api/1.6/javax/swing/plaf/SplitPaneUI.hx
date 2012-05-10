@@ -9,25 +9,25 @@ import javax.swing.plaf.ComponentUI;
 extern class SplitPaneUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#SplitPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#finishedPaintingChildren(javax.swing.JSplitPane, java.awt.Graphics) */
-	public function finishedPaintingChildren(jc:JSplitPane, g:Graphics):Void;
+	/*@@@ modifiers=1025 */ public function finishedPaintingChildren(jc:JSplitPane, g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#getDividerLocation(javax.swing.JSplitPane) */
-	public function getDividerLocation(jc:JSplitPane):Int;
+	/*@@@ modifiers=1025 */ public function getDividerLocation(jc:JSplitPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#getMaximumDividerLocation(javax.swing.JSplitPane) */
-	public function getMaximumDividerLocation(jc:JSplitPane):Int;
+	/*@@@ modifiers=1025 */ public function getMaximumDividerLocation(jc:JSplitPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#getMinimumDividerLocation(javax.swing.JSplitPane) */
-	public function getMinimumDividerLocation(jc:JSplitPane):Int;
+	/*@@@ modifiers=1025 */ public function getMinimumDividerLocation(jc:JSplitPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#resetToPreferredSizes(javax.swing.JSplitPane) */
-	public function resetToPreferredSizes(jc:JSplitPane):Void;
+	/*@@@ modifiers=1025 */ public function resetToPreferredSizes(jc:JSplitPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SplitPaneUI.html#setDividerLocation(javax.swing.JSplitPane, int) */
-	public function setDividerLocation(jc:JSplitPane, location:Int):Void;
+	/*@@@ modifiers=1025 */ public function setDividerLocation(jc:JSplitPane, location:Int):Void;
 
 }
 

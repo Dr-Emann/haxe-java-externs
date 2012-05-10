@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface PropertyChangeListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent) */
-	public function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function propertyChange(evt:PropertyChangeEvent):Void;
 
 }
 

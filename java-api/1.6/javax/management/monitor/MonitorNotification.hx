@@ -9,16 +9,16 @@ extern class MonitorNotification extends Notification
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/MonitorNotification.html#getDerivedGauge() */
-	public function getDerivedGauge():Dynamic;
+	/*@@@ modifiers=1 */ public function getDerivedGauge():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/MonitorNotification.html#getObservedAttribute() */
-	public function getObservedAttribute():String;
+	/*@@@ modifiers=1 */ public function getObservedAttribute():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/MonitorNotification.html#getObservedObject() */
-	public function getObservedObject():ObjectName;
+	/*@@@ modifiers=1 */ public function getObservedObject():ObjectName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/MonitorNotification.html#getTrigger() */
-	public function getTrigger():Dynamic;
+	/*@@@ modifiers=1 */ public function getTrigger():Dynamic;
 
 }
 

@@ -9,10 +9,10 @@ import java.io.Serializable;
 extern interface Externalizable implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Externalizable.html#readExternal(java.io.ObjectInput) */
-	public function readExternal(_in:ObjectInput):Void;
+	/*@@@ modifiers=1025 */ public function readExternal(_in:ObjectInput):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Externalizable.html#writeExternal(java.io.ObjectOutput) */
-	public function writeExternal(out:ObjectOutput):Void;
+	/*@@@ modifiers=1025 */ public function writeExternal(out:ObjectOutput):Void;
 
 }
 

@@ -37,97 +37,97 @@ extern class DefaultButtonModel extends Object, implements ButtonModel, implemen
 	private var listenerList:EventListenerList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#DefaultButtonModel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#addActionListener(java.awt.event.ActionListener) */
-	public function addActionListener(l:ActionListener):Void;
+	/*@@@ modifiers=1 */ public function addActionListener(l:ActionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#addChangeListener(javax.swing.event.ChangeListener) */
-	public function addChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#addItemListener(java.awt.event.ItemListener) */
-	public function addItemListener(l:ItemListener):Void;
+	/*@@@ modifiers=1 */ public function addItemListener(l:ItemListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#fireActionPerformed(java.awt.event.ActionEvent) */
-	private function fireActionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=4 */ private function fireActionPerformed(e:ActionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#fireItemStateChanged(java.awt.event.ItemEvent) */
-	private function fireItemStateChanged(e:ItemEvent):Void;
+	/*@@@ modifiers=4 */ private function fireItemStateChanged(e:ItemEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#fireStateChanged() */
-	private function fireStateChanged():Void;
+	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getActionCommand() */
-	public function getActionCommand():String;
+	/*@@@ modifiers=1 */ public function getActionCommand():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getActionListeners() */
-	public function getActionListeners():NativeArray<ActionListener>;
+	/*@@@ modifiers=1 */ public function getActionListeners():NativeArray<ActionListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getChangeListeners() */
-	public function getChangeListeners():NativeArray<ChangeListener>;
+	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getGroup() */
-	public function getGroup():ButtonGroup;
+	/*@@@ modifiers=1 */ public function getGroup():ButtonGroup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getItemListeners() */
-	public function getItemListeners():NativeArray<ItemListener>;
+	/*@@@ modifiers=1 */ public function getItemListeners():NativeArray<ItemListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getMnemonic() */
-	public function getMnemonic():Int;
+	/*@@@ modifiers=1 */ public function getMnemonic():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#getSelectedObjects() */
-	public function getSelectedObjects():NativeArray<Dynamic>;
+	/*@@@ modifiers=1 */ public function getSelectedObjects():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#isArmed() */
-	public function isArmed():Bool;
+	/*@@@ modifiers=1 */ public function isArmed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#isEnabled() */
-	public function isEnabled():Bool;
+	/*@@@ modifiers=1 */ public function isEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#isPressed() */
-	public function isPressed():Bool;
+	/*@@@ modifiers=1 */ public function isPressed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#isRollover() */
-	public function isRollover():Bool;
+	/*@@@ modifiers=1 */ public function isRollover():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#isSelected() */
-	public function isSelected():Bool;
+	/*@@@ modifiers=1 */ public function isSelected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#removeActionListener(java.awt.event.ActionListener) */
-	public function removeActionListener(l:ActionListener):Void;
+	/*@@@ modifiers=1 */ public function removeActionListener(l:ActionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#removeChangeListener(javax.swing.event.ChangeListener) */
-	public function removeChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#removeItemListener(java.awt.event.ItemListener) */
-	public function removeItemListener(l:ItemListener):Void;
+	/*@@@ modifiers=1 */ public function removeItemListener(l:ItemListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setActionCommand(java.lang.String) */
-	public function setActionCommand(actionCommand:String):Void;
+	/*@@@ modifiers=1 */ public function setActionCommand(actionCommand:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setArmed(boolean) */
-	public function setArmed(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setArmed(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setEnabled(boolean) */
-	public function setEnabled(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setEnabled(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setGroup(javax.swing.ButtonGroup) */
-	public function setGroup(group:ButtonGroup):Void;
+	/*@@@ modifiers=1 */ public function setGroup(group:ButtonGroup):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setMnemonic(int) */
-	public function setMnemonic(key:Int):Void;
+	/*@@@ modifiers=1 */ public function setMnemonic(key:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setPressed(boolean) */
-	public function setPressed(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setPressed(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setRollover(boolean) */
-	public function setRollover(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setRollover(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultButtonModel.html#setSelected(boolean) */
-	public function setSelected(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setSelected(b:Bool):Void;
 
 }
 

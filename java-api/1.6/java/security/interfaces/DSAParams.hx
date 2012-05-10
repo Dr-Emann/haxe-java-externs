@@ -7,13 +7,13 @@ import java.math.BigInteger;
 extern interface DSAParams
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAParams.html#getG() */
-	public function getG():BigInteger;
+	/*@@@ modifiers=1025 */ public function getG():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAParams.html#getP() */
-	public function getP():BigInteger;
+	/*@@@ modifiers=1025 */ public function getP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAParams.html#getQ() */
-	public function getQ():BigInteger;
+	/*@@@ modifiers=1025 */ public function getQ():BigInteger;
 
 }
 

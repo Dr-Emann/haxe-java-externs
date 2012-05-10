@@ -8,16 +8,16 @@ import javax.xml.soap.SOAPMessage;
 extern class SOAPConnection extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPConnection.html#SOAPConnection() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPConnection.html#call(javax.xml.soap.SOAPMessage, java.lang.Object) */
-	public function call(request:SOAPMessage, to:Dynamic):SOAPMessage;
+	/*@@@ modifiers=1025 */ public function call(request:SOAPMessage, to:Dynamic):SOAPMessage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPConnection.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPConnection.html#get(java.lang.Object) */
-	public function get(to:Dynamic):SOAPMessage;
+	/*@@@ modifiers=1 */ public function get(to:Dynamic):SOAPMessage;
 
 }
 

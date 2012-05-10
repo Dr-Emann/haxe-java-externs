@@ -9,13 +9,13 @@ import java.lang.Thread;
 extern class AbstractOwnableSynchronizer extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractOwnableSynchronizer.html#AbstractOwnableSynchronizer() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractOwnableSynchronizer.html#getExclusiveOwnerThread() */
-	private function getExclusiveOwnerThread():Thread;
+	/*@@@ modifiers=20 */ private function getExclusiveOwnerThread():Thread;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractOwnableSynchronizer.html#setExclusiveOwnerThread(java.lang.Thread) */
-	private function setExclusiveOwnerThread(t:Thread):Void;
+	/*@@@ modifiers=20 */ private function setExclusiveOwnerThread(t:Thread):Void;
 
 }
 

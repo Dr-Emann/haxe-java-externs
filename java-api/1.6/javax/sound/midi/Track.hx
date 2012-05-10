@@ -9,19 +9,19 @@ extern class Track extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Track.html#add(javax.sound.midi.MidiEvent) */
-	public function add(event:MidiEvent):Bool;
+	/*@@@ modifiers=1 */ public function add(event:MidiEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Track.html#get(int) */
-	public function get(index:Int):MidiEvent;
+	/*@@@ modifiers=1 */ public function get(index:Int):MidiEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Track.html#remove(javax.sound.midi.MidiEvent) */
-	public function remove(event:MidiEvent):Bool;
+	/*@@@ modifiers=1 */ public function remove(event:MidiEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Track.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1 */ public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Track.html#ticks() */
-	public function ticks():haxe.Int64;
+	/*@@@ modifiers=1 */ public function ticks():haxe.Int64;
 
 }
 

@@ -6,7 +6,7 @@ package java.security;
 extern interface PrivilegedAction<T : (Dynamic)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PrivilegedAction.html#run() */
-	public function run():T;
+	/*@@@ modifiers=1025 */ public function run():T;
 
 }
 

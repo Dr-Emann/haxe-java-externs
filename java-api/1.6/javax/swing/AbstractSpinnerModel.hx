@@ -15,25 +15,22 @@ extern class AbstractSpinnerModel extends Object, implements SpinnerModel
 	private var listenerList:EventListenerList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#AbstractSpinnerModel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#addChangeListener(javax.swing.event.ChangeListener) */
-	public function addChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#fireStateChanged() */
-	private function fireStateChanged():Void;
+	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#getChangeListeners() */
-	public function getChangeListeners():NativeArray<ChangeListener>;
+	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#removeChangeListener(javax.swing.event.ChangeListener) */
-	public function removeChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 }
 

@@ -1,6 +1,5 @@
 package javax.sound.sampled;
 
-import java.lang.Number;
 import javax.sound.sampled.Control;
 import javax.sound.sampled.FloatControl_Type;
 
@@ -9,45 +8,45 @@ import javax.sound.sampled.FloatControl_Type;
 extern class FloatControl extends Control
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#FloatControl(javax.sound.sampled.FloatControl$Type, float, float, float, int, float, java.lang.String) */
-	@:overload(function (type:FloatControl_Type, minimum:StdFloat, maximum:StdFloat, precision:StdFloat, updatePeriod:Int, initialValue:StdFloat, units:String):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (type:FloatControl_Type, minimum:Single, maximum:Single, precision:Single, updatePeriod:Int, initialValue:Single, units:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#FloatControl(javax.sound.sampled.FloatControl$Type, float, float, float, int, float, java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	private function new(type:FloatControl_Type, minimum:StdFloat, maximum:StdFloat, precision:StdFloat, updatePeriod:Int, initialValue:StdFloat, units:String, minLabel:String, midLabel:String, maxLabel:String):Void;
+	/*@@@ modifiers=4 */ private function new(type:FloatControl_Type, minimum:Single, maximum:Single, precision:Single, updatePeriod:Int, initialValue:Single, units:String, minLabel:String, midLabel:String, maxLabel:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getMaxLabel() */
-	public function getMaxLabel():String;
+	/*@@@ modifiers=1 */ public function getMaxLabel():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getMaximum() */
-	public function getMaximum():StdFloat;
+	/*@@@ modifiers=1 */ public function getMaximum():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getMidLabel() */
-	public function getMidLabel():String;
+	/*@@@ modifiers=1 */ public function getMidLabel():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getMinLabel() */
-	public function getMinLabel():String;
+	/*@@@ modifiers=1 */ public function getMinLabel():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getMinimum() */
-	public function getMinimum():StdFloat;
+	/*@@@ modifiers=1 */ public function getMinimum():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getPrecision() */
-	public function getPrecision():StdFloat;
+	/*@@@ modifiers=1 */ public function getPrecision():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getUnits() */
-	public function getUnits():String;
+	/*@@@ modifiers=1 */ public function getUnits():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getUpdatePeriod() */
-	public function getUpdatePeriod():Int;
+	/*@@@ modifiers=1 */ public function getUpdatePeriod():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#getValue() */
-	public function getValue():StdFloat;
+	/*@@@ modifiers=1 */ public function getValue():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#setValue(float) */
-	public function setValue(newValue:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setValue(newValue:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#shift(float, float, int) */
-	public function shift(from:StdFloat, to:StdFloat, microseconds:Int):Void;
+	/*@@@ modifiers=1 */ public function shift(from:Single, to:Single, microseconds:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/FloatControl.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

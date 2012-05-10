@@ -9,10 +9,10 @@ extern class MouseInfo extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MouseInfo.html#getNumberOfButtons() */
-	static public function getNumberOfButtons():Int;
+	/*@@@ modifiers=9 */ static public function getNumberOfButtons():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MouseInfo.html#getPointerInfo() */
-	static public function getPointerInfo():PointerInfo;
+	/*@@@ modifiers=9 */ static public function getPointerInfo():PointerInfo;
 
 }
 

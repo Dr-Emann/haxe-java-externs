@@ -8,7 +8,7 @@ import javax.imageio.ImageReader;
 extern interface IIOReadWarningListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader, java.lang.String) */
-	public function warningOccurred(source:ImageReader, warning:String):Void;
+	/*@@@ modifiers=1025 */ public function warningOccurred(source:ImageReader, warning:String):Void;
 
 }
 

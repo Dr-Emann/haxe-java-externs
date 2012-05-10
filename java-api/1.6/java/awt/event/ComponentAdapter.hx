@@ -9,19 +9,19 @@ import java.lang.Object;
 extern class ComponentAdapter extends Object, implements ComponentListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentAdapter.html#ComponentAdapter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentAdapter.html#componentHidden(java.awt.event.ComponentEvent) */
-	public function componentHidden(e:ComponentEvent):Void;
+	/*@@@ modifiers=1 */ public function componentHidden(e:ComponentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentAdapter.html#componentMoved(java.awt.event.ComponentEvent) */
-	public function componentMoved(e:ComponentEvent):Void;
+	/*@@@ modifiers=1 */ public function componentMoved(e:ComponentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentAdapter.html#componentResized(java.awt.event.ComponentEvent) */
-	public function componentResized(e:ComponentEvent):Void;
+	/*@@@ modifiers=1 */ public function componentResized(e:ComponentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ComponentAdapter.html#componentShown(java.awt.event.ComponentEvent) */
-	public function componentShown(e:ComponentEvent):Void;
+	/*@@@ modifiers=1 */ public function componentShown(e:ComponentEvent):Void;
 
 }
 

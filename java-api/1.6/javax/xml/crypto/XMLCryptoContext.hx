@@ -8,46 +8,46 @@ import javax.xml.crypto.URIDereferencer;
 extern interface XMLCryptoContext
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#get(java.lang.Object) */
-	public function get(key:Dynamic):Dynamic;
+	/*@@@ modifiers=1025 */ public function get(key:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#getBaseURI() */
-	public function getBaseURI():String;
+	/*@@@ modifiers=1025 */ public function getBaseURI():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#getDefaultNamespacePrefix() */
-	public function getDefaultNamespacePrefix():String;
+	/*@@@ modifiers=1025 */ public function getDefaultNamespacePrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#getKeySelector() */
-	public function getKeySelector():KeySelector;
+	/*@@@ modifiers=1025 */ public function getKeySelector():KeySelector;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#getNamespacePrefix(java.lang.String, java.lang.String) */
-	public function getNamespacePrefix(namespaceURI:String, defaultPrefix:String):String;
+	/*@@@ modifiers=1025 */ public function getNamespacePrefix(namespaceURI:String, defaultPrefix:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#getProperty(java.lang.String) */
-	public function getProperty(name:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function getProperty(name:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#getURIDereferencer() */
-	public function getURIDereferencer():URIDereferencer;
+	/*@@@ modifiers=1025 */ public function getURIDereferencer():URIDereferencer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#put(java.lang.Object, java.lang.Object) */
-	public function put(key:Dynamic, value:Dynamic):Dynamic;
+	/*@@@ modifiers=1025 */ public function put(key:Dynamic, value:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#putNamespacePrefix(java.lang.String, java.lang.String) */
-	public function putNamespacePrefix(namespaceURI:String, prefix:String):String;
+	/*@@@ modifiers=1025 */ public function putNamespacePrefix(namespaceURI:String, prefix:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#setBaseURI(java.lang.String) */
-	public function setBaseURI(baseURI:String):Void;
+	/*@@@ modifiers=1025 */ public function setBaseURI(baseURI:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#setDefaultNamespacePrefix(java.lang.String) */
-	public function setDefaultNamespacePrefix(defaultPrefix:String):Void;
+	/*@@@ modifiers=1025 */ public function setDefaultNamespacePrefix(defaultPrefix:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#setKeySelector(javax.xml.crypto.KeySelector) */
-	public function setKeySelector(ks:KeySelector):Void;
+	/*@@@ modifiers=1025 */ public function setKeySelector(ks:KeySelector):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#setProperty(java.lang.String, java.lang.Object) */
-	public function setProperty(name:String, value:Dynamic):Dynamic;
+	/*@@@ modifiers=1025 */ public function setProperty(name:String, value:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLCryptoContext.html#setURIDereferencer(javax.xml.crypto.URIDereferencer) */
-	public function setURIDereferencer(dereferencer:URIDereferencer):Void;
+	/*@@@ modifiers=1025 */ public function setURIDereferencer(dereferencer:URIDereferencer):Void;
 
 }
 

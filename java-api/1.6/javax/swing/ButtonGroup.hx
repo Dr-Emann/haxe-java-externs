@@ -15,31 +15,31 @@ extern class ButtonGroup extends Object, implements Serializable
 	private var buttons:Vector<AbstractButton>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#ButtonGroup() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#add(javax.swing.AbstractButton) */
-	public function add(b:AbstractButton):Void;
+	/*@@@ modifiers=1 */ public function add(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#clearSelection() */
-	public function clearSelection():Void;
+	/*@@@ modifiers=1 */ public function clearSelection():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#getButtonCount() */
-	public function getButtonCount():Int;
+	/*@@@ modifiers=1 */ public function getButtonCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#getElements() */
-	public function getElements():Enumeration<AbstractButton>;
+	/*@@@ modifiers=1 */ public function getElements():Enumeration<AbstractButton>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#getSelection() */
-	public function getSelection():ButtonModel;
+	/*@@@ modifiers=1 */ public function getSelection():ButtonModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#isSelected(javax.swing.ButtonModel) */
-	public function isSelected(m:ButtonModel):Bool;
+	/*@@@ modifiers=1 */ public function isSelected(m:ButtonModel):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#remove(javax.swing.AbstractButton) */
-	public function remove(b:AbstractButton):Void;
+	/*@@@ modifiers=1 */ public function remove(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html#setSelected(javax.swing.ButtonModel, boolean) */
-	public function setSelected(m:ButtonModel, b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setSelected(m:ButtonModel, b:Bool):Void;
 
 }
 

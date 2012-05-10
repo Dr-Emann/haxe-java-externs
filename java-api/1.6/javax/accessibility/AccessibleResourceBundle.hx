@@ -8,10 +8,10 @@ import java.util.ListResourceBundle;
 extern class AccessibleResourceBundle extends ListResourceBundle
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleResourceBundle.html#AccessibleResourceBundle() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleResourceBundle.html#getContents() */
-	override public function getContents():NativeArray<NativeArray<Dynamic>>;
+	/*@@@ modifiers=1 */ override public function getContents():NativeArray<NativeArray<Dynamic>>;
 
 }
 

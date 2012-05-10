@@ -7,7 +7,7 @@ import javax.accessibility.AccessibleBundle;
 extern class AccessibleState extends AccessibleBundle
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleState.html#AccessibleState(java.lang.String) */
-	private function new(key:String):Void;
+	/*@@@ modifiers=4 */ private function new(key:String):Void;
 
 }
 

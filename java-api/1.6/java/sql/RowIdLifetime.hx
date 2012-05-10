@@ -23,10 +23,10 @@ extern class RowIdLifetime extends Enum<RowIdLifetime>
 	public static var ROWID_VALID_FOREVER:RowIdLifetime;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/RowIdLifetime.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):RowIdLifetime;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):RowIdLifetime;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/RowIdLifetime.html#values() */
-	static public function values():NativeArray<RowIdLifetime>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<RowIdLifetime>;
 
 }
 

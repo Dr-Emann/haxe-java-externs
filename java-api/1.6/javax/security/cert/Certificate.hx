@@ -10,27 +10,27 @@ import java.security.PublicKey;
 extern class Certificate extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#Certificate() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#equals(java.lang.Object) */
-	override public function equals(arg0:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(arg0:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#getEncoded() */
-	public function getEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#getPublicKey() */
-	public function getPublicKey():PublicKey;
+	/*@@@ modifiers=1025 */ public function getPublicKey():PublicKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1025 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#verify(java.security.PublicKey, java.lang.String) */
-	@:overload(function (arg0:PublicKey, arg1:String):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:PublicKey, arg1:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/cert/Certificate.html#verify(java.security.PublicKey) */
-	public function verify(arg0:PublicKey):Void;
+	/*@@@ modifiers=1025 */ public function verify(arg0:PublicKey):Void;
 
 }
 

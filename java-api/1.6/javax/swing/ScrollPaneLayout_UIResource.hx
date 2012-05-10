@@ -8,7 +8,7 @@ import javax.swing.plaf.UIResource;
 extern class ScrollPaneLayout_UIResource extends ScrollPaneLayout, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.UIResource.html#ScrollPaneLayout$UIResource() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

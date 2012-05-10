@@ -11,10 +11,10 @@ extern class ColorChooserComponentFactory extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/colorchooser/ColorChooserComponentFactory.html#getDefaultChooserPanels() */
-	static public function getDefaultChooserPanels():NativeArray<AbstractColorChooserPanel>;
+	/*@@@ modifiers=9 */ static public function getDefaultChooserPanels():NativeArray<AbstractColorChooserPanel>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/colorchooser/ColorChooserComponentFactory.html#getPreviewPanel() */
-	static public function getPreviewPanel():JComponent;
+	/*@@@ modifiers=9 */ static public function getPreviewPanel():JComponent;
 
 }
 

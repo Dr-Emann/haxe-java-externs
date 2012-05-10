@@ -15,51 +15,45 @@ import java.nio.channels.spi.SelectorProvider;
 extern class DatagramChannel extends AbstractSelectableChannel, implements ByteChannel, implements ScatteringByteChannel, implements GatheringByteChannel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#DatagramChannel(java.nio.channels.spi.SelectorProvider) */
-	private function new(provider:SelectorProvider):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=4 */ private function new(provider:SelectorProvider):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#connect(java.net.SocketAddress) */
-	public function connect(remote:SocketAddress):DatagramChannel;
+	/*@@@ modifiers=1025 */ public function connect(remote:SocketAddress):DatagramChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#disconnect() */
-	public function disconnect():DatagramChannel;
+	/*@@@ modifiers=1025 */ public function disconnect():DatagramChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#isConnected() */
-	public function isConnected():Bool;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=1025 */ public function isConnected():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#open() */
-	static public function open():DatagramChannel;
+	/*@@@ modifiers=9 */ static public function open():DatagramChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[], int, int) */
-	@:overload(function (dsts:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
+	/*@@@ modifiers=1025 */ @:overload(function (dsts:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[]) */
-	@:overload(function (dsts:NativeArray<ByteBuffer>):haxe.Int64 {})
+	/*@@@ modifiers=17 */ @:overload(function (dsts:NativeArray<ByteBuffer>):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer) */
-	public function read(dst:ByteBuffer):Int;
+	/*@@@ modifiers=1025 */ public function read(dst:ByteBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#receive(java.nio.ByteBuffer) */
-	public function receive(dst:ByteBuffer):SocketAddress;
+	/*@@@ modifiers=1025 */ public function receive(dst:ByteBuffer):SocketAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#send(java.nio.ByteBuffer, java.net.SocketAddress) */
-	public function send(src:ByteBuffer, target:SocketAddress):Int;
+	/*@@@ modifiers=1025 */ public function send(src:ByteBuffer, target:SocketAddress):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#socket() */
-	public function socket():DatagramSocket;
+	/*@@@ modifiers=1025 */ public function socket():DatagramSocket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#validOps() */
-	override public function validOps():Int;
+	/*@@@ modifiers=17 */ override public function validOps():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[], int, int) */
-	@:overload(function (srcs:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
+	/*@@@ modifiers=1025 */ @:overload(function (srcs:NativeArray<ByteBuffer>, offset:Int, length:Int):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[]) */
-	@:overload(function (srcs:NativeArray<ByteBuffer>):haxe.Int64 {})
+	/*@@@ modifiers=17 */ @:overload(function (srcs:NativeArray<ByteBuffer>):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer) */
-	public function write(src:ByteBuffer):Int;
+	/*@@@ modifiers=1025 */ public function write(src:ByteBuffer):Int;
 
 }
 

@@ -2,7 +2,6 @@ package java.nio;
 
 import java.NativeArray;
 import java.lang.Comparable;
-import java.lang.Number;
 import java.nio.Buffer;
 import java.nio.ByteOrder;
 
@@ -12,73 +11,75 @@ extern class FloatBuffer extends Buffer, implements Comparable<FloatBuffer>
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#allocate(int) */
-	static public function allocate(capacity:Int):FloatBuffer;
+	/*@@@ modifiers=9 */ static public function allocate(capacity:Int):FloatBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#array() */
-	override public function array():Dynamic;
+	/*@@@ modifiers=17 */ @:overload(function ():NativeArray<Single> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#array() */
+	/*@@@ modifiers=4161 */ override public function array():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#arrayOffset() */
-	override public function arrayOffset():Int;
+	/*@@@ modifiers=17 */ override public function arrayOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#asReadOnlyBuffer() */
-	public function asReadOnlyBuffer():FloatBuffer;
+	/*@@@ modifiers=1025 */ public function asReadOnlyBuffer():FloatBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#compact() */
-	public function compact():FloatBuffer;
+	/*@@@ modifiers=1025 */ public function compact():FloatBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#compareTo(java.lang.Object) */
-	@:overload(function (p0:Dynamic):Int {})
+	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#compareTo(java.nio.FloatBuffer) */
-	public function compareTo(that:FloatBuffer):Int;
+	/*@@@ modifiers=1 */ public function compareTo(that:FloatBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#duplicate() */
-	public function duplicate():FloatBuffer;
+	/*@@@ modifiers=1025 */ public function duplicate():FloatBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#equals(java.lang.Object) */
-	override public function equals(ob:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(ob:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#get(float[], int, int) */
-	@:overload(function (dst:NativeArray<StdFloat>, offset:Int, length:Int):FloatBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (dst:NativeArray<Single>, offset:Int, length:Int):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#get(int) */
-	@:overload(function (index:Int):StdFloat {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int):Single {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#get(float[]) */
-	@:overload(function (dst:NativeArray<StdFloat>):FloatBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (dst:NativeArray<Single>):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#get() */
-	public function get():StdFloat;
+	/*@@@ modifiers=1025 */ public function get():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#hasArray() */
-	override public function hasArray():Bool;
+	/*@@@ modifiers=17 */ override public function hasArray():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#isDirect() */
-	override public function isDirect():Bool;
+	/*@@@ modifiers=1025 */ override public function isDirect():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#order() */
-	public function order():ByteOrder;
+	/*@@@ modifiers=1025 */ public function order():ByteOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#put(float[], int, int) */
-	@:overload(function (src:NativeArray<StdFloat>, offset:Int, length:Int):FloatBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (src:NativeArray<Single>, offset:Int, length:Int):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#put(int, float) */
-	@:overload(function (index:Int, f:StdFloat):FloatBuffer {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int, f:Single):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#put(float) */
-	@:overload(function (f:StdFloat):FloatBuffer {})
+	/*@@@ modifiers=1025 */ @:overload(function (f:Single):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#put(float[]) */
-	@:overload(function (src:NativeArray<StdFloat>):FloatBuffer {})
+	/*@@@ modifiers=17 */ @:overload(function (src:NativeArray<Single>):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer) */
-	public function put(src:FloatBuffer):FloatBuffer;
+	/*@@@ modifiers=1 */ public function put(src:FloatBuffer):FloatBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#slice() */
-	public function slice():FloatBuffer;
+	/*@@@ modifiers=1025 */ public function slice():FloatBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#wrap(float[], int, int) */
-	@:overload(function (array:NativeArray<StdFloat>, offset:Int, length:Int):FloatBuffer {})
+	/*@@@ modifiers=9 */ @:overload(function (array:NativeArray<Single>, offset:Int, length:Int):FloatBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/FloatBuffer.html#wrap(float[]) */
-	static public function wrap(array:NativeArray<StdFloat>):FloatBuffer;
+	/*@@@ modifiers=9 */ static public function wrap(array:NativeArray<Single>):FloatBuffer;
 
 }
 

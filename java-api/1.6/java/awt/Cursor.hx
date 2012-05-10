@@ -15,27 +15,27 @@ extern class Cursor extends Object, implements Serializable
 	private var name:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#Cursor(java.lang.String) */
-	@:overload(function (type:String):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (type:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#Cursor(int) */
-	public function new(type:Int):Void;
+	/*@@@ modifiers=1 */ public function new(type:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#getDefaultCursor() */
-	static public function getDefaultCursor():Cursor;
+	/*@@@ modifiers=9 */ static public function getDefaultCursor():Cursor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#getPredefinedCursor(int) */
-	static public function getPredefinedCursor(type:Int):Cursor;
+	/*@@@ modifiers=9 */ static public function getPredefinedCursor(type:Int):Cursor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String) */
-	static public function getSystemCustomCursor(name:String):Cursor;
+	/*@@@ modifiers=9 */ static public function getSystemCustomCursor(name:String):Cursor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#getType() */
-	public function getType():Int;
+	/*@@@ modifiers=1 */ public function getType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Cursor.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

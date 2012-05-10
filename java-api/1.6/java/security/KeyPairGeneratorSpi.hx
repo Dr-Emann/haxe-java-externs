@@ -10,15 +10,15 @@ import java.security.spec.AlgorithmParameterSpec;
 extern class KeyPairGeneratorSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGeneratorSpi.html#KeyPairGeneratorSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGeneratorSpi.html#generateKeyPair() */
-	public function generateKeyPair():KeyPair;
+	/*@@@ modifiers=1025 */ public function generateKeyPair():KeyPair;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGeneratorSpi.html#initialize(int, java.security.SecureRandom) */
-	@:overload(function (keysize:Int, random:SecureRandom):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (keysize:Int, random:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) */
-	public function initialize(params:AlgorithmParameterSpec, random:SecureRandom):Void;
+	/*@@@ modifiers=1 */ public function initialize(params:AlgorithmParameterSpec, random:SecureRandom):Void;
 
 }
 

@@ -9,35 +9,35 @@ import java.awt.image.DataBuffer;
 extern class DataBufferShort extends DataBuffer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#DataBufferShort(int, int) */
-	@:overload(function (size:Int, numBanks:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (size:Int, numBanks:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#DataBufferShort(short[], int) */
-	@:overload(function (size:NativeArray<Int16>, numBanks:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (size:NativeArray<Int16>, numBanks:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#DataBufferShort(short[], int, int) */
-	@:overload(function (dataArray:NativeArray<Int16>, size:Int, offset:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (dataArray:NativeArray<Int16>, size:Int, offset:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#DataBufferShort(short[][], int) */
-	@:overload(function (size:NativeArray<NativeArray<Int16>>, numBanks:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (size:NativeArray<NativeArray<Int16>>, numBanks:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#DataBufferShort(short[][], int, int[]) */
-	@:overload(function (dataArray:NativeArray<NativeArray<Int16>>, size:Int, offset:NativeArray<Int>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (dataArray:NativeArray<NativeArray<Int16>>, size:Int, offset:NativeArray<Int>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#DataBufferShort(int) */
-	public function new(size:Int):Void;
+	/*@@@ modifiers=1 */ public function new(size:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#getBankData() */
-	public function getBankData():NativeArray<NativeArray<Int16>>;
+	/*@@@ modifiers=1 */ public function getBankData():NativeArray<NativeArray<Int16>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#getData(int) */
-	@:overload(function (bank:Int):NativeArray<Int16> {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int):NativeArray<Int16> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#getData() */
-	public function getData():NativeArray<Int16>;
+	/*@@@ modifiers=1 */ public function getData():NativeArray<Int16>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#getElem(int, int) */
-	@:overload(function (bank:Int, i:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int, i:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#getElem(int) */
-	override public function getElem(i:Int):Int;
+	/*@@@ modifiers=1 */ override public function getElem(i:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#setElem(int, int, int) */
-	@:overload(function (bank:Int, i:Int, val:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int, i:Int, val:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBufferShort.html#setElem(int, int) */
-	override public function setElem(i:Int, val:Int):Void;
+	/*@@@ modifiers=1 */ override public function setElem(i:Int, val:Int):Void;
 
 }
 

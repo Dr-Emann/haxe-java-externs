@@ -6,25 +6,25 @@ package javax.management;
 extern interface MBeanServerDelegateMBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getImplementationName() */
-	public function getImplementationName():String;
+	/*@@@ modifiers=1025 */ public function getImplementationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor() */
-	public function getImplementationVendor():String;
+	/*@@@ modifiers=1025 */ public function getImplementationVendor():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion() */
-	public function getImplementationVersion():String;
+	/*@@@ modifiers=1025 */ public function getImplementationVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId() */
-	public function getMBeanServerId():String;
+	/*@@@ modifiers=1025 */ public function getMBeanServerId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getSpecificationName() */
-	public function getSpecificationName():String;
+	/*@@@ modifiers=1025 */ public function getSpecificationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor() */
-	public function getSpecificationVendor():String;
+	/*@@@ modifiers=1025 */ public function getSpecificationVendor():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion() */
-	public function getSpecificationVersion():String;
+	/*@@@ modifiers=1025 */ public function getSpecificationVersion():String;
 
 }
 

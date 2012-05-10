@@ -32,61 +32,61 @@ extern class BasicTableUI extends TableUI
 	private var mouseInputListener:MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#BasicTableUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#createFocusListener() */
-	private function createFocusListener():FocusListener;
+	/*@@@ modifiers=4 */ private function createFocusListener():FocusListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#createKeyListener() */
-	private function createKeyListener():KeyListener;
+	/*@@@ modifiers=4 */ private function createKeyListener():KeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#createMouseInputListener() */
-	private function createMouseInputListener():MouseInputListener;
+	/*@@@ modifiers=4 */ private function createMouseInputListener():MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
+	/*@@@ modifiers=1 */ override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#getBaselineResizeBehavior(javax.swing.JComponent) */
-	override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTableUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

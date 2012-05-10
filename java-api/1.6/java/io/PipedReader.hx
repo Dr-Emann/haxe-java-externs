@@ -10,27 +10,27 @@ import java.io.Reader;
 extern class PipedReader extends Reader
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#PipedReader(java.io.PipedWriter, int) */
-	@:overload(function (src:PipedWriter, pipeSize:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (src:PipedWriter, pipeSize:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#PipedReader() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#PipedReader(int) */
-	@:overload(function (src:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (src:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#PipedReader(java.io.PipedWriter) */
-	public function new(src:PipedWriter):Void;
+	/*@@@ modifiers=1 */ public function new(src:PipedWriter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#connect(java.io.PipedWriter) */
-	public function connect(src:PipedWriter):Void;
+	/*@@@ modifiers=1 */ public function connect(src:PipedWriter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#read(char[], int, int) */
-	@:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Int {})
+	/*@@@ modifiers=33 */ @:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#read() */
-	override public function read():Int;
+	/*@@@ modifiers=33 */ override public function read():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#ready() */
-	override public function ready():Bool;
+	/*@@@ modifiers=33 */ override public function ready():Bool;
 
 }
 

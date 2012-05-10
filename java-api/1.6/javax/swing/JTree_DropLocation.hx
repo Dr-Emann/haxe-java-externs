@@ -9,13 +9,13 @@ extern class JTree_DropLocation extends TransferHandler_DropLocation
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.DropLocation.html#getChildIndex() */
-	public function getChildIndex():Int;
+	/*@@@ modifiers=1 */ public function getChildIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.DropLocation.html#getPath() */
-	public function getPath():TreePath;
+	/*@@@ modifiers=1 */ public function getPath():TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.DropLocation.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

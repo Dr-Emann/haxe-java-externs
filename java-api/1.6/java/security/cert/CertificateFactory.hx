@@ -16,42 +16,42 @@ import java.util.List;
 extern class CertificateFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#CertificateFactory(java.security.cert.CertificateFactorySpi, java.security.Provider, java.lang.String) */
-	private function new(certFacSpi:CertificateFactorySpi, provider:Provider, type:String):Void;
+	/*@@@ modifiers=4 */ private function new(certFacSpi:CertificateFactorySpi, provider:Provider, type:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCRL(java.io.InputStream) */
-	public function generateCRL(inStream:InputStream):CRL;
+	/*@@@ modifiers=17 */ public function generateCRL(inStream:InputStream):CRL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCRLs(java.io.InputStream) */
-	public function generateCRLs(inStream:InputStream):Collection<CRL>;
+	/*@@@ modifiers=17 */ public function generateCRLs(inStream:InputStream):Collection<CRL>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream, java.lang.String) */
-	@:overload(function (inStream:InputStream, encoding:String):CertPath {})
+	/*@@@ modifiers=17 */ @:overload(function (inStream:InputStream, encoding:String):CertPath {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream) */
-	@:overload(function (inStream:InputStream):CertPath {})
+	/*@@@ modifiers=17 */ @:overload(function (inStream:InputStream):CertPath {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCertPath(java.util.List) */
-	public function generateCertPath(certificates:List<Certificate>):CertPath;
+	/*@@@ modifiers=17 */ public function generateCertPath(certificates:List<Certificate>):CertPath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCertificate(java.io.InputStream) */
-	public function generateCertificate(inStream:InputStream):Certificate;
+	/*@@@ modifiers=17 */ public function generateCertificate(inStream:InputStream):Certificate;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#generateCertificates(java.io.InputStream) */
-	public function generateCertificates(inStream:InputStream):Collection<Certificate>;
+	/*@@@ modifiers=17 */ public function generateCertificates(inStream:InputStream):Collection<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#getCertPathEncodings() */
-	public function getCertPathEncodings():java.util.Iterator<String>;
+	/*@@@ modifiers=17 */ public function getCertPathEncodings():java.util.Iterator<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#getInstance(java.lang.String, java.lang.String) */
-	@:overload(function (type:String, provider:String):CertificateFactory {})
+	/*@@@ modifiers=25 */ @:overload(function (type:String, provider:String):CertificateFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#getInstance(java.lang.String, java.security.Provider) */
-	@:overload(function (type:String, provider:Provider):CertificateFactory {})
+	/*@@@ modifiers=25 */ @:overload(function (type:String, provider:Provider):CertificateFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#getInstance(java.lang.String) */
-	static public function getInstance(type:String):CertificateFactory;
+	/*@@@ modifiers=25 */ static public function getInstance(type:String):CertificateFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#getProvider() */
-	public function getProvider():Provider;
+	/*@@@ modifiers=17 */ public function getProvider():Provider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateFactory.html#getType() */
-	public function getType():String;
+	/*@@@ modifiers=17 */ public function getType():String;
 
 }
 

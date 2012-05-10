@@ -9,10 +9,10 @@ import javax.swing.SpinnerListModel;
 extern class JSpinner_ListEditor extends JSpinner_DefaultEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.ListEditor.html#JSpinner$ListEditor(javax.swing.JSpinner) */
-	public function new(spinner:JSpinner):Void;
+	/*@@@ modifiers=1 */ public function new(spinner:JSpinner):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.ListEditor.html#getModel() */
-	public function getModel():SpinnerListModel;
+	/*@@@ modifiers=1 */ public function getModel():SpinnerListModel;
 
 }
 

@@ -10,10 +10,10 @@ import javax.management.modelmbean.ModelMBeanNotificationBroadcaster;
 extern interface ModelMBean implements DynamicMBean, implements PersistentMBean, implements ModelMBeanNotificationBroadcaster
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBean.html#setManagedResource(java.lang.Object, java.lang.String) */
-	public function setManagedResource(mr:Dynamic, mr_type:String):Void;
+	/*@@@ modifiers=1025 */ public function setManagedResource(mr:Dynamic, mr_type:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo) */
-	public function setModelMBeanInfo(inModelMBeanInfo:ModelMBeanInfo):Void;
+	/*@@@ modifiers=1025 */ public function setModelMBeanInfo(inModelMBeanInfo:ModelMBeanInfo):Void;
 
 }
 

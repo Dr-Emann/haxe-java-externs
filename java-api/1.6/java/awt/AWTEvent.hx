@@ -14,29 +14,27 @@ extern class AWTEvent extends EventObject
 	private var consumed:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#AWTEvent(java.lang.Object, int) */
-	@:overload(function (source:Dynamic, id:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic, id:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#AWTEvent(java.awt.Event) */
-	public function new(event:Event):Void;
+	/*@@@ modifiers=1 */ public function new(event:Event):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#consume() */
-	//private function consume():Void;
-	public function consume():Void;
-	
+	/*@@@ modifiers=4 */ private function consume():Void;
+
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#getID() */
-	public function getID():Int;
+	/*@@@ modifiers=1 */ public function getID():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#isConsumed() */
-	//private function isConsumed():Bool;
-	public function isConsumed():Bool;
+	/*@@@ modifiers=4 */ private function isConsumed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#paramString() */
-	public function paramString():String;
+	/*@@@ modifiers=1 */ public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#setSource(java.lang.Object) */
-	public function setSource(newSource:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setSource(newSource:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

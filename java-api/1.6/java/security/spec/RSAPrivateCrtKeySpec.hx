@@ -8,25 +8,25 @@ import java.security.spec.RSAPrivateKeySpec;
 extern class RSAPrivateCrtKeySpec extends RSAPrivateKeySpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#RSAPrivateCrtKeySpec(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger) */
-	public function new(modulus:BigInteger, publicExponent:BigInteger, privateExponent:BigInteger, primeP:BigInteger, primeQ:BigInteger, primeExponentP:BigInteger, primeExponentQ:BigInteger, crtCoefficient:BigInteger):Void;
+	/*@@@ modifiers=1 */ public function new(modulus:BigInteger, publicExponent:BigInteger, privateExponent:BigInteger, primeP:BigInteger, primeQ:BigInteger, primeExponentP:BigInteger, primeExponentQ:BigInteger, crtCoefficient:BigInteger):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#getCrtCoefficient() */
-	public function getCrtCoefficient():BigInteger;
+	/*@@@ modifiers=1 */ public function getCrtCoefficient():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeExponentP() */
-	public function getPrimeExponentP():BigInteger;
+	/*@@@ modifiers=1 */ public function getPrimeExponentP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeExponentQ() */
-	public function getPrimeExponentQ():BigInteger;
+	/*@@@ modifiers=1 */ public function getPrimeExponentQ():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeP() */
-	public function getPrimeP():BigInteger;
+	/*@@@ modifiers=1 */ public function getPrimeP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeQ() */
-	public function getPrimeQ():BigInteger;
+	/*@@@ modifiers=1 */ public function getPrimeQ():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/RSAPrivateCrtKeySpec.html#getPublicExponent() */
-	public function getPublicExponent():BigInteger;
+	/*@@@ modifiers=1 */ public function getPublicExponent():BigInteger;
 
 }
 

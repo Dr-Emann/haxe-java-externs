@@ -9,10 +9,10 @@ import javax.swing.JFormattedTextField_AbstractFormatter;
 extern class JFormattedTextField_AbstractFormatterFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#JFormattedTextField$AbstractFormatterFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#getFormatter(javax.swing.JFormattedTextField) */
-	public function getFormatter(tf:JFormattedTextField):JFormattedTextField_AbstractFormatter;
+	/*@@@ modifiers=1025 */ public function getFormatter(tf:JFormattedTextField):JFormattedTextField_AbstractFormatter;
 
 }
 

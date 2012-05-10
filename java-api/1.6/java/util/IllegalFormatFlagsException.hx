@@ -7,13 +7,13 @@ import java.util.IllegalFormatException;
 extern class IllegalFormatFlagsException extends IllegalFormatException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IllegalFormatFlagsException.html#IllegalFormatFlagsException(java.lang.String) */
-	public function new(f:String):Void;
+	/*@@@ modifiers=1 */ public function new(f:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IllegalFormatFlagsException.html#getFlags() */
-	public function getFlags():String;
+	/*@@@ modifiers=1 */ public function getFlags():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/IllegalFormatFlagsException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

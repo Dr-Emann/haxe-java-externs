@@ -2,7 +2,6 @@ package java.util;
 
 import java.io.Serializable;
 import java.lang.Cloneable;
-import java.lang.Number;
 import java.util.AbstractMap;
 import java.util.Collection;
 import java.util.Map;
@@ -14,55 +13,52 @@ import java.util.Set;
 extern class HashMap<K : (Dynamic), V : (Dynamic)> extends AbstractMap<K, V>, implements Map<K, V>, implements Cloneable, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap(int) */
-	@:overload(function (initialCapacity:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (initialCapacity:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap(java.util.Map) */
-	@:overload(function (initialCapacity:Map<K, V>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (initialCapacity:Map<K, V>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#HashMap(int, float) */
-	public function new(initialCapacity:Int, loadFactor:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function new(initialCapacity:Int, loadFactor:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#clear() */
-	override public function clear():Void;
+	/*@@@ modifiers=1 */ override public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#containsKey(java.lang.Object) */
-	override public function containsKey(key:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function containsKey(key:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#containsValue(java.lang.Object) */
-	override public function containsValue(value:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function containsValue(value:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#entrySet() */
-	override public function entrySet():Set<Map_Entry<K, V>>;
+	/*@@@ modifiers=1 */ override public function entrySet():Set<Map_Entry<K, V>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#get(java.lang.Object) */
-	override public function get(key:Dynamic):V;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function get(key:Dynamic):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#isEmpty() */
-	override public function isEmpty():Bool;
+	/*@@@ modifiers=1 */ override public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#keySet() */
-	override public function keySet():Set<K>;
+	/*@@@ modifiers=1 */ override public function keySet():Set<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#put(java.lang.Object, java.lang.Object) */
-	override public function put(key:K, value:V):V;
+	/*@@@ modifiers=1 */ override public function put(key:K, value:V):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#putAll(java.util.Map) */
-	override public function putAll(m:Map<K, V>):Void;
+	/*@@@ modifiers=1 */ override public function putAll(m:Map<K, V>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#remove(java.lang.Object) */
-	override public function remove(key:Dynamic):V;
+	/*@@@ modifiers=1 */ override public function remove(key:Dynamic):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#size() */
-	override public function size():Int;
+	/*@@@ modifiers=1 */ override public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html#values() */
-	override public function values():Collection<V>;
+	/*@@@ modifiers=1 */ override public function values():Collection<V>;
 
 }
 

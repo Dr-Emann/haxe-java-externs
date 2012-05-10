@@ -9,10 +9,10 @@ import javax.xml.bind.ValidationEventHandler;
 extern class DefaultValidationEventHandler extends Object, implements ValidationEventHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/DefaultValidationEventHandler.html#DefaultValidationEventHandler() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/DefaultValidationEventHandler.html#handleEvent(javax.xml.bind.ValidationEvent) */
-	public function handleEvent(event:ValidationEvent):Bool;
+	/*@@@ modifiers=1 */ public function handleEvent(event:ValidationEvent):Bool;
 
 }
 

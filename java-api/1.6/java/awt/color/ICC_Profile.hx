@@ -349,50 +349,50 @@ extern class ICC_Profile extends Object, implements Serializable
 
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#finalize() */
-	override public function finalize():Void;
+	/*@@@ modifiers=4 */ override public function finalize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getColorSpaceType() */
-	public function getColorSpaceType():Int;
+	/*@@@ modifiers=1 */ public function getColorSpaceType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getData(int) */
-	@:overload(function (tagSignature:Int):NativeArray<Int8> {})
+	/*@@@ modifiers=1 */ @:overload(function (tagSignature:Int):NativeArray<Int8> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getData() */
-	public function getData():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getData():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getInstance(int) */
-	@:overload(function (cspace:Int):ICC_Profile {})
+	/*@@@ modifiers=9 */ @:overload(function (cspace:Int):ICC_Profile {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getInstance(byte[]) */
-	@:overload(function (data:NativeArray<Int8>):ICC_Profile {})
+	/*@@@ modifiers=9 */ @:overload(function (data:NativeArray<Int8>):ICC_Profile {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getInstance(java.io.InputStream) */
-	@:overload(function (s:InputStream):ICC_Profile {})
+	/*@@@ modifiers=9 */ @:overload(function (s:InputStream):ICC_Profile {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getInstance(java.lang.String) */
-	static public function getInstance(fileName:String):ICC_Profile;
+	/*@@@ modifiers=9 */ static public function getInstance(fileName:String):ICC_Profile;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getMajorVersion() */
-	public function getMajorVersion():Int;
+	/*@@@ modifiers=1 */ public function getMajorVersion():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getMinorVersion() */
-	public function getMinorVersion():Int;
+	/*@@@ modifiers=1 */ public function getMinorVersion():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getNumComponents() */
-	public function getNumComponents():Int;
+	/*@@@ modifiers=1 */ public function getNumComponents():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getPCSType() */
-	public function getPCSType():Int;
+	/*@@@ modifiers=1 */ public function getPCSType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#getProfileClass() */
-	public function getProfileClass():Int;
+	/*@@@ modifiers=1 */ public function getProfileClass():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#readResolve() */
-	private function readResolve():Dynamic;
+	/*@@@ modifiers=4 */ private function readResolve():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#setData(int, byte[]) */
-	public function setData(tagSignature:Int, tagData:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function setData(tagSignature:Int, tagData:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#write(java.io.OutputStream) */
-	@:overload(function (s:OutputStream):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (s:OutputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/color/ICC_Profile.html#write(java.lang.String) */
-	public function write(fileName:String):Void;
+	/*@@@ modifiers=1 */ public function write(fileName:String):Void;
 
 }
 

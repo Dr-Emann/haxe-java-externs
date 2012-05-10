@@ -7,13 +7,13 @@ import javax.swing.plaf.metal.MetalIconFactory_FolderIcon16;
 extern class MetalIconFactory_TreeFolderIcon extends MetalIconFactory_FolderIcon16
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeFolderIcon.html#MetalIconFactory$TreeFolderIcon() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeFolderIcon.html#getAdditionalHeight() */
-	override public function getAdditionalHeight():Int;
+	/*@@@ modifiers=1 */ override public function getAdditionalHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeFolderIcon.html#getShift() */
-	override public function getShift():Int;
+	/*@@@ modifiers=1 */ override public function getShift():Int;
 
 }
 

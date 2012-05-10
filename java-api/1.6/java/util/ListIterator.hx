@@ -7,31 +7,31 @@ import java.util.Iterator;
 extern interface ListIterator<E : (Dynamic)> implements java.util.Iterator<E>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#add(java.lang.Object) */
-	public function add(e:E):Void;
+	/*@@@ modifiers=1025 */ public function add(e:E):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#hasNext() */
-	public function hasNext():Bool;
+	/*@@@ modifiers=1025 */ public function hasNext():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#hasPrevious() */
-	public function hasPrevious():Bool;
+	/*@@@ modifiers=1025 */ public function hasPrevious():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#next() */
-	public function next():E;
+	/*@@@ modifiers=1025 */ public function next():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#nextIndex() */
-	public function nextIndex():Int;
+	/*@@@ modifiers=1025 */ public function nextIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#previous() */
-	public function previous():E;
+	/*@@@ modifiers=1025 */ public function previous():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#previousIndex() */
-	public function previousIndex():Int;
+	/*@@@ modifiers=1025 */ public function previousIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#remove() */
-	public function remove():Void;
+	/*@@@ modifiers=1025 */ public function remove():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html#set(java.lang.Object) */
-	public function set(e:E):Void;
+	/*@@@ modifiers=1025 */ public function set(e:E):Void;
 
 }
 

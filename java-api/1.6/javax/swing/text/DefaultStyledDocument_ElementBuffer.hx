@@ -13,31 +13,31 @@ import javax.swing.text.Element;
 extern class DefaultStyledDocument_ElementBuffer extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#DefaultStyledDocument$ElementBuffer(javax.swing.text.DefaultStyledDocument, javax.swing.text.Element) */
-	public function new(arg0:DefaultStyledDocument, arg1:Element):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:DefaultStyledDocument, arg1:Element):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int, int, javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	public function change(arg0:Int, arg1:Int, arg2:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=1 */ public function change(arg0:Int, arg1:Int, arg2:AbstractDocument_DefaultDocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#changeUpdate() */
-	private function changeUpdate():Void;
+	/*@@@ modifiers=4 */ private function changeUpdate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element, javax.swing.text.Element) */
-	override public function clone(parent:Element, clonee:Element):Element;
+	/*@@@ modifiers=1 */ override public function clone(parent:Element, clonee:Element):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#getRootElement() */
-	public function getRootElement():Element;
+	/*@@@ modifiers=1 */ public function getRootElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int, int, javax.swing.text.DefaultStyledDocument$ElementSpec[], javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	public function insert(arg0:Int, arg1:Int, arg2:NativeArray<DefaultStyledDocument_ElementSpec>, arg3:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=1 */ public function insert(arg0:Int, arg1:Int, arg2:NativeArray<DefaultStyledDocument_ElementSpec>, arg3:AbstractDocument_DefaultDocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insertUpdate(javax.swing.text.DefaultStyledDocument$ElementSpec[]) */
-	private function insertUpdate(data:NativeArray<DefaultStyledDocument_ElementSpec>):Void;
+	/*@@@ modifiers=4 */ private function insertUpdate(data:NativeArray<DefaultStyledDocument_ElementSpec>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int, int, javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	public function remove(arg0:Int, arg1:Int, arg2:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=1 */ public function remove(arg0:Int, arg1:Int, arg2:AbstractDocument_DefaultDocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#removeUpdate() */
-	private function removeUpdate():Void;
+	/*@@@ modifiers=4 */ private function removeUpdate():Void;
 
 }
 

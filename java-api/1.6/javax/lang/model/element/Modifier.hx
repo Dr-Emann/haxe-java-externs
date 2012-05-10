@@ -41,13 +41,13 @@ extern class Modifier extends Enum<Modifier>
 	public static var STRICTFP:Modifier;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Modifier.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1 */ public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Modifier.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Modifier;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Modifier;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/Modifier.html#values() */
-	static public function values():NativeArray<Modifier>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Modifier>;
 
 }
 

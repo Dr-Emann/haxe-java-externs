@@ -35,108 +35,108 @@ extern class JProgressBar extends JComponent, implements SwingConstants, impleme
 	private var changeListener:ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#JProgressBar(int) */
-	@:overload(function (orient:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orient:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#JProgressBar(int, int) */
-	@:overload(function (min:Int, max:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (min:Int, max:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#JProgressBar(int, int, int) */
-	@:overload(function (orient:Int, min:Int, max:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orient:Int, min:Int, max:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#JProgressBar(javax.swing.BoundedRangeModel) */
-	@:overload(function (orient:BoundedRangeModel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orient:BoundedRangeModel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#JProgressBar() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#addChangeListener(javax.swing.event.ChangeListener) */
-	public function addChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#createChangeListener() */
-	private function createChangeListener():ChangeListener;
+	/*@@@ modifiers=4 */ private function createChangeListener():ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#fireStateChanged() */
-	private function fireStateChanged():Void;
+	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getChangeListeners() */
-	public function getChangeListeners():NativeArray<ChangeListener>;
+	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getMaximum() */
-	public function getMaximum():Int;
+	/*@@@ modifiers=1 */ public function getMaximum():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getMinimum() */
-	public function getMinimum():Int;
+	/*@@@ modifiers=1 */ public function getMinimum():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getModel() */
-	public function getModel():BoundedRangeModel;
+	/*@@@ modifiers=1 */ public function getModel():BoundedRangeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getOrientation() */
-	public function getOrientation():Int;
+	/*@@@ modifiers=1 */ public function getOrientation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getPercentComplete() */
-	public function getPercentComplete():StdFloat;
+	/*@@@ modifiers=1 */ public function getPercentComplete():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getString() */
-	public function getString():String;
+	/*@@@ modifiers=1 */ public function getString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getUI() */
-	public function getUI():ProgressBarUI;
+	/*@@@ modifiers=1 */ public function getUI():ProgressBarUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#getValue() */
-	public function getValue():Int;
+	/*@@@ modifiers=1 */ public function getValue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#isBorderPainted() */
-	public function isBorderPainted():Bool;
+	/*@@@ modifiers=1 */ public function isBorderPainted():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#isIndeterminate() */
-	public function isIndeterminate():Bool;
+	/*@@@ modifiers=1 */ public function isIndeterminate():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#isStringPainted() */
-	public function isStringPainted():Bool;
+	/*@@@ modifiers=1 */ public function isStringPainted():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#paintBorder(java.awt.Graphics) */
-	override private function paintBorder(g:Graphics):Void;
+	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#removeChangeListener(javax.swing.event.ChangeListener) */
-	public function removeChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setBorderPainted(boolean) */
-	public function setBorderPainted(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setBorderPainted(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setIndeterminate(boolean) */
-	public function setIndeterminate(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setIndeterminate(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setMaximum(int) */
-	public function setMaximum(n:Int):Void;
+	/*@@@ modifiers=1 */ public function setMaximum(n:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setMinimum(int) */
-	public function setMinimum(n:Int):Void;
+	/*@@@ modifiers=1 */ public function setMinimum(n:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setModel(javax.swing.BoundedRangeModel) */
-	public function setModel(newModel:BoundedRangeModel):Void;
+	/*@@@ modifiers=1 */ public function setModel(newModel:BoundedRangeModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setOrientation(int) */
-	public function setOrientation(newOrientation:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(newOrientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setString(java.lang.String) */
-	public function setString(s:String):Void;
+	/*@@@ modifiers=1 */ public function setString(s:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setStringPainted(boolean) */
-	public function setStringPainted(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setStringPainted(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setUI(javax.swing.plaf.ProgressBarUI) */
-	override public function setUI(ui:ProgressBarUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:ProgressBarUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setValue(int) */
-	public function setValue(n:Int):Void;
+	/*@@@ modifiers=1 */ public function setValue(n:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

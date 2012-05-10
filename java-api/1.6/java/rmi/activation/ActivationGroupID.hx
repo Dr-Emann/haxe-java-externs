@@ -9,16 +9,16 @@ import java.rmi.activation.ActivationSystem;
 extern class ActivationGroupID extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroupID.html#ActivationGroupID(java.rmi.activation.ActivationSystem) */
-	public function new(system:ActivationSystem):Void;
+	/*@@@ modifiers=1 */ public function new(system:ActivationSystem):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroupID.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroupID.html#getSystem() */
-	public function getSystem():ActivationSystem;
+	/*@@@ modifiers=1 */ public function getSystem():ActivationSystem;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroupID.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 }
 

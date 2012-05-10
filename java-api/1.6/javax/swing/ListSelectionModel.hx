@@ -7,64 +7,64 @@ import javax.swing.event.ListSelectionListener;
 extern interface ListSelectionModel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener) */
-	public function addListSelectionListener(x:ListSelectionListener):Void;
+	/*@@@ modifiers=1025 */ public function addListSelectionListener(x:ListSelectionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#addSelectionInterval(int, int) */
-	public function addSelectionInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1025 */ public function addSelectionInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#clearSelection() */
-	public function clearSelection():Void;
+	/*@@@ modifiers=1025 */ public function clearSelection():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#getAnchorSelectionIndex() */
-	public function getAnchorSelectionIndex():Int;
+	/*@@@ modifiers=1025 */ public function getAnchorSelectionIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#getLeadSelectionIndex() */
-	public function getLeadSelectionIndex():Int;
+	/*@@@ modifiers=1025 */ public function getLeadSelectionIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#getMaxSelectionIndex() */
-	public function getMaxSelectionIndex():Int;
+	/*@@@ modifiers=1025 */ public function getMaxSelectionIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#getMinSelectionIndex() */
-	public function getMinSelectionIndex():Int;
+	/*@@@ modifiers=1025 */ public function getMinSelectionIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#getSelectionMode() */
-	public function getSelectionMode():Int;
+	/*@@@ modifiers=1025 */ public function getSelectionMode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#getValueIsAdjusting() */
-	public function getValueIsAdjusting():Bool;
+	/*@@@ modifiers=1025 */ public function getValueIsAdjusting():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#insertIndexInterval(int, int, boolean) */
-	public function insertIndexInterval(index:Int, length:Int, before:Bool):Void;
+	/*@@@ modifiers=1025 */ public function insertIndexInterval(index:Int, length:Int, before:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#isSelectedIndex(int) */
-	public function isSelectedIndex(index:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isSelectedIndex(index:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#isSelectionEmpty() */
-	public function isSelectionEmpty():Bool;
+	/*@@@ modifiers=1025 */ public function isSelectionEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#removeIndexInterval(int, int) */
-	public function removeIndexInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1025 */ public function removeIndexInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener) */
-	public function removeListSelectionListener(x:ListSelectionListener):Void;
+	/*@@@ modifiers=1025 */ public function removeListSelectionListener(x:ListSelectionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#removeSelectionInterval(int, int) */
-	public function removeSelectionInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1025 */ public function removeSelectionInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#setAnchorSelectionIndex(int) */
-	public function setAnchorSelectionIndex(index:Int):Void;
+	/*@@@ modifiers=1025 */ public function setAnchorSelectionIndex(index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#setLeadSelectionIndex(int) */
-	public function setLeadSelectionIndex(index:Int):Void;
+	/*@@@ modifiers=1025 */ public function setLeadSelectionIndex(index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#setSelectionInterval(int, int) */
-	public function setSelectionInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1025 */ public function setSelectionInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#setSelectionMode(int) */
-	public function setSelectionMode(selectionMode:Int):Void;
+	/*@@@ modifiers=1025 */ public function setSelectionMode(selectionMode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListSelectionModel.html#setValueIsAdjusting(boolean) */
-	public function setValueIsAdjusting(valueIsAdjusting:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setValueIsAdjusting(valueIsAdjusting:Bool):Void;
 
 }
 

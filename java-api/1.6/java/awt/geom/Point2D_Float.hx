@@ -9,29 +9,29 @@ import java.lang.Number;
 extern class Point2D_Float extends Point2D, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#x */
-	public var x:StdFloat;
+	public var x:Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#y */
-	public var y:StdFloat;
+	public var y:Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#Point2D$Float() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#Point2D$Float(float, float) */
-	public function new(x:StdFloat, y:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function new(x:Single, y:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#getX() */
-	override public function getX():StdFloat;
+	/*@@@ modifiers=1 */ override public function getX():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#getY() */
-	override public function getY():StdFloat;
+	/*@@@ modifiers=1 */ override public function getY():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#setLocation(double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#setLocation(float, float) */
-	override public function setLocation(x:StdFloat, y:StdFloat):Void;
+	/*@@@ modifiers=1 */ override public function setLocation(x:Single, y:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.Float.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

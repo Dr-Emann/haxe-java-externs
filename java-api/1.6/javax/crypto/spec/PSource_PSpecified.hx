@@ -9,10 +9,10 @@ import javax.crypto.spec.PSource;
 extern class PSource_PSpecified extends PSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PSource.PSpecified.html#PSource$PSpecified(byte[]) */
-	public function new(arg0:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PSource.PSpecified.html#getValue() */
-	public function getValue():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getValue():NativeArray<Int8>;
 
 }
 

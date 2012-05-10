@@ -11,16 +11,16 @@ import javax.naming.ldap.ExtendedResponse;
 extern class StartTlsRequest extends Object, implements ExtendedRequest
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/StartTlsRequest.html#StartTlsRequest() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/StartTlsRequest.html#createExtendedResponse(java.lang.String, byte[], int, int) */
-	public function createExtendedResponse(id:String, berValue:NativeArray<Int8>, offset:Int, length:Int):ExtendedResponse;
+	/*@@@ modifiers=1 */ public function createExtendedResponse(id:String, berValue:NativeArray<Int8>, offset:Int, length:Int):ExtendedResponse;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/StartTlsRequest.html#getEncodedValue() */
-	public function getEncodedValue():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getEncodedValue():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/StartTlsRequest.html#getID() */
-	public function getID():String;
+	/*@@@ modifiers=1 */ public function getID():String;
 
 }
 

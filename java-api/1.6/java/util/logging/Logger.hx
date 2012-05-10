@@ -17,127 +17,127 @@ extern class Logger extends Object
 	public static var global:Logger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#Logger(java.lang.String, java.lang.String) */
-	private function new(name:String, resourceBundleName:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String, resourceBundleName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#addHandler(java.util.logging.Handler) */
-	public function addHandler(handler:Handler):Void;
+	/*@@@ modifiers=33 */ public function addHandler(handler:Handler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#config(java.lang.String) */
-	public function config(msg:String):Void;
+	/*@@@ modifiers=1 */ public function config(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#entering(java.lang.String, java.lang.String, java.lang.Object) */
-	@:overload(function (sourceClass:String, sourceMethod:String, param1:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (sourceClass:String, sourceMethod:String, param1:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#entering(java.lang.String, java.lang.String, java.lang.Object[]) */
-	@:overload(function (sourceClass:String, sourceMethod:String, params:NativeArray<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (sourceClass:String, sourceMethod:String, params:NativeArray<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#entering(java.lang.String, java.lang.String) */
-	public function entering(sourceClass:String, sourceMethod:String):Void;
+	/*@@@ modifiers=1 */ public function entering(sourceClass:String, sourceMethod:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#exiting(java.lang.String, java.lang.String, java.lang.Object) */
-	@:overload(function (sourceClass:String, sourceMethod:String, result:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (sourceClass:String, sourceMethod:String, result:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#exiting(java.lang.String, java.lang.String) */
-	public function exiting(sourceClass:String, sourceMethod:String):Void;
+	/*@@@ modifiers=1 */ public function exiting(sourceClass:String, sourceMethod:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#fine(java.lang.String) */
-	public function fine(msg:String):Void;
+	/*@@@ modifiers=1 */ public function fine(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#finer(java.lang.String) */
-	public function finer(msg:String):Void;
+	/*@@@ modifiers=1 */ public function finer(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#finest(java.lang.String) */
-	public function finest(msg:String):Void;
+	/*@@@ modifiers=1 */ public function finest(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getAnonymousLogger(java.lang.String) */
-	@:overload(function (resourceBundleName:String):Logger {})
+	/*@@@ modifiers=41 */ @:overload(function (resourceBundleName:String):Logger {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getAnonymousLogger() */
-	static public function getAnonymousLogger():Logger;
+	/*@@@ modifiers=9 */ static public function getAnonymousLogger():Logger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getFilter() */
-	public function getFilter():Filter;
+	/*@@@ modifiers=1 */ public function getFilter():Filter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getHandlers() */
-	public function getHandlers():NativeArray<Handler>;
+	/*@@@ modifiers=33 */ public function getHandlers():NativeArray<Handler>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getLevel() */
-	public function getLevel():Level;
+	/*@@@ modifiers=1 */ public function getLevel():Level;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getLogger(java.lang.String, java.lang.String) */
-	@:overload(function (name:String, resourceBundleName:String):Logger {})
+	/*@@@ modifiers=41 */ @:overload(function (name:String, resourceBundleName:String):Logger {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getLogger(java.lang.String) */
-	static public function getLogger(name:String):Logger;
+	/*@@@ modifiers=41 */ static public function getLogger(name:String):Logger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getParent() */
-	public function getParent():Logger;
+	/*@@@ modifiers=1 */ public function getParent():Logger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getResourceBundle() */
-	public function getResourceBundle():ResourceBundle;
+	/*@@@ modifiers=1 */ public function getResourceBundle():ResourceBundle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getResourceBundleName() */
-	public function getResourceBundleName():String;
+	/*@@@ modifiers=1 */ public function getResourceBundleName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#getUseParentHandlers() */
-	public function getUseParentHandlers():Bool;
+	/*@@@ modifiers=33 */ public function getUseParentHandlers():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#info(java.lang.String) */
-	public function info(msg:String):Void;
+	/*@@@ modifiers=1 */ public function info(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#isLoggable(java.util.logging.Level) */
-	public function isLoggable(level:Level):Bool;
+	/*@@@ modifiers=1 */ public function isLoggable(level:Level):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.Level, java.lang.String, java.lang.Object) */
-	@:overload(function (level:Level, msg:String, param1:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, msg:String, param1:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.Level, java.lang.String, java.lang.Object[]) */
-	@:overload(function (level:Level, msg:String, params:NativeArray<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, msg:String, params:NativeArray<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.Level, java.lang.String, java.lang.Throwable) */
-	@:overload(function (level:Level, msg:String, thrown:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, msg:String, thrown:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.Level, java.lang.String) */
-	@:overload(function (level:Level, msg:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, msg:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.LogRecord) */
-	public function log(record:LogRecord):Void;
+	/*@@@ modifiers=1 */ public function log(record:LogRecord):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logp(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Object) */
-	@:overload(function (level:Level, sourceClass:String, sourceMethod:String, msg:String, param1:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, sourceClass:String, sourceMethod:String, msg:String, param1:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logp(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Object[]) */
-	@:overload(function (level:Level, sourceClass:String, sourceMethod:String, msg:String, params:NativeArray<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, sourceClass:String, sourceMethod:String, msg:String, params:NativeArray<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logp(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Throwable) */
-	@:overload(function (level:Level, sourceClass:String, sourceMethod:String, msg:String, thrown:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, sourceClass:String, sourceMethod:String, msg:String, thrown:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logp(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String) */
-	public function logp(level:Level, sourceClass:String, sourceMethod:String, msg:String):Void;
+	/*@@@ modifiers=1 */ public function logp(level:Level, sourceClass:String, sourceMethod:String, msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logrb(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object) */
-	@:overload(function (level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String, param1:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String, param1:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logrb(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object[]) */
-	@:overload(function (level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String, params:NativeArray<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String, params:NativeArray<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logrb(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Throwable) */
-	@:overload(function (level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String, thrown:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String, thrown:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#logrb(java.util.logging.Level, java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	public function logrb(level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String):Void;
+	/*@@@ modifiers=1 */ public function logrb(level:Level, sourceClass:String, sourceMethod:String, bundleName:String, msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#removeHandler(java.util.logging.Handler) */
-	public function removeHandler(handler:Handler):Void;
+	/*@@@ modifiers=33 */ public function removeHandler(handler:Handler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#setFilter(java.util.logging.Filter) */
-	public function setFilter(newFilter:Filter):Void;
+	/*@@@ modifiers=1 */ public function setFilter(newFilter:Filter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#setLevel(java.util.logging.Level) */
-	public function setLevel(newLevel:Level):Void;
+	/*@@@ modifiers=1 */ public function setLevel(newLevel:Level):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#setParent(java.util.logging.Logger) */
-	public function setParent(parent:Logger):Void;
+	/*@@@ modifiers=1 */ public function setParent(parent:Logger):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#setUseParentHandlers(boolean) */
-	public function setUseParentHandlers(useParentHandlers:Bool):Void;
+	/*@@@ modifiers=33 */ public function setUseParentHandlers(useParentHandlers:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#severe(java.lang.String) */
-	public function severe(msg:String):Void;
+	/*@@@ modifiers=1 */ public function severe(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#throwing(java.lang.String, java.lang.String, java.lang.Throwable) */
-	public function throwing(sourceClass:String, sourceMethod:String, thrown:Throwable):Void;
+	/*@@@ modifiers=1 */ public function throwing(sourceClass:String, sourceMethod:String, thrown:Throwable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html#warning(java.lang.String) */
-	public function warning(msg:String):Void;
+	/*@@@ modifiers=1 */ public function warning(msg:String):Void;
 
 }
 

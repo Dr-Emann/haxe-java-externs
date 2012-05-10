@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 extern interface InvocationHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/InvocationHandler.html#invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) */
-	public function invoke(proxy:Dynamic, method:Method, args:NativeArray<Dynamic>):Dynamic;
+	/*@@@ modifiers=1025 */ public function invoke(proxy:Dynamic, method:Method, args:NativeArray<Dynamic>):Dynamic;
 
 }
 

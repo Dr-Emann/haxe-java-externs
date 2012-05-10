@@ -6,7 +6,7 @@ package javax.xml.stream;
 extern interface XMLResolver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLResolver.html#resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	public function resolveEntity(publicID:String, systemID:String, baseURI:String, namespace:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function resolveEntity(publicID:String, systemID:String, baseURI:String, namespace:String):Dynamic;
 
 }
 

@@ -8,13 +8,13 @@ import java.awt.image.Raster;
 extern interface PaintContext
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PaintContext.html#dispose() */
-	public function dispose():Void;
+	/*@@@ modifiers=1025 */ public function dispose():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PaintContext.html#getColorModel() */
-	public function getColorModel():ColorModel;
+	/*@@@ modifiers=1025 */ public function getColorModel():ColorModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/PaintContext.html#getRaster(int, int, int, int) */
-	public function getRaster(x:Int, y:Int, w:Int, h:Int):Raster;
+	/*@@@ modifiers=1025 */ public function getRaster(x:Int, y:Int, w:Int, h:Int):Raster;
 
 }
 

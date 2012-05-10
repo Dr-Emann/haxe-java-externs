@@ -7,7 +7,7 @@ import javax.swing.plaf.ComponentUI;
 extern class InternalFrameUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/InternalFrameUI.html#InternalFrameUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

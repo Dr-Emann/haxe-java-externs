@@ -11,18 +11,18 @@ import javax.lang.model.element.TypeElement;
 extern interface RoundEnvironment
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html#errorRaised() */
-	public function errorRaised():Bool;
+	/*@@@ modifiers=1025 */ public function errorRaised():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(java.lang.Class) */
-	@:overload(function (a:Class<Annotation>):Set<Element> {})
+	/*@@@ modifiers=1025 */ @:overload(function (a:Class<Annotation>):Set<Element> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(javax.lang.model.element.TypeElement) */
-	public function getElementsAnnotatedWith(a:TypeElement):Set<Element>;
+	/*@@@ modifiers=1025 */ public function getElementsAnnotatedWith(a:TypeElement):Set<Element>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html#getRootElements() */
-	public function getRootElements():Set<Element>;
+	/*@@@ modifiers=1025 */ public function getRootElements():Set<Element>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/RoundEnvironment.html#processingOver() */
-	public function processingOver():Bool;
+	/*@@@ modifiers=1025 */ public function processingOver():Bool;
 
 }
 

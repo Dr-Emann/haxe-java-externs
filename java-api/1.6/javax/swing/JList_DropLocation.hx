@@ -8,13 +8,13 @@ extern class JList_DropLocation extends TransferHandler_DropLocation
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.DropLocation.html#getIndex() */
-	public function getIndex():Int;
+	/*@@@ modifiers=1 */ public function getIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.DropLocation.html#isInsert() */
-	public function isInsert():Bool;
+	/*@@@ modifiers=1 */ public function isInsert():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.DropLocation.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -8,10 +8,10 @@ import java.util.spi.LocaleServiceProvider;
 extern class TimeZoneNameProvider extends LocaleServiceProvider
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/spi/TimeZoneNameProvider.html#TimeZoneNameProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/spi/TimeZoneNameProvider.html#getDisplayName(java.lang.String, boolean, int, java.util.Locale) */
-	public function getDisplayName(ID:String, daylight:Bool, style:Int, locale:Locale):String;
+	/*@@@ modifiers=1025 */ public function getDisplayName(ID:String, daylight:Bool, style:Int, locale:Locale):String;
 
 }
 

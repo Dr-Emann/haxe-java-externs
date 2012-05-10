@@ -14,61 +14,61 @@ extern class NetworkInterface extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getByInetAddress(java.net.InetAddress) */
-	static public function getByInetAddress(addr:InetAddress):NetworkInterface;
+	/*@@@ modifiers=9 */ static public function getByInetAddress(addr:InetAddress):NetworkInterface;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getByName(java.lang.String) */
-	static public function getByName(name:String):NetworkInterface;
+	/*@@@ modifiers=9 */ static public function getByName(name:String):NetworkInterface;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getDisplayName() */
-	public function getDisplayName():String;
+	/*@@@ modifiers=1 */ public function getDisplayName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getHardwareAddress() */
-	public function getHardwareAddress():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getHardwareAddress():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getInetAddresses() */
-	public function getInetAddresses():Enumeration<InetAddress>;
+	/*@@@ modifiers=1 */ public function getInetAddresses():Enumeration<InetAddress>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getInterfaceAddresses() */
-	public function getInterfaceAddresses():List<InterfaceAddress>;
+	/*@@@ modifiers=1 */ public function getInterfaceAddresses():List<InterfaceAddress>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getMTU() */
-	public function getMTU():Int;
+	/*@@@ modifiers=1 */ public function getMTU():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getNetworkInterfaces() */
-	static public function getNetworkInterfaces():Enumeration<NetworkInterface>;
+	/*@@@ modifiers=9 */ static public function getNetworkInterfaces():Enumeration<NetworkInterface>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getParent() */
-	public function getParent():NetworkInterface;
+	/*@@@ modifiers=1 */ public function getParent():NetworkInterface;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#getSubInterfaces() */
-	public function getSubInterfaces():Enumeration<NetworkInterface>;
+	/*@@@ modifiers=1 */ public function getSubInterfaces():Enumeration<NetworkInterface>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#isLoopback() */
-	public function isLoopback():Bool;
+	/*@@@ modifiers=1 */ public function isLoopback():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#isPointToPoint() */
-	public function isPointToPoint():Bool;
+	/*@@@ modifiers=1 */ public function isPointToPoint():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#isUp() */
-	public function isUp():Bool;
+	/*@@@ modifiers=1 */ public function isUp():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#isVirtual() */
-	public function isVirtual():Bool;
+	/*@@@ modifiers=1 */ public function isVirtual():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#supportsMulticast() */
-	public function supportsMulticast():Bool;
+	/*@@@ modifiers=1 */ public function supportsMulticast():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/NetworkInterface.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

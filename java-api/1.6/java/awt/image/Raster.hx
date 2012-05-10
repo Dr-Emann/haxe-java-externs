@@ -47,131 +47,131 @@ extern class Raster extends Object
 	private var parent:Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#Raster(java.awt.image.SampleModel, java.awt.Point) */
-	@:overload(function (sampleModel:SampleModel, origin:Point):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (sampleModel:SampleModel, origin:Point):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#Raster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Point) */
-	@:overload(function (sampleModel:SampleModel, dataBuffer:DataBuffer, origin:Point):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (sampleModel:SampleModel, dataBuffer:DataBuffer, origin:Point):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#Raster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Rectangle, java.awt.Point, java.awt.image.Raster) */
-	private function new(sampleModel:SampleModel, dataBuffer:DataBuffer, aRegion:Rectangle, sampleModelTranslate:Point, parent:Raster):Void;
+	/*@@@ modifiers=4 */ private function new(sampleModel:SampleModel, dataBuffer:DataBuffer, aRegion:Rectangle, sampleModelTranslate:Point, parent:Raster):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createBandedRaster(int, int, int, int, int[], int[], java.awt.Point) */
-	@:overload(function (dataType:Int, w:Int, h:Int, scanlineStride:Int, bankIndices:NativeArray<Int>, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataType:Int, w:Int, h:Int, scanlineStride:Int, bankIndices:NativeArray<Int>, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createBandedRaster(java.awt.image.DataBuffer, int, int, int, int[], int[], java.awt.Point) */
-	@:overload(function (dataBuffer:DataBuffer, w:Int, h:Int, scanlineStride:Int, bankIndices:NativeArray<Int>, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataBuffer:DataBuffer, w:Int, h:Int, scanlineStride:Int, bankIndices:NativeArray<Int>, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createBandedRaster(int, int, int, int, java.awt.Point) */
-	static public function createBandedRaster(dataType:Int, w:Int, h:Int, bands:Int, location:Point):WritableRaster;
+	/*@@@ modifiers=9 */ static public function createBandedRaster(dataType:Int, w:Int, h:Int, bands:Int, location:Point):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createChild(int, int, int, int, int, int, int[]) */
-	public function createChild(parentX:Int, parentY:Int, width:Int, height:Int, childMinX:Int, childMinY:Int, bandList:NativeArray<Int>):Raster;
+	/*@@@ modifiers=1 */ public function createChild(parentX:Int, parentY:Int, width:Int, height:Int, childMinX:Int, childMinY:Int, bandList:NativeArray<Int>):Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createCompatibleWritableRaster(int, int, int, int) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int):WritableRaster {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createCompatibleWritableRaster(int, int) */
-	@:overload(function (w:Int, h:Int):WritableRaster {})
+	/*@@@ modifiers=1 */ @:overload(function (w:Int, h:Int):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createCompatibleWritableRaster(java.awt.Rectangle) */
-	@:overload(function (rect:Rectangle):WritableRaster {})
+	/*@@@ modifiers=1 */ @:overload(function (rect:Rectangle):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createCompatibleWritableRaster() */
-	public function createCompatibleWritableRaster():WritableRaster;
+	/*@@@ modifiers=1 */ public function createCompatibleWritableRaster():WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createInterleavedRaster(int, int, int, int, int, int[], java.awt.Point) */
-	@:overload(function (dataType:Int, w:Int, h:Int, scanlineStride:Int, pixelStride:Int, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataType:Int, w:Int, h:Int, scanlineStride:Int, pixelStride:Int, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createInterleavedRaster(java.awt.image.DataBuffer, int, int, int, int, int[], java.awt.Point) */
-	@:overload(function (dataBuffer:DataBuffer, w:Int, h:Int, scanlineStride:Int, pixelStride:Int, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataBuffer:DataBuffer, w:Int, h:Int, scanlineStride:Int, pixelStride:Int, bandOffsets:NativeArray<Int>, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createInterleavedRaster(int, int, int, int, java.awt.Point) */
-	static public function createInterleavedRaster(dataType:Int, w:Int, h:Int, bands:Int, location:Point):WritableRaster;
+	/*@@@ modifiers=9 */ static public function createInterleavedRaster(dataType:Int, w:Int, h:Int, bands:Int, location:Point):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createPackedRaster(int, int, int, int, int, java.awt.Point) */
-	@:overload(function (dataType:Int, w:Int, h:Int, bands:Int, bitsPerBand:Int, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataType:Int, w:Int, h:Int, bands:Int, bitsPerBand:Int, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createPackedRaster(java.awt.image.DataBuffer, int, int, int, int[], java.awt.Point) */
-	@:overload(function (dataBuffer:DataBuffer, w:Int, h:Int, scanlineStride:Int, bandMasks:NativeArray<Int>, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataBuffer:DataBuffer, w:Int, h:Int, scanlineStride:Int, bandMasks:NativeArray<Int>, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createPackedRaster(int, int, int, int[], java.awt.Point) */
-	@:overload(function (dataType:Int, w:Int, h:Int, bandMasks:NativeArray<Int>, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (dataType:Int, w:Int, h:Int, bandMasks:NativeArray<Int>, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createPackedRaster(java.awt.image.DataBuffer, int, int, int, java.awt.Point) */
-	static public function createPackedRaster(dataBuffer:DataBuffer, w:Int, h:Int, bitsPerPixel:Int, location:Point):WritableRaster;
+	/*@@@ modifiers=9 */ static public function createPackedRaster(dataBuffer:DataBuffer, w:Int, h:Int, bitsPerPixel:Int, location:Point):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Point) */
-	static public function createRaster(sm:SampleModel, db:DataBuffer, location:Point):Raster;
+	/*@@@ modifiers=9 */ static public function createRaster(sm:SampleModel, db:DataBuffer, location:Point):Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createTranslatedChild(int, int) */
-	public function createTranslatedChild(childMinX:Int, childMinY:Int):Raster;
+	/*@@@ modifiers=1 */ public function createTranslatedChild(childMinX:Int, childMinY:Int):Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createWritableRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Point) */
-	@:overload(function (sm:SampleModel, db:DataBuffer, location:Point):WritableRaster {})
+	/*@@@ modifiers=9 */ @:overload(function (sm:SampleModel, db:DataBuffer, location:Point):WritableRaster {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#createWritableRaster(java.awt.image.SampleModel, java.awt.Point) */
-	static public function createWritableRaster(sm:SampleModel, location:Point):WritableRaster;
+	/*@@@ modifiers=9 */ static public function createWritableRaster(sm:SampleModel, location:Point):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getBounds() */
-	public function getBounds():Rectangle;
+	/*@@@ modifiers=1 */ public function getBounds():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getDataBuffer() */
-	public function getDataBuffer():DataBuffer;
+	/*@@@ modifiers=1 */ public function getDataBuffer():DataBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getDataElements(int, int, int, int, java.lang.Object) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int, outData:Dynamic):Dynamic {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int, outData:Dynamic):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getDataElements(int, int, java.lang.Object) */
-	public function getDataElements(x:Int, y:Int, outData:Dynamic):Dynamic;
+	/*@@@ modifiers=1 */ public function getDataElements(x:Int, y:Int, outData:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getHeight() */
-	public function getHeight():Int;
+	/*@@@ modifiers=17 */ public function getHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getMinX() */
-	public function getMinX():Int;
+	/*@@@ modifiers=17 */ public function getMinX():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getMinY() */
-	public function getMinY():Int;
+	/*@@@ modifiers=17 */ public function getMinY():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getNumBands() */
-	public function getNumBands():Int;
+	/*@@@ modifiers=17 */ public function getNumBands():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getNumDataElements() */
-	public function getNumDataElements():Int;
+	/*@@@ modifiers=17 */ public function getNumDataElements():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getParent() */
-	public function getParent():Raster;
+	/*@@@ modifiers=1 */ public function getParent():Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getPixel(int, int, double[]) */
-	@:overload(function (x:Int, y:Int, dArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, dArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getPixel(int, int, float[]) */
-	@:overload(function (x:Int, y:Int, fArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, fArray:NativeArray<Single>):NativeArray<Single> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getPixel(int, int, int[]) */
-	public function getPixel(x:Int, y:Int, iArray:NativeArray<Int>):NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getPixel(x:Int, y:Int, iArray:NativeArray<Int>):NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getPixels(int, int, int, int, double[]) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int, dArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int, dArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getPixels(int, int, int, int, float[]) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int, fArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int, fArray:NativeArray<Single>):NativeArray<Single> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getPixels(int, int, int, int, int[]) */
-	public function getPixels(x:Int, y:Int, w:Int, h:Int, iArray:NativeArray<Int>):NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getPixels(x:Int, y:Int, w:Int, h:Int, iArray:NativeArray<Int>):NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSample(int, int, int) */
-	public function getSample(x:Int, y:Int, b:Int):Int;
+	/*@@@ modifiers=1 */ public function getSample(x:Int, y:Int, b:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSampleDouble(int, int, int) */
-	public function getSampleDouble(x:Int, y:Int, b:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getSampleDouble(x:Int, y:Int, b:Int):StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSampleFloat(int, int, int) */
-	public function getSampleFloat(x:Int, y:Int, b:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getSampleFloat(x:Int, y:Int, b:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSampleModel() */
-	public function getSampleModel():SampleModel;
+	/*@@@ modifiers=1 */ public function getSampleModel():SampleModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSampleModelTranslateX() */
-	public function getSampleModelTranslateX():Int;
+	/*@@@ modifiers=17 */ public function getSampleModelTranslateX():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSampleModelTranslateY() */
-	public function getSampleModelTranslateY():Int;
+	/*@@@ modifiers=17 */ public function getSampleModelTranslateY():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSamples(int, int, int, int, int, double[]) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int, b:Int, dArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int, b:Int, dArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSamples(int, int, int, int, int, float[]) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int, b:Int, fArray:NativeArray<StdFloat>):NativeArray<StdFloat> {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int, b:Int, fArray:NativeArray<Single>):NativeArray<Single> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getSamples(int, int, int, int, int, int[]) */
-	public function getSamples(x:Int, y:Int, w:Int, h:Int, b:Int, iArray:NativeArray<Int>):NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getSamples(x:Int, y:Int, w:Int, h:Int, b:Int, iArray:NativeArray<Int>):NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getTransferType() */
-	public function getTransferType():Int;
+	/*@@@ modifiers=17 */ public function getTransferType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/Raster.html#getWidth() */
-	public function getWidth():Int;
+	/*@@@ modifiers=17 */ public function getWidth():Int;
 
 }
 

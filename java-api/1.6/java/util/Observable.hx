@@ -8,33 +8,33 @@ import java.util.Observer;
 extern class Observable extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#Observable() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#addObserver(java.util.Observer) */
-	public function addObserver(o:Observer):Void;
+	/*@@@ modifiers=33 */ public function addObserver(o:Observer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#clearChanged() */
-	private function clearChanged():Void;
+	/*@@@ modifiers=36 */ private function clearChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#countObservers() */
-	public function countObservers():Int;
+	/*@@@ modifiers=33 */ public function countObservers():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#deleteObserver(java.util.Observer) */
-	public function deleteObserver(o:Observer):Void;
+	/*@@@ modifiers=33 */ public function deleteObserver(o:Observer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#deleteObservers() */
-	public function deleteObservers():Void;
+	/*@@@ modifiers=33 */ public function deleteObservers():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#hasChanged() */
-	public function hasChanged():Bool;
+	/*@@@ modifiers=33 */ public function hasChanged():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#notifyObservers(java.lang.Object) */
-	@:overload(function (arg:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#notifyObservers() */
-	public function notifyObservers():Void;
+	/*@@@ modifiers=1 */ public function notifyObservers():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Observable.html#setChanged() */
-	private function setChanged():Void;
+	/*@@@ modifiers=36 */ private function setChanged():Void;
 
 }
 

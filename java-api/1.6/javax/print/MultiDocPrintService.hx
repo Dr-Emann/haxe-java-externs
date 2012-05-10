@@ -8,7 +8,7 @@ import javax.print.PrintService;
 extern interface MultiDocPrintService implements PrintService
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/MultiDocPrintService.html#createMultiDocPrintJob() */
-	public function createMultiDocPrintJob():MultiDocPrintJob;
+	/*@@@ modifiers=1025 */ public function createMultiDocPrintJob():MultiDocPrintJob;
 
 }
 

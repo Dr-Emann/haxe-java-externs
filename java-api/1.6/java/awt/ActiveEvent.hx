@@ -6,7 +6,7 @@ package java.awt;
 extern interface ActiveEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ActiveEvent.html#dispatch() */
-	public function dispatch():Void;
+	/*@@@ modifiers=1025 */ public function dispatch():Void;
 
 }
 

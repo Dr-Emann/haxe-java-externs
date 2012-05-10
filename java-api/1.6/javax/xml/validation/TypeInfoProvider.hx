@@ -8,19 +8,19 @@ import org.w3c.dom.TypeInfo;
 extern class TypeInfoProvider extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/TypeInfoProvider.html#TypeInfoProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/TypeInfoProvider.html#getAttributeTypeInfo(int) */
-	public function getAttributeTypeInfo(index:Int):TypeInfo;
+	/*@@@ modifiers=1025 */ public function getAttributeTypeInfo(index:Int):TypeInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/TypeInfoProvider.html#getElementTypeInfo() */
-	public function getElementTypeInfo():TypeInfo;
+	/*@@@ modifiers=1025 */ public function getElementTypeInfo():TypeInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int) */
-	public function isIdAttribute(index:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isIdAttribute(index:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/TypeInfoProvider.html#isSpecified(int) */
-	public function isSpecified(index:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isSpecified(index:Int):Bool;
 
 }
 

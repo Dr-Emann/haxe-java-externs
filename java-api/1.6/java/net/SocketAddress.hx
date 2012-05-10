@@ -8,7 +8,7 @@ import java.lang.Object;
 extern class SocketAddress extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketAddress.html#SocketAddress() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

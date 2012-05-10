@@ -12,21 +12,21 @@ import javax.sound.sampled.AudioInputStream;
 extern class AudioFileReader extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#AudioFileReader() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.io.File) */
-	@:overload(function (file:File):AudioFileFormat {})
+	/*@@@ modifiers=1025 */ @:overload(function (file:File):AudioFileFormat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.io.InputStream) */
-	@:overload(function (stream:InputStream):AudioFileFormat {})
+	/*@@@ modifiers=1025 */ @:overload(function (stream:InputStream):AudioFileFormat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.net.URL) */
-	public function getAudioFileFormat(url:URL):AudioFileFormat;
+	/*@@@ modifiers=1025 */ public function getAudioFileFormat(url:URL):AudioFileFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.io.File) */
-	@:overload(function (file:File):AudioInputStream {})
+	/*@@@ modifiers=1025 */ @:overload(function (file:File):AudioInputStream {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.io.InputStream) */
-	@:overload(function (stream:InputStream):AudioInputStream {})
+	/*@@@ modifiers=1025 */ @:overload(function (stream:InputStream):AudioInputStream {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.net.URL) */
-	public function getAudioInputStream(url:URL):AudioInputStream;
+	/*@@@ modifiers=1025 */ public function getAudioInputStream(url:URL):AudioInputStream;
 
 }
 

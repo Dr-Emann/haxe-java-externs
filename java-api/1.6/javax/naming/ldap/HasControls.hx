@@ -8,7 +8,7 @@ import javax.naming.ldap.Control;
 extern interface HasControls
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/HasControls.html#getControls() */
-	public function getControls():NativeArray<Control>;
+	/*@@@ modifiers=1025 */ public function getControls():NativeArray<Control>;
 
 }
 

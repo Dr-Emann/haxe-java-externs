@@ -13,31 +13,31 @@ import javax.net.ssl.TrustManagerFactorySpi;
 extern class TrustManagerFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#TrustManagerFactory(javax.net.ssl.TrustManagerFactorySpi, java.security.Provider, java.lang.String) */
-	private function new(arg0:TrustManagerFactorySpi, arg1:Provider, arg2:String):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:TrustManagerFactorySpi, arg1:Provider, arg2:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=17 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm() */
-	static public function getDefaultAlgorithm():String;
+	/*@@@ modifiers=25 */ static public function getDefaultAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getInstance(java.lang.String, java.lang.String) */
-	@:overload(function (arg0:String, arg1:String):TrustManagerFactory {})
+	/*@@@ modifiers=25 */ @:overload(function (arg0:String, arg1:String):TrustManagerFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getInstance(java.lang.String, java.security.Provider) */
-	@:overload(function (arg0:String, arg1:Provider):TrustManagerFactory {})
+	/*@@@ modifiers=25 */ @:overload(function (arg0:String, arg1:Provider):TrustManagerFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getInstance(java.lang.String) */
-	static public function getInstance(arg0:String):TrustManagerFactory;
+	/*@@@ modifiers=25 */ static public function getInstance(arg0:String):TrustManagerFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getProvider() */
-	public function getProvider():Provider;
+	/*@@@ modifiers=17 */ public function getProvider():Provider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#getTrustManagers() */
-	public function getTrustManagers():NativeArray<TrustManager>;
+	/*@@@ modifiers=17 */ public function getTrustManagers():NativeArray<TrustManager>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#init(java.security.KeyStore) */
-	@:overload(function (arg0:KeyStore):Void {})
+	/*@@@ modifiers=17 */ @:overload(function (arg0:KeyStore):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/TrustManagerFactory.html#init(javax.net.ssl.ManagerFactoryParameters) */
-	public function init(arg0:ManagerFactoryParameters):Void;
+	/*@@@ modifiers=17 */ public function init(arg0:ManagerFactoryParameters):Void;
 
 }
 

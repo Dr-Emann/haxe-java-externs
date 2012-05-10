@@ -6,7 +6,7 @@ package java.io;
 extern interface ObjectInputValidation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectInputValidation.html#validateObject() */
-	public function validateObject():Void;
+	/*@@@ modifiers=1025 */ public function validateObject():Void;
 
 }
 

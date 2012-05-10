@@ -7,28 +7,28 @@ import java.lang.Object;
 extern class MidiDevice_Info extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#MidiDevice$Info(java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	private function new(name:String, vendor:String, description:String, version:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String, vendor:String, description:String, version:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=17 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=17 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#getVendor() */
-	public function getVendor():String;
+	/*@@@ modifiers=17 */ public function getVendor():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=17 */ public function getVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=17 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiDevice.Info.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=17 */ override public function toString():String;
 
 }
 

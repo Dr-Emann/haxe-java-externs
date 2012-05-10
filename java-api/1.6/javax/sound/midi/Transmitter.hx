@@ -7,13 +7,13 @@ import javax.sound.midi.Receiver;
 extern interface Transmitter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Transmitter.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Transmitter.html#getReceiver() */
-	public function getReceiver():Receiver;
+	/*@@@ modifiers=1025 */ public function getReceiver():Receiver;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Transmitter.html#setReceiver(javax.sound.midi.Receiver) */
-	public function setReceiver(receiver:Receiver):Void;
+	/*@@@ modifiers=1025 */ public function setReceiver(receiver:Receiver):Void;
 
 }
 

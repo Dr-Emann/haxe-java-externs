@@ -7,7 +7,7 @@ import java.lang.Cloneable;
 extern interface CertPathParameters implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertPathParameters.html#clone() */
-	public function clone():Dynamic;
+	/*@@@ modifiers=1025 */ public function clone():Dynamic;
 
 }
 

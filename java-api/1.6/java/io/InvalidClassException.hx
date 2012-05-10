@@ -10,12 +10,12 @@ extern class InvalidClassException extends ObjectStreamException
 	public var classname:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InvalidClassException.html#InvalidClassException(java.lang.String) */
-	@:overload(function (reason:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (reason:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InvalidClassException.html#InvalidClassException(java.lang.String, java.lang.String) */
-	public function new(cname:String, reason:String):Void;
+	/*@@@ modifiers=1 */ public function new(cname:String, reason:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InvalidClassException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

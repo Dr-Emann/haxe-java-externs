@@ -12,54 +12,54 @@ import org.xml.sax.SAXParseException;
 extern class ValidationEventLocatorImpl extends Object, implements ValidationEventLocator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#ValidationEventLocatorImpl(org.xml.sax.Locator) */
-	@:overload(function (loc:Locator):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (loc:Locator):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#ValidationEventLocatorImpl(org.xml.sax.SAXParseException) */
-	@:overload(function (loc:SAXParseException):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (loc:SAXParseException):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#ValidationEventLocatorImpl(org.w3c.dom.Node) */
-	@:overload(function (loc:Node):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (loc:Node):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#ValidationEventLocatorImpl(java.lang.Object) */
-	@:overload(function (loc:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (loc:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#ValidationEventLocatorImpl() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#getColumnNumber() */
-	public function getColumnNumber():Int;
+	/*@@@ modifiers=1 */ public function getColumnNumber():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#getLineNumber() */
-	public function getLineNumber():Int;
+	/*@@@ modifiers=1 */ public function getLineNumber():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#getNode() */
-	public function getNode():Node;
+	/*@@@ modifiers=1 */ public function getNode():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#getObject() */
-	public function getObject():Dynamic;
+	/*@@@ modifiers=1 */ public function getObject():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1 */ public function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#getURL() */
-	public function getURL():URL;
+	/*@@@ modifiers=1 */ public function getURL():URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#setColumnNumber(int) */
-	public function setColumnNumber(_columnNumber:Int):Void;
+	/*@@@ modifiers=1 */ public function setColumnNumber(_columnNumber:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#setLineNumber(int) */
-	public function setLineNumber(_lineNumber:Int):Void;
+	/*@@@ modifiers=1 */ public function setLineNumber(_lineNumber:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#setNode(org.w3c.dom.Node) */
-	public function setNode(_node:Node):Void;
+	/*@@@ modifiers=1 */ public function setNode(_node:Node):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#setObject(java.lang.Object) */
-	public function setObject(_object:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setObject(_object:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#setOffset(int) */
-	public function setOffset(_offset:Int):Void;
+	/*@@@ modifiers=1 */ public function setOffset(_offset:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#setURL(java.net.URL) */
-	public function setURL(_url:URL):Void;
+	/*@@@ modifiers=1 */ public function setURL(_url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

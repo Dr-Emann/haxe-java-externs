@@ -9,10 +9,10 @@ import javax.swing.text.StyledEditorKit_StyledTextAction;
 extern class StyledEditorKit_ForegroundAction extends StyledEditorKit_StyledTextAction
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.ForegroundAction.html#StyledEditorKit$ForegroundAction(java.lang.String, java.awt.Color) */
-	public function new(nm:String, fg:Color):Void;
+	/*@@@ modifiers=1 */ public function new(nm:String, fg:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.ForegroundAction.html#actionPerformed(java.awt.event.ActionEvent) */
-	public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
 
 }
 

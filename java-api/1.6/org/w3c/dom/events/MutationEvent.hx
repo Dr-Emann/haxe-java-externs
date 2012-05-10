@@ -9,22 +9,22 @@ import org.w3c.dom.events.Event;
 extern interface MutationEvent implements Event
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/MutationEvent.html#getAttrChange() */
-	public function getAttrChange():Int16;
+	/*@@@ modifiers=1025 */ public function getAttrChange():Int16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/MutationEvent.html#getAttrName() */
-	public function getAttrName():String;
+	/*@@@ modifiers=1025 */ public function getAttrName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/MutationEvent.html#getNewValue() */
-	public function getNewValue():String;
+	/*@@@ modifiers=1025 */ public function getNewValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/MutationEvent.html#getPrevValue() */
-	public function getPrevValue():String;
+	/*@@@ modifiers=1025 */ public function getPrevValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/MutationEvent.html#getRelatedNode() */
-	public function getRelatedNode():Node;
+	/*@@@ modifiers=1025 */ public function getRelatedNode():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/MutationEvent.html#initMutationEvent(java.lang.String, boolean, boolean, org.w3c.dom.Node, java.lang.String, java.lang.String, java.lang.String, short) */
-	public function initMutationEvent(typeArg:String, canBubbleArg:Bool, cancelableArg:Bool, relatedNodeArg:Node, prevValueArg:String, newValueArg:String, attrNameArg:String, attrChangeArg:Int16):Void;
+	/*@@@ modifiers=1025 */ public function initMutationEvent(typeArg:String, canBubbleArg:Bool, cancelableArg:Bool, relatedNodeArg:Node, prevValueArg:String, newValueArg:String, attrNameArg:String, attrChangeArg:Int16):Void;
 
 }
 

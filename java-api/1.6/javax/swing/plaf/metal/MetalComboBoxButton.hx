@@ -28,39 +28,39 @@ extern class MetalComboBoxButton extends JButton
 	private var iconOnly:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#MetalComboBoxButton(javax.swing.JComboBox, javax.swing.Icon, boolean, javax.swing.CellRendererPane, javax.swing.JList) */
-	@:overload(function (cb:JComboBox, i:Icon, onlyIcon:Bool, pane:CellRendererPane, list:JList):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (cb:JComboBox, i:Icon, onlyIcon:Bool, pane:CellRendererPane, list:JList):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#MetalComboBoxButton(javax.swing.JComboBox, javax.swing.Icon, javax.swing.CellRendererPane, javax.swing.JList) */
-	public function new(cb:JComboBox, i:Icon, pane:CellRendererPane, list:JList):Void;
+	/*@@@ modifiers=1 */ public function new(cb:JComboBox, i:Icon, pane:CellRendererPane, list:JList):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboBox() */
-	public function getComboBox():JComboBox;
+	/*@@@ modifiers=17 */ public function getComboBox():JComboBox;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboIcon() */
-	public function getComboIcon():Icon;
+	/*@@@ modifiers=17 */ public function getComboIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#getMinimumSize() */
-	override public function getMinimumSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#isFocusTraversable() */
-	override public function isFocusTraversable():Bool;
+	/*@@@ modifiers=1 */ override public function isFocusTraversable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#isIconOnly() */
-	public function isIconOnly():Bool;
+	/*@@@ modifiers=17 */ public function isIconOnly():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#paintComponent(java.awt.Graphics) */
-	override public function paintComponent(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paintComponent(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboBox(javax.swing.JComboBox) */
-	public function setComboBox(cb:JComboBox):Void;
+	/*@@@ modifiers=17 */ public function setComboBox(cb:JComboBox):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboIcon(javax.swing.Icon) */
-	public function setComboIcon(i:Icon):Void;
+	/*@@@ modifiers=17 */ public function setComboIcon(i:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#setEnabled(boolean) */
-	override public function setEnabled(enabled:Bool):Void;
+	/*@@@ modifiers=1 */ override public function setEnabled(enabled:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#setIconOnly(boolean) */
-	public function setIconOnly(isIconOnly:Bool):Void;
+	/*@@@ modifiers=17 */ public function setIconOnly(isIconOnly:Bool):Void;
 
 }
 

@@ -16,16 +16,16 @@ extern class Sasl extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/Sasl.html#createSaslClient(java.lang.String[], java.lang.String, java.lang.String, java.lang.String, java.util.Map, javax.security.auth.callback.CallbackHandler) */
-	static public function createSaslClient(mechanisms:NativeArray<String>, authorizationId:String, protocol:String, serverName:String, props:Map<String, Dynamic>, cbh:CallbackHandler):SaslClient;
+	/*@@@ modifiers=9 */ static public function createSaslClient(mechanisms:NativeArray<String>, authorizationId:String, protocol:String, serverName:String, props:Map<String, Dynamic>, cbh:CallbackHandler):SaslClient;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/Sasl.html#createSaslServer(java.lang.String, java.lang.String, java.lang.String, java.util.Map, javax.security.auth.callback.CallbackHandler) */
-	static public function createSaslServer(arg0:String, arg1:String, arg2:String, arg3:Map<String, Dynamic>, arg4:CallbackHandler):SaslServer;
+	/*@@@ modifiers=9 */ static public function createSaslServer(arg0:String, arg1:String, arg2:String, arg3:Map<String, Dynamic>, arg4:CallbackHandler):SaslServer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/Sasl.html#getSaslClientFactories() */
-	static public function getSaslClientFactories():Enumeration<SaslClientFactory>;
+	/*@@@ modifiers=9 */ static public function getSaslClientFactories():Enumeration<SaslClientFactory>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/Sasl.html#getSaslServerFactories() */
-	static public function getSaslServerFactories():Enumeration<SaslServerFactory>;
+	/*@@@ modifiers=9 */ static public function getSaslServerFactories():Enumeration<SaslServerFactory>;
 
 }
 

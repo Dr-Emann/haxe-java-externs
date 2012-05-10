@@ -15,45 +15,45 @@ import org.xml.sax.InputSource;
 extern class DocumentBuilder extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#DocumentBuilder() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#getDOMImplementation() */
-	public function getDOMImplementation():DOMImplementation;
+	/*@@@ modifiers=1025 */ public function getDOMImplementation():DOMImplementation;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#getSchema() */
-	public function getSchema():Schema;
+	/*@@@ modifiers=1 */ public function getSchema():Schema;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware() */
-	public function isNamespaceAware():Bool;
+	/*@@@ modifiers=1025 */ public function isNamespaceAware():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#isValidating() */
-	public function isValidating():Bool;
+	/*@@@ modifiers=1025 */ public function isValidating():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware() */
-	public function isXIncludeAware():Bool;
+	/*@@@ modifiers=1 */ public function isXIncludeAware():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#newDocument() */
-	public function newDocument():Document;
+	/*@@@ modifiers=1025 */ public function newDocument():Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.InputStream, java.lang.String) */
-	@:overload(function (is:InputStream, systemId:String):Document {})
+	/*@@@ modifiers=1 */ @:overload(function (is:InputStream, systemId:String):Document {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.File) */
-	@:overload(function (f:File):Document {})
+	/*@@@ modifiers=1 */ @:overload(function (f:File):Document {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.InputStream) */
-	@:overload(function (is:InputStream):Document {})
+	/*@@@ modifiers=1 */ @:overload(function (is:InputStream):Document {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.lang.String) */
-	@:overload(function (uri:String):Document {})
+	/*@@@ modifiers=1 */ @:overload(function (uri:String):Document {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(org.xml.sax.InputSource) */
-	public function parse(is:InputSource):Document;
+	/*@@@ modifiers=1025 */ public function parse(is:InputSource):Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#reset() */
-	public function reset():Void;
+	/*@@@ modifiers=1 */ public function reset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver) */
-	public function setEntityResolver(er:EntityResolver):Void;
+	/*@@@ modifiers=1025 */ public function setEntityResolver(er:EntityResolver):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler) */
-	public function setErrorHandler(eh:ErrorHandler):Void;
+	/*@@@ modifiers=1025 */ public function setErrorHandler(eh:ErrorHandler):Void;
 
 }
 

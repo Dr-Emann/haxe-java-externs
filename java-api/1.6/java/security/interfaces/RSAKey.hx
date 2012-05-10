@@ -7,7 +7,7 @@ import java.math.BigInteger;
 extern interface RSAKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAKey.html#getModulus() */
-	public function getModulus():BigInteger;
+	/*@@@ modifiers=1025 */ public function getModulus():BigInteger;
 
 }
 

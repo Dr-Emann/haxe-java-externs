@@ -14,46 +14,46 @@ import javax.swing.undo.UndoableEdit;
 extern class AbstractDocument_DefaultDocumentEvent extends CompoundEdit, implements DocumentEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#AbstractDocument$DefaultDocumentEvent(javax.swing.text.AbstractDocument, int, int, javax.swing.event.DocumentEvent$EventType) */
-	public function new(arg0:AbstractDocument, arg1:Int, arg2:Int, arg3:DocumentEvent_EventType):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:AbstractDocument, arg1:Int, arg2:Int, arg3:DocumentEvent_EventType):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#addEdit(javax.swing.undo.UndoableEdit) */
-	override public function addEdit(anEdit:UndoableEdit):Bool;
+	/*@@@ modifiers=1 */ override public function addEdit(anEdit:UndoableEdit):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getChange(javax.swing.text.Element) */
-	public function getChange(elem:Element):DocumentEvent_ElementChange;
+	/*@@@ modifiers=1 */ public function getChange(elem:Element):DocumentEvent_ElementChange;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getDocument() */
-	public function getDocument():Document;
+	/*@@@ modifiers=1 */ public function getDocument():Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1 */ public function getLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1 */ public function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getPresentationName() */
-	override public function getPresentationName():String;
+	/*@@@ modifiers=1 */ override public function getPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getRedoPresentationName() */
-	override public function getRedoPresentationName():String;
+	/*@@@ modifiers=1 */ override public function getRedoPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getType() */
-	public function getType():DocumentEvent_EventType;
+	/*@@@ modifiers=1 */ public function getType():DocumentEvent_EventType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getUndoPresentationName() */
-	override public function getUndoPresentationName():String;
+	/*@@@ modifiers=1 */ override public function getUndoPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#isSignificant() */
-	override public function isSignificant():Bool;
+	/*@@@ modifiers=1 */ override public function isSignificant():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#redo() */
-	override public function redo():Void;
+	/*@@@ modifiers=1 */ override public function redo():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#undo() */
-	override public function undo():Void;
+	/*@@@ modifiers=1 */ override public function undo():Void;
 
 }
 

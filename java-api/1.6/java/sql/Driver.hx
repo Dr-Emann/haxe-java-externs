@@ -10,22 +10,22 @@ import java.util.Properties;
 extern interface Driver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Driver.html#acceptsURL(java.lang.String) */
-	public function acceptsURL(url:String):Bool;
+	/*@@@ modifiers=1025 */ public function acceptsURL(url:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Driver.html#connect(java.lang.String, java.util.Properties) */
-	public function connect(url:String, info:Properties):Connection;
+	/*@@@ modifiers=1025 */ public function connect(url:String, info:Properties):Connection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Driver.html#getMajorVersion() */
-	public function getMajorVersion():Int;
+	/*@@@ modifiers=1025 */ public function getMajorVersion():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Driver.html#getMinorVersion() */
-	public function getMinorVersion():Int;
+	/*@@@ modifiers=1025 */ public function getMinorVersion():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Driver.html#getPropertyInfo(java.lang.String, java.util.Properties) */
-	public function getPropertyInfo(url:String, info:Properties):NativeArray<DriverPropertyInfo>;
+	/*@@@ modifiers=1025 */ public function getPropertyInfo(url:String, info:Properties):NativeArray<DriverPropertyInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Driver.html#jdbcCompliant() */
-	public function jdbcCompliant():Bool;
+	/*@@@ modifiers=1025 */ public function jdbcCompliant():Bool;
 
 }
 

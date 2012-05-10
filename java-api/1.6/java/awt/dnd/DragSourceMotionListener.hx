@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface DragSourceMotionListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent) */
-	public function dragMouseMoved(dsde:DragSourceDragEvent):Void;
+	/*@@@ modifiers=1025 */ public function dragMouseMoved(dsde:DragSourceDragEvent):Void;
 
 }
 

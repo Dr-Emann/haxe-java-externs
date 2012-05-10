@@ -9,13 +9,13 @@ import java.util.Iterator;
 extern class CharsetProvider extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/spi/CharsetProvider.html#CharsetProvider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/spi/CharsetProvider.html#charsetForName(java.lang.String) */
-	public function charsetForName(charsetName:String):Charset;
+	/*@@@ modifiers=1025 */ public function charsetForName(charsetName:String):Charset;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/spi/CharsetProvider.html#charsets() */
-	public function charsets():java.util.Iterator<Charset>;
+	/*@@@ modifiers=1025 */ public function charsets():java.util.Iterator<Charset>;
 
 }
 

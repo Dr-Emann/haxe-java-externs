@@ -11,78 +11,78 @@ import java.lang.Throwable;
 extern class ThreadGroup extends Object, implements Thread_UncaughtExceptionHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#ThreadGroup(java.lang.String) */
-	@:overload(function (name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#ThreadGroup(java.lang.ThreadGroup, java.lang.String) */
-	public function new(parent:ThreadGroup, name:String):Void;
+	/*@@@ modifiers=1 */ public function new(parent:ThreadGroup, name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#activeCount() */
-	public function activeCount():Int;
+	/*@@@ modifiers=1 */ public function activeCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#activeGroupCount() */
-	public function activeGroupCount():Int;
+	/*@@@ modifiers=1 */ public function activeGroupCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#allowThreadSuspension(boolean) */
-	public function allowThreadSuspension(b:Bool):Bool;
+	/*@@@ modifiers=1 */ public function allowThreadSuspension(b:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#checkAccess() */
-	public function checkAccess():Void;
+	/*@@@ modifiers=17 */ public function checkAccess():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#destroy() */
-	public function destroy():Void;
+	/*@@@ modifiers=17 */ public function destroy():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[], boolean) */
-	@:overload(function (list:NativeArray<Thread>, recurse:Bool):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (list:NativeArray<Thread>, recurse:Bool):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[], boolean) */
-	@:overload(function (list:NativeArray<ThreadGroup>, recurse:Bool):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (list:NativeArray<ThreadGroup>, recurse:Bool):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[]) */
-	@:overload(function (list:NativeArray<Thread>):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (list:NativeArray<Thread>):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[]) */
-	public function enumerate(list:NativeArray<ThreadGroup>):Int;
+	/*@@@ modifiers=1 */ public function enumerate(list:NativeArray<ThreadGroup>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#getMaxPriority() */
-	public function getMaxPriority():Int;
+	/*@@@ modifiers=17 */ public function getMaxPriority():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#getParent() */
-	public function getParent():ThreadGroup;
+	/*@@@ modifiers=17 */ public function getParent():ThreadGroup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#interrupt() */
-	public function interrupt():Void;
+	/*@@@ modifiers=17 */ public function interrupt():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#isDaemon() */
-	public function isDaemon():Bool;
+	/*@@@ modifiers=17 */ public function isDaemon():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#isDestroyed() */
-	public function isDestroyed():Bool;
+	/*@@@ modifiers=33 */ public function isDestroyed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#list() */
-	public function list():Void;
+	/*@@@ modifiers=1 */ public function list():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup) */
-	public function parentOf(g:ThreadGroup):Bool;
+	/*@@@ modifiers=17 */ public function parentOf(g:ThreadGroup):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#resume() */
-	public function resume():Void;
+	/*@@@ modifiers=17 */ public function resume():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#setDaemon(boolean) */
-	public function setDaemon(daemon:Bool):Void;
+	/*@@@ modifiers=17 */ public function setDaemon(daemon:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#setMaxPriority(int) */
-	public function setMaxPriority(pri:Int):Void;
+	/*@@@ modifiers=17 */ public function setMaxPriority(pri:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=17 */ public function stop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#suspend() */
-	public function suspend():Void;
+	/*@@@ modifiers=17 */ public function suspend():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadGroup.html#uncaughtException(java.lang.Thread, java.lang.Throwable) */
-	public function uncaughtException(t:Thread, e:Throwable):Void;
+	/*@@@ modifiers=1 */ public function uncaughtException(t:Thread, e:Throwable):Void;
 
 }
 

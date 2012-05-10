@@ -23,7 +23,7 @@ extern class DriverPropertyInfo extends Object
 	public var choices:NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/DriverPropertyInfo.html#DriverPropertyInfo(java.lang.String, java.lang.String) */
-	public function new(name:String, value:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, value:String):Void;
 
 }
 

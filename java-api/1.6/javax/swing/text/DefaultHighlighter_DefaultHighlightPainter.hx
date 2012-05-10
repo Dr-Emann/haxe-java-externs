@@ -12,16 +12,16 @@ import javax.swing.text.View;
 extern class DefaultHighlighter_DefaultHighlightPainter extends LayeredHighlighter_LayerPainter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#DefaultHighlighter$DefaultHighlightPainter(java.awt.Color) */
-	public function new(c:Color):Void;
+	/*@@@ modifiers=1 */ public function new(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#getColor() */
-	public function getColor():Color;
+	/*@@@ modifiers=1 */ public function getColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#paint(java.awt.Graphics, int, int, java.awt.Shape, javax.swing.text.JTextComponent) */
-	public function paint(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent):Void;
+	/*@@@ modifiers=1 */ public function paint(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#paintLayer(java.awt.Graphics, int, int, java.awt.Shape, javax.swing.text.JTextComponent, javax.swing.text.View) */
-	override public function paintLayer(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent, view:View):Shape;
+	/*@@@ modifiers=1 */ override public function paintLayer(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent, view:View):Shape;
 
 }
 

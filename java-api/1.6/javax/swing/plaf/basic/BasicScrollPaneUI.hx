@@ -33,76 +33,76 @@ extern class BasicScrollPaneUI extends ScrollPaneUI, implements ScrollPaneConsta
 	private var spPropertyChangeListener:PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#BasicScrollPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#createHSBChangeListener() */
-	private function createHSBChangeListener():ChangeListener;
+	/*@@@ modifiers=4 */ private function createHSBChangeListener():ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#createMouseWheelListener() */
-	private function createMouseWheelListener():MouseWheelListener;
+	/*@@@ modifiers=4 */ private function createMouseWheelListener():MouseWheelListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#createVSBChangeListener() */
-	private function createVSBChangeListener():ChangeListener;
+	/*@@@ modifiers=4 */ private function createVSBChangeListener():ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#createViewportChangeListener() */
-	private function createViewportChangeListener():ChangeListener;
+	/*@@@ modifiers=4 */ private function createViewportChangeListener():ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
+	/*@@@ modifiers=1 */ override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#getBaselineResizeBehavior(javax.swing.JComponent) */
-	override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#installDefaults(javax.swing.JScrollPane) */
-	private function installDefaults(scrollpane:JScrollPane):Void;
+	/*@@@ modifiers=4 */ private function installDefaults(scrollpane:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#installKeyboardActions(javax.swing.JScrollPane) */
-	private function installKeyboardActions(c:JScrollPane):Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#installListeners(javax.swing.JScrollPane) */
-	private function installListeners(c:JScrollPane):Void;
+	/*@@@ modifiers=4 */ private function installListeners(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(x:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(x:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#syncScrollPaneWithViewport() */
-	private function syncScrollPaneWithViewport():Void;
+	/*@@@ modifiers=4 */ private function syncScrollPaneWithViewport():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallDefaults(javax.swing.JScrollPane) */
-	private function uninstallDefaults(c:JScrollPane):Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallKeyboardActions(javax.swing.JScrollPane) */
-	private function uninstallKeyboardActions(c:JScrollPane):Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallListeners(javax.swing.JComponent) */
-	private function uninstallListeners(c:JComponent):Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#updateColumnHeader(java.beans.PropertyChangeEvent) */
-	private function updateColumnHeader(e:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ private function updateColumnHeader(e:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#updateRowHeader(java.beans.PropertyChangeEvent) */
-	private function updateRowHeader(e:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ private function updateRowHeader(e:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#updateScrollBarDisplayPolicy(java.beans.PropertyChangeEvent) */
-	private function updateScrollBarDisplayPolicy(e:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ private function updateScrollBarDisplayPolicy(e:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#updateViewport(java.beans.PropertyChangeEvent) */
-	private function updateViewport(e:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ private function updateViewport(e:PropertyChangeEvent):Void;
 
 }
 

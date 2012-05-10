@@ -11,48 +11,48 @@ import javax.swing.text.StyleContext;
 extern class StyleContext_SmallAttributeSet extends Object, implements AttributeSet
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#StyleContext$SmallAttributeSet(javax.swing.text.StyleContext, javax.swing.text.AttributeSet) */
-	@:overload(function (arg0:StyleContext, arg1:AttributeSet):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg0:StyleContext, arg1:AttributeSet):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#StyleContext$SmallAttributeSet(javax.swing.text.StyleContext, java.lang.Object[]) */
-	public function new(arg0:StyleContext, arg1:NativeArray<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:StyleContext, arg1:NativeArray<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttribute(java.lang.Object, java.lang.Object) */
-	public function containsAttribute(name:Dynamic, value:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function containsAttribute(name:Dynamic, value:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet) */
-	public function containsAttributes(attrs:AttributeSet):Bool;
+	/*@@@ modifiers=1 */ public function containsAttributes(attrs:AttributeSet):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes() */
-	public function copyAttributes():AttributeSet;
+	/*@@@ modifiers=1 */ public function copyAttributes():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttribute(java.lang.Object) */
-	public function getAttribute(key:Dynamic):Dynamic;
+	/*@@@ modifiers=1 */ public function getAttribute(key:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeCount() */
-	public function getAttributeCount():Int;
+	/*@@@ modifiers=1 */ public function getAttributeCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeNames() */
-	public function getAttributeNames():Enumeration<Dynamic>;
+	/*@@@ modifiers=1 */ public function getAttributeNames():Enumeration<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#getResolveParent() */
-	public function getResolveParent():AttributeSet;
+	/*@@@ modifiers=1 */ public function getResolveParent():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#isDefined(java.lang.Object) */
-	public function isDefined(key:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function isDefined(key:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#isEqual(javax.swing.text.AttributeSet) */
-	public function isEqual(attr:AttributeSet):Bool;
+	/*@@@ modifiers=1 */ public function isEqual(attr:AttributeSet):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyleContext.SmallAttributeSet.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

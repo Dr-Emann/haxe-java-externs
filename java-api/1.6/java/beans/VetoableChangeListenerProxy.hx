@@ -9,13 +9,13 @@ import java.util.EventListenerProxy;
 extern class VetoableChangeListenerProxy extends EventListenerProxy, implements VetoableChangeListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/VetoableChangeListenerProxy.html#VetoableChangeListenerProxy(java.lang.String, java.beans.VetoableChangeListener) */
-	public function new(propertyName:String, listener:VetoableChangeListener):Void;
+	/*@@@ modifiers=1 */ public function new(propertyName:String, listener:VetoableChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/VetoableChangeListenerProxy.html#getPropertyName() */
-	public function getPropertyName():String;
+	/*@@@ modifiers=1 */ public function getPropertyName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/VetoableChangeListenerProxy.html#vetoableChange(java.beans.PropertyChangeEvent) */
-	public function vetoableChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function vetoableChange(evt:PropertyChangeEvent):Void;
 
 }
 

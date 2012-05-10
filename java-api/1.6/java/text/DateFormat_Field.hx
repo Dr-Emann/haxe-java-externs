@@ -7,16 +7,16 @@ import java.text.Format_Field;
 extern class DateFormat_Field extends Format_Field
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.Field.html#DateFormat$Field(java.lang.String, int) */
-	private function new(name:String, calendarField:Int):Void;
+	/*@@@ modifiers=4 */ private function new(name:String, calendarField:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.Field.html#getCalendarField() */
-	public function getCalendarField():Int;
+	/*@@@ modifiers=1 */ public function getCalendarField():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.Field.html#ofCalendarField(int) */
-	static public function ofCalendarField(calendarField:Int):DateFormat_Field;
+	/*@@@ modifiers=9 */ static public function ofCalendarField(calendarField:Int):DateFormat_Field;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.Field.html#readResolve() */
-	override private function readResolve():Dynamic;
+	/*@@@ modifiers=4 */ override private function readResolve():Dynamic;
 
 }
 

@@ -10,10 +10,10 @@ import javax.swing.plaf.UIResource;
 extern class DefaultMenuLayout extends BoxLayout, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/DefaultMenuLayout.html#DefaultMenuLayout(java.awt.Container, int) */
-	public function new(target:Container, axis:Int):Void;
+	/*@@@ modifiers=1 */ public function new(target:Container, axis:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/DefaultMenuLayout.html#preferredLayoutSize(java.awt.Container) */
-	override public function preferredLayoutSize(target:Container):Dimension;
+	/*@@@ modifiers=1 */ override public function preferredLayoutSize(target:Container):Dimension;
 
 }
 

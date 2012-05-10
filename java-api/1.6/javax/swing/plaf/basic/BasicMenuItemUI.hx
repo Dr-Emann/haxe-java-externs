@@ -68,88 +68,88 @@ extern class BasicMenuItemUI extends MenuItemUI
 	private var oldBorderPainted:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#BasicMenuItemUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#createMenuDragMouseListener(javax.swing.JComponent) */
-	private function createMenuDragMouseListener(c:JComponent):MenuDragMouseListener;
+	/*@@@ modifiers=4 */ private function createMenuDragMouseListener(c:JComponent):MenuDragMouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#createMenuKeyListener(javax.swing.JComponent) */
-	private function createMenuKeyListener(c:JComponent):MenuKeyListener;
+	/*@@@ modifiers=4 */ private function createMenuKeyListener(c:JComponent):MenuKeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#createMouseInputListener(javax.swing.JComponent) */
-	private function createMouseInputListener(c:JComponent):MouseInputListener;
+	/*@@@ modifiers=4 */ private function createMouseInputListener(c:JComponent):MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#createPropertyChangeListener(javax.swing.JComponent) */
-	private function createPropertyChangeListener(c:JComponent):PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener(c:JComponent):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#doClick(javax.swing.MenuSelectionManager) */
-	private function doClick(msm:MenuSelectionManager):Void;
+	/*@@@ modifiers=4 */ private function doClick(msm:MenuSelectionManager):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#getPath() */
-	public function getPath():NativeArray<MenuElement>;
+	/*@@@ modifiers=1 */ public function getPath():NativeArray<MenuElement>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#getPreferredMenuItemSize(javax.swing.JComponent, javax.swing.Icon, javax.swing.Icon, int) */
-	private function getPreferredMenuItemSize(c:JComponent, checkIcon:Icon, arrowIcon:Icon, defaultTextIconGap:Int):Dimension;
+	/*@@@ modifiers=4 */ private function getPreferredMenuItemSize(c:JComponent, checkIcon:Icon, arrowIcon:Icon, defaultTextIconGap:Int):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#getPropertyPrefix() */
-	private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#installComponents(javax.swing.JMenuItem) */
-	private function installComponents(menuItem:JMenuItem):Void;
+	/*@@@ modifiers=4 */ private function installComponents(menuItem:JMenuItem):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#paintBackground(java.awt.Graphics, javax.swing.JMenuItem, java.awt.Color) */
-	private function paintBackground(g:Graphics, menuItem:JMenuItem, bgColor:Color):Void;
+	/*@@@ modifiers=4 */ private function paintBackground(g:Graphics, menuItem:JMenuItem, bgColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#paintMenuItem(java.awt.Graphics, javax.swing.JComponent, javax.swing.Icon, javax.swing.Icon, java.awt.Color, java.awt.Color, int) */
-	private function paintMenuItem(g:Graphics, c:JComponent, checkIcon:Icon, arrowIcon:Icon, background:Color, foreground:Color, defaultTextIconGap:Int):Void;
+	/*@@@ modifiers=4 */ private function paintMenuItem(g:Graphics, c:JComponent, checkIcon:Icon, arrowIcon:Icon, background:Color, foreground:Color, defaultTextIconGap:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#paintText(java.awt.Graphics, javax.swing.JMenuItem, java.awt.Rectangle, java.lang.String) */
-	private function paintText(g:Graphics, menuItem:JMenuItem, textRect:Rectangle, text:String):Void;
+	/*@@@ modifiers=4 */ private function paintText(g:Graphics, menuItem:JMenuItem, textRect:Rectangle, text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#uninstallComponents(javax.swing.JMenuItem) */
-	private function uninstallComponents(menuItem:JMenuItem):Void;
+	/*@@@ modifiers=4 */ private function uninstallComponents(menuItem:JMenuItem):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#update(java.awt.Graphics, javax.swing.JComponent) */
-	override public function update(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function update(g:Graphics, c:JComponent):Void;
 
 }
 

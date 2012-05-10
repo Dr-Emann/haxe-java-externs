@@ -13,54 +13,54 @@ import java.lang.Object;
 extern class PropertyEditorSupport extends Object, implements PropertyEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#PropertyEditorSupport(java.lang.Object) */
-	@:overload(function (source:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#PropertyEditorSupport() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=33 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#firePropertyChange() */
-	public function firePropertyChange():Void;
+	/*@@@ modifiers=1 */ public function firePropertyChange():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#getAsText() */
-	public function getAsText():String;
+	/*@@@ modifiers=1 */ public function getAsText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#getCustomEditor() */
-	public function getCustomEditor():Component;
+	/*@@@ modifiers=1 */ public function getCustomEditor():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#getJavaInitializationString() */
-	public function getJavaInitializationString():String;
+	/*@@@ modifiers=1 */ public function getJavaInitializationString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#getSource() */
-	public function getSource():Dynamic;
+	/*@@@ modifiers=1 */ public function getSource():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#getTags() */
-	public function getTags():NativeArray<String>;
+	/*@@@ modifiers=1 */ public function getTags():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#isPaintable() */
-	public function isPaintable():Bool;
+	/*@@@ modifiers=1 */ public function isPaintable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#paintValue(java.awt.Graphics, java.awt.Rectangle) */
-	public function paintValue(gfx:Graphics, box:Rectangle):Void;
+	/*@@@ modifiers=1 */ public function paintValue(gfx:Graphics, box:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=33 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#setAsText(java.lang.String) */
-	public function setAsText(text:String):Void;
+	/*@@@ modifiers=1 */ public function setAsText(text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#setSource(java.lang.Object) */
-	public function setSource(source:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setSource(source:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#setValue(java.lang.Object) */
-	public function setValue(value:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setValue(value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyEditorSupport.html#supportsCustomEditor() */
-	public function supportsCustomEditor():Bool;
+	/*@@@ modifiers=1 */ public function supportsCustomEditor():Bool;
 
 }
 

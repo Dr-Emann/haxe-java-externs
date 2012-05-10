@@ -7,9 +7,9 @@ import java.sql.SQLException;
 extern class SerialException extends SQLException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialException.html#SerialException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialException.html#SerialException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

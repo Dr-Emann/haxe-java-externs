@@ -2,7 +2,6 @@ package javax.print.attribute.standard;
 
 import java.NativeArray;
 import java.lang.Class;
-import java.lang.Number;
 import java.lang.Object;
 import javax.print.attribute.Attribute;
 import javax.print.attribute.DocAttribute;
@@ -14,41 +13,41 @@ import javax.print.attribute.PrintRequestAttribute;
 extern class MediaPrintableArea extends Object, implements DocAttribute, implements PrintRequestAttribute, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#MediaPrintableArea(int, int, int, int, int) */
-	@:overload(function (x:Int, y:Int, w:Int, h:Int, units:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int, units:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#MediaPrintableArea(float, float, float, float, int) */
-	public function new(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, units:Int):Void;
+	/*@@@ modifiers=1 */ public function new(x:Single, y:Single, w:Single, h:Single, units:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getHeight(int) */
-	public function getHeight(units:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getHeight(units:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getPrintableArea(int) */
-	public function getPrintableArea(units:Int):NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getPrintableArea(units:Int):NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getWidth(int) */
-	public function getWidth(units:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getWidth(units:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getX(int) */
-	public function getX(units:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getX(units:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#getY(int) */
-	public function getY(units:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getY(units:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#toString(int, java.lang.String) */
-	@:overload(function (units:Int, unitsName:String):String {})
+	/*@@@ modifiers=1 */ @:overload(function (units:Int, unitsName:String):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

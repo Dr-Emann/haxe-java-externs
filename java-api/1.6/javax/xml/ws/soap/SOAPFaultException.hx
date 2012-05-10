@@ -8,10 +8,10 @@ import javax.xml.ws.ProtocolException;
 extern class SOAPFaultException extends ProtocolException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPFaultException.html#SOAPFaultException(javax.xml.soap.SOAPFault) */
-	public function new(fault:SOAPFault):Void;
+	/*@@@ modifiers=1 */ public function new(fault:SOAPFault):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPFaultException.html#getFault() */
-	public function getFault():SOAPFault;
+	/*@@@ modifiers=1 */ public function getFault():SOAPFault;
 
 }
 

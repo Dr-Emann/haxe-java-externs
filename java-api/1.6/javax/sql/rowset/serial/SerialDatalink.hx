@@ -10,10 +10,10 @@ import java.net.URL;
 extern class SerialDatalink extends Object, implements Serializable, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialDatalink.html#SerialDatalink(java.net.URL) */
-	public function new(url:URL):Void;
+	/*@@@ modifiers=1 */ public function new(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialDatalink.html#getDatalink() */
-	public function getDatalink():URL;
+	/*@@@ modifiers=1 */ public function getDatalink():URL;
 
 }
 

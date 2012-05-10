@@ -18,112 +18,112 @@ extern class JLabel extends JComponent, implements SwingConstants, implements Ac
 	private var labelFor:Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#JLabel(java.lang.String, javax.swing.Icon, int) */
-	@:overload(function (text:String, icon:Icon, horizontalAlignment:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, icon:Icon, horizontalAlignment:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#JLabel(java.lang.String, int) */
-	@:overload(function (text:String, horizontalAlignment:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, horizontalAlignment:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#JLabel(java.lang.String) */
-	@:overload(function (text:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#JLabel(javax.swing.Icon, int) */
-	@:overload(function (text:Icon, horizontalAlignment:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:Icon, horizontalAlignment:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#JLabel(javax.swing.Icon) */
-	@:overload(function (text:Icon):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:Icon):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#JLabel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#checkHorizontalKey(int, java.lang.String) */
-	private function checkHorizontalKey(key:Int, message:String):Int;
+	/*@@@ modifiers=4 */ private function checkHorizontalKey(key:Int, message:String):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#checkVerticalKey(int, java.lang.String) */
-	private function checkVerticalKey(key:Int, message:String):Int;
+	/*@@@ modifiers=4 */ private function checkVerticalKey(key:Int, message:String):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getDisabledIcon() */
-	public function getDisabledIcon():Icon;
+	/*@@@ modifiers=1 */ public function getDisabledIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getDisplayedMnemonic() */
-	public function getDisplayedMnemonic():Int;
+	/*@@@ modifiers=1 */ public function getDisplayedMnemonic():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getDisplayedMnemonicIndex() */
-	public function getDisplayedMnemonicIndex():Int;
+	/*@@@ modifiers=1 */ public function getDisplayedMnemonicIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getHorizontalAlignment() */
-	public function getHorizontalAlignment():Int;
+	/*@@@ modifiers=1 */ public function getHorizontalAlignment():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getHorizontalTextPosition() */
-	public function getHorizontalTextPosition():Int;
+	/*@@@ modifiers=1 */ public function getHorizontalTextPosition():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getIcon() */
-	public function getIcon():Icon;
+	/*@@@ modifiers=1 */ public function getIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getIconTextGap() */
-	public function getIconTextGap():Int;
+	/*@@@ modifiers=1 */ public function getIconTextGap():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getLabelFor() */
-	public function getLabelFor():Component;
+	/*@@@ modifiers=1 */ public function getLabelFor():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getText() */
-	public function getText():String;
+	/*@@@ modifiers=1 */ public function getText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getUI() */
-	public function getUI():LabelUI;
+	/*@@@ modifiers=1 */ public function getUI():LabelUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getVerticalAlignment() */
-	public function getVerticalAlignment():Int;
+	/*@@@ modifiers=1 */ public function getVerticalAlignment():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#getVerticalTextPosition() */
-	public function getVerticalTextPosition():Int;
+	/*@@@ modifiers=1 */ public function getVerticalTextPosition():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#imageUpdate(java.awt.Image, int, int, int, int, int) */
-	override public function imageUpdate(img:Image, infoflags:Int, x:Int, y:Int, w:Int, h:Int):Bool;
+	/*@@@ modifiers=1 */ override public function imageUpdate(img:Image, infoflags:Int, x:Int, y:Int, w:Int, h:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setDisabledIcon(javax.swing.Icon) */
-	public function setDisabledIcon(disabledIcon:Icon):Void;
+	/*@@@ modifiers=1 */ public function setDisabledIcon(disabledIcon:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setDisplayedMnemonic(char) */
-	@:overload(function (aChar:Char16):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (aChar:Char16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setDisplayedMnemonic(int) */
-	public function setDisplayedMnemonic(key:Int):Void;
+	/*@@@ modifiers=1 */ public function setDisplayedMnemonic(key:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setDisplayedMnemonicIndex(int) */
-	public function setDisplayedMnemonicIndex(index:Int):Void;
+	/*@@@ modifiers=1 */ public function setDisplayedMnemonicIndex(index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setHorizontalAlignment(int) */
-	public function setHorizontalAlignment(alignment:Int):Void;
+	/*@@@ modifiers=1 */ public function setHorizontalAlignment(alignment:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setHorizontalTextPosition(int) */
-	public function setHorizontalTextPosition(textPosition:Int):Void;
+	/*@@@ modifiers=1 */ public function setHorizontalTextPosition(textPosition:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setIcon(javax.swing.Icon) */
-	public function setIcon(icon:Icon):Void;
+	/*@@@ modifiers=1 */ public function setIcon(icon:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setIconTextGap(int) */
-	public function setIconTextGap(iconTextGap:Int):Void;
+	/*@@@ modifiers=1 */ public function setIconTextGap(iconTextGap:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setLabelFor(java.awt.Component) */
-	public function setLabelFor(c:Component):Void;
+	/*@@@ modifiers=1 */ public function setLabelFor(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setText(java.lang.String) */
-	public function setText(text:String):Void;
+	/*@@@ modifiers=1 */ public function setText(text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setUI(javax.swing.plaf.LabelUI) */
-	override public function setUI(ui:LabelUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:LabelUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setVerticalAlignment(int) */
-	public function setVerticalAlignment(alignment:Int):Void;
+	/*@@@ modifiers=1 */ public function setVerticalAlignment(alignment:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setVerticalTextPosition(int) */
-	public function setVerticalTextPosition(textPosition:Int):Void;
+	/*@@@ modifiers=1 */ public function setVerticalTextPosition(textPosition:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

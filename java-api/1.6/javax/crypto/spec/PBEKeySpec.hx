@@ -10,26 +10,26 @@ import java.security.spec.KeySpec;
 extern class PBEKeySpec extends Object, implements KeySpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#PBEKeySpec(char[], byte[], int, int) */
-	@:overload(function (arg0:NativeArray<Char16>, arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg0:NativeArray<Char16>, arg1:NativeArray<Int8>, arg2:Int, arg3:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#PBEKeySpec(char[], byte[], int) */
-	@:overload(function (arg0:NativeArray<Char16>, arg1:NativeArray<Int8>, arg2:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg0:NativeArray<Char16>, arg1:NativeArray<Int8>, arg2:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#PBEKeySpec(char[]) */
-	public function new(arg0:NativeArray<Char16>):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:NativeArray<Char16>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#clearPassword() */
-	public function clearPassword():Void;
+	/*@@@ modifiers=17 */ public function clearPassword():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#getIterationCount() */
-	public function getIterationCount():Int;
+	/*@@@ modifiers=17 */ public function getIterationCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#getKeyLength() */
-	public function getKeyLength():Int;
+	/*@@@ modifiers=17 */ public function getKeyLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#getPassword() */
-	public function getPassword():NativeArray<Char16>;
+	/*@@@ modifiers=17 */ public function getPassword():NativeArray<Char16>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/spec/PBEKeySpec.html#getSalt() */
-	public function getSalt():NativeArray<Int8>;
+	/*@@@ modifiers=17 */ public function getSalt():NativeArray<Int8>;
 
 }
 

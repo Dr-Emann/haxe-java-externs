@@ -9,7 +9,7 @@ import javax.jws.soap.SOAPMessageHandler;
 extern interface SOAPMessageHandlers implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/soap/SOAPMessageHandlers.html#value() */
-	public function value():NativeArray<SOAPMessageHandler>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<SOAPMessageHandler>;
 
 }
 

@@ -17,10 +17,10 @@ extern class KeyRep_Type extends Enum<KeyRep_Type>
 	public static var PRIVATE:KeyRep_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyRep.Type.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):KeyRep_Type;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):KeyRep_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyRep.Type.html#values() */
-	static public function values():NativeArray<KeyRep_Type>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<KeyRep_Type>;
 
 }
 

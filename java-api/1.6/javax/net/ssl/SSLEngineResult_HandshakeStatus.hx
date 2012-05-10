@@ -23,10 +23,10 @@ extern class SSLEngineResult_HandshakeStatus extends Enum<SSLEngineResult_Handsh
 	public static var NEED_UNWRAP:SSLEngineResult_HandshakeStatus;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SSLEngineResult_HandshakeStatus;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SSLEngineResult_HandshakeStatus;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#values() */
-	static public function values():NativeArray<SSLEngineResult_HandshakeStatus>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SSLEngineResult_HandshakeStatus>;
 
 }
 

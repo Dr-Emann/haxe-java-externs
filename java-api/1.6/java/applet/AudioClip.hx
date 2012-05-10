@@ -6,13 +6,13 @@ package java.applet;
 extern interface AudioClip
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AudioClip.html#loop() */
-	public function loop():Void;
+	/*@@@ modifiers=1025 */ public function loop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AudioClip.html#play() */
-	public function play():Void;
+	/*@@@ modifiers=1025 */ public function play():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AudioClip.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1025 */ public function stop():Void;
 
 }
 

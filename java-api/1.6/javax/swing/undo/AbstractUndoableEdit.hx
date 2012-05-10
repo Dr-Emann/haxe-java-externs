@@ -9,43 +9,43 @@ import javax.swing.undo.UndoableEdit;
 extern class AbstractUndoableEdit extends Object, implements UndoableEdit, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#AbstractUndoableEdit() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit) */
-	public function addEdit(anEdit:UndoableEdit):Bool;
+	/*@@@ modifiers=1 */ public function addEdit(anEdit:UndoableEdit):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#canRedo() */
-	public function canRedo():Bool;
+	/*@@@ modifiers=1 */ public function canRedo():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#canUndo() */
-	public function canUndo():Bool;
+	/*@@@ modifiers=1 */ public function canUndo():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#die() */
-	public function die():Void;
+	/*@@@ modifiers=1 */ public function die():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#getPresentationName() */
-	public function getPresentationName():String;
+	/*@@@ modifiers=1 */ public function getPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#getRedoPresentationName() */
-	public function getRedoPresentationName():String;
+	/*@@@ modifiers=1 */ public function getRedoPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#getUndoPresentationName() */
-	public function getUndoPresentationName():String;
+	/*@@@ modifiers=1 */ public function getUndoPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#isSignificant() */
-	public function isSignificant():Bool;
+	/*@@@ modifiers=1 */ public function isSignificant():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#redo() */
-	public function redo():Void;
+	/*@@@ modifiers=1 */ public function redo():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit) */
-	public function replaceEdit(anEdit:UndoableEdit):Bool;
+	/*@@@ modifiers=1 */ public function replaceEdit(anEdit:UndoableEdit):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/AbstractUndoableEdit.html#undo.AbstractUndoableEdit.undo() */
-	public function undo():Void;
+	/*@@@ modifiers=1 */ public function undo():Void;
 
 }
 

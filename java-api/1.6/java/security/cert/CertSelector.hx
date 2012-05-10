@@ -8,10 +8,10 @@ import java.security.cert.Certificate;
 extern interface CertSelector implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertSelector.html#clone() */
-	public function clone():Dynamic;
+	/*@@@ modifiers=1025 */ public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertSelector.html#match(java.security.cert.Certificate) */
-	public function match(cert:Certificate):Bool;
+	/*@@@ modifiers=1025 */ public function match(cert:Certificate):Bool;
 
 }
 

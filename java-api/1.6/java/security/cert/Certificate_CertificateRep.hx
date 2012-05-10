@@ -10,10 +10,10 @@ import java.lang.Object;
 extern class Certificate_CertificateRep extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/Certificate.CertificateRep.html#Certificate$CertificateRep(java.lang.String, byte[]) */
-	private function new(type:String, data:NativeArray<Int8>):Void;
+	/*@@@ modifiers=4 */ private function new(type:String, data:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/Certificate.CertificateRep.html#readResolve() */
-	private function readResolve():Dynamic;
+	/*@@@ modifiers=4 */ private function readResolve():Dynamic;
 
 }
 

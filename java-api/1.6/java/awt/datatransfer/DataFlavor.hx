@@ -37,123 +37,123 @@ extern class DataFlavor extends Object, implements Externalizable, implements Cl
 	public static var javaRemoteObjectMimeType:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#DataFlavor(java.lang.String, java.lang.String, java.lang.ClassLoader) */
-	@:overload(function (mimeType:String, humanPresentableName:String, classLoader:ClassLoader):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (mimeType:String, humanPresentableName:String, classLoader:ClassLoader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#DataFlavor(java.lang.String, java.lang.String) */
-	@:overload(function (representationClass:String, humanPresentableName:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (representationClass:String, humanPresentableName:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#DataFlavor() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#DataFlavor(java.lang.String) */
-	@:overload(function (mimeType:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (mimeType:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#DataFlavor(java.lang.Class, java.lang.String) */
-	public function new(representationClass:Class<Dynamic>, humanPresentableName:String):Void;
+	/*@@@ modifiers=1 */ public function new(representationClass:Class<Dynamic>, humanPresentableName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#equals(java.lang.Object) */
-	@:overload(function (o:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#equals(java.awt.datatransfer.DataFlavor) */
-	@:overload(function (that:DataFlavor):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (that:DataFlavor):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#equals(java.lang.String) */
-	override public function equals(s:String):Bool;
+	/*@@@ modifiers=1 */ @:overload(function equals(s:String):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function equals(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getDefaultRepresentationClass() */
-	public function getDefaultRepresentationClass():Class<Dynamic>;
+	/*@@@ modifiers=17 */ public function getDefaultRepresentationClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getDefaultRepresentationClassAsString() */
-	public function getDefaultRepresentationClassAsString():String;
+	/*@@@ modifiers=17 */ public function getDefaultRepresentationClassAsString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getHumanPresentableName() */
-	public function getHumanPresentableName():String;
+	/*@@@ modifiers=1 */ public function getHumanPresentableName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getMimeType() */
-	public function getMimeType():String;
+	/*@@@ modifiers=1 */ public function getMimeType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getParameter(java.lang.String) */
-	public function getParameter(paramName:String):String;
+	/*@@@ modifiers=1 */ public function getParameter(paramName:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getPrimaryType() */
-	public function getPrimaryType():String;
+	/*@@@ modifiers=1 */ public function getPrimaryType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getReaderForText(java.awt.datatransfer.Transferable) */
-	public function getReaderForText(transferable:Transferable):Reader;
+	/*@@@ modifiers=1 */ public function getReaderForText(transferable:Transferable):Reader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getRepresentationClass() */
-	public function getRepresentationClass():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getRepresentationClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getSubType() */
-	public function getSubType():String;
+	/*@@@ modifiers=1 */ public function getSubType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#getTextPlainUnicodeFlavor() */
-	static public function getTextPlainUnicodeFlavor():DataFlavor;
+	/*@@@ modifiers=25 */ static public function getTextPlainUnicodeFlavor():DataFlavor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType() */
-	public function isFlavorJavaFileListType():Bool;
+	/*@@@ modifiers=1 */ public function isFlavorJavaFileListType():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isFlavorRemoteObjectType() */
-	public function isFlavorRemoteObjectType():Bool;
+	/*@@@ modifiers=1 */ public function isFlavorRemoteObjectType():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isFlavorSerializedObjectType() */
-	public function isFlavorSerializedObjectType():Bool;
+	/*@@@ modifiers=1 */ public function isFlavorSerializedObjectType():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isFlavorTextType() */
-	public function isFlavorTextType():Bool;
+	/*@@@ modifiers=1 */ public function isFlavorTextType():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.awt.datatransfer.DataFlavor) */
-	@:overload(function (dataFlavor:DataFlavor):Bool {})
+	/*@@@ modifiers=17 */ @:overload(function (dataFlavor:DataFlavor):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.lang.String) */
-	public function isMimeTypeEqual(mimeType:String):Bool;
+	/*@@@ modifiers=1 */ public function isMimeTypeEqual(mimeType:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isMimeTypeSerializedObject() */
-	public function isMimeTypeSerializedObject():Bool;
+	/*@@@ modifiers=1 */ public function isMimeTypeSerializedObject():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isRepresentationClassByteBuffer() */
-	public function isRepresentationClassByteBuffer():Bool;
+	/*@@@ modifiers=1 */ public function isRepresentationClassByteBuffer():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isRepresentationClassCharBuffer() */
-	public function isRepresentationClassCharBuffer():Bool;
+	/*@@@ modifiers=1 */ public function isRepresentationClassCharBuffer():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isRepresentationClassInputStream() */
-	public function isRepresentationClassInputStream():Bool;
+	/*@@@ modifiers=1 */ public function isRepresentationClassInputStream():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isRepresentationClassReader() */
-	public function isRepresentationClassReader():Bool;
+	/*@@@ modifiers=1 */ public function isRepresentationClassReader():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isRepresentationClassRemote() */
-	public function isRepresentationClassRemote():Bool;
+	/*@@@ modifiers=1 */ public function isRepresentationClassRemote():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#isRepresentationClassSerializable() */
-	public function isRepresentationClassSerializable():Bool;
+	/*@@@ modifiers=1 */ public function isRepresentationClassSerializable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#match(java.awt.datatransfer.DataFlavor) */
-	public function match(that:DataFlavor):Bool;
+	/*@@@ modifiers=1 */ public function match(that:DataFlavor):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#normalizeMimeType(java.lang.String) */
-	private function normalizeMimeType(mimeType:String):String;
+	/*@@@ modifiers=4 */ private function normalizeMimeType(mimeType:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#normalizeMimeTypeParameter(java.lang.String, java.lang.String) */
-	private function normalizeMimeTypeParameter(parameterName:String, parameterValue:String):String;
+	/*@@@ modifiers=4 */ private function normalizeMimeTypeParameter(parameterName:String, parameterValue:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#readExternal(java.io.ObjectInput) */
-	public function readExternal(is:ObjectInput):Void;
+	/*@@@ modifiers=33 */ public function readExternal(is:ObjectInput):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#selectBestTextFlavor(java.awt.datatransfer.DataFlavor[]) */
-	static public function selectBestTextFlavor(availableFlavors:NativeArray<DataFlavor>):DataFlavor;
+	/*@@@ modifiers=25 */ static public function selectBestTextFlavor(availableFlavors:NativeArray<DataFlavor>):DataFlavor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#setHumanPresentableName(java.lang.String) */
-	public function setHumanPresentableName(humanPresentableName:String):Void;
+	/*@@@ modifiers=1 */ public function setHumanPresentableName(humanPresentableName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#tryToLoadClass(java.lang.String, java.lang.ClassLoader) */
-	static private function tryToLoadClass(className:String, fallback:ClassLoader):Class<Dynamic>;
+	/*@@@ modifiers=28 */ static private function tryToLoadClass(className:String, fallback:ClassLoader):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/DataFlavor.html#writeExternal(java.io.ObjectOutput) */
-	public function writeExternal(os:ObjectOutput):Void;
+	/*@@@ modifiers=33 */ public function writeExternal(os:ObjectOutput):Void;
 
 }
 

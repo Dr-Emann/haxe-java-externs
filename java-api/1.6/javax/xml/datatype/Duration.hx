@@ -13,82 +13,82 @@ import javax.xml.namespace.QName;
 extern class Duration extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#Duration() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#add(javax.xml.datatype.Duration) */
-	public function add(rhs:Duration):Duration;
+	/*@@@ modifiers=1025 */ public function add(rhs:Duration):Duration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#addTo(java.util.Calendar) */
-	@:overload(function (calendar:Calendar):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (calendar:Calendar):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#addTo(java.util.Date) */
-	public function addTo(date:Date):Void;
+	/*@@@ modifiers=1 */ public function addTo(date:Date):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#compare(javax.xml.datatype.Duration) */
-	public function compare(duration:Duration):Int;
+	/*@@@ modifiers=1025 */ public function compare(duration:Duration):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#equals(java.lang.Object) */
-	override public function equals(duration:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(duration:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getDays() */
-	public function getDays():Int;
+	/*@@@ modifiers=1 */ public function getDays():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getField(javax.xml.datatype.DatatypeConstants$Field) */
-	public function getField(field:DatatypeConstants_Field):Number;
+	/*@@@ modifiers=1025 */ public function getField(field:DatatypeConstants_Field):Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getHours() */
-	public function getHours():Int;
+	/*@@@ modifiers=1 */ public function getHours():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getMinutes() */
-	public function getMinutes():Int;
+	/*@@@ modifiers=1 */ public function getMinutes():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getMonths() */
-	public function getMonths():Int;
+	/*@@@ modifiers=1 */ public function getMonths():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getSeconds() */
-	public function getSeconds():Int;
+	/*@@@ modifiers=1 */ public function getSeconds():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getSign() */
-	public function getSign():Int;
+	/*@@@ modifiers=1025 */ public function getSign():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getTimeInMillis(java.util.Calendar) */
-	@:overload(function (startInstant:Calendar):haxe.Int64 {})
+	/*@@@ modifiers=1 */ @:overload(function (startInstant:Calendar):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getTimeInMillis(java.util.Date) */
-	public function getTimeInMillis(startInstant:Date):haxe.Int64;
+	/*@@@ modifiers=1 */ public function getTimeInMillis(startInstant:Date):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getXMLSchemaType() */
-	public function getXMLSchemaType():QName;
+	/*@@@ modifiers=1 */ public function getXMLSchemaType():QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#getYears() */
-	public function getYears():Int;
+	/*@@@ modifiers=1 */ public function getYears():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1025 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#isLongerThan(javax.xml.datatype.Duration) */
-	public function isLongerThan(duration:Duration):Bool;
+	/*@@@ modifiers=1 */ public function isLongerThan(duration:Duration):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#isSet(javax.xml.datatype.DatatypeConstants$Field) */
-	public function isSet(field:DatatypeConstants_Field):Bool;
+	/*@@@ modifiers=1025 */ public function isSet(field:DatatypeConstants_Field):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#isShorterThan(javax.xml.datatype.Duration) */
-	public function isShorterThan(duration:Duration):Bool;
+	/*@@@ modifiers=1 */ public function isShorterThan(duration:Duration):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#multiply(int) */
-	@:overload(function (factor:Int):Duration {})
+	/*@@@ modifiers=1 */ @:overload(function (factor:Int):Duration {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#multiply(java.math.BigDecimal) */
-	public function multiply(factor:BigDecimal):Duration;
+	/*@@@ modifiers=1025 */ public function multiply(factor:BigDecimal):Duration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#negate() */
-	public function negate():Duration;
+	/*@@@ modifiers=1025 */ public function negate():Duration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#normalizeWith(java.util.Calendar) */
-	public function normalizeWith(startTimeInstant:Calendar):Duration;
+	/*@@@ modifiers=1025 */ public function normalizeWith(startTimeInstant:Calendar):Duration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#subtract(javax.xml.datatype.Duration) */
-	public function subtract(rhs:Duration):Duration;
+	/*@@@ modifiers=1 */ public function subtract(rhs:Duration):Duration;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

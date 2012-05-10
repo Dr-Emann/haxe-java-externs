@@ -9,25 +9,25 @@ import java.lang.Object;
 extern class Process extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#Process() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#destroy() */
-	public function destroy():Void;
+	/*@@@ modifiers=1025 */ public function destroy():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#exitValue() */
-	public function exitValue():Int;
+	/*@@@ modifiers=1025 */ public function exitValue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#getErrorStream() */
-	public function getErrorStream():InputStream;
+	/*@@@ modifiers=1025 */ public function getErrorStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#getInputStream() */
-	public function getInputStream():InputStream;
+	/*@@@ modifiers=1025 */ public function getInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#getOutputStream() */
-	public function getOutputStream():OutputStream;
+	/*@@@ modifiers=1025 */ public function getOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Process.html#waitFor() */
-	public function waitFor():Int;
+	/*@@@ modifiers=1025 */ public function waitFor():Int;
 
 }
 

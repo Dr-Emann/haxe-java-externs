@@ -9,13 +9,13 @@ import javax.security.auth.login.AppConfigurationEntry;
 extern class ConfigurationSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/ConfigurationSpi.html#ConfigurationSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/ConfigurationSpi.html#engineGetAppConfigurationEntry(java.lang.String) */
-	private function engineGetAppConfigurationEntry(name:String):NativeArray<AppConfigurationEntry>;
+	/*@@@ modifiers=1028 */ private function engineGetAppConfigurationEntry(name:String):NativeArray<AppConfigurationEntry>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/ConfigurationSpi.html#engineRefresh() */
-	private function engineRefresh():Void;
+	/*@@@ modifiers=4 */ private function engineRefresh():Void;
 
 }
 

@@ -12,22 +12,22 @@ import javax.lang.model.type.TypeMirror;
 extern interface ExecutableElement implements Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ExecutableElement.html#getDefaultValue() */
-	public function getDefaultValue():AnnotationValue;
+	/*@@@ modifiers=1025 */ public function getDefaultValue():AnnotationValue;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ExecutableElement.html#getParameters() */
-	public function getParameters():List<VariableElement>;
+	/*@@@ modifiers=1025 */ public function getParameters():List<VariableElement>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ExecutableElement.html#getReturnType() */
-	public function getReturnType():TypeMirror;
+	/*@@@ modifiers=1025 */ public function getReturnType():TypeMirror;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ExecutableElement.html#getThrownTypes() */
-	public function getThrownTypes():List<TypeMirror>;
+	/*@@@ modifiers=1025 */ public function getThrownTypes():List<TypeMirror>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ExecutableElement.html#getTypeParameters() */
-	public function getTypeParameters():List<TypeParameterElement>;
+	/*@@@ modifiers=1025 */ public function getTypeParameters():List<TypeParameterElement>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ExecutableElement.html#isVarArgs() */
-	public function isVarArgs():Bool;
+	/*@@@ modifiers=1025 */ public function isVarArgs():Bool;
 
 }
 

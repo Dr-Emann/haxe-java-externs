@@ -9,13 +9,13 @@ import javax.print.attribute.standard.Media;
 extern class MediaSizeName extends Media
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaSizeName.html#MediaSizeName(int) */
-	private function new(value:Int):Void;
+	/*@@@ modifiers=4 */ private function new(value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaSizeName.html#getEnumValueTable() */
-	override private function getEnumValueTable():NativeArray<EnumSyntax>;
+	/*@@@ modifiers=4 */ override private function getEnumValueTable():NativeArray<EnumSyntax>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/MediaSizeName.html#getStringTable() */
-	override private function getStringTable():NativeArray<String>;
+	/*@@@ modifiers=4 */ override private function getStringTable():NativeArray<String>;
 
 }
 

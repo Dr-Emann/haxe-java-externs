@@ -25,80 +25,77 @@ extern class DefaultStyledDocument extends AbstractDocument, implements StyledDo
 	private var buffer:DefaultStyledDocument_ElementBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#DefaultStyledDocument(javax.swing.text.StyleContext) */
-	@:overload(function (styles:StyleContext):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (styles:StyleContext):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#DefaultStyledDocument() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#DefaultStyledDocument(javax.swing.text.AbstractDocument$Content, javax.swing.text.StyleContext) */
-	public function new(c:AbstractDocument_Content, styles:StyleContext):Void;
+	/*@@@ modifiers=1 */ public function new(c:AbstractDocument_Content, styles:StyleContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#addDocumentListener(javax.swing.event.DocumentListener) */
-	override public function addDocumentListener(listener:DocumentListener):Void;
+	/*@@@ modifiers=1 */ override public function addDocumentListener(listener:DocumentListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#addStyle(java.lang.String, javax.swing.text.Style) */
-	public function addStyle(nm:String, parent:Style):Style;
+	/*@@@ modifiers=1 */ public function addStyle(nm:String, parent:Style):Style;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#create(javax.swing.text.DefaultStyledDocument$ElementSpec[]) */
-	private function create(data:NativeArray<DefaultStyledDocument_ElementSpec>):Void;
+	/*@@@ modifiers=4 */ private function create(data:NativeArray<DefaultStyledDocument_ElementSpec>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#createDefaultRoot() */
-	private function createDefaultRoot():AbstractDocument_AbstractElement;
+	/*@@@ modifiers=4 */ private function createDefaultRoot():AbstractDocument_AbstractElement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getBackground(javax.swing.text.AttributeSet) */
-	public function getBackground(attr:AttributeSet):Color;
+	/*@@@ modifiers=1 */ public function getBackground(attr:AttributeSet):Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getCharacterElement(int) */
-	public function getCharacterElement(pos:Int):Element;
+	/*@@@ modifiers=1 */ public function getCharacterElement(pos:Int):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getDefaultRootElement() */
-	override public function getDefaultRootElement():Element;
+	/*@@@ modifiers=1 */ override public function getDefaultRootElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getFont(javax.swing.text.AttributeSet) */
-	public function getFont(attr:AttributeSet):Font;
+	/*@@@ modifiers=1 */ public function getFont(attr:AttributeSet):Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getForeground(javax.swing.text.AttributeSet) */
-	public function getForeground(attr:AttributeSet):Color;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1 */ public function getForeground(attr:AttributeSet):Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getLogicalStyle(int) */
-	public function getLogicalStyle(p:Int):Style;
+	/*@@@ modifiers=1 */ public function getLogicalStyle(p:Int):Style;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getParagraphElement(int) */
-	override public function getParagraphElement(pos:Int):Element;
+	/*@@@ modifiers=1 */ override public function getParagraphElement(pos:Int):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getStyle(java.lang.String) */
-	public function getStyle(nm:String):Style;
+	/*@@@ modifiers=1 */ public function getStyle(nm:String):Style;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#getStyleNames() */
-	public function getStyleNames():Enumeration<Dynamic>;
+	/*@@@ modifiers=1 */ public function getStyleNames():Enumeration<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#insert(int, javax.swing.text.DefaultStyledDocument$ElementSpec[]) */
-	private function insert(offset:Int, data:NativeArray<DefaultStyledDocument_ElementSpec>):Void;
+	/*@@@ modifiers=4 */ private function insert(offset:Int, data:NativeArray<DefaultStyledDocument_ElementSpec>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#insertUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent, javax.swing.text.AttributeSet) */
-	override private function insertUpdate(p0:AbstractDocument_DefaultDocumentEvent, p1:AttributeSet):Void;
+	/*@@@ modifiers=4 */ override private function insertUpdate(p0:AbstractDocument_DefaultDocumentEvent, p1:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#removeDocumentListener(javax.swing.event.DocumentListener) */
-	override public function removeDocumentListener(listener:DocumentListener):Void;
+	/*@@@ modifiers=1 */ override public function removeDocumentListener(listener:DocumentListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#removeStyle(java.lang.String) */
-	public function removeStyle(nm:String):Void;
+	/*@@@ modifiers=1 */ public function removeStyle(nm:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#removeUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent) */
-	override private function removeUpdate(p0:AbstractDocument_DefaultDocumentEvent):Void;
+	/*@@@ modifiers=4 */ override private function removeUpdate(p0:AbstractDocument_DefaultDocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#setCharacterAttributes(int, int, javax.swing.text.AttributeSet, boolean) */
-	public function setCharacterAttributes(offset:Int, length:Int, s:AttributeSet, replace:Bool):Void;
+	/*@@@ modifiers=1 */ public function setCharacterAttributes(offset:Int, length:Int, s:AttributeSet, replace:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#setLogicalStyle(int, javax.swing.text.Style) */
-	public function setLogicalStyle(pos:Int, s:Style):Void;
+	/*@@@ modifiers=1 */ public function setLogicalStyle(pos:Int, s:Style):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#setParagraphAttributes(int, int, javax.swing.text.AttributeSet, boolean) */
-	public function setParagraphAttributes(offset:Int, length:Int, s:AttributeSet, replace:Bool):Void;
+	/*@@@ modifiers=1 */ public function setParagraphAttributes(offset:Int, length:Int, s:AttributeSet, replace:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.html#styleChanged(javax.swing.text.Style) */
-	private function styleChanged(style:Style):Void;
+	/*@@@ modifiers=4 */ private function styleChanged(style:Style):Void;
 
 }
 

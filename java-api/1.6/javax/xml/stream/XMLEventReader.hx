@@ -8,25 +8,25 @@ import javax.xml.stream.events.XMLEvent;
 extern interface XMLEventReader implements java.util.Iterator<Dynamic>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#getElementText() */
-	public function getElementText():String;
+	/*@@@ modifiers=1025 */ public function getElementText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String) */
-	public function getProperty(name:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function getProperty(name:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#hasNext() */
-	public function hasNext():Bool;
+	/*@@@ modifiers=1025 */ public function hasNext():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#nextEvent() */
-	public function nextEvent():XMLEvent;
+	/*@@@ modifiers=1025 */ public function nextEvent():XMLEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#nextTag() */
-	public function nextTag():XMLEvent;
+	/*@@@ modifiers=1025 */ public function nextTag():XMLEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventReader.html#peek() */
-	public function peek():XMLEvent;
+	/*@@@ modifiers=1025 */ public function peek():XMLEvent;
 
 }
 

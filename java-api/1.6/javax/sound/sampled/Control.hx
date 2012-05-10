@@ -8,13 +8,13 @@ import javax.sound.sampled.Control_Type;
 extern class Control extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Control.html#Control(javax.sound.sampled.Control$Type) */
-	private function new(type:Control_Type):Void;
+	/*@@@ modifiers=4 */ private function new(type:Control_Type):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Control.html#getType() */
-	public function getType():Control_Type;
+	/*@@@ modifiers=1 */ public function getType():Control_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Control.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

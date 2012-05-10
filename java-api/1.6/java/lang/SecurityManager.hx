@@ -19,123 +19,123 @@ extern class SecurityManager extends Object
 	private var inCheck:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#SecurityManager() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkAccept(java.lang.String, int) */
-	public function checkAccept(host:String, port:Int):Void;
+	/*@@@ modifiers=1 */ public function checkAccept(host:String, port:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkAccess(java.lang.Thread) */
-	@:overload(function (t:Thread):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (t:Thread):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkAccess(java.lang.ThreadGroup) */
-	public function checkAccess(g:ThreadGroup):Void;
+	/*@@@ modifiers=1 */ public function checkAccess(g:ThreadGroup):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkAwtEventQueueAccess() */
-	public function checkAwtEventQueueAccess():Void;
+	/*@@@ modifiers=1 */ public function checkAwtEventQueueAccess():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkConnect(java.lang.String, int, java.lang.Object) */
-	@:overload(function (host:String, port:Int, context:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (host:String, port:Int, context:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkConnect(java.lang.String, int) */
-	public function checkConnect(host:String, port:Int):Void;
+	/*@@@ modifiers=1 */ public function checkConnect(host:String, port:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkCreateClassLoader() */
-	public function checkCreateClassLoader():Void;
+	/*@@@ modifiers=1 */ public function checkCreateClassLoader():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkDelete(java.lang.String) */
-	public function checkDelete(file:String):Void;
+	/*@@@ modifiers=1 */ public function checkDelete(file:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkExec(java.lang.String) */
-	public function checkExec(cmd:String):Void;
+	/*@@@ modifiers=1 */ public function checkExec(cmd:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkExit(int) */
-	public function checkExit(status:Int):Void;
+	/*@@@ modifiers=1 */ public function checkExit(status:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkLink(java.lang.String) */
-	public function checkLink(lib:String):Void;
+	/*@@@ modifiers=1 */ public function checkLink(lib:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkListen(int) */
-	public function checkListen(port:Int):Void;
+	/*@@@ modifiers=1 */ public function checkListen(port:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkMemberAccess(java.lang.Class, int) */
-	public function checkMemberAccess(clazz:Class<Dynamic>, which:Int):Void;
+	/*@@@ modifiers=1 */ public function checkMemberAccess(clazz:Class<Dynamic>, which:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress, byte) */
-	@:overload(function (maddr:InetAddress, ttl:Int8):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (maddr:InetAddress, ttl:Int8):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress) */
-	public function checkMulticast(maddr:InetAddress):Void;
+	/*@@@ modifiers=1 */ public function checkMulticast(maddr:InetAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPackageAccess(java.lang.String) */
-	public function checkPackageAccess(pkg:String):Void;
+	/*@@@ modifiers=1 */ public function checkPackageAccess(pkg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPackageDefinition(java.lang.String) */
-	public function checkPackageDefinition(pkg:String):Void;
+	/*@@@ modifiers=1 */ public function checkPackageDefinition(pkg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPermission(java.security.Permission, java.lang.Object) */
-	@:overload(function (perm:Permission, context:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (perm:Permission, context:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPermission(java.security.Permission) */
-	public function checkPermission(perm:Permission):Void;
+	/*@@@ modifiers=1 */ public function checkPermission(perm:Permission):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPrintJobAccess() */
-	public function checkPrintJobAccess():Void;
+	/*@@@ modifiers=1 */ public function checkPrintJobAccess():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPropertiesAccess() */
-	public function checkPropertiesAccess():Void;
+	/*@@@ modifiers=1 */ public function checkPropertiesAccess():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkPropertyAccess(java.lang.String) */
-	public function checkPropertyAccess(key:String):Void;
+	/*@@@ modifiers=1 */ public function checkPropertyAccess(key:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkRead(java.lang.String, java.lang.Object) */
-	@:overload(function (file:String, context:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (file:String, context:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkRead(java.io.FileDescriptor) */
-	@:overload(function (fd:FileDescriptor):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fd:FileDescriptor):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkRead(java.lang.String) */
-	public function checkRead(file:String):Void;
+	/*@@@ modifiers=1 */ public function checkRead(file:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkSecurityAccess(java.lang.String) */
-	public function checkSecurityAccess(target:String):Void;
+	/*@@@ modifiers=1 */ public function checkSecurityAccess(target:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkSetFactory() */
-	public function checkSetFactory():Void;
+	/*@@@ modifiers=1 */ public function checkSetFactory():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkSystemClipboardAccess() */
-	public function checkSystemClipboardAccess():Void;
+	/*@@@ modifiers=1 */ public function checkSystemClipboardAccess():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkTopLevelWindow(java.lang.Object) */
-	public function checkTopLevelWindow(window:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function checkTopLevelWindow(window:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkWrite(java.io.FileDescriptor) */
-	@:overload(function (fd:FileDescriptor):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fd:FileDescriptor):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#checkWrite(java.lang.String) */
-	public function checkWrite(file:String):Void;
+	/*@@@ modifiers=1 */ public function checkWrite(file:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#classDepth(java.lang.String) */
-	private function classDepth(name:String):Int;
+	/*@@@ modifiers=260 */ private function classDepth(name:String):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#classLoaderDepth() */
-	private function classLoaderDepth():Int;
+	/*@@@ modifiers=4 */ private function classLoaderDepth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#currentClassLoader() */
-	private function currentClassLoader():ClassLoader;
+	/*@@@ modifiers=4 */ private function currentClassLoader():ClassLoader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#currentLoadedClass() */
-	private function currentLoadedClass():Class<Dynamic>;
+	/*@@@ modifiers=4 */ private function currentLoadedClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#getClassContext() */
-	private function getClassContext():NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=260 */ private function getClassContext():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#getInCheck() */
-	public function getInCheck():Bool;
+	/*@@@ modifiers=1 */ public function getInCheck():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#getSecurityContext() */
-	public function getSecurityContext():Dynamic;
+	/*@@@ modifiers=1 */ public function getSecurityContext():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#getThreadGroup() */
-	public function getThreadGroup():ThreadGroup;
+	/*@@@ modifiers=1 */ public function getThreadGroup():ThreadGroup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#inClass(java.lang.String) */
-	private function inClass(name:String):Bool;
+	/*@@@ modifiers=4 */ private function inClass(name:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityManager.html#inClassLoader() */
-	private function inClassLoader():Bool;
+	/*@@@ modifiers=4 */ private function inClassLoader():Bool;
 
 }
 

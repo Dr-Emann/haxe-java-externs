@@ -21,13 +21,13 @@ extern class DefaultStyledDocument_AttributeUndoableEdit extends AbstractUndoabl
 	private var element:Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#DefaultStyledDocument$AttributeUndoableEdit(javax.swing.text.Element, javax.swing.text.AttributeSet, boolean) */
-	public function new(element:Element, newAttributes:AttributeSet, isReplacing:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(element:Element, newAttributes:AttributeSet, isReplacing:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#redo() */
-	override public function redo():Void;
+	/*@@@ modifiers=1 */ override public function redo():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#undo() */
-	override public function undo():Void;
+	/*@@@ modifiers=1 */ override public function undo():Void;
 
 }
 

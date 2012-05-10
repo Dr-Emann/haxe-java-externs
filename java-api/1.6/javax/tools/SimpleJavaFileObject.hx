@@ -23,49 +23,49 @@ extern class SimpleJavaFileObject extends Object, implements JavaFileObject
 	private static var kind:JavaFileObject_Kind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#SimpleJavaFileObject(java.net.URI, javax.tools.JavaFileObject$Kind) */
-	private function new(uri:URI, kind:JavaFileObject_Kind):Void;
+	/*@@@ modifiers=4 */ private function new(uri:URI, kind:JavaFileObject_Kind):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#delete() */
-	public function delete():Bool;
+	/*@@@ modifiers=1 */ public function delete():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#getAccessLevel() */
-	public function getAccessLevel():Modifier;
+	/*@@@ modifiers=1 */ public function getAccessLevel():Modifier;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#getCharContent(boolean) */
-	public function getCharContent(ignoreEncodingErrors:Bool):CharSequence;
+	/*@@@ modifiers=1 */ public function getCharContent(ignoreEncodingErrors:Bool):CharSequence;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#getKind() */
-	public function getKind():JavaFileObject_Kind;
+	/*@@@ modifiers=1 */ public function getKind():JavaFileObject_Kind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#getLastModified() */
-	public function getLastModified():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getLastModified():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#getNestingKind() */
-	public function getNestingKind():NestingKind;
+	/*@@@ modifiers=1 */ public function getNestingKind():NestingKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#isNameCompatible(java.lang.String, javax.tools.JavaFileObject$Kind) */
-	public function isNameCompatible(simpleName:String, kind:JavaFileObject_Kind):Bool;
+	/*@@@ modifiers=1 */ public function isNameCompatible(simpleName:String, kind:JavaFileObject_Kind):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#openInputStream() */
-	public function openInputStream():InputStream;
+	/*@@@ modifiers=1 */ public function openInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#openOutputStream() */
-	public function openOutputStream():OutputStream;
+	/*@@@ modifiers=1 */ public function openOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#openReader(boolean) */
-	public function openReader(ignoreEncodingErrors:Bool):Reader;
+	/*@@@ modifiers=1 */ public function openReader(ignoreEncodingErrors:Bool):Reader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#openWriter() */
-	public function openWriter():Writer;
+	/*@@@ modifiers=1 */ public function openWriter():Writer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/SimpleJavaFileObject.html#toUri() */
-	public function toUri():URI;
+	/*@@@ modifiers=1 */ public function toUri():URI;
 
 }
 

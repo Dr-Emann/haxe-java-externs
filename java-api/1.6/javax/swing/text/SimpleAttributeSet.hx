@@ -12,68 +12,68 @@ import javax.swing.text.MutableAttributeSet;
 extern class SimpleAttributeSet extends Object, implements MutableAttributeSet, implements Serializable, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#SimpleAttributeSet(javax.swing.text.AttributeSet) */
-	@:overload(function (source:AttributeSet):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:AttributeSet):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#SimpleAttributeSet() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#addAttribute(java.lang.Object, java.lang.Object) */
-	public function addAttribute(name:Dynamic, value:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function addAttribute(name:Dynamic, value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#addAttributes(javax.swing.text.AttributeSet) */
-	public function addAttributes(attributes:AttributeSet):Void;
+	/*@@@ modifiers=1 */ public function addAttributes(attributes:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#containsAttribute(java.lang.Object, java.lang.Object) */
-	public function containsAttribute(name:Dynamic, value:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function containsAttribute(name:Dynamic, value:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet) */
-	public function containsAttributes(attributes:AttributeSet):Bool;
+	/*@@@ modifiers=1 */ public function containsAttributes(attributes:AttributeSet):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#copyAttributes() */
-	public function copyAttributes():AttributeSet;
+	/*@@@ modifiers=1 */ public function copyAttributes():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#getAttribute(java.lang.Object) */
-	public function getAttribute(name:Dynamic):Dynamic;
+	/*@@@ modifiers=1 */ public function getAttribute(name:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#getAttributeCount() */
-	public function getAttributeCount():Int;
+	/*@@@ modifiers=1 */ public function getAttributeCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#getAttributeNames() */
-	public function getAttributeNames():Enumeration<Dynamic>;
+	/*@@@ modifiers=1 */ public function getAttributeNames():Enumeration<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#getResolveParent() */
-	public function getResolveParent():AttributeSet;
+	/*@@@ modifiers=1 */ public function getResolveParent():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#isDefined(java.lang.Object) */
-	public function isDefined(attrName:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function isDefined(attrName:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#isEmpty() */
-	public function isEmpty():Bool;
+	/*@@@ modifiers=1 */ public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#isEqual(javax.swing.text.AttributeSet) */
-	public function isEqual(attr:AttributeSet):Bool;
+	/*@@@ modifiers=1 */ public function isEqual(attr:AttributeSet):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#removeAttribute(java.lang.Object) */
-	public function removeAttribute(name:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function removeAttribute(name:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#removeAttributes(java.util.Enumeration) */
-	@:overload(function (names:Enumeration<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (names:Enumeration<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet) */
-	public function removeAttributes(attributes:AttributeSet):Void;
+	/*@@@ modifiers=1 */ public function removeAttributes(attributes:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet) */
-	public function setResolveParent(parent:AttributeSet):Void;
+	/*@@@ modifiers=1 */ public function setResolveParent(parent:AttributeSet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/SimpleAttributeSet.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

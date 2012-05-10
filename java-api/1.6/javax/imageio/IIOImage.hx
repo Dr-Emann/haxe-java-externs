@@ -24,42 +24,42 @@ extern class IIOImage extends Object
 	private var metadata:IIOMetadata;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#IIOImage(java.awt.image.Raster, java.util.List, javax.imageio.metadata.IIOMetadata) */
-	@:overload(function (image:Raster, thumbnails:List<BufferedImage>, metadata:IIOMetadata):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (image:Raster, thumbnails:List<BufferedImage>, metadata:IIOMetadata):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#IIOImage(java.awt.image.RenderedImage, java.util.List, javax.imageio.metadata.IIOMetadata) */
-	public function new(image:RenderedImage, thumbnails:List<BufferedImage>, metadata:IIOMetadata):Void;
+	/*@@@ modifiers=1 */ public function new(image:RenderedImage, thumbnails:List<BufferedImage>, metadata:IIOMetadata):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#getMetadata() */
-	public function getMetadata():IIOMetadata;
+	/*@@@ modifiers=1 */ public function getMetadata():IIOMetadata;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#getNumThumbnails() */
-	public function getNumThumbnails():Int;
+	/*@@@ modifiers=1 */ public function getNumThumbnails():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#getRaster() */
-	public function getRaster():Raster;
+	/*@@@ modifiers=1 */ public function getRaster():Raster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#getRenderedImage() */
-	public function getRenderedImage():RenderedImage;
+	/*@@@ modifiers=1 */ public function getRenderedImage():RenderedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#getThumbnail(int) */
-	public function getThumbnail(index:Int):BufferedImage;
+	/*@@@ modifiers=1 */ public function getThumbnail(index:Int):BufferedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#getThumbnails() */
-	public function getThumbnails():List<BufferedImage>;
+	/*@@@ modifiers=1 */ public function getThumbnails():List<BufferedImage>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#hasRaster() */
-	public function hasRaster():Bool;
+	/*@@@ modifiers=1 */ public function hasRaster():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#setMetadata(javax.imageio.metadata.IIOMetadata) */
-	public function setMetadata(metadata:IIOMetadata):Void;
+	/*@@@ modifiers=1 */ public function setMetadata(metadata:IIOMetadata):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#setRaster(java.awt.image.Raster) */
-	public function setRaster(raster:Raster):Void;
+	/*@@@ modifiers=1 */ public function setRaster(raster:Raster):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#setRenderedImage(java.awt.image.RenderedImage) */
-	public function setRenderedImage(image:RenderedImage):Void;
+	/*@@@ modifiers=1 */ public function setRenderedImage(image:RenderedImage):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOImage.html#setThumbnails(java.util.List) */
-	public function setThumbnails(thumbnails:List<BufferedImage>):Void;
+	/*@@@ modifiers=1 */ public function setThumbnails(thumbnails:List<BufferedImage>):Void;
 
 }
 

@@ -20,38 +20,38 @@ extern class LinkException extends NamingException
 	private var linkExplanation:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#LinkException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#LinkException(java.lang.String) */
-	public function new(explanation:String):Void;
+	/*@@@ modifiers=1 */ public function new(explanation:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#getLinkExplanation() */
-	public function getLinkExplanation():String;
+	/*@@@ modifiers=1 */ public function getLinkExplanation():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#getLinkRemainingName() */
-	public function getLinkRemainingName():Name;
+	/*@@@ modifiers=1 */ public function getLinkRemainingName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#getLinkResolvedName() */
-	public function getLinkResolvedName():Name;
+	/*@@@ modifiers=1 */ public function getLinkResolvedName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#getLinkResolvedObj() */
-	public function getLinkResolvedObj():Dynamic;
+	/*@@@ modifiers=1 */ public function getLinkResolvedObj():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#setLinkExplanation(java.lang.String) */
-	public function setLinkExplanation(msg:String):Void;
+	/*@@@ modifiers=1 */ public function setLinkExplanation(msg:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#setLinkRemainingName(javax.naming.Name) */
-	public function setLinkRemainingName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function setLinkRemainingName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#setLinkResolvedName(javax.naming.Name) */
-	public function setLinkResolvedName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function setLinkResolvedName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#setLinkResolvedObj(java.lang.Object) */
-	public function setLinkResolvedObj(obj:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setLinkResolvedObj(obj:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#toString(boolean) */
-	@:overload(function (detail:Bool):String {})
+	/*@@@ modifiers=1 */ @:overload(function (detail:Bool):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LinkException.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

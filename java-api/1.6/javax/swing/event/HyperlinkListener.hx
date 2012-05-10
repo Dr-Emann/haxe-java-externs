@@ -8,7 +8,7 @@ import javax.swing.event.HyperlinkEvent;
 extern interface HyperlinkListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent) */
-	public function hyperlinkUpdate(e:HyperlinkEvent):Void;
+	/*@@@ modifiers=1025 */ public function hyperlinkUpdate(e:HyperlinkEvent):Void;
 
 }
 

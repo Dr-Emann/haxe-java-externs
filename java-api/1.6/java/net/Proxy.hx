@@ -9,22 +9,22 @@ import java.net.SocketAddress;
 extern class Proxy extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html#Proxy(java.net.Proxy$Type, java.net.SocketAddress) */
-	public function new(type:Proxy_Type, sa:SocketAddress):Void;
+	/*@@@ modifiers=1 */ public function new(type:Proxy_Type, sa:SocketAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html#address() */
-	public function address():SocketAddress;
+	/*@@@ modifiers=1 */ public function address():SocketAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=17 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=17 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html#type() */
-	public function type():Proxy_Type;
+	/*@@@ modifiers=1 */ public function type():Proxy_Type;
 
 }
 

@@ -6,10 +6,10 @@ package java.security.acl;
 extern interface Permission
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/acl/Permission.html#equals(java.lang.Object) */
-	public function equals(another:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(another:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/acl/Permission.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

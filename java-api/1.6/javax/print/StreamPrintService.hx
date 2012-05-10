@@ -9,22 +9,19 @@ import javax.print.PrintService;
 extern class StreamPrintService extends Object, implements PrintService
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintService.html#StreamPrintService(java.io.OutputStream) */
-	private function new(out:OutputStream):Void;
+	/*@@@ modifiers=4 */ private function new(out:OutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintService.html#dispose() */
-	public function dispose():Void;
+	/*@@@ modifiers=1 */ public function dispose():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintService.html#getOutputFormat() */
-	public function getOutputFormat():String;
+	/*@@@ modifiers=1025 */ public function getOutputFormat():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintService.html#getOutputStream() */
-	public function getOutputStream():OutputStream;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintService.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ public function getOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/StreamPrintService.html#isDisposed() */
-	public function isDisposed():Bool;
+	/*@@@ modifiers=1 */ public function isDisposed():Bool;
 
 }
 

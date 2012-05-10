@@ -8,10 +8,10 @@ import javax.xml.validation.SchemaFactory;
 extern class SchemaFactoryLoader extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/SchemaFactoryLoader.html#SchemaFactoryLoader() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/SchemaFactoryLoader.html#newFactory(java.lang.String) */
-	public function newFactory(schemaLanguage:String):SchemaFactory;
+	/*@@@ modifiers=1025 */ public function newFactory(schemaLanguage:String):SchemaFactory;
 
 }
 

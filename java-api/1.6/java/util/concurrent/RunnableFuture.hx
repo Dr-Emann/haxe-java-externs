@@ -8,7 +8,7 @@ import java.util.concurrent.Future;
 extern interface RunnableFuture<V : (Dynamic)> implements Runnable, implements Future<V>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/RunnableFuture.html#run() */
-	public function run():Void;
+	/*@@@ modifiers=1025 */ public function run():Void;
 
 }
 

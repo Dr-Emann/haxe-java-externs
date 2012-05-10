@@ -9,10 +9,10 @@ import javax.xml.stream.events.XMLEvent;
 extern interface EndElement implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/EndElement.html#getName() */
-	public function getName():QName;
+	/*@@@ modifiers=1025 */ public function getName():QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/EndElement.html#getNamespaces() */
-	public function getNamespaces():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getNamespaces():java.util.Iterator<Dynamic>;
 
 }
 

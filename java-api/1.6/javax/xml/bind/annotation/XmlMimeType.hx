@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 extern interface XmlMimeType implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlMimeType.html#value() */
-	public function value():String;
+	/*@@@ modifiers=1025 */ public function value():String;
 
 }
 

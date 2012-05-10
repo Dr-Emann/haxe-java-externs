@@ -10,16 +10,16 @@ import javax.swing.text.Element;
 extern class HTMLFrameHyperlinkEvent extends HyperlinkEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String) */
-	@:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, targetFrame:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, targetFrame:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, java.lang.String) */
-	@:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, desc:String, targetFrame:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, desc:String, targetFrame:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, javax.swing.text.Element, java.lang.String) */
-	@:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, desc:Element, targetFrame:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, desc:Element, targetFrame:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, javax.swing.text.Element, java.lang.String) */
-	public function new(source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, desc:String, sourceElement:Element, targetFrame:String):Void;
+	/*@@@ modifiers=1 */ public function new(source:Dynamic, type:HyperlinkEvent_EventType, targetURL:URL, desc:String, sourceElement:Element, targetFrame:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#getTarget() */
-	public function getTarget():String;
+	/*@@@ modifiers=1 */ public function getTarget():String;
 
 }
 

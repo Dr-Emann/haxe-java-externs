@@ -8,7 +8,7 @@ import javax.net.ssl.HandshakeCompletedEvent;
 extern interface HandshakeCompletedListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent) */
-	public function handshakeCompleted(arg0:HandshakeCompletedEvent):Void;
+	/*@@@ modifiers=1025 */ public function handshakeCompleted(arg0:HandshakeCompletedEvent):Void;
 
 }
 

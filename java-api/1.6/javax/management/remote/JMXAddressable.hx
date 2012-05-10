@@ -7,7 +7,7 @@ import javax.management.remote.JMXServiceURL;
 extern interface JMXAddressable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXAddressable.html#getAddress() */
-	public function getAddress():JMXServiceURL;
+	/*@@@ modifiers=1025 */ public function getAddress():JMXServiceURL;
 
 }
 

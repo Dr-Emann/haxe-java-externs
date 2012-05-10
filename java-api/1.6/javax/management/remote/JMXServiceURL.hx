@@ -8,32 +8,32 @@ import java.lang.Object;
 extern class JMXServiceURL extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#JMXServiceURL(java.lang.String, java.lang.String, int) */
-	@:overload(function (protocol:String, host:String, port:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (protocol:String, host:String, port:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#JMXServiceURL(java.lang.String, java.lang.String, int, java.lang.String) */
-	@:overload(function (protocol:String, host:String, port:Int, urlPath:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (protocol:String, host:String, port:Int, urlPath:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#JMXServiceURL(java.lang.String) */
-	public function new(serviceURL:String):Void;
+	/*@@@ modifiers=1 */ public function new(serviceURL:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#getHost() */
-	public function getHost():String;
+	/*@@@ modifiers=1 */ public function getHost():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#getPort() */
-	public function getPort():Int;
+	/*@@@ modifiers=1 */ public function getPort():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#getProtocol() */
-	public function getProtocol():String;
+	/*@@@ modifiers=1 */ public function getProtocol():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#getURLPath() */
-	public function getURLPath():String;
+	/*@@@ modifiers=1 */ public function getURLPath():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServiceURL.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

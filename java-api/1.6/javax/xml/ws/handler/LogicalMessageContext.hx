@@ -8,7 +8,7 @@ import javax.xml.ws.handler.MessageContext;
 extern interface LogicalMessageContext implements MessageContext
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/LogicalMessageContext.html#getMessage() */
-	public function getMessage():LogicalMessage;
+	/*@@@ modifiers=1025 */ public function getMessage():LogicalMessage;
 
 }
 

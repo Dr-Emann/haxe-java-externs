@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 extern interface XmlAccessorType implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAccessorType.html#value() */
-	public function value():XmlAccessType;
+	/*@@@ modifiers=1025 */ public function value():XmlAccessType;
 
 }
 

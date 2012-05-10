@@ -14,10 +14,10 @@ extern class Service_Mode extends Enum<Service_Mode>
 	public static var PAYLOAD:Service_Mode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Service.Mode.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Service_Mode;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Service_Mode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Service.Mode.html#values() */
-	static public function values():NativeArray<Service_Mode>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Service_Mode>;
 
 }
 

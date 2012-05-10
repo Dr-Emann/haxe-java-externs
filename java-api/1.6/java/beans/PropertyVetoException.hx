@@ -8,10 +8,10 @@ import java.lang.Exception;
 extern class PropertyVetoException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyVetoException.html#PropertyVetoException(java.lang.String, java.beans.PropertyChangeEvent) */
-	public function new(mess:String, evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function new(mess:String, evt:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyVetoException.html#getPropertyChangeEvent() */
-	public function getPropertyChangeEvent():PropertyChangeEvent;
+	/*@@@ modifiers=1 */ public function getPropertyChangeEvent():PropertyChangeEvent;
 
 }
 

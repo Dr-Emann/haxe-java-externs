@@ -13,37 +13,37 @@ import javax.swing.SwingConstants;
 extern class JCheckBoxMenuItem extends JMenuItem, implements SwingConstants, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem(javax.swing.Icon) */
-	@:overload(function (icon:Icon):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (icon:Icon):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem(java.lang.String) */
-	@:overload(function (icon:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (icon:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem(javax.swing.Action) */
-	@:overload(function (icon:Action):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (icon:Action):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem(java.lang.String, javax.swing.Icon) */
-	@:overload(function (text:String, icon:Icon):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, icon:Icon):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem(java.lang.String, boolean) */
-	@:overload(function (text:String, icon:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, icon:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#JCheckBoxMenuItem(java.lang.String, javax.swing.Icon, boolean) */
-	public function new(text:String, icon:Icon, b:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(text:String, icon:Icon, b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#getSelectedObjects() */
-	override public function getSelectedObjects():NativeArray<Dynamic>;
+	/*@@@ modifiers=1 */ override public function getSelectedObjects():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#getState() */
-	public function getState():Bool;
+	/*@@@ modifiers=1 */ public function getState():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#setState(boolean) */
-	public function setState(b:Bool):Void;
+	/*@@@ modifiers=33 */ public function setState(b:Bool):Void;
 
 }
 

@@ -7,10 +7,10 @@ import org.w3c.dom.DOMImplementation;
 extern interface DOMImplementationList
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMImplementationList.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1025 */ public function getLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMImplementationList.html#item(int) */
-	public function item(index:Int):DOMImplementation;
+	/*@@@ modifiers=1025 */ public function item(index:Int):DOMImplementation;
 
 }
 

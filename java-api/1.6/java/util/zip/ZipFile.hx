@@ -12,32 +12,32 @@ import java.util.zip.ZipEntry;
 extern class ZipFile extends Object, implements ZipConstants
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#ZipFile(java.lang.String) */
-	@:overload(function (name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#ZipFile(java.io.File, int) */
-	@:overload(function (file:File, mode:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (file:File, mode:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#ZipFile(java.io.File) */
-	public function new(name:File):Void;
+	/*@@@ modifiers=1 */ public function new(name:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#entries() */
-	public function entries():Enumeration<ZipEntry>;
+	/*@@@ modifiers=1 */ public function entries():Enumeration<ZipEntry>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#finalize() */
-	override public function finalize():Void;
+	/*@@@ modifiers=4 */ override public function finalize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#getEntry(java.lang.String) */
-	public function getEntry(name:String):ZipEntry;
+	/*@@@ modifiers=1 */ public function getEntry(name:String):ZipEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry) */
-	public function getInputStream(entry:ZipEntry):InputStream;
+	/*@@@ modifiers=1 */ public function getInputStream(entry:ZipEntry):InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipFile.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1 */ public function size():Int;
 
 }
 

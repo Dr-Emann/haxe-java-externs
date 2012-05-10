@@ -11,25 +11,25 @@ import javax.management.openmbean.TabularData;
 extern class TabularType extends OpenType<TabularData>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#TabularType(java.lang.String, java.lang.String, javax.management.openmbean.CompositeType, java.lang.String[]) */
-	public function new(typeName:String, description:String, rowType:CompositeType, indexNames:NativeArray<String>):Void;
+	/*@@@ modifiers=1 */ public function new(typeName:String, description:String, rowType:CompositeType, indexNames:NativeArray<String>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#getIndexNames() */
-	public function getIndexNames():List<String>;
+	/*@@@ modifiers=1 */ public function getIndexNames():List<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#getRowType() */
-	public function getRowType():CompositeType;
+	/*@@@ modifiers=1 */ public function getRowType():CompositeType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#isValue(java.lang.Object) */
-	override public function isValue(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function isValue(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularType.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

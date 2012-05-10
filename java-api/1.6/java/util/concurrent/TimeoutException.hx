@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class TimeoutException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeoutException.html#TimeoutException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/TimeoutException.html#TimeoutException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

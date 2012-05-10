@@ -7,7 +7,7 @@ import java.lang.RuntimeException;
 extern class ImagingOpException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ImagingOpException.html#ImagingOpException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

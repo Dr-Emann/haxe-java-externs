@@ -7,7 +7,7 @@ import java.nio.CharBuffer;
 extern interface Readable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Readable.html#read(java.nio.CharBuffer) */
-	public function read(cb:CharBuffer):Int;
+	/*@@@ modifiers=1025 */ public function read(cb:CharBuffer):Int;
 
 }
 

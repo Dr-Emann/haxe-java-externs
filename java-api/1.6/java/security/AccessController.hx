@@ -12,24 +12,24 @@ extern class AccessController extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#checkPermission(java.security.Permission) */
-	static public function checkPermission(perm:Permission):Void;
+	/*@@@ modifiers=9 */ static public function checkPermission(perm:Permission):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction, java.security.AccessControlContext) */
-	@:overload(function <T>(action:PrivilegedAction<T>, context:AccessControlContext):T {})
+	/*@@@ modifiers=265 */ @:overload(function <T>(action:PrivilegedAction<T>, context:AccessControlContext):T {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction, java.security.AccessControlContext) */
-	@:overload(function <T>(action:PrivilegedExceptionAction<T>, context:AccessControlContext):T {})
+	/*@@@ modifiers=265 */ @:overload(function <T>(action:PrivilegedExceptionAction<T>, context:AccessControlContext):T {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction) */
-	@:overload(function <T>(action:PrivilegedAction<T>):T {})
+	/*@@@ modifiers=265 */ @:overload(function <T>(action:PrivilegedAction<T>):T {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction) */
-	static public function doPrivileged<T>(action:PrivilegedExceptionAction<T>):T;
+	/*@@@ modifiers=265 */ static public function doPrivileged<T>(action:PrivilegedExceptionAction<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction) */
-	@:overload(function <T>(action:PrivilegedAction<T>):T {})
+	/*@@@ modifiers=9 */ @:overload(function <T>(action:PrivilegedAction<T>):T {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction) */
-	static public function doPrivilegedWithCombiner<T>(action:PrivilegedExceptionAction<T>):T;
+	/*@@@ modifiers=9 */ static public function doPrivilegedWithCombiner<T>(action:PrivilegedExceptionAction<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessController.html#getContext() */
-	static public function getContext():AccessControlContext;
+	/*@@@ modifiers=9 */ static public function getContext():AccessControlContext;
 
 }
 

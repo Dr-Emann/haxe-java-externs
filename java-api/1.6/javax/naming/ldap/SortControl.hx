@@ -9,11 +9,11 @@ import javax.naming.ldap.SortKey;
 extern class SortControl extends BasicControl
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortControl.html#SortControl(java.lang.String, boolean) */
-	@:overload(function (sortBy:String, criticality:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (sortBy:String, criticality:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortControl.html#SortControl(java.lang.String[], boolean) */
-	@:overload(function (sortBy:NativeArray<String>, criticality:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (sortBy:NativeArray<String>, criticality:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortControl.html#SortControl(javax.naming.ldap.SortKey[], boolean) */
-	public function new(sortBy:NativeArray<SortKey>, criticality:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(sortBy:NativeArray<SortKey>, criticality:Bool):Void;
 
 }
 

@@ -9,13 +9,13 @@ import javax.crypto.SecretKey;
 extern interface PBEKey implements SecretKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/interfaces/PBEKey.html#getIterationCount() */
-	public function getIterationCount():Int;
+	/*@@@ modifiers=1025 */ public function getIterationCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/interfaces/PBEKey.html#getPassword() */
-	public function getPassword():NativeArray<Char16>;
+	/*@@@ modifiers=1025 */ public function getPassword():NativeArray<Char16>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/interfaces/PBEKey.html#getSalt() */
-	public function getSalt():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getSalt():NativeArray<Int8>;
 
 }
 

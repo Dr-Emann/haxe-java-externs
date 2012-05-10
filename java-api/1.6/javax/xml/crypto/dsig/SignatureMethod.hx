@@ -9,7 +9,7 @@ import javax.xml.crypto.XMLStructure;
 extern interface SignatureMethod implements XMLStructure, implements AlgorithmMethod
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/SignatureMethod.html#getParameterSpec() */
-	public function getParameterSpec():AlgorithmParameterSpec;
+	/*@@@ modifiers=1025 */ public function getParameterSpec():AlgorithmParameterSpec;
 
 }
 

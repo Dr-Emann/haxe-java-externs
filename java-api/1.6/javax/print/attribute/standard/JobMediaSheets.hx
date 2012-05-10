@@ -11,16 +11,16 @@ import javax.print.attribute.PrintRequestAttribute;
 extern class JobMediaSheets extends IntegerSyntax, implements PrintRequestAttribute, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobMediaSheets.html#JobMediaSheets(int) */
-	public function new(value:Int):Void;
+	/*@@@ modifiers=1 */ public function new(value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobMediaSheets.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobMediaSheets.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobMediaSheets.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

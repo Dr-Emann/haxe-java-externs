@@ -16,24 +16,24 @@ extern class MBeanFeatureInfo extends Object, implements Serializable, implement
 	private var description:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#MBeanFeatureInfo(java.lang.String, java.lang.String, javax.management.Descriptor) */
-	@:overload(function (name:String, description:String, descriptor:Descriptor):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, description:String, descriptor:Descriptor):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#MBeanFeatureInfo(java.lang.String, java.lang.String) */
-	public function new(name:String, description:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, description:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#equals(java.lang.Object) */
-	override public function equals(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=1 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#getDescriptor() */
-	public function getDescriptor():Descriptor;
+	/*@@@ modifiers=1 */ public function getDescriptor():Descriptor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanFeatureInfo.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 }
 

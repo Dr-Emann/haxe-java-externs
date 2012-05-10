@@ -10,13 +10,13 @@ import java.security.spec.KeySpec;
 extern class EncodedKeySpec extends Object, implements KeySpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/EncodedKeySpec.html#EncodedKeySpec(byte[]) */
-	public function new(encodedKey:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function new(encodedKey:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/EncodedKeySpec.html#getEncoded() */
-	public function getEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/spec/EncodedKeySpec.html#getFormat() */
-	public function getFormat():String;
+	/*@@@ modifiers=1025 */ public function getFormat():String;
 
 }
 

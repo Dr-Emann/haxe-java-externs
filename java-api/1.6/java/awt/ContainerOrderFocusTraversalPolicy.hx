@@ -10,31 +10,31 @@ import java.io.Serializable;
 extern class ContainerOrderFocusTraversalPolicy extends FocusTraversalPolicy, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#ContainerOrderFocusTraversalPolicy() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#accept(java.awt.Component) */
-	private function accept(aComponent:Component):Bool;
+	/*@@@ modifiers=4 */ private function accept(aComponent:Component):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#getComponentAfter(java.awt.Container, java.awt.Component) */
-	override public function getComponentAfter(aContainer:Container, aComponent:Component):Component;
+	/*@@@ modifiers=1 */ override public function getComponentAfter(aContainer:Container, aComponent:Component):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#getComponentBefore(java.awt.Container, java.awt.Component) */
-	override public function getComponentBefore(aContainer:Container, aComponent:Component):Component;
+	/*@@@ modifiers=1 */ override public function getComponentBefore(aContainer:Container, aComponent:Component):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#getDefaultComponent(java.awt.Container) */
-	override public function getDefaultComponent(aContainer:Container):Component;
+	/*@@@ modifiers=1 */ override public function getDefaultComponent(aContainer:Container):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#getFirstComponent(java.awt.Container) */
-	override public function getFirstComponent(aContainer:Container):Component;
+	/*@@@ modifiers=1 */ override public function getFirstComponent(aContainer:Container):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#getImplicitDownCycleTraversal() */
-	public function getImplicitDownCycleTraversal():Bool;
+	/*@@@ modifiers=1 */ public function getImplicitDownCycleTraversal():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#getLastComponent(java.awt.Container) */
-	override public function getLastComponent(aContainer:Container):Component;
+	/*@@@ modifiers=1 */ override public function getLastComponent(aContainer:Container):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#setImplicitDownCycleTraversal(boolean) */
-	public function setImplicitDownCycleTraversal(implicitDownCycleTraversal:Bool):Void;
+	/*@@@ modifiers=1 */ public function setImplicitDownCycleTraversal(implicitDownCycleTraversal:Bool):Void;
 
 }
 

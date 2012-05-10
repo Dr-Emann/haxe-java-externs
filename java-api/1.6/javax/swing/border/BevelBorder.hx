@@ -26,51 +26,51 @@ extern class BevelBorder extends AbstractBorder
 	private var shadowOuter:Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#BevelBorder(int, java.awt.Color, java.awt.Color) */
-	@:overload(function (bevelType:Int, highlight:Color, shadow:Color):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (bevelType:Int, highlight:Color, shadow:Color):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#BevelBorder(int, java.awt.Color, java.awt.Color, java.awt.Color, java.awt.Color) */
-	@:overload(function (bevelType:Int, highlightOuterColor:Color, highlightInnerColor:Color, shadowOuterColor:Color, shadowInnerColor:Color):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (bevelType:Int, highlightOuterColor:Color, highlightInnerColor:Color, shadowOuterColor:Color, shadowInnerColor:Color):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#BevelBorder(int) */
-	public function new(bevelType:Int):Void;
+	/*@@@ modifiers=1 */ public function new(bevelType:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getBevelType() */
-	public function getBevelType():Int;
+	/*@@@ modifiers=1 */ public function getBevelType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getBorderInsets(java.awt.Component, java.awt.Insets) */
-	@:overload(function (c:Component, insets:Insets):Insets {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, insets:Insets):Insets {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getBorderInsets(java.awt.Component) */
-	override public function getBorderInsets(c:Component):Insets;
+	/*@@@ modifiers=1 */ override public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getHighlightInnerColor(java.awt.Component) */
-	@:overload(function (c:Component):Color {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component):Color {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getHighlightInnerColor() */
-	public function getHighlightInnerColor():Color;
+	/*@@@ modifiers=1 */ public function getHighlightInnerColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getHighlightOuterColor(java.awt.Component) */
-	@:overload(function (c:Component):Color {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component):Color {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getHighlightOuterColor() */
-	public function getHighlightOuterColor():Color;
+	/*@@@ modifiers=1 */ public function getHighlightOuterColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getShadowInnerColor(java.awt.Component) */
-	@:overload(function (c:Component):Color {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component):Color {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getShadowInnerColor() */
-	public function getShadowInnerColor():Color;
+	/*@@@ modifiers=1 */ public function getShadowInnerColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getShadowOuterColor(java.awt.Component) */
-	@:overload(function (c:Component):Color {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component):Color {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#getShadowOuterColor() */
-	public function getShadowOuterColor():Color;
+	/*@@@ modifiers=1 */ public function getShadowOuterColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#isBorderOpaque() */
-	override public function isBorderOpaque():Bool;
+	/*@@@ modifiers=1 */ override public function isBorderOpaque():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#paintLoweredBevel(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	private function paintLoweredBevel(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=4 */ private function paintLoweredBevel(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/BevelBorder.html#paintRaisedBevel(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	private function paintRaisedBevel(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=4 */ private function paintRaisedBevel(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 }
 

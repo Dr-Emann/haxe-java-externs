@@ -9,15 +9,15 @@ import javax.management.JMException;
 extern class ReflectionException extends JMException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/ReflectionException.html#ReflectionException(java.lang.Exception) */
-	@:overload(function (e:Exception):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (e:Exception):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/ReflectionException.html#ReflectionException(java.lang.Exception, java.lang.String) */
-	public function new(e:Exception, message:String):Void;
+	/*@@@ modifiers=1 */ public function new(e:Exception, message:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/ReflectionException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/ReflectionException.html#getTargetException() */
-	public function getTargetException():Exception;
+	/*@@@ modifiers=1 */ public function getTargetException():Exception;
 
 }
 

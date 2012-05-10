@@ -8,10 +8,10 @@ import javax.swing.event.ChangeEvent;
 extern interface CellEditorListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent) */
-	public function editingCanceled(e:ChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function editingCanceled(e:ChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent) */
-	public function editingStopped(e:ChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function editingStopped(e:ChangeEvent):Void;
 
 }
 

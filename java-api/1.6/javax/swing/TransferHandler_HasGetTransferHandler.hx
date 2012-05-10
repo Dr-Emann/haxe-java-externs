@@ -7,7 +7,7 @@ import javax.swing.TransferHandler;
 extern interface TransferHandler_HasGetTransferHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.HasGetTransferHandler.html#getTransferHandler() */
-	public function getTransferHandler():TransferHandler;
+	/*@@@ modifiers=1025 */ public function getTransferHandler():TransferHandler;
 
 }
 

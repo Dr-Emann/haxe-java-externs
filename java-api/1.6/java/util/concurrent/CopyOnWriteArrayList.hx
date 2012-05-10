@@ -15,97 +15,97 @@ import java.util.RandomAccess;
 extern class CopyOnWriteArrayList<E : (Dynamic)> extends Object, implements List<E>, implements RandomAccess, implements Cloneable, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#CopyOnWriteArrayList(java.lang.Object[]) */
-	@:overload(function (c:NativeArray<E>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (c:NativeArray<E>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#CopyOnWriteArrayList() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#CopyOnWriteArrayList(java.util.Collection) */
-	public function new(c:Collection<E>):Void;
+	/*@@@ modifiers=1 */ public function new(c:Collection<E>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#add(int, java.lang.Object) */
-	@:overload(function (index:Int, element:E):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (index:Int, element:E):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object) */
-	public function add(e:E):Bool;
+	/*@@@ modifiers=1 */ public function add(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int, java.util.Collection) */
-	@:overload(function (index:Int, c:Collection<E>):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (index:Int, c:Collection<E>):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection) */
-	public function addAll(c:Collection<E>):Bool;
+	/*@@@ modifiers=1 */ public function addAll(c:Collection<E>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection) */
-	public function addAllAbsent(c:Collection<E>):Int;
+	/*@@@ modifiers=1 */ public function addAllAbsent(c:Collection<E>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object) */
-	public function addIfAbsent(e:E):Bool;
+	/*@@@ modifiers=1 */ public function addIfAbsent(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#clear() */
-	public function clear():Void;
+	/*@@@ modifiers=1 */ public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object) */
-	public function contains(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function contains(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection) */
-	public function containsAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function containsAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#equals(java.lang.Object) */
-	override public function equals(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#get(int) */
-	public function get(index:Int):E;
+	/*@@@ modifiers=1 */ public function get(index:Int):E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object, int) */
-	@:overload(function (e:E, index:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (e:E, index:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object) */
-	public function indexOf(o:Dynamic):Int;
+	/*@@@ modifiers=1 */ public function indexOf(o:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty() */
-	public function isEmpty():Bool;
+	/*@@@ modifiers=1 */ public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#iterator() */
-	public function iterator():java.util.Iterator<E>;
+	/*@@@ modifiers=1 */ public function iterator():java.util.Iterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object, int) */
-	@:overload(function (e:E, index:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (e:E, index:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object) */
-	public function lastIndexOf(o:Dynamic):Int;
+	/*@@@ modifiers=1 */ public function lastIndexOf(o:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int) */
-	@:overload(function (index:Int):ListIterator<E> {})
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):ListIterator<E> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#listIterator() */
-	public function listIterator():ListIterator<E>;
+	/*@@@ modifiers=1 */ public function listIterator():ListIterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#remove(int) */
-	@:overload(function (index:Int):E {})
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):E {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object) */
-	public function remove(o:Dynamic):Bool;
+	/*@@@ modifiers=1 */ public function remove(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection) */
-	public function removeAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function removeAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection) */
-	public function retainAll(c:Collection<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function retainAll(c:Collection<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#set(int, java.lang.Object) */
-	public function set(index:Int, element:E):E;
+	/*@@@ modifiers=1 */ public function set(index:Int, element:E):E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1 */ public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#subList(int, int) */
-	public function subList(fromIndex:Int, toIndex:Int):List<E>;
+	/*@@@ modifiers=1 */ public function subList(fromIndex:Int, toIndex:Int):List<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[]) */
-	@:overload(function <T>(a:NativeArray<T>):NativeArray<T> {})
+	/*@@@ modifiers=1 */ @:overload(function <T>(a:NativeArray<T>):NativeArray<T> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#toArray() */
-	public function toArray():NativeArray<Dynamic>;
+	/*@@@ modifiers=1 */ public function toArray():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -8,7 +8,7 @@ import java.lang.Thread;
 extern interface ThreadFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadFactory.html#newThread(java.lang.Runnable) */
-	public function newThread(r:Runnable):Thread;
+	/*@@@ modifiers=1025 */ public function newThread(r:Runnable):Thread;
 
 }
 

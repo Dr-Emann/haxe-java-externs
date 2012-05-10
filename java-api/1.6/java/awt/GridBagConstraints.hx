@@ -44,12 +44,12 @@ extern class GridBagConstraints extends Object, implements Cloneable, implements
 	public var ipady:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GridBagConstraints.html#GridBagConstraints() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GridBagConstraints.html#GridBagConstraints(int, int, int, int, double, double, int, int, java.awt.Insets, int, int) */
-	public function new(gridx:Int, gridy:Int, gridwidth:Int, gridheight:Int, weightx:StdFloat, weighty:StdFloat, anchor:Int, fill:Int, insets:Insets, ipadx:Int, ipady:Int):Void;
+	/*@@@ modifiers=1 */ public function new(gridx:Int, gridy:Int, gridwidth:Int, gridheight:Int, weightx:StdFloat, weighty:StdFloat, anchor:Int, fill:Int, insets:Insets, ipadx:Int, ipady:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GridBagConstraints.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 }
 

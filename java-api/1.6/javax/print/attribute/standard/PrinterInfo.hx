@@ -11,16 +11,16 @@ import javax.print.attribute.TextSyntax;
 extern class PrinterInfo extends TextSyntax, implements PrintServiceAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterInfo.html#PrinterInfo(java.lang.String, java.util.Locale) */
-	public function new(info:String, locale:Locale):Void;
+	/*@@@ modifiers=1 */ public function new(info:String, locale:Locale):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterInfo.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterInfo.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PrinterInfo.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

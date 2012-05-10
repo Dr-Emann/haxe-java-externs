@@ -8,13 +8,13 @@ import java.awt.print.Printable;
 extern interface Pageable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/Pageable.html#getNumberOfPages() */
-	public function getNumberOfPages():Int;
+	/*@@@ modifiers=1025 */ public function getNumberOfPages():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/Pageable.html#getPageFormat(int) */
-	public function getPageFormat(pageIndex:Int):PageFormat;
+	/*@@@ modifiers=1025 */ public function getPageFormat(pageIndex:Int):PageFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/Pageable.html#getPrintable(int) */
-	public function getPrintable(pageIndex:Int):Printable;
+	/*@@@ modifiers=1025 */ public function getPrintable(pageIndex:Int):Printable;
 
 }
 

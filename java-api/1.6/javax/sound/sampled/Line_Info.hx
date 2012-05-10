@@ -8,16 +8,16 @@ import java.lang.Object;
 extern class Line_Info extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.Info.html#Line$Info(java.lang.Class) */
-	public function new(lineClass:Class<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(lineClass:Class<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.Info.html#getLineClass() */
-	public function getLineClass():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getLineClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.Info.html#matches(javax.sound.sampled.Line$Info) */
-	public function matches(info:Line_Info):Bool;
+	/*@@@ modifiers=1 */ public function matches(info:Line_Info):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.Info.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

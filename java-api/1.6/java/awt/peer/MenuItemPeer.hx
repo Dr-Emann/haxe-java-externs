@@ -7,16 +7,16 @@ import java.awt.peer.MenuComponentPeer;
 extern interface MenuItemPeer implements MenuComponentPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuItemPeer.html#disable() */
-	public function disable():Void;
+	/*@@@ modifiers=1025 */ public function disable():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuItemPeer.html#enable() */
-	public function enable():Void;
+	/*@@@ modifiers=1025 */ public function enable():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuItemPeer.html#setEnabled(boolean) */
-	public function setEnabled(b:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setEnabled(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuItemPeer.html#setLabel(java.lang.String) */
-	public function setLabel(label:String):Void;
+	/*@@@ modifiers=1025 */ public function setLabel(label:String):Void;
 
 }
 

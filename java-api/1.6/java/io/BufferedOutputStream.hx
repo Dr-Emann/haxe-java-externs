@@ -16,17 +16,17 @@ extern class BufferedOutputStream extends FilterOutputStream
 	private var count:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/BufferedOutputStream.html#BufferedOutputStream(java.io.OutputStream) */
-	@:overload(function (out:OutputStream):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (out:OutputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/BufferedOutputStream.html#BufferedOutputStream(java.io.OutputStream, int) */
-	public function new(out:OutputStream, size:Int):Void;
+	/*@@@ modifiers=1 */ public function new(out:OutputStream, size:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/BufferedOutputStream.html#flush() */
-	override public function flush():Void;
+	/*@@@ modifiers=33 */ override public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/BufferedOutputStream.html#write(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=33 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/BufferedOutputStream.html#write(int) */
-	override public function write(b:Int):Void;
+	/*@@@ modifiers=33 */ override public function write(b:Int):Void;
 
 }
 

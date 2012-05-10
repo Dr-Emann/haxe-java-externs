@@ -7,13 +7,13 @@ import java.lang.RuntimeException;
 extern class MissingResourceException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html#MissingResourceException(java.lang.String, java.lang.String, java.lang.String) */
-	public function new(s:String, className:String, key:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, className:String, key:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html#getClassName() */
-	public function getClassName():String;
+	/*@@@ modifiers=1 */ public function getClassName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingResourceException.html#getKey() */
-	public function getKey():String;
+	/*@@@ modifiers=1 */ public function getKey():String;
 
 }
 

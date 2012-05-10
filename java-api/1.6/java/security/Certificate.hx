@@ -10,25 +10,25 @@ import java.security.PublicKey;
 extern interface Certificate
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#decode(java.io.InputStream) */
-	public function decode(stream:InputStream):Void;
+	/*@@@ modifiers=1025 */ public function decode(stream:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#encode(java.io.OutputStream) */
-	public function encode(stream:OutputStream):Void;
+	/*@@@ modifiers=1025 */ public function encode(stream:OutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#getFormat() */
-	public function getFormat():String;
+	/*@@@ modifiers=1025 */ public function getFormat():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#getGuarantor() */
-	public function getGuarantor():Principal;
+	/*@@@ modifiers=1025 */ public function getGuarantor():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#getPrincipal() */
-	public function getPrincipal():Principal;
+	/*@@@ modifiers=1025 */ public function getPrincipal():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#getPublicKey() */
-	public function getPublicKey():PublicKey;
+	/*@@@ modifiers=1025 */ public function getPublicKey():PublicKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html#toString(boolean) */
-	public function toString(detailed:Bool):String;
+	/*@@@ modifiers=1025 */ public function toString(detailed:Bool):String;
 
 }
 

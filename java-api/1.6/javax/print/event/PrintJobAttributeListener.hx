@@ -7,7 +7,7 @@ import javax.print.event.PrintJobAttributeEvent;
 extern interface PrintJobAttributeListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent) */
-	public function attributeUpdate(pjae:PrintJobAttributeEvent):Void;
+	/*@@@ modifiers=1025 */ public function attributeUpdate(pjae:PrintJobAttributeEvent):Void;
 
 }
 

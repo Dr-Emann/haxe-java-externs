@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 extern interface RMIServerSocketFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMIServerSocketFactory.html#createServerSocket(int) */
-	public function createServerSocket(port:Int):ServerSocket;
+	/*@@@ modifiers=1025 */ public function createServerSocket(port:Int):ServerSocket;
 
 }
 

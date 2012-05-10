@@ -9,13 +9,13 @@ import java.lang.Throwable;
 extern class PrinterIOException extends PrinterException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/PrinterIOException.html#PrinterIOException(java.io.IOException) */
-	public function new(exception:IOException):Void;
+	/*@@@ modifiers=1 */ public function new(exception:IOException):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/PrinterIOException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/PrinterIOException.html#getIOException() */
-	public function getIOException():IOException;
+	/*@@@ modifiers=1 */ public function getIOException():IOException;
 
 }
 

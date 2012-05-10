@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 extern class DefaultTableCellRenderer_UIResource extends DefaultTableCellRenderer, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.UIResource.html#DefaultTableCellRenderer$UIResource() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

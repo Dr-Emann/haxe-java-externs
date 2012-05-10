@@ -7,7 +7,7 @@ import javax.net.ssl.SSLException;
 extern class SSLKeyException extends SSLException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLKeyException.html#SSLKeyException(java.lang.String) */
-	public function new(arg0:String):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:String):Void;
 
 }
 

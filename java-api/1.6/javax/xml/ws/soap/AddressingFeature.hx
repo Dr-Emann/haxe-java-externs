@@ -10,17 +10,17 @@ extern class AddressingFeature extends WebServiceFeature
 	private var required:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/AddressingFeature.html#AddressingFeature() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/AddressingFeature.html#AddressingFeature(boolean) */
-	@:overload(function (enabled:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (enabled:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/AddressingFeature.html#AddressingFeature(boolean, boolean) */
-	public function new(enabled:Bool, required:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(enabled:Bool, required:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/AddressingFeature.html#getID() */
-	override public function getID():String;
+	/*@@@ modifiers=1 */ override public function getID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/AddressingFeature.html#isRequired() */
-	public function isRequired():Bool;
+	/*@@@ modifiers=1 */ public function isRequired():Bool;
 
 }
 

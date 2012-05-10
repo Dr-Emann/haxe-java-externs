@@ -10,10 +10,10 @@ import javax.security.auth.login.Configuration_Parameters;
 extern class URIParameter extends Object, implements Policy_Parameters, implements Configuration_Parameters
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/URIParameter.html#URIParameter(java.net.URI) */
-	public function new(uri:URI):Void;
+	/*@@@ modifiers=1 */ public function new(uri:URI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/URIParameter.html#getURI() */
-	public function getURI():URI;
+	/*@@@ modifiers=1 */ public function getURI():URI;
 
 }
 

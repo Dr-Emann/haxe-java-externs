@@ -9,31 +9,31 @@ import java.util.concurrent.ConcurrentMap;
 extern interface ConcurrentNavigableMap<K : (Dynamic), V : (Dynamic)> implements ConcurrentMap<K, V>, implements NavigableMap<K, V>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet() */
-	public function descendingKeySet():NavigableSet<K>;
+	/*@@@ modifiers=1025 */ public function descendingKeySet():NavigableSet<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap() */
-	public function descendingMap():ConcurrentNavigableMap<K, V>;
+	/*@@@ modifiers=1025 */ public function descendingMap():ConcurrentNavigableMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object, boolean) */
-	@:overload(function (toKey:K, inclusive:Bool):ConcurrentNavigableMap<K, V> {})
+	/*@@@ modifiers=1025 */ @:overload(function (toKey:K, inclusive:Bool):ConcurrentNavigableMap<K, V> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object) */
-	public function headMap(toKey:K):ConcurrentNavigableMap<K, V>;
+	/*@@@ modifiers=1025 */ public function headMap(toKey:K):ConcurrentNavigableMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#keySet() */
-	public function keySet():NavigableSet<K>;
+	/*@@@ modifiers=1025 */ public function keySet():NavigableSet<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet() */
-	public function navigableKeySet():NavigableSet<K>;
+	/*@@@ modifiers=1025 */ public function navigableKeySet():NavigableSet<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object, boolean, java.lang.Object, boolean) */
-	@:overload(function (fromKey:K, fromInclusive:Bool, toKey:K, toInclusive:Bool):ConcurrentNavigableMap<K, V> {})
+	/*@@@ modifiers=1025 */ @:overload(function (fromKey:K, fromInclusive:Bool, toKey:K, toInclusive:Bool):ConcurrentNavigableMap<K, V> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object, java.lang.Object) */
-	public function subMap(fromKey:K, toKey:K):ConcurrentNavigableMap<K, V>;
+	/*@@@ modifiers=1025 */ public function subMap(fromKey:K, toKey:K):ConcurrentNavigableMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object, boolean) */
-	@:overload(function (fromKey:K, inclusive:Bool):ConcurrentNavigableMap<K, V> {})
+	/*@@@ modifiers=1025 */ @:overload(function (fromKey:K, inclusive:Bool):ConcurrentNavigableMap<K, V> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object) */
-	public function tailMap(fromKey:K):ConcurrentNavigableMap<K, V>;
+	/*@@@ modifiers=1025 */ public function tailMap(fromKey:K):ConcurrentNavigableMap<K, V>;
 
 }
 

@@ -7,16 +7,16 @@ import java.lang.Number;
 extern interface AccessibleValue
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleValue.html#getCurrentAccessibleValue() */
-	public function getCurrentAccessibleValue():Number;
+	/*@@@ modifiers=1025 */ public function getCurrentAccessibleValue():Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleValue.html#getMaximumAccessibleValue() */
-	public function getMaximumAccessibleValue():Number;
+	/*@@@ modifiers=1025 */ public function getMaximumAccessibleValue():Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleValue.html#getMinimumAccessibleValue() */
-	public function getMinimumAccessibleValue():Number;
+	/*@@@ modifiers=1025 */ public function getMinimumAccessibleValue():Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number) */
-	public function setCurrentAccessibleValue(n:Number):Bool;
+	/*@@@ modifiers=1025 */ public function setCurrentAccessibleValue(n:Number):Bool;
 
 }
 

@@ -8,7 +8,7 @@ import javax.swing.tree.TreePath;
 extern interface RowMapper
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/RowMapper.html#getRowsForPaths(javax.swing.tree.TreePath[]) */
-	public function getRowsForPaths(path:NativeArray<TreePath>):NativeArray<Int>;
+	/*@@@ modifiers=1025 */ public function getRowsForPaths(path:NativeArray<TreePath>):NativeArray<Int>;
 
 }
 

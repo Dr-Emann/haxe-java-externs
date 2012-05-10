@@ -7,13 +7,13 @@ import java.NativeArray;
 extern interface MemoryManagerMXBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryManagerMXBean.html#getMemoryPoolNames() */
-	public function getMemoryPoolNames():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getMemoryPoolNames():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryManagerMXBean.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryManagerMXBean.html#isValid() */
-	public function isValid():Bool;
+	/*@@@ modifiers=1025 */ public function isValid():Bool;
 
 }
 

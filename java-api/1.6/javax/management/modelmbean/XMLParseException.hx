@@ -7,11 +7,11 @@ import java.lang.Exception;
 extern class XMLParseException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/XMLParseException.html#XMLParseException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/XMLParseException.html#XMLParseException(java.lang.String) */
-	@:overload(function (s:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (s:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/XMLParseException.html#XMLParseException(java.lang.Exception, java.lang.String) */
-	public function new(e:Exception, s:String):Void;
+	/*@@@ modifiers=1 */ public function new(e:Exception, s:String):Void;
 
 }
 

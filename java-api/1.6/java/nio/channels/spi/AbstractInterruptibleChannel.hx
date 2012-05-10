@@ -9,22 +9,22 @@ import java.nio.channels.InterruptibleChannel;
 extern class AbstractInterruptibleChannel extends Object, implements Channel, implements InterruptibleChannel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractInterruptibleChannel.html#AbstractInterruptibleChannel() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractInterruptibleChannel.html#begin() */
-	private function begin():Void;
+	/*@@@ modifiers=20 */ private function begin():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractInterruptibleChannel.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=17 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractInterruptibleChannel.html#end(boolean) */
-	private function end(completed:Bool):Void;
+	/*@@@ modifiers=20 */ private function end(completed:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractInterruptibleChannel.html#implCloseChannel() */
-	private function implCloseChannel():Void;
+	/*@@@ modifiers=1028 */ private function implCloseChannel():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractInterruptibleChannel.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=17 */ public function isOpen():Bool;
 
 }
 

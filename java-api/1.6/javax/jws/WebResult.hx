@@ -7,16 +7,16 @@ import java.lang.annotation.Annotation;
 extern interface WebResult implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebResult.html#header() */
-	public function header():Bool;
+	/*@@@ modifiers=1025 */ public function header():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebResult.html#name() */
-	public function name():String;
+	/*@@@ modifiers=1025 */ public function name():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebResult.html#partName() */
-	public function partName():String;
+	/*@@@ modifiers=1025 */ public function partName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebResult.html#targetNamespace() */
-	public function targetNamespace():String;
+	/*@@@ modifiers=1025 */ public function targetNamespace():String;
 
 }
 

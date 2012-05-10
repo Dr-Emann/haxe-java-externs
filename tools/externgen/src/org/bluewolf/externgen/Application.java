@@ -42,12 +42,15 @@ public class Application {
 		.description(
 			"Generates Haxe external definitions for all Java types "
 				+ "imported by the Haxe source files within the specified "
-				+ "input directory. The program obtains information for "
-				+ "the types using the specified classpath. Additional "
-				+ "information such as argument names and Javadoc comments "
-				+ "can be extracted from corresponding Java source files "
-				+ "found within the directories of the specified source "
-				+ "path. ").defaultHelp(true);
+				+ "input directory and their dependencies. The program "
+				+ "obtains information for the types using the specified "
+				+ "classpath. Additional information such as meaningful "
+				+ "argument names and Javadoc comments can be extracted "
+				+ "from the corresponding Java source files found within "
+				+ "the directories of the specified source path.")
+		.epilog("The tool is incremental, i.e. manual changes to the "
+			+ "generated files will not be overriden.")
+		.defaultHelp(true);
 
 	argParser
 		.addArgument("-cp", "-classpath")
@@ -77,6 +80,10 @@ public class Application {
 		.dest("sourcepath")
 		.metavar("<directory>")
 		.help("the sourcepath containing the directories which will be searched for Java source code");
+	argParser.addArgument("-b", "-baseurl").type(String.class)
+		.setDefault("http://docs.oracle.com/javase/6/docs/api")
+		.dest("baseUrl").metavar("<url>")
+		.help("the base URL of the Javadocs of the generated externs");
 
 	// Parse the command line arguments.
 	//
@@ -137,9 +144,12 @@ public class Application {
 	    // Convert all types recursively.
 	    //
 
+	    Set<String> processedDependencies = new TreeSet<String>();
+
 	    for (String typeName : imports)
 		convertType(typeName, outputDir, classLoader,
-			new TreeSet<String>(), docExtractor);
+			processedDependencies, docExtractor,
+			results.getString("baseUrl"));
 
 	} catch (ArgumentParserException e) {
 	    argParser.handleError(e);
@@ -259,7 +269,7 @@ public class Application {
      */
     private static void convertType(String name, File outputDir,
 	    ClassLoader classLoader, Set<String> processedDependencies,
-	    JavadocExtractor docExtractor) {
+	    JavadocExtractor docExtractor, String docsBaseUrl) {
 	// Obtain a class object for the type using the specified class loader.
 	//
 
@@ -276,7 +286,7 @@ public class Application {
 	//
 
 	TypeDefinition typeDef = TypeDefinitionFactory.create(classObj,
-		docExtractor);
+		docExtractor, docsBaseUrl);
 	if (typeDef == null) {
 	    System.err.println("Type \"" + name + "\" is not convertible.");
 	    return;
@@ -365,7 +375,7 @@ public class Application {
 	for (String dep : dependencies) {
 	    if (processedDependencies.add(dep))
 		convertType(dep, outputDir, classLoader, processedDependencies,
-			docExtractor);
+			docExtractor, docsBaseUrl);
 	}
     }
 }

@@ -8,10 +8,10 @@ import java.lang.Throwable;
 extern class TypeNotPresentException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/TypeNotPresentException.html#TypeNotPresentException(java.lang.String, java.lang.Throwable) */
-	public function new(typeName:String, cause:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(typeName:String, cause:Throwable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/TypeNotPresentException.html#typeName() */
-	public function typeName():String;
+	/*@@@ modifiers=1 */ public function typeName():String;
 
 }
 

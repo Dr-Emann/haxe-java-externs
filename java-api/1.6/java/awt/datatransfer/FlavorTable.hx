@@ -9,10 +9,10 @@ import java.util.List;
 extern interface FlavorTable implements FlavorMap
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/FlavorTable.html#getFlavorsForNative(java.lang.String) */
-	public function getFlavorsForNative(nat:String):List<DataFlavor>;
+	/*@@@ modifiers=1025 */ public function getFlavorsForNative(nat:String):List<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/FlavorTable.html#getNativesForFlavor(java.awt.datatransfer.DataFlavor) */
-	public function getNativesForFlavor(flav:DataFlavor):List<String>;
+	/*@@@ modifiers=1025 */ public function getNativesForFlavor(flav:DataFlavor):List<String>;
 
 }
 

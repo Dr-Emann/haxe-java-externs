@@ -7,7 +7,7 @@ import javax.xml.stream.events.XMLEvent;
 extern interface XMLEventConsumer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/util/XMLEventConsumer.html#add(javax.xml.stream.events.XMLEvent) */
-	public function add(event:XMLEvent):Void;
+	/*@@@ modifiers=1025 */ public function add(event:XMLEvent):Void;
 
 }
 

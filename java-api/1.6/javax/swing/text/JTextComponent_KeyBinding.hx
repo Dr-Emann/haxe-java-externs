@@ -14,7 +14,7 @@ extern class JTextComponent_KeyBinding extends Object
 	public var actionName:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.KeyBinding.html#JTextComponent$KeyBinding(javax.swing.KeyStroke, java.lang.String) */
-	public function new(key:KeyStroke, actionName:String):Void;
+	/*@@@ modifiers=1 */ public function new(key:KeyStroke, actionName:String):Void;
 
 }
 

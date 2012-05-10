@@ -6,16 +6,16 @@ package javax.xml.soap;
 extern interface Name
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Name.html#getLocalName() */
-	public function getLocalName():String;
+	/*@@@ modifiers=1025 */ public function getLocalName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Name.html#getPrefix() */
-	public function getPrefix():String;
+	/*@@@ modifiers=1025 */ public function getPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Name.html#getQualifiedName() */
-	public function getQualifiedName():String;
+	/*@@@ modifiers=1025 */ public function getQualifiedName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Name.html#getURI() */
-	public function getURI():String;
+	/*@@@ modifiers=1025 */ public function getURI():String;
 
 }
 

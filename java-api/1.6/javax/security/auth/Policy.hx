@@ -10,19 +10,19 @@ import javax.security.auth.Subject;
 extern class Policy extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/Policy.html#Policy() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/Policy.html#getPermissions(javax.security.auth.Subject, java.security.CodeSource) */
-	public function getPermissions(subject:Subject, cs:CodeSource):PermissionCollection;
+	/*@@@ modifiers=1025 */ public function getPermissions(subject:Subject, cs:CodeSource):PermissionCollection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/Policy.html#getPolicy() */
-	static public function getPolicy():Policy;
+	/*@@@ modifiers=9 */ static public function getPolicy():Policy;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/Policy.html#refresh() */
-	public function refresh():Void;
+	/*@@@ modifiers=1025 */ public function refresh():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/Policy.html#setPolicy(javax.security.auth.Policy) */
-	static public function setPolicy(policy:Policy):Void;
+	/*@@@ modifiers=9 */ static public function setPolicy(policy:Policy):Void;
 
 }
 

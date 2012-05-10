@@ -10,10 +10,10 @@ import javax.swing.text.ViewFactory;
 extern class HTMLEditorKit_HTMLFactory extends Object, implements ViewFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#HTMLEditorKit$HTMLFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#create(javax.swing.text.Element) */
-	public function create(elem:Element):View;
+	/*@@@ modifiers=1 */ public function create(elem:Element):View;
 
 }
 

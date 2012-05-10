@@ -7,10 +7,10 @@ import javax.print.Doc;
 extern interface MultiDoc
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/MultiDoc.html#getDoc() */
-	public function getDoc():Doc;
+	/*@@@ modifiers=1025 */ public function getDoc():Doc;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/MultiDoc.html#next() */
-	public function next():MultiDoc;
+	/*@@@ modifiers=1025 */ public function next():MultiDoc;
 
 }
 

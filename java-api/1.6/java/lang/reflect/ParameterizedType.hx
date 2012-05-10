@@ -8,13 +8,13 @@ import java.lang.reflect.Type;
 extern interface ParameterizedType implements Type
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/ParameterizedType.html#getActualTypeArguments() */
-	public function getActualTypeArguments():NativeArray<Type>;
+	/*@@@ modifiers=1025 */ public function getActualTypeArguments():NativeArray<Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/ParameterizedType.html#getOwnerType() */
-	public function getOwnerType():Type;
+	/*@@@ modifiers=1025 */ public function getOwnerType():Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/ParameterizedType.html#getRawType() */
-	public function getRawType():Type;
+	/*@@@ modifiers=1025 */ public function getRawType():Type;
 
 }
 

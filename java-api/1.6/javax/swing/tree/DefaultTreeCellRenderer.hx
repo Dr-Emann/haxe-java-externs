@@ -48,117 +48,117 @@ extern class DefaultTreeCellRenderer extends JLabel, implements TreeCellRenderer
 	private var borderSelectionColor:Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#DefaultTreeCellRenderer() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, boolean, boolean) */
-	@:overload(function (propertyName:String, oldValue:Bool, newValue:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Bool, newValue:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, byte, byte) */
-	@:overload(function (propertyName:String, oldValue:Int8, newValue:Int8):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int8, newValue:Int8):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, char, char) */
-	@:overload(function (propertyName:String, oldValue:Char16, newValue:Char16):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Char16, newValue:Char16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, double, double) */
-	@:overload(function (propertyName:String, oldValue:StdFloat, newValue:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:StdFloat, newValue:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, float, float) */
-	@:overload(function (propertyName:String, oldValue:StdFloat, newValue:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Single, newValue:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, int, int) */
-	@:overload(function (propertyName:String, oldValue:Int, newValue:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int, newValue:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, long, long) */
-	@:overload(function (propertyName:String, oldValue:haxe.Int64, newValue:haxe.Int64):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:haxe.Int64, newValue:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, short, short) */
-	@:overload(function (propertyName:String, oldValue:Int16, newValue:Int16):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int16, newValue:Int16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundNonSelectionColor() */
-	public function getBackgroundNonSelectionColor():Color;
+	/*@@@ modifiers=1 */ public function getBackgroundNonSelectionColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundSelectionColor() */
-	public function getBackgroundSelectionColor():Color;
+	/*@@@ modifiers=1 */ public function getBackgroundSelectionColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getBorderSelectionColor() */
-	public function getBorderSelectionColor():Color;
+	/*@@@ modifiers=1 */ public function getBorderSelectionColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getClosedIcon() */
-	public function getClosedIcon():Icon;
+	/*@@@ modifiers=1 */ public function getClosedIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultClosedIcon() */
-	public function getDefaultClosedIcon():Icon;
+	/*@@@ modifiers=1 */ public function getDefaultClosedIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultLeafIcon() */
-	public function getDefaultLeafIcon():Icon;
+	/*@@@ modifiers=1 */ public function getDefaultLeafIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultOpenIcon() */
-	public function getDefaultOpenIcon():Icon;
+	/*@@@ modifiers=1 */ public function getDefaultOpenIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getFont() */
-	override public function getFont():Font;
+	/*@@@ modifiers=1 */ override public function getFont():Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getLeafIcon() */
-	public function getLeafIcon():Icon;
+	/*@@@ modifiers=1 */ public function getLeafIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getOpenIcon() */
-	public function getOpenIcon():Icon;
+	/*@@@ modifiers=1 */ public function getOpenIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getPreferredSize() */
-	override public function getPreferredSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getTextNonSelectionColor() */
-	public function getTextNonSelectionColor():Color;
+	/*@@@ modifiers=1 */ public function getTextNonSelectionColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getTextSelectionColor() */
-	public function getTextSelectionColor():Color;
+	/*@@@ modifiers=1 */ public function getTextSelectionColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean) */
-	public function getTreeCellRendererComponent(tree:JTree, value:Dynamic, sel:Bool, expanded:Bool, leaf:Bool, row:Int, hasFocus:Bool):Component;
+	/*@@@ modifiers=1 */ public function getTreeCellRendererComponent(tree:JTree, value:Dynamic, sel:Bool, expanded:Bool, leaf:Bool, row:Int, hasFocus:Bool):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#invalidate() */
-	override public function invalidate():Void;
+	/*@@@ modifiers=1 */ override public function invalidate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#paint(java.awt.Graphics) */
-	override public function paint(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#repaint(long, int, int, int, int) */
-	@:overload(function (tm:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (tm:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#repaint(java.awt.Rectangle) */
-	@:overload(function (r:Rectangle):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Rectangle):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#repaint() */
-	override public function repaint():Void;
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#revalidate() */
-	override public function revalidate():Void;
+	/*@@@ modifiers=1 */ override public function revalidate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setBackground(java.awt.Color) */
-	override public function setBackground(color:Color):Void;
+	/*@@@ modifiers=1 */ override public function setBackground(color:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundNonSelectionColor(java.awt.Color) */
-	public function setBackgroundNonSelectionColor(newColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setBackgroundNonSelectionColor(newColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundSelectionColor(java.awt.Color) */
-	public function setBackgroundSelectionColor(newColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setBackgroundSelectionColor(newColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setBorderSelectionColor(java.awt.Color) */
-	public function setBorderSelectionColor(newColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setBorderSelectionColor(newColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setClosedIcon(javax.swing.Icon) */
-	public function setClosedIcon(newIcon:Icon):Void;
+	/*@@@ modifiers=1 */ public function setClosedIcon(newIcon:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setFont(java.awt.Font) */
-	override public function setFont(font:Font):Void;
+	/*@@@ modifiers=1 */ override public function setFont(font:Font):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setLeafIcon(javax.swing.Icon) */
-	public function setLeafIcon(newIcon:Icon):Void;
+	/*@@@ modifiers=1 */ public function setLeafIcon(newIcon:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setOpenIcon(javax.swing.Icon) */
-	public function setOpenIcon(newIcon:Icon):Void;
+	/*@@@ modifiers=1 */ public function setOpenIcon(newIcon:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setTextNonSelectionColor(java.awt.Color) */
-	public function setTextNonSelectionColor(newColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setTextNonSelectionColor(newColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setTextSelectionColor(java.awt.Color) */
-	public function setTextSelectionColor(newColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setTextSelectionColor(newColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#validate() */
-	override public function validate():Void;
+	/*@@@ modifiers=1 */ override public function validate():Void;
 
 }
 

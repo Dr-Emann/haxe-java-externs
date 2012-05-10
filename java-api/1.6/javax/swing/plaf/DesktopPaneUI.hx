@@ -7,7 +7,7 @@ import javax.swing.plaf.ComponentUI;
 extern class DesktopPaneUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/DesktopPaneUI.html#DesktopPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

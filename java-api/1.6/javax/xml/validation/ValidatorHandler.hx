@@ -11,43 +11,40 @@ import org.xml.sax.ErrorHandler;
 extern class ValidatorHandler extends Object, implements ContentHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#ValidatorHandler() */
-	private function new():Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#endDocument() */
-	public function endDocument():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#getContentHandler() */
-	public function getContentHandler():ContentHandler;
+	/*@@@ modifiers=1025 */ public function getContentHandler():ContentHandler;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#getErrorHandler() */
-	public function getErrorHandler():ErrorHandler;
+	/*@@@ modifiers=1025 */ public function getErrorHandler():ErrorHandler;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#getFeature(java.lang.String) */
-	public function getFeature(name:String):Bool;
+	/*@@@ modifiers=1 */ public function getFeature(name:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#getProperty(java.lang.String) */
-	public function getProperty(name:String):Dynamic;
+	/*@@@ modifiers=1 */ public function getProperty(name:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#getResourceResolver() */
-	public function getResourceResolver():LSResourceResolver;
+	/*@@@ modifiers=1025 */ public function getResourceResolver():LSResourceResolver;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#getTypeInfoProvider() */
-	public function getTypeInfoProvider():TypeInfoProvider;
+	/*@@@ modifiers=1025 */ public function getTypeInfoProvider():TypeInfoProvider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#setContentHandler(org.xml.sax.ContentHandler) */
-	public function setContentHandler(receiver:ContentHandler):Void;
+	/*@@@ modifiers=1025 */ public function setContentHandler(receiver:ContentHandler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#setErrorHandler(org.xml.sax.ErrorHandler) */
-	public function setErrorHandler(errorHandler:ErrorHandler):Void;
+	/*@@@ modifiers=1025 */ public function setErrorHandler(errorHandler:ErrorHandler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#setFeature(java.lang.String, boolean) */
-	public function setFeature(name:String, value:Bool):Void;
+	/*@@@ modifiers=1 */ public function setFeature(name:String, value:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#setProperty(java.lang.String, java.lang.Object) */
-	public function setProperty(name:String, object:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setProperty(name:String, object:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/ValidatorHandler.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver) */
-	public function setResourceResolver(resourceResolver:LSResourceResolver):Void;
+	/*@@@ modifiers=1025 */ public function setResourceResolver(resourceResolver:LSResourceResolver):Void;
 
 }
 

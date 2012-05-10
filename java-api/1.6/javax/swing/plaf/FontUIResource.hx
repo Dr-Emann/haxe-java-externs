@@ -8,9 +8,9 @@ import javax.swing.plaf.UIResource;
 extern class FontUIResource extends Font, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/FontUIResource.html#FontUIResource(java.lang.String, int, int) */
-	@:overload(function (name:String, style:Int, size:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, style:Int, size:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/FontUIResource.html#FontUIResource(java.awt.Font) */
-	public function new(font:Font):Void;
+	/*@@@ modifiers=1 */ public function new(font:Font):Void;
 
 }
 

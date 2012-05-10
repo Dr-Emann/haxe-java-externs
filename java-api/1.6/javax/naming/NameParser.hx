@@ -7,7 +7,7 @@ import javax.naming.Name;
 extern interface NameParser
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NameParser.html#parse(java.lang.String) */
-	public function parse(name:String):Name;
+	/*@@@ modifiers=1025 */ public function parse(name:String):Name;
 
 }
 

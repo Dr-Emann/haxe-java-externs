@@ -7,9 +7,9 @@ import javax.naming.NamingException;
 extern class LimitExceededException extends NamingException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LimitExceededException.html#LimitExceededException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/LimitExceededException.html#LimitExceededException(java.lang.String) */
-	public function new(explanation:String):Void;
+	/*@@@ modifiers=1 */ public function new(explanation:String):Void;
 
 }
 

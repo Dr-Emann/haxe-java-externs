@@ -9,13 +9,13 @@ import java.awt.Insets;
 extern interface Border
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/Border.html#getBorderInsets(java.awt.Component) */
-	public function getBorderInsets(c:Component):Insets;
+	/*@@@ modifiers=1025 */ public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/Border.html#isBorderOpaque() */
-	public function isBorderOpaque():Bool;
+	/*@@@ modifiers=1025 */ public function isBorderOpaque():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/Border.html#paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1025 */ public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 }
 

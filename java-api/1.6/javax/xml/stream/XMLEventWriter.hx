@@ -10,30 +10,30 @@ import javax.xml.stream.util.XMLEventConsumer;
 extern interface XMLEventWriter implements XMLEventConsumer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.XMLEventReader) */
-	@:overload(function (reader:XMLEventReader):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (reader:XMLEventReader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.events.XMLEvent) */
-	public function add(event:XMLEvent):Void;
+	/*@@@ modifiers=1025 */ public function add(event:XMLEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#flush() */
-	public function flush():Void;
+	/*@@@ modifiers=1025 */ public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#getNamespaceContext() */
-	public function getNamespaceContext():NamespaceContext;
+	/*@@@ modifiers=1025 */ public function getNamespaceContext():NamespaceContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#getPrefix(java.lang.String) */
-	public function getPrefix(uri:String):String;
+	/*@@@ modifiers=1025 */ public function getPrefix(uri:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#setDefaultNamespace(java.lang.String) */
-	public function setDefaultNamespace(uri:String):Void;
+	/*@@@ modifiers=1025 */ public function setDefaultNamespace(uri:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#setNamespaceContext(javax.xml.namespace.NamespaceContext) */
-	public function setNamespaceContext(context:NamespaceContext):Void;
+	/*@@@ modifiers=1025 */ public function setNamespaceContext(context:NamespaceContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventWriter.html#setPrefix(java.lang.String, java.lang.String) */
-	public function setPrefix(prefix:String, uri:String):Void;
+	/*@@@ modifiers=1025 */ public function setPrefix(prefix:String, uri:String):Void;
 
 }
 

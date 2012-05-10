@@ -8,15 +8,15 @@ import java.util.Map;
 extern interface Ref
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Ref.html#getBaseTypeName() */
-	public function getBaseTypeName():String;
+	/*@@@ modifiers=1025 */ public function getBaseTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Ref.html#getObject(java.util.Map) */
-	@:overload(function (map:Map<String, Class<Dynamic>>):Dynamic {})
+	/*@@@ modifiers=1025 */ @:overload(function (map:Map<String, Class<Dynamic>>):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Ref.html#getObject() */
-	public function getObject():Dynamic;
+	/*@@@ modifiers=1025 */ public function getObject():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Ref.html#setObject(java.lang.Object) */
-	public function setObject(value:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function setObject(value:Dynamic):Void;
 
 }
 

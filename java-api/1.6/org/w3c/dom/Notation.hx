@@ -7,10 +7,10 @@ import org.w3c.dom.Node;
 extern interface Notation implements Node
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Notation.html#getPublicId() */
-	public function getPublicId():String;
+	/*@@@ modifiers=1025 */ public function getPublicId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Notation.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 }
 

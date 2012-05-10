@@ -37,106 +37,106 @@ extern class BasicOptionPaneUI extends OptionPaneUI
 	private var propertyChangeListener:PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#BasicOptionPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#addButtonComponents(java.awt.Container, java.lang.Object[], int) */
-	private function addButtonComponents(container:Container, buttons:NativeArray<Dynamic>, initialIndex:Int):Void;
+	/*@@@ modifiers=4 */ private function addButtonComponents(container:Container, buttons:NativeArray<Dynamic>, initialIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#addIcon(java.awt.Container) */
-	private function addIcon(top:Container):Void;
+	/*@@@ modifiers=4 */ private function addIcon(top:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#addMessageComponents(java.awt.Container, java.awt.GridBagConstraints, java.lang.Object, int, boolean) */
-	private function addMessageComponents(container:Container, cons:GridBagConstraints, msg:Dynamic, maxll:Int, internallyCreated:Bool):Void;
+	/*@@@ modifiers=4 */ private function addMessageComponents(container:Container, cons:GridBagConstraints, msg:Dynamic, maxll:Int, internallyCreated:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#burstStringInto(java.awt.Container, java.lang.String, int) */
-	private function burstStringInto(c:Container, d:String, maxll:Int):Void;
+	/*@@@ modifiers=4 */ private function burstStringInto(c:Container, d:String, maxll:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#containsCustomComponents(javax.swing.JOptionPane) */
-	override public function containsCustomComponents(op:JOptionPane):Bool;
+	/*@@@ modifiers=1 */ override public function containsCustomComponents(op:JOptionPane):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createButtonActionListener(int) */
-	private function createButtonActionListener(buttonIndex:Int):ActionListener;
+	/*@@@ modifiers=4 */ private function createButtonActionListener(buttonIndex:Int):ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createButtonArea() */
-	private function createButtonArea():Container;
+	/*@@@ modifiers=4 */ private function createButtonArea():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createLayoutManager() */
-	private function createLayoutManager():LayoutManager;
+	/*@@@ modifiers=4 */ private function createLayoutManager():LayoutManager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createMessageArea() */
-	private function createMessageArea():Container;
+	/*@@@ modifiers=4 */ private function createMessageArea():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createSeparator() */
-	private function createSeparator():Container;
+	/*@@@ modifiers=4 */ private function createSeparator():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getButtons() */
-	private function getButtons():NativeArray<Dynamic>;
+	/*@@@ modifiers=4 */ private function getButtons():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getIcon() */
-	private function getIcon():Icon;
+	/*@@@ modifiers=4 */ private function getIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getIconForType(int) */
-	private function getIconForType(messageType:Int):Icon;
+	/*@@@ modifiers=4 */ private function getIconForType(messageType:Int):Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getInitialValueIndex() */
-	private function getInitialValueIndex():Int;
+	/*@@@ modifiers=4 */ private function getInitialValueIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getMaxCharactersPerLineCount() */
-	private function getMaxCharactersPerLineCount():Int;
+	/*@@@ modifiers=4 */ private function getMaxCharactersPerLineCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getMessage() */
-	private function getMessage():Dynamic;
+	/*@@@ modifiers=4 */ private function getMessage():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getMinimumOptionPaneSize() */
-	public function getMinimumOptionPaneSize():Dimension;
+	/*@@@ modifiers=1 */ public function getMinimumOptionPaneSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#getSizeButtonsToSameWidth() */
-	private function getSizeButtonsToSameWidth():Bool;
+	/*@@@ modifiers=4 */ private function getSizeButtonsToSameWidth():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#installComponents() */
-	private function installComponents():Void;
+	/*@@@ modifiers=4 */ private function installComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#resetInputValue() */
-	private function resetInputValue():Void;
+	/*@@@ modifiers=4 */ private function resetInputValue():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#selectInitialValue(javax.swing.JOptionPane) */
-	override public function selectInitialValue(op:JOptionPane):Void;
+	/*@@@ modifiers=1 */ override public function selectInitialValue(op:JOptionPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#uninstallComponents() */
-	private function uninstallComponents():Void;
+	/*@@@ modifiers=4 */ private function uninstallComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

@@ -2,7 +2,6 @@ package javax.sound.midi;
 
 import java.NativeArray;
 import java.io.InputStream;
-import java.lang.Number;
 import javax.sound.midi.ControllerEventListener;
 import javax.sound.midi.MetaEventListener;
 import javax.sound.midi.MidiDevice;
@@ -15,132 +14,132 @@ import javax.sound.midi.Track;
 extern interface Sequencer implements MidiDevice
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener, int[]) */
-	public function addControllerEventListener(listener:ControllerEventListener, controllers:NativeArray<Int>):NativeArray<Int>;
+	/*@@@ modifiers=1025 */ public function addControllerEventListener(listener:ControllerEventListener, controllers:NativeArray<Int>):NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#addMetaEventListener(javax.sound.midi.MetaEventListener) */
-	public function addMetaEventListener(listener:MetaEventListener):Bool;
+	/*@@@ modifiers=1025 */ public function addMetaEventListener(listener:MetaEventListener):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getLoopCount() */
-	public function getLoopCount():Int;
+	/*@@@ modifiers=1025 */ public function getLoopCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getLoopEndPoint() */
-	public function getLoopEndPoint():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getLoopEndPoint():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getLoopStartPoint() */
-	public function getLoopStartPoint():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getLoopStartPoint():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getMasterSyncMode() */
-	public function getMasterSyncMode():Sequencer_SyncMode;
+	/*@@@ modifiers=1025 */ public function getMasterSyncMode():Sequencer_SyncMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getMasterSyncModes() */
-	public function getMasterSyncModes():NativeArray<Sequencer_SyncMode>;
+	/*@@@ modifiers=1025 */ public function getMasterSyncModes():NativeArray<Sequencer_SyncMode>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getMicrosecondLength() */
-	public function getMicrosecondLength():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getMicrosecondLength():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getMicrosecondPosition() */
-	public function getMicrosecondPosition():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getMicrosecondPosition():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getSequence() */
-	public function getSequence():Sequence;
+	/*@@@ modifiers=1025 */ public function getSequence():Sequence;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getSlaveSyncMode() */
-	public function getSlaveSyncMode():Sequencer_SyncMode;
+	/*@@@ modifiers=1025 */ public function getSlaveSyncMode():Sequencer_SyncMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getSlaveSyncModes() */
-	public function getSlaveSyncModes():NativeArray<Sequencer_SyncMode>;
+	/*@@@ modifiers=1025 */ public function getSlaveSyncModes():NativeArray<Sequencer_SyncMode>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTempoFactor() */
-	public function getTempoFactor():StdFloat;
+	/*@@@ modifiers=1025 */ public function getTempoFactor():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTempoInBPM() */
-	public function getTempoInBPM():StdFloat;
+	/*@@@ modifiers=1025 */ public function getTempoInBPM():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTempoInMPQ() */
-	public function getTempoInMPQ():StdFloat;
+	/*@@@ modifiers=1025 */ public function getTempoInMPQ():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTickLength() */
-	public function getTickLength():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getTickLength():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTickPosition() */
-	public function getTickPosition():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getTickPosition():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTrackMute(int) */
-	public function getTrackMute(track:Int):Bool;
+	/*@@@ modifiers=1025 */ public function getTrackMute(track:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#getTrackSolo(int) */
-	public function getTrackSolo(track:Int):Bool;
+	/*@@@ modifiers=1025 */ public function getTrackSolo(track:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#isRecording() */
-	public function isRecording():Bool;
+	/*@@@ modifiers=1025 */ public function isRecording():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#isRunning() */
-	public function isRunning():Bool;
+	/*@@@ modifiers=1025 */ public function isRunning():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#recordDisable(javax.sound.midi.Track) */
-	public function recordDisable(track:Track):Void;
+	/*@@@ modifiers=1025 */ public function recordDisable(track:Track):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#recordEnable(javax.sound.midi.Track, int) */
-	public function recordEnable(track:Track, channel:Int):Void;
+	/*@@@ modifiers=1025 */ public function recordEnable(track:Track, channel:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#removeControllerEventListener(javax.sound.midi.ControllerEventListener, int[]) */
-	public function removeControllerEventListener(listener:ControllerEventListener, controllers:NativeArray<Int>):NativeArray<Int>;
+	/*@@@ modifiers=1025 */ public function removeControllerEventListener(listener:ControllerEventListener, controllers:NativeArray<Int>):NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#removeMetaEventListener(javax.sound.midi.MetaEventListener) */
-	public function removeMetaEventListener(listener:MetaEventListener):Void;
+	/*@@@ modifiers=1025 */ public function removeMetaEventListener(listener:MetaEventListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setLoopCount(int) */
-	public function setLoopCount(count:Int):Void;
+	/*@@@ modifiers=1025 */ public function setLoopCount(count:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setLoopEndPoint(long) */
-	public function setLoopEndPoint(tick:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function setLoopEndPoint(tick:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setLoopStartPoint(long) */
-	public function setLoopStartPoint(tick:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function setLoopStartPoint(tick:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setMasterSyncMode(javax.sound.midi.Sequencer$SyncMode) */
-	public function setMasterSyncMode(sync:Sequencer_SyncMode):Void;
+	/*@@@ modifiers=1025 */ public function setMasterSyncMode(sync:Sequencer_SyncMode):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setMicrosecondPosition(long) */
-	public function setMicrosecondPosition(microseconds:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function setMicrosecondPosition(microseconds:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setSequence(java.io.InputStream) */
-	@:overload(function (stream:InputStream):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (stream:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setSequence(javax.sound.midi.Sequence) */
-	public function setSequence(sequence:Sequence):Void;
+	/*@@@ modifiers=1025 */ public function setSequence(sequence:Sequence):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setSlaveSyncMode(javax.sound.midi.Sequencer$SyncMode) */
-	public function setSlaveSyncMode(sync:Sequencer_SyncMode):Void;
+	/*@@@ modifiers=1025 */ public function setSlaveSyncMode(sync:Sequencer_SyncMode):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setTempoFactor(float) */
-	public function setTempoFactor(factor:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function setTempoFactor(factor:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setTempoInBPM(float) */
-	public function setTempoInBPM(bpm:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function setTempoInBPM(bpm:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setTempoInMPQ(float) */
-	public function setTempoInMPQ(mpq:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function setTempoInMPQ(mpq:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setTickPosition(long) */
-	public function setTickPosition(tick:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function setTickPosition(tick:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setTrackMute(int, boolean) */
-	public function setTrackMute(track:Int, mute:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setTrackMute(track:Int, mute:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#setTrackSolo(int, boolean) */
-	public function setTrackSolo(track:Int, solo:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setTrackSolo(track:Int, solo:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#start() */
-	public function start():Void;
+	/*@@@ modifiers=1025 */ public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#startRecording() */
-	public function startRecording():Void;
+	/*@@@ modifiers=1025 */ public function startRecording():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1025 */ public function stop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/Sequencer.html#stopRecording() */
-	public function stopRecording():Void;
+	/*@@@ modifiers=1025 */ public function stopRecording():Void;
 
 }
 

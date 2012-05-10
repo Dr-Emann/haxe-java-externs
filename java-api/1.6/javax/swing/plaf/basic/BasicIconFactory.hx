@@ -9,31 +9,31 @@ import javax.swing.Icon;
 extern class BasicIconFactory extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#BasicIconFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#createEmptyFrameIcon() */
-	static public function createEmptyFrameIcon():Icon;
+	/*@@@ modifiers=9 */ static public function createEmptyFrameIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxIcon() */
-	static public function getCheckBoxIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getCheckBoxIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxMenuItemIcon() */
-	static public function getCheckBoxMenuItemIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getCheckBoxMenuItemIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getMenuArrowIcon() */
-	static public function getMenuArrowIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getMenuArrowIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemArrowIcon() */
-	static public function getMenuItemArrowIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getMenuItemArrowIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemCheckIcon() */
-	static public function getMenuItemCheckIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getMenuItemCheckIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonIcon() */
-	static public function getRadioButtonIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getRadioButtonIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonMenuItemIcon() */
-	static public function getRadioButtonMenuItemIcon():Icon;
+	/*@@@ modifiers=9 */ static public function getRadioButtonMenuItemIcon():Icon;
 
 }
 

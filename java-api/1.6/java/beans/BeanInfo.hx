@@ -12,28 +12,28 @@ import java.beans.PropertyDescriptor;
 extern interface BeanInfo
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getAdditionalBeanInfo() */
-	public function getAdditionalBeanInfo():NativeArray<BeanInfo>;
+	/*@@@ modifiers=1025 */ public function getAdditionalBeanInfo():NativeArray<BeanInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getBeanDescriptor() */
-	public function getBeanDescriptor():BeanDescriptor;
+	/*@@@ modifiers=1025 */ public function getBeanDescriptor():BeanDescriptor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getDefaultEventIndex() */
-	public function getDefaultEventIndex():Int;
+	/*@@@ modifiers=1025 */ public function getDefaultEventIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getDefaultPropertyIndex() */
-	public function getDefaultPropertyIndex():Int;
+	/*@@@ modifiers=1025 */ public function getDefaultPropertyIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getEventSetDescriptors() */
-	public function getEventSetDescriptors():NativeArray<EventSetDescriptor>;
+	/*@@@ modifiers=1025 */ public function getEventSetDescriptors():NativeArray<EventSetDescriptor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getIcon(int) */
-	public function getIcon(iconKind:Int):Image;
+	/*@@@ modifiers=1025 */ public function getIcon(iconKind:Int):Image;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getMethodDescriptors() */
-	public function getMethodDescriptors():NativeArray<MethodDescriptor>;
+	/*@@@ modifiers=1025 */ public function getMethodDescriptors():NativeArray<MethodDescriptor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/BeanInfo.html#getPropertyDescriptors() */
-	public function getPropertyDescriptors():NativeArray<PropertyDescriptor>;
+	/*@@@ modifiers=1025 */ public function getPropertyDescriptors():NativeArray<PropertyDescriptor>;
 
 }
 

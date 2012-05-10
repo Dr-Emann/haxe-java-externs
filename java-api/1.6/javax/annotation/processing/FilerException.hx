@@ -7,7 +7,7 @@ import java.io.IOException;
 extern class FilerException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/FilerException.html#FilerException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

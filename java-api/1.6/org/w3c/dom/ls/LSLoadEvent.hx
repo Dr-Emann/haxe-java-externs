@@ -9,10 +9,10 @@ import org.w3c.dom.ls.LSInput;
 extern interface LSLoadEvent implements Event
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSLoadEvent.html#getInput() */
-	public function getInput():LSInput;
+	/*@@@ modifiers=1025 */ public function getInput():LSInput;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSLoadEvent.html#getNewDocument() */
-	public function getNewDocument():Document;
+	/*@@@ modifiers=1025 */ public function getNewDocument():Document;
 
 }
 

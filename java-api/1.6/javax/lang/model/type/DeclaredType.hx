@@ -10,13 +10,13 @@ import javax.lang.model.type.TypeMirror;
 extern interface DeclaredType implements ReferenceType
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/DeclaredType.html#asElement() */
-	public function asElement():Element;
+	/*@@@ modifiers=1025 */ public function asElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/DeclaredType.html#getEnclosingType() */
-	public function getEnclosingType():TypeMirror;
+	/*@@@ modifiers=1025 */ public function getEnclosingType():TypeMirror;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/DeclaredType.html#getTypeArguments() */
-	public function getTypeArguments():List<TypeMirror>;
+	/*@@@ modifiers=1025 */ public function getTypeArguments():List<TypeMirror>;
 
 }
 

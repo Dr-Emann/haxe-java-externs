@@ -8,10 +8,10 @@ import javax.sql.ConnectionEvent;
 extern interface ConnectionEventListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent) */
-	public function connectionClosed(event:ConnectionEvent):Void;
+	/*@@@ modifiers=1025 */ public function connectionClosed(event:ConnectionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent) */
-	public function connectionErrorOccurred(event:ConnectionEvent):Void;
+	/*@@@ modifiers=1025 */ public function connectionErrorOccurred(event:ConnectionEvent):Void;
 
 }
 

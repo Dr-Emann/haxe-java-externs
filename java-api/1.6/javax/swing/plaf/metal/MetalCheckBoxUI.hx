@@ -10,19 +10,19 @@ import javax.swing.plaf.metal.MetalRadioButtonUI;
 extern class MetalCheckBoxUI extends MetalRadioButtonUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalCheckBoxUI.html#MetalCheckBoxUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalCheckBoxUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(b:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(b:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalCheckBoxUI.html#getPropertyPrefix() */
-	override public function getPropertyPrefix():String;
+	/*@@@ modifiers=1 */ override public function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalCheckBoxUI.html#installDefaults(javax.swing.AbstractButton) */
-	override public function installDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=1 */ override public function installDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalCheckBoxUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
 
 }
 

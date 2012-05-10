@@ -6,7 +6,7 @@ package java.util.concurrent;
 extern interface Callable<V : (Dynamic)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Callable.html#call() */
-	public function call():V;
+	/*@@@ modifiers=1025 */ public function call():V;
 
 }
 

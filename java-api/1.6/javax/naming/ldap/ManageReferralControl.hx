@@ -7,9 +7,9 @@ import javax.naming.ldap.BasicControl;
 extern class ManageReferralControl extends BasicControl
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/ManageReferralControl.html#ManageReferralControl() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/ManageReferralControl.html#ManageReferralControl(boolean) */
-	public function new(criticality:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(criticality:Bool):Void;
 
 }
 

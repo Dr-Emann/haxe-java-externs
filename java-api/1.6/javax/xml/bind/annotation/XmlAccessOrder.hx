@@ -14,10 +14,10 @@ extern class XmlAccessOrder extends Enum<XmlAccessOrder>
 	public static var ALPHABETICAL:XmlAccessOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAccessOrder.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):XmlAccessOrder;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):XmlAccessOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAccessOrder.html#values() */
-	static public function values():NativeArray<XmlAccessOrder>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<XmlAccessOrder>;
 
 }
 

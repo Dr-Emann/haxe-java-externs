@@ -10,15 +10,15 @@ import javax.swing.SpinnerDateModel;
 extern class JSpinner_DateEditor extends JSpinner_DefaultEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DateEditor.html#JSpinner$DateEditor(javax.swing.JSpinner) */
-	@:overload(function (spinner:JSpinner):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (spinner:JSpinner):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DateEditor.html#JSpinner$DateEditor(javax.swing.JSpinner, java.lang.String) */
-	public function new(spinner:JSpinner, dateFormatPattern:String):Void;
+	/*@@@ modifiers=1 */ public function new(spinner:JSpinner, dateFormatPattern:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DateEditor.html#getFormat() */
-	public function getFormat():SimpleDateFormat;
+	/*@@@ modifiers=1 */ public function getFormat():SimpleDateFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DateEditor.html#getModel() */
-	public function getModel():SpinnerDateModel;
+	/*@@@ modifiers=1 */ public function getModel():SpinnerDateModel;
 
 }
 

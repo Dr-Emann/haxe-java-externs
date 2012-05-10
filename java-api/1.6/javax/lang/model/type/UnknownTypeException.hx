@@ -8,13 +8,13 @@ import javax.lang.model.type.TypeMirror;
 extern class UnknownTypeException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/UnknownTypeException.html#UnknownTypeException(javax.lang.model.type.TypeMirror, java.lang.Object) */
-	public function new(t:TypeMirror, p:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(t:TypeMirror, p:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/UnknownTypeException.html#getArgument() */
-	public function getArgument():Dynamic;
+	/*@@@ modifiers=1 */ public function getArgument():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/type/UnknownTypeException.html#getUnknownType() */
-	public function getUnknownType():TypeMirror;
+	/*@@@ modifiers=1 */ public function getUnknownType():TypeMirror;
 
 }
 

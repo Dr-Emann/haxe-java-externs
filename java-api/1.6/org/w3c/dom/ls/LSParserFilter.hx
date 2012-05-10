@@ -9,13 +9,13 @@ import org.w3c.dom.Node;
 extern interface LSParserFilter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node) */
-	public function acceptNode(nodeArg:Node):Int16;
+	/*@@@ modifiers=1025 */ public function acceptNode(nodeArg:Node):Int16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSParserFilter.html#getWhatToShow() */
-	public function getWhatToShow():Int;
+	/*@@@ modifiers=1025 */ public function getWhatToShow():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element) */
-	public function startElement(elementArg:Element):Int16;
+	/*@@@ modifiers=1025 */ public function startElement(elementArg:Element):Int16;
 
 }
 

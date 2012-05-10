@@ -11,73 +11,75 @@ extern class LongBuffer extends Buffer, implements Comparable<LongBuffer>
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#allocate(int) */
-	static public function allocate(capacity:Int):LongBuffer;
+	/*@@@ modifiers=9 */ static public function allocate(capacity:Int):LongBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#array() */
-	override public function array():Dynamic;
+	/*@@@ modifiers=17 */ @:overload(function ():NativeArray<haxe.Int64> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#array() */
+	/*@@@ modifiers=4161 */ override public function array():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#arrayOffset() */
-	override public function arrayOffset():Int;
+	/*@@@ modifiers=17 */ override public function arrayOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#asReadOnlyBuffer() */
-	public function asReadOnlyBuffer():LongBuffer;
+	/*@@@ modifiers=1025 */ public function asReadOnlyBuffer():LongBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#compact() */
-	public function compact():LongBuffer;
+	/*@@@ modifiers=1025 */ public function compact():LongBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#compareTo(java.lang.Object) */
-	@:overload(function (p0:Dynamic):Int {})
+	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#compareTo(java.nio.LongBuffer) */
-	public function compareTo(that:LongBuffer):Int;
+	/*@@@ modifiers=1 */ public function compareTo(that:LongBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#duplicate() */
-	public function duplicate():LongBuffer;
+	/*@@@ modifiers=1025 */ public function duplicate():LongBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#equals(java.lang.Object) */
-	override public function equals(ob:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(ob:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get(long[], int, int) */
-	@:overload(function (dst:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (dst:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get(int) */
-	@:overload(function (index:Int):haxe.Int64 {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get(long[]) */
-	@:overload(function (dst:NativeArray<haxe.Int64>):LongBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (dst:NativeArray<haxe.Int64>):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#get() */
-	public function get():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function get():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#hasArray() */
-	override public function hasArray():Bool;
+	/*@@@ modifiers=17 */ override public function hasArray():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#isDirect() */
-	override public function isDirect():Bool;
+	/*@@@ modifiers=1025 */ override public function isDirect():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#order() */
-	public function order():ByteOrder;
+	/*@@@ modifiers=1025 */ public function order():ByteOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(long[], int, int) */
-	@:overload(function (src:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
+	/*@@@ modifiers=1 */ @:overload(function (src:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(int, long) */
-	@:overload(function (index:Int, l:haxe.Int64):LongBuffer {})
+	/*@@@ modifiers=1025 */ @:overload(function (index:Int, l:haxe.Int64):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(long) */
-	@:overload(function (l:haxe.Int64):LongBuffer {})
+	/*@@@ modifiers=1025 */ @:overload(function (l:haxe.Int64):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(long[]) */
-	@:overload(function (src:NativeArray<haxe.Int64>):LongBuffer {})
+	/*@@@ modifiers=17 */ @:overload(function (src:NativeArray<haxe.Int64>):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#put(java.nio.LongBuffer) */
-	public function put(src:LongBuffer):LongBuffer;
+	/*@@@ modifiers=1 */ public function put(src:LongBuffer):LongBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#slice() */
-	public function slice():LongBuffer;
+	/*@@@ modifiers=1025 */ public function slice():LongBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#wrap(long[], int, int) */
-	@:overload(function (array:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
+	/*@@@ modifiers=9 */ @:overload(function (array:NativeArray<haxe.Int64>, offset:Int, length:Int):LongBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/LongBuffer.html#wrap(long[]) */
-	static public function wrap(array:NativeArray<haxe.Int64>):LongBuffer;
+	/*@@@ modifiers=9 */ static public function wrap(array:NativeArray<haxe.Int64>):LongBuffer;
 
 }
 

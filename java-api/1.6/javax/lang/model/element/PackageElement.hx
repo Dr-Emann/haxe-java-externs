@@ -8,10 +8,10 @@ import javax.lang.model.element.Name;
 extern interface PackageElement implements Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/PackageElement.html#getQualifiedName() */
-	public function getQualifiedName():Name;
+	/*@@@ modifiers=1025 */ public function getQualifiedName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/PackageElement.html#isUnnamed() */
-	public function isUnnamed():Bool;
+	/*@@@ modifiers=1025 */ public function isUnnamed():Bool;
 
 }
 

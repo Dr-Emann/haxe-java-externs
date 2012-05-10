@@ -8,7 +8,7 @@ import javax.sql.RowSet;
 extern class RowSetEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetEvent.html#RowSetEvent(javax.sql.RowSet) */
-	public function new(source:RowSet):Void;
+	/*@@@ modifiers=1 */ public function new(source:RowSet):Void;
 
 }
 

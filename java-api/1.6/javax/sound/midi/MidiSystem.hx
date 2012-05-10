@@ -22,60 +22,60 @@ extern class MidiSystem extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiDevice(javax.sound.midi.MidiDevice$Info) */
-	static public function getMidiDevice(info:MidiDevice_Info):MidiDevice;
+	/*@@@ modifiers=9 */ static public function getMidiDevice(info:MidiDevice_Info):MidiDevice;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiDeviceInfo() */
-	static public function getMidiDeviceInfo():NativeArray<MidiDevice_Info>;
+	/*@@@ modifiers=9 */ static public function getMidiDeviceInfo():NativeArray<MidiDevice_Info>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.io.File) */
-	@:overload(function (file:File):MidiFileFormat {})
+	/*@@@ modifiers=9 */ @:overload(function (file:File):MidiFileFormat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.io.InputStream) */
-	@:overload(function (stream:InputStream):MidiFileFormat {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:InputStream):MidiFileFormat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.net.URL) */
-	static public function getMidiFileFormat(url:URL):MidiFileFormat;
+	/*@@@ modifiers=9 */ static public function getMidiFileFormat(url:URL):MidiFileFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiFileTypes(javax.sound.midi.Sequence) */
-	@:overload(function (sequence:Sequence):NativeArray<Int> {})
+	/*@@@ modifiers=9 */ @:overload(function (sequence:Sequence):NativeArray<Int> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getMidiFileTypes() */
-	static public function getMidiFileTypes():NativeArray<Int>;
+	/*@@@ modifiers=9 */ static public function getMidiFileTypes():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getReceiver() */
-	static public function getReceiver():Receiver;
+	/*@@@ modifiers=9 */ static public function getReceiver():Receiver;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSequence(java.io.File) */
-	@:overload(function (file:File):Sequence {})
+	/*@@@ modifiers=9 */ @:overload(function (file:File):Sequence {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSequence(java.io.InputStream) */
-	@:overload(function (stream:InputStream):Sequence {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:InputStream):Sequence {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSequence(java.net.URL) */
-	static public function getSequence(url:URL):Sequence;
+	/*@@@ modifiers=9 */ static public function getSequence(url:URL):Sequence;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSequencer(boolean) */
-	@:overload(function (connected:Bool):Sequencer {})
+	/*@@@ modifiers=9 */ @:overload(function (connected:Bool):Sequencer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSequencer() */
-	static public function getSequencer():Sequencer;
+	/*@@@ modifiers=9 */ static public function getSequencer():Sequencer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSoundbank(java.io.File) */
-	@:overload(function (file:File):Soundbank {})
+	/*@@@ modifiers=9 */ @:overload(function (file:File):Soundbank {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSoundbank(java.io.InputStream) */
-	@:overload(function (stream:InputStream):Soundbank {})
+	/*@@@ modifiers=9 */ @:overload(function (stream:InputStream):Soundbank {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSoundbank(java.net.URL) */
-	static public function getSoundbank(url:URL):Soundbank;
+	/*@@@ modifiers=9 */ static public function getSoundbank(url:URL):Soundbank;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getSynthesizer() */
-	static public function getSynthesizer():Synthesizer;
+	/*@@@ modifiers=9 */ static public function getSynthesizer():Synthesizer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#getTransmitter() */
-	static public function getTransmitter():Transmitter;
+	/*@@@ modifiers=9 */ static public function getTransmitter():Transmitter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int, javax.sound.midi.Sequence) */
-	@:overload(function (fileType:Int, sequence:Sequence):Bool {})
+	/*@@@ modifiers=9 */ @:overload(function (fileType:Int, sequence:Sequence):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int) */
-	static public function isFileTypeSupported(fileType:Int):Bool;
+	/*@@@ modifiers=9 */ static public function isFileTypeSupported(fileType:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence, int, java.io.File) */
-	@:overload(function (_in:Sequence, type:Int, out:File):Int {})
+	/*@@@ modifiers=9 */ @:overload(function (_in:Sequence, type:Int, out:File):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence, int, java.io.OutputStream) */
-	static public function write(_in:Sequence, fileType:Int, out:OutputStream):Int;
+	/*@@@ modifiers=9 */ static public function write(_in:Sequence, fileType:Int, out:OutputStream):Int;
 
 }
 

@@ -10,19 +10,19 @@ import javax.naming.ldap.BasicControl;
 extern class SortResponseControl extends BasicControl
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortResponseControl.html#SortResponseControl(java.lang.String, boolean, byte[]) */
-	public function new(id:String, criticality:Bool, value:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function new(id:String, criticality:Bool, value:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortResponseControl.html#getAttributeID() */
-	public function getAttributeID():String;
+	/*@@@ modifiers=1 */ public function getAttributeID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortResponseControl.html#getException() */
-	public function getException():NamingException;
+	/*@@@ modifiers=1 */ public function getException():NamingException;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortResponseControl.html#getResultCode() */
-	public function getResultCode():Int;
+	/*@@@ modifiers=1 */ public function getResultCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortResponseControl.html#isSorted() */
-	public function isSorted():Bool;
+	/*@@@ modifiers=1 */ public function isSorted():Bool;
 
 }
 

@@ -13,25 +13,25 @@ import javax.lang.model.util.Types;
 extern interface ProcessingEnvironment
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getElementUtils() */
-	public function getElementUtils():Elements;
+	/*@@@ modifiers=1025 */ public function getElementUtils():Elements;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getFiler() */
-	public function getFiler():Filer;
+	/*@@@ modifiers=1025 */ public function getFiler():Filer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getLocale() */
-	public function getLocale():Locale;
+	/*@@@ modifiers=1025 */ public function getLocale():Locale;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getMessager() */
-	public function getMessager():Messager;
+	/*@@@ modifiers=1025 */ public function getMessager():Messager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getOptions() */
-	public function getOptions():Map<String, String>;
+	/*@@@ modifiers=1025 */ public function getOptions():Map<String, String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getSourceVersion() */
-	public function getSourceVersion():SourceVersion;
+	/*@@@ modifiers=1025 */ public function getSourceVersion():SourceVersion;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/ProcessingEnvironment.html#getTypeUtils() */
-	public function getTypeUtils():Types;
+	/*@@@ modifiers=1025 */ public function getTypeUtils():Types;
 
 }
 

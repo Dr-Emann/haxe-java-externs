@@ -8,10 +8,10 @@ import java.lang.reflect.Type;
 extern interface WildcardType implements Type
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/WildcardType.html#getLowerBounds() */
-	public function getLowerBounds():NativeArray<Type>;
+	/*@@@ modifiers=1025 */ public function getLowerBounds():NativeArray<Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/WildcardType.html#getUpperBounds() */
-	public function getUpperBounds():NativeArray<Type>;
+	/*@@@ modifiers=1025 */ public function getUpperBounds():NativeArray<Type>;
 
 }
 

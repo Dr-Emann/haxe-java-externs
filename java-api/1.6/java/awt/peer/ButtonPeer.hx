@@ -7,7 +7,7 @@ import java.awt.peer.ComponentPeer;
 extern interface ButtonPeer implements ComponentPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ButtonPeer.html#setLabel(java.lang.String) */
-	public function setLabel(label:String):Void;
+	/*@@@ modifiers=1025 */ public function setLabel(label:String):Void;
 
 }
 

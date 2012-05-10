@@ -7,7 +7,7 @@ import java.lang.ClassFormatError;
 extern class GenericSignatureFormatError extends ClassFormatError
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/GenericSignatureFormatError.html#GenericSignatureFormatError() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

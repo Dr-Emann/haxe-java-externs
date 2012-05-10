@@ -9,9 +9,9 @@ extern class Completions extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/Completions.html#of(java.lang.String, java.lang.String) */
-	@:overload(function (value:String, message:String):Completion {})
+	/*@@@ modifiers=9 */ @:overload(function (value:String, message:String):Completion {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/Completions.html#of(java.lang.String) */
-	static public function of(value:String):Completion;
+	/*@@@ modifiers=9 */ static public function of(value:String):Completion;
 
 }
 

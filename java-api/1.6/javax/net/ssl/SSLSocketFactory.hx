@@ -9,19 +9,19 @@ import javax.net.SocketFactory;
 extern class SSLSocketFactory extends SocketFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSocketFactory.html#SSLSocketFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket, java.lang.String, int, boolean) */
-	override public function createSocket(arg0:Socket, arg1:String, arg2:Int, arg3:Bool):Socket;
+	/*@@@ modifiers=1025 */ override public function createSocket(arg0:Socket, arg1:String, arg2:Int, arg3:Bool):Socket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSocketFactory.html#getDefault() */
-	static public function getDefault():SocketFactory;
+	/*@@@ modifiers=41 */ static public function getDefault():SocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSocketFactory.html#getDefaultCipherSuites() */
-	public function getDefaultCipherSuites():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getDefaultCipherSuites():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSocketFactory.html#getSupportedCipherSuites() */
-	public function getSupportedCipherSuites():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getSupportedCipherSuites():NativeArray<String>;
 
 }
 

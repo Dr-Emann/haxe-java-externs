@@ -9,7 +9,7 @@ import javax.xml.ws.WebServiceRef;
 extern interface WebServiceRefs implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebServiceRefs.html#value() */
-	public function value():NativeArray<WebServiceRef>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<WebServiceRef>;
 
 }
 

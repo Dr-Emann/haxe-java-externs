@@ -79,94 +79,94 @@ extern class BasicListUI extends ListUI
 	private static var cellRendererChanged:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#BasicListUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#convertRowToY(int) */
-	private function convertRowToY(row:Int):Int;
+	/*@@@ modifiers=4 */ private function convertRowToY(row:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#convertYToRow(int) */
-	private function convertYToRow(y0:Int):Int;
+	/*@@@ modifiers=4 */ private function convertYToRow(y0:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#createFocusListener() */
-	private function createFocusListener():FocusListener;
+	/*@@@ modifiers=4 */ private function createFocusListener():FocusListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#createListDataListener() */
-	private function createListDataListener():ListDataListener;
+	/*@@@ modifiers=4 */ private function createListDataListener():ListDataListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#createListSelectionListener() */
-	private function createListSelectionListener():ListSelectionListener;
+	/*@@@ modifiers=4 */ private function createListSelectionListener():ListSelectionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#createMouseInputListener() */
-	private function createMouseInputListener():MouseInputListener;
+	/*@@@ modifiers=4 */ private function createMouseInputListener():MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(list:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(list:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
+	/*@@@ modifiers=1 */ override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#getBaselineResizeBehavior(javax.swing.JComponent) */
-	override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#getCellBounds(javax.swing.JList, int, int) */
-	override public function getCellBounds(list:JList, index1:Int, index2:Int):Rectangle;
+	/*@@@ modifiers=1 */ override public function getCellBounds(list:JList, index1:Int, index2:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#getRowHeight(int) */
-	private function getRowHeight(row:Int):Int;
+	/*@@@ modifiers=4 */ private function getRowHeight(row:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#indexToLocation(javax.swing.JList, int) */
-	override public function indexToLocation(list:JList, index:Int):Point;
+	/*@@@ modifiers=1 */ override public function indexToLocation(list:JList, index:Int):Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#locationToIndex(javax.swing.JList, java.awt.Point) */
-	override public function locationToIndex(list:JList, location:Point):Int;
+	/*@@@ modifiers=1 */ override public function locationToIndex(list:JList, location:Point):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#maybeUpdateLayoutState() */
-	private function maybeUpdateLayoutState():Void;
+	/*@@@ modifiers=4 */ private function maybeUpdateLayoutState():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#paintCell(java.awt.Graphics, int, java.awt.Rectangle, javax.swing.ListCellRenderer, javax.swing.ListModel, javax.swing.ListSelectionModel, int) */
-	private function paintCell(g:Graphics, row:Int, rowBounds:Rectangle, cellRenderer:ListCellRenderer, dataModel:ListModel, selModel:ListSelectionModel, leadIndex:Int):Void;
+	/*@@@ modifiers=4 */ private function paintCell(g:Graphics, row:Int, rowBounds:Rectangle, cellRenderer:ListCellRenderer, dataModel:ListModel, selModel:ListSelectionModel, leadIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#selectNextIndex() */
-	private function selectNextIndex():Void;
+	/*@@@ modifiers=4 */ private function selectNextIndex():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#selectPreviousIndex() */
-	private function selectPreviousIndex():Void;
+	/*@@@ modifiers=4 */ private function selectPreviousIndex():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicListUI.html#updateLayoutState() */
-	private function updateLayoutState():Void;
+	/*@@@ modifiers=4 */ private function updateLayoutState():Void;
 
 }
 

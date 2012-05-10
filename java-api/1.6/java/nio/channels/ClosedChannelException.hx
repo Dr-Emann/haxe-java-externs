@@ -7,7 +7,7 @@ import java.io.IOException;
 extern class ClosedChannelException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/ClosedChannelException.html#ClosedChannelException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

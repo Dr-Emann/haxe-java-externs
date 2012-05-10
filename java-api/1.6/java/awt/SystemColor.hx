@@ -93,13 +93,13 @@ extern class SystemColor extends Color, implements Serializable
 
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/SystemColor.html#createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints) */
-	override public function createContext(cm:ColorModel, r:Rectangle, r2d:Rectangle2D, xform:AffineTransform, hints:RenderingHints):PaintContext;
+	/*@@@ modifiers=1 */ override public function createContext(cm:ColorModel, r:Rectangle, r2d:Rectangle2D, xform:AffineTransform, hints:RenderingHints):PaintContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/SystemColor.html#getRGB() */
-	override public function getRGB():Int;
+	/*@@@ modifiers=1 */ override public function getRGB():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/SystemColor.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 extern interface KeyEventPostProcessor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyEventPostProcessor.html#postProcessKeyEvent(java.awt.event.KeyEvent) */
-	public function postProcessKeyEvent(e:KeyEvent):Bool;
+	/*@@@ modifiers=1025 */ public function postProcessKeyEvent(e:KeyEvent):Bool;
 
 }
 

@@ -9,25 +9,25 @@ import javax.swing.text.html.HTML_Tag;
 extern class HTMLDocument_Iterator extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#HTMLDocument$Iterator() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#getAttributes() */
-	public function getAttributes():AttributeSet;
+	/*@@@ modifiers=1025 */ public function getAttributes():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#getEndOffset() */
-	public function getEndOffset():Int;
+	/*@@@ modifiers=1025 */ public function getEndOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#getStartOffset() */
-	public function getStartOffset():Int;
+	/*@@@ modifiers=1025 */ public function getStartOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#getTag() */
-	public function getTag():HTML_Tag;
+	/*@@@ modifiers=1025 */ public function getTag():HTML_Tag;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#isValid() */
-	public function isValid():Bool;
+	/*@@@ modifiers=1025 */ public function isValid():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#next() */
-	public function next():Void;
+	/*@@@ modifiers=1025 */ public function next():Void;
 
 }
 

@@ -12,19 +12,19 @@ import javax.xml.ws.WebServiceFeature;
 extern class EndpointReference extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html#EndpointReference() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html#getPort(java.lang.Class, javax.xml.ws.WebServiceFeature[]) */
-	public function getPort<T>(serviceEndpointInterface:Class<T>, features:NativeArray<WebServiceFeature>):T;
+	/*@@@ modifiers=129 */ public function getPort<T>(serviceEndpointInterface:Class<T>, features:NativeArray<WebServiceFeature>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html#readFrom(javax.xml.transform.Source) */
-	static public function readFrom(eprInfoset:Source):EndpointReference;
+	/*@@@ modifiers=9 */ static public function readFrom(eprInfoset:Source):EndpointReference;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html#writeTo(javax.xml.transform.Result) */
-	public function writeTo(result:Result):Void;
+	/*@@@ modifiers=1025 */ public function writeTo(result:Result):Void;
 
 }
 

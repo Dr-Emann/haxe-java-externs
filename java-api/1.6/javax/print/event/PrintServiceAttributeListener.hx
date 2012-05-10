@@ -7,7 +7,7 @@ import javax.print.event.PrintServiceAttributeEvent;
 extern interface PrintServiceAttributeListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent) */
-	public function attributeUpdate(psae:PrintServiceAttributeEvent):Void;
+	/*@@@ modifiers=1025 */ public function attributeUpdate(psae:PrintServiceAttributeEvent):Void;
 
 }
 

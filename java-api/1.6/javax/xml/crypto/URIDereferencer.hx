@@ -9,7 +9,7 @@ import javax.xml.crypto.XMLCryptoContext;
 extern interface URIDereferencer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/URIDereferencer.html#dereference(javax.xml.crypto.URIReference, javax.xml.crypto.XMLCryptoContext) */
-	public function dereference(uriReference:URIReference, context:XMLCryptoContext):Data;
+	/*@@@ modifiers=1025 */ public function dereference(uriReference:URIReference, context:XMLCryptoContext):Data;
 
 }
 

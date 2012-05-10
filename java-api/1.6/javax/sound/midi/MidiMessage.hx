@@ -16,22 +16,22 @@ extern class MidiMessage extends Object, implements Cloneable
 	private var length:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#MidiMessage(byte[]) */
-	private function new(data:NativeArray<Int8>):Void;
+	/*@@@ modifiers=4 */ private function new(data:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1025 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1 */ public function getLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#getMessage() */
-	public function getMessage():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getMessage():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#getStatus() */
-	public function getStatus():Int;
+	/*@@@ modifiers=1 */ public function getStatus():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#setMessage(byte[], int) */
-	private function setMessage(data:NativeArray<Int8>, length:Int):Void;
+	/*@@@ modifiers=4 */ private function setMessage(data:NativeArray<Int8>, length:Int):Void;
 
 }
 

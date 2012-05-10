@@ -10,25 +10,25 @@ import java.util.Enumeration;
 extern class PermissionCollection extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#PermissionCollection() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#add(java.security.Permission) */
-	public function add(permission:Permission):Void;
+	/*@@@ modifiers=1025 */ public function add(permission:Permission):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#elements() */
-	public function elements():Enumeration<Permission>;
+	/*@@@ modifiers=1025 */ public function elements():Enumeration<Permission>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#implies(java.security.Permission) */
-	public function implies(permission:Permission):Bool;
+	/*@@@ modifiers=1025 */ public function implies(permission:Permission):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#isReadOnly() */
-	public function isReadOnly():Bool;
+	/*@@@ modifiers=1 */ public function isReadOnly():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#setReadOnly() */
-	public function setReadOnly():Void;
+	/*@@@ modifiers=1 */ public function setReadOnly():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PermissionCollection.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

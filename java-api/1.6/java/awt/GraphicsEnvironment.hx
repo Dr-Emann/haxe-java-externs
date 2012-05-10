@@ -15,48 +15,48 @@ import java.util.Locale;
 extern class GraphicsEnvironment extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#GraphicsEnvironment() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#createGraphics(java.awt.image.BufferedImage) */
-	public function createGraphics(img:BufferedImage):Graphics2D;
+	/*@@@ modifiers=1025 */ public function createGraphics(img:BufferedImage):Graphics2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getAllFonts() */
-	public function getAllFonts():NativeArray<Font>;
+	/*@@@ modifiers=1025 */ public function getAllFonts():NativeArray<Font>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames(java.util.Locale) */
-	@:overload(function (l:Locale):NativeArray<String> {})
+	/*@@@ modifiers=1025 */ @:overload(function (l:Locale):NativeArray<String> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames() */
-	public function getAvailableFontFamilyNames():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getAvailableFontFamilyNames():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getCenterPoint() */
-	public function getCenterPoint():Point;
+	/*@@@ modifiers=1 */ public function getCenterPoint():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getDefaultScreenDevice() */
-	public function getDefaultScreenDevice():GraphicsDevice;
+	/*@@@ modifiers=1025 */ public function getDefaultScreenDevice():GraphicsDevice;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getLocalGraphicsEnvironment() */
-	static public function getLocalGraphicsEnvironment():GraphicsEnvironment;
+	/*@@@ modifiers=41 */ static public function getLocalGraphicsEnvironment():GraphicsEnvironment;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getMaximumWindowBounds() */
-	public function getMaximumWindowBounds():Rectangle;
+	/*@@@ modifiers=1 */ public function getMaximumWindowBounds():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#getScreenDevices() */
-	public function getScreenDevices():NativeArray<GraphicsDevice>;
+	/*@@@ modifiers=1025 */ public function getScreenDevices():NativeArray<GraphicsDevice>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#isHeadless() */
-	static public function isHeadless():Bool;
+	/*@@@ modifiers=9 */ static public function isHeadless():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#isHeadlessInstance() */
-	public function isHeadlessInstance():Bool;
+	/*@@@ modifiers=1 */ public function isHeadlessInstance():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#preferLocaleFonts() */
-	public function preferLocaleFonts():Void;
+	/*@@@ modifiers=1 */ public function preferLocaleFonts():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#preferProportionalFonts() */
-	public function preferProportionalFonts():Void;
+	/*@@@ modifiers=1 */ public function preferProportionalFonts():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font) */
-	public function registerFont(font:Font):Bool;
+	/*@@@ modifiers=1 */ public function registerFont(font:Font):Bool;
 
 }
 

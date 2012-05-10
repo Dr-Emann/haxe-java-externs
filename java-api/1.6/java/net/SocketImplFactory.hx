@@ -7,7 +7,7 @@ import java.net.SocketImpl;
 extern interface SocketImplFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketImplFactory.html#createSocketImpl() */
-	public function createSocketImpl():SocketImpl;
+	/*@@@ modifiers=1025 */ public function createSocketImpl():SocketImpl;
 
 }
 

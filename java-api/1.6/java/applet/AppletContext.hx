@@ -13,33 +13,33 @@ import java.util.Iterator;
 extern interface AppletContext
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#getApplet(java.lang.String) */
-	public function getApplet(name:String):Applet;
+	/*@@@ modifiers=1025 */ public function getApplet(name:String):Applet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#getApplets() */
-	public function getApplets():Enumeration<Applet>;
+	/*@@@ modifiers=1025 */ public function getApplets():Enumeration<Applet>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#getAudioClip(java.net.URL) */
-	public function getAudioClip(url:URL):AudioClip;
+	/*@@@ modifiers=1025 */ public function getAudioClip(url:URL):AudioClip;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#getImage(java.net.URL) */
-	public function getImage(url:URL):Image;
+	/*@@@ modifiers=1025 */ public function getImage(url:URL):Image;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#getStream(java.lang.String) */
-	public function getStream(key:String):InputStream;
+	/*@@@ modifiers=1025 */ public function getStream(key:String):InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#getStreamKeys() */
-	public function getStreamKeys():java.util.Iterator<String>;
+	/*@@@ modifiers=1025 */ public function getStreamKeys():java.util.Iterator<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#setStream(java.lang.String, java.io.InputStream) */
-	public function setStream(key:String, stream:InputStream):Void;
+	/*@@@ modifiers=1025 */ public function setStream(key:String, stream:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#showDocument(java.net.URL, java.lang.String) */
-	@:overload(function (url:URL, target:String):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (url:URL, target:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#showDocument(java.net.URL) */
-	public function showDocument(url:URL):Void;
+	/*@@@ modifiers=1025 */ public function showDocument(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/applet/AppletContext.html#showStatus(java.lang.String) */
-	public function showStatus(status:String):Void;
+	/*@@@ modifiers=1025 */ public function showStatus(status:String):Void;
 
 }
 

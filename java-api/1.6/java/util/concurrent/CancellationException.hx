@@ -7,9 +7,9 @@ import java.lang.IllegalStateException;
 extern class CancellationException extends IllegalStateException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CancellationException.html#CancellationException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CancellationException.html#CancellationException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

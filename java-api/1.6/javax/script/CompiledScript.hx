@@ -10,17 +10,17 @@ import javax.script.ScriptEngine;
 extern class CompiledScript extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/CompiledScript.html#CompiledScript() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/CompiledScript.html#eval(javax.script.Bindings) */
-	@:overload(function (bindings:Bindings):Dynamic {})
+	/*@@@ modifiers=1 */ @:overload(function (bindings:Bindings):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/CompiledScript.html#eval(javax.script.ScriptContext) */
-	@:overload(function (context:ScriptContext):Dynamic {})
+	/*@@@ modifiers=1025 */ @:overload(function (context:ScriptContext):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/CompiledScript.html#eval() */
-	public function eval():Dynamic;
+	/*@@@ modifiers=1 */ public function eval():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/CompiledScript.html#getEngine() */
-	public function getEngine():ScriptEngine;
+	/*@@@ modifiers=1025 */ public function getEngine():ScriptEngine;
 
 }
 

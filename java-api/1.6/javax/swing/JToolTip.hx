@@ -10,34 +10,34 @@ import javax.swing.plaf.ToolTipUI;
 extern class JToolTip extends JComponent, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#JToolTip() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getComponent() */
-	override public function getComponent():JComponent;
+	/*@@@ modifiers=1 */ override public function getComponent():JComponent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getTipText() */
-	public function getTipText():String;
+	/*@@@ modifiers=1 */ public function getTipText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getUI() */
-	public function getUI():ToolTipUI;
+	/*@@@ modifiers=1 */ public function getUI():ToolTipUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#setComponent(javax.swing.JComponent) */
-	public function setComponent(c:JComponent):Void;
+	/*@@@ modifiers=1 */ public function setComponent(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#setTipText(java.lang.String) */
-	public function setTipText(tipText:String):Void;
+	/*@@@ modifiers=1 */ public function setTipText(tipText:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

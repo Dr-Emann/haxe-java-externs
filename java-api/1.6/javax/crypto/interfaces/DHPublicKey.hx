@@ -9,7 +9,7 @@ import javax.crypto.interfaces.DHKey;
 extern interface DHPublicKey implements DHKey, implements PublicKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/interfaces/DHPublicKey.html#getY() */
-	public function getY():BigInteger;
+	/*@@@ modifiers=1025 */ public function getY():BigInteger;
 
 }
 

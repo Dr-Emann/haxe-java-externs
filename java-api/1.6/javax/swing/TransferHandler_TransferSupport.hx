@@ -12,40 +12,40 @@ import javax.swing.TransferHandler_DropLocation;
 extern class TransferHandler_TransferSupport extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#TransferHandler$TransferSupport(java.awt.Component, java.awt.datatransfer.Transferable) */
-	public function new(component:Component, transferable:Transferable):Void;
+	/*@@@ modifiers=1 */ public function new(component:Component, transferable:Transferable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getComponent() */
-	public function getComponent():Component;
+	/*@@@ modifiers=1 */ public function getComponent():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getDataFlavors() */
-	public function getDataFlavors():NativeArray<DataFlavor>;
+	/*@@@ modifiers=1 */ public function getDataFlavors():NativeArray<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getDropAction() */
-	public function getDropAction():Int;
+	/*@@@ modifiers=1 */ public function getDropAction():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getDropLocation() */
-	public function getDropLocation():TransferHandler_DropLocation;
+	/*@@@ modifiers=1 */ public function getDropLocation():TransferHandler_DropLocation;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getSourceDropActions() */
-	public function getSourceDropActions():Int;
+	/*@@@ modifiers=1 */ public function getSourceDropActions():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getTransferable() */
-	public function getTransferable():Transferable;
+	/*@@@ modifiers=1 */ public function getTransferable():Transferable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#getUserDropAction() */
-	public function getUserDropAction():Int;
+	/*@@@ modifiers=1 */ public function getUserDropAction():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor) */
-	public function isDataFlavorSupported(df:DataFlavor):Bool;
+	/*@@@ modifiers=1 */ public function isDataFlavorSupported(df:DataFlavor):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#isDrop() */
-	public function isDrop():Bool;
+	/*@@@ modifiers=1 */ public function isDrop():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int) */
-	public function setDropAction(dropAction:Int):Void;
+	/*@@@ modifiers=1 */ public function setDropAction(dropAction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean) */
-	public function setShowDropLocation(showDropLocation:Bool):Void;
+	/*@@@ modifiers=1 */ public function setShowDropLocation(showDropLocation:Bool):Void;
 
 }
 

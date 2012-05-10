@@ -7,9 +7,9 @@ import java.lang.IllegalArgumentException;
 extern class InvalidKeyException extends IllegalArgumentException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/InvalidKeyException.html#InvalidKeyException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/InvalidKeyException.html#InvalidKeyException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

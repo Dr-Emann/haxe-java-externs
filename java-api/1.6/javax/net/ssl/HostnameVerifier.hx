@@ -7,7 +7,7 @@ import javax.net.ssl.SSLSession;
 extern interface HostnameVerifier
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HostnameVerifier.html#verify(java.lang.String, javax.net.ssl.SSLSession) */
-	public function verify(arg0:String, arg1:SSLSession):Bool;
+	/*@@@ modifiers=1025 */ public function verify(arg0:String, arg1:SSLSession):Bool;
 
 }
 

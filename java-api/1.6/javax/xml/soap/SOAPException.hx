@@ -8,22 +8,22 @@ import java.lang.Throwable;
 extern class SOAPException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#SOAPException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#SOAPException(java.lang.String) */
-	@:overload(function (reason:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (reason:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#SOAPException(java.lang.String, java.lang.Throwable) */
-	@:overload(function (reason:String, cause:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (reason:String, cause:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#SOAPException(java.lang.Throwable) */
-	public function new(reason:Throwable):Void;
+	/*@@@ modifiers=1 */ public function new(reason:Throwable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPException.html#initCause(java.lang.Throwable) */
-	override public function initCause(cause:Throwable):Throwable;
+	/*@@@ modifiers=33 */ override public function initCause(cause:Throwable):Throwable;
 
 }
 

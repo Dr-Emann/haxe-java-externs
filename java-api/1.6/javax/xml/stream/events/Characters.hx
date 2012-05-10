@@ -7,16 +7,16 @@ import javax.xml.stream.events.XMLEvent;
 extern interface Characters implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Characters.html#getData() */
-	public function getData():String;
+	/*@@@ modifiers=1025 */ public function getData():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Characters.html#isCData() */
-	public function isCData():Bool;
+	/*@@@ modifiers=1025 */ public function isCData():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace() */
-	public function isIgnorableWhiteSpace():Bool;
+	/*@@@ modifiers=1025 */ public function isIgnorableWhiteSpace():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Characters.html#isWhiteSpace() */
-	public function isWhiteSpace():Bool;
+	/*@@@ modifiers=1025 */ public function isWhiteSpace():Bool;
 
 }
 

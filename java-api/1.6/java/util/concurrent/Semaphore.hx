@@ -11,57 +11,57 @@ import java.util.concurrent.TimeUnit;
 extern class Semaphore extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#Semaphore(int, boolean) */
-	@:overload(function (permits:Int, fair:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (permits:Int, fair:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#Semaphore(int) */
-	public function new(permits:Int):Void;
+	/*@@@ modifiers=1 */ public function new(permits:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#acquire(int) */
-	@:overload(function (permits:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (permits:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#acquire() */
-	public function acquire():Void;
+	/*@@@ modifiers=1 */ public function acquire():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#acquireUninterruptibly(int) */
-	@:overload(function (permits:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (permits:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#acquireUninterruptibly() */
-	public function acquireUninterruptibly():Void;
+	/*@@@ modifiers=1 */ public function acquireUninterruptibly():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#availablePermits() */
-	public function availablePermits():Int;
+	/*@@@ modifiers=1 */ public function availablePermits():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#drainPermits() */
-	public function drainPermits():Int;
+	/*@@@ modifiers=1 */ public function drainPermits():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#getQueueLength() */
-	public function getQueueLength():Int;
+	/*@@@ modifiers=17 */ public function getQueueLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#getQueuedThreads() */
-	private function getQueuedThreads():Collection<Thread>;
+	/*@@@ modifiers=4 */ private function getQueuedThreads():Collection<Thread>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#hasQueuedThreads() */
-	public function hasQueuedThreads():Bool;
+	/*@@@ modifiers=17 */ public function hasQueuedThreads():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#isFair() */
-	public function isFair():Bool;
+	/*@@@ modifiers=1 */ public function isFair():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#reducePermits(int) */
-	private function reducePermits(reduction:Int):Void;
+	/*@@@ modifiers=4 */ private function reducePermits(reduction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#release(int) */
-	@:overload(function (permits:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (permits:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#release() */
-	public function release():Void;
+	/*@@@ modifiers=1 */ public function release():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#tryAcquire(int, long, java.util.concurrent.TimeUnit) */
-	@:overload(function (permits:Int, timeout:haxe.Int64, unit:TimeUnit):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (permits:Int, timeout:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#tryAcquire(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (timeout:haxe.Int64, unit:TimeUnit):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#tryAcquire(int) */
-	@:overload(function (permits:Int):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (permits:Int):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Semaphore.html#tryAcquire() */
-	public function tryAcquire():Bool;
+	/*@@@ modifiers=1 */ public function tryAcquire():Bool;
 
 }
 

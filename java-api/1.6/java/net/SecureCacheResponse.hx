@@ -10,22 +10,22 @@ import java.util.List;
 extern class SecureCacheResponse extends CacheResponse
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SecureCacheResponse.html#SecureCacheResponse() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SecureCacheResponse.html#getCipherSuite() */
-	public function getCipherSuite():String;
+	/*@@@ modifiers=1025 */ public function getCipherSuite():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SecureCacheResponse.html#getLocalCertificateChain() */
-	public function getLocalCertificateChain():List<Certificate>;
+	/*@@@ modifiers=1025 */ public function getLocalCertificateChain():List<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SecureCacheResponse.html#getLocalPrincipal() */
-	public function getLocalPrincipal():Principal;
+	/*@@@ modifiers=1025 */ public function getLocalPrincipal():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SecureCacheResponse.html#getPeerPrincipal() */
-	public function getPeerPrincipal():Principal;
+	/*@@@ modifiers=1025 */ public function getPeerPrincipal():Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SecureCacheResponse.html#getServerCertificateChain() */
-	public function getServerCertificateChain():List<Certificate>;
+	/*@@@ modifiers=1025 */ public function getServerCertificateChain():List<Certificate>;
 
 }
 

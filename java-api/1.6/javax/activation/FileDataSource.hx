@@ -12,27 +12,27 @@ import javax.activation.FileTypeMap;
 extern class FileDataSource extends Object, implements DataSource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#FileDataSource(java.lang.String) */
-	@:overload(function (arg0:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg0:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#FileDataSource(java.io.File) */
-	public function new(arg0:File):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#getContentType() */
-	public function getContentType():String;
+	/*@@@ modifiers=1 */ public function getContentType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#getFile() */
-	public function getFile():File;
+	/*@@@ modifiers=1 */ public function getFile():File;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#getInputStream() */
-	public function getInputStream():InputStream;
+	/*@@@ modifiers=1 */ public function getInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#getOutputStream() */
-	public function getOutputStream():OutputStream;
+	/*@@@ modifiers=1 */ public function getOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileDataSource.html#setFileTypeMap(javax.activation.FileTypeMap) */
-	public function setFileTypeMap(arg0:FileTypeMap):Void;
+	/*@@@ modifiers=1 */ public function setFileTypeMap(arg0:FileTypeMap):Void;
 
 }
 

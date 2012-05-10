@@ -7,7 +7,7 @@ import java.security.interfaces.DSAParams;
 extern interface DSAKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAKey.html#getParams() */
-	public function getParams():DSAParams;
+	/*@@@ modifiers=1025 */ public function getParams():DSAParams;
 
 }
 

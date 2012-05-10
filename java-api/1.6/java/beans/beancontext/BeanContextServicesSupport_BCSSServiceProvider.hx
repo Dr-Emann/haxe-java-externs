@@ -13,7 +13,7 @@ extern class BeanContextServicesSupport_BCSSServiceProvider extends Object, impl
 
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServicesSupport.BCSSServiceProvider.html#getServiceProvider() */
-	private function getServiceProvider():BeanContextServiceProvider;
+	/*@@@ modifiers=4 */ private function getServiceProvider():BeanContextServiceProvider;
 
 }
 

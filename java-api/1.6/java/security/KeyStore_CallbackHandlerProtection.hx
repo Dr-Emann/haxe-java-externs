@@ -9,10 +9,10 @@ import javax.security.auth.callback.CallbackHandler;
 extern class KeyStore_CallbackHandlerProtection extends Object, implements KeyStore_ProtectionParameter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.CallbackHandlerProtection.html#KeyStore$CallbackHandlerProtection(javax.security.auth.callback.CallbackHandler) */
-	public function new(handler:CallbackHandler):Void;
+	/*@@@ modifiers=1 */ public function new(handler:CallbackHandler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.CallbackHandlerProtection.html#getCallbackHandler() */
-	public function getCallbackHandler():CallbackHandler;
+	/*@@@ modifiers=1 */ public function getCallbackHandler():CallbackHandler;
 
 }
 

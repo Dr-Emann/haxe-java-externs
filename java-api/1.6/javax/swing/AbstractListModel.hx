@@ -16,31 +16,28 @@ extern class AbstractListModel extends Object, implements ListModel, implements 
 	private var listenerList:EventListenerList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#AbstractListModel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener) */
-	public function addListDataListener(l:ListDataListener):Void;
+	/*@@@ modifiers=1 */ public function addListDataListener(l:ListDataListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#fireContentsChanged(java.lang.Object, int, int) */
-	private function fireContentsChanged(source:Dynamic, index0:Int, index1:Int):Void;
+	/*@@@ modifiers=4 */ private function fireContentsChanged(source:Dynamic, index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#fireIntervalAdded(java.lang.Object, int, int) */
-	private function fireIntervalAdded(source:Dynamic, index0:Int, index1:Int):Void;
+	/*@@@ modifiers=4 */ private function fireIntervalAdded(source:Dynamic, index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#fireIntervalRemoved(java.lang.Object, int, int) */
-	private function fireIntervalRemoved(source:Dynamic, index0:Int, index1:Int):Void;
+	/*@@@ modifiers=4 */ private function fireIntervalRemoved(source:Dynamic, index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#getListDataListeners() */
-	public function getListDataListeners():NativeArray<ListDataListener>;
+	/*@@@ modifiers=1 */ public function getListDataListeners():NativeArray<ListDataListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#getSize() */
-	public function getSize():Int;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener) */
-	public function removeListDataListener(l:ListDataListener):Void;
+	/*@@@ modifiers=1 */ public function removeListDataListener(l:ListDataListener):Void;
 
 }
 

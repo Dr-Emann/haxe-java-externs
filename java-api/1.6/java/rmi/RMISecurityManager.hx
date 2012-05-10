@@ -7,7 +7,7 @@ import java.lang.SecurityManager;
 extern class RMISecurityManager extends SecurityManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/RMISecurityManager.html#RMISecurityManager() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

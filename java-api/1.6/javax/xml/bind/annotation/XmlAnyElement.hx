@@ -9,10 +9,10 @@ import javax.xml.bind.annotation.DomHandler;
 extern interface XmlAnyElement implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAnyElement.html#lax() */
-	public function lax():Bool;
+	/*@@@ modifiers=1025 */ public function lax():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAnyElement.html#value() */
-	public function value():Class<DomHandler<Dynamic, Dynamic>>;
+	/*@@@ modifiers=1025 */ public function value():Class<DomHandler<Dynamic, Dynamic>>;
 
 }
 

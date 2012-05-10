@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 extern interface DescriptorKey implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/DescriptorKey.html#value() */
-	public function value():String;
+	/*@@@ modifiers=1025 */ public function value():String;
 
 }
 

@@ -7,19 +7,19 @@ import java.lang.Object;
 extern class AudioFileFormat_Type extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#AudioFileFormat$Type(java.lang.String, java.lang.String) */
-	public function new(name:String, extension:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, extension:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=17 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#getExtension() */
-	public function getExtension():String;
+	/*@@@ modifiers=1 */ public function getExtension():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=17 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=17 */ override public function toString():String;
 
 }
 

@@ -7,13 +7,13 @@ import java.util.IllegalFormatException;
 extern class MissingFormatArgumentException extends IllegalFormatException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingFormatArgumentException.html#MissingFormatArgumentException(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingFormatArgumentException.html#getFormatSpecifier() */
-	public function getFormatSpecifier():String;
+	/*@@@ modifiers=1 */ public function getFormatSpecifier():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/MissingFormatArgumentException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

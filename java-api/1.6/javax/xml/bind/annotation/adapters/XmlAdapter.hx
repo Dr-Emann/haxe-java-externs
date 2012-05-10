@@ -7,13 +7,13 @@ import java.lang.Object;
 extern class XmlAdapter<ValueType : (Dynamic), BoundType : (Dynamic)> extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html#XmlAdapter() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html#marshal(java.lang.Object) */
-	public function marshal(v:BoundType):ValueType;
+	/*@@@ modifiers=1025 */ public function marshal(v:BoundType):ValueType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html#unmarshal(java.lang.Object) */
-	public function unmarshal(v:ValueType):BoundType;
+	/*@@@ modifiers=1025 */ public function unmarshal(v:ValueType):BoundType;
 
 }
 

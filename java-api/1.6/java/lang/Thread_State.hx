@@ -26,10 +26,10 @@ extern class Thread_State extends Enum<Thread_State>
 	public static var TERMINATED:Thread_State;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.State.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Thread_State;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Thread_State;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.State.html#values() */
-	static public function values():NativeArray<Thread_State>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Thread_State>;
 
 }
 

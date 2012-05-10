@@ -9,13 +9,13 @@ import javax.management.MBeanServerDelegate;
 extern class MBeanServerBuilder extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerBuilder.html#MBeanServerBuilder() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerBuilder.html#newMBeanServer(java.lang.String, javax.management.MBeanServer, javax.management.MBeanServerDelegate) */
-	public function newMBeanServer(defaultDomain:String, outer:MBeanServer, delegate:MBeanServerDelegate):MBeanServer;
+	/*@@@ modifiers=1 */ public function newMBeanServer(defaultDomain:String, outer:MBeanServer, delegate:MBeanServerDelegate):MBeanServer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MBeanServerBuilder.html#newMBeanServerDelegate() */
-	public function newMBeanServerDelegate():MBeanServerDelegate;
+	/*@@@ modifiers=1 */ public function newMBeanServerDelegate():MBeanServerDelegate;
 
 }
 

@@ -19,18 +19,18 @@ extern class BasicControl extends Object, implements Control
 	private var value:NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/BasicControl.html#BasicControl(java.lang.String) */
-	@:overload(function (id:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (id:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/BasicControl.html#BasicControl(java.lang.String, boolean, byte[]) */
-	public function new(id:String, criticality:Bool, value:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function new(id:String, criticality:Bool, value:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/BasicControl.html#getEncodedValue() */
-	public function getEncodedValue():NativeArray<Int8>;
+	/*@@@ modifiers=1 */ public function getEncodedValue():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/BasicControl.html#getID() */
-	public function getID():String;
+	/*@@@ modifiers=1 */ public function getID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/BasicControl.html#isCritical() */
-	public function isCritical():Bool;
+	/*@@@ modifiers=1 */ public function isCritical():Bool;
 
 }
 

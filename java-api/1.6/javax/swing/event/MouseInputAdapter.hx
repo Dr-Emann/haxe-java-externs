@@ -8,7 +8,7 @@ import javax.swing.event.MouseInputListener;
 extern class MouseInputAdapter extends MouseAdapter, implements MouseInputListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/MouseInputAdapter.html#MouseInputAdapter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

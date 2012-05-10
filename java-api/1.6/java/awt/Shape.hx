@@ -12,29 +12,29 @@ import java.lang.Number;
 extern interface Shape
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#contains(double, double, double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/*@@@ modifiers=1025 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#contains(double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat):Bool {})
+	/*@@@ modifiers=1025 */ @:overload(function (x:StdFloat, y:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#contains(java.awt.geom.Point2D) */
-	@:overload(function (p:Point2D):Bool {})
+	/*@@@ modifiers=1025 */ @:overload(function (p:Point2D):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#contains(java.awt.geom.Rectangle2D) */
-	public function contains(r:Rectangle2D):Bool;
+	/*@@@ modifiers=1025 */ public function contains(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getBounds() */
-	public function getBounds():Rectangle;
+	/*@@@ modifiers=1025 */ public function getBounds():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getBounds2D() */
-	public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1025 */ public function getBounds2D():Rectangle2D;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform) */
-	@:overload(function (at:AffineTransform):PathIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform, double) */
-	public function getPathIterator(at:AffineTransform, flatness:StdFloat):PathIterator;
+	/*@@@ modifiers=1025 */ @:overload(function (at:AffineTransform, flatness:StdFloat):PathIterator {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform) */
+	/*@@@ modifiers=1025 */ public function getPathIterator(at:AffineTransform):PathIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#intersects(double, double, double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/*@@@ modifiers=1025 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#intersects(java.awt.geom.Rectangle2D) */
-	public function intersects(r:Rectangle2D):Bool;
+	/*@@@ modifiers=1025 */ public function intersects(r:Rectangle2D):Bool;
 
 }
 

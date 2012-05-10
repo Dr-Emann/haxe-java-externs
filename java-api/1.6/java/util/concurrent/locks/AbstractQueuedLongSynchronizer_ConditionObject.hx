@@ -14,36 +14,36 @@ import java.util.concurrent.locks.Condition;
 extern class AbstractQueuedLongSynchronizer_ConditionObject extends Object, implements Condition, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#AbstractQueuedLongSynchronizer$ConditionObject(java.util.concurrent.locks.AbstractQueuedLongSynchronizer) */
-	public function new(arg0:AbstractQueuedLongSynchronizer):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:AbstractQueuedLongSynchronizer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await(long, java.util.concurrent.TimeUnit) */
-	@:overload(function (time:haxe.Int64, unit:TimeUnit):Bool {})
+	/*@@@ modifiers=17 */ @:overload(function (time:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await() */
-	public function await():Void;
+	/*@@@ modifiers=17 */ public function await():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitNanos(long) */
-	public function awaitNanos(nanosTimeout:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=17 */ public function awaitNanos(nanosTimeout:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUninterruptibly() */
-	public function awaitUninterruptibly():Void;
+	/*@@@ modifiers=17 */ public function awaitUninterruptibly():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUntil(java.util.Date) */
-	public function awaitUntil(deadline:Date):Bool;
+	/*@@@ modifiers=17 */ public function awaitUntil(deadline:Date):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#getWaitQueueLength() */
-	private function getWaitQueueLength():Int;
+	/*@@@ modifiers=20 */ private function getWaitQueueLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#getWaitingThreads() */
-	private function getWaitingThreads():Collection<Thread>;
+	/*@@@ modifiers=20 */ private function getWaitingThreads():Collection<Thread>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#hasWaiters() */
-	private function hasWaiters():Bool;
+	/*@@@ modifiers=20 */ private function hasWaiters():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#signal() */
-	public function signal():Void;
+	/*@@@ modifiers=17 */ public function signal():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#signalAll() */
-	public function signalAll():Void;
+	/*@@@ modifiers=17 */ public function signalAll():Void;
 
 }
 

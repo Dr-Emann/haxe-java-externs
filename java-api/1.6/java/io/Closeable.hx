@@ -6,7 +6,7 @@ package java.io;
 extern interface Closeable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Closeable.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 }
 

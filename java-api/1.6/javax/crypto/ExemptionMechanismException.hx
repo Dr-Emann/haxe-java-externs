@@ -7,9 +7,9 @@ import java.security.GeneralSecurityException;
 extern class ExemptionMechanismException extends GeneralSecurityException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/ExemptionMechanismException.html#ExemptionMechanismException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/ExemptionMechanismException.html#ExemptionMechanismException(java.lang.String) */
-	public function new(arg0:String):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:String):Void;
 
 }
 

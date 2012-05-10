@@ -7,10 +7,10 @@ import javax.swing.ListModel;
 extern interface ComboBoxModel implements ListModel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ComboBoxModel.html#getSelectedItem() */
-	public function getSelectedItem():Dynamic;
+	/*@@@ modifiers=1025 */ public function getSelectedItem():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ComboBoxModel.html#setSelectedItem(java.lang.Object) */
-	public function setSelectedItem(anItem:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function setSelectedItem(anItem:Dynamic):Void;
 
 }
 

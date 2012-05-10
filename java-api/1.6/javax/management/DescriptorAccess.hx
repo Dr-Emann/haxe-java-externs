@@ -8,7 +8,7 @@ import javax.management.DescriptorRead;
 extern interface DescriptorAccess implements DescriptorRead
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/DescriptorAccess.html#setDescriptor(javax.management.Descriptor) */
-	public function setDescriptor(inDescriptor:Descriptor):Void;
+	/*@@@ modifiers=1025 */ public function setDescriptor(inDescriptor:Descriptor):Void;
 
 }
 

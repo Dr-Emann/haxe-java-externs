@@ -7,10 +7,10 @@ import java.lang.IllegalArgumentException;
 extern class UnsupportedCharsetException extends IllegalArgumentException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/UnsupportedCharsetException.html#UnsupportedCharsetException(java.lang.String) */
-	public function new(charsetName:String):Void;
+	/*@@@ modifiers=1 */ public function new(charsetName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/UnsupportedCharsetException.html#getCharsetName() */
-	public function getCharsetName():String;
+	/*@@@ modifiers=1 */ public function getCharsetName():String;
 
 }
 

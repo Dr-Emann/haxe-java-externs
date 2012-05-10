@@ -10,19 +10,19 @@ import javax.xml.bind.ValidationEventHandler;
 extern class ValidationEventCollector extends Object, implements ValidationEventHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/ValidationEventCollector.html#ValidationEventCollector() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/ValidationEventCollector.html#getEvents() */
-	public function getEvents():NativeArray<ValidationEvent>;
+	/*@@@ modifiers=1 */ public function getEvents():NativeArray<ValidationEvent>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/ValidationEventCollector.html#handleEvent(javax.xml.bind.ValidationEvent) */
-	public function handleEvent(event:ValidationEvent):Bool;
+	/*@@@ modifiers=1 */ public function handleEvent(event:ValidationEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/ValidationEventCollector.html#hasEvents() */
-	public function hasEvents():Bool;
+	/*@@@ modifiers=1 */ public function hasEvents():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/ValidationEventCollector.html#reset() */
-	public function reset():Void;
+	/*@@@ modifiers=1 */ public function reset():Void;
 
 }
 

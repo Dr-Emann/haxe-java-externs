@@ -9,7 +9,7 @@ import java.lang.annotation.ElementType;
 extern interface Target implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Target.html#value() */
-	public function value():NativeArray<ElementType>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<ElementType>;
 
 }
 

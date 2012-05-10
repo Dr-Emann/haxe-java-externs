@@ -10,7 +10,7 @@ import javax.xml.ws.handler.soap.SOAPMessageContext;
 extern interface SOAPHandler<T : (SOAPMessageContext)> implements Handler<T>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/soap/SOAPHandler.html#getHeaders() */
-	public function getHeaders():Set<QName>;
+	/*@@@ modifiers=1025 */ public function getHeaders():Set<QName>;
 
 }
 

@@ -11,7 +11,7 @@ import java.security.ProtectionDomain;
 extern interface ClassFileTransformer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.ClassLoader, java.lang.String, java.lang.Class, java.security.ProtectionDomain, byte[]) */
-	public function transform(loader:ClassLoader, className:String, classBeingRedefined:Class<Dynamic>, protectionDomain:ProtectionDomain, classfileBuffer:NativeArray<Int8>):NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function transform(loader:ClassLoader, className:String, classBeingRedefined:Class<Dynamic>, protectionDomain:ProtectionDomain, classfileBuffer:NativeArray<Int8>):NativeArray<Int8>;
 
 }
 

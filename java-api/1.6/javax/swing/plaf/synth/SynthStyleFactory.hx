@@ -10,10 +10,10 @@ import javax.swing.plaf.synth.SynthStyle;
 extern class SynthStyleFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthStyleFactory.html#SynthStyleFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/synth/SynthStyleFactory.html#getStyle(javax.swing.JComponent, javax.swing.plaf.synth.Region) */
-	public function getStyle(c:JComponent, id:Region):SynthStyle;
+	/*@@@ modifiers=1025 */ public function getStyle(c:JComponent, id:Region):SynthStyle;
 
 }
 

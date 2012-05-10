@@ -11,13 +11,13 @@ import javax.xml.crypto.XMLStructure;
 extern interface RetrievalMethod implements URIReference, implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext) */
-	public function dereference(context:XMLCryptoContext):Data;
+	/*@@@ modifiers=1025 */ public function dereference(context:XMLCryptoContext):Data;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getTransforms() */
-	public function getTransforms():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getTransforms():List<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI() */
-	public function getURI():String;
+	/*@@@ modifiers=1025 */ public function getURI():String;
 
 }
 

@@ -8,10 +8,10 @@ extern class JobAttributes_SidesType extends AttributeValue
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/JobAttributes.SidesType.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=4161 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/JobAttributes.SidesType.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=4161 */ override public function toString():String;
 
 }
 

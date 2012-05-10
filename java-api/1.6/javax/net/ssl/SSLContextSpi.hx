@@ -16,33 +16,33 @@ import javax.net.ssl.TrustManager;
 extern class SSLContextSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#SSLContextSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineCreateSSLEngine(java.lang.String, int) */
-	@:overload(function (arg0:String, arg1:Int):SSLEngine {})
+	/*@@@ modifiers=1028 */ @:overload(function (arg0:String, arg1:Int):SSLEngine {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineCreateSSLEngine() */
-	private function engineCreateSSLEngine():SSLEngine;
+	/*@@@ modifiers=1028 */ private function engineCreateSSLEngine():SSLEngine;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineGetClientSessionContext() */
-	private function engineGetClientSessionContext():SSLSessionContext;
+	/*@@@ modifiers=1028 */ private function engineGetClientSessionContext():SSLSessionContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineGetDefaultSSLParameters() */
-	private function engineGetDefaultSSLParameters():SSLParameters;
+	/*@@@ modifiers=4 */ private function engineGetDefaultSSLParameters():SSLParameters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineGetServerSessionContext() */
-	private function engineGetServerSessionContext():SSLSessionContext;
+	/*@@@ modifiers=1028 */ private function engineGetServerSessionContext():SSLSessionContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineGetServerSocketFactory() */
-	private function engineGetServerSocketFactory():SSLServerSocketFactory;
+	/*@@@ modifiers=1028 */ private function engineGetServerSocketFactory():SSLServerSocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineGetSocketFactory() */
-	private function engineGetSocketFactory():SSLSocketFactory;
+	/*@@@ modifiers=1028 */ private function engineGetSocketFactory():SSLSocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineGetSupportedSSLParameters() */
-	private function engineGetSupportedSSLParameters():SSLParameters;
+	/*@@@ modifiers=4 */ private function engineGetSupportedSSLParameters():SSLParameters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLContextSpi.html#engineInit(javax.net.ssl.KeyManager[], javax.net.ssl.TrustManager[], java.security.SecureRandom) */
-	private function engineInit(arg0:NativeArray<KeyManager>, arg1:NativeArray<TrustManager>, arg2:SecureRandom):Void;
+	/*@@@ modifiers=1028 */ private function engineInit(arg0:NativeArray<KeyManager>, arg1:NativeArray<TrustManager>, arg2:SecureRandom):Void;
 
 }
 

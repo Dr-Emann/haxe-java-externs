@@ -8,16 +8,16 @@ import javax.xml.namespace.QName;
 extern class JAXBIntrospector extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBIntrospector.html#JAXBIntrospector() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBIntrospector.html#getElementName(java.lang.Object) */
-	public function getElementName(jaxbElement:Dynamic):QName;
+	/*@@@ modifiers=1025 */ public function getElementName(jaxbElement:Dynamic):QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBIntrospector.html#getValue(java.lang.Object) */
-	static public function getValue(jaxbElement:Dynamic):Dynamic;
+	/*@@@ modifiers=9 */ static public function getValue(jaxbElement:Dynamic):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBIntrospector.html#isElement(java.lang.Object) */
-	public function isElement(object:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function isElement(object:Dynamic):Bool;
 
 }
 

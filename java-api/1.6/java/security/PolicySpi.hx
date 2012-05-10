@@ -11,18 +11,18 @@ import java.security.ProtectionDomain;
 extern class PolicySpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PolicySpi.html#PolicySpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PolicySpi.html#engineGetPermissions(java.security.CodeSource) */
-	@:overload(function (codesource:CodeSource):PermissionCollection {})
+	/*@@@ modifiers=4 */ @:overload(function (codesource:CodeSource):PermissionCollection {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PolicySpi.html#engineGetPermissions(java.security.ProtectionDomain) */
-	private function engineGetPermissions(domain:ProtectionDomain):PermissionCollection;
+	/*@@@ modifiers=4 */ private function engineGetPermissions(domain:ProtectionDomain):PermissionCollection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PolicySpi.html#engineImplies(java.security.ProtectionDomain, java.security.Permission) */
-	private function engineImplies(domain:ProtectionDomain, permission:Permission):Bool;
+	/*@@@ modifiers=1028 */ private function engineImplies(domain:ProtectionDomain, permission:Permission):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/PolicySpi.html#engineRefresh() */
-	private function engineRefresh():Void;
+	/*@@@ modifiers=4 */ private function engineRefresh():Void;
 
 }
 

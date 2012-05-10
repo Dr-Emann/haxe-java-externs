@@ -1,7 +1,6 @@
 package javax.imageio.plugins.jpeg;
 
 import java.NativeArray;
-import java.lang.Number;
 import java.util.Locale;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.plugins.jpeg.JPEGHuffmanTable;
@@ -12,43 +11,43 @@ import javax.imageio.plugins.jpeg.JPEGQTable;
 extern class JPEGImageWriteParam extends ImageWriteParam
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#JPEGImageWriteParam(java.util.Locale) */
-	public function new(locale:Locale):Void;
+	/*@@@ modifiers=1 */ public function new(locale:Locale):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#areTablesSet() */
-	public function areTablesSet():Bool;
+	/*@@@ modifiers=1 */ public function areTablesSet():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getACHuffmanTables() */
-	public function getACHuffmanTables():NativeArray<JPEGHuffmanTable>;
+	/*@@@ modifiers=1 */ public function getACHuffmanTables():NativeArray<JPEGHuffmanTable>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getCompressionQualityDescriptions() */
-	override public function getCompressionQualityDescriptions():NativeArray<String>;
+	/*@@@ modifiers=1 */ override public function getCompressionQualityDescriptions():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getCompressionQualityValues() */
-	override public function getCompressionQualityValues():NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ override public function getCompressionQualityValues():NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getDCHuffmanTables() */
-	public function getDCHuffmanTables():NativeArray<JPEGHuffmanTable>;
+	/*@@@ modifiers=1 */ public function getDCHuffmanTables():NativeArray<JPEGHuffmanTable>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getOptimizeHuffmanTables() */
-	public function getOptimizeHuffmanTables():Bool;
+	/*@@@ modifiers=1 */ public function getOptimizeHuffmanTables():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getQTables() */
-	public function getQTables():NativeArray<JPEGQTable>;
+	/*@@@ modifiers=1 */ public function getQTables():NativeArray<JPEGQTable>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#isCompressionLossless() */
-	override public function isCompressionLossless():Bool;
+	/*@@@ modifiers=1 */ override public function isCompressionLossless():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#setEncodeTables(javax.imageio.plugins.jpeg.JPEGQTable[], javax.imageio.plugins.jpeg.JPEGHuffmanTable[], javax.imageio.plugins.jpeg.JPEGHuffmanTable[]) */
-	public function setEncodeTables(qTables:NativeArray<JPEGQTable>, DCHuffmanTables:NativeArray<JPEGHuffmanTable>, ACHuffmanTables:NativeArray<JPEGHuffmanTable>):Void;
+	/*@@@ modifiers=1 */ public function setEncodeTables(qTables:NativeArray<JPEGQTable>, DCHuffmanTables:NativeArray<JPEGHuffmanTable>, ACHuffmanTables:NativeArray<JPEGHuffmanTable>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#setOptimizeHuffmanTables(boolean) */
-	public function setOptimizeHuffmanTables(optimize:Bool):Void;
+	/*@@@ modifiers=1 */ public function setOptimizeHuffmanTables(optimize:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#unsetCompression() */
-	override public function unsetCompression():Void;
+	/*@@@ modifiers=1 */ override public function unsetCompression():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#unsetEncodeTables() */
-	public function unsetEncodeTables():Void;
+	/*@@@ modifiers=1 */ public function unsetEncodeTables():Void;
 
 }
 

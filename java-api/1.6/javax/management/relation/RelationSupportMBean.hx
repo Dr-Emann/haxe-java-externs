@@ -8,10 +8,10 @@ import javax.management.relation.Relation;
 extern interface RelationSupportMBean implements Relation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationSupportMBean.html#isInRelationService() */
-	public function isInRelationService():Boolean;
+	/*@@@ modifiers=1025 */ public function isInRelationService():Boolean;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean) */
-	public function setRelationServiceManagementFlag(flag:Boolean):Void;
+	/*@@@ modifiers=1025 */ public function setRelationServiceManagementFlag(flag:Boolean):Void;
 
 }
 

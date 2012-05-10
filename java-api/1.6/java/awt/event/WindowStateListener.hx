@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface WindowStateListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent) */
-	public function windowStateChanged(e:WindowEvent):Void;
+	/*@@@ modifiers=1025 */ public function windowStateChanged(e:WindowEvent):Void;
 
 }
 

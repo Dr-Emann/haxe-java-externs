@@ -9,32 +9,32 @@ import javax.accessibility.AccessibleContext;
 extern class Label extends Component, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#Label(java.lang.String) */
-	@:overload(function (text:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#Label(java.lang.String, int) */
-	@:overload(function (text:String, alignment:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (text:String, alignment:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#Label() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#addNotify() */
-	override public function addNotify():Void;
+	/*@@@ modifiers=1 */ override public function addNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#getAlignment() */
-	public function getAlignment():Int;
+	/*@@@ modifiers=1 */ public function getAlignment():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#getText() */
-	public function getText():String;
+	/*@@@ modifiers=1 */ public function getText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#setAlignment(int) */
-	public function setAlignment(alignment:Int):Void;
+	/*@@@ modifiers=33 */ public function setAlignment(alignment:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#setText(java.lang.String) */
-	public function setText(text:String):Void;
+	/*@@@ modifiers=1 */ public function setText(text:String):Void;
 
 }
 

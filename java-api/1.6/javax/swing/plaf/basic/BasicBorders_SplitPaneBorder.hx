@@ -19,16 +19,16 @@ extern class BasicBorders_SplitPaneBorder extends Object, implements Border, imp
 	private var shadow:Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#BasicBorders$SplitPaneBorder(java.awt.Color, java.awt.Color) */
-	public function new(highlight:Color, shadow:Color):Void;
+	/*@@@ modifiers=1 */ public function new(highlight:Color, shadow:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component) */
-	public function getBorderInsets(c:Component):Insets;
+	/*@@@ modifiers=1 */ public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque() */
-	public function isBorderOpaque():Bool;
+	/*@@@ modifiers=1 */ public function isBorderOpaque():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, width:Int, height:Int):Void;
 
 }
 

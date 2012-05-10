@@ -8,15 +8,15 @@ import java.lang.Throwable;
 extern class UndeclaredThrowableException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/UndeclaredThrowableException.html#UndeclaredThrowableException(java.lang.Throwable) */
-	@:overload(function (undeclaredThrowable:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (undeclaredThrowable:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/UndeclaredThrowableException.html#UndeclaredThrowableException(java.lang.Throwable, java.lang.String) */
-	public function new(undeclaredThrowable:Throwable, s:String):Void;
+	/*@@@ modifiers=1 */ public function new(undeclaredThrowable:Throwable, s:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/UndeclaredThrowableException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/UndeclaredThrowableException.html#getUndeclaredThrowable() */
-	public function getUndeclaredThrowable():Throwable;
+	/*@@@ modifiers=1 */ public function getUndeclaredThrowable():Throwable;
 
 }
 

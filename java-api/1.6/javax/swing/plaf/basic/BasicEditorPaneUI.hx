@@ -12,25 +12,25 @@ import javax.swing.text.JTextComponent;
 extern class BasicEditorPaneUI extends BasicTextUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#BasicEditorPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#getEditorKit(javax.swing.text.JTextComponent) */
-	override public function getEditorKit(tc:JTextComponent):EditorKit;
+	/*@@@ modifiers=1 */ override public function getEditorKit(tc:JTextComponent):EditorKit;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	override private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ override private function propertyChange(evt:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

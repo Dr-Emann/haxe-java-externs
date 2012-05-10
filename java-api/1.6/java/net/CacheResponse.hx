@@ -10,13 +10,13 @@ import java.util.Map;
 extern class CacheResponse extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CacheResponse.html#CacheResponse() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CacheResponse.html#getBody() */
-	public function getBody():InputStream;
+	/*@@@ modifiers=1025 */ public function getBody():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CacheResponse.html#getHeaders() */
-	public function getHeaders():Map<String, List<String>>;
+	/*@@@ modifiers=1025 */ public function getHeaders():Map<String, List<String>>;
 
 }
 

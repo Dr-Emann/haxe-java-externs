@@ -8,7 +8,7 @@ import javax.swing.plaf.UIResource;
 extern class DimensionUIResource extends Dimension, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/DimensionUIResource.html#DimensionUIResource(int, int) */
-	public function new(width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ public function new(width:Int, height:Int):Void;
 
 }
 

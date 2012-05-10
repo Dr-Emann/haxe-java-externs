@@ -10,15 +10,15 @@ import java.security.spec.AlgorithmParameterSpec;
 extern class AlgorithmParameterGeneratorSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParameterGeneratorSpi.html#AlgorithmParameterGeneratorSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParameterGeneratorSpi.html#engineGenerateParameters() */
-	private function engineGenerateParameters():AlgorithmParameters;
+	/*@@@ modifiers=1028 */ private function engineGenerateParameters():AlgorithmParameters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParameterGeneratorSpi.html#engineInit(int, java.security.SecureRandom) */
-	@:overload(function (size:Int, random:SecureRandom):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (size:Int, random:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AlgorithmParameterGeneratorSpi.html#engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) */
-	private function engineInit(genParamSpec:AlgorithmParameterSpec, random:SecureRandom):Void;
+	/*@@@ modifiers=1028 */ private function engineInit(genParamSpec:AlgorithmParameterSpec, random:SecureRandom):Void;
 
 }
 

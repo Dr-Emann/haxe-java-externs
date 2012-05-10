@@ -7,7 +7,7 @@ import javax.sql.RowSetInternal;
 extern interface RowSetWriter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal) */
-	public function writeData(caller:RowSetInternal):Bool;
+	/*@@@ modifiers=1025 */ public function writeData(caller:RowSetInternal):Bool;
 
 }
 

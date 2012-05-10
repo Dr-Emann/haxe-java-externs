@@ -11,67 +11,67 @@ import java.util.Locale;
 extern class BreakIterator extends Object, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#BreakIterator() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#current() */
-	public function current():Int;
+	/*@@@ modifiers=1025 */ public function current():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#first() */
-	public function first():Int;
+	/*@@@ modifiers=1025 */ public function first():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#following(int) */
-	public function following(offset:Int):Int;
+	/*@@@ modifiers=1025 */ public function following(offset:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getAvailableLocales() */
-	static public function getAvailableLocales():NativeArray<Locale>;
+	/*@@@ modifiers=41 */ static public function getAvailableLocales():NativeArray<Locale>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale) */
-	@:overload(function (locale:Locale):BreakIterator {})
+	/*@@@ modifiers=9 */ @:overload(function (locale:Locale):BreakIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getCharacterInstance() */
-	static public function getCharacterInstance():BreakIterator;
+	/*@@@ modifiers=9 */ static public function getCharacterInstance():BreakIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getLineInstance(java.util.Locale) */
-	@:overload(function (locale:Locale):BreakIterator {})
+	/*@@@ modifiers=9 */ @:overload(function (locale:Locale):BreakIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getLineInstance() */
-	static public function getLineInstance():BreakIterator;
+	/*@@@ modifiers=9 */ static public function getLineInstance():BreakIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale) */
-	@:overload(function (locale:Locale):BreakIterator {})
+	/*@@@ modifiers=9 */ @:overload(function (locale:Locale):BreakIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getSentenceInstance() */
-	static public function getSentenceInstance():BreakIterator;
+	/*@@@ modifiers=9 */ static public function getSentenceInstance():BreakIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getText() */
-	public function getText():CharacterIterator;
+	/*@@@ modifiers=1025 */ public function getText():CharacterIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getWordInstance(java.util.Locale) */
-	@:overload(function (locale:Locale):BreakIterator {})
+	/*@@@ modifiers=9 */ @:overload(function (locale:Locale):BreakIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#getWordInstance() */
-	static public function getWordInstance():BreakIterator;
+	/*@@@ modifiers=9 */ static public function getWordInstance():BreakIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#isBoundary(int) */
-	public function isBoundary(offset:Int):Bool;
+	/*@@@ modifiers=1 */ public function isBoundary(offset:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#last() */
-	public function last():Int;
+	/*@@@ modifiers=1025 */ public function last():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#next(int) */
-	@:overload(function (n:Int):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (n:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#next() */
-	public function next():Int;
+	/*@@@ modifiers=1025 */ public function next():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#preceding(int) */
-	public function preceding(offset:Int):Int;
+	/*@@@ modifiers=1 */ public function preceding(offset:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#previous() */
-	public function previous():Int;
+	/*@@@ modifiers=1025 */ public function previous():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#setText(java.lang.String) */
-	@:overload(function (newText:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (newText:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/BreakIterator.html#setText(java.text.CharacterIterator) */
-	public function setText(newText:CharacterIterator):Void;
+	/*@@@ modifiers=1025 */ public function setText(newText:CharacterIterator):Void;
 
 }
 

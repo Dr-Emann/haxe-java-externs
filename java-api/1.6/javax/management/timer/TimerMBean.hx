@@ -2,7 +2,6 @@ package javax.management.timer;
 
 import java.lang.Boolean;
 import java.lang.Integer;
-import java.lang.Long;
 import java.util.Date;
 import java.util.Vector;
 
@@ -11,70 +10,70 @@ import java.util.Vector;
 extern interface TimerMBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date, long, long, boolean) */
-	@:overload(function (type:String, message:String, userData:Dynamic, date:Date, period:haxe.Int64, nbOccurences:haxe.Int64, fixedRate:Bool):Integer {})
+	/*@@@ modifiers=1025 */ @:overload(function (type:String, message:String, userData:Dynamic, date:Date, period:haxe.Int64, nbOccurences:haxe.Int64, fixedRate:Bool):Integer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date, long, long) */
-	@:overload(function (type:String, message:String, userData:Dynamic, date:Date, period:haxe.Int64, nbOccurences:haxe.Int64):Integer {})
+	/*@@@ modifiers=1025 */ @:overload(function (type:String, message:String, userData:Dynamic, date:Date, period:haxe.Int64, nbOccurences:haxe.Int64):Integer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date, long) */
-	@:overload(function (type:String, message:String, userData:Dynamic, date:Date, period:haxe.Int64):Integer {})
+	/*@@@ modifiers=1025 */ @:overload(function (type:String, message:String, userData:Dynamic, date:Date, period:haxe.Int64):Integer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date) */
-	public function addNotification(type:String, message:String, userData:Dynamic, date:Date):Integer;
+	/*@@@ modifiers=1025 */ public function addNotification(type:String, message:String, userData:Dynamic, date:Date):Integer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getAllNotificationIDs() */
-	public function getAllNotificationIDs():Vector<Integer>;
+	/*@@@ modifiers=1025 */ public function getAllNotificationIDs():Vector<Integer>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getDate(java.lang.Integer) */
-	public function getDate(id:Integer):Date;
+	/*@@@ modifiers=1025 */ public function getDate(id:Integer):Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getFixedRate(java.lang.Integer) */
-	public function getFixedRate(id:Integer):Boolean;
+	/*@@@ modifiers=1025 */ public function getFixedRate(id:Integer):Boolean;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getNbNotifications() */
-	public function getNbNotifications():Int;
+	/*@@@ modifiers=1025 */ public function getNbNotifications():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getNbOccurences(java.lang.Integer) */
-	public function getNbOccurences(id:Integer):Long;
+	/*@@@ modifiers=1025 */ public function getNbOccurences(id:Integer):Null<haxe.Int64>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getNotificationIDs(java.lang.String) */
-	public function getNotificationIDs(type:String):Vector<Integer>;
+	/*@@@ modifiers=1025 */ public function getNotificationIDs(type:String):Vector<Integer>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getNotificationMessage(java.lang.Integer) */
-	public function getNotificationMessage(id:Integer):String;
+	/*@@@ modifiers=1025 */ public function getNotificationMessage(id:Integer):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getNotificationType(java.lang.Integer) */
-	public function getNotificationType(id:Integer):String;
+	/*@@@ modifiers=1025 */ public function getNotificationType(id:Integer):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getNotificationUserData(java.lang.Integer) */
-	public function getNotificationUserData(id:Integer):Dynamic;
+	/*@@@ modifiers=1025 */ public function getNotificationUserData(id:Integer):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getPeriod(java.lang.Integer) */
-	public function getPeriod(id:Integer):Long;
+	/*@@@ modifiers=1025 */ public function getPeriod(id:Integer):Null<haxe.Int64>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#getSendPastNotifications() */
-	public function getSendPastNotifications():Bool;
+	/*@@@ modifiers=1025 */ public function getSendPastNotifications():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=1025 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#isEmpty() */
-	public function isEmpty():Bool;
+	/*@@@ modifiers=1025 */ public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#removeAllNotifications() */
-	public function removeAllNotifications():Void;
+	/*@@@ modifiers=1025 */ public function removeAllNotifications():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#removeNotification(java.lang.Integer) */
-	public function removeNotification(id:Integer):Void;
+	/*@@@ modifiers=1025 */ public function removeNotification(id:Integer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#removeNotifications(java.lang.String) */
-	public function removeNotifications(type:String):Void;
+	/*@@@ modifiers=1025 */ public function removeNotifications(type:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#setSendPastNotifications(boolean) */
-	public function setSendPastNotifications(value:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setSendPastNotifications(value:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#start() */
-	public function start():Void;
+	/*@@@ modifiers=1025 */ public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerMBean.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1025 */ public function stop():Void;
 
 }
 

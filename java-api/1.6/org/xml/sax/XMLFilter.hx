@@ -7,10 +7,10 @@ import org.xml.sax.XMLReader;
 extern interface XMLFilter implements XMLReader
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/XMLFilter.html#getParent() */
-	public function getParent():XMLReader;
+	/*@@@ modifiers=1025 */ public function getParent():XMLReader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader) */
-	public function setParent(parent:XMLReader):Void;
+	/*@@@ modifiers=1025 */ public function setParent(parent:XMLReader):Void;
 
 }
 

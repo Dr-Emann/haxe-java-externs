@@ -3,7 +3,6 @@ package javax.swing.text;
 import java.NativeArray;
 import java.awt.Graphics;
 import java.awt.Shape;
-import java.lang.Number;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentEvent_ElementChange;
 import javax.swing.text.AsyncBoxView_ChildLocator;
@@ -22,118 +21,118 @@ extern class AsyncBoxView extends View
 	private var locator:AsyncBoxView_ChildLocator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#AsyncBoxView(javax.swing.text.Element, int) */
-	public function new(elem:Element, axis:Int):Void;
+	/*@@@ modifiers=1 */ public function new(elem:Element, axis:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#createChildState(javax.swing.text.View) */
-	private function createChildState(v:View):AsyncBoxView_ChildState;
+	/*@@@ modifiers=4 */ private function createChildState(v:View):AsyncBoxView_ChildState;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#flushRequirementChanges() */
-	private function flushRequirementChanges():Void;
+	/*@@@ modifiers=4 */ private function flushRequirementChanges():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getBottomInset() */
-	public function getBottomInset():StdFloat;
+	/*@@@ modifiers=1 */ public function getBottomInset():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getChildAllocation(int, java.awt.Shape) */
-	override public function getChildAllocation(index:Int, a:Shape):Shape;
+	/*@@@ modifiers=1 */ override public function getChildAllocation(index:Int, a:Shape):Shape;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getChildState(int) */
-	private function getChildState(index:Int):AsyncBoxView_ChildState;
+	/*@@@ modifiers=4 */ private function getChildState(index:Int):AsyncBoxView_ChildState;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getEstimatedMajorSpan() */
-	private function getEstimatedMajorSpan():Bool;
+	/*@@@ modifiers=4 */ private function getEstimatedMajorSpan():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getInsetSpan(int) */
-	private function getInsetSpan(axis:Int):StdFloat;
+	/*@@@ modifiers=4 */ private function getInsetSpan(axis:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getLayoutQueue() */
-	private function getLayoutQueue():LayoutQueue;
+	/*@@@ modifiers=4 */ private function getLayoutQueue():LayoutQueue;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getLeftInset() */
-	public function getLeftInset():StdFloat;
+	/*@@@ modifiers=1 */ public function getLeftInset():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getMajorAxis() */
-	public function getMajorAxis():Int;
+	/*@@@ modifiers=1 */ public function getMajorAxis():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getMaximumSpan(int) */
-	override public function getMaximumSpan(axis:Int):StdFloat;
+	/*@@@ modifiers=1 */ override public function getMaximumSpan(axis:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getMinimumSpan(int) */
-	override public function getMinimumSpan(axis:Int):StdFloat;
+	/*@@@ modifiers=1 */ override public function getMinimumSpan(axis:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getMinorAxis() */
-	public function getMinorAxis():Int;
+	/*@@@ modifiers=1 */ public function getMinorAxis():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getNextVisualPositionFrom(int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[]) */
-	override public function getNextVisualPositionFrom(pos:Int, b:Position_Bias, a:Shape, direction:Int, biasRet:NativeArray<Position_Bias>):Int;
+	/*@@@ modifiers=1 */ override public function getNextVisualPositionFrom(pos:Int, b:Position_Bias, a:Shape, direction:Int, biasRet:NativeArray<Position_Bias>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getPreferredSpan(int) */
-	override public function getPreferredSpan(axis:Int):StdFloat;
+	/*@@@ modifiers=1 */ override public function getPreferredSpan(axis:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getRightInset() */
-	public function getRightInset():StdFloat;
+	/*@@@ modifiers=1 */ public function getRightInset():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getTopInset() */
-	public function getTopInset():StdFloat;
+	/*@@@ modifiers=1 */ public function getTopInset():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getView(int) */
-	override public function getView(n:Int):View;
+	/*@@@ modifiers=1 */ override public function getView(n:Int):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getViewCount() */
-	override public function getViewCount():Int;
+	/*@@@ modifiers=1 */ override public function getViewCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getViewIndex(int, javax.swing.text.Position$Bias) */
-	override public function getViewIndex(pos:Int, b:Position_Bias):Int;
+	/*@@@ modifiers=1 */ override public function getViewIndex(pos:Int, b:Position_Bias):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#getViewIndexAtPosition(int, javax.swing.text.Position$Bias) */
-	private function getViewIndexAtPosition(pos:Int, b:Position_Bias):Int;
+	/*@@@ modifiers=36 */ private function getViewIndexAtPosition(pos:Int, b:Position_Bias):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#loadChildren(javax.swing.text.ViewFactory) */
-	private function loadChildren(f:ViewFactory):Void;
+	/*@@@ modifiers=4 */ private function loadChildren(f:ViewFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#majorRequirementChange(javax.swing.text.AsyncBoxView$ChildState, float) */
-	private function majorRequirementChange(cs:AsyncBoxView_ChildState, delta:StdFloat):Void;
+	/*@@@ modifiers=36 */ private function majorRequirementChange(cs:AsyncBoxView_ChildState, delta:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#minorRequirementChange(javax.swing.text.AsyncBoxView$ChildState) */
-	private function minorRequirementChange(cs:AsyncBoxView_ChildState):Void;
+	/*@@@ modifiers=36 */ private function minorRequirementChange(cs:AsyncBoxView_ChildState):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) */
-	override public function modelToView(pos:Int, a:Shape, b:Position_Bias):Shape;
+	/*@@@ modifiers=1 */ override public function modelToView(pos:Int, a:Shape, b:Position_Bias):Shape;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#paint(java.awt.Graphics, java.awt.Shape) */
-	override public function paint(g:Graphics, alloc:Shape):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, alloc:Shape):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#preferenceChanged(javax.swing.text.View, boolean, boolean) */
-	override public function preferenceChanged(child:View, width:Bool, height:Bool):Void;
+	/*@@@ modifiers=33 */ override public function preferenceChanged(child:View, width:Bool, height:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#replace(int, int, javax.swing.text.View[]) */
-	override public function replace(offset:Int, length:Int, views:NativeArray<View>):Void;
+	/*@@@ modifiers=1 */ override public function replace(offset:Int, length:Int, views:NativeArray<View>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setBottomInset(float) */
-	public function setBottomInset(i:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setBottomInset(i:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setEstimatedMajorSpan(boolean) */
-	private function setEstimatedMajorSpan(isEstimated:Bool):Void;
+	/*@@@ modifiers=4 */ private function setEstimatedMajorSpan(isEstimated:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setLeftInset(float) */
-	public function setLeftInset(i:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setLeftInset(i:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setParent(javax.swing.text.View) */
-	override public function setParent(parent:View):Void;
+	/*@@@ modifiers=1 */ override public function setParent(parent:View):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setRightInset(float) */
-	public function setRightInset(i:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setRightInset(i:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setSize(float, float) */
-	override public function setSize(width:StdFloat, height:StdFloat):Void;
+	/*@@@ modifiers=1 */ override public function setSize(width:Single, height:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#setTopInset(float) */
-	public function setTopInset(i:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setTopInset(i:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#updateLayout(javax.swing.event.DocumentEvent$ElementChange, javax.swing.event.DocumentEvent, java.awt.Shape) */
-	override private function updateLayout(ec:DocumentEvent_ElementChange, e:DocumentEvent, a:Shape):Void;
+	/*@@@ modifiers=4 */ override private function updateLayout(ec:DocumentEvent_ElementChange, e:DocumentEvent, a:Shape):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AsyncBoxView.html#viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]) */
-	override public function viewToModel(x:StdFloat, y:StdFloat, a:Shape, biasReturn:NativeArray<Position_Bias>):Int;
+	/*@@@ modifiers=1 */ override public function viewToModel(x:Single, y:Single, a:Shape, biasReturn:NativeArray<Position_Bias>):Int;
 
 }
 

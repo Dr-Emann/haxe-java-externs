@@ -8,7 +8,7 @@ import javax.naming.spi.InitialContextFactory;
 extern interface InitialContextFactoryBuilder
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/InitialContextFactoryBuilder.html#createInitialContextFactory(java.util.Hashtable) */
-	public function createInitialContextFactory(environment:Hashtable<Dynamic, Dynamic>):InitialContextFactory;
+	/*@@@ modifiers=1025 */ public function createInitialContextFactory(environment:Hashtable<Dynamic, Dynamic>):InitialContextFactory;
 
 }
 

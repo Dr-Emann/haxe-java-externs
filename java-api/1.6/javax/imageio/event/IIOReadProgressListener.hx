@@ -1,6 +1,5 @@
 package javax.imageio.event;
 
-import java.lang.Number;
 import java.util.EventListener;
 import javax.imageio.ImageReader;
 
@@ -9,31 +8,31 @@ import javax.imageio.ImageReader;
 extern interface IIOReadProgressListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#imageComplete(javax.imageio.ImageReader) */
-	public function imageComplete(source:ImageReader):Void;
+	/*@@@ modifiers=1025 */ public function imageComplete(source:ImageReader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#imageProgress(javax.imageio.ImageReader, float) */
-	public function imageProgress(source:ImageReader, percentageDone:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function imageProgress(source:ImageReader, percentageDone:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#imageStarted(javax.imageio.ImageReader, int) */
-	public function imageStarted(source:ImageReader, imageIndex:Int):Void;
+	/*@@@ modifiers=1025 */ public function imageStarted(source:ImageReader, imageIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#readAborted(javax.imageio.ImageReader) */
-	public function readAborted(source:ImageReader):Void;
+	/*@@@ modifiers=1025 */ public function readAborted(source:ImageReader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#sequenceComplete(javax.imageio.ImageReader) */
-	public function sequenceComplete(source:ImageReader):Void;
+	/*@@@ modifiers=1025 */ public function sequenceComplete(source:ImageReader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#sequenceStarted(javax.imageio.ImageReader, int) */
-	public function sequenceStarted(source:ImageReader, minIndex:Int):Void;
+	/*@@@ modifiers=1025 */ public function sequenceStarted(source:ImageReader, minIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#thumbnailComplete(javax.imageio.ImageReader) */
-	public function thumbnailComplete(source:ImageReader):Void;
+	/*@@@ modifiers=1025 */ public function thumbnailComplete(source:ImageReader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#thumbnailProgress(javax.imageio.ImageReader, float) */
-	public function thumbnailProgress(source:ImageReader, percentageDone:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function thumbnailProgress(source:ImageReader, percentageDone:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOReadProgressListener.html#thumbnailStarted(javax.imageio.ImageReader, int, int) */
-	public function thumbnailStarted(source:ImageReader, imageIndex:Int, thumbnailIndex:Int):Void;
+	/*@@@ modifiers=1025 */ public function thumbnailStarted(source:ImageReader, imageIndex:Int, thumbnailIndex:Int):Void;
 
 }
 

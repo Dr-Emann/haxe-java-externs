@@ -10,10 +10,10 @@ import javax.swing.plaf.basic.BasicScrollBarUI;
 extern class BasicScrollBarUI_ModelListener extends Object, implements ChangeListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ModelListener.html#BasicScrollBarUI$ModelListener(javax.swing.plaf.basic.BasicScrollBarUI) */
-	private function new(arg0:BasicScrollBarUI):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:BasicScrollBarUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ModelListener.html#stateChanged(javax.swing.event.ChangeEvent) */
-	public function stateChanged(e:ChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function stateChanged(e:ChangeEvent):Void;
 
 }
 

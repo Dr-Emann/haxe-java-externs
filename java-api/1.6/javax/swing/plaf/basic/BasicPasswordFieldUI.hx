@@ -11,19 +11,19 @@ import javax.swing.text.View;
 extern class BasicPasswordFieldUI extends BasicTextFieldUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicPasswordFieldUI.html#BasicPasswordFieldUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicPasswordFieldUI.html#create(javax.swing.text.Element) */
-	override public function create(elem:Element):View;
+	/*@@@ modifiers=1 */ override public function create(elem:Element):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicPasswordFieldUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicPasswordFieldUI.html#getPropertyPrefix() */
-	override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicPasswordFieldUI.html#installDefaults() */
-	override private function installDefaults():Void;
+	/*@@@ modifiers=4 */ override private function installDefaults():Void;
 
 }
 

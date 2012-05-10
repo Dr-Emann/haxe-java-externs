@@ -7,7 +7,7 @@ import javax.xml.ws.Response;
 extern interface AsyncHandler<T : (Dynamic)>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/AsyncHandler.html#handleResponse(javax.xml.ws.Response) */
-	public function handleResponse(res:Response<T>):Void;
+	/*@@@ modifiers=1025 */ public function handleResponse(res:Response<T>):Void;
 
 }
 

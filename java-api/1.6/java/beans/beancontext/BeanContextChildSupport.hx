@@ -32,54 +32,54 @@ extern class BeanContextChildSupport extends Object, implements BeanContextChild
 	private var rejectedSetBCOnce:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#BeanContextChildSupport(java.beans.beancontext.BeanContextChild) */
-	@:overload(function (bcc:BeanContextChild):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (bcc:BeanContextChild):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#BeanContextChildSupport() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(name:String, pcl:PropertyChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addPropertyChangeListener(name:String, pcl:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#addVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener) */
-	public function addVetoableChangeListener(name:String, vcl:VetoableChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addVetoableChangeListener(name:String, vcl:VetoableChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	public function firePropertyChange(name:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function firePropertyChange(name:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#fireVetoableChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	public function fireVetoableChange(name:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function fireVetoableChange(name:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#getBeanContext() */
-	public function getBeanContext():BeanContext;
+	/*@@@ modifiers=33 */ public function getBeanContext():BeanContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#getBeanContextChildPeer() */
-	public function getBeanContextChildPeer():BeanContextChild;
+	/*@@@ modifiers=1 */ public function getBeanContextChildPeer():BeanContextChild;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#initializeBeanContextResources() */
-	private function initializeBeanContextResources():Void;
+	/*@@@ modifiers=4 */ private function initializeBeanContextResources():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#isDelegated() */
-	public function isDelegated():Bool;
+	/*@@@ modifiers=1 */ public function isDelegated():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#releaseBeanContextResources() */
-	private function releaseBeanContextResources():Void;
+	/*@@@ modifiers=4 */ private function releaseBeanContextResources():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(name:String, pcl:PropertyChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removePropertyChangeListener(name:String, pcl:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#removeVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener) */
-	public function removeVetoableChangeListener(name:String, vcl:VetoableChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeVetoableChangeListener(name:String, vcl:VetoableChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent) */
-	public function serviceAvailable(bcsae:BeanContextServiceAvailableEvent):Void;
+	/*@@@ modifiers=1 */ public function serviceAvailable(bcsae:BeanContextServiceAvailableEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent) */
-	public function serviceRevoked(bcsre:BeanContextServiceRevokedEvent):Void;
+	/*@@@ modifiers=1 */ public function serviceRevoked(bcsre:BeanContextServiceRevokedEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#setBeanContext(java.beans.beancontext.BeanContext) */
-	public function setBeanContext(bc:BeanContext):Void;
+	/*@@@ modifiers=33 */ public function setBeanContext(bc:BeanContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextChildSupport.html#validatePendingSetBeanContext(java.beans.beancontext.BeanContext) */
-	public function validatePendingSetBeanContext(newValue:BeanContext):Bool;
+	/*@@@ modifiers=1 */ public function validatePendingSetBeanContext(newValue:BeanContext):Bool;
 
 }
 

@@ -8,12 +8,12 @@ import java.security.Permission;
 extern class AccessControlException extends SecurityException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlException.html#AccessControlException(java.lang.String) */
-	@:overload(function (s:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (s:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlException.html#AccessControlException(java.lang.String, java.security.Permission) */
-	public function new(s:String, p:Permission):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, p:Permission):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlException.html#getPermission() */
-	public function getPermission():Permission;
+	/*@@@ modifiers=1 */ public function getPermission():Permission;
 
 }
 

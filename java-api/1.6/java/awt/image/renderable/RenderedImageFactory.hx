@@ -9,7 +9,7 @@ import java.awt.image.renderable.ParameterBlock;
 extern interface RenderedImageFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock, java.awt.RenderingHints) */
-	public function create(paramBlock:ParameterBlock, hints:RenderingHints):RenderedImage;
+	/*@@@ modifiers=1025 */ public function create(paramBlock:ParameterBlock, hints:RenderingHints):RenderedImage;
 
 }
 

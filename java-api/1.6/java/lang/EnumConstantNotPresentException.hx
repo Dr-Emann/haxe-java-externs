@@ -9,13 +9,13 @@ import java.lang.RuntimeException;
 extern class EnumConstantNotPresentException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/EnumConstantNotPresentException.html#EnumConstantNotPresentException(java.lang.Class, java.lang.String) */
-	public function new(enumType:Class<Enum<Dynamic>>, constantName:String):Void;
+	/*@@@ modifiers=1 */ public function new(enumType:Class<Enum<Dynamic>>, constantName:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/EnumConstantNotPresentException.html#constantName() */
-	public function constantName():String;
+	/*@@@ modifiers=1 */ public function constantName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/EnumConstantNotPresentException.html#enumType() */
-	public function enumType():Class<Enum<Dynamic>>;
+	/*@@@ modifiers=1 */ public function enumType():Class<Enum<Dynamic>>;
 
 }
 

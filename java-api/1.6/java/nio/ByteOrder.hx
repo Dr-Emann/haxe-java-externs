@@ -8,10 +8,10 @@ extern class ByteOrder extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteOrder.html#nativeOrder() */
-	static public function nativeOrder():ByteOrder;
+	/*@@@ modifiers=9 */ static public function nativeOrder():ByteOrder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteOrder.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

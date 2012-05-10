@@ -9,10 +9,10 @@ import java.rmi.server.RemoteStub;
 extern interface ServerRef implements RemoteRef
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/ServerRef.html#exportObject(java.rmi.Remote, java.lang.Object) */
-	public function exportObject(obj:Remote, data:Dynamic):RemoteStub;
+	/*@@@ modifiers=1025 */ public function exportObject(obj:Remote, data:Dynamic):RemoteStub;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/ServerRef.html#getClientHost() */
-	public function getClientHost():String;
+	/*@@@ modifiers=1025 */ public function getClientHost():String;
 
 }
 

@@ -5,7 +5,6 @@ import java.awt.Shape;
 import java.awt.font.GlyphJustificationInfo;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
-import java.lang.Number;
 import java.lang.Object;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html */
@@ -13,31 +12,31 @@ import java.lang.Object;
 extern class GraphicAttribute extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#GraphicAttribute(int) */
-	private function new(alignment:Int):Void;
+	/*@@@ modifiers=4 */ private function new(alignment:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#draw(java.awt.Graphics2D, float, float) */
-	public function draw(graphics:Graphics2D, x:StdFloat, y:StdFloat):Void;
+	/*@@@ modifiers=1025 */ public function draw(graphics:Graphics2D, x:Single, y:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getAdvance() */
-	public function getAdvance():StdFloat;
+	/*@@@ modifiers=1025 */ public function getAdvance():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getAlignment() */
-	public function getAlignment():Int;
+	/*@@@ modifiers=17 */ public function getAlignment():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getAscent() */
-	public function getAscent():StdFloat;
+	/*@@@ modifiers=1025 */ public function getAscent():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getBounds() */
-	public function getBounds():Rectangle2D;
+	/*@@@ modifiers=1 */ public function getBounds():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getDescent() */
-	public function getDescent():StdFloat;
+	/*@@@ modifiers=1025 */ public function getDescent():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getJustificationInfo() */
-	public function getJustificationInfo():GlyphJustificationInfo;
+	/*@@@ modifiers=1 */ public function getJustificationInfo():GlyphJustificationInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/GraphicAttribute.html#getOutline(java.awt.geom.AffineTransform) */
-	public function getOutline(tx:AffineTransform):Shape;
+	/*@@@ modifiers=1 */ public function getOutline(tx:AffineTransform):Shape;
 
 }
 

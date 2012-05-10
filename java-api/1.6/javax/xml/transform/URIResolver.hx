@@ -7,7 +7,7 @@ import javax.xml.transform.Source;
 extern interface URIResolver
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/URIResolver.html#resolve(java.lang.String, java.lang.String) */
-	public function resolve(href:String, base:String):Source;
+	/*@@@ modifiers=1025 */ public function resolve(href:String, base:String):Source;
 
 }
 

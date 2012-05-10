@@ -11,16 +11,16 @@ import org.w3c.dom.ls.LSSerializer;
 extern interface DOMImplementationLS
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/DOMImplementationLS.html#createLSInput() */
-	public function createLSInput():LSInput;
+	/*@@@ modifiers=1025 */ public function createLSInput():LSInput;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput() */
-	public function createLSOutput():LSOutput;
+	/*@@@ modifiers=1025 */ public function createLSOutput():LSOutput;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short, java.lang.String) */
-	public function createLSParser(mode:Int16, schemaType:String):LSParser;
+	/*@@@ modifiers=1025 */ public function createLSParser(mode:Int16, schemaType:String):LSParser;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer() */
-	public function createLSSerializer():LSSerializer;
+	/*@@@ modifiers=1025 */ public function createLSSerializer():LSSerializer;
 
 }
 

@@ -13,36 +13,36 @@ extern class AccessibleRelationSet extends Object
 	private var relations:Vector<AccessibleRelation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#AccessibleRelationSet(javax.accessibility.AccessibleRelation[]) */
-	@:overload(function (relations:NativeArray<AccessibleRelation>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (relations:NativeArray<AccessibleRelation>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#AccessibleRelationSet() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#add(javax.accessibility.AccessibleRelation) */
-	public function add(relation:AccessibleRelation):Bool;
+	/*@@@ modifiers=1 */ public function add(relation:AccessibleRelation):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#addAll(javax.accessibility.AccessibleRelation[]) */
-	public function addAll(relations:NativeArray<AccessibleRelation>):Void;
+	/*@@@ modifiers=1 */ public function addAll(relations:NativeArray<AccessibleRelation>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#clear() */
-	public function clear():Void;
+	/*@@@ modifiers=1 */ public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#contains(java.lang.String) */
-	public function contains(key:String):Bool;
+	/*@@@ modifiers=1 */ public function contains(key:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#get(java.lang.String) */
-	public function get(key:String):AccessibleRelation;
+	/*@@@ modifiers=1 */ public function get(key:String):AccessibleRelation;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#remove(javax.accessibility.AccessibleRelation) */
-	public function remove(relation:AccessibleRelation):Bool;
+	/*@@@ modifiers=1 */ public function remove(relation:AccessibleRelation):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1 */ public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#toArray() */
-	public function toArray():NativeArray<AccessibleRelation>;
+	/*@@@ modifiers=1 */ public function toArray():NativeArray<AccessibleRelation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRelationSet.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

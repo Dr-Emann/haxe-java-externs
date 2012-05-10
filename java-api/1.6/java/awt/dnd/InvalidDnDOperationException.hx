@@ -7,9 +7,9 @@ import java.lang.IllegalStateException;
 extern class InvalidDnDOperationException extends IllegalStateException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/InvalidDnDOperationException.html#InvalidDnDOperationException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/InvalidDnDOperationException.html#InvalidDnDOperationException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

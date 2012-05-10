@@ -9,10 +9,10 @@ import javax.management.ObjectName;
 extern interface QueryExp implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/QueryExp.html#apply(javax.management.ObjectName) */
-	public function apply(name:ObjectName):Bool;
+	/*@@@ modifiers=1025 */ public function apply(name:ObjectName):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/QueryExp.html#setMBeanServer(javax.management.MBeanServer) */
-	public function setMBeanServer(s:MBeanServer):Void;
+	/*@@@ modifiers=1025 */ public function setMBeanServer(s:MBeanServer):Void;
 
 }
 

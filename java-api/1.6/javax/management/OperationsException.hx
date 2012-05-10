@@ -7,9 +7,9 @@ import javax.management.JMException;
 extern class OperationsException extends JMException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/OperationsException.html#OperationsException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/OperationsException.html#OperationsException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

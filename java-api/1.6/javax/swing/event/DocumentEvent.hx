@@ -10,19 +10,19 @@ import javax.swing.text.Element;
 extern interface DocumentEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element) */
-	public function getChange(elem:Element):DocumentEvent_ElementChange;
+	/*@@@ modifiers=1025 */ public function getChange(elem:Element):DocumentEvent_ElementChange;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentEvent.html#getDocument() */
-	public function getDocument():Document;
+	/*@@@ modifiers=1025 */ public function getDocument():Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentEvent.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1025 */ public function getLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentEvent.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1025 */ public function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentEvent.html#getType() */
-	public function getType():DocumentEvent_EventType;
+	/*@@@ modifiers=1025 */ public function getType():DocumentEvent_EventType;
 
 }
 

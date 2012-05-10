@@ -15,35 +15,35 @@ extern class AttributeSetUtilities extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.AttributeSet) */
-	@:overload(function (attributeSet:AttributeSet):AttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:AttributeSet):AttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.DocAttributeSet) */
-	@:overload(function (attributeSet:DocAttributeSet):DocAttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:DocAttributeSet):DocAttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintJobAttributeSet) */
-	@:overload(function (attributeSet:PrintJobAttributeSet):PrintJobAttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:PrintJobAttributeSet):PrintJobAttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintRequestAttributeSet) */
-	@:overload(function (attributeSet:PrintRequestAttributeSet):PrintRequestAttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:PrintRequestAttributeSet):PrintRequestAttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintServiceAttributeSet) */
-	static public function synchronizedView(attributeSet:PrintServiceAttributeSet):PrintServiceAttributeSet;
+	/*@@@ modifiers=9 */ static public function synchronizedView(attributeSet:PrintServiceAttributeSet):PrintServiceAttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.AttributeSet) */
-	@:overload(function (attributeSet:AttributeSet):AttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:AttributeSet):AttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.DocAttributeSet) */
-	@:overload(function (attributeSet:DocAttributeSet):DocAttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:DocAttributeSet):DocAttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintJobAttributeSet) */
-	@:overload(function (attributeSet:PrintJobAttributeSet):PrintJobAttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:PrintJobAttributeSet):PrintJobAttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintRequestAttributeSet) */
-	@:overload(function (attributeSet:PrintRequestAttributeSet):PrintRequestAttributeSet {})
+	/*@@@ modifiers=9 */ @:overload(function (attributeSet:PrintRequestAttributeSet):PrintRequestAttributeSet {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintServiceAttributeSet) */
-	static public function unmodifiableView(attributeSet:PrintServiceAttributeSet):PrintServiceAttributeSet;
+	/*@@@ modifiers=9 */ static public function unmodifiableView(attributeSet:PrintServiceAttributeSet):PrintServiceAttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#verifyAttributeCategory(java.lang.Object, java.lang.Class) */
-	static public function verifyAttributeCategory(object:Dynamic, interfaceName:Class<Dynamic>):Class<Dynamic>;
+	/*@@@ modifiers=9 */ static public function verifyAttributeCategory(object:Dynamic, interfaceName:Class<Dynamic>):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#verifyAttributeValue(java.lang.Object, java.lang.Class) */
-	static public function verifyAttributeValue(object:Dynamic, interfaceName:Class<Dynamic>):Attribute;
+	/*@@@ modifiers=9 */ static public function verifyAttributeValue(object:Dynamic, interfaceName:Class<Dynamic>):Attribute;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/AttributeSetUtilities.html#verifyCategoryForValue(java.lang.Class, javax.print.attribute.Attribute) */
-	static public function verifyCategoryForValue(category:Class<Dynamic>, attribute:Attribute):Void;
+	/*@@@ modifiers=9 */ static public function verifyCategoryForValue(category:Class<Dynamic>, attribute:Attribute):Void;
 
 }
 

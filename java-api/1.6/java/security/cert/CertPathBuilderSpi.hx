@@ -9,10 +9,10 @@ import java.security.cert.CertPathParameters;
 extern class CertPathBuilderSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertPathBuilderSpi.html#CertPathBuilderSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertPathBuilderSpi.html#engineBuild(java.security.cert.CertPathParameters) */
-	public function engineBuild(params:CertPathParameters):CertPathBuilderResult;
+	/*@@@ modifiers=1025 */ public function engineBuild(params:CertPathParameters):CertPathBuilderResult;
 
 }
 

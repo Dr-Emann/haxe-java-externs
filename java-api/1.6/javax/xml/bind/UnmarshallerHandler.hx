@@ -7,7 +7,7 @@ import org.xml.sax.ContentHandler;
 extern interface UnmarshallerHandler implements ContentHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/UnmarshallerHandler.html#getResult() */
-	public function getResult():Dynamic;
+	/*@@@ modifiers=1025 */ public function getResult():Dynamic;
 
 }
 

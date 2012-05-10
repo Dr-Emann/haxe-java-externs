@@ -7,13 +7,13 @@ import java.beans.PropertyChangeListener;
 extern interface Customizer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/Customizer.html#addPropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function addPropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/Customizer.html#removePropertyChangeListener(java.beans.PropertyChangeListener) */
-	public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
+	/*@@@ modifiers=1025 */ public function removePropertyChangeListener(listener:PropertyChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/Customizer.html#setObject(java.lang.Object) */
-	public function setObject(bean:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function setObject(bean:Dynamic):Void;
 
 }
 

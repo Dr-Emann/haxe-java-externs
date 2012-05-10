@@ -8,70 +8,70 @@ import javax.accessibility.Accessible;
 extern interface AccessibleTable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleAt(int, int) */
-	public function getAccessibleAt(r:Int, c:Int):Accessible;
+	/*@@@ modifiers=1025 */ public function getAccessibleAt(r:Int, c:Int):Accessible;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleCaption() */
-	public function getAccessibleCaption():Accessible;
+	/*@@@ modifiers=1025 */ public function getAccessibleCaption():Accessible;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleColumnCount() */
-	public function getAccessibleColumnCount():Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleColumnCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleColumnDescription(int) */
-	public function getAccessibleColumnDescription(c:Int):Accessible;
+	/*@@@ modifiers=1025 */ public function getAccessibleColumnDescription(c:Int):Accessible;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleColumnExtentAt(int, int) */
-	public function getAccessibleColumnExtentAt(r:Int, c:Int):Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleColumnExtentAt(r:Int, c:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleColumnHeader() */
-	public function getAccessibleColumnHeader():AccessibleTable;
+	/*@@@ modifiers=1025 */ public function getAccessibleColumnHeader():AccessibleTable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleRowCount() */
-	public function getAccessibleRowCount():Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleRowCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleRowDescription(int) */
-	public function getAccessibleRowDescription(r:Int):Accessible;
+	/*@@@ modifiers=1025 */ public function getAccessibleRowDescription(r:Int):Accessible;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleRowExtentAt(int, int) */
-	public function getAccessibleRowExtentAt(r:Int, c:Int):Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleRowExtentAt(r:Int, c:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleRowHeader() */
-	public function getAccessibleRowHeader():AccessibleTable;
+	/*@@@ modifiers=1025 */ public function getAccessibleRowHeader():AccessibleTable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getAccessibleSummary() */
-	public function getAccessibleSummary():Accessible;
+	/*@@@ modifiers=1025 */ public function getAccessibleSummary():Accessible;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getSelectedAccessibleColumns() */
-	public function getSelectedAccessibleColumns():NativeArray<Int>;
+	/*@@@ modifiers=1025 */ public function getSelectedAccessibleColumns():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#getSelectedAccessibleRows() */
-	public function getSelectedAccessibleRows():NativeArray<Int>;
+	/*@@@ modifiers=1025 */ public function getSelectedAccessibleRows():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#isAccessibleColumnSelected(int) */
-	public function isAccessibleColumnSelected(c:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isAccessibleColumnSelected(c:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#isAccessibleRowSelected(int) */
-	public function isAccessibleRowSelected(r:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isAccessibleRowSelected(r:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#isAccessibleSelected(int, int) */
-	public function isAccessibleSelected(r:Int, c:Int):Bool;
+	/*@@@ modifiers=1025 */ public function isAccessibleSelected(r:Int, c:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#setAccessibleCaption(javax.accessibility.Accessible) */
-	public function setAccessibleCaption(a:Accessible):Void;
+	/*@@@ modifiers=1025 */ public function setAccessibleCaption(a:Accessible):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#setAccessibleColumnDescription(int, javax.accessibility.Accessible) */
-	public function setAccessibleColumnDescription(c:Int, a:Accessible):Void;
+	/*@@@ modifiers=1025 */ public function setAccessibleColumnDescription(c:Int, a:Accessible):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#setAccessibleColumnHeader(javax.accessibility.AccessibleTable) */
-	public function setAccessibleColumnHeader(table:AccessibleTable):Void;
+	/*@@@ modifiers=1025 */ public function setAccessibleColumnHeader(table:AccessibleTable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#setAccessibleRowDescription(int, javax.accessibility.Accessible) */
-	public function setAccessibleRowDescription(r:Int, a:Accessible):Void;
+	/*@@@ modifiers=1025 */ public function setAccessibleRowDescription(r:Int, a:Accessible):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#setAccessibleRowHeader(javax.accessibility.AccessibleTable) */
-	public function setAccessibleRowHeader(table:AccessibleTable):Void;
+	/*@@@ modifiers=1025 */ public function setAccessibleRowHeader(table:AccessibleTable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTable.html#setAccessibleSummary(javax.accessibility.Accessible) */
-	public function setAccessibleSummary(a:Accessible):Void;
+	/*@@@ modifiers=1025 */ public function setAccessibleSummary(a:Accessible):Void;
 
 }
 

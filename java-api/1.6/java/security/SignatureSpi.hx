@@ -18,46 +18,46 @@ extern class SignatureSpi extends Object
 	private var appRandom:SecureRandom;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#SignatureSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineGetParameter(java.lang.String) */
-	private function engineGetParameter(param:String):Dynamic;
+	/*@@@ modifiers=1028 */ private function engineGetParameter(param:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineGetParameters() */
-	private function engineGetParameters():AlgorithmParameters;
+	/*@@@ modifiers=4 */ private function engineGetParameters():AlgorithmParameters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineInitSign(java.security.PrivateKey, java.security.SecureRandom) */
-	@:overload(function (privateKey:PrivateKey, random:SecureRandom):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (privateKey:PrivateKey, random:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineInitSign(java.security.PrivateKey) */
-	private function engineInitSign(privateKey:PrivateKey):Void;
+	/*@@@ modifiers=1028 */ private function engineInitSign(privateKey:PrivateKey):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineInitVerify(java.security.PublicKey) */
-	private function engineInitVerify(publicKey:PublicKey):Void;
+	/*@@@ modifiers=1028 */ private function engineInitVerify(publicKey:PublicKey):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineSetParameter(java.lang.String, java.lang.Object) */
-	@:overload(function (param:String, value:Dynamic):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (param:String, value:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineSetParameter(java.security.spec.AlgorithmParameterSpec) */
-	private function engineSetParameter(params:AlgorithmParameterSpec):Void;
+	/*@@@ modifiers=4 */ private function engineSetParameter(params:AlgorithmParameterSpec):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineSign(byte[], int, int) */
-	@:overload(function (outbuf:NativeArray<Int8>, offset:Int, len:Int):Int {})
+	/*@@@ modifiers=4 */ @:overload(function (outbuf:NativeArray<Int8>, offset:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineSign() */
-	private function engineSign():NativeArray<Int8>;
+	/*@@@ modifiers=1028 */ private function engineSign():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineUpdate(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineUpdate(byte) */
-	@:overload(function (b:Int8):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (b:Int8):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineUpdate(java.nio.ByteBuffer) */
-	private function engineUpdate(input:ByteBuffer):Void;
+	/*@@@ modifiers=4 */ private function engineUpdate(input:ByteBuffer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineVerify(byte[], int, int) */
-	@:overload(function (sigBytes:NativeArray<Int8>, offset:Int, length:Int):Bool {})
+	/*@@@ modifiers=4 */ @:overload(function (sigBytes:NativeArray<Int8>, offset:Int, length:Int):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SignatureSpi.html#engineVerify(byte[]) */
-	private function engineVerify(sigBytes:NativeArray<Int8>):Bool;
+	/*@@@ modifiers=1028 */ private function engineVerify(sigBytes:NativeArray<Int8>):Bool;
 
 }
 

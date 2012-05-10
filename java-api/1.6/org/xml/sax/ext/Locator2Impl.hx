@@ -9,24 +9,21 @@ import org.xml.sax.helpers.LocatorImpl;
 extern class Locator2Impl extends LocatorImpl, implements Locator2
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#Locator2Impl() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#Locator2Impl(org.xml.sax.Locator) */
-	public function new(locator:Locator):Void;
+	/*@@@ modifiers=1 */ public function new(locator:Locator):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#getEncoding() */
-	public function getEncoding():String;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#getLineNumber() */
-	public function getLineNumber():Int;
+	/*@@@ modifiers=1 */ public function getEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#getXMLVersion() */
-	public function getXMLVersion():String;
+	/*@@@ modifiers=1 */ public function getXMLVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#setEncoding(java.lang.String) */
-	public function setEncoding(encoding:String):Void;
+	/*@@@ modifiers=1 */ public function setEncoding(encoding:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2Impl.html#setXMLVersion(java.lang.String) */
-	public function setXMLVersion(version:String):Void;
+	/*@@@ modifiers=1 */ public function setXMLVersion(version:String):Void;
 
 }
 

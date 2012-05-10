@@ -7,7 +7,7 @@ import java.io.File;
 extern interface FilenameFilter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilenameFilter.html#accept(java.io.File, java.lang.String) */
-	public function accept(dir:File, name:String):Bool;
+	/*@@@ modifiers=1025 */ public function accept(dir:File, name:String):Bool;
 
 }
 

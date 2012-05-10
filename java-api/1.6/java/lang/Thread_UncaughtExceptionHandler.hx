@@ -8,7 +8,7 @@ import java.lang.Throwable;
 extern interface Thread_UncaughtExceptionHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread, java.lang.Throwable) */
-	public function uncaughtException(t:Thread, e:Throwable):Void;
+	/*@@@ modifiers=1025 */ public function uncaughtException(t:Thread, e:Throwable):Void;
 
 }
 

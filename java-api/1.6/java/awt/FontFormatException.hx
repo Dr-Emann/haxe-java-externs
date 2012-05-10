@@ -7,7 +7,7 @@ import java.lang.Exception;
 extern class FontFormatException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontFormatException.html#FontFormatException(java.lang.String) */
-	public function new(reason:String):Void;
+	/*@@@ modifiers=1 */ public function new(reason:String):Void;
 
 }
 

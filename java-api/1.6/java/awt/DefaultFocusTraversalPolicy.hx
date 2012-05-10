@@ -8,10 +8,10 @@ import java.awt.ContainerOrderFocusTraversalPolicy;
 extern class DefaultFocusTraversalPolicy extends ContainerOrderFocusTraversalPolicy
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultFocusTraversalPolicy.html#DefaultFocusTraversalPolicy() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/DefaultFocusTraversalPolicy.html#accept(java.awt.Component) */
-	override private function accept(aComponent:Component):Bool;
+	/*@@@ modifiers=4 */ override private function accept(aComponent:Component):Bool;
 
 }
 

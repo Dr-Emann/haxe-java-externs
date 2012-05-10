@@ -7,16 +7,16 @@ import javax.swing.event.ListDataListener;
 extern interface ListModel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener) */
-	public function addListDataListener(l:ListDataListener):Void;
+	/*@@@ modifiers=1025 */ public function addListDataListener(l:ListDataListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListModel.html#getElementAt(int) */
-	public function getElementAt(index:Int):Dynamic;
+	/*@@@ modifiers=1025 */ public function getElementAt(index:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListModel.html#getSize() */
-	public function getSize():Int;
+	/*@@@ modifiers=1025 */ public function getSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener) */
-	public function removeListDataListener(l:ListDataListener):Void;
+	/*@@@ modifiers=1025 */ public function removeListDataListener(l:ListDataListener):Void;
 
 }
 

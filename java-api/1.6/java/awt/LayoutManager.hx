@@ -9,19 +9,19 @@ import java.awt.Dimension;
 extern interface LayoutManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager.html#addLayoutComponent(java.lang.String, java.awt.Component) */
-	public function addLayoutComponent(name:String, comp:Component):Void;
+	/*@@@ modifiers=1025 */ public function addLayoutComponent(name:String, comp:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager.html#layoutContainer(java.awt.Container) */
-	public function layoutContainer(parent:Container):Void;
+	/*@@@ modifiers=1025 */ public function layoutContainer(parent:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager.html#minimumLayoutSize(java.awt.Container) */
-	public function minimumLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1025 */ public function minimumLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager.html#preferredLayoutSize(java.awt.Container) */
-	public function preferredLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1025 */ public function preferredLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager.html#removeLayoutComponent(java.awt.Component) */
-	public function removeLayoutComponent(comp:Component):Void;
+	/*@@@ modifiers=1025 */ public function removeLayoutComponent(comp:Component):Void;
 
 }
 

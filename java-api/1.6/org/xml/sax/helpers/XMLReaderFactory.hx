@@ -9,9 +9,9 @@ extern class XMLReaderFactory extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/helpers/XMLReaderFactory.html#createXMLReader(java.lang.String) */
-	@:overload(function (className:String):XMLReader {})
+	/*@@@ modifiers=9 */ @:overload(function (className:String):XMLReader {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/helpers/XMLReaderFactory.html#createXMLReader() */
-	static public function createXMLReader():XMLReader;
+	/*@@@ modifiers=9 */ static public function createXMLReader():XMLReader;
 
 }
 

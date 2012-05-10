@@ -6,13 +6,13 @@ package org.w3c.dom;
 extern interface DOMStringList
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMStringList.html#contains(java.lang.String) */
-	public function contains(str:String):Bool;
+	/*@@@ modifiers=1025 */ public function contains(str:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMStringList.html#getLength() */
-	public function getLength():Int;
+	/*@@@ modifiers=1025 */ public function getLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMStringList.html#item(int) */
-	public function item(index:Int):String;
+	/*@@@ modifiers=1025 */ public function item(index:Int):String;
 
 }
 

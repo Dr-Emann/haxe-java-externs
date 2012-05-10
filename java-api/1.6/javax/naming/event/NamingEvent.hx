@@ -22,25 +22,25 @@ extern class NamingEvent extends EventObject
 	private var newBinding:Binding;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#NamingEvent(javax.naming.event.EventContext, int, javax.naming.Binding, javax.naming.Binding, java.lang.Object) */
-	public function new(source:EventContext, type:Int, newBd:Binding, oldBd:Binding, changeInfo:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(source:EventContext, type:Int, newBd:Binding, oldBd:Binding, changeInfo:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#dispatch(javax.naming.event.NamingListener) */
-	public function dispatch(listener:NamingListener):Void;
+	/*@@@ modifiers=1 */ public function dispatch(listener:NamingListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#getChangeInfo() */
-	public function getChangeInfo():Dynamic;
+	/*@@@ modifiers=1 */ public function getChangeInfo():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#getEventContext() */
-	public function getEventContext():EventContext;
+	/*@@@ modifiers=1 */ public function getEventContext():EventContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#getNewBinding() */
-	public function getNewBinding():Binding;
+	/*@@@ modifiers=1 */ public function getNewBinding():Binding;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#getOldBinding() */
-	public function getOldBinding():Binding;
+	/*@@@ modifiers=1 */ public function getOldBinding():Binding;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/event/NamingEvent.html#getType() */
-	public function getType():Int;
+	/*@@@ modifiers=1 */ public function getType():Int;
 
 }
 

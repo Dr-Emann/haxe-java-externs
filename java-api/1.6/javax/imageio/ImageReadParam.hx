@@ -26,43 +26,43 @@ extern class ImageReadParam extends IIOParam
 	private var numProgressivePasses:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#ImageReadParam() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#canSetSourceRenderSize() */
-	public function canSetSourceRenderSize():Bool;
+	/*@@@ modifiers=1 */ public function canSetSourceRenderSize():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#getDestination() */
-	public function getDestination():BufferedImage;
+	/*@@@ modifiers=1 */ public function getDestination():BufferedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#getDestinationBands() */
-	public function getDestinationBands():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getDestinationBands():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#getSourceMaxProgressivePass() */
-	public function getSourceMaxProgressivePass():Int;
+	/*@@@ modifiers=1 */ public function getSourceMaxProgressivePass():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#getSourceMinProgressivePass() */
-	public function getSourceMinProgressivePass():Int;
+	/*@@@ modifiers=1 */ public function getSourceMinProgressivePass():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#getSourceNumProgressivePasses() */
-	public function getSourceNumProgressivePasses():Int;
+	/*@@@ modifiers=1 */ public function getSourceNumProgressivePasses():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#getSourceRenderSize() */
-	public function getSourceRenderSize():Dimension;
+	/*@@@ modifiers=1 */ public function getSourceRenderSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#setDestination(java.awt.image.BufferedImage) */
-	public function setDestination(destination:BufferedImage):Void;
+	/*@@@ modifiers=1 */ public function setDestination(destination:BufferedImage):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#setDestinationBands(int[]) */
-	public function setDestinationBands(destinationBands:NativeArray<Int>):Void;
+	/*@@@ modifiers=1 */ public function setDestinationBands(destinationBands:NativeArray<Int>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#setDestinationType(javax.imageio.ImageTypeSpecifier) */
-	override public function setDestinationType(destinationType:ImageTypeSpecifier):Void;
+	/*@@@ modifiers=1 */ override public function setDestinationType(destinationType:ImageTypeSpecifier):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#setSourceProgressivePasses(int, int) */
-	public function setSourceProgressivePasses(minPass:Int, numPasses:Int):Void;
+	/*@@@ modifiers=1 */ public function setSourceProgressivePasses(minPass:Int, numPasses:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/ImageReadParam.html#setSourceRenderSize(java.awt.Dimension) */
-	public function setSourceRenderSize(size:Dimension):Void;
+	/*@@@ modifiers=1 */ public function setSourceRenderSize(size:Dimension):Void;
 
 }
 

@@ -8,10 +8,10 @@ import javax.swing.event.TreeExpansionEvent;
 extern interface TreeWillExpandListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent) */
-	public function treeWillCollapse(event:TreeExpansionEvent):Void;
+	/*@@@ modifiers=1025 */ public function treeWillCollapse(event:TreeExpansionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent) */
-	public function treeWillExpand(event:TreeExpansionEvent):Void;
+	/*@@@ modifiers=1025 */ public function treeWillExpand(event:TreeExpansionEvent):Void;
 
 }
 

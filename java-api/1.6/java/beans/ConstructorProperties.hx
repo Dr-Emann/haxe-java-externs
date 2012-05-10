@@ -8,7 +8,7 @@ import java.lang.annotation.Annotation;
 extern interface ConstructorProperties implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/ConstructorProperties.html#value() */
-	public function value():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<String>;
 
 }
 

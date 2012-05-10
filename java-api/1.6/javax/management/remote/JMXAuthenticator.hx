@@ -7,7 +7,7 @@ import javax.security.auth.Subject;
 extern interface JMXAuthenticator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXAuthenticator.html#authenticate(java.lang.Object) */
-	public function authenticate(credentials:Dynamic):Subject;
+	/*@@@ modifiers=1025 */ public function authenticate(credentials:Dynamic):Subject;
 
 }
 

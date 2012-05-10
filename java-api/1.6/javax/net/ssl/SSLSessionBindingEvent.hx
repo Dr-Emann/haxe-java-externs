@@ -8,13 +8,13 @@ import javax.net.ssl.SSLSession;
 extern class SSLSessionBindingEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSessionBindingEvent.html#SSLSessionBindingEvent(javax.net.ssl.SSLSession, java.lang.String) */
-	public function new(arg0:SSLSession, arg1:String):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:SSLSession, arg1:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSessionBindingEvent.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSessionBindingEvent.html#getSession() */
-	public function getSession():SSLSession;
+	/*@@@ modifiers=1 */ public function getSession():SSLSession;
 
 }
 

@@ -9,22 +9,22 @@ import java.security.PermissionCollection;
 extern class SocketPermission extends Permission, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketPermission.html#SocketPermission(java.lang.String, java.lang.String) */
-	public function new(host:String, action:String):Void;
+	/*@@@ modifiers=1 */ public function new(host:String, action:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketPermission.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketPermission.html#getActions() */
-	override public function getActions():String;
+	/*@@@ modifiers=1 */ override public function getActions():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketPermission.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketPermission.html#implies(java.security.Permission) */
-	override public function implies(p:Permission):Bool;
+	/*@@@ modifiers=1 */ override public function implies(p:Permission):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketPermission.html#newPermissionCollection() */
-	override public function newPermissionCollection():PermissionCollection;
+	/*@@@ modifiers=1 */ override public function newPermissionCollection():PermissionCollection;
 
 }
 

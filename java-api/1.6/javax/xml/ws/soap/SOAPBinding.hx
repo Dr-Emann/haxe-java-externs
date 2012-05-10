@@ -10,22 +10,22 @@ import javax.xml.ws.Binding;
 extern interface SOAPBinding implements Binding
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPBinding.html#getMessageFactory() */
-	public function getMessageFactory():MessageFactory;
+	/*@@@ modifiers=1025 */ public function getMessageFactory():MessageFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPBinding.html#getRoles() */
-	public function getRoles():Set<String>;
+	/*@@@ modifiers=1025 */ public function getRoles():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPBinding.html#getSOAPFactory() */
-	public function getSOAPFactory():SOAPFactory;
+	/*@@@ modifiers=1025 */ public function getSOAPFactory():SOAPFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPBinding.html#isMTOMEnabled() */
-	public function isMTOMEnabled():Bool;
+	/*@@@ modifiers=1025 */ public function isMTOMEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPBinding.html#setMTOMEnabled(boolean) */
-	public function setMTOMEnabled(flag:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setMTOMEnabled(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/SOAPBinding.html#setRoles(java.util.Set) */
-	public function setRoles(roles:Set<String>):Void;
+	/*@@@ modifiers=1025 */ public function setRoles(roles:Set<String>):Void;
 
 }
 

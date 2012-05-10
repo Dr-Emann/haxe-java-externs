@@ -8,7 +8,7 @@ import java.util.prefs.PreferenceChangeEvent;
 extern interface PreferenceChangeListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent) */
-	public function preferenceChange(evt:PreferenceChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function preferenceChange(evt:PreferenceChangeEvent):Void;
 
 }
 

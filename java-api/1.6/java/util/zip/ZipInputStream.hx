@@ -12,28 +12,28 @@ import java.util.zip.ZipEntry;
 extern class ZipInputStream extends InflaterInputStream, implements ZipConstants
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#ZipInputStream(java.io.InputStream) */
-	public function new(_in:InputStream):Void;
+	/*@@@ modifiers=1 */ public function new(_in:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#available() */
-	override public function available():Int;
+	/*@@@ modifiers=1 */ override public function available():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#closeEntry() */
-	public function closeEntry():Void;
+	/*@@@ modifiers=1 */ public function closeEntry():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#createZipEntry(java.lang.String) */
-	private function createZipEntry(name:String):ZipEntry;
+	/*@@@ modifiers=4 */ private function createZipEntry(name:String):ZipEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#getNextEntry() */
-	public function getNextEntry():ZipEntry;
+	/*@@@ modifiers=1 */ public function getNextEntry():ZipEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#read(byte[], int, int) */
-	override public function read(b:NativeArray<Int8>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1 */ override public function read(b:NativeArray<Int8>, off:Int, len:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#skip(long) */
-	override public function skip(n:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1 */ override public function skip(n:haxe.Int64):haxe.Int64;
 
 }
 

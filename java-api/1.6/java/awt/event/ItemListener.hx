@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface ItemListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent) */
-	public function itemStateChanged(e:ItemEvent):Void;
+	/*@@@ modifiers=1025 */ public function itemStateChanged(e:ItemEvent):Void;
 
 }
 

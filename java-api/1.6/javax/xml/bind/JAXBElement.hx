@@ -25,36 +25,36 @@ extern class JAXBElement<T : (Dynamic)> extends Object, implements Serializable
 	private var nil:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#JAXBElement(javax.xml.namespace.QName, java.lang.Class, java.lang.Object) */
-	@:overload(function (name:QName, declaredType:Class<T>, value:T):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:QName, declaredType:Class<T>, value:T):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#JAXBElement(javax.xml.namespace.QName, java.lang.Class, java.lang.Class, java.lang.Object) */
-	public function new(name:QName, declaredType:Class<T>, scope:Class<Dynamic>, value:T):Void;
+	/*@@@ modifiers=1 */ public function new(name:QName, declaredType:Class<T>, scope:Class<Dynamic>, value:T):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#getDeclaredType() */
-	public function getDeclaredType():Class<T>;
+	/*@@@ modifiers=1 */ public function getDeclaredType():Class<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#getName() */
-	public function getName():QName;
+	/*@@@ modifiers=1 */ public function getName():QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#getScope() */
-	public function getScope():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getScope():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#getValue() */
-	public function getValue():T;
+	/*@@@ modifiers=1 */ public function getValue():T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#isGlobalScope() */
-	public function isGlobalScope():Bool;
+	/*@@@ modifiers=1 */ public function isGlobalScope():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#isNil() */
-	public function isNil():Bool;
+	/*@@@ modifiers=1 */ public function isNil():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#isTypeSubstituted() */
-	public function isTypeSubstituted():Bool;
+	/*@@@ modifiers=1 */ public function isTypeSubstituted():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#setNil(boolean) */
-	public function setNil(value:Bool):Void;
+	/*@@@ modifiers=1 */ public function setNil(value:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html#setValue(java.lang.Object) */
-	public function setValue(t:T):Void;
+	/*@@@ modifiers=1 */ public function setValue(t:T):Void;
 
 }
 

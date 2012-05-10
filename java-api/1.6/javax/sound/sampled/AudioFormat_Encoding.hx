@@ -7,16 +7,16 @@ import java.lang.Object;
 extern class AudioFormat_Encoding extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#AudioFormat$Encoding(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=17 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=17 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=17 */ override public function toString():String;
 
 }
 

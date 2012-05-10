@@ -6,7 +6,7 @@ package javax.xml.crypto;
 extern interface XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String) */
-	public function isFeatureSupported(feature:String):Bool;
+	/*@@@ modifiers=1025 */ public function isFeatureSupported(feature:String):Bool;
 
 }
 

@@ -8,9 +8,9 @@ import javax.script.CompiledScript;
 extern interface Compilable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/Compilable.html#compile(java.io.Reader) */
-	@:overload(function (script:Reader):CompiledScript {})
+	/*@@@ modifiers=1025 */ @:overload(function (script:Reader):CompiledScript {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/Compilable.html#compile(java.lang.String) */
-	public function compile(script:String):CompiledScript;
+	/*@@@ modifiers=1025 */ public function compile(script:String):CompiledScript;
 
 }
 

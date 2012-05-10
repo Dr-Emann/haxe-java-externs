@@ -7,7 +7,7 @@ import java.lang.RuntimeException;
 extern class EmptyStackException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/EmptyStackException.html#EmptyStackException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

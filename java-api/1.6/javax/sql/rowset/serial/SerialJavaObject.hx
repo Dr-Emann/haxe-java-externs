@@ -11,13 +11,13 @@ import java.lang.reflect.Field;
 extern class SerialJavaObject extends Object, implements Serializable, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialJavaObject.html#SerialJavaObject(java.lang.Object) */
-	public function new(obj:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(obj:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialJavaObject.html#getFields() */
-	public function getFields():NativeArray<Field>;
+	/*@@@ modifiers=1 */ public function getFields():NativeArray<Field>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialJavaObject.html#getObject() */
-	public function getObject():Dynamic;
+	/*@@@ modifiers=1 */ public function getObject():Dynamic;
 
 }
 

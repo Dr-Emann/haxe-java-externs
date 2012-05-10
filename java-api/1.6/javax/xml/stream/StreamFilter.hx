@@ -7,7 +7,7 @@ import javax.xml.stream.XMLStreamReader;
 extern interface StreamFilter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/StreamFilter.html#accept(javax.xml.stream.XMLStreamReader) */
-	public function accept(reader:XMLStreamReader):Bool;
+	/*@@@ modifiers=1025 */ public function accept(reader:XMLStreamReader):Bool;
 
 }
 

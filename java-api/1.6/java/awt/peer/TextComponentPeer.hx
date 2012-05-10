@@ -9,40 +9,40 @@ import java.awt.peer.ComponentPeer;
 extern interface TextComponentPeer implements ComponentPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#filterEvents(long) */
-	public function filterEvents(mask:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1025 */ public function filterEvents(mask:haxe.Int64):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getCaretPosition() */
-	public function getCaretPosition():Int;
+	/*@@@ modifiers=1025 */ public function getCaretPosition():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getCharacterBounds(int) */
-	public function getCharacterBounds(i:Int):Rectangle;
+	/*@@@ modifiers=1025 */ public function getCharacterBounds(i:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getIndexAtPoint(int, int) */
-	public function getIndexAtPoint(x:Int, y:Int):Int;
+	/*@@@ modifiers=1025 */ public function getIndexAtPoint(x:Int, y:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getInputMethodRequests() */
-	public function getInputMethodRequests():InputMethodRequests;
+	/*@@@ modifiers=1025 */ public function getInputMethodRequests():InputMethodRequests;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getSelectionEnd() */
-	public function getSelectionEnd():Int;
+	/*@@@ modifiers=1025 */ public function getSelectionEnd():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getSelectionStart() */
-	public function getSelectionStart():Int;
+	/*@@@ modifiers=1025 */ public function getSelectionStart():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#getText() */
-	public function getText():String;
+	/*@@@ modifiers=1025 */ public function getText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#select(int, int) */
-	public function select(selStart:Int, selEnd:Int):Void;
+	/*@@@ modifiers=1025 */ public function select(selStart:Int, selEnd:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#setCaretPosition(int) */
-	public function setCaretPosition(pos:Int):Void;
+	/*@@@ modifiers=1025 */ public function setCaretPosition(pos:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#setEditable(boolean) */
-	public function setEditable(editable:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setEditable(editable:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/TextComponentPeer.html#setText(java.lang.String) */
-	public function setText(l:String):Void;
+	/*@@@ modifiers=1025 */ public function setText(l:String):Void;
 
 }
 

@@ -9,21 +9,21 @@ import java.lang.Number;
 extern class AssertionError extends Error
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(java.lang.Object) */
-	@:overload(function (detailMessage:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (detailMessage:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(boolean) */
-	@:overload(function (detailMessage:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (detailMessage:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(char) */
-	@:overload(function (detailMessage:Char16):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (detailMessage:Char16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(int) */
-	@:overload(function (detailMessage:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (detailMessage:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(long) */
-	@:overload(function (detailMessage:haxe.Int64):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (detailMessage:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(float) */
-	@:overload(function (detailMessage:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (detailMessage:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html#AssertionError(double) */
-	public function new(detailMessage:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function new(detailMessage:StdFloat):Void;
 
 }
 

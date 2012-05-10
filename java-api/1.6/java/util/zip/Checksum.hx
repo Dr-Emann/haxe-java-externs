@@ -8,15 +8,15 @@ import java.StdTypes;
 extern interface Checksum
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/Checksum.html#getValue() */
-	public function getValue():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getValue():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/Checksum.html#reset() */
-	public function reset():Void;
+	/*@@@ modifiers=1025 */ public function reset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/Checksum.html#update(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/Checksum.html#update(int) */
-	public function update(b:Int):Void;
+	/*@@@ modifiers=1025 */ public function update(b:Int):Void;
 
 }
 

@@ -9,7 +9,7 @@ import javax.swing.plaf.UIResource;
 extern class ComponentInputMapUIResource extends ComponentInputMap, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ComponentInputMapUIResource.html#ComponentInputMapUIResource(javax.swing.JComponent) */
-	public function new(component:JComponent):Void;
+	/*@@@ modifiers=1 */ public function new(component:JComponent):Void;
 
 }
 

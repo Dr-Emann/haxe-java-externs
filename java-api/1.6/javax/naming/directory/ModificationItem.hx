@@ -9,16 +9,16 @@ import javax.naming.directory.Attribute;
 extern class ModificationItem extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/ModificationItem.html#ModificationItem(int, javax.naming.directory.Attribute) */
-	public function new(mod_op:Int, attr:Attribute):Void;
+	/*@@@ modifiers=1 */ public function new(mod_op:Int, attr:Attribute):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/ModificationItem.html#getAttribute() */
-	public function getAttribute():Attribute;
+	/*@@@ modifiers=1 */ public function getAttribute():Attribute;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/ModificationItem.html#getModificationOp() */
-	public function getModificationOp():Int;
+	/*@@@ modifiers=1 */ public function getModificationOp():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/ModificationItem.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

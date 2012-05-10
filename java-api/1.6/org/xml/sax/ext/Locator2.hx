@@ -7,10 +7,10 @@ import org.xml.sax.Locator;
 extern interface Locator2 implements Locator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2.html#getEncoding() */
-	public function getEncoding():String;
+	/*@@@ modifiers=1025 */ public function getEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/Locator2.html#getXMLVersion() */
-	public function getXMLVersion():String;
+	/*@@@ modifiers=1025 */ public function getXMLVersion():String;
 
 }
 

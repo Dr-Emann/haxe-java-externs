@@ -9,13 +9,13 @@ import java.lang.Object;
 extern class HierarchyBoundsAdapter extends Object, implements HierarchyBoundsListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/HierarchyBoundsAdapter.html#HierarchyBoundsAdapter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/HierarchyBoundsAdapter.html#ancestorMoved(java.awt.event.HierarchyEvent) */
-	public function ancestorMoved(e:HierarchyEvent):Void;
+	/*@@@ modifiers=1 */ public function ancestorMoved(e:HierarchyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/HierarchyBoundsAdapter.html#ancestorResized(java.awt.event.HierarchyEvent) */
-	public function ancestorResized(e:HierarchyEvent):Void;
+	/*@@@ modifiers=1 */ public function ancestorResized(e:HierarchyEvent):Void;
 
 }
 

@@ -12,28 +12,28 @@ import java.lang.Runnable;
 extern class RenderableImageProducer extends Object, implements ImageProducer, implements Runnable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#RenderableImageProducer(java.awt.image.renderable.RenderableImage, java.awt.image.renderable.RenderContext) */
-	public function new(rdblImage:RenderableImage, rc:RenderContext):Void;
+	/*@@@ modifiers=1 */ public function new(rdblImage:RenderableImage, rc:RenderContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#addConsumer(java.awt.image.ImageConsumer) */
-	public function addConsumer(ic:ImageConsumer):Void;
+	/*@@@ modifiers=33 */ public function addConsumer(ic:ImageConsumer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#isConsumer(java.awt.image.ImageConsumer) */
-	public function isConsumer(ic:ImageConsumer):Bool;
+	/*@@@ modifiers=33 */ public function isConsumer(ic:ImageConsumer):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#removeConsumer(java.awt.image.ImageConsumer) */
-	public function removeConsumer(ic:ImageConsumer):Void;
+	/*@@@ modifiers=33 */ public function removeConsumer(ic:ImageConsumer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer) */
-	public function requestTopDownLeftRightResend(ic:ImageConsumer):Void;
+	/*@@@ modifiers=1 */ public function requestTopDownLeftRightResend(ic:ImageConsumer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#run() */
-	public function run():Void;
+	/*@@@ modifiers=1 */ public function run():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#setRenderContext(java.awt.image.renderable.RenderContext) */
-	public function setRenderContext(rc:RenderContext):Void;
+	/*@@@ modifiers=33 */ public function setRenderContext(rc:RenderContext):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderableImageProducer.html#startProduction(java.awt.image.ImageConsumer) */
-	public function startProduction(ic:ImageConsumer):Void;
+	/*@@@ modifiers=33 */ public function startProduction(ic:ImageConsumer):Void;
 
 }
 

@@ -10,39 +10,39 @@ import java.lang.Object;
 extern class ObjectStreamField extends Object, implements Comparable<Dynamic>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#ObjectStreamField(java.lang.String, java.lang.Class, boolean) */
-	@:overload(function (name:String, type:Class<Dynamic>, unshared:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (name:String, type:Class<Dynamic>, unshared:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#ObjectStreamField(java.lang.String, java.lang.Class) */
-	public function new(name:String, type:Class<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, type:Class<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#compareTo(java.lang.Object) */
-	public function compareTo(obj:Dynamic):Int;
+	/*@@@ modifiers=1 */ public function compareTo(obj:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1 */ public function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#getType() */
-	public function getType():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getType():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#getTypeCode() */
-	public function getTypeCode():Char16;
+	/*@@@ modifiers=1 */ public function getTypeCode():Char16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#getTypeString() */
-	public function getTypeString():String;
+	/*@@@ modifiers=1 */ public function getTypeString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#isPrimitive() */
-	public function isPrimitive():Bool;
+	/*@@@ modifiers=1 */ public function isPrimitive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#isUnshared() */
-	public function isUnshared():Bool;
+	/*@@@ modifiers=1 */ public function isUnshared():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#setOffset(int) */
-	private function setOffset(offset:Int):Void;
+	/*@@@ modifiers=4 */ private function setOffset(offset:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamField.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

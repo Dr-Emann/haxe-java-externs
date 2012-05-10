@@ -7,7 +7,7 @@ import org.w3c.dom.events.Event;
 extern interface EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event) */
-	public function handleEvent(evt:Event):Void;
+	/*@@@ modifiers=1025 */ public function handleEvent(evt:Event):Void;
 
 }
 

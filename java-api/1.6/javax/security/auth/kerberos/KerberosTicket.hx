@@ -16,82 +16,82 @@ import javax.security.auth.kerberos.KerberosPrincipal;
 extern class KerberosTicket extends Object, implements Destroyable, implements Refreshable, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#KerberosTicket(byte[], javax.security.auth.kerberos.KerberosPrincipal, javax.security.auth.kerberos.KerberosPrincipal, byte[], int, boolean[], java.util.Date, java.util.Date, java.util.Date, java.util.Date, java.net.InetAddress[]) */
-	public function new(asn1Encoding:NativeArray<Int8>, client:KerberosPrincipal, server:KerberosPrincipal, sessionKey:NativeArray<Int8>, keyType:Int, flags:NativeArray<Bool>, authTime:Date, startTime:Date, endTime:Date, renewTill:Date, clientAddresses:NativeArray<InetAddress>):Void;
+	/*@@@ modifiers=1 */ public function new(asn1Encoding:NativeArray<Int8>, client:KerberosPrincipal, server:KerberosPrincipal, sessionKey:NativeArray<Int8>, keyType:Int, flags:NativeArray<Bool>, authTime:Date, startTime:Date, endTime:Date, renewTill:Date, clientAddresses:NativeArray<InetAddress>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#destroy() */
-	public function destroy():Void;
+	/*@@@ modifiers=1 */ public function destroy():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#equals(java.lang.Object) */
-	override public function equals(other:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(other:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getAuthTime() */
-	public function getAuthTime():Date;
+	/*@@@ modifiers=17 */ public function getAuthTime():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getClient() */
-	public function getClient():KerberosPrincipal;
+	/*@@@ modifiers=17 */ public function getClient():KerberosPrincipal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getClientAddresses() */
-	public function getClientAddresses():NativeArray<InetAddress>;
+	/*@@@ modifiers=17 */ public function getClientAddresses():NativeArray<InetAddress>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getEncoded() */
-	public function getEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=17 */ public function getEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getEndTime() */
-	public function getEndTime():Date;
+	/*@@@ modifiers=17 */ public function getEndTime():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getFlags() */
-	public function getFlags():NativeArray<Bool>;
+	/*@@@ modifiers=17 */ public function getFlags():NativeArray<Bool>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getRenewTill() */
-	public function getRenewTill():Date;
+	/*@@@ modifiers=17 */ public function getRenewTill():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getServer() */
-	public function getServer():KerberosPrincipal;
+	/*@@@ modifiers=17 */ public function getServer():KerberosPrincipal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getSessionKey() */
-	public function getSessionKey():SecretKey;
+	/*@@@ modifiers=17 */ public function getSessionKey():SecretKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getSessionKeyType() */
-	public function getSessionKeyType():Int;
+	/*@@@ modifiers=17 */ public function getSessionKeyType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getStartTime() */
-	public function getStartTime():Date;
+	/*@@@ modifiers=17 */ public function getStartTime():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isCurrent() */
-	public function isCurrent():Bool;
+	/*@@@ modifiers=1 */ public function isCurrent():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isDestroyed() */
-	public function isDestroyed():Bool;
+	/*@@@ modifiers=1 */ public function isDestroyed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isForwardable() */
-	public function isForwardable():Bool;
+	/*@@@ modifiers=17 */ public function isForwardable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isForwarded() */
-	public function isForwarded():Bool;
+	/*@@@ modifiers=17 */ public function isForwarded():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isInitial() */
-	public function isInitial():Bool;
+	/*@@@ modifiers=17 */ public function isInitial():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isPostdated() */
-	public function isPostdated():Bool;
+	/*@@@ modifiers=17 */ public function isPostdated():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isProxiable() */
-	public function isProxiable():Bool;
+	/*@@@ modifiers=17 */ public function isProxiable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isProxy() */
-	public function isProxy():Bool;
+	/*@@@ modifiers=17 */ public function isProxy():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#isRenewable() */
-	public function isRenewable():Bool;
+	/*@@@ modifiers=17 */ public function isRenewable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#refresh() */
-	public function refresh():Void;
+	/*@@@ modifiers=1 */ public function refresh():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/kerberos/KerberosTicket.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

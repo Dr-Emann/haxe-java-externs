@@ -10,15 +10,15 @@ import javax.swing.SpinnerNumberModel;
 extern class JSpinner_NumberEditor extends JSpinner_DefaultEditor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.NumberEditor.html#JSpinner$NumberEditor(javax.swing.JSpinner) */
-	@:overload(function (spinner:JSpinner):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (spinner:JSpinner):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.NumberEditor.html#JSpinner$NumberEditor(javax.swing.JSpinner, java.lang.String) */
-	public function new(spinner:JSpinner, decimalFormatPattern:String):Void;
+	/*@@@ modifiers=1 */ public function new(spinner:JSpinner, decimalFormatPattern:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.NumberEditor.html#getFormat() */
-	public function getFormat():DecimalFormat;
+	/*@@@ modifiers=1 */ public function getFormat():DecimalFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.NumberEditor.html#getModel() */
-	public function getModel():SpinnerNumberModel;
+	/*@@@ modifiers=1 */ public function getModel():SpinnerNumberModel;
 
 }
 

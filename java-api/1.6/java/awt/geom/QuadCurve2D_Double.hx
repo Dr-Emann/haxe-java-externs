@@ -29,42 +29,42 @@ extern class QuadCurve2D_Double extends QuadCurve2D, implements Serializable
 	public var y2:StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#QuadCurve2D$Double(double, double, double, double, double, double) */
-	@:overload(function (x1:StdFloat, y1:StdFloat, ctrlx:StdFloat, ctrly:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (x1:StdFloat, y1:StdFloat, ctrlx:StdFloat, ctrly:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#QuadCurve2D$Double() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getBounds2D() */
-	public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getCtrlPt() */
-	override public function getCtrlPt():Point2D;
+	/*@@@ modifiers=1 */ override public function getCtrlPt():Point2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getCtrlX() */
-	override public function getCtrlX():StdFloat;
+	/*@@@ modifiers=1 */ override public function getCtrlX():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getCtrlY() */
-	override public function getCtrlY():StdFloat;
+	/*@@@ modifiers=1 */ override public function getCtrlY():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getP1() */
-	override public function getP1():Point2D;
+	/*@@@ modifiers=1 */ override public function getP1():Point2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getP2() */
-	override public function getP2():Point2D;
+	/*@@@ modifiers=1 */ override public function getP2():Point2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getX1() */
-	override public function getX1():StdFloat;
+	/*@@@ modifiers=1 */ override public function getX1():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getX2() */
-	override public function getX2():StdFloat;
+	/*@@@ modifiers=1 */ override public function getX2():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getY1() */
-	override public function getY1():StdFloat;
+	/*@@@ modifiers=1 */ override public function getY1():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getY2() */
-	override public function getY2():StdFloat;
+	/*@@@ modifiers=1 */ override public function getY2():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#setCurve(double, double, double, double, double, double) */
-	override public function setCurve(x1:StdFloat, y1:StdFloat, ctrlx:StdFloat, ctrly:StdFloat, x2:StdFloat, y2:StdFloat):Void;
+	/*@@@ modifiers=1 */ override public function setCurve(x1:StdFloat, y1:StdFloat, ctrlx:StdFloat, ctrly:StdFloat, x2:StdFloat, y2:StdFloat):Void;
 
 }
 

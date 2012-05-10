@@ -9,21 +9,21 @@ import javax.security.auth.callback.Callback;
 extern class TextInputCallback extends Object, implements Callback, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/TextInputCallback.html#TextInputCallback(java.lang.String) */
-	@:overload(function (prompt:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (prompt:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/TextInputCallback.html#TextInputCallback(java.lang.String, java.lang.String) */
-	public function new(prompt:String, defaultText:String):Void;
+	/*@@@ modifiers=1 */ public function new(prompt:String, defaultText:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/TextInputCallback.html#getDefaultText() */
-	public function getDefaultText():String;
+	/*@@@ modifiers=1 */ public function getDefaultText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/TextInputCallback.html#getPrompt() */
-	public function getPrompt():String;
+	/*@@@ modifiers=1 */ public function getPrompt():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/TextInputCallback.html#getText() */
-	public function getText():String;
+	/*@@@ modifiers=1 */ public function getText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/TextInputCallback.html#setText(java.lang.String) */
-	public function setText(text:String):Void;
+	/*@@@ modifiers=1 */ public function setText(text:String):Void;
 
 }
 

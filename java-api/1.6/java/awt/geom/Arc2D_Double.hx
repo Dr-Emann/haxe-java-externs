@@ -28,46 +28,46 @@ extern class Arc2D_Double extends Arc2D, implements Serializable
 	public var extent:StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#Arc2D$Double(int) */
-	@:overload(function (type:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (type:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#Arc2D$Double(double, double, double, double, double, double, int) */
-	@:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, start:StdFloat, extent:StdFloat, type:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, start:StdFloat, extent:StdFloat, type:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#Arc2D$Double(java.awt.geom.Rectangle2D, double, double, int) */
-	@:overload(function (ellipseBounds:Rectangle2D, start:StdFloat, extent:StdFloat, type:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (ellipseBounds:Rectangle2D, start:StdFloat, extent:StdFloat, type:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#Arc2D$Double() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#getAngleExtent() */
-	override public function getAngleExtent():StdFloat;
+	/*@@@ modifiers=1 */ override public function getAngleExtent():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#getAngleStart() */
-	override public function getAngleStart():StdFloat;
+	/*@@@ modifiers=1 */ override public function getAngleStart():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#getHeight() */
-	override public function getHeight():StdFloat;
+	/*@@@ modifiers=1 */ override public function getHeight():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#getWidth() */
-	override public function getWidth():StdFloat;
+	/*@@@ modifiers=1 */ override public function getWidth():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#getX() */
-	override public function getX():StdFloat;
+	/*@@@ modifiers=1 */ override public function getX():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#getY() */
-	override public function getY():StdFloat;
+	/*@@@ modifiers=1 */ override public function getY():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#isEmpty() */
-	override public function isEmpty():Bool;
+	/*@@@ modifiers=1 */ override public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#makeBounds(double, double, double, double) */
-	override private function makeBounds(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Rectangle2D;
+	/*@@@ modifiers=4 */ override private function makeBounds(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#setAngleExtent(double) */
-	override public function setAngleExtent(angExt:StdFloat):Void;
+	/*@@@ modifiers=1 */ override public function setAngleExtent(angExt:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#setAngleStart(double) */
-	override public function setAngleStart(angSt:StdFloat):Void;
+	/*@@@ modifiers=1 */ override public function setAngleStart(angSt:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.Double.html#setArc(double, double, double, double, double, double, int) */
-	override public function setArc(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, angSt:StdFloat, angExt:StdFloat, closure:Int):Void;
+	/*@@@ modifiers=1 */ override public function setArc(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, angSt:StdFloat, angExt:StdFloat, closure:Int):Void;
 
 }
 

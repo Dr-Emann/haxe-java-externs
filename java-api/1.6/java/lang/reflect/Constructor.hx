@@ -15,58 +15,58 @@ extern class Constructor<T : (Dynamic)> extends AccessibleObject, implements Gen
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getAnnotation(java.lang.Class) */
-	override public function getAnnotation<T>(annotationClass:Class<T>):T;
+	/*@@@ modifiers=1 */ override public function getAnnotation<T>(annotationClass:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getDeclaredAnnotations() */
-	override public function getDeclaredAnnotations():NativeArray<Annotation>;
+	/*@@@ modifiers=1 */ override public function getDeclaredAnnotations():NativeArray<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getDeclaringClass() */
-	public function getDeclaringClass():Class<T>;
+	/*@@@ modifiers=1 */ public function getDeclaringClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getExceptionTypes() */
-	public function getExceptionTypes():NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=1 */ public function getExceptionTypes():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getGenericExceptionTypes() */
-	public function getGenericExceptionTypes():NativeArray<Type>;
+	/*@@@ modifiers=1 */ public function getGenericExceptionTypes():NativeArray<Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getGenericParameterTypes() */
-	public function getGenericParameterTypes():NativeArray<Type>;
+	/*@@@ modifiers=1 */ public function getGenericParameterTypes():NativeArray<Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getModifiers() */
-	public function getModifiers():Int;
+	/*@@@ modifiers=1 */ public function getModifiers():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getParameterAnnotations() */
-	public function getParameterAnnotations():NativeArray<NativeArray<Annotation>>;
+	/*@@@ modifiers=1 */ public function getParameterAnnotations():NativeArray<NativeArray<Annotation>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getParameterTypes() */
-	public function getParameterTypes():NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=1 */ public function getParameterTypes():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getTypeParameters() */
-	public function getTypeParameters():NativeArray<TypeVariable<Constructor<T>>>;
+	/*@@@ modifiers=1 */ public function getTypeParameters():NativeArray<TypeVariable<Constructor<Dynamic>>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#isSynthetic() */
-	public function isSynthetic():Bool;
+	/*@@@ modifiers=1 */ public function isSynthetic():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#isVarArgs() */
-	public function isVarArgs():Bool;
+	/*@@@ modifiers=1 */ public function isVarArgs():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#newInstance(java.lang.Object[]) */
-	public function newInstance(initargs:NativeArray<Dynamic>):T;
+	/*@@@ modifiers=129 */ public function newInstance(initargs:NativeArray<Dynamic>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#toGenericString() */
-	public function toGenericString():String;
+	/*@@@ modifiers=1 */ public function toGenericString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

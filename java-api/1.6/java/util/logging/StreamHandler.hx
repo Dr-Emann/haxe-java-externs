@@ -10,27 +10,27 @@ import java.util.logging.LogRecord;
 extern class StreamHandler extends Handler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#StreamHandler() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#StreamHandler(java.io.OutputStream, java.util.logging.Formatter) */
-	public function new(out:OutputStream, formatter:Formatter):Void;
+	/*@@@ modifiers=1 */ public function new(out:OutputStream, formatter:Formatter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=33 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#flush() */
-	override public function flush():Void;
+	/*@@@ modifiers=33 */ override public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#isLoggable(java.util.logging.LogRecord) */
-	override public function isLoggable(record:LogRecord):Bool;
+	/*@@@ modifiers=1 */ override public function isLoggable(record:LogRecord):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#publish(java.util.logging.LogRecord) */
-	override public function publish(record:LogRecord):Void;
+	/*@@@ modifiers=33 */ override public function publish(record:LogRecord):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#setEncoding(java.lang.String) */
-	override public function setEncoding(encoding:String):Void;
+	/*@@@ modifiers=1 */ override public function setEncoding(encoding:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/StreamHandler.html#setOutputStream(java.io.OutputStream) */
-	private function setOutputStream(out:OutputStream):Void;
+	/*@@@ modifiers=36 */ private function setOutputStream(out:OutputStream):Void;
 
 }
 

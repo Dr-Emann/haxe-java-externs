@@ -19,28 +19,28 @@ import org.w3c.dom.Element;
 extern class Provider extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#Provider() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#createAndPublishEndpoint(java.lang.String, java.lang.Object) */
-	public function createAndPublishEndpoint(address:String, implementor:Dynamic):Endpoint;
+	/*@@@ modifiers=1025 */ public function createAndPublishEndpoint(address:String, implementor:Dynamic):Endpoint;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#createEndpoint(java.lang.String, java.lang.Object) */
-	public function createEndpoint(bindingId:String, implementor:Dynamic):Endpoint;
+	/*@@@ modifiers=1025 */ public function createEndpoint(bindingId:String, implementor:Dynamic):Endpoint;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#createServiceDelegate(java.net.URL, javax.xml.namespace.QName, java.lang.Class) */
-	public function createServiceDelegate(arg0:URL, arg1:QName, arg2:Class<Dynamic>):ServiceDelegate;
+	/*@@@ modifiers=1025 */ public function createServiceDelegate(arg0:URL, arg1:QName, arg2:Class<Dynamic>):ServiceDelegate;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#createW3CEndpointReference(java.lang.String, javax.xml.namespace.QName, javax.xml.namespace.QName, java.util.List, java.lang.String, java.util.List) */
-	public function createW3CEndpointReference(address:String, serviceName:QName, portName:QName, metadata:List<Element>, wsdlDocumentLocation:String, referenceParameters:List<Element>):W3CEndpointReference;
+	/*@@@ modifiers=1025 */ public function createW3CEndpointReference(address:String, serviceName:QName, portName:QName, metadata:List<Element>, wsdlDocumentLocation:String, referenceParameters:List<Element>):W3CEndpointReference;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#getPort(javax.xml.ws.EndpointReference, java.lang.Class, javax.xml.ws.WebServiceFeature[]) */
-	public function getPort<T>(endpointReference:EndpointReference, serviceEndpointInterface:Class<T>, features:NativeArray<WebServiceFeature>):T;
+	/*@@@ modifiers=1153 */ public function getPort<T>(endpointReference:EndpointReference, serviceEndpointInterface:Class<T>, features:NativeArray<WebServiceFeature>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#provider() */
-	static public function provider():Provider;
+	/*@@@ modifiers=9 */ static public function provider():Provider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/spi/Provider.html#readEndpointReference(javax.xml.transform.Source) */
-	public function readEndpointReference(eprInfoset:Source):EndpointReference;
+	/*@@@ modifiers=1025 */ public function readEndpointReference(eprInfoset:Source):EndpointReference;
 
 }
 

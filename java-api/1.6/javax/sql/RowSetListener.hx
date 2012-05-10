@@ -8,13 +8,13 @@ import javax.sql.RowSetEvent;
 extern interface RowSetListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent) */
-	public function cursorMoved(event:RowSetEvent):Void;
+	/*@@@ modifiers=1025 */ public function cursorMoved(event:RowSetEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent) */
-	public function rowChanged(event:RowSetEvent):Void;
+	/*@@@ modifiers=1025 */ public function rowChanged(event:RowSetEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent) */
-	public function rowSetChanged(event:RowSetEvent):Void;
+	/*@@@ modifiers=1025 */ public function rowSetChanged(event:RowSetEvent):Void;
 
 }
 

@@ -7,16 +7,16 @@ import java.StdTypes;
 extern interface CharSequence
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/CharSequence.html#charAt(int) */
-	public function charAt(index:Int):Char16;
+	/*@@@ modifiers=1025 */ public function charAt(index:Int):Char16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/CharSequence.html#length() */
-	public function length():Int;
+	/*@@@ modifiers=1025 */ public function length():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/CharSequence.html#subSequence(int, int) */
-	public function subSequence(start:Int, end:Int):CharSequence;
+	/*@@@ modifiers=1025 */ public function subSequence(start:Int, end:Int):CharSequence;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/CharSequence.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

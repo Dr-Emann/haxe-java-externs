@@ -10,12 +10,12 @@ import javax.naming.ldap.Control;
 extern class ControlFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/ControlFactory.html#ControlFactory() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control) */
-	@:overload(function (ctl:Control):Control {})
+	/*@@@ modifiers=1025 */ @:overload(function (ctl:Control):Control {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control, javax.naming.Context, java.util.Hashtable) */
-	static public function getControlInstance(ctl:Control, ctx:Context, env:Hashtable<Dynamic, Dynamic>):Control;
+	/*@@@ modifiers=9 */ static public function getControlInstance(ctl:Control, ctx:Context, env:Hashtable<Dynamic, Dynamic>):Control;
 
 }
 

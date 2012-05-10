@@ -10,28 +10,28 @@ import javax.security.auth.callback.Callback;
 extern class ChoiceCallback extends Object, implements Callback, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#ChoiceCallback(java.lang.String, java.lang.String[], int, boolean) */
-	public function new(prompt:String, choices:NativeArray<String>, defaultChoice:Int, multipleSelectionsAllowed:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(prompt:String, choices:NativeArray<String>, defaultChoice:Int, multipleSelectionsAllowed:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#allowMultipleSelections() */
-	public function allowMultipleSelections():Bool;
+	/*@@@ modifiers=1 */ public function allowMultipleSelections():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#getChoices() */
-	public function getChoices():NativeArray<String>;
+	/*@@@ modifiers=1 */ public function getChoices():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#getDefaultChoice() */
-	public function getDefaultChoice():Int;
+	/*@@@ modifiers=1 */ public function getDefaultChoice():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#getPrompt() */
-	public function getPrompt():String;
+	/*@@@ modifiers=1 */ public function getPrompt():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#getSelectedIndexes() */
-	public function getSelectedIndexes():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getSelectedIndexes():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndex(int) */
-	public function setSelectedIndex(selection:Int):Void;
+	/*@@@ modifiers=1 */ public function setSelectedIndex(selection:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndexes(int[]) */
-	public function setSelectedIndexes(selections:NativeArray<Int>):Void;
+	/*@@@ modifiers=1 */ public function setSelectedIndexes(selections:NativeArray<Int>):Void;
 
 }
 

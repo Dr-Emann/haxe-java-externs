@@ -10,43 +10,43 @@ import javax.naming.directory.Attributes;
 extern class Rdn extends Object, implements Serializable, implements Comparable<Dynamic>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#Rdn(java.lang.String) */
-	@:overload(function (attrSet:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attrSet:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#Rdn(javax.naming.ldap.Rdn) */
-	@:overload(function (attrSet:Rdn):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attrSet:Rdn):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#Rdn(java.lang.String, java.lang.Object) */
-	@:overload(function (type:String, value:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (type:String, value:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#Rdn(javax.naming.directory.Attributes) */
-	public function new(attrSet:Attributes):Void;
+	/*@@@ modifiers=1 */ public function new(attrSet:Attributes):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#compareTo(java.lang.Object) */
-	public function compareTo(obj:Dynamic):Int;
+	/*@@@ modifiers=1 */ public function compareTo(obj:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#escapeValue(java.lang.Object) */
-	static public function escapeValue(val:Dynamic):String;
+	/*@@@ modifiers=9 */ static public function escapeValue(val:Dynamic):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#getType() */
-	public function getType():String;
+	/*@@@ modifiers=1 */ public function getType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#size() */
-	public function size():Int;
+	/*@@@ modifiers=1 */ public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#toAttributes() */
-	public function toAttributes():Attributes;
+	/*@@@ modifiers=1 */ public function toAttributes():Attributes;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Rdn.html#unescapeValue(java.lang.String) */
-	static public function unescapeValue(val:String):Dynamic;
+	/*@@@ modifiers=9 */ static public function unescapeValue(val:String):Dynamic;
 
 }
 

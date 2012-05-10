@@ -16,15 +16,15 @@ extern class MetalBorders_ToolBarBorder extends AbstractBorder, implements UIRes
 	private var bumps:MetalBumps;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBorders.ToolBarBorder.html#MetalBorders$ToolBarBorder() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBorders.ToolBarBorder.html#getBorderInsets(java.awt.Component, java.awt.Insets) */
-	@:overload(function (c:Component, newInsets:Insets):Insets {})
+	/*@@@ modifiers=1 */ @:overload(function (c:Component, newInsets:Insets):Insets {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBorders.ToolBarBorder.html#getBorderInsets(java.awt.Component) */
-	override public function getBorderInsets(c:Component):Insets;
+	/*@@@ modifiers=1 */ override public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalBorders.ToolBarBorder.html#paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int) */
-	override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, w:Int, h:Int):Void;
+	/*@@@ modifiers=1 */ override public function paintBorder(c:Component, g:Graphics, x:Int, y:Int, w:Int, h:Int):Void;
 
 }
 

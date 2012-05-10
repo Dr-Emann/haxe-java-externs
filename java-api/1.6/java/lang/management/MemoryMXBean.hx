@@ -7,22 +7,22 @@ import java.lang.management.MemoryUsage;
 extern interface MemoryMXBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryMXBean.html#gc() */
-	public function gc():Void;
+	/*@@@ modifiers=1025 */ public function gc():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage() */
-	public function getHeapMemoryUsage():MemoryUsage;
+	/*@@@ modifiers=1025 */ public function getHeapMemoryUsage():MemoryUsage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryMXBean.html#getNonHeapMemoryUsage() */
-	public function getNonHeapMemoryUsage():MemoryUsage;
+	/*@@@ modifiers=1025 */ public function getNonHeapMemoryUsage():MemoryUsage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount() */
-	public function getObjectPendingFinalizationCount():Int;
+	/*@@@ modifiers=1025 */ public function getObjectPendingFinalizationCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryMXBean.html#isVerbose() */
-	public function isVerbose():Bool;
+	/*@@@ modifiers=1025 */ public function isVerbose():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/management/MemoryMXBean.html#setVerbose(boolean) */
-	public function setVerbose(value:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setVerbose(value:Bool):Void;
 
 }
 

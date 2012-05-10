@@ -10,18 +10,18 @@ import javax.swing.plaf.basic.BasicScrollBarUI;
 extern class BasicScrollBarUI_ScrollListener extends Object, implements ActionListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ScrollListener.html#BasicScrollBarUI$ScrollListener(javax.swing.plaf.basic.BasicScrollBarUI) */
-	@:overload(function (arg0:BasicScrollBarUI):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (arg0:BasicScrollBarUI):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ScrollListener.html#BasicScrollBarUI$ScrollListener(javax.swing.plaf.basic.BasicScrollBarUI, int, boolean) */
-	public function new(arg0:BasicScrollBarUI, arg1:Int, arg2:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:BasicScrollBarUI, arg1:Int, arg2:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ScrollListener.html#actionPerformed(java.awt.event.ActionEvent) */
-	public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ScrollListener.html#setDirection(int) */
-	public function setDirection(direction:Int):Void;
+	/*@@@ modifiers=1 */ public function setDirection(direction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.ScrollListener.html#setScrollByBlock(boolean) */
-	public function setScrollByBlock(block:Bool):Void;
+	/*@@@ modifiers=1 */ public function setScrollByBlock(block:Bool):Void;
 
 }
 

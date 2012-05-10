@@ -26,172 +26,172 @@ import javax.swing.plaf.PopupMenuUI;
 extern class JPopupMenu extends JComponent, implements Accessible, implements MenuElement
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#JPopupMenu(java.lang.String) */
-	@:overload(function (label:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (label:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#JPopupMenu() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#add(java.lang.String) */
-	@:overload(function (s:String):JMenuItem {})
+	/*@@@ modifiers=1 */ @:overload(function (s:String):JMenuItem {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#add(javax.swing.Action) */
-	@:overload(function (a:Action):JMenuItem {})
+	/*@@@ modifiers=1 */ @:overload(function (a:Action):JMenuItem {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#add(javax.swing.JMenuItem) */
-	override public function add(menuItem:JMenuItem):JMenuItem;
+	/*@@@ modifiers=1 */ override public function add(menuItem:JMenuItem):JMenuItem;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#addMenuKeyListener(javax.swing.event.MenuKeyListener) */
-	public function addMenuKeyListener(l:MenuKeyListener):Void;
+	/*@@@ modifiers=1 */ public function addMenuKeyListener(l:MenuKeyListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#addPopupMenuListener(javax.swing.event.PopupMenuListener) */
-	public function addPopupMenuListener(l:PopupMenuListener):Void;
+	/*@@@ modifiers=1 */ public function addPopupMenuListener(l:PopupMenuListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#addSeparator() */
-	public function addSeparator():Void;
+	/*@@@ modifiers=1 */ public function addSeparator():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#createActionChangeListener(javax.swing.JMenuItem) */
-	private function createActionChangeListener(b:JMenuItem):PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createActionChangeListener(b:JMenuItem):PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#createActionComponent(javax.swing.Action) */
-	private function createActionComponent(a:Action):JMenuItem;
+	/*@@@ modifiers=4 */ private function createActionComponent(a:Action):JMenuItem;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#firePopupMenuCanceled() */
-	private function firePopupMenuCanceled():Void;
+	/*@@@ modifiers=4 */ private function firePopupMenuCanceled():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#firePopupMenuWillBecomeInvisible() */
-	private function firePopupMenuWillBecomeInvisible():Void;
+	/*@@@ modifiers=4 */ private function firePopupMenuWillBecomeInvisible():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#firePopupMenuWillBecomeVisible() */
-	private function firePopupMenuWillBecomeVisible():Void;
+	/*@@@ modifiers=4 */ private function firePopupMenuWillBecomeVisible():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getComponent() */
-	override public function getComponent():Component;
+	/*@@@ modifiers=1 */ override public function getComponent():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getComponentAtIndex(int) */
-	public function getComponentAtIndex(i:Int):Component;
+	/*@@@ modifiers=1 */ public function getComponentAtIndex(i:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getComponentIndex(java.awt.Component) */
-	public function getComponentIndex(c:Component):Int;
+	/*@@@ modifiers=1 */ public function getComponentIndex(c:Component):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getDefaultLightWeightPopupEnabled() */
-	static public function getDefaultLightWeightPopupEnabled():Bool;
+	/*@@@ modifiers=9 */ static public function getDefaultLightWeightPopupEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getInvoker() */
-	public function getInvoker():Component;
+	/*@@@ modifiers=1 */ public function getInvoker():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getLabel() */
-	public function getLabel():String;
+	/*@@@ modifiers=1 */ public function getLabel():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getMargin() */
-	public function getMargin():Insets;
+	/*@@@ modifiers=1 */ public function getMargin():Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getMenuKeyListeners() */
-	public function getMenuKeyListeners():NativeArray<MenuKeyListener>;
+	/*@@@ modifiers=1 */ public function getMenuKeyListeners():NativeArray<MenuKeyListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getPopupMenuListeners() */
-	public function getPopupMenuListeners():NativeArray<PopupMenuListener>;
+	/*@@@ modifiers=1 */ public function getPopupMenuListeners():NativeArray<PopupMenuListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getSelectionModel() */
-	public function getSelectionModel():SingleSelectionModel;
+	/*@@@ modifiers=1 */ public function getSelectionModel():SingleSelectionModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getSubElements() */
-	public function getSubElements():NativeArray<MenuElement>;
+	/*@@@ modifiers=1 */ public function getSubElements():NativeArray<MenuElement>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getUI() */
-	public function getUI():PopupMenuUI;
+	/*@@@ modifiers=1 */ public function getUI():PopupMenuUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#insert(java.awt.Component, int) */
-	@:overload(function (component:Component, index:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (component:Component, index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#insert(javax.swing.Action, int) */
-	public function insert(a:Action, index:Int):Void;
+	/*@@@ modifiers=1 */ public function insert(a:Action, index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#isBorderPainted() */
-	public function isBorderPainted():Bool;
+	/*@@@ modifiers=1 */ public function isBorderPainted():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#isLightWeightPopupEnabled() */
-	public function isLightWeightPopupEnabled():Bool;
+	/*@@@ modifiers=1 */ public function isLightWeightPopupEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#isPopupTrigger(java.awt.event.MouseEvent) */
-	public function isPopupTrigger(e:MouseEvent):Bool;
+	/*@@@ modifiers=1 */ public function isPopupTrigger(e:MouseEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#isVisible() */
-	override public function isVisible():Bool;
+	/*@@@ modifiers=1 */ override public function isVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#menuSelectionChanged(boolean) */
-	public function menuSelectionChanged(isIncluded:Bool):Void;
+	/*@@@ modifiers=1 */ public function menuSelectionChanged(isIncluded:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#pack() */
-	public function pack():Void;
+	/*@@@ modifiers=1 */ public function pack():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#paintBorder(java.awt.Graphics) */
-	override private function paintBorder(g:Graphics):Void;
+	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#processFocusEvent(java.awt.event.FocusEvent) */
-	override private function processFocusEvent(evt:FocusEvent):Void;
+	/*@@@ modifiers=4 */ override private function processFocusEvent(evt:FocusEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#processKeyEvent(java.awt.event.KeyEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	@:overload(function (e:KeyEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (e:KeyEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#processKeyEvent(java.awt.event.KeyEvent) */
-	override private function processKeyEvent(evt:KeyEvent):Void;
+	/*@@@ modifiers=4 */ override private function processKeyEvent(evt:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#processMouseEvent(java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	override public function processMouseEvent(event:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
+	/*@@@ modifiers=1 */ override public function processMouseEvent(event:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#remove(int) */
-	override public function remove(pos:Int):Void;
+	/*@@@ modifiers=1 */ override public function remove(pos:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#removeMenuKeyListener(javax.swing.event.MenuKeyListener) */
-	public function removeMenuKeyListener(l:MenuKeyListener):Void;
+	/*@@@ modifiers=1 */ public function removeMenuKeyListener(l:MenuKeyListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#removePopupMenuListener(javax.swing.event.PopupMenuListener) */
-	public function removePopupMenuListener(l:PopupMenuListener):Void;
+	/*@@@ modifiers=1 */ public function removePopupMenuListener(l:PopupMenuListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setBorderPainted(boolean) */
-	public function setBorderPainted(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setBorderPainted(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setDefaultLightWeightPopupEnabled(boolean) */
-	static public function setDefaultLightWeightPopupEnabled(aFlag:Bool):Void;
+	/*@@@ modifiers=9 */ static public function setDefaultLightWeightPopupEnabled(aFlag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setInvoker(java.awt.Component) */
-	public function setInvoker(invoker:Component):Void;
+	/*@@@ modifiers=1 */ public function setInvoker(invoker:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setLabel(java.lang.String) */
-	public function setLabel(label:String):Void;
+	/*@@@ modifiers=1 */ public function setLabel(label:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setLightWeightPopupEnabled(boolean) */
-	public function setLightWeightPopupEnabled(aFlag:Bool):Void;
+	/*@@@ modifiers=1 */ public function setLightWeightPopupEnabled(aFlag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setLocation(int, int) */
-	override public function setLocation(x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ override public function setLocation(x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setPopupSize(int, int) */
-	@:overload(function (width:Int, height:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setPopupSize(java.awt.Dimension) */
-	public function setPopupSize(d:Dimension):Void;
+	/*@@@ modifiers=1 */ public function setPopupSize(d:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setSelected(java.awt.Component) */
-	public function setSelected(sel:Component):Void;
+	/*@@@ modifiers=1 */ public function setSelected(sel:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setSelectionModel(javax.swing.SingleSelectionModel) */
-	public function setSelectionModel(model:SingleSelectionModel):Void;
+	/*@@@ modifiers=1 */ public function setSelectionModel(model:SingleSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setUI(javax.swing.plaf.PopupMenuUI) */
-	override public function setUI(ui:PopupMenuUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:PopupMenuUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#setVisible(boolean) */
-	override public function setVisible(b:Bool):Void;
+	/*@@@ modifiers=1 */ override public function setVisible(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#show(java.awt.Component, int, int) */
-	override public function show(invoker:Component, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ override public function show(invoker:Component, x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

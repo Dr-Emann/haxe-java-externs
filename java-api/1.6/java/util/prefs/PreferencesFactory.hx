@@ -7,10 +7,10 @@ import java.util.prefs.Preferences;
 extern interface PreferencesFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/prefs/PreferencesFactory.html#systemRoot() */
-	public function systemRoot():Preferences;
+	/*@@@ modifiers=1025 */ public function systemRoot():Preferences;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/prefs/PreferencesFactory.html#userRoot() */
-	public function userRoot():Preferences;
+	/*@@@ modifiers=1025 */ public function userRoot():Preferences;
 
 }
 

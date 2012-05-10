@@ -15,19 +15,19 @@ extern class SealedObject extends Object, implements Serializable
 	private var encodedParams:NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SealedObject.html#SealedObject(javax.crypto.SealedObject) */
-	@:overload(function (arg0:SealedObject):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (arg0:SealedObject):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SealedObject.html#SealedObject(java.io.Serializable, javax.crypto.Cipher) */
-	public function new(arg0:Serializable, arg1:Cipher):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:Serializable, arg1:Cipher):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SealedObject.html#getAlgorithm() */
-	public function getAlgorithm():String;
+	/*@@@ modifiers=17 */ public function getAlgorithm():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SealedObject.html#getObject(java.security.Key, java.lang.String) */
-	@:overload(function (arg0:Key, arg1:String):Dynamic {})
+	/*@@@ modifiers=17 */ @:overload(function (arg0:Key, arg1:String):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SealedObject.html#getObject(java.security.Key) */
-	@:overload(function (arg0:Key):Dynamic {})
+	/*@@@ modifiers=17 */ @:overload(function (arg0:Key):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher) */
-	public function getObject(arg0:Cipher):Dynamic;
+	/*@@@ modifiers=17 */ public function getObject(arg0:Cipher):Dynamic;
 
 }
 

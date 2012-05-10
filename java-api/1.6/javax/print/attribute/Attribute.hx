@@ -8,10 +8,10 @@ import java.lang.Class;
 extern interface Attribute implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/Attribute.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=1025 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/Attribute.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 }
 

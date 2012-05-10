@@ -10,22 +10,22 @@ import javax.management.NotificationFilter;
 extern class NotificationFilterSupport extends Object, implements NotificationFilter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilterSupport.html#NotificationFilterSupport() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilterSupport.html#disableAllTypes() */
-	public function disableAllTypes():Void;
+	/*@@@ modifiers=33 */ public function disableAllTypes():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilterSupport.html#disableType(java.lang.String) */
-	public function disableType(prefix:String):Void;
+	/*@@@ modifiers=33 */ public function disableType(prefix:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilterSupport.html#enableType(java.lang.String) */
-	public function enableType(prefix:String):Void;
+	/*@@@ modifiers=33 */ public function enableType(prefix:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilterSupport.html#getEnabledTypes() */
-	public function getEnabledTypes():Vector<String>;
+	/*@@@ modifiers=33 */ public function getEnabledTypes():Vector<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilterSupport.html#isNotificationEnabled(javax.management.Notification) */
-	public function isNotificationEnabled(notification:Notification):Bool;
+	/*@@@ modifiers=33 */ public function isNotificationEnabled(notification:Notification):Bool;
 
 }
 

@@ -11,16 +11,13 @@ import javax.print.attribute.HashAttributeSet;
 extern class HashDocAttributeSet extends HashAttributeSet, implements DocAttributeSet, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashDocAttributeSet.html#HashDocAttributeSet() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashDocAttributeSet.html#HashDocAttributeSet(javax.print.attribute.DocAttribute) */
-	@:overload(function (attribute:DocAttribute):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attribute:DocAttribute):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashDocAttributeSet.html#HashDocAttributeSet(javax.print.attribute.DocAttribute[]) */
-	@:overload(function (attribute:NativeArray<DocAttribute>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attribute:NativeArray<DocAttribute>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashDocAttributeSet.html#HashDocAttributeSet(javax.print.attribute.DocAttributeSet) */
-	public function new(attribute:DocAttributeSet):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashDocAttributeSet.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ public function new(attribute:DocAttributeSet):Void;
 
 }
 

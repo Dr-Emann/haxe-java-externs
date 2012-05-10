@@ -8,7 +8,7 @@ import java.rmi.RemoteException;
 extern class ServerError extends RemoteException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/ServerError.html#ServerError(java.lang.String, java.lang.Error) */
-	public function new(s:String, err:Error):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, err:Error):Void;
 
 }
 

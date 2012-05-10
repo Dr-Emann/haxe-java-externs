@@ -8,10 +8,10 @@ import java.util.EventListener;
 extern interface BeanContextMembershipListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent) */
-	public function childrenAdded(bcme:BeanContextMembershipEvent):Void;
+	/*@@@ modifiers=1025 */ public function childrenAdded(bcme:BeanContextMembershipEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent) */
-	public function childrenRemoved(bcme:BeanContextMembershipEvent):Void;
+	/*@@@ modifiers=1025 */ public function childrenRemoved(bcme:BeanContextMembershipEvent):Void;
 
 }
 

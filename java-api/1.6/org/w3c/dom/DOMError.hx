@@ -8,22 +8,22 @@ import org.w3c.dom.DOMLocator;
 extern interface DOMError
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMError.html#getLocation() */
-	public function getLocation():DOMLocator;
+	/*@@@ modifiers=1025 */ public function getLocation():DOMLocator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMError.html#getMessage() */
-	public function getMessage():String;
+	/*@@@ modifiers=1025 */ public function getMessage():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMError.html#getRelatedData() */
-	public function getRelatedData():Dynamic;
+	/*@@@ modifiers=1025 */ public function getRelatedData():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMError.html#getRelatedException() */
-	public function getRelatedException():Dynamic;
+	/*@@@ modifiers=1025 */ public function getRelatedException():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMError.html#getSeverity() */
-	public function getSeverity():Int16;
+	/*@@@ modifiers=1025 */ public function getSeverity():Int16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/DOMError.html#getType() */
-	public function getType():String;
+	/*@@@ modifiers=1025 */ public function getType():String;
 
 }
 

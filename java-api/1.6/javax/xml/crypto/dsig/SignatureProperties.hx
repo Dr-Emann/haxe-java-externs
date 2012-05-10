@@ -8,10 +8,10 @@ import javax.xml.crypto.XMLStructure;
 extern interface SignatureProperties implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/SignatureProperties.html#getId() */
-	public function getId():String;
+	/*@@@ modifiers=1025 */ public function getId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/SignatureProperties.html#getProperties() */
-	public function getProperties():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getProperties():List<Dynamic>;
 
 }
 

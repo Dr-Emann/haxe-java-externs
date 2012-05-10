@@ -11,16 +11,13 @@ import javax.print.attribute.PrintRequestAttributeSet;
 extern class HashPrintRequestAttributeSet extends HashAttributeSet, implements PrintRequestAttributeSet, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#HashPrintRequestAttributeSet() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute) */
-	@:overload(function (attribute:PrintRequestAttribute):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attribute:PrintRequestAttribute):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute[]) */
-	@:overload(function (attribute:NativeArray<PrintRequestAttribute>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attribute:NativeArray<PrintRequestAttribute>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttributeSet) */
-	public function new(attribute:PrintRequestAttributeSet):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ public function new(attribute:PrintRequestAttributeSet):Void;
 
 }
 

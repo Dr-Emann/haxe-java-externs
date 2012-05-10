@@ -38,29 +38,29 @@ extern class Event extends Object, implements Serializable
 	public var evt:Event;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#Event(java.lang.Object, long, int, int, int, int, int, java.lang.Object) */
-	@:overload(function (target:Dynamic, when:haxe.Int64, id:Int, x:Int, y:Int, key:Int, modifiers:Int, arg:Dynamic):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (target:Dynamic, when:haxe.Int64, id:Int, x:Int, y:Int, key:Int, modifiers:Int, arg:Dynamic):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#Event(java.lang.Object, long, int, int, int, int, int) */
-	@:overload(function (target:Dynamic, when:haxe.Int64, id:Int, x:Int, y:Int, key:Int, modifiers:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (target:Dynamic, when:haxe.Int64, id:Int, x:Int, y:Int, key:Int, modifiers:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#Event(java.lang.Object, int, java.lang.Object) */
-	public function new(target:Dynamic, id:Int, arg:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(target:Dynamic, id:Int, arg:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#controlDown() */
-	public function controlDown():Bool;
+	/*@@@ modifiers=1 */ public function controlDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#metaDown() */
-	public function metaDown():Bool;
+	/*@@@ modifiers=1 */ public function metaDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#paramString() */
-	private function paramString():String;
+	/*@@@ modifiers=4 */ private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#shiftDown() */
-	public function shiftDown():Bool;
+	/*@@@ modifiers=1 */ public function shiftDown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Event.html#translate(int, int) */
-	public function translate(dx:Int, dy:Int):Void;
+	/*@@@ modifiers=1 */ public function translate(dx:Int, dy:Int):Void;
 
 }
 

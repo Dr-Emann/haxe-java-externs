@@ -10,19 +10,19 @@ import javax.print.attribute.DocAttributeSet;
 extern interface Doc
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/Doc.html#getAttributes() */
-	public function getAttributes():DocAttributeSet;
+	/*@@@ modifiers=1025 */ public function getAttributes():DocAttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/Doc.html#getDocFlavor() */
-	public function getDocFlavor():DocFlavor;
+	/*@@@ modifiers=1025 */ public function getDocFlavor():DocFlavor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/Doc.html#getPrintData() */
-	public function getPrintData():Dynamic;
+	/*@@@ modifiers=1025 */ public function getPrintData():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/Doc.html#getReaderForText() */
-	public function getReaderForText():Reader;
+	/*@@@ modifiers=1025 */ public function getReaderForText():Reader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/Doc.html#getStreamForBytes() */
-	public function getStreamForBytes():InputStream;
+	/*@@@ modifiers=1025 */ public function getStreamForBytes():InputStream;
 
 }
 

@@ -10,28 +10,28 @@ import javax.swing.JList;
 extern interface ComboPopup
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#getKeyListener() */
-	public function getKeyListener():KeyListener;
+	/*@@@ modifiers=1025 */ public function getKeyListener():KeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#getList() */
-	public function getList():JList;
+	/*@@@ modifiers=1025 */ public function getList():JList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#getMouseListener() */
-	public function getMouseListener():MouseListener;
+	/*@@@ modifiers=1025 */ public function getMouseListener():MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#getMouseMotionListener() */
-	public function getMouseMotionListener():MouseMotionListener;
+	/*@@@ modifiers=1025 */ public function getMouseMotionListener():MouseMotionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#hide() */
-	public function hide():Void;
+	/*@@@ modifiers=1025 */ public function hide():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#isVisible() */
-	public function isVisible():Bool;
+	/*@@@ modifiers=1025 */ public function isVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#show() */
-	public function show():Void;
+	/*@@@ modifiers=1025 */ public function show():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/ComboPopup.html#uninstallingUI() */
-	public function uninstallingUI():Void;
+	/*@@@ modifiers=1025 */ public function uninstallingUI():Void;
 
 }
 

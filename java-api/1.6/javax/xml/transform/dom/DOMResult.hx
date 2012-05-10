@@ -9,33 +9,33 @@ import org.w3c.dom.Node;
 extern class DOMResult extends Object, implements Result
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#DOMResult(org.w3c.dom.Node) */
-	@:overload(function (node:Node):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (node:Node):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#DOMResult(org.w3c.dom.Node, java.lang.String) */
-	@:overload(function (node:Node, systemId:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (node:Node, systemId:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#DOMResult(org.w3c.dom.Node, org.w3c.dom.Node) */
-	@:overload(function (node:Node, systemId:Node):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (node:Node, systemId:Node):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#DOMResult(org.w3c.dom.Node, org.w3c.dom.Node, java.lang.String) */
-	@:overload(function (node:Node, nextSibling:Node, systemId:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (node:Node, nextSibling:Node, systemId:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#DOMResult() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#getNextSibling() */
-	public function getNextSibling():Node;
+	/*@@@ modifiers=1 */ public function getNextSibling():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#getNode() */
-	public function getNode():Node;
+	/*@@@ modifiers=1 */ public function getNode():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#setNextSibling(org.w3c.dom.Node) */
-	public function setNextSibling(nextSibling:Node):Void;
+	/*@@@ modifiers=1 */ public function setNextSibling(nextSibling:Node):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#setNode(org.w3c.dom.Node) */
-	public function setNode(node:Node):Void;
+	/*@@@ modifiers=1 */ public function setNode(node:Node):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/dom/DOMResult.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemId:String):Void;
+	/*@@@ modifiers=1 */ public function setSystemId(systemId:String):Void;
 
 }
 

@@ -7,10 +7,10 @@ import javax.management.Notification;
 extern class JMXConnectionNotification extends Notification
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectionNotification.html#JMXConnectionNotification(java.lang.String, java.lang.Object, java.lang.String, long, java.lang.String, java.lang.Object) */
-	public function new(type:String, source:Dynamic, connectionId:String, sequenceNumber:haxe.Int64, message:String, userData:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function new(type:String, source:Dynamic, connectionId:String, sequenceNumber:haxe.Int64, message:String, userData:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectionNotification.html#getConnectionId() */
-	public function getConnectionId():String;
+	/*@@@ modifiers=1 */ public function getConnectionId():String;
 
 }
 

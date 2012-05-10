@@ -111,254 +111,254 @@ extern class BasicTabbedPaneUI extends TabbedPaneUI, implements SwingConstants
 	private var calcRect:Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#BasicTabbedPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#assureRectsCreated(int) */
-	private function assureRectsCreated(tabCount:Int):Void;
+	/*@@@ modifiers=4 */ private function assureRectsCreated(tabCount:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateMaxTabHeight(int) */
-	private function calculateMaxTabHeight(tabPlacement:Int):Int;
+	/*@@@ modifiers=4 */ private function calculateMaxTabHeight(tabPlacement:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateMaxTabWidth(int) */
-	private function calculateMaxTabWidth(tabPlacement:Int):Int;
+	/*@@@ modifiers=4 */ private function calculateMaxTabWidth(tabPlacement:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateTabAreaHeight(int, int, int) */
-	private function calculateTabAreaHeight(tabPlacement:Int, horizRunCount:Int, maxTabHeight:Int):Int;
+	/*@@@ modifiers=4 */ private function calculateTabAreaHeight(tabPlacement:Int, horizRunCount:Int, maxTabHeight:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateTabAreaWidth(int, int, int) */
-	private function calculateTabAreaWidth(tabPlacement:Int, vertRunCount:Int, maxTabWidth:Int):Int;
+	/*@@@ modifiers=4 */ private function calculateTabAreaWidth(tabPlacement:Int, vertRunCount:Int, maxTabWidth:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateTabHeight(int, int, int) */
-	private function calculateTabHeight(tabPlacement:Int, tabIndex:Int, fontHeight:Int):Int;
+	/*@@@ modifiers=4 */ private function calculateTabHeight(tabPlacement:Int, tabIndex:Int, fontHeight:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateTabWidth(int, int, java.awt.FontMetrics) */
-	private function calculateTabWidth(tabPlacement:Int, tabIndex:Int, metrics:FontMetrics):Int;
+	/*@@@ modifiers=4 */ private function calculateTabWidth(tabPlacement:Int, tabIndex:Int, metrics:FontMetrics):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createChangeListener() */
-	private function createChangeListener():ChangeListener;
+	/*@@@ modifiers=4 */ private function createChangeListener():ChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createFocusListener() */
-	private function createFocusListener():FocusListener;
+	/*@@@ modifiers=4 */ private function createFocusListener():FocusListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createLayoutManager() */
-	private function createLayoutManager():LayoutManager;
+	/*@@@ modifiers=4 */ private function createLayoutManager():LayoutManager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createMouseListener() */
-	private function createMouseListener():MouseListener;
+	/*@@@ modifiers=4 */ private function createMouseListener():MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createScrollButton(int) */
-	private function createScrollButton(direction:Int):JButton;
+	/*@@@ modifiers=4 */ private function createScrollButton(direction:Int):JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#expandTabRunsArray() */
-	private function expandTabRunsArray():Void;
+	/*@@@ modifiers=4 */ private function expandTabRunsArray():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	@:overload(function (c:JComponent, width:Int, height:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (c:JComponent, width:Int, height:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaseline(int) */
-	override private function getBaseline(tab:Int):Int;
+	/*@@@ modifiers=4 */ override private function getBaseline(tab:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaselineOffset() */
-	private function getBaselineOffset():Int;
+	/*@@@ modifiers=4 */ private function getBaselineOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaselineResizeBehavior(javax.swing.JComponent) */
-	override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getContentBorderInsets(int) */
-	private function getContentBorderInsets(tabPlacement:Int):Insets;
+	/*@@@ modifiers=4 */ private function getContentBorderInsets(tabPlacement:Int):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getFocusIndex() */
-	private function getFocusIndex():Int;
+	/*@@@ modifiers=4 */ private function getFocusIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getFontMetrics() */
-	private function getFontMetrics():FontMetrics;
+	/*@@@ modifiers=4 */ private function getFontMetrics():FontMetrics;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getIconForTab(int) */
-	private function getIconForTab(tabIndex:Int):Icon;
+	/*@@@ modifiers=4 */ private function getIconForTab(tabIndex:Int):Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getNextTabIndex(int) */
-	private function getNextTabIndex(base:Int):Int;
+	/*@@@ modifiers=4 */ private function getNextTabIndex(base:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getNextTabIndexInRun(int, int) */
-	private function getNextTabIndexInRun(tabCount:Int, base:Int):Int;
+	/*@@@ modifiers=4 */ private function getNextTabIndexInRun(tabCount:Int, base:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getNextTabRun(int) */
-	private function getNextTabRun(baseRun:Int):Int;
+	/*@@@ modifiers=4 */ private function getNextTabRun(baseRun:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getPreviousTabIndex(int) */
-	private function getPreviousTabIndex(base:Int):Int;
+	/*@@@ modifiers=4 */ private function getPreviousTabIndex(base:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getPreviousTabIndexInRun(int, int) */
-	private function getPreviousTabIndexInRun(tabCount:Int, base:Int):Int;
+	/*@@@ modifiers=4 */ private function getPreviousTabIndexInRun(tabCount:Int, base:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getPreviousTabRun(int) */
-	private function getPreviousTabRun(baseRun:Int):Int;
+	/*@@@ modifiers=4 */ private function getPreviousTabRun(baseRun:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getRolloverTab() */
-	private function getRolloverTab():Int;
+	/*@@@ modifiers=4 */ private function getRolloverTab():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getRunForTab(int, int) */
-	private function getRunForTab(tabCount:Int, tabIndex:Int):Int;
+	/*@@@ modifiers=4 */ private function getRunForTab(tabCount:Int, tabIndex:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getSelectedTabPadInsets(int) */
-	private function getSelectedTabPadInsets(tabPlacement:Int):Insets;
+	/*@@@ modifiers=4 */ private function getSelectedTabPadInsets(tabPlacement:Int):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabAreaInsets(int) */
-	private function getTabAreaInsets(tabPlacement:Int):Insets;
+	/*@@@ modifiers=4 */ private function getTabAreaInsets(tabPlacement:Int):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabBounds(int, java.awt.Rectangle) */
-	@:overload(function (tabIndex:Int, dest:Rectangle):Rectangle {})
+	/*@@@ modifiers=4 */ @:overload(function (tabIndex:Int, dest:Rectangle):Rectangle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabBounds(javax.swing.JTabbedPane, int) */
-	override public function getTabBounds(pane:JTabbedPane, i:Int):Rectangle;
+	/*@@@ modifiers=1 */ override public function getTabBounds(pane:JTabbedPane, i:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabInsets(int, int) */
-	private function getTabInsets(tabPlacement:Int, tabIndex:Int):Insets;
+	/*@@@ modifiers=4 */ private function getTabInsets(tabPlacement:Int, tabIndex:Int):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabLabelShiftX(int, int, boolean) */
-	private function getTabLabelShiftX(tabPlacement:Int, tabIndex:Int, isSelected:Bool):Int;
+	/*@@@ modifiers=4 */ private function getTabLabelShiftX(tabPlacement:Int, tabIndex:Int, isSelected:Bool):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabLabelShiftY(int, int, boolean) */
-	private function getTabLabelShiftY(tabPlacement:Int, tabIndex:Int, isSelected:Bool):Int;
+	/*@@@ modifiers=4 */ private function getTabLabelShiftY(tabPlacement:Int, tabIndex:Int, isSelected:Bool):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabRunCount(javax.swing.JTabbedPane) */
-	override public function getTabRunCount(pane:JTabbedPane):Int;
+	/*@@@ modifiers=1 */ override public function getTabRunCount(pane:JTabbedPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabRunIndent(int, int) */
-	private function getTabRunIndent(tabPlacement:Int, run:Int):Int;
+	/*@@@ modifiers=4 */ private function getTabRunIndent(tabPlacement:Int, run:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabRunOffset(int, int, int, boolean) */
-	private function getTabRunOffset(tabPlacement:Int, tabCount:Int, tabIndex:Int, forward:Bool):Int;
+	/*@@@ modifiers=4 */ private function getTabRunOffset(tabPlacement:Int, tabCount:Int, tabIndex:Int, forward:Bool):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTabRunOverlay(int) */
-	private function getTabRunOverlay(tabPlacement:Int):Int;
+	/*@@@ modifiers=4 */ private function getTabRunOverlay(tabPlacement:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getTextViewForTab(int) */
-	private function getTextViewForTab(tabIndex:Int):View;
+	/*@@@ modifiers=4 */ private function getTextViewForTab(tabIndex:Int):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getVisibleComponent() */
-	private function getVisibleComponent():Component;
+	/*@@@ modifiers=4 */ private function getVisibleComponent():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#installComponents() */
-	private function installComponents():Void;
+	/*@@@ modifiers=4 */ private function installComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#lastTabInRun(int, int) */
-	private function lastTabInRun(tabCount:Int, run:Int):Int;
+	/*@@@ modifiers=4 */ private function lastTabInRun(tabCount:Int, run:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#layoutLabel(int, java.awt.FontMetrics, int, java.lang.String, javax.swing.Icon, java.awt.Rectangle, java.awt.Rectangle, java.awt.Rectangle, boolean) */
-	private function layoutLabel(tabPlacement:Int, metrics:FontMetrics, tabIndex:Int, title:String, icon:Icon, tabRect:Rectangle, iconRect:Rectangle, textRect:Rectangle, isSelected:Bool):Void;
+	/*@@@ modifiers=4 */ private function layoutLabel(tabPlacement:Int, metrics:FontMetrics, tabIndex:Int, title:String, icon:Icon, tabRect:Rectangle, iconRect:Rectangle, textRect:Rectangle, isSelected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#navigateSelectedTab(int) */
-	private function navigateSelectedTab(direction:Int):Void;
+	/*@@@ modifiers=4 */ private function navigateSelectedTab(direction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintContentBorder(java.awt.Graphics, int, int) */
-	private function paintContentBorder(g:Graphics, tabPlacement:Int, selectedIndex:Int):Void;
+	/*@@@ modifiers=4 */ private function paintContentBorder(g:Graphics, tabPlacement:Int, selectedIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintContentBorderBottomEdge(java.awt.Graphics, int, int, int, int, int, int) */
-	private function paintContentBorderBottomEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
+	/*@@@ modifiers=4 */ private function paintContentBorderBottomEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintContentBorderLeftEdge(java.awt.Graphics, int, int, int, int, int, int) */
-	private function paintContentBorderLeftEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
+	/*@@@ modifiers=4 */ private function paintContentBorderLeftEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintContentBorderRightEdge(java.awt.Graphics, int, int, int, int, int, int) */
-	private function paintContentBorderRightEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
+	/*@@@ modifiers=4 */ private function paintContentBorderRightEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintContentBorderTopEdge(java.awt.Graphics, int, int, int, int, int, int) */
-	private function paintContentBorderTopEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
+	/*@@@ modifiers=4 */ private function paintContentBorderTopEdge(g:Graphics, tabPlacement:Int, selectedIndex:Int, x:Int, y:Int, w:Int, h:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintFocusIndicator(java.awt.Graphics, int, java.awt.Rectangle[], int, java.awt.Rectangle, java.awt.Rectangle, boolean) */
-	private function paintFocusIndicator(g:Graphics, tabPlacement:Int, rects:NativeArray<Rectangle>, tabIndex:Int, iconRect:Rectangle, textRect:Rectangle, isSelected:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintFocusIndicator(g:Graphics, tabPlacement:Int, rects:NativeArray<Rectangle>, tabIndex:Int, iconRect:Rectangle, textRect:Rectangle, isSelected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintIcon(java.awt.Graphics, int, int, javax.swing.Icon, java.awt.Rectangle, boolean) */
-	private function paintIcon(g:Graphics, tabPlacement:Int, tabIndex:Int, icon:Icon, iconRect:Rectangle, isSelected:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintIcon(g:Graphics, tabPlacement:Int, tabIndex:Int, icon:Icon, iconRect:Rectangle, isSelected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintTab(java.awt.Graphics, int, java.awt.Rectangle[], int, java.awt.Rectangle, java.awt.Rectangle) */
-	private function paintTab(g:Graphics, tabPlacement:Int, rects:NativeArray<Rectangle>, tabIndex:Int, iconRect:Rectangle, textRect:Rectangle):Void;
+	/*@@@ modifiers=4 */ private function paintTab(g:Graphics, tabPlacement:Int, rects:NativeArray<Rectangle>, tabIndex:Int, iconRect:Rectangle, textRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintTabArea(java.awt.Graphics, int, int) */
-	private function paintTabArea(g:Graphics, tabPlacement:Int, selectedIndex:Int):Void;
+	/*@@@ modifiers=4 */ private function paintTabArea(g:Graphics, tabPlacement:Int, selectedIndex:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintTabBackground(java.awt.Graphics, int, int, int, int, int, int, boolean) */
-	private function paintTabBackground(g:Graphics, tabPlacement:Int, tabIndex:Int, x:Int, y:Int, w:Int, h:Int, isSelected:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintTabBackground(g:Graphics, tabPlacement:Int, tabIndex:Int, x:Int, y:Int, w:Int, h:Int, isSelected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintTabBorder(java.awt.Graphics, int, int, int, int, int, int, boolean) */
-	private function paintTabBorder(g:Graphics, tabPlacement:Int, tabIndex:Int, x:Int, y:Int, w:Int, h:Int, isSelected:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintTabBorder(g:Graphics, tabPlacement:Int, tabIndex:Int, x:Int, y:Int, w:Int, h:Int, isSelected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#paintText(java.awt.Graphics, int, java.awt.Font, java.awt.FontMetrics, int, java.lang.String, java.awt.Rectangle, boolean) */
-	private function paintText(g:Graphics, tabPlacement:Int, font:Font, metrics:FontMetrics, tabIndex:Int, title:String, textRect:Rectangle, isSelected:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintText(g:Graphics, tabPlacement:Int, font:Font, metrics:FontMetrics, tabIndex:Int, title:String, textRect:Rectangle, isSelected:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#rotateInsets(java.awt.Insets, java.awt.Insets, int) */
-	static private function rotateInsets(topInsets:Insets, targetInsets:Insets, targetPlacement:Int):Void;
+	/*@@@ modifiers=12 */ static private function rotateInsets(topInsets:Insets, targetInsets:Insets, targetPlacement:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#selectAdjacentRunTab(int, int, int) */
-	private function selectAdjacentRunTab(tabPlacement:Int, tabIndex:Int, offset:Int):Void;
+	/*@@@ modifiers=4 */ private function selectAdjacentRunTab(tabPlacement:Int, tabIndex:Int, offset:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#selectNextTab(int) */
-	private function selectNextTab(current:Int):Void;
+	/*@@@ modifiers=4 */ private function selectNextTab(current:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#selectNextTabInRun(int) */
-	private function selectNextTabInRun(current:Int):Void;
+	/*@@@ modifiers=4 */ private function selectNextTabInRun(current:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#selectPreviousTab(int) */
-	private function selectPreviousTab(current:Int):Void;
+	/*@@@ modifiers=4 */ private function selectPreviousTab(current:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#selectPreviousTabInRun(int) */
-	private function selectPreviousTabInRun(current:Int):Void;
+	/*@@@ modifiers=4 */ private function selectPreviousTabInRun(current:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#setRolloverTab(int) */
-	private function setRolloverTab(index:Int):Void;
+	/*@@@ modifiers=4 */ private function setRolloverTab(index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#setVisibleComponent(java.awt.Component) */
-	private function setVisibleComponent(component:Component):Void;
+	/*@@@ modifiers=4 */ private function setVisibleComponent(component:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#shouldPadTabRun(int, int) */
-	private function shouldPadTabRun(tabPlacement:Int, run:Int):Bool;
+	/*@@@ modifiers=4 */ private function shouldPadTabRun(tabPlacement:Int, run:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#shouldRotateTabRuns(int) */
-	private function shouldRotateTabRuns(tabPlacement:Int):Bool;
+	/*@@@ modifiers=4 */ private function shouldRotateTabRuns(tabPlacement:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#tabForCoordinate(javax.swing.JTabbedPane, int, int) */
-	override public function tabForCoordinate(pane:JTabbedPane, x:Int, y:Int):Int;
+	/*@@@ modifiers=1 */ override public function tabForCoordinate(pane:JTabbedPane, x:Int, y:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#uninstallComponents() */
-	private function uninstallComponents():Void;
+	/*@@@ modifiers=4 */ private function uninstallComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

@@ -9,7 +9,7 @@ import javax.sql.rowset.WebRowSet;
 extern interface XmlWriter implements RowSetWriter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/XmlWriter.html#writeXML(javax.sql.rowset.WebRowSet, java.io.Writer) */
-	public function writeXML(arg0:WebRowSet, arg1:Writer):Void;
+	/*@@@ modifiers=1025 */ public function writeXML(arg0:WebRowSet, arg1:Writer):Void;
 
 }
 

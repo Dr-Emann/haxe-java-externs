@@ -18,46 +18,46 @@ import javax.swing.event.ChangeListener;
 extern class JSpinner_DefaultEditor extends JPanel, implements ChangeListener, implements PropertyChangeListener, implements LayoutManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#JSpinner$DefaultEditor(javax.swing.JSpinner) */
-	public function new(spinner:JSpinner):Void;
+	/*@@@ modifiers=1 */ public function new(spinner:JSpinner):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#addLayoutComponent(java.lang.String, java.awt.Component) */
-	public function addLayoutComponent(name:String, child:Component):Void;
+	/*@@@ modifiers=1 */ public function addLayoutComponent(name:String, child:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#commitEdit() */
-	public function commitEdit():Void;
+	/*@@@ modifiers=1 */ public function commitEdit():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#dismiss(javax.swing.JSpinner) */
-	public function dismiss(spinner:JSpinner):Void;
+	/*@@@ modifiers=1 */ public function dismiss(spinner:JSpinner):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#getBaseline(int, int) */
-	override public function getBaseline(width:Int, height:Int):Int;
+	/*@@@ modifiers=1 */ override public function getBaseline(width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#getBaselineResizeBehavior() */
-	override public function getBaselineResizeBehavior():Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior():Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#getSpinner() */
-	public function getSpinner():JSpinner;
+	/*@@@ modifiers=1 */ public function getSpinner():JSpinner;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#getTextField() */
-	public function getTextField():JFormattedTextField;
+	/*@@@ modifiers=1 */ public function getTextField():JFormattedTextField;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#layoutContainer(java.awt.Container) */
-	public function layoutContainer(parent:Container):Void;
+	/*@@@ modifiers=1 */ public function layoutContainer(parent:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#minimumLayoutSize(java.awt.Container) */
-	public function minimumLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1 */ public function minimumLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#preferredLayoutSize(java.awt.Container) */
-	public function preferredLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1 */ public function preferredLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#propertyChange(java.beans.PropertyChangeEvent) */
-	public function propertyChange(e:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function propertyChange(e:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#removeLayoutComponent(java.awt.Component) */
-	public function removeLayoutComponent(child:Component):Void;
+	/*@@@ modifiers=1 */ public function removeLayoutComponent(child:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.DefaultEditor.html#stateChanged(javax.swing.event.ChangeEvent) */
-	public function stateChanged(e:ChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function stateChanged(e:ChangeEvent):Void;
 
 }
 

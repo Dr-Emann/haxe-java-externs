@@ -7,10 +7,10 @@ import java.lang.annotation.Annotation;
 extern interface MTOM implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/MTOM.html#enabled() */
-	public function enabled():Bool;
+	/*@@@ modifiers=1025 */ public function enabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/soap/MTOM.html#threshold() */
-	public function threshold():Int;
+	/*@@@ modifiers=1025 */ public function threshold():Int;
 
 }
 

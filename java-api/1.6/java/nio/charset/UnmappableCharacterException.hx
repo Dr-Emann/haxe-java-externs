@@ -7,13 +7,13 @@ import java.nio.charset.CharacterCodingException;
 extern class UnmappableCharacterException extends CharacterCodingException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/UnmappableCharacterException.html#UnmappableCharacterException(int) */
-	public function new(inputLength:Int):Void;
+	/*@@@ modifiers=1 */ public function new(inputLength:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/UnmappableCharacterException.html#getInputLength() */
-	public function getInputLength():Int;
+	/*@@@ modifiers=1 */ public function getInputLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/UnmappableCharacterException.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

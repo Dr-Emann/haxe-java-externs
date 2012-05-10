@@ -23,10 +23,10 @@ extern class Desktop_Action extends Enum<Desktop_Action>
 	public static var BROWSE:Desktop_Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Desktop.Action.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Desktop_Action;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Desktop_Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Desktop.Action.html#values() */
-	static public function values():NativeArray<Desktop_Action>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Desktop_Action>;
 
 }
 

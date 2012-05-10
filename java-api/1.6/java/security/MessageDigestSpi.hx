@@ -10,28 +10,28 @@ import java.nio.ByteBuffer;
 extern class MessageDigestSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#MessageDigestSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineDigest(byte[], int, int) */
-	@:overload(function (buf:NativeArray<Int8>, offset:Int, len:Int):Int {})
+	/*@@@ modifiers=4 */ @:overload(function (buf:NativeArray<Int8>, offset:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineDigest() */
-	private function engineDigest():NativeArray<Int8>;
+	/*@@@ modifiers=1028 */ private function engineDigest():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineGetDigestLength() */
-	private function engineGetDigestLength():Int;
+	/*@@@ modifiers=4 */ private function engineGetDigestLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineReset() */
-	private function engineReset():Void;
+	/*@@@ modifiers=1028 */ private function engineReset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineUpdate(byte[], int, int) */
-	@:overload(function (input:NativeArray<Int8>, offset:Int, len:Int):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (input:NativeArray<Int8>, offset:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineUpdate(byte) */
-	@:overload(function (input:Int8):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (input:Int8):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/MessageDigestSpi.html#engineUpdate(java.nio.ByteBuffer) */
-	private function engineUpdate(input:ByteBuffer):Void;
+	/*@@@ modifiers=4 */ private function engineUpdate(input:ByteBuffer):Void;
 
 }
 

@@ -7,13 +7,13 @@ import javax.xml.stream.events.Attribute;
 extern interface Namespace implements Attribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Namespace.html#getNamespaceURI() */
-	public function getNamespaceURI():String;
+	/*@@@ modifiers=1025 */ public function getNamespaceURI():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Namespace.html#getPrefix() */
-	public function getPrefix():String;
+	/*@@@ modifiers=1025 */ public function getPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration() */
-	public function isDefaultNamespaceDeclaration():Bool;
+	/*@@@ modifiers=1025 */ public function isDefaultNamespaceDeclaration():Bool;
 
 }
 

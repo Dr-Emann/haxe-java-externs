@@ -11,31 +11,31 @@ import java.lang.Class;
 extern interface SQLXML
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#free() */
-	public function free():Void;
+	/*@@@ modifiers=1025 */ public function free():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#getBinaryStream() */
-	public function getBinaryStream():InputStream;
+	/*@@@ modifiers=1025 */ public function getBinaryStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#getCharacterStream() */
-	public function getCharacterStream():Reader;
+	/*@@@ modifiers=1025 */ public function getCharacterStream():Reader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#getSource(java.lang.Class) */
-	public function getSource<T>(sourceClass:Class<T>):T;
+	/*@@@ modifiers=1025 */ public function getSource<T>(sourceClass:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#getString() */
-	public function getString():String;
+	/*@@@ modifiers=1025 */ public function getString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#setBinaryStream() */
-	public function setBinaryStream():OutputStream;
+	/*@@@ modifiers=1025 */ public function setBinaryStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#setCharacterStream() */
-	public function setCharacterStream():Writer;
+	/*@@@ modifiers=1025 */ public function setCharacterStream():Writer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#setResult(java.lang.Class) */
-	public function setResult<T>(resultClass:Class<T>):T;
+	/*@@@ modifiers=1025 */ public function setResult<T>(resultClass:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/SQLXML.html#setString(java.lang.String) */
-	public function setString(value:String):Void;
+	/*@@@ modifiers=1025 */ public function setString(value:String):Void;
 
 }
 

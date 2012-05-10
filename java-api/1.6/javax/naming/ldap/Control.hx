@@ -9,13 +9,13 @@ import java.io.Serializable;
 extern interface Control implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Control.html#getEncodedValue() */
-	public function getEncodedValue():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getEncodedValue():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Control.html#getID() */
-	public function getID():String;
+	/*@@@ modifiers=1025 */ public function getID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/Control.html#isCritical() */
-	public function isCritical():Bool;
+	/*@@@ modifiers=1025 */ public function isCritical():Bool;
 
 }
 

@@ -17,37 +17,37 @@ import java.lang.Object;
 extern class ConvolveOp extends Object, implements BufferedImageOp, implements RasterOp
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#ConvolveOp(java.awt.image.Kernel) */
-	@:overload(function (kernel:Kernel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (kernel:Kernel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#ConvolveOp(java.awt.image.Kernel, int, java.awt.RenderingHints) */
-	public function new(kernel:Kernel, edgeCondition:Int, hints:RenderingHints):Void;
+	/*@@@ modifiers=1 */ public function new(kernel:Kernel, edgeCondition:Int, hints:RenderingHints):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel) */
-	public function createCompatibleDestImage(src:BufferedImage, destCM:ColorModel):BufferedImage;
+	/*@@@ modifiers=1 */ public function createCompatibleDestImage(src:BufferedImage, destCM:ColorModel):BufferedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#createCompatibleDestRaster(java.awt.image.Raster) */
-	public function createCompatibleDestRaster(src:Raster):WritableRaster;
+	/*@@@ modifiers=1 */ public function createCompatibleDestRaster(src:Raster):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage) */
-	@:overload(function (src:BufferedImage, dst:BufferedImage):BufferedImage {})
+	/*@@@ modifiers=17 */ @:overload(function (src:BufferedImage, dst:BufferedImage):BufferedImage {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#filter(java.awt.image.Raster, java.awt.image.WritableRaster) */
-	public function filter(src:Raster, dst:WritableRaster):WritableRaster;
+	/*@@@ modifiers=17 */ public function filter(src:Raster, dst:WritableRaster):WritableRaster;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#getBounds2D(java.awt.image.BufferedImage) */
-	@:overload(function (src:BufferedImage):Rectangle2D {})
+	/*@@@ modifiers=17 */ @:overload(function (src:BufferedImage):Rectangle2D {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#getBounds2D(java.awt.image.Raster) */
-	public function getBounds2D(src:Raster):Rectangle2D;
+	/*@@@ modifiers=17 */ public function getBounds2D(src:Raster):Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#getEdgeCondition() */
-	public function getEdgeCondition():Int;
+	/*@@@ modifiers=1 */ public function getEdgeCondition():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#getKernel() */
-	public function getKernel():Kernel;
+	/*@@@ modifiers=17 */ public function getKernel():Kernel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D) */
-	public function getPoint2D(srcPt:Point2D, dstPt:Point2D):Point2D;
+	/*@@@ modifiers=17 */ public function getPoint2D(srcPt:Point2D, dstPt:Point2D):Point2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ConvolveOp.html#getRenderingHints() */
-	public function getRenderingHints():RenderingHints;
+	/*@@@ modifiers=17 */ public function getRenderingHints():RenderingHints;
 
 }
 

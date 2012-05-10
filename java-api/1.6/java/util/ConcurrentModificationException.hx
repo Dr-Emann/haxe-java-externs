@@ -7,9 +7,9 @@ import java.lang.RuntimeException;
 extern class ConcurrentModificationException extends RuntimeException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ConcurrentModificationException.html#ConcurrentModificationException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ConcurrentModificationException.html#ConcurrentModificationException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

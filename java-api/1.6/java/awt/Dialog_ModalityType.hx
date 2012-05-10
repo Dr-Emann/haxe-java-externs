@@ -20,10 +20,10 @@ extern class Dialog_ModalityType extends Enum<Dialog_ModalityType>
 	public static var TOOLKIT_MODAL:Dialog_ModalityType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dialog.ModalityType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Dialog_ModalityType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Dialog_ModalityType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dialog.ModalityType.html#values() */
-	static public function values():NativeArray<Dialog_ModalityType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Dialog_ModalityType>;
 
 }
 

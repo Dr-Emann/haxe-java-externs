@@ -29,140 +29,140 @@ extern class DefaultCaret extends Rectangle, implements Caret, implements FocusL
 	private var changeEvent:ChangeEvent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#DefaultCaret() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener) */
-	public function addChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#adjustVisibility(java.awt.Rectangle) */
-	private function adjustVisibility(nloc:Rectangle):Void;
+	/*@@@ modifiers=4 */ private function adjustVisibility(nloc:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#damage(java.awt.Rectangle) */
-	private function damage(r:Rectangle):Void;
+	/*@@@ modifiers=36 */ private function damage(r:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#deinstall(javax.swing.text.JTextComponent) */
-	public function deinstall(c:JTextComponent):Void;
+	/*@@@ modifiers=1 */ public function deinstall(c:JTextComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#fireStateChanged() */
-	private function fireStateChanged():Void;
+	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#focusGained(java.awt.event.FocusEvent) */
-	public function focusGained(e:FocusEvent):Void;
+	/*@@@ modifiers=1 */ public function focusGained(e:FocusEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#focusLost(java.awt.event.FocusEvent) */
-	public function focusLost(e:FocusEvent):Void;
+	/*@@@ modifiers=1 */ public function focusLost(e:FocusEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getBlinkRate() */
-	public function getBlinkRate():Int;
+	/*@@@ modifiers=1 */ public function getBlinkRate():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getChangeListeners() */
-	public function getChangeListeners():NativeArray<ChangeListener>;
+	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getComponent() */
-	private function getComponent():JTextComponent;
+	/*@@@ modifiers=20 */ private function getComponent():JTextComponent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getDot() */
-	public function getDot():Int;
+	/*@@@ modifiers=1 */ public function getDot():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getDotBias() */
-	public function getDotBias():Position_Bias;
+	/*@@@ modifiers=1 */ public function getDotBias():Position_Bias;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getMagicCaretPosition() */
-	public function getMagicCaretPosition():Point;
+	/*@@@ modifiers=1 */ public function getMagicCaretPosition():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getMark() */
-	public function getMark():Int;
+	/*@@@ modifiers=1 */ public function getMark():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getMarkBias() */
-	public function getMarkBias():Position_Bias;
+	/*@@@ modifiers=1 */ public function getMarkBias():Position_Bias;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getSelectionPainter() */
-	private function getSelectionPainter():Highlighter_HighlightPainter;
+	/*@@@ modifiers=4 */ private function getSelectionPainter():Highlighter_HighlightPainter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#getUpdatePolicy() */
-	public function getUpdatePolicy():Int;
+	/*@@@ modifiers=1 */ public function getUpdatePolicy():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#install(javax.swing.text.JTextComponent) */
-	public function install(c:JTextComponent):Void;
+	/*@@@ modifiers=1 */ public function install(c:JTextComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=1 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#isSelectionVisible() */
-	public function isSelectionVisible():Bool;
+	/*@@@ modifiers=1 */ public function isSelectionVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#isVisible() */
-	public function isVisible():Bool;
+	/*@@@ modifiers=1 */ public function isVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mouseClicked(java.awt.event.MouseEvent) */
-	public function mouseClicked(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseClicked(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mouseDragged(java.awt.event.MouseEvent) */
-	public function mouseDragged(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseDragged(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mouseEntered(java.awt.event.MouseEvent) */
-	public function mouseEntered(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseEntered(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mouseExited(java.awt.event.MouseEvent) */
-	public function mouseExited(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseExited(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mouseMoved(java.awt.event.MouseEvent) */
-	public function mouseMoved(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseMoved(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mousePressed(java.awt.event.MouseEvent) */
-	public function mousePressed(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mousePressed(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#mouseReleased(java.awt.event.MouseEvent) */
-	public function mouseReleased(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ public function mouseReleased(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#moveCaret(java.awt.event.MouseEvent) */
-	private function moveCaret(e:MouseEvent):Void;
+	/*@@@ modifiers=4 */ private function moveCaret(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#moveDot(int, javax.swing.text.Position$Bias) */
-	@:overload(function (dot:Int, dotBias:Position_Bias):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (dot:Int, dotBias:Position_Bias):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#moveDot(int) */
-	public function moveDot(dot:Int):Void;
+	/*@@@ modifiers=1 */ public function moveDot(dot:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#paint(java.awt.Graphics) */
-	public function paint(g:Graphics):Void;
+	/*@@@ modifiers=1 */ public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#positionCaret(java.awt.event.MouseEvent) */
-	private function positionCaret(e:MouseEvent):Void;
+	/*@@@ modifiers=4 */ private function positionCaret(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#removeChangeListener(javax.swing.event.ChangeListener) */
-	public function removeChangeListener(l:ChangeListener):Void;
+	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#repaint() */
-	private function repaint():Void;
+	/*@@@ modifiers=52 */ private function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setBlinkRate(int) */
-	public function setBlinkRate(rate:Int):Void;
+	/*@@@ modifiers=1 */ public function setBlinkRate(rate:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setDot(int, javax.swing.text.Position$Bias) */
-	@:overload(function (dot:Int, dotBias:Position_Bias):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (dot:Int, dotBias:Position_Bias):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setDot(int) */
-	public function setDot(dot:Int):Void;
+	/*@@@ modifiers=1 */ public function setDot(dot:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setMagicCaretPosition(java.awt.Point) */
-	public function setMagicCaretPosition(p:Point):Void;
+	/*@@@ modifiers=1 */ public function setMagicCaretPosition(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setSelectionVisible(boolean) */
-	public function setSelectionVisible(vis:Bool):Void;
+	/*@@@ modifiers=1 */ public function setSelectionVisible(vis:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setUpdatePolicy(int) */
-	public function setUpdatePolicy(policy:Int):Void;
+	/*@@@ modifiers=1 */ public function setUpdatePolicy(policy:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#setVisible(boolean) */
-	public function setVisible(e:Bool):Void;
+	/*@@@ modifiers=1 */ public function setVisible(e:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultCaret.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

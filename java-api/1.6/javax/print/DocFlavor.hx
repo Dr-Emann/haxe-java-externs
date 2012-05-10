@@ -12,31 +12,31 @@ extern class DocFlavor extends Object, implements Serializable, implements Clone
 	public static var hostEncoding:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#DocFlavor(java.lang.String, java.lang.String) */
-	public function new(mimeType:String, className:String):Void;
+	/*@@@ modifiers=1 */ public function new(mimeType:String, className:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#getMediaSubtype() */
-	public function getMediaSubtype():String;
+	/*@@@ modifiers=1 */ public function getMediaSubtype():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#getMediaType() */
-	public function getMediaType():String;
+	/*@@@ modifiers=1 */ public function getMediaType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#getMimeType() */
-	public function getMimeType():String;
+	/*@@@ modifiers=1 */ public function getMimeType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#getParameter(java.lang.String) */
-	public function getParameter(paramName:String):String;
+	/*@@@ modifiers=1 */ public function getParameter(paramName:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#getRepresentationClassName() */
-	public function getRepresentationClassName():String;
+	/*@@@ modifiers=1 */ public function getRepresentationClassName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

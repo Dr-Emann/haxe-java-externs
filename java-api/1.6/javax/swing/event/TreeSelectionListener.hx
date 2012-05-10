@@ -8,7 +8,7 @@ import javax.swing.event.TreeSelectionEvent;
 extern interface TreeSelectionListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent) */
-	public function valueChanged(e:TreeSelectionEvent):Void;
+	/*@@@ modifiers=1025 */ public function valueChanged(e:TreeSelectionEvent):Void;
 
 }
 

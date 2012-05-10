@@ -7,7 +7,7 @@ import javax.print.DocFlavor;
 extern class DocFlavor_BYTE_ARRAY extends DocFlavor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/DocFlavor.BYTE_ARRAY.html#DocFlavor$BYTE_ARRAY(java.lang.String) */
-	public function new(mimeType:String):Void;
+	/*@@@ modifiers=1 */ public function new(mimeType:String):Void;
 
 }
 

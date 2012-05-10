@@ -8,10 +8,10 @@ import java.util.prefs.NodeChangeEvent;
 extern interface NodeChangeListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent) */
-	public function childAdded(evt:NodeChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function childAdded(evt:NodeChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent) */
-	public function childRemoved(evt:NodeChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function childRemoved(evt:NodeChangeEvent):Void;
 
 }
 

@@ -7,7 +7,7 @@ import javax.xml.stream.events.XMLEvent;
 extern interface Comment implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Comment.html#getText() */
-	public function getText():String;
+	/*@@@ modifiers=1025 */ public function getText():String;
 
 }
 

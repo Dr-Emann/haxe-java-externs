@@ -56,19 +56,19 @@ extern class ElementKind extends Enum<ElementKind>
 	public static var OTHER:ElementKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ElementKind.html#isClass() */
-	public function isClass():Bool;
+	/*@@@ modifiers=1 */ public function isClass():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ElementKind.html#isField() */
-	public function isField():Bool;
+	/*@@@ modifiers=1 */ public function isField():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ElementKind.html#isInterface() */
-	public function isInterface():Bool;
+	/*@@@ modifiers=1 */ public function isInterface():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ElementKind.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):ElementKind;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):ElementKind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/ElementKind.html#values() */
-	static public function values():NativeArray<ElementKind>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<ElementKind>;
 
 }
 

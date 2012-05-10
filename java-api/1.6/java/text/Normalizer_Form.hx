@@ -20,10 +20,10 @@ extern class Normalizer_Form extends Enum<Normalizer_Form>
 	public static var NFKC:Normalizer_Form;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Normalizer.Form.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Normalizer_Form;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Normalizer_Form;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Normalizer.Form.html#values() */
-	static public function values():NativeArray<Normalizer_Form>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Normalizer_Form>;
 
 }
 

@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class PrinterException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/PrinterException.html#PrinterException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/print/PrinterException.html#PrinterException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

@@ -8,13 +8,13 @@ import javax.swing.text.html.HTML_Tag;
 extern class HTML_UnknownTag extends HTML_Tag, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.UnknownTag.html#HTML$UnknownTag(java.lang.String) */
-	public function new(id:String):Void;
+	/*@@@ modifiers=1 */ public function new(id:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.UnknownTag.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTML.UnknownTag.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 }
 

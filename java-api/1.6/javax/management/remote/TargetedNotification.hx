@@ -10,16 +10,16 @@ import javax.management.Notification;
 extern class TargetedNotification extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/TargetedNotification.html#TargetedNotification(javax.management.Notification, java.lang.Integer) */
-	public function new(notification:Notification, listenerID:Integer):Void;
+	/*@@@ modifiers=1 */ public function new(notification:Notification, listenerID:Integer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/TargetedNotification.html#getListenerID() */
-	public function getListenerID():Integer;
+	/*@@@ modifiers=1 */ public function getListenerID():Integer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/TargetedNotification.html#getNotification() */
-	public function getNotification():Notification;
+	/*@@@ modifiers=1 */ public function getNotification():Notification;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/TargetedNotification.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

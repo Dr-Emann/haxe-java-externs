@@ -10,31 +10,31 @@ import javax.management.ObjectName;
 extern class RoleUnresolved extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#RoleUnresolved(java.lang.String, java.util.List, int) */
-	public function new(name:String, value:List<ObjectName>, pbType:Int):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, value:List<ObjectName>, pbType:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#getProblemType() */
-	public function getProblemType():Int;
+	/*@@@ modifiers=1 */ public function getProblemType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#getRoleName() */
-	public function getRoleName():String;
+	/*@@@ modifiers=1 */ public function getRoleName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#getRoleValue() */
-	public function getRoleValue():List<ObjectName>;
+	/*@@@ modifiers=1 */ public function getRoleValue():List<ObjectName>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#setProblemType(int) */
-	public function setProblemType(pbType:Int):Void;
+	/*@@@ modifiers=1 */ public function setProblemType(pbType:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#setRoleName(java.lang.String) */
-	public function setRoleName(name:String):Void;
+	/*@@@ modifiers=1 */ public function setRoleName(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#setRoleValue(java.util.List) */
-	public function setRoleValue(value:List<ObjectName>):Void;
+	/*@@@ modifiers=1 */ public function setRoleValue(value:List<ObjectName>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RoleUnresolved.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

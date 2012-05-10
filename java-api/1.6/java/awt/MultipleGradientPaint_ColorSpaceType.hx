@@ -14,10 +14,10 @@ extern class MultipleGradientPaint_ColorSpaceType extends Enum<MultipleGradientP
 	public static var LINEAR_RGB:MultipleGradientPaint_ColorSpaceType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MultipleGradientPaint.ColorSpaceType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):MultipleGradientPaint_ColorSpaceType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):MultipleGradientPaint_ColorSpaceType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MultipleGradientPaint.ColorSpaceType.html#values() */
-	static public function values():NativeArray<MultipleGradientPaint_ColorSpaceType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<MultipleGradientPaint_ColorSpaceType>;
 
 }
 

@@ -8,10 +8,10 @@ import java.beans.beancontext.BeanContext;
 extern interface AppletInitializer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/AppletInitializer.html#activate(java.applet.Applet) */
-	public function activate(newApplet:Applet):Void;
+	/*@@@ modifiers=1025 */ public function activate(newApplet:Applet):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/AppletInitializer.html#initialize(java.applet.Applet, java.beans.beancontext.BeanContext) */
-	public function initialize(newAppletBean:Applet, bCtxt:BeanContext):Void;
+	/*@@@ modifiers=1025 */ public function initialize(newAppletBean:Applet, bCtxt:BeanContext):Void;
 
 }
 

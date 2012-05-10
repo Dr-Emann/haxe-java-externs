@@ -7,22 +7,22 @@ import javax.management.openmbean.OpenMBeanParameterInfo;
 extern interface OpenMBeanAttributeInfo implements OpenMBeanParameterInfo
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanAttributeInfo.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanAttributeInfo.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs() */
-	public function isIs():Bool;
+	/*@@@ modifiers=1025 */ public function isIs():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable() */
-	public function isReadable():Bool;
+	/*@@@ modifiers=1025 */ public function isReadable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable() */
-	public function isWritable():Bool;
+	/*@@@ modifiers=1025 */ public function isWritable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanAttributeInfo.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

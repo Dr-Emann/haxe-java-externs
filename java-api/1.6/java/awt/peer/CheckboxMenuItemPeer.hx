@@ -7,7 +7,7 @@ import java.awt.peer.MenuItemPeer;
 extern interface CheckboxMenuItemPeer implements MenuItemPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/CheckboxMenuItemPeer.html#setState(boolean) */
-	public function setState(t:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setState(t:Bool):Void;
 
 }
 

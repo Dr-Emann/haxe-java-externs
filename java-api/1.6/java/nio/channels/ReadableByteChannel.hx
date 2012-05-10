@@ -8,7 +8,7 @@ import java.nio.channels.Channel;
 extern interface ReadableByteChannel implements Channel
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/ReadableByteChannel.html#read(java.nio.ByteBuffer) */
-	public function read(dst:ByteBuffer):Int;
+	/*@@@ modifiers=1025 */ public function read(dst:ByteBuffer):Int;
 
 }
 

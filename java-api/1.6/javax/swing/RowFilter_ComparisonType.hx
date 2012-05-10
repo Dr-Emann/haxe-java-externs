@@ -20,10 +20,10 @@ extern class RowFilter_ComparisonType extends Enum<RowFilter_ComparisonType>
 	public static var NOT_EQUAL:RowFilter_ComparisonType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/RowFilter.ComparisonType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):RowFilter_ComparisonType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):RowFilter_ComparisonType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/RowFilter.ComparisonType.html#values() */
-	static public function values():NativeArray<RowFilter_ComparisonType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<RowFilter_ComparisonType>;
 
 }
 

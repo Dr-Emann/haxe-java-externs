@@ -17,10 +17,10 @@ extern class RetentionPolicy extends Enum<RetentionPolicy>
 	public static var RUNTIME:RetentionPolicy;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):RetentionPolicy;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):RetentionPolicy;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/RetentionPolicy.html#values() */
-	static public function values():NativeArray<RetentionPolicy>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<RetentionPolicy>;
 
 }
 

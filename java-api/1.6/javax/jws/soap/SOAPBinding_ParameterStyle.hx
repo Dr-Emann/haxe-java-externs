@@ -14,10 +14,10 @@ extern class SOAPBinding_ParameterStyle extends Enum<SOAPBinding_ParameterStyle>
 	public static var WRAPPED:SOAPBinding_ParameterStyle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/soap/SOAPBinding.ParameterStyle.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SOAPBinding_ParameterStyle;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SOAPBinding_ParameterStyle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/soap/SOAPBinding.ParameterStyle.html#values() */
-	static public function values():NativeArray<SOAPBinding_ParameterStyle>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SOAPBinding_ParameterStyle>;
 
 }
 

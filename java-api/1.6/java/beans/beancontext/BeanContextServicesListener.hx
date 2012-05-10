@@ -8,7 +8,7 @@ import java.beans.beancontext.BeanContextServiceRevokedListener;
 extern interface BeanContextServicesListener implements BeanContextServiceRevokedListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent) */
-	public function serviceAvailable(bcsae:BeanContextServiceAvailableEvent):Void;
+	/*@@@ modifiers=1025 */ public function serviceAvailable(bcsae:BeanContextServiceAvailableEvent):Void;
 
 }
 

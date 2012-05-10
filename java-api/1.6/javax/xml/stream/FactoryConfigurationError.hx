@@ -8,21 +8,21 @@ import java.lang.Exception;
 extern class FactoryConfigurationError extends Error
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#FactoryConfigurationError() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#FactoryConfigurationError(java.lang.Exception) */
-	@:overload(function (e:Exception):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (e:Exception):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#FactoryConfigurationError(java.lang.Exception, java.lang.String) */
-	@:overload(function (e:Exception, msg:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (e:Exception, msg:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#FactoryConfigurationError(java.lang.String, java.lang.Exception) */
-	@:overload(function (e:String, msg:Exception):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (e:String, msg:Exception):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#FactoryConfigurationError(java.lang.String) */
-	public function new(e:String):Void;
+	/*@@@ modifiers=1 */ public function new(e:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#getException() */
-	public function getException():Exception;
+	/*@@@ modifiers=1 */ public function getException():Exception;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/FactoryConfigurationError.html#getMessage() */
-	override public function getMessage():String;
+	/*@@@ modifiers=1 */ override public function getMessage():String;
 
 }
 

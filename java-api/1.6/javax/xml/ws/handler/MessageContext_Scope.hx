@@ -14,10 +14,10 @@ extern class MessageContext_Scope extends Enum<MessageContext_Scope>
 	public static var HANDLER:MessageContext_Scope;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/MessageContext.Scope.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):MessageContext_Scope;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):MessageContext_Scope;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/MessageContext.Scope.html#values() */
-	static public function values():NativeArray<MessageContext_Scope>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<MessageContext_Scope>;
 
 }
 

@@ -12,18 +12,18 @@ import javax.sql.rowset.CachedRowSet;
 extern interface WebRowSet implements CachedRowSet
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/WebRowSet.html#readXml(java.io.InputStream) */
-	@:overload(function (iStream:InputStream):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (iStream:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/WebRowSet.html#readXml(java.io.Reader) */
-	public function readXml(reader:Reader):Void;
+	/*@@@ modifiers=1025 */ public function readXml(reader:Reader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet, java.io.OutputStream) */
-	@:overload(function (rs:ResultSet, oStream:OutputStream):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (rs:ResultSet, oStream:OutputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet, java.io.Writer) */
-	@:overload(function (rs:ResultSet, writer:Writer):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (rs:ResultSet, writer:Writer):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/WebRowSet.html#writeXml(java.io.OutputStream) */
-	@:overload(function (oStream:OutputStream):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (oStream:OutputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/WebRowSet.html#writeXml(java.io.Writer) */
-	public function writeXml(writer:Writer):Void;
+	/*@@@ modifiers=1025 */ public function writeXml(writer:Writer):Void;
 
 }
 

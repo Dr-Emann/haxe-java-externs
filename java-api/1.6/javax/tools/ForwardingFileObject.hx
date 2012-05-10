@@ -17,34 +17,34 @@ extern class ForwardingFileObject<F : (FileObject)> extends Object, implements F
 	private static var fileObject:F;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#ForwardingFileObject(javax.tools.FileObject) */
-	private function new(fileObject:F):Void;
+	/*@@@ modifiers=4 */ private function new(fileObject:F):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#delete() */
-	public function delete():Bool;
+	/*@@@ modifiers=1 */ public function delete():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#getCharContent(boolean) */
-	public function getCharContent(ignoreEncodingErrors:Bool):CharSequence;
+	/*@@@ modifiers=1 */ public function getCharContent(ignoreEncodingErrors:Bool):CharSequence;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#getLastModified() */
-	public function getLastModified():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getLastModified():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#openInputStream() */
-	public function openInputStream():InputStream;
+	/*@@@ modifiers=1 */ public function openInputStream():InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#openOutputStream() */
-	public function openOutputStream():OutputStream;
+	/*@@@ modifiers=1 */ public function openOutputStream():OutputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#openReader(boolean) */
-	public function openReader(ignoreEncodingErrors:Bool):Reader;
+	/*@@@ modifiers=1 */ public function openReader(ignoreEncodingErrors:Bool):Reader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#openWriter() */
-	public function openWriter():Writer;
+	/*@@@ modifiers=1 */ public function openWriter():Writer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#toUri() */
-	public function toUri():URI;
+	/*@@@ modifiers=1 */ public function toUri():URI;
 
 }
 

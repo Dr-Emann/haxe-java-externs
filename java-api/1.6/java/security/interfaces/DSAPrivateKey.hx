@@ -9,7 +9,7 @@ import java.security.interfaces.DSAKey;
 extern interface DSAPrivateKey implements DSAKey, implements PrivateKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/DSAPrivateKey.html#getX() */
-	public function getX():BigInteger;
+	/*@@@ modifiers=1025 */ public function getX():BigInteger;
 
 }
 

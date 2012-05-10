@@ -46,64 +46,64 @@ extern class BasicSplitPaneDivider extends Container, implements PropertyChangeL
 	private var rightButton:JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#BasicSplitPaneDivider(javax.swing.plaf.basic.BasicSplitPaneUI) */
-	public function new(ui:BasicSplitPaneUI):Void;
+	/*@@@ modifiers=1 */ public function new(ui:BasicSplitPaneUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#createLeftOneTouchButton() */
-	private function createLeftOneTouchButton():JButton;
+	/*@@@ modifiers=4 */ private function createLeftOneTouchButton():JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#createRightOneTouchButton() */
-	private function createRightOneTouchButton():JButton;
+	/*@@@ modifiers=4 */ private function createRightOneTouchButton():JButton;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#dragDividerTo(int) */
-	private function dragDividerTo(location:Int):Void;
+	/*@@@ modifiers=4 */ private function dragDividerTo(location:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#finishDraggingTo(int) */
-	private function finishDraggingTo(location:Int):Void;
+	/*@@@ modifiers=4 */ private function finishDraggingTo(location:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getBasicSplitPaneUI() */
-	public function getBasicSplitPaneUI():BasicSplitPaneUI;
+	/*@@@ modifiers=1 */ public function getBasicSplitPaneUI():BasicSplitPaneUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getBorder() */
-	public function getBorder():Border;
+	/*@@@ modifiers=1 */ public function getBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getDividerSize() */
-	public function getDividerSize():Int;
+	/*@@@ modifiers=1 */ public function getDividerSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getInsets() */
-	override public function getInsets():Insets;
+	/*@@@ modifiers=1 */ override public function getInsets():Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getMinimumSize() */
-	override public function getMinimumSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getPreferredSize() */
-	override public function getPreferredSize():Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#isMouseOver() */
-	public function isMouseOver():Bool;
+	/*@@@ modifiers=1 */ public function isMouseOver():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#oneTouchExpandableChanged() */
-	private function oneTouchExpandableChanged():Void;
+	/*@@@ modifiers=4 */ private function oneTouchExpandableChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#paint(java.awt.Graphics) */
-	override public function paint(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#prepareForDragging() */
-	private function prepareForDragging():Void;
+	/*@@@ modifiers=4 */ private function prepareForDragging():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#propertyChange(java.beans.PropertyChangeEvent) */
-	public function propertyChange(e:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1 */ public function propertyChange(e:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setBasicSplitPaneUI(javax.swing.plaf.basic.BasicSplitPaneUI) */
-	public function setBasicSplitPaneUI(newUI:BasicSplitPaneUI):Void;
+	/*@@@ modifiers=1 */ public function setBasicSplitPaneUI(newUI:BasicSplitPaneUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setBorder(javax.swing.border.Border) */
-	public function setBorder(border:Border):Void;
+	/*@@@ modifiers=1 */ public function setBorder(border:Border):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setDividerSize(int) */
-	public function setDividerSize(newSize:Int):Void;
+	/*@@@ modifiers=1 */ public function setDividerSize(newSize:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setMouseOver(boolean) */
-	private function setMouseOver(mouseOver:Bool):Void;
+	/*@@@ modifiers=4 */ private function setMouseOver(mouseOver:Bool):Void;
 
 }
 

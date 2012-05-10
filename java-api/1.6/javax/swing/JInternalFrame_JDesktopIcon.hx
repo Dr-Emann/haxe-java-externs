@@ -12,31 +12,31 @@ import javax.swing.plaf.DesktopIconUI;
 extern class JInternalFrame_JDesktopIcon extends JComponent, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#JInternalFrame$JDesktopIcon(javax.swing.JInternalFrame) */
-	public function new(f:JInternalFrame):Void;
+	/*@@@ modifiers=1 */ public function new(f:JInternalFrame):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#getDesktopPane() */
-	public function getDesktopPane():JDesktopPane;
+	/*@@@ modifiers=1 */ public function getDesktopPane():JDesktopPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#getInternalFrame() */
-	public function getInternalFrame():JInternalFrame;
+	/*@@@ modifiers=1 */ public function getInternalFrame():JInternalFrame;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#getUI() */
-	public function getUI():DesktopIconUI;
+	/*@@@ modifiers=1 */ public function getUI():DesktopIconUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#setInternalFrame(javax.swing.JInternalFrame) */
-	public function setInternalFrame(f:JInternalFrame):Void;
+	/*@@@ modifiers=1 */ public function setInternalFrame(f:JInternalFrame):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#setUI(javax.swing.plaf.DesktopIconUI) */
-	override public function setUI(ui:DesktopIconUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:DesktopIconUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

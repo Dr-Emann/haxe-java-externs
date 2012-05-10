@@ -7,7 +7,7 @@ import javax.net.ssl.SSLException;
 extern class SSLProtocolException extends SSLException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLProtocolException.html#SSLProtocolException(java.lang.String) */
-	public function new(arg0:String):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:String):Void;
 
 }
 

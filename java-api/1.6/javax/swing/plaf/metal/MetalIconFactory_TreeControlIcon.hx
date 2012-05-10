@@ -14,19 +14,19 @@ extern class MetalIconFactory_TreeControlIcon extends Object, implements Icon, i
 	private var isLight:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#MetalIconFactory$TreeControlIcon(boolean) */
-	public function new(isCollapsed:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(isCollapsed:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconHeight() */
-	public function getIconHeight():Int;
+	/*@@@ modifiers=1 */ public function getIconHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconWidth() */
-	public function getIconWidth():Int;
+	/*@@@ modifiers=1 */ public function getIconWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintIcon(java.awt.Component, java.awt.Graphics, int, int) */
-	public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component, java.awt.Graphics, int, int) */
-	public function paintMe(c:Component, g:Graphics, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function paintMe(c:Component, g:Graphics, x:Int, y:Int):Void;
 
 }
 

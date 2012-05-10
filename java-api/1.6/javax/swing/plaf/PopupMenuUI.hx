@@ -10,13 +10,13 @@ import javax.swing.plaf.ComponentUI;
 extern class PopupMenuUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/PopupMenuUI.html#PopupMenuUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/PopupMenuUI.html#getPopup(javax.swing.JPopupMenu, int, int) */
-	public function getPopup(popup:JPopupMenu, x:Int, y:Int):Popup;
+	/*@@@ modifiers=1 */ public function getPopup(popup:JPopupMenu, x:Int, y:Int):Popup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/PopupMenuUI.html#isPopupTrigger(java.awt.event.MouseEvent) */
-	public function isPopupTrigger(e:MouseEvent):Bool;
+	/*@@@ modifiers=1 */ public function isPopupTrigger(e:MouseEvent):Bool;
 
 }
 

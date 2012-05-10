@@ -8,7 +8,7 @@ import javax.security.auth.callback.Callback;
 extern interface CallbackHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html#handle(javax.security.auth.callback.Callback[]) */
-	public function handle(callbacks:NativeArray<Callback>):Void;
+	/*@@@ modifiers=1025 */ public function handle(callbacks:NativeArray<Callback>):Void;
 
 }
 

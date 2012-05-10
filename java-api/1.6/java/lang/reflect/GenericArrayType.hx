@@ -7,7 +7,7 @@ import java.lang.reflect.Type;
 extern interface GenericArrayType implements Type
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/GenericArrayType.html#getGenericComponentType() */
-	public function getGenericComponentType():Type;
+	/*@@@ modifiers=1025 */ public function getGenericComponentType():Type;
 
 }
 

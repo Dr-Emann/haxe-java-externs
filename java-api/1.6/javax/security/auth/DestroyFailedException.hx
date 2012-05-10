@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class DestroyFailedException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/DestroyFailedException.html#DestroyFailedException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/DestroyFailedException.html#DestroyFailedException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

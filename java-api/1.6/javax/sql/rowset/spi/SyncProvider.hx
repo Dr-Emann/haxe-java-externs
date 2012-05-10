@@ -9,34 +9,34 @@ import javax.sql.RowSetWriter;
 extern class SyncProvider extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#SyncProvider() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getDataSourceLock() */
-	public function getDataSourceLock():Int;
+	/*@@@ modifiers=1025 */ public function getDataSourceLock():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getProviderGrade() */
-	public function getProviderGrade():Int;
+	/*@@@ modifiers=1025 */ public function getProviderGrade():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getProviderID() */
-	public function getProviderID():String;
+	/*@@@ modifiers=1025 */ public function getProviderID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getRowSetReader() */
-	public function getRowSetReader():RowSetReader;
+	/*@@@ modifiers=1025 */ public function getRowSetReader():RowSetReader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getRowSetWriter() */
-	public function getRowSetWriter():RowSetWriter;
+	/*@@@ modifiers=1025 */ public function getRowSetWriter():RowSetWriter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getVendor() */
-	public function getVendor():String;
+	/*@@@ modifiers=1025 */ public function getVendor():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1025 */ public function getVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#setDataSourceLock(int) */
-	public function setDataSourceLock(datasource_lock:Int):Void;
+	/*@@@ modifiers=1025 */ public function setDataSourceLock(datasource_lock:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/SyncProvider.html#supportsUpdatableView() */
-	public function supportsUpdatableView():Int;
+	/*@@@ modifiers=1025 */ public function supportsUpdatableView():Int;
 
 }
 

@@ -8,7 +8,7 @@ import javax.swing.plaf.UIResource;
 extern class ActionMapUIResource extends ActionMap, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ActionMapUIResource.html#ActionMapUIResource() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

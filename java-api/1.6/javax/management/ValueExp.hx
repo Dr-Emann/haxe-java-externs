@@ -9,10 +9,10 @@ import javax.management.ObjectName;
 extern interface ValueExp implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/ValueExp.html#apply(javax.management.ObjectName) */
-	public function apply(name:ObjectName):ValueExp;
+	/*@@@ modifiers=1025 */ public function apply(name:ObjectName):ValueExp;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/ValueExp.html#setMBeanServer(javax.management.MBeanServer) */
-	public function setMBeanServer(s:MBeanServer):Void;
+	/*@@@ modifiers=1025 */ public function setMBeanServer(s:MBeanServer):Void;
 
 }
 

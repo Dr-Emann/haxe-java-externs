@@ -12,19 +12,19 @@ extern class BeanContextServiceRevokedEvent extends BeanContextEvent
 	private var serviceClass:Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceRevokedEvent.html#BeanContextServiceRevokedEvent(java.beans.beancontext.BeanContextServices, java.lang.Class, boolean) */
-	public function new(bcs:BeanContextServices, sc:Class<Dynamic>, invalidate:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(bcs:BeanContextServices, sc:Class<Dynamic>, invalidate:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getServiceClass() */
-	public function getServiceClass():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getServiceClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getSourceAsBeanContextServices() */
-	public function getSourceAsBeanContextServices():BeanContextServices;
+	/*@@@ modifiers=1 */ public function getSourceAsBeanContextServices():BeanContextServices;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow() */
-	public function isCurrentServiceInvalidNow():Bool;
+	/*@@@ modifiers=1 */ public function isCurrentServiceInvalidNow():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class) */
-	public function isServiceClass(service:Class<Dynamic>):Bool;
+	/*@@@ modifiers=1 */ public function isServiceClass(service:Class<Dynamic>):Bool;
 
 }
 

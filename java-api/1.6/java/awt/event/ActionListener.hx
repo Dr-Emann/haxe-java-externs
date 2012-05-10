@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface ActionListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent) */
-	public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1025 */ public function actionPerformed(e:ActionEvent):Void;
 
 }
 

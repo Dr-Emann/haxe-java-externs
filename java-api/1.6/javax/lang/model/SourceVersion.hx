@@ -30,25 +30,25 @@ extern class SourceVersion extends Enum<SourceVersion>
 	public static var RELEASE_6:SourceVersion;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence) */
-	static public function isIdentifier(name:CharSequence):Bool;
+	/*@@@ modifiers=9 */ static public function isIdentifier(name:CharSequence):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence) */
-	static public function isKeyword(s:CharSequence):Bool;
+	/*@@@ modifiers=9 */ static public function isKeyword(s:CharSequence):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence) */
-	static public function isName(name:CharSequence):Bool;
+	/*@@@ modifiers=9 */ static public function isName(name:CharSequence):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#latest() */
-	static public function latest():SourceVersion;
+	/*@@@ modifiers=9 */ static public function latest():SourceVersion;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#latestSupported() */
-	static public function latestSupported():SourceVersion;
+	/*@@@ modifiers=9 */ static public function latestSupported():SourceVersion;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SourceVersion;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SourceVersion;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/SourceVersion.html#values() */
-	static public function values():NativeArray<SourceVersion>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SourceVersion>;
 
 }
 

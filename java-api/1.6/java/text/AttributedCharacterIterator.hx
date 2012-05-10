@@ -10,27 +10,27 @@ import java.util.Set;
 extern interface AttributedCharacterIterator implements CharacterIterator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getAllAttributeKeys() */
-	public function getAllAttributeKeys():Set<AttributedCharacterIterator_Attribute>;
+	/*@@@ modifiers=1025 */ public function getAllAttributeKeys():Set<AttributedCharacterIterator_Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator$Attribute) */
-	public function getAttribute(attribute:AttributedCharacterIterator_Attribute):Dynamic;
+	/*@@@ modifiers=1025 */ public function getAttribute(attribute:AttributedCharacterIterator_Attribute):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getAttributes() */
-	public function getAttributes():Map<AttributedCharacterIterator_Attribute, Dynamic>;
+	/*@@@ modifiers=1025 */ public function getAttributes():Map<AttributedCharacterIterator_Attribute, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator$Attribute) */
-	@:overload(function (attribute:AttributedCharacterIterator_Attribute):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (attribute:AttributedCharacterIterator_Attribute):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set) */
-	@:overload(function (attributes:Set<AttributedCharacterIterator_Attribute>):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (attributes:Set<AttributedCharacterIterator_Attribute>):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getRunLimit() */
-	public function getRunLimit():Int;
+	/*@@@ modifiers=1025 */ public function getRunLimit():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator$Attribute) */
-	@:overload(function (attribute:AttributedCharacterIterator_Attribute):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (attribute:AttributedCharacterIterator_Attribute):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set) */
-	@:overload(function (attributes:Set<AttributedCharacterIterator_Attribute>):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (attributes:Set<AttributedCharacterIterator_Attribute>):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/AttributedCharacterIterator.html#getRunStart() */
-	public function getRunStart():Int;
+	/*@@@ modifiers=1025 */ public function getRunStart():Int;
 
 }
 

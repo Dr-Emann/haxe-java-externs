@@ -11,16 +11,16 @@ import java.lang.Object;
 extern class DropTarget_DropTargetAutoScroller extends Object, implements ActionListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.DropTargetAutoScroller.html#DropTarget$DropTargetAutoScroller(java.awt.Component, java.awt.Point) */
-	private function new(c:Component, p:Point):Void;
+	/*@@@ modifiers=4 */ private function new(c:Component, p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.DropTargetAutoScroller.html#actionPerformed(java.awt.event.ActionEvent) */
-	public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=33 */ public function actionPerformed(e:ActionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.DropTargetAutoScroller.html#stop() */
-	private function stop():Void;
+	/*@@@ modifiers=4 */ private function stop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTarget.DropTargetAutoScroller.html#updateLocation(java.awt.Point) */
-	private function updateLocation(newLocn:Point):Void;
+	/*@@@ modifiers=36 */ private function updateLocation(newLocn:Point):Void;
 
 }
 

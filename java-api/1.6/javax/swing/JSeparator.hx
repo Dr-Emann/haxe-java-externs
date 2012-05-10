@@ -11,33 +11,33 @@ import javax.swing.plaf.SeparatorUI;
 extern class JSeparator extends JComponent, implements SwingConstants, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#JSeparator(int) */
-	@:overload(function (orientation:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (orientation:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#JSeparator() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#getOrientation() */
-	public function getOrientation():Int;
+	/*@@@ modifiers=1 */ public function getOrientation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#getUI() */
-	public function getUI():SeparatorUI;
+	/*@@@ modifiers=1 */ public function getUI():SeparatorUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#setOrientation(int) */
-	public function setOrientation(orientation:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#setUI(javax.swing.plaf.SeparatorUI) */
-	override public function setUI(ui:SeparatorUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:SeparatorUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

@@ -9,9 +9,9 @@ import javax.naming.ldap.BasicControl;
 extern class PagedResultsControl extends BasicControl
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/PagedResultsControl.html#PagedResultsControl(int, boolean) */
-	@:overload(function (pageSize:Int, criticality:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (pageSize:Int, criticality:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/PagedResultsControl.html#PagedResultsControl(int, byte[], boolean) */
-	public function new(pageSize:Int, cookie:NativeArray<Int8>, criticality:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(pageSize:Int, cookie:NativeArray<Int8>, criticality:Bool):Void;
 
 }
 

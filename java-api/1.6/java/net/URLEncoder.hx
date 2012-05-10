@@ -8,9 +8,9 @@ extern class URLEncoder extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLEncoder.html#encode(java.lang.String, java.lang.String) */
-	@:overload(function (s:String, enc:String):String {})
+	/*@@@ modifiers=9 */ @:overload(function (s:String, enc:String):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLEncoder.html#encode(java.lang.String) */
-	static public function encode(s:String):String;
+	/*@@@ modifiers=9 */ static public function encode(s:String):String;
 
 }
 

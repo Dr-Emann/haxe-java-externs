@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElement;
 extern interface XmlElements implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlElements.html#value() */
-	public function value():NativeArray<XmlElement>;
+	/*@@@ modifiers=1025 */ public function value():NativeArray<XmlElement>;
 
 }
 

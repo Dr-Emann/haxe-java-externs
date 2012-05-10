@@ -13,17 +13,17 @@ import java.security.PermissionCollection;
 extern class SecureClassLoader extends ClassLoader
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureClassLoader.html#SecureClassLoader() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=4 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureClassLoader.html#SecureClassLoader(java.lang.ClassLoader) */
-	private function new(parent:ClassLoader):Void;
+	/*@@@ modifiers=4 */ private function new(parent:ClassLoader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureClassLoader.html#defineClass(java.lang.String, byte[], int, int, java.security.CodeSource) */
-	@:overload(function (name:String, b:NativeArray<Int8>, off:Int, len:Int, cs:CodeSource):Class<Dynamic> {})
+	/*@@@ modifiers=20 */ @:overload(function (name:String, b:NativeArray<Int8>, off:Int, len:Int, cs:CodeSource):Class<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureClassLoader.html#defineClass(java.lang.String, java.nio.ByteBuffer, java.security.CodeSource) */
-	override private function defineClass(name:String, b:ByteBuffer, cs:CodeSource):Class<Dynamic>;
+	/*@@@ modifiers=20 */ override private function defineClass(name:String, b:ByteBuffer, cs:CodeSource):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureClassLoader.html#getPermissions(java.security.CodeSource) */
-	private function getPermissions(codesource:CodeSource):PermissionCollection;
+	/*@@@ modifiers=4 */ private function getPermissions(codesource:CodeSource):PermissionCollection;
 
 }
 

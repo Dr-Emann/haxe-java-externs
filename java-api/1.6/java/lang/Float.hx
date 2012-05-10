@@ -6,81 +6,81 @@ import java.lang.Number;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html */
 @:native("java.lang.Float") @:final
-extern class Float extends Number, implements Comparable<Float>
+extern class Float extends Number, implements Comparable<Null<Single>>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#Float(java.lang.String) */
-	@:overload(function (value:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#Float(float) */
-	@:overload(function (value:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#Float(double) */
-	public function new(value:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function new(value:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#byteValue() */
-	override public function byteValue():Int8;
+	/*@@@ modifiers=1 */ override public function byteValue():Int8;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#compare(float, float) */
-	static public function compare(f1:StdFloat, f2:StdFloat):Int;
+	/*@@@ modifiers=9 */ static public function compare(f1:Single, f2:Single):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#compareTo(java.lang.Object) */
-	@:overload(function (p0:Dynamic):Int {})
+	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#compareTo(java.lang.Float) */
-	public function compareTo(anotherFloat:Float):Int;
+	/*@@@ modifiers=1 */ public function compareTo(anotherFloat:Null<Single>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#doubleValue() */
-	override public function doubleValue():StdFloat;
+	/*@@@ modifiers=1 */ override public function doubleValue():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#floatToIntBits(float) */
-	static public function floatToIntBits(value:StdFloat):Int;
+	/*@@@ modifiers=9 */ static public function floatToIntBits(value:Single):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#floatToRawIntBits(float) */
-	static public function floatToRawIntBits(value:StdFloat):Int;
+	/*@@@ modifiers=265 */ static public function floatToRawIntBits(value:Single):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#floatValue() */
-	override public function floatValue():StdFloat;
+	/*@@@ modifiers=1 */ override public function floatValue():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#intBitsToFloat(int) */
-	static public function intBitsToFloat(bits:Int):StdFloat;
+	/*@@@ modifiers=265 */ static public function intBitsToFloat(bits:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#intValue() */
-	override public function intValue():Int;
+	/*@@@ modifiers=1 */ override public function intValue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#isInfinite() */
-	@:overload(function ():Bool {})
+	/*@@@ modifiers=1 */ @:overload(function ():Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#isInfinite(float) */
-	static public function isInfinite(v:StdFloat):Bool;
+	/*@@@ modifiers=9 */ static public function isInfinite(v:Single):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#isNaN() */
-	@:overload(function ():Bool {})
+	/*@@@ modifiers=1 */ @:overload(function ():Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#isNaN(float) */
-	static public function isNaN(v:StdFloat):Bool;
+	/*@@@ modifiers=9 */ static public function isNaN(v:Single):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#longValue() */
-	override public function longValue():haxe.Int64;
+	/*@@@ modifiers=1 */ override public function longValue():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#parseFloat(java.lang.String) */
-	static public function parseFloat(s:String):StdFloat;
+	/*@@@ modifiers=9 */ static public function parseFloat(s:String):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#shortValue() */
-	override public function shortValue():Int16;
+	/*@@@ modifiers=1 */ override public function shortValue():Int16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#toHexString(float) */
-	static public function toHexString(f:StdFloat):String;
+	/*@@@ modifiers=9 */ static public function toHexString(f:Single):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#toString() */
-	@:overload(function ():String {})
+	/*@@@ modifiers=1 */ @:overload(function ():String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#toString(float) */
-	static public function toString(f:StdFloat):String;
+	/*@@@ modifiers=9 */ static public function toString(f:Single):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#valueOf(float) */
-	@:overload(function (f:StdFloat):Float {})
+	/*@@@ modifiers=9 */ @:overload(function (f:Single):Null<Single> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Float.html#valueOf(java.lang.String) */
-	static public function valueOf(s:String):Float;
+	/*@@@ modifiers=9 */ static public function valueOf(s:String):Null<Single>;
 
 }
 

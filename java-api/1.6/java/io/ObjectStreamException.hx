@@ -7,9 +7,9 @@ import java.io.IOException;
 extern class ObjectStreamException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamException.html#ObjectStreamException(java.lang.String) */
-	@:overload(function (classname:String):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (classname:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamException.html#ObjectStreamException() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 }
 

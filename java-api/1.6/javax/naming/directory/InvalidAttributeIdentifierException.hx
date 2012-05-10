@@ -7,9 +7,9 @@ import javax.naming.NamingException;
 extern class InvalidAttributeIdentifierException extends NamingException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InvalidAttributeIdentifierException.html#InvalidAttributeIdentifierException(java.lang.String) */
-	@:overload(function (explanation:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (explanation:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InvalidAttributeIdentifierException.html#InvalidAttributeIdentifierException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

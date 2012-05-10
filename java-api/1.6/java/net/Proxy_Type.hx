@@ -17,10 +17,10 @@ extern class Proxy_Type extends Enum<Proxy_Type>
 	public static var SOCKS:Proxy_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.Type.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Proxy_Type;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Proxy_Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/Proxy.Type.html#values() */
-	static public function values():NativeArray<Proxy_Type>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Proxy_Type>;
 
 }
 

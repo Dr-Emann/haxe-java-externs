@@ -19,81 +19,81 @@ extern class FontMetrics extends Object, implements Serializable
 	private var font:Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#FontMetrics(java.awt.Font) */
-	private function new(font:Font):Void;
+	/*@@@ modifiers=4 */ private function new(font:Font):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#bytesWidth(byte[], int, int) */
-	public function bytesWidth(data:NativeArray<Int8>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1 */ public function bytesWidth(data:NativeArray<Int8>, off:Int, len:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#charWidth(char) */
-	@:overload(function (ch:Char16):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (ch:Char16):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#charWidth(int) */
-	public function charWidth(codePoint:Int):Int;
+	/*@@@ modifiers=1 */ public function charWidth(codePoint:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#charsWidth(char[], int, int) */
-	public function charsWidth(data:NativeArray<Char16>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1 */ public function charsWidth(data:NativeArray<Char16>, off:Int, len:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getAscent() */
-	public function getAscent():Int;
+	/*@@@ modifiers=1 */ public function getAscent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getDescent() */
-	public function getDescent():Int;
+	/*@@@ modifiers=1 */ public function getDescent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getFont() */
-	public function getFont():Font;
+	/*@@@ modifiers=1 */ public function getFont():Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getFontRenderContext() */
-	public function getFontRenderContext():FontRenderContext;
+	/*@@@ modifiers=1 */ public function getFontRenderContext():FontRenderContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getHeight() */
-	public function getHeight():Int;
+	/*@@@ modifiers=1 */ public function getHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getLeading() */
-	public function getLeading():Int;
+	/*@@@ modifiers=1 */ public function getLeading():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getLineMetrics(char[], int, int, java.awt.Graphics) */
-	@:overload(function (chars:NativeArray<Char16>, beginIndex:Int, limit:Int, context:Graphics):LineMetrics {})
+	/*@@@ modifiers=1 */ @:overload(function (chars:NativeArray<Char16>, beginIndex:Int, limit:Int, context:Graphics):LineMetrics {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getLineMetrics(java.lang.String, int, int, java.awt.Graphics) */
-	@:overload(function (str:String, beginIndex:Int, limit:Int, context:Graphics):LineMetrics {})
+	/*@@@ modifiers=1 */ @:overload(function (str:String, beginIndex:Int, limit:Int, context:Graphics):LineMetrics {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getLineMetrics(java.text.CharacterIterator, int, int, java.awt.Graphics) */
-	@:overload(function (ci:CharacterIterator, beginIndex:Int, limit:Int, context:Graphics):LineMetrics {})
+	/*@@@ modifiers=1 */ @:overload(function (ci:CharacterIterator, beginIndex:Int, limit:Int, context:Graphics):LineMetrics {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getLineMetrics(java.lang.String, java.awt.Graphics) */
-	public function getLineMetrics(str:String, context:Graphics):LineMetrics;
+	/*@@@ modifiers=1 */ public function getLineMetrics(str:String, context:Graphics):LineMetrics;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getMaxAdvance() */
-	public function getMaxAdvance():Int;
+	/*@@@ modifiers=1 */ public function getMaxAdvance():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getMaxAscent() */
-	public function getMaxAscent():Int;
+	/*@@@ modifiers=1 */ public function getMaxAscent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getMaxCharBounds(java.awt.Graphics) */
-	public function getMaxCharBounds(context:Graphics):Rectangle2D;
+	/*@@@ modifiers=1 */ public function getMaxCharBounds(context:Graphics):Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getMaxDecent() */
-	public function getMaxDecent():Int;
+	/*@@@ modifiers=1 */ public function getMaxDecent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getMaxDescent() */
-	public function getMaxDescent():Int;
+	/*@@@ modifiers=1 */ public function getMaxDescent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getStringBounds(char[], int, int, java.awt.Graphics) */
-	@:overload(function (chars:NativeArray<Char16>, beginIndex:Int, limit:Int, context:Graphics):Rectangle2D {})
+	/*@@@ modifiers=1 */ @:overload(function (chars:NativeArray<Char16>, beginIndex:Int, limit:Int, context:Graphics):Rectangle2D {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getStringBounds(java.lang.String, int, int, java.awt.Graphics) */
-	@:overload(function (str:String, beginIndex:Int, limit:Int, context:Graphics):Rectangle2D {})
+	/*@@@ modifiers=1 */ @:overload(function (str:String, beginIndex:Int, limit:Int, context:Graphics):Rectangle2D {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getStringBounds(java.text.CharacterIterator, int, int, java.awt.Graphics) */
-	@:overload(function (ci:CharacterIterator, beginIndex:Int, limit:Int, context:Graphics):Rectangle2D {})
+	/*@@@ modifiers=1 */ @:overload(function (ci:CharacterIterator, beginIndex:Int, limit:Int, context:Graphics):Rectangle2D {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getStringBounds(java.lang.String, java.awt.Graphics) */
-	public function getStringBounds(str:String, context:Graphics):Rectangle2D;
+	/*@@@ modifiers=1 */ public function getStringBounds(str:String, context:Graphics):Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#getWidths() */
-	public function getWidths():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getWidths():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#hasUniformLineMetrics() */
-	public function hasUniformLineMetrics():Bool;
+	/*@@@ modifiers=1 */ public function hasUniformLineMetrics():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#stringWidth(java.lang.String) */
-	public function stringWidth(str:String):Int;
+	/*@@@ modifiers=1 */ public function stringWidth(str:String):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FontMetrics.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

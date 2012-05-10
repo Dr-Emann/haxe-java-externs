@@ -8,7 +8,7 @@ import java.lang.Exception;
 extern class CoderMalfunctionError extends Error
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/charset/CoderMalfunctionError.html#CoderMalfunctionError(java.lang.Exception) */
-	public function new(cause:Exception):Void;
+	/*@@@ modifiers=1 */ public function new(cause:Exception):Void;
 
 }
 

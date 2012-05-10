@@ -12,18 +12,18 @@ import java.util.Map;
 extern class SerialRef extends Object, implements Ref, implements Serializable, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialRef.html#SerialRef(java.sql.Ref) */
-	public function new(ref:Ref):Void;
+	/*@@@ modifiers=1 */ public function new(ref:Ref):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialRef.html#getBaseTypeName() */
-	public function getBaseTypeName():String;
+	/*@@@ modifiers=1 */ public function getBaseTypeName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialRef.html#getObject(java.util.Map) */
-	@:overload(function (map:Map<String, Class<Dynamic>>):Dynamic {})
+	/*@@@ modifiers=1 */ @:overload(function (map:Map<String, Class<Dynamic>>):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialRef.html#getObject() */
-	public function getObject():Dynamic;
+	/*@@@ modifiers=1 */ public function getObject():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/serial/SerialRef.html#setObject(java.lang.Object) */
-	public function setObject(obj:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setObject(obj:Dynamic):Void;
 
 }
 

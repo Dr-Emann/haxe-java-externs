@@ -1,6 +1,5 @@
 package javax.sound.sampled;
 
-import java.lang.Number;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.Line;
 
@@ -9,43 +8,43 @@ import javax.sound.sampled.Line;
 extern interface DataLine implements Line
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#available() */
-	public function available():Int;
+	/*@@@ modifiers=1025 */ public function available():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#drain() */
-	public function drain():Void;
+	/*@@@ modifiers=1025 */ public function drain():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#flush() */
-	public function flush():Void;
+	/*@@@ modifiers=1025 */ public function flush():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#getBufferSize() */
-	public function getBufferSize():Int;
+	/*@@@ modifiers=1025 */ public function getBufferSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#getFormat() */
-	public function getFormat():AudioFormat;
+	/*@@@ modifiers=1025 */ public function getFormat():AudioFormat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#getFramePosition() */
-	public function getFramePosition():Int;
+	/*@@@ modifiers=1025 */ public function getFramePosition():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#getLevel() */
-	public function getLevel():StdFloat;
+	/*@@@ modifiers=1025 */ public function getLevel():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#getLongFramePosition() */
-	public function getLongFramePosition():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getLongFramePosition():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#getMicrosecondPosition() */
-	public function getMicrosecondPosition():haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getMicrosecondPosition():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=1025 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#isRunning() */
-	public function isRunning():Bool;
+	/*@@@ modifiers=1025 */ public function isRunning():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#start() */
-	public function start():Void;
+	/*@@@ modifiers=1025 */ public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/DataLine.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1025 */ public function stop():Void;
 
 }
 

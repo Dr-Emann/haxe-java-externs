@@ -10,13 +10,13 @@ import java.rmi.activation.ActivationID;
 extern interface ActivationMonitor implements Remote
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationMonitor.html#activeObject(java.rmi.activation.ActivationID, java.rmi.MarshalledObject) */
-	public function activeObject(id:ActivationID, obj:MarshalledObject<Remote>):Void;
+	/*@@@ modifiers=1025 */ public function activeObject(id:ActivationID, obj:MarshalledObject<Remote>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID, long) */
-	public function inactiveGroup(id:ActivationGroupID, incarnation:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ public function inactiveGroup(id:ActivationGroupID, incarnation:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationMonitor.html#inactiveObject(java.rmi.activation.ActivationID) */
-	public function inactiveObject(id:ActivationID):Void;
+	/*@@@ modifiers=1025 */ public function inactiveObject(id:ActivationID):Void;
 
 }
 

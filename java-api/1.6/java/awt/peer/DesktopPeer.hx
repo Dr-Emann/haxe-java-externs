@@ -9,22 +9,22 @@ import java.net.URI;
 extern interface DesktopPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/DesktopPeer.html#browse(java.net.URI) */
-	public function browse(url:URI):Void;
+	/*@@@ modifiers=1025 */ public function browse(url:URI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/DesktopPeer.html#edit(java.io.File) */
-	public function edit(file:File):Void;
+	/*@@@ modifiers=1025 */ public function edit(file:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/DesktopPeer.html#isSupported(java.awt.Desktop$Action) */
-	public function isSupported(action:Desktop_Action):Bool;
+	/*@@@ modifiers=1025 */ public function isSupported(action:Desktop_Action):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/DesktopPeer.html#mail(java.net.URI) */
-	public function mail(mailtoURL:URI):Void;
+	/*@@@ modifiers=1025 */ public function mail(mailtoURL:URI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/DesktopPeer.html#open(java.io.File) */
-	public function open(file:File):Void;
+	/*@@@ modifiers=1025 */ public function open(file:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/DesktopPeer.html#print(java.io.File) */
-	public function print(file:File):Void;
+	/*@@@ modifiers=1025 */ public function print(file:File):Void;
 
 }
 

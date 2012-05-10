@@ -7,7 +7,7 @@ import org.w3c.dom.views.DocumentView;
 extern interface AbstractView
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/views/AbstractView.html#getDocument() */
-	public function getDocument():DocumentView;
+	/*@@@ modifiers=1025 */ public function getDocument():DocumentView;
 
 }
 

@@ -8,7 +8,7 @@ import javax.sound.midi.ShortMessage;
 extern interface ControllerEventListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage) */
-	public function controlChange(event:ShortMessage):Void;
+	/*@@@ modifiers=1025 */ public function controlChange(event:ShortMessage):Void;
 
 }
 

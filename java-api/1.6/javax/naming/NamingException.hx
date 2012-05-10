@@ -21,53 +21,53 @@ extern class NamingException extends Exception
 	private var rootException:Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#NamingException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#NamingException(java.lang.String) */
-	public function new(explanation:String):Void;
+	/*@@@ modifiers=1 */ public function new(explanation:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#appendRemainingComponent(java.lang.String) */
-	public function appendRemainingComponent(name:String):Void;
+	/*@@@ modifiers=1 */ public function appendRemainingComponent(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#appendRemainingName(javax.naming.Name) */
-	public function appendRemainingName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function appendRemainingName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#getExplanation() */
-	public function getExplanation():String;
+	/*@@@ modifiers=1 */ public function getExplanation():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#getRemainingName() */
-	public function getRemainingName():Name;
+	/*@@@ modifiers=1 */ public function getRemainingName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#getResolvedName() */
-	public function getResolvedName():Name;
+	/*@@@ modifiers=1 */ public function getResolvedName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#getResolvedObj() */
-	public function getResolvedObj():Dynamic;
+	/*@@@ modifiers=1 */ public function getResolvedObj():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#getRootCause() */
-	public function getRootCause():Throwable;
+	/*@@@ modifiers=1 */ public function getRootCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#initCause(java.lang.Throwable) */
-	override public function initCause(cause:Throwable):Throwable;
+	/*@@@ modifiers=1 */ override public function initCause(cause:Throwable):Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#setRemainingName(javax.naming.Name) */
-	public function setRemainingName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function setRemainingName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#setResolvedName(javax.naming.Name) */
-	public function setResolvedName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function setResolvedName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#setResolvedObj(java.lang.Object) */
-	public function setResolvedObj(obj:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setResolvedObj(obj:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#setRootCause(java.lang.Throwable) */
-	public function setRootCause(e:Throwable):Void;
+	/*@@@ modifiers=1 */ public function setRootCause(e:Throwable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#toString(boolean) */
-	@:overload(function (detail:Bool):String {})
+	/*@@@ modifiers=1 */ @:overload(function (detail:Bool):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/NamingException.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

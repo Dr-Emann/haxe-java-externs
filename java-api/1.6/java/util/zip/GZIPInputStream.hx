@@ -17,15 +17,15 @@ extern class GZIPInputStream extends InflaterInputStream
 	private var eos:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/GZIPInputStream.html#GZIPInputStream(java.io.InputStream, int) */
-	@:overload(function (_in:InputStream, size:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, size:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/GZIPInputStream.html#GZIPInputStream(java.io.InputStream) */
-	public function new(_in:InputStream):Void;
+	/*@@@ modifiers=1 */ public function new(_in:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/GZIPInputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/GZIPInputStream.html#read(byte[], int, int) */
-	override public function read(buf:NativeArray<Int8>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1 */ override public function read(buf:NativeArray<Int8>, off:Int, len:Int):Int;
 
 }
 

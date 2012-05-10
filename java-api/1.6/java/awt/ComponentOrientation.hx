@@ -11,15 +11,15 @@ extern class ComponentOrientation extends Object, implements Serializable
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ComponentOrientation.html#getOrientation(java.util.Locale) */
-	@:overload(function (locale:Locale):ComponentOrientation {})
+	/*@@@ modifiers=9 */ @:overload(function (locale:Locale):ComponentOrientation {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ComponentOrientation.html#getOrientation(java.util.ResourceBundle) */
-	static public function getOrientation(bdl:ResourceBundle):ComponentOrientation;
+	/*@@@ modifiers=9 */ static public function getOrientation(bdl:ResourceBundle):ComponentOrientation;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ComponentOrientation.html#isHorizontal() */
-	public function isHorizontal():Bool;
+	/*@@@ modifiers=1 */ public function isHorizontal():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ComponentOrientation.html#isLeftToRight() */
-	public function isLeftToRight():Bool;
+	/*@@@ modifiers=1 */ public function isLeftToRight():Bool;
 
 }
 

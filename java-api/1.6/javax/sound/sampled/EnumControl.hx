@@ -9,19 +9,19 @@ import javax.sound.sampled.EnumControl_Type;
 extern class EnumControl extends Control
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/EnumControl.html#EnumControl(javax.sound.sampled.EnumControl$Type, java.lang.Object[], java.lang.Object) */
-	private function new(type:EnumControl_Type, values:NativeArray<Dynamic>, value:Dynamic):Void;
+	/*@@@ modifiers=4 */ private function new(type:EnumControl_Type, values:NativeArray<Dynamic>, value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/EnumControl.html#getValue() */
-	public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/EnumControl.html#getValues() */
-	public function getValues():NativeArray<Dynamic>;
+	/*@@@ modifiers=1 */ public function getValues():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/EnumControl.html#setValue(java.lang.Object) */
-	public function setValue(value:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setValue(value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/EnumControl.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

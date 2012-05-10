@@ -7,10 +7,10 @@ import javax.xml.ws.ProtocolException;
 extern class HTTPException extends ProtocolException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/http/HTTPException.html#HTTPException(int) */
-	public function new(statusCode:Int):Void;
+	/*@@@ modifiers=1 */ public function new(statusCode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/http/HTTPException.html#getStatusCode() */
-	public function getStatusCode():Int;
+	/*@@@ modifiers=1 */ public function getStatusCode():Int;
 
 }
 

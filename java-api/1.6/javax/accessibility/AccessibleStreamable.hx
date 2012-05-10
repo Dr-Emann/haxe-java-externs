@@ -9,10 +9,10 @@ import java.io.InputStream;
 extern interface AccessibleStreamable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleStreamable.html#getMimeTypes() */
-	public function getMimeTypes():NativeArray<DataFlavor>;
+	/*@@@ modifiers=1025 */ public function getMimeTypes():NativeArray<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor) */
-	public function getStream(flavor:DataFlavor):InputStream;
+	/*@@@ modifiers=1025 */ public function getStream(flavor:DataFlavor):InputStream;
 
 }
 

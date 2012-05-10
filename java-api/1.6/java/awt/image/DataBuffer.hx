@@ -24,61 +24,61 @@ extern class DataBuffer extends Object
 	private var offsets:NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#DataBuffer(int, int) */
-	@:overload(function (dataType:Int, size:Int):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (dataType:Int, size:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#DataBuffer(int, int, int) */
-	@:overload(function (dataType:Int, size:Int, numBanks:Int):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (dataType:Int, size:Int, numBanks:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#DataBuffer(int, int, int, int) */
-	@:overload(function (dataType:Int, size:Int, numBanks:Int, offset:Int):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (dataType:Int, size:Int, numBanks:Int, offset:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#DataBuffer(int, int, int, int[]) */
-	private function new(dataType:Int, size:Int, numBanks:Int, offset:NativeArray<Int>):Void;
+	/*@@@ modifiers=4 */ private function new(dataType:Int, size:Int, numBanks:Int, offset:NativeArray<Int>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getDataType() */
-	public function getDataType():Int;
+	/*@@@ modifiers=1 */ public function getDataType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getDataTypeSize(int) */
-	static public function getDataTypeSize(type:Int):Int;
+	/*@@@ modifiers=9 */ static public function getDataTypeSize(type:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getElem(int, int) */
-	@:overload(function (bank:Int, i:Int):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (bank:Int, i:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getElem(int) */
-	public function getElem(i:Int):Int;
+	/*@@@ modifiers=1 */ public function getElem(i:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getElemDouble(int, int) */
-	@:overload(function (bank:Int, i:Int):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int, i:Int):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getElemDouble(int) */
-	public function getElemDouble(i:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getElemDouble(i:Int):StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getElemFloat(int, int) */
-	@:overload(function (bank:Int, i:Int):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int, i:Int):Single {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getElemFloat(int) */
-	public function getElemFloat(i:Int):StdFloat;
+	/*@@@ modifiers=1 */ public function getElemFloat(i:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getNumBanks() */
-	public function getNumBanks():Int;
+	/*@@@ modifiers=1 */ public function getNumBanks():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1 */ public function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getOffsets() */
-	public function getOffsets():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getOffsets():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#getSize() */
-	public function getSize():Int;
+	/*@@@ modifiers=1 */ public function getSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#setElem(int, int, int) */
-	@:overload(function (bank:Int, i:Int, val:Int):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (bank:Int, i:Int, val:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#setElem(int, int) */
-	public function setElem(i:Int, val:Int):Void;
+	/*@@@ modifiers=1 */ public function setElem(i:Int, val:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#setElemDouble(int, int, double) */
-	@:overload(function (bank:Int, i:Int, val:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int, i:Int, val:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#setElemDouble(int, double) */
-	public function setElemDouble(i:Int, val:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setElemDouble(i:Int, val:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#setElemFloat(int, int, float) */
-	@:overload(function (bank:Int, i:Int, val:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (bank:Int, i:Int, val:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DataBuffer.html#setElemFloat(int, float) */
-	public function setElemFloat(i:Int, val:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function setElemFloat(i:Int, val:Single):Void;
 
 }
 

@@ -9,28 +9,28 @@ import javax.swing.event.InternalFrameListener;
 extern class InternalFrameAdapter extends Object, implements InternalFrameListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#InternalFrameAdapter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameActivated(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameActivated(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameActivated(e:InternalFrameEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameClosed(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameClosed(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameClosed(e:InternalFrameEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameClosing(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameClosing(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameClosing(e:InternalFrameEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameDeactivated(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameDeactivated(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameDeactivated(e:InternalFrameEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameDeiconified(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameDeiconified(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameDeiconified(e:InternalFrameEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameIconified(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameIconified(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameIconified(e:InternalFrameEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/InternalFrameAdapter.html#internalFrameOpened(javax.swing.event.InternalFrameEvent) */
-	public function internalFrameOpened(e:InternalFrameEvent):Void;
+	/*@@@ modifiers=1 */ public function internalFrameOpened(e:InternalFrameEvent):Void;
 
 }
 

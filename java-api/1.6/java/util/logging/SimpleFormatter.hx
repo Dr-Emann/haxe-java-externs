@@ -8,10 +8,10 @@ import java.util.logging.LogRecord;
 extern class SimpleFormatter extends Formatter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/SimpleFormatter.html#SimpleFormatter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/SimpleFormatter.html#format(java.util.logging.LogRecord) */
-	override public function format(record:LogRecord):String;
+	/*@@@ modifiers=33 */ override public function format(record:LogRecord):String;
 
 }
 

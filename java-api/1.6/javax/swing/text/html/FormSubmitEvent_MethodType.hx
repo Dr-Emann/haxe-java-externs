@@ -14,10 +14,10 @@ extern class FormSubmitEvent_MethodType extends Enum<FormSubmitEvent_MethodType>
 	public static var POST:FormSubmitEvent_MethodType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/FormSubmitEvent.MethodType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):FormSubmitEvent_MethodType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):FormSubmitEvent_MethodType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/FormSubmitEvent.MethodType.html#values() */
-	static public function values():NativeArray<FormSubmitEvent_MethodType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<FormSubmitEvent_MethodType>;
 
 }
 

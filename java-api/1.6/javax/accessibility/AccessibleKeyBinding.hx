@@ -6,10 +6,10 @@ package javax.accessibility;
 extern interface AccessibleKeyBinding
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBinding(int) */
-	public function getAccessibleKeyBinding(i:Int):Dynamic;
+	/*@@@ modifiers=1025 */ public function getAccessibleKeyBinding(i:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBindingCount() */
-	public function getAccessibleKeyBindingCount():Int;
+	/*@@@ modifiers=1025 */ public function getAccessibleKeyBindingCount():Int;
 
 }
 

@@ -6,10 +6,10 @@ package javax.xml.transform;
 extern interface Result
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Result.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Result.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemId:String):Void;
+	/*@@@ modifiers=1025 */ public function setSystemId(systemId:String):Void;
 
 }
 

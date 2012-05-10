@@ -14,10 +14,10 @@ extern class SOAPBinding_Use extends Enum<SOAPBinding_Use>
 	public static var ENCODED:SOAPBinding_Use;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/soap/SOAPBinding.Use.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):SOAPBinding_Use;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):SOAPBinding_Use;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/soap/SOAPBinding.Use.html#values() */
-	static public function values():NativeArray<SOAPBinding_Use>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<SOAPBinding_Use>;
 
 }
 

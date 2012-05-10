@@ -9,10 +9,10 @@ import javax.net.ssl.ManagerFactoryParameters;
 extern class CertPathTrustManagerParameters extends Object, implements ManagerFactoryParameters
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/CertPathTrustManagerParameters.html#CertPathTrustManagerParameters(java.security.cert.CertPathParameters) */
-	public function new(arg0:CertPathParameters):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:CertPathParameters):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/CertPathTrustManagerParameters.html#getParameters() */
-	public function getParameters():CertPathParameters;
+	/*@@@ modifiers=1 */ public function getParameters():CertPathParameters;
 
 }
 

@@ -7,9 +7,9 @@ import java.security.GeneralSecurityException;
 extern class UnrecoverableEntryException extends GeneralSecurityException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/UnrecoverableEntryException.html#UnrecoverableEntryException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/UnrecoverableEntryException.html#UnrecoverableEntryException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

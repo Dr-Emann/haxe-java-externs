@@ -7,12 +7,12 @@ import javax.xml.ws.WebServiceFeature;
 extern class RespectBindingFeature extends WebServiceFeature
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/RespectBindingFeature.html#RespectBindingFeature() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/RespectBindingFeature.html#RespectBindingFeature(boolean) */
-	public function new(enabled:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(enabled:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/RespectBindingFeature.html#getID() */
-	override public function getID():String;
+	/*@@@ modifiers=1 */ override public function getID():String;
 
 }
 

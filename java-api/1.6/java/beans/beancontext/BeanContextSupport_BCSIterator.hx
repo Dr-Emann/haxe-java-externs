@@ -9,13 +9,13 @@ extern class BeanContextSupport_BCSIterator extends Object, implements java.util
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.BCSIterator.html#hasNext() */
-	public function hasNext():Bool;
+	/*@@@ modifiers=1 */ public function hasNext():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.BCSIterator.html#next() */
-	public function next():Dynamic;
+	/*@@@ modifiers=1 */ public function next():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.BCSIterator.html#remove() */
-	public function remove():Void;
+	/*@@@ modifiers=1 */ public function remove():Void;
 
 }
 

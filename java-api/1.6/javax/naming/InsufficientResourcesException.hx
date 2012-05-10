@@ -7,9 +7,9 @@ import javax.naming.NamingException;
 extern class InsufficientResourcesException extends NamingException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/InsufficientResourcesException.html#InsufficientResourcesException(java.lang.String) */
-	@:overload(function (explanation:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (explanation:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/InsufficientResourcesException.html#InsufficientResourcesException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

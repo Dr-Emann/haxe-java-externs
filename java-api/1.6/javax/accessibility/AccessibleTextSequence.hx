@@ -16,7 +16,7 @@ extern class AccessibleTextSequence extends Object
 	public var text:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleTextSequence.html#AccessibleTextSequence(int, int, java.lang.String) */
-	public function new(start:Int, end:Int, txt:String):Void;
+	/*@@@ modifiers=1 */ public function new(start:Int, end:Int, txt:String):Void;
 
 }
 

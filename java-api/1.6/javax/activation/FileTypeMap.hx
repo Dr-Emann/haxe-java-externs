@@ -8,18 +8,18 @@ import java.lang.Object;
 extern class FileTypeMap extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileTypeMap.html#FileTypeMap() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileTypeMap.html#getContentType(java.io.File) */
-	@:overload(function (arg0:File):String {})
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:File):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileTypeMap.html#getContentType(java.lang.String) */
-	public function getContentType(arg0:String):String;
+	/*@@@ modifiers=1025 */ public function getContentType(arg0:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileTypeMap.html#getDefaultFileTypeMap() */
-	static public function getDefaultFileTypeMap():FileTypeMap;
+	/*@@@ modifiers=9 */ static public function getDefaultFileTypeMap():FileTypeMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/FileTypeMap.html#setDefaultFileTypeMap(javax.activation.FileTypeMap) */
-	static public function setDefaultFileTypeMap(arg0:FileTypeMap):Void;
+	/*@@@ modifiers=9 */ static public function setDefaultFileTypeMap(arg0:FileTypeMap):Void;
 
 }
 

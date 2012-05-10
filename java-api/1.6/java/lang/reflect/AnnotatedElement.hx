@@ -9,16 +9,16 @@ import java.lang.annotation.Annotation;
 extern interface AnnotatedElement
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AnnotatedElement.html#getAnnotation(java.lang.Class) */
-	public function getAnnotation<T>(annotationClass:Class<T>):T;
+	/*@@@ modifiers=1025 */ public function getAnnotation<T>(annotationClass:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AnnotatedElement.html#getAnnotations() */
-	public function getAnnotations():NativeArray<Annotation>;
+	/*@@@ modifiers=1025 */ public function getAnnotations():NativeArray<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotations() */
-	public function getDeclaredAnnotations():NativeArray<Annotation>;
+	/*@@@ modifiers=1025 */ public function getDeclaredAnnotations():NativeArray<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/AnnotatedElement.html#isAnnotationPresent(java.lang.Class) */
-	public function isAnnotationPresent(annotationClass:Class<Annotation>):Bool;
+	/*@@@ modifiers=1025 */ public function isAnnotationPresent(annotationClass:Class<Annotation>):Bool;
 
 }
 

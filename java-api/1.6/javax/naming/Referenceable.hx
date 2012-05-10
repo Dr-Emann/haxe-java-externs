@@ -7,7 +7,7 @@ import javax.naming.Reference;
 extern interface Referenceable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/Referenceable.html#getReference() */
-	public function getReference():Reference;
+	/*@@@ modifiers=1025 */ public function getReference():Reference;
 
 }
 

@@ -12,48 +12,48 @@ import java.util.jar.JarFile;
 extern interface Instrumentation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer, boolean) */
-	@:overload(function (transformer:ClassFileTransformer, canRetransform:Bool):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (transformer:ClassFileTransformer, canRetransform:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer) */
-	public function addTransformer(transformer:ClassFileTransformer):Void;
+	/*@@@ modifiers=1025 */ public function addTransformer(transformer:ClassFileTransformer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile) */
-	public function appendToBootstrapClassLoaderSearch(jarfile:JarFile):Void;
+	/*@@@ modifiers=1025 */ public function appendToBootstrapClassLoaderSearch(jarfile:JarFile):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile) */
-	public function appendToSystemClassLoaderSearch(jarfile:JarFile):Void;
+	/*@@@ modifiers=1025 */ public function appendToSystemClassLoaderSearch(jarfile:JarFile):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#getAllLoadedClasses() */
-	public function getAllLoadedClasses():NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=1025 */ public function getAllLoadedClasses():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader) */
-	public function getInitiatedClasses(loader:ClassLoader):NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=1025 */ public function getInitiatedClasses(loader:ClassLoader):NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object) */
-	public function getObjectSize(objectToSize:Dynamic):haxe.Int64;
+	/*@@@ modifiers=1025 */ public function getObjectSize(objectToSize:Dynamic):haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class) */
-	public function isModifiableClass(theClass:Class<Dynamic>):Bool;
+	/*@@@ modifiers=1025 */ public function isModifiableClass(theClass:Class<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported() */
-	public function isNativeMethodPrefixSupported():Bool;
+	/*@@@ modifiers=1025 */ public function isNativeMethodPrefixSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported() */
-	public function isRedefineClassesSupported():Bool;
+	/*@@@ modifiers=1025 */ public function isRedefineClassesSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported() */
-	public function isRetransformClassesSupported():Bool;
+	/*@@@ modifiers=1025 */ public function isRetransformClassesSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[]) */
-	public function redefineClasses(definitions:NativeArray<ClassDefinition>):Void;
+	/*@@@ modifiers=1153 */ public function redefineClasses(definitions:NativeArray<ClassDefinition>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer) */
-	public function removeTransformer(transformer:ClassFileTransformer):Bool;
+	/*@@@ modifiers=1025 */ public function removeTransformer(transformer:ClassFileTransformer):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[]) */
-	public function retransformClasses(classes:NativeArray<Class<Dynamic>>):Void;
+	/*@@@ modifiers=1153 */ public function retransformClasses(classes:NativeArray<Class<Dynamic>>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer, java.lang.String) */
-	public function setNativeMethodPrefix(transformer:ClassFileTransformer, prefix:String):Void;
+	/*@@@ modifiers=1025 */ public function setNativeMethodPrefix(transformer:ClassFileTransformer, prefix:String):Void;
 
 }
 

@@ -8,31 +8,31 @@ import java.nio.channels.FileChannel;
 extern class FileLock extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#FileLock(java.nio.channels.FileChannel, long, long, boolean) */
-	private function new(channel:FileChannel, position:haxe.Int64, size:haxe.Int64, shared:Bool):Void;
+	/*@@@ modifiers=4 */ private function new(channel:FileChannel, position:haxe.Int64, size:haxe.Int64, shared:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#channels.FileChannel java.nio.channels.FileLock.channel() */
-	public function channel():FileChannel;
+	/*@@@ modifiers=17 */ public function channel():FileChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#isShared() */
-	public function isShared():Bool;
+	/*@@@ modifiers=17 */ public function isShared():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#isValid() */
-	public function isValid():Bool;
+	/*@@@ modifiers=1025 */ public function isValid():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#overlaps(long, long) */
-	public function overlaps(position:haxe.Int64, size:haxe.Int64):Bool;
+	/*@@@ modifiers=17 */ public function overlaps(position:haxe.Int64, size:haxe.Int64):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#position() */
-	public function position():haxe.Int64;
+	/*@@@ modifiers=17 */ public function position():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#release() */
-	public function release():Void;
+	/*@@@ modifiers=1025 */ public function release():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#size() */
-	public function size():haxe.Int64;
+	/*@@@ modifiers=17 */ public function size():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileLock.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=17 */ override public function toString():String;
 
 }
 

@@ -7,7 +7,7 @@ import javax.crypto.spec.DHParameterSpec;
 extern interface DHKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/interfaces/DHKey.html#getParams() */
-	public function getParams():DHParameterSpec;
+	/*@@@ modifiers=1025 */ public function getParams():DHParameterSpec;
 
 }
 

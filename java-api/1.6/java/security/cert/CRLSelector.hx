@@ -8,10 +8,10 @@ import java.security.cert.CRL;
 extern interface CRLSelector implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CRLSelector.html#clone() */
-	public function clone():Dynamic;
+	/*@@@ modifiers=1025 */ public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CRLSelector.html#match(java.security.cert.CRL) */
-	public function match(crl:CRL):Bool;
+	/*@@@ modifiers=1025 */ public function match(crl:CRL):Bool;
 
 }
 

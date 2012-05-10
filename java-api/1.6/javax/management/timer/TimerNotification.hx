@@ -8,10 +8,10 @@ import javax.management.Notification;
 extern class TimerNotification extends Notification
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerNotification.html#TimerNotification(java.lang.String, java.lang.Object, long, long, java.lang.String, java.lang.Integer) */
-	public function new(type:String, source:Dynamic, sequenceNumber:haxe.Int64, timeStamp:haxe.Int64, msg:String, id:Integer):Void;
+	/*@@@ modifiers=1 */ public function new(type:String, source:Dynamic, sequenceNumber:haxe.Int64, timeStamp:haxe.Int64, msg:String, id:Integer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/timer/TimerNotification.html#getNotificationID() */
-	public function getNotificationID():Integer;
+	/*@@@ modifiers=1 */ public function getNotificationID():Integer;
 
 }
 

@@ -11,16 +11,16 @@ import javax.print.attribute.TextSyntax;
 extern class JobOriginatingUserName extends TextSyntax, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobOriginatingUserName.html#JobOriginatingUserName(java.lang.String, java.util.Locale) */
-	public function new(userName:String, locale:Locale):Void;
+	/*@@@ modifiers=1 */ public function new(userName:String, locale:Locale):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobOriginatingUserName.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobOriginatingUserName.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/JobOriginatingUserName.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

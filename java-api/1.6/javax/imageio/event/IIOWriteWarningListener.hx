@@ -8,7 +8,7 @@ import javax.imageio.ImageWriter;
 extern interface IIOWriteWarningListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter, int, java.lang.String) */
-	public function warningOccurred(source:ImageWriter, imageIndex:Int, warning:String):Void;
+	/*@@@ modifiers=1025 */ public function warningOccurred(source:ImageWriter, imageIndex:Int, warning:String):Void;
 
 }
 

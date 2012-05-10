@@ -9,10 +9,10 @@ import javax.xml.crypto.dsig.spec.TransformParameterSpec;
 extern class XPathFilter2ParameterSpec extends Object, implements TransformParameterSpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#XPathFilter2ParameterSpec(java.util.List) */
-	public function new(xPathList:List<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(xPathList:List<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#getXPathList() */
-	public function getXPathList():List<Dynamic>;
+	/*@@@ modifiers=1 */ public function getXPathList():List<Dynamic>;
 
 }
 

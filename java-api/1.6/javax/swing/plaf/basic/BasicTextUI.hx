@@ -23,114 +23,114 @@ import javax.swing.text.ViewFactory;
 extern class BasicTextUI extends TextUI, implements ViewFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#BasicTextUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#create(javax.swing.text.Element, int, int) */
-	@:overload(function (elem:Element, p0:Int, p1:Int):View {})
+	/*@@@ modifiers=1 */ @:overload(function (elem:Element, p0:Int, p1:Int):View {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#create(javax.swing.text.Element) */
-	public function create(elem:Element):View;
+	/*@@@ modifiers=1 */ public function create(elem:Element):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#createCaret() */
-	private function createCaret():Caret;
+	/*@@@ modifiers=4 */ private function createCaret():Caret;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#createHighlighter() */
-	private function createHighlighter():Highlighter;
+	/*@@@ modifiers=4 */ private function createHighlighter():Highlighter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#createKeymap() */
-	private function createKeymap():Keymap;
+	/*@@@ modifiers=4 */ private function createKeymap():Keymap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#damageRange(javax.swing.text.JTextComponent, int, int, javax.swing.text.Position$Bias, javax.swing.text.Position$Bias) */
-	@:overload(function (t:JTextComponent, p0:Int, p1:Int, p0Bias:Position_Bias, p1Bias:Position_Bias):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (t:JTextComponent, p0:Int, p1:Int, p0Bias:Position_Bias, p1Bias:Position_Bias):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#damageRange(javax.swing.text.JTextComponent, int, int) */
-	override public function damageRange(tc:JTextComponent, p0:Int, p1:Int):Void;
+	/*@@@ modifiers=1 */ override public function damageRange(tc:JTextComponent, p0:Int, p1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getComponent() */
-	private function getComponent():JTextComponent;
+	/*@@@ modifiers=20 */ private function getComponent():JTextComponent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getEditorKit(javax.swing.text.JTextComponent) */
-	override public function getEditorKit(tc:JTextComponent):EditorKit;
+	/*@@@ modifiers=1 */ override public function getEditorKit(tc:JTextComponent):EditorKit;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getKeymapName() */
-	private function getKeymapName():String;
+	/*@@@ modifiers=4 */ private function getKeymapName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getNextVisualPositionFrom(javax.swing.text.JTextComponent, int, javax.swing.text.Position$Bias, int, javax.swing.text.Position$Bias[]) */
-	override public function getNextVisualPositionFrom(t:JTextComponent, pos:Int, b:Position_Bias, direction:Int, biasRet:NativeArray<Position_Bias>):Int;
+	/*@@@ modifiers=1 */ override public function getNextVisualPositionFrom(t:JTextComponent, pos:Int, b:Position_Bias, direction:Int, biasRet:NativeArray<Position_Bias>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getPropertyPrefix() */
-	private function getPropertyPrefix():String;
+	/*@@@ modifiers=1028 */ private function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getRootView(javax.swing.text.JTextComponent) */
-	override public function getRootView(tc:JTextComponent):View;
+	/*@@@ modifiers=1 */ override public function getRootView(tc:JTextComponent):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getToolTipText(javax.swing.text.JTextComponent, java.awt.Point) */
-	override public function getToolTipText(t:JTextComponent, pt:Point):String;
+	/*@@@ modifiers=1 */ override public function getToolTipText(t:JTextComponent, pt:Point):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#getVisibleEditorRect() */
-	private function getVisibleEditorRect():Rectangle;
+	/*@@@ modifiers=4 */ private function getVisibleEditorRect():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#modelChanged() */
-	private function modelChanged():Void;
+	/*@@@ modifiers=4 */ private function modelChanged():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#modelToView(javax.swing.text.JTextComponent, int, javax.swing.text.Position$Bias) */
-	@:overload(function (tc:JTextComponent, pos:Int, bias:Position_Bias):Rectangle {})
+	/*@@@ modifiers=1 */ @:overload(function (tc:JTextComponent, pos:Int, bias:Position_Bias):Rectangle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#modelToView(javax.swing.text.JTextComponent, int) */
-	override public function modelToView(tc:JTextComponent, pos:Int):Rectangle;
+	/*@@@ modifiers=1 */ override public function modelToView(tc:JTextComponent, pos:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=17 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#paintBackground(java.awt.Graphics) */
-	private function paintBackground(g:Graphics):Void;
+	/*@@@ modifiers=4 */ private function paintBackground(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#paintSafely(java.awt.Graphics) */
-	private function paintSafely(g:Graphics):Void;
+	/*@@@ modifiers=4 */ private function paintSafely(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ private function propertyChange(evt:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#setView(javax.swing.text.View) */
-	private function setView(v:View):Void;
+	/*@@@ modifiers=20 */ private function setView(v:View):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#update(java.awt.Graphics, javax.swing.JComponent) */
-	override public function update(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function update(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#viewToModel(javax.swing.text.JTextComponent, java.awt.Point, javax.swing.text.Position$Bias[]) */
-	@:overload(function (tc:JTextComponent, pt:Point, biasReturn:NativeArray<Position_Bias>):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (tc:JTextComponent, pt:Point, biasReturn:NativeArray<Position_Bias>):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#viewToModel(javax.swing.text.JTextComponent, java.awt.Point) */
-	override public function viewToModel(tc:JTextComponent, pt:Point):Int;
+	/*@@@ modifiers=1 */ override public function viewToModel(tc:JTextComponent, pt:Point):Int;
 
 }
 

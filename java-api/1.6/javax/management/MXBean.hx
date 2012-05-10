@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 extern interface MXBean implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/MXBean.html#value() */
-	public function value():Bool;
+	/*@@@ modifiers=1025 */ public function value():Bool;
 
 }
 

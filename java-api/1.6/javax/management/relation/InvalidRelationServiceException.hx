@@ -7,9 +7,9 @@ import javax.management.relation.RelationException;
 extern class InvalidRelationServiceException extends RelationException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/InvalidRelationServiceException.html#InvalidRelationServiceException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/InvalidRelationServiceException.html#InvalidRelationServiceException(java.lang.String) */
-	public function new(message:String):Void;
+	/*@@@ modifiers=1 */ public function new(message:String):Void;
 
 }
 

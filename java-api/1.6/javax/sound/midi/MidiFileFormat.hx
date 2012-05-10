@@ -1,6 +1,5 @@
 package javax.sound.midi;
 
-import java.lang.Number;
 import java.lang.Object;
 import java.util.Map;
 
@@ -12,7 +11,7 @@ extern class MidiFileFormat extends Object
 	private var type:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#divisionType */
-	private var divisionType:StdFloat;
+	private var divisionType:Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#resolution */
 	private var resolution:Int;
@@ -24,30 +23,30 @@ extern class MidiFileFormat extends Object
 	private var microsecondLength:haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#MidiFileFormat(int, float, int, int, long, java.util.Map) */
-	@:overload(function (type:Int, divisionType:StdFloat, resolution:Int, bytes:Int, microseconds:haxe.Int64, properties:Map<String, Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (type:Int, divisionType:Single, resolution:Int, bytes:Int, microseconds:haxe.Int64, properties:Map<String, Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#MidiFileFormat(int, float, int, int, long) */
-	public function new(type:Int, divisionType:StdFloat, resolution:Int, bytes:Int, microseconds:haxe.Int64):Void;
+	/*@@@ modifiers=1 */ public function new(type:Int, divisionType:Single, resolution:Int, bytes:Int, microseconds:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#getByteLength() */
-	public function getByteLength():Int;
+	/*@@@ modifiers=1 */ public function getByteLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#getDivisionType() */
-	public function getDivisionType():StdFloat;
+	/*@@@ modifiers=1 */ public function getDivisionType():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#getMicrosecondLength() */
-	public function getMicrosecondLength():haxe.Int64;
+	/*@@@ modifiers=1 */ public function getMicrosecondLength():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#getProperty(java.lang.String) */
-	public function getProperty(key:String):Dynamic;
+	/*@@@ modifiers=1 */ public function getProperty(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#getResolution() */
-	public function getResolution():Int;
+	/*@@@ modifiers=1 */ public function getResolution():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#getType() */
-	public function getType():Int;
+	/*@@@ modifiers=1 */ public function getType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiFileFormat.html#properties() */
-	public function properties():Map<String, Dynamic>;
+	/*@@@ modifiers=1 */ public function properties():Map<String, Dynamic>;
 
 }
 

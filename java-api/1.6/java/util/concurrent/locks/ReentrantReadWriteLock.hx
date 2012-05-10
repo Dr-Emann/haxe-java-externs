@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock_ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock_WriteLock;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html */
@@ -14,66 +15,70 @@ import java.util.concurrent.locks.ReentrantReadWriteLock_WriteLock;
 extern class ReentrantReadWriteLock extends Object, implements ReadWriteLock, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#ReentrantReadWriteLock(boolean) */
-	@:overload(function (fair:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fair:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#ReentrantReadWriteLock() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getOwner() */
-	private function getOwner():Thread;
+	/*@@@ modifiers=4 */ private function getOwner():Thread;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getQueueLength() */
-	public function getQueueLength():Int;
+	/*@@@ modifiers=17 */ public function getQueueLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getQueuedReaderThreads() */
-	private function getQueuedReaderThreads():Collection<Thread>;
+	/*@@@ modifiers=4 */ private function getQueuedReaderThreads():Collection<Thread>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getQueuedThreads() */
-	private function getQueuedThreads():Collection<Thread>;
+	/*@@@ modifiers=4 */ private function getQueuedThreads():Collection<Thread>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getQueuedWriterThreads() */
-	private function getQueuedWriterThreads():Collection<Thread>;
+	/*@@@ modifiers=4 */ private function getQueuedWriterThreads():Collection<Thread>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getReadHoldCount() */
-	public function getReadHoldCount():Int;
+	/*@@@ modifiers=1 */ public function getReadHoldCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getReadLockCount() */
-	public function getReadLockCount():Int;
+	/*@@@ modifiers=1 */ public function getReadLockCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition) */
-	public function getWaitQueueLength(condition:Condition):Int;
+	/*@@@ modifiers=1 */ public function getWaitQueueLength(condition:Condition):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWaitingThreads(java.util.concurrent.locks.Condition) */
-	private function getWaitingThreads(condition:Condition):Collection<Thread>;
+	/*@@@ modifiers=4 */ private function getWaitingThreads(condition:Condition):Collection<Thread>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWriteHoldCount() */
-	public function getWriteHoldCount():Int;
+	/*@@@ modifiers=1 */ public function getWriteHoldCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThread(java.lang.Thread) */
-	public function hasQueuedThread(thread:Thread):Bool;
+	/*@@@ modifiers=17 */ public function hasQueuedThread(thread:Thread):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThreads() */
-	public function hasQueuedThreads():Bool;
+	/*@@@ modifiers=17 */ public function hasQueuedThreads():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasWaiters(java.util.concurrent.locks.Condition) */
-	public function hasWaiters(condition:Condition):Bool;
+	/*@@@ modifiers=1 */ public function hasWaiters(condition:Condition):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#isFair() */
-	public function isFair():Bool;
+	/*@@@ modifiers=17 */ public function isFair():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLocked() */
-	public function isWriteLocked():Bool;
+	/*@@@ modifiers=1 */ public function isWriteLocked():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLockedByCurrentThread() */
-	public function isWriteLockedByCurrentThread():Bool;
+	/*@@@ modifiers=1 */ public function isWriteLockedByCurrentThread():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock() */
-	public function readLock():Lock;
+	/*@@@ modifiers=1 */ @:overload(function ():ReentrantReadWriteLock_ReadLock {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock() */
+	/*@@@ modifiers=4161 */ public function readLock():Lock;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock() */
-	public function writeLock():ReentrantReadWriteLock_WriteLock;
+	/*@@@ modifiers=4161 */ @:overload(function ():Lock {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock() */
+	/*@@@ modifiers=1 */ public function writeLock():ReentrantReadWriteLock_WriteLock;
 
 }
 

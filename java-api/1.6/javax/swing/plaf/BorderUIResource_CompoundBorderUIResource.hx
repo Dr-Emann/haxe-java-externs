@@ -9,7 +9,7 @@ import javax.swing.plaf.UIResource;
 extern class BorderUIResource_CompoundBorderUIResource extends CompoundBorder, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/BorderUIResource.CompoundBorderUIResource.html#BorderUIResource$CompoundBorderUIResource(javax.swing.border.Border, javax.swing.border.Border) */
-	public function new(outsideBorder:Border, insideBorder:Border):Void;
+	/*@@@ modifiers=1 */ public function new(outsideBorder:Border, insideBorder:Border):Void;
 
 }
 

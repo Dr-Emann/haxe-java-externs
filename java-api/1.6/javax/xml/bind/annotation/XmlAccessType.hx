@@ -20,10 +20,10 @@ extern class XmlAccessType extends Enum<XmlAccessType>
 	public static var NONE:XmlAccessType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAccessType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):XmlAccessType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):XmlAccessType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlAccessType.html#values() */
-	static public function values():NativeArray<XmlAccessType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<XmlAccessType>;
 
 }
 

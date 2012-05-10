@@ -12,28 +12,28 @@ extern class BasicToolBarUI_DragWindow extends Window
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#getBorderColor() */
-	public function getBorderColor():Color;
+	/*@@@ modifiers=1 */ public function getBorderColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#getInsets() */
-	override public function getInsets():Insets;
+	/*@@@ modifiers=1 */ override public function getInsets():Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#getOffset() */
-	public function getOffset():Point;
+	/*@@@ modifiers=1 */ public function getOffset():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#getOrientation() */
-	public function getOrientation():Int;
+	/*@@@ modifiers=1 */ public function getOrientation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#paint(java.awt.Graphics) */
-	override public function paint(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#setBorderColor(java.awt.Color) */
-	public function setBorderColor(c:Color):Void;
+	/*@@@ modifiers=1 */ public function setBorderColor(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#setOffset(java.awt.Point) */
-	public function setOffset(p:Point):Void;
+	/*@@@ modifiers=1 */ public function setOffset(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html#setOrientation(int) */
-	public function setOrientation(o:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(o:Int):Void;
 
 }
 

@@ -8,10 +8,10 @@ import java.awt.Point;
 extern interface Autoscroll
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/Autoscroll.html#autoscroll(java.awt.Point) */
-	public function autoscroll(cursorLocn:Point):Void;
+	/*@@@ modifiers=1025 */ public function autoscroll(cursorLocn:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/Autoscroll.html#getAutoscrollInsets() */
-	public function getAutoscrollInsets():Insets;
+	/*@@@ modifiers=1025 */ public function getAutoscrollInsets():Insets;
 
 }
 

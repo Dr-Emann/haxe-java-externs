@@ -23,31 +23,31 @@ extern class MetalRadioButtonUI extends BasicRadioButtonUI
 	private var disabledTextColor:Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#MetalRadioButtonUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#getDisabledTextColor() */
-	private function getDisabledTextColor():Color;
+	/*@@@ modifiers=4 */ private function getDisabledTextColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#getFocusColor() */
-	private function getFocusColor():Color;
+	/*@@@ modifiers=4 */ private function getFocusColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#getSelectColor() */
-	private function getSelectColor():Color;
+	/*@@@ modifiers=4 */ private function getSelectColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#installDefaults(javax.swing.AbstractButton) */
-	override public function installDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=1 */ override public function installDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=33 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#paintFocus(java.awt.Graphics, java.awt.Rectangle, java.awt.Dimension) */
-	override private function paintFocus(g:Graphics, t:Rectangle, d:Dimension):Void;
+	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, t:Rectangle, d:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
 
 }
 

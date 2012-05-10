@@ -7,9 +7,9 @@ import java.lang.Error;
 extern class LinkageError extends Error
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/LinkageError.html#LinkageError() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/LinkageError.html#LinkageError(java.lang.String) */
-	public function new(s:String):Void;
+	/*@@@ modifiers=1 */ public function new(s:String):Void;
 
 }
 

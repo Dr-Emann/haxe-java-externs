@@ -15,49 +15,49 @@ import javax.security.auth.Subject;
 extern class RMIServerImpl extends Object, implements Closeable, implements RMIServer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#RMIServerImpl(java.util.Map) */
-	public function new(env:Map<String, Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(env:Map<String, Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#clientClosed(javax.management.remote.rmi.RMIConnection) */
-	private function clientClosed(client:RMIConnection):Void;
+	/*@@@ modifiers=4 */ private function clientClosed(client:RMIConnection):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=33 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#closeClient(javax.management.remote.rmi.RMIConnection) */
-	private function closeClient(client:RMIConnection):Void;
+	/*@@@ modifiers=1028 */ private function closeClient(client:RMIConnection):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#closeServer() */
-	private function closeServer():Void;
+	/*@@@ modifiers=1028 */ private function closeServer():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#export() */
-	private function export():Void;
+	/*@@@ modifiers=1028 */ private function export():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#getDefaultClassLoader() */
-	public function getDefaultClassLoader():ClassLoader;
+	/*@@@ modifiers=33 */ public function getDefaultClassLoader():ClassLoader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#getMBeanServer() */
-	public function getMBeanServer():MBeanServer;
+	/*@@@ modifiers=33 */ public function getMBeanServer():MBeanServer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#getProtocol() */
-	private function getProtocol():String;
+	/*@@@ modifiers=1028 */ private function getProtocol():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1 */ public function getVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#makeClient(java.lang.String, javax.security.auth.Subject) */
-	private function makeClient(connectionId:String, subject:Subject):RMIConnection;
+	/*@@@ modifiers=1028 */ private function makeClient(connectionId:String, subject:Subject):RMIConnection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#newClient(java.lang.Object) */
-	public function newClient(credentials:Dynamic):RMIConnection;
+	/*@@@ modifiers=1 */ public function newClient(credentials:Dynamic):RMIConnection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#setDefaultClassLoader(java.lang.ClassLoader) */
-	public function setDefaultClassLoader(cl:ClassLoader):Void;
+	/*@@@ modifiers=33 */ public function setDefaultClassLoader(cl:ClassLoader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#setMBeanServer(javax.management.MBeanServer) */
-	public function setMBeanServer(mbs:MBeanServer):Void;
+	/*@@@ modifiers=33 */ public function setMBeanServer(mbs:MBeanServer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIServerImpl.html#toStub() */
-	public function toStub():Remote;
+	/*@@@ modifiers=1025 */ public function toStub():Remote;
 
 }
 

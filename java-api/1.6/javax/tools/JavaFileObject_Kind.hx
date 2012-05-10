@@ -23,10 +23,10 @@ extern class JavaFileObject_Kind extends Enum<JavaFileObject_Kind>
 	public static var extension:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaFileObject.Kind.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):JavaFileObject_Kind;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):JavaFileObject_Kind;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaFileObject.Kind.html#values() */
-	static public function values():NativeArray<JavaFileObject_Kind>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<JavaFileObject_Kind>;
 
 }
 

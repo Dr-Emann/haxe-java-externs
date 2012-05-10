@@ -9,19 +9,19 @@ import javax.security.auth.callback.CallbackHandler;
 extern interface LoginModule
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/spi/LoginModule.html#abort() */
-	public function abort():Bool;
+	/*@@@ modifiers=1025 */ public function abort():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/spi/LoginModule.html#commit() */
-	public function commit():Bool;
+	/*@@@ modifiers=1025 */ public function commit():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject, javax.security.auth.callback.CallbackHandler, java.util.Map, java.util.Map) */
-	public function initialize(subject:Subject, callbackHandler:CallbackHandler, sharedState:Map<String, Dynamic>, options:Map<String, Dynamic>):Void;
+	/*@@@ modifiers=1025 */ public function initialize(subject:Subject, callbackHandler:CallbackHandler, sharedState:Map<String, Dynamic>, options:Map<String, Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/spi/LoginModule.html#login() */
-	public function login():Bool;
+	/*@@@ modifiers=1025 */ public function login():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/spi/LoginModule.html#logout() */
-	public function logout():Bool;
+	/*@@@ modifiers=1025 */ public function logout():Bool;
 
 }
 

@@ -11,28 +11,28 @@ import javax.management.remote.MBeanServerForwarder;
 extern interface JMXConnectorServerMBean
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#getAddress() */
-	public function getAddress():JMXServiceURL;
+	/*@@@ modifiers=1025 */ public function getAddress():JMXServiceURL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#getAttributes() */
-	public function getAttributes():Map<String, Dynamic>;
+	/*@@@ modifiers=1025 */ public function getAttributes():Map<String, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#getConnectionIds() */
-	public function getConnectionIds():NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getConnectionIds():NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=1025 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder) */
-	public function setMBeanServerForwarder(mbsf:MBeanServerForwarder):Void;
+	/*@@@ modifiers=1025 */ public function setMBeanServerForwarder(mbsf:MBeanServerForwarder):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#start() */
-	public function start():Void;
+	/*@@@ modifiers=1025 */ public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1025 */ public function stop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#toJMXConnector(java.util.Map) */
-	public function toJMXConnector(env:Map<String, Dynamic>):JMXConnector;
+	/*@@@ modifiers=1025 */ public function toJMXConnector(env:Map<String, Dynamic>):JMXConnector;
 
 }
 

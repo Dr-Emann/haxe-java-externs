@@ -8,12 +8,12 @@ import javax.sql.RowSetWriter;
 extern interface TransactionalWriter implements RowSetWriter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/TransactionalWriter.html#commit() */
-	public function commit():Void;
+	/*@@@ modifiers=1025 */ public function commit():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/TransactionalWriter.html#rollback(java.sql.Savepoint) */
-	@:overload(function (s:Savepoint):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (s:Savepoint):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/spi/TransactionalWriter.html#rollback() */
-	public function rollback():Void;
+	/*@@@ modifiers=1025 */ public function rollback():Void;
 
 }
 

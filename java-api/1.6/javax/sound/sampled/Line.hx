@@ -11,31 +11,31 @@ import javax.sound.sampled.LineListener;
 extern interface Line
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#addLineListener(javax.sound.sampled.LineListener) */
-	public function addLineListener(listener:LineListener):Void;
+	/*@@@ modifiers=1025 */ public function addLineListener(listener:LineListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1025 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control$Type) */
-	public function getControl(control:Control_Type):Control;
+	/*@@@ modifiers=1025 */ public function getControl(control:Control_Type):Control;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#getControls() */
-	public function getControls():NativeArray<Control>;
+	/*@@@ modifiers=1025 */ public function getControls():NativeArray<Control>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#getLineInfo() */
-	public function getLineInfo():Line_Info;
+	/*@@@ modifiers=1025 */ public function getLineInfo():Line_Info;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control$Type) */
-	public function isControlSupported(control:Control_Type):Bool;
+	/*@@@ modifiers=1025 */ public function isControlSupported(control:Control_Type):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#isOpen() */
-	public function isOpen():Bool;
+	/*@@@ modifiers=1025 */ public function isOpen():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#open() */
-	public function open():Void;
+	/*@@@ modifiers=1025 */ public function open():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#removeLineListener(javax.sound.sampled.LineListener) */
-	public function removeLineListener(listener:LineListener):Void;
+	/*@@@ modifiers=1025 */ public function removeLineListener(listener:LineListener):Void;
 
 }
 

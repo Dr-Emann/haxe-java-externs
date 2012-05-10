@@ -8,22 +8,22 @@ import java.security.interfaces.RSAPrivateKey;
 extern interface RSAPrivateCrtKey implements RSAPrivateKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateCrtKey.html#getCrtCoefficient() */
-	public function getCrtCoefficient():BigInteger;
+	/*@@@ modifiers=1025 */ public function getCrtCoefficient():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentP() */
-	public function getPrimeExponentP():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeExponentP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentQ() */
-	public function getPrimeExponentQ():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeExponentQ():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeP() */
-	public function getPrimeP():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeP():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeQ() */
-	public function getPrimeQ():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPrimeQ():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateCrtKey.html#getPublicExponent() */
-	public function getPublicExponent():BigInteger;
+	/*@@@ modifiers=1025 */ public function getPublicExponent():BigInteger;
 
 }
 

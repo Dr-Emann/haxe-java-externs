@@ -7,7 +7,7 @@ import java.lang.Object;
 extern class XmlType_DEFAULT extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlType.DEFAULT.html#XmlType$DEFAULT() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

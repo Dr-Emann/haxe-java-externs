@@ -8,7 +8,7 @@ import javax.swing.plaf.basic.BasicComboBoxRenderer;
 extern class BasicComboBoxRenderer_UIResource extends BasicComboBoxRenderer, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxRenderer.UIResource.html#BasicComboBoxRenderer$UIResource() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

@@ -8,13 +8,13 @@ import java.lang.Object;
 extern class CacheRequest extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CacheRequest.html#CacheRequest() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CacheRequest.html#abort() */
-	public function abort():Void;
+	/*@@@ modifiers=1025 */ public function abort():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/CacheRequest.html#getBody() */
-	public function getBody():OutputStream;
+	/*@@@ modifiers=1025 */ public function getBody():OutputStream;
 
 }
 

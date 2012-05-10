@@ -15,85 +15,85 @@ import javax.accessibility.Accessible;
 extern interface AccessibleComponent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#addFocusListener(java.awt.event.FocusListener) */
-	public function addFocusListener(l:FocusListener):Void;
+	/*@@@ modifiers=1025 */ public function addFocusListener(l:FocusListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#contains(java.awt.Point) */
-	public function contains(p:Point):Bool;
+	/*@@@ modifiers=1025 */ public function contains(p:Point):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getAccessibleAt(java.awt.Point) */
-	public function getAccessibleAt(p:Point):Accessible;
+	/*@@@ modifiers=1025 */ public function getAccessibleAt(p:Point):Accessible;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getBackground() */
-	public function getBackground():Color;
+	/*@@@ modifiers=1025 */ public function getBackground():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getBounds() */
-	public function getBounds():Rectangle;
+	/*@@@ modifiers=1025 */ public function getBounds():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getCursor() */
-	public function getCursor():Cursor;
+	/*@@@ modifiers=1025 */ public function getCursor():Cursor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getFont() */
-	public function getFont():Font;
+	/*@@@ modifiers=1025 */ public function getFont():Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getFontMetrics(java.awt.Font) */
-	public function getFontMetrics(f:Font):FontMetrics;
+	/*@@@ modifiers=1025 */ public function getFontMetrics(f:Font):FontMetrics;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getForeground() */
-	public function getForeground():Color;
+	/*@@@ modifiers=1025 */ public function getForeground():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getLocation() */
-	public function getLocation():Point;
+	/*@@@ modifiers=1025 */ public function getLocation():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getLocationOnScreen() */
-	public function getLocationOnScreen():Point;
+	/*@@@ modifiers=1025 */ public function getLocationOnScreen():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#getSize() */
-	public function getSize():Dimension;
+	/*@@@ modifiers=1025 */ public function getSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#isEnabled() */
-	public function isEnabled():Bool;
+	/*@@@ modifiers=1025 */ public function isEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#isFocusTraversable() */
-	public function isFocusTraversable():Bool;
+	/*@@@ modifiers=1025 */ public function isFocusTraversable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#isShowing() */
-	public function isShowing():Bool;
+	/*@@@ modifiers=1025 */ public function isShowing():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#isVisible() */
-	public function isVisible():Bool;
+	/*@@@ modifiers=1025 */ public function isVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#removeFocusListener(java.awt.event.FocusListener) */
-	public function removeFocusListener(l:FocusListener):Void;
+	/*@@@ modifiers=1025 */ public function removeFocusListener(l:FocusListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#requestFocus() */
-	public function requestFocus():Void;
+	/*@@@ modifiers=1025 */ public function requestFocus():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setBackground(java.awt.Color) */
-	public function setBackground(c:Color):Void;
+	/*@@@ modifiers=1025 */ public function setBackground(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setBounds(java.awt.Rectangle) */
-	public function setBounds(r:Rectangle):Void;
+	/*@@@ modifiers=1025 */ public function setBounds(r:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setCursor(java.awt.Cursor) */
-	public function setCursor(cursor:Cursor):Void;
+	/*@@@ modifiers=1025 */ public function setCursor(cursor:Cursor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setEnabled(boolean) */
-	public function setEnabled(b:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setEnabled(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setFont(java.awt.Font) */
-	public function setFont(f:Font):Void;
+	/*@@@ modifiers=1025 */ public function setFont(f:Font):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setForeground(java.awt.Color) */
-	public function setForeground(c:Color):Void;
+	/*@@@ modifiers=1025 */ public function setForeground(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setLocation(java.awt.Point) */
-	public function setLocation(p:Point):Void;
+	/*@@@ modifiers=1025 */ public function setLocation(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setSize(java.awt.Dimension) */
-	public function setSize(d:Dimension):Void;
+	/*@@@ modifiers=1025 */ public function setSize(d:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleComponent.html#setVisible(boolean) */
-	public function setVisible(b:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setVisible(b:Bool):Void;
 
 }
 

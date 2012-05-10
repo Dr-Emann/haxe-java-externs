@@ -9,13 +9,13 @@ import javax.crypto.SecretKey;
 extern class KeyStore_SecretKeyEntry extends Object, implements KeyStore_Entry
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.SecretKeyEntry.html#KeyStore$SecretKeyEntry(javax.crypto.SecretKey) */
-	public function new(secretKey:SecretKey):Void;
+	/*@@@ modifiers=1 */ public function new(secretKey:SecretKey):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.SecretKeyEntry.html#getSecretKey() */
-	public function getSecretKey():SecretKey;
+	/*@@@ modifiers=1 */ public function getSecretKey():SecretKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.SecretKeyEntry.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

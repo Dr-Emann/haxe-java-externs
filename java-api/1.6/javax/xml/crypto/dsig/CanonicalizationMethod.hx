@@ -8,7 +8,7 @@ import javax.xml.crypto.dsig.Transform;
 extern interface CanonicalizationMethod implements Transform
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/CanonicalizationMethod.html#getParameterSpec() */
-	public function getParameterSpec():AlgorithmParameterSpec;
+	/*@@@ modifiers=1025 */ public function getParameterSpec():AlgorithmParameterSpec;
 
 }
 

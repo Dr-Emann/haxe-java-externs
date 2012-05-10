@@ -8,22 +8,22 @@ import org.w3c.dom.Node;
 extern interface ValidationEventLocator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/ValidationEventLocator.html#getColumnNumber() */
-	public function getColumnNumber():Int;
+	/*@@@ modifiers=1025 */ public function getColumnNumber():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/ValidationEventLocator.html#getLineNumber() */
-	public function getLineNumber():Int;
+	/*@@@ modifiers=1025 */ public function getLineNumber():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/ValidationEventLocator.html#getNode() */
-	public function getNode():Node;
+	/*@@@ modifiers=1025 */ public function getNode():Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/ValidationEventLocator.html#getObject() */
-	public function getObject():Dynamic;
+	/*@@@ modifiers=1025 */ public function getObject():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/ValidationEventLocator.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1025 */ public function getOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/ValidationEventLocator.html#getURL() */
-	public function getURL():URL;
+	/*@@@ modifiers=1025 */ public function getURL():URL;
 
 }
 

@@ -8,17 +8,17 @@ import java.lang.Throwable;
 extern class ExceptionInInitializerError extends LinkageError
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ExceptionInInitializerError.html#ExceptionInInitializerError() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ExceptionInInitializerError.html#ExceptionInInitializerError(java.lang.Throwable) */
-	@:overload(function (thrown:Throwable):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (thrown:Throwable):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ExceptionInInitializerError.html#ExceptionInInitializerError(java.lang.String) */
-	public function new(thrown:String):Void;
+	/*@@@ modifiers=1 */ public function new(thrown:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ExceptionInInitializerError.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ExceptionInInitializerError.html#getException() */
-	public function getException():Throwable;
+	/*@@@ modifiers=1 */ public function getException():Throwable;
 
 }
 

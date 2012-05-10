@@ -13,45 +13,45 @@ import javax.swing.text.DefaultFormatter;
 extern class InternationalFormatter extends DefaultFormatter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#InternationalFormatter(java.text.Format) */
-	@:overload(function (format:Format):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (format:Format):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#InternationalFormatter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#getActions() */
-	override private function getActions():NativeArray<Action>;
+	/*@@@ modifiers=4 */ override private function getActions():NativeArray<Action>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#getFields(int) */
-	public function getFields(offset:Int):NativeArray<Format_Field>;
+	/*@@@ modifiers=1 */ public function getFields(offset:Int):NativeArray<Format_Field>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#getFormat() */
-	public function getFormat():Format;
+	/*@@@ modifiers=1 */ public function getFormat():Format;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#getMaximum() */
-	public function getMaximum():Comparable<Dynamic>;
+	/*@@@ modifiers=1 */ public function getMaximum():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#getMinimum() */
-	public function getMinimum():Comparable<Dynamic>;
+	/*@@@ modifiers=1 */ public function getMinimum():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#install(javax.swing.JFormattedTextField) */
-	override public function install(ftf:JFormattedTextField):Void;
+	/*@@@ modifiers=1 */ override public function install(ftf:JFormattedTextField):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#setFormat(java.text.Format) */
-	public function setFormat(format:Format):Void;
+	/*@@@ modifiers=1 */ public function setFormat(format:Format):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#setMaximum(java.lang.Comparable) */
-	public function setMaximum(max:Comparable<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function setMaximum(max:Comparable<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#setMinimum(java.lang.Comparable) */
-	public function setMinimum(minimum:Comparable<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function setMinimum(minimum:Comparable<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#stringToValue(java.lang.String) */
-	override public function stringToValue(text:String):Dynamic;
+	/*@@@ modifiers=1 */ override public function stringToValue(text:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/InternationalFormatter.html#valueToString(java.lang.Object) */
-	override public function valueToString(value:Dynamic):String;
+	/*@@@ modifiers=1 */ override public function valueToString(value:Dynamic):String;
 
 }
 

@@ -1,6 +1,5 @@
 package java.awt;
 
-import java.awt.Font;
 import java.awt.Menu;
 import java.awt.MenuComponent;
 import java.awt.MenuContainer;
@@ -15,51 +14,48 @@ import javax.accessibility.AccessibleContext;
 extern class MenuBar extends MenuComponent, implements MenuContainer, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#MenuBar() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#add(java.awt.Menu) */
-	public function add(m:Menu):Menu;
+	/*@@@ modifiers=1 */ public function add(m:Menu):Menu;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#addNotify() */
-	public function addNotify():Void;
+	/*@@@ modifiers=1 */ public function addNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#countMenus() */
-	public function countMenus():Int;
+	/*@@@ modifiers=1 */ public function countMenus():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#deleteShortcut(java.awt.MenuShortcut) */
-	public function deleteShortcut(s:MenuShortcut):Void;
+	/*@@@ modifiers=1 */ public function deleteShortcut(s:MenuShortcut):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#getFont() */
-	public function getFont():Font;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#getHelpMenu() */
-	public function getHelpMenu():Menu;
+	/*@@@ modifiers=1 */ public function getHelpMenu():Menu;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#getMenu(int) */
-	public function getMenu(i:Int):Menu;
+	/*@@@ modifiers=1 */ public function getMenu(i:Int):Menu;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#getMenuCount() */
-	public function getMenuCount():Int;
+	/*@@@ modifiers=1 */ public function getMenuCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#getShortcutMenuItem(java.awt.MenuShortcut) */
-	public function getShortcutMenuItem(s:MenuShortcut):MenuItem;
+	/*@@@ modifiers=1 */ public function getShortcutMenuItem(s:MenuShortcut):MenuItem;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#remove(int) */
-	@:overload(function (index:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#remove(java.awt.MenuComponent) */
-	public function remove(m:MenuComponent):Void;
+	/*@@@ modifiers=1 */ public function remove(m:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#removeNotify() */
-	override public function removeNotify():Void;
+	/*@@@ modifiers=1 */ override public function removeNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#setHelpMenu(java.awt.Menu) */
-	public function setHelpMenu(m:Menu):Void;
+	/*@@@ modifiers=1 */ public function setHelpMenu(m:Menu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuBar.html#shortcuts() */
-	public function shortcuts():Enumeration<MenuShortcut>;
+	/*@@@ modifiers=33 */ public function shortcuts():Enumeration<MenuShortcut>;
 
 }
 

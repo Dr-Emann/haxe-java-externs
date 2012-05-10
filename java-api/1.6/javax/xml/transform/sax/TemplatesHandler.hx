@@ -8,13 +8,13 @@ import org.xml.sax.ContentHandler;
 extern interface TemplatesHandler implements ContentHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TemplatesHandler.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TemplatesHandler.html#getTemplates() */
-	public function getTemplates():Templates;
+	/*@@@ modifiers=1025 */ public function getTemplates():Templates;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemID:String):Void;
+	/*@@@ modifiers=1025 */ public function setSystemId(systemID:String):Void;
 
 }
 

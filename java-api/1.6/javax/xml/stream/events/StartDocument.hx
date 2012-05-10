@@ -7,22 +7,22 @@ import javax.xml.stream.events.XMLEvent;
 extern interface StartDocument implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartDocument.html#encodingSet() */
-	public function encodingSet():Bool;
+	/*@@@ modifiers=1025 */ public function encodingSet():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartDocument.html#getCharacterEncodingScheme() */
-	public function getCharacterEncodingScheme():String;
+	/*@@@ modifiers=1025 */ public function getCharacterEncodingScheme():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartDocument.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1025 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartDocument.html#getVersion() */
-	public function getVersion():String;
+	/*@@@ modifiers=1025 */ public function getVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartDocument.html#isStandalone() */
-	public function isStandalone():Bool;
+	/*@@@ modifiers=1025 */ public function isStandalone():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartDocument.html#standaloneSet() */
-	public function standaloneSet():Bool;
+	/*@@@ modifiers=1025 */ public function standaloneSet():Bool;
 
 }
 

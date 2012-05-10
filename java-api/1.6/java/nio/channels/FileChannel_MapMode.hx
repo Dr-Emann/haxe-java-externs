@@ -8,7 +8,7 @@ extern class FileChannel_MapMode extends Object
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/FileChannel.MapMode.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

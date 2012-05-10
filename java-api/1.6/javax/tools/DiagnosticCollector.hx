@@ -10,13 +10,13 @@ import javax.tools.DiagnosticListener;
 extern class DiagnosticCollector<S : (Dynamic)> extends Object, implements DiagnosticListener<S>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/DiagnosticCollector.html#DiagnosticCollector() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/DiagnosticCollector.html#getDiagnostics() */
-	public function getDiagnostics():List<Diagnostic<S>>;
+	/*@@@ modifiers=1 */ public function getDiagnostics():List<Diagnostic<S>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic) */
-	public function report(diagnostic:Diagnostic<S>):Void;
+	/*@@@ modifiers=1 */ public function report(diagnostic:Diagnostic<S>):Void;
 
 }
 

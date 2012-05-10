@@ -11,7 +11,7 @@ extern class MetalComboBoxEditor extends BasicComboBoxEditor
 	private static var editorBorderInsets:Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxEditor.html#MetalComboBoxEditor() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

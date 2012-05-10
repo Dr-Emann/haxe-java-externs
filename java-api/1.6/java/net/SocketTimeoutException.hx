@@ -7,9 +7,9 @@ import java.io.InterruptedIOException;
 extern class SocketTimeoutException extends InterruptedIOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketTimeoutException.html#SocketTimeoutException(java.lang.String) */
-	@:overload(function (msg:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (msg:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketTimeoutException.html#SocketTimeoutException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

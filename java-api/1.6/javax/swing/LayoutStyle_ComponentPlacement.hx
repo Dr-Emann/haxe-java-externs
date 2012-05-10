@@ -17,10 +17,10 @@ extern class LayoutStyle_ComponentPlacement extends Enum<LayoutStyle_ComponentPl
 	public static var INDENT:LayoutStyle_ComponentPlacement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/LayoutStyle.ComponentPlacement.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):LayoutStyle_ComponentPlacement;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):LayoutStyle_ComponentPlacement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/LayoutStyle.ComponentPlacement.html#values() */
-	static public function values():NativeArray<LayoutStyle_ComponentPlacement>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<LayoutStyle_ComponentPlacement>;
 
 }
 

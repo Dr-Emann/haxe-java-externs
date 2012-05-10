@@ -8,18 +8,18 @@ import java.lang.Number;
 extern interface PathIterator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/PathIterator.html#currentSegment(double[]) */
-	@:overload(function (coords:NativeArray<StdFloat>):Int {})
+	/*@@@ modifiers=1025 */ @:overload(function (coords:NativeArray<StdFloat>):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/PathIterator.html#currentSegment(float[]) */
-	public function currentSegment(coords:NativeArray<StdFloat>):Int;
+	/*@@@ modifiers=1025 */ public function currentSegment(coords:NativeArray<Single>):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/PathIterator.html#getWindingRule() */
-	public function getWindingRule():Int;
+	/*@@@ modifiers=1025 */ public function getWindingRule():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/PathIterator.html#isDone() */
-	public function isDone():Bool;
+	/*@@@ modifiers=1025 */ public function isDone():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/PathIterator.html#next() */
-	public function next():Void;
+	/*@@@ modifiers=1025 */ public function next():Void;
 
 }
 

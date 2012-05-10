@@ -18,38 +18,38 @@ import org.w3c.dom.Node;
 extern class JAXBContext extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#JAXBContext() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#createBinder(java.lang.Class) */
-	@:overload(function <T>(domType:Class<T>):Binder<T> {})
+	/*@@@ modifiers=1 */ @:overload(function <T>(domType:Class<T>):Binder<T> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#createBinder() */
-	public function createBinder():Binder<Node>;
+	/*@@@ modifiers=1 */ public function createBinder():Binder<Node>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#createJAXBIntrospector() */
-	public function createJAXBIntrospector():JAXBIntrospector;
+	/*@@@ modifiers=1 */ public function createJAXBIntrospector():JAXBIntrospector;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#createMarshaller() */
-	public function createMarshaller():Marshaller;
+	/*@@@ modifiers=1025 */ public function createMarshaller():Marshaller;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#createUnmarshaller() */
-	public function createUnmarshaller():Unmarshaller;
+	/*@@@ modifiers=1025 */ public function createUnmarshaller():Unmarshaller;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#createValidator() */
-	public function createValidator():Validator;
+	/*@@@ modifiers=1025 */ public function createValidator():Validator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#generateSchema(javax.xml.bind.SchemaOutputResolver) */
-	public function generateSchema(outputResolver:SchemaOutputResolver):Void;
+	/*@@@ modifiers=1 */ public function generateSchema(outputResolver:SchemaOutputResolver):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#newInstance(java.lang.String, java.lang.ClassLoader, java.util.Map) */
-	@:overload(function (contextPath:String, classLoader:ClassLoader, properties:Map<String, Dynamic>):JAXBContext {})
+	/*@@@ modifiers=9 */ @:overload(function (contextPath:String, classLoader:ClassLoader, properties:Map<String, Dynamic>):JAXBContext {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#newInstance(java.lang.Class[], java.util.Map) */
-	@:overload(function (classesToBeBound:NativeArray<Class<Dynamic>>, properties:Map<String, Dynamic>):JAXBContext {})
+	/*@@@ modifiers=9 */ @:overload(function (classesToBeBound:NativeArray<Class<Dynamic>>, properties:Map<String, Dynamic>):JAXBContext {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#newInstance(java.lang.String, java.lang.ClassLoader) */
-	@:overload(function (contextPath:String, classLoader:ClassLoader):JAXBContext {})
+	/*@@@ modifiers=9 */ @:overload(function (contextPath:String, classLoader:ClassLoader):JAXBContext {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#newInstance(java.lang.Class[]) */
-	@:overload(function (classesToBeBound:NativeArray<Class<Dynamic>>):JAXBContext {})
+	/*@@@ modifiers=137 */ @:overload(function (classesToBeBound:NativeArray<Class<Dynamic>>):JAXBContext {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html#newInstance(java.lang.String) */
-	static public function newInstance(contextPath:String):JAXBContext;
+	/*@@@ modifiers=9 */ static public function newInstance(contextPath:String):JAXBContext;
 
 }
 

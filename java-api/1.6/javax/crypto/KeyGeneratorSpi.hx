@@ -10,17 +10,17 @@ import javax.crypto.SecretKey;
 extern class KeyGeneratorSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/KeyGeneratorSpi.html#KeyGeneratorSpi() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/KeyGeneratorSpi.html#engineGenerateKey() */
-	private function engineGenerateKey():SecretKey;
+	/*@@@ modifiers=1028 */ private function engineGenerateKey():SecretKey;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/KeyGeneratorSpi.html#engineInit(int, java.security.SecureRandom) */
-	@:overload(function (arg0:Int, arg1:SecureRandom):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (arg0:Int, arg1:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/KeyGeneratorSpi.html#engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) */
-	@:overload(function (arg0:AlgorithmParameterSpec, arg1:SecureRandom):Void {})
+	/*@@@ modifiers=1028 */ @:overload(function (arg0:AlgorithmParameterSpec, arg1:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/KeyGeneratorSpi.html#engineInit(java.security.SecureRandom) */
-	private function engineInit(arg0:SecureRandom):Void;
+	/*@@@ modifiers=1028 */ private function engineInit(arg0:SecureRandom):Void;
 
 }
 

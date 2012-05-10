@@ -8,18 +8,18 @@ import javax.imageio.spi.IIOServiceProvider;
 extern class ImageTranscoderSpi extends IIOServiceProvider
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/ImageTranscoderSpi.html#ImageTranscoderSpi() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=4 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/ImageTranscoderSpi.html#ImageTranscoderSpi(java.lang.String, java.lang.String) */
-	public function new(vendorName:String, version:String):Void;
+	/*@@@ modifiers=1 */ public function new(vendorName:String, version:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance() */
-	public function createTranscoderInstance():ImageTranscoder;
+	/*@@@ modifiers=1025 */ public function createTranscoderInstance():ImageTranscoder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/ImageTranscoderSpi.html#getReaderServiceProviderName() */
-	public function getReaderServiceProviderName():String;
+	/*@@@ modifiers=1025 */ public function getReaderServiceProviderName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/spi/ImageTranscoderSpi.html#getWriterServiceProviderName() */
-	public function getWriterServiceProviderName():String;
+	/*@@@ modifiers=1025 */ public function getWriterServiceProviderName():String;
 
 }
 

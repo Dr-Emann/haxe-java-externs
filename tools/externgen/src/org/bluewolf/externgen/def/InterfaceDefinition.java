@@ -18,8 +18,9 @@ class InterfaceDefinition extends TypeDefinition {
     /**
      * {@inheritDoc}
      */
-    protected InterfaceDefinition(Class<?> classObject, JavaClass classDocs) {
-	super(classObject, classDocs);
+    protected InterfaceDefinition(Class<?> classObject, JavaClass classDocs,
+	    String docsBaseUrl) {
+	super(classObject, classDocs, docsBaseUrl);
     }
 
     /**
@@ -32,6 +33,7 @@ class InterfaceDefinition extends TypeDefinition {
 	// Name, type variables and extended interfaces.
 	//
 
+	indentWriter.println(String.format("/** @REF %s */", getComment()));
 	indentWriter.printf("@:native(\"%s.%s\")", classObject.getPackage()
 		.getName(), Utils.getNativeName(classObject));
 
@@ -74,16 +76,15 @@ class InterfaceDefinition extends TypeDefinition {
 	    while (numOverloads-- > 0) {
 		Method method = methods.remove(0);
 
-		if (numOverloads > 0) {
-		    indentWriter.printf("@:overload(function %s {})",
-			    convertMethod(method));
-		} else {
-		    indentWriter.printf("function %s;", convertMethod(method));
-		    indentWriter.println();
-		}
+		indentWriter.println(String.format("/** @REF %s */",
+			getComment(method)));
 
-		indentWriter.println();
+		indentWriter.println(convertMethod(method, false,
+			numOverloads > 0));
 	    }
+
+	    indentWriter.println();
+
 	}
 
 	// Definition complete.

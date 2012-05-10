@@ -9,25 +9,25 @@ import org.w3c.dom.TypeInfo;
 extern interface Attr implements Node
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#getOwnerElement() */
-	public function getOwnerElement():Element;
+	/*@@@ modifiers=1025 */ public function getOwnerElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#getSchemaTypeInfo() */
-	public function getSchemaTypeInfo():TypeInfo;
+	/*@@@ modifiers=1025 */ public function getSchemaTypeInfo():TypeInfo;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#getSpecified() */
-	public function getSpecified():Bool;
+	/*@@@ modifiers=1025 */ public function getSpecified():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#getValue() */
-	public function getValue():String;
+	/*@@@ modifiers=1025 */ public function getValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#isId() */
-	public function isId():Bool;
+	/*@@@ modifiers=1025 */ public function isId():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html#setValue(java.lang.String) */
-	public function setValue(value:String):Void;
+	/*@@@ modifiers=1025 */ public function setValue(value:String):Void;
 
 }
 

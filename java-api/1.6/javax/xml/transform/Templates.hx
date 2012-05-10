@@ -8,10 +8,10 @@ import javax.xml.transform.Transformer;
 extern interface Templates
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Templates.html#getOutputProperties() */
-	public function getOutputProperties():Properties;
+	/*@@@ modifiers=1025 */ public function getOutputProperties():Properties;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Templates.html#newTransformer() */
-	public function newTransformer():Transformer;
+	/*@@@ modifiers=1025 */ public function newTransformer():Transformer;
 
 }
 

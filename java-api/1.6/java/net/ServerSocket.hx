@@ -12,72 +12,72 @@ import java.nio.channels.ServerSocketChannel;
 extern class ServerSocket extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#ServerSocket() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#ServerSocket(int) */
-	@:overload(function (impl:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (impl:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#ServerSocket(int, int) */
-	@:overload(function (port:Int, backlog:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (port:Int, backlog:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#ServerSocket(int, int, java.net.InetAddress) */
-	public function new(port:Int, backlog:Int, bindAddr:InetAddress):Void;
+	/*@@@ modifiers=1 */ public function new(port:Int, backlog:Int, bindAddr:InetAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#accept() */
-	public function accept():Socket;
+	/*@@@ modifiers=1 */ public function accept():Socket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#bind(java.net.SocketAddress, int) */
-	@:overload(function (endpoint:SocketAddress, backlog:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (endpoint:SocketAddress, backlog:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#bind(java.net.SocketAddress) */
-	public function bind(endpoint:SocketAddress):Void;
+	/*@@@ modifiers=1 */ public function bind(endpoint:SocketAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#close() */
-	public function close():Void;
+	/*@@@ modifiers=1 */ public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getChannel() */
-	public function getChannel():ServerSocketChannel;
+	/*@@@ modifiers=1 */ public function getChannel():ServerSocketChannel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getInetAddress() */
-	public function getInetAddress():InetAddress;
+	/*@@@ modifiers=1 */ public function getInetAddress():InetAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getLocalPort() */
-	public function getLocalPort():Int;
+	/*@@@ modifiers=1 */ public function getLocalPort():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getLocalSocketAddress() */
-	public function getLocalSocketAddress():SocketAddress;
+	/*@@@ modifiers=1 */ public function getLocalSocketAddress():SocketAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getReceiveBufferSize() */
-	public function getReceiveBufferSize():Int;
+	/*@@@ modifiers=33 */ public function getReceiveBufferSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getReuseAddress() */
-	public function getReuseAddress():Bool;
+	/*@@@ modifiers=1 */ public function getReuseAddress():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#getSoTimeout() */
-	public function getSoTimeout():Int;
+	/*@@@ modifiers=33 */ public function getSoTimeout():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#implAccept(java.net.Socket) */
-	private function implAccept(s:Socket):Void;
+	/*@@@ modifiers=20 */ private function implAccept(s:Socket):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#isBound() */
-	public function isBound():Bool;
+	/*@@@ modifiers=1 */ public function isBound():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#isClosed() */
-	public function isClosed():Bool;
+	/*@@@ modifiers=1 */ public function isClosed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#setPerformancePreferences(int, int, int) */
-	public function setPerformancePreferences(connectionTime:Int, latency:Int, bandwidth:Int):Void;
+	/*@@@ modifiers=1 */ public function setPerformancePreferences(connectionTime:Int, latency:Int, bandwidth:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#setReceiveBufferSize(int) */
-	public function setReceiveBufferSize(size:Int):Void;
+	/*@@@ modifiers=33 */ public function setReceiveBufferSize(size:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#setReuseAddress(boolean) */
-	public function setReuseAddress(on:Bool):Void;
+	/*@@@ modifiers=1 */ public function setReuseAddress(on:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#setSoTimeout(int) */
-	public function setSoTimeout(timeout:Int):Void;
+	/*@@@ modifiers=33 */ public function setSoTimeout(timeout:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory) */
-	static public function setSocketFactory(fac:SocketImplFactory):Void;
+	/*@@@ modifiers=41 */ static public function setSocketFactory(fac:SocketImplFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/ServerSocket.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

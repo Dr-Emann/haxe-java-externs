@@ -25,62 +25,62 @@ extern class ImageIcon extends Object, implements Icon, implements Serializable,
 	private static var tracker:MediaTracker;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(byte[]) */
-	@:overload(function (filename:NativeArray<Int8>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:NativeArray<Int8>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(java.lang.String, java.lang.String) */
-	@:overload(function (filename:String, description:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:String, description:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(java.lang.String) */
-	@:overload(function (filename:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(java.net.URL, java.lang.String) */
-	@:overload(function (filename:URL, description:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:URL, description:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(java.net.URL) */
-	@:overload(function (filename:URL):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:URL):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(java.awt.Image, java.lang.String) */
-	@:overload(function (filename:Image, description:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:Image, description:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(java.awt.Image) */
-	@:overload(function (filename:Image):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:Image):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon(byte[], java.lang.String) */
-	@:overload(function (filename:NativeArray<Int8>, description:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (filename:NativeArray<Int8>, description:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#ImageIcon() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getAccessibleContext() */
-	public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=1 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getIconHeight() */
-	public function getIconHeight():Int;
+	/*@@@ modifiers=1 */ public function getIconHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getIconWidth() */
-	public function getIconWidth():Int;
+	/*@@@ modifiers=1 */ public function getIconWidth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getImage() */
-	public function getImage():Image;
+	/*@@@ modifiers=1 */ public function getImage():Image;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getImageLoadStatus() */
-	public function getImageLoadStatus():Int;
+	/*@@@ modifiers=1 */ public function getImageLoadStatus():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#getImageObserver() */
-	public function getImageObserver():ImageObserver;
+	/*@@@ modifiers=1 */ public function getImageObserver():ImageObserver;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#loadImage(java.awt.Image) */
-	private function loadImage(image:Image):Void;
+	/*@@@ modifiers=4 */ private function loadImage(image:Image):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#paintIcon(java.awt.Component, java.awt.Graphics, int, int) */
-	public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
+	/*@@@ modifiers=33 */ public function paintIcon(c:Component, g:Graphics, x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#setDescription(java.lang.String) */
-	public function setDescription(description:String):Void;
+	/*@@@ modifiers=1 */ public function setDescription(description:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#setImage(java.awt.Image) */
-	public function setImage(image:Image):Void;
+	/*@@@ modifiers=1 */ public function setImage(image:Image):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#setImageObserver(java.awt.image.ImageObserver) */
-	public function setImageObserver(observer:ImageObserver):Void;
+	/*@@@ modifiers=1 */ public function setImageObserver(observer:ImageObserver):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ImageIcon.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

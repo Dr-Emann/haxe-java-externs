@@ -13,13 +13,13 @@ import java.util.Collection;
 extern class CertStoreSpi extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStoreSpi.html#CertStoreSpi(java.security.cert.CertStoreParameters) */
-	public function new(params:CertStoreParameters):Void;
+	/*@@@ modifiers=1 */ public function new(params:CertStoreParameters):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector) */
-	public function engineGetCRLs(selector:CRLSelector):Collection<CRL>;
+	/*@@@ modifiers=1025 */ public function engineGetCRLs(selector:CRLSelector):Collection<CRL>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertStoreSpi.html#engineGetCertificates(java.security.cert.CertSelector) */
-	public function engineGetCertificates(selector:CertSelector):Collection<Certificate>;
+	/*@@@ modifiers=1025 */ public function engineGetCertificates(selector:CertSelector):Collection<Certificate>;
 
 }
 

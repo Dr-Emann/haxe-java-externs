@@ -31,58 +31,58 @@ extern class Monitor extends NotificationBroadcasterSupport, implements MonitorM
 	private var dbgTag:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#Monitor() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#addObservedObject(javax.management.ObjectName) */
-	public function addObservedObject(object:ObjectName):Void;
+	/*@@@ modifiers=33 */ public function addObservedObject(object:ObjectName):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#containsObservedObject(javax.management.ObjectName) */
-	public function containsObservedObject(object:ObjectName):Bool;
+	/*@@@ modifiers=33 */ public function containsObservedObject(object:ObjectName):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#getGranularityPeriod() */
-	public function getGranularityPeriod():haxe.Int64;
+	/*@@@ modifiers=33 */ public function getGranularityPeriod():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#getObservedAttribute() */
-	public function getObservedAttribute():String;
+	/*@@@ modifiers=33 */ public function getObservedAttribute():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#getObservedObject() */
-	public function getObservedObject():ObjectName;
+	/*@@@ modifiers=33 */ public function getObservedObject():ObjectName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#getObservedObjects() */
-	public function getObservedObjects():NativeArray<ObjectName>;
+	/*@@@ modifiers=33 */ public function getObservedObjects():NativeArray<ObjectName>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#isActive() */
-	public function isActive():Bool;
+	/*@@@ modifiers=33 */ public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#postDeregister() */
-	public function postDeregister():Void;
+	/*@@@ modifiers=1 */ public function postDeregister():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#postRegister(java.lang.Boolean) */
-	public function postRegister(registrationDone:Boolean):Void;
+	/*@@@ modifiers=1 */ public function postRegister(registrationDone:Boolean):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#preDeregister() */
-	public function preDeregister():Void;
+	/*@@@ modifiers=1 */ public function preDeregister():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#preRegister(javax.management.MBeanServer, javax.management.ObjectName) */
-	public function preRegister(server:MBeanServer, name:ObjectName):ObjectName;
+	/*@@@ modifiers=1 */ public function preRegister(server:MBeanServer, name:ObjectName):ObjectName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#removeObservedObject(javax.management.ObjectName) */
-	public function removeObservedObject(object:ObjectName):Void;
+	/*@@@ modifiers=33 */ public function removeObservedObject(object:ObjectName):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#setGranularityPeriod(long) */
-	public function setGranularityPeriod(period:haxe.Int64):Void;
+	/*@@@ modifiers=33 */ public function setGranularityPeriod(period:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#setObservedAttribute(java.lang.String) */
-	public function setObservedAttribute(attribute:String):Void;
+	/*@@@ modifiers=1 */ public function setObservedAttribute(attribute:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#setObservedObject(javax.management.ObjectName) */
-	public function setObservedObject(object:ObjectName):Void;
+	/*@@@ modifiers=33 */ public function setObservedObject(object:ObjectName):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#start() */
-	public function start():Void;
+	/*@@@ modifiers=1025 */ public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/Monitor.html#stop() */
-	public function stop():Void;
+	/*@@@ modifiers=1025 */ public function stop():Void;
 
 }
 

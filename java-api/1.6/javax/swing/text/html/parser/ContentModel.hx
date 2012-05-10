@@ -19,27 +19,27 @@ extern class ContentModel extends Object, implements Serializable
 	public var next:ContentModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#ContentModel(javax.swing.text.html.parser.Element) */
-	@:overload(function (content:Element):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (content:Element):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#ContentModel(int, javax.swing.text.html.parser.ContentModel) */
-	@:overload(function (type:Int, content:ContentModel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (type:Int, content:ContentModel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#ContentModel(int, java.lang.Object, javax.swing.text.html.parser.ContentModel) */
-	@:overload(function (type:Int, content:Dynamic, next:ContentModel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (type:Int, content:Dynamic, next:ContentModel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#ContentModel() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#empty() */
-	public function empty():Bool;
+	/*@@@ modifiers=1 */ public function empty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#first(java.lang.Object) */
-	@:overload(function (token:Dynamic):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (token:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#first() */
-	public function first():Element;
+	/*@@@ modifiers=1 */ public function first():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#getElements(java.util.Vector) */
-	public function getElements(elemVec:Vector<Element>):Void;
+	/*@@@ modifiers=1 */ public function getElements(elemVec:Vector<Element>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/ContentModel.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

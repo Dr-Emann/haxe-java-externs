@@ -8,7 +8,7 @@ import javax.transaction.xa.XAResource;
 extern interface XAConnection implements PooledConnection
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/XAConnection.html#getXAResource() */
-	public function getXAResource():XAResource;
+	/*@@@ modifiers=1025 */ public function getXAResource():XAResource;
 
 }
 

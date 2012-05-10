@@ -11,16 +11,13 @@ import javax.print.attribute.PrintJobAttributeSet;
 extern class HashPrintJobAttributeSet extends HashAttributeSet, implements PrintJobAttributeSet, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#HashPrintJobAttributeSet() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttribute) */
-	@:overload(function (attribute:PrintJobAttribute):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attribute:PrintJobAttribute):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttribute[]) */
-	@:overload(function (attribute:NativeArray<PrintJobAttribute>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attribute:NativeArray<PrintJobAttribute>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttributeSet) */
-	public function new(attribute:PrintJobAttributeSet):Void;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ public function new(attribute:PrintJobAttributeSet):Void;
 
 }
 

@@ -17,10 +17,10 @@ extern class Dialog_ModalExclusionType extends Enum<Dialog_ModalExclusionType>
 	public static var TOOLKIT_EXCLUDE:Dialog_ModalExclusionType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dialog.ModalExclusionType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Dialog_ModalExclusionType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Dialog_ModalExclusionType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dialog.ModalExclusionType.html#values() */
-	static public function values():NativeArray<Dialog_ModalExclusionType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Dialog_ModalExclusionType>;
 
 }
 

@@ -7,9 +7,9 @@ import java.io.IOException;
 extern class UnknownServiceException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/UnknownServiceException.html#UnknownServiceException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/UnknownServiceException.html#UnknownServiceException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

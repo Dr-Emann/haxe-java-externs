@@ -22,46 +22,46 @@ extern class MetalToolBarUI extends BasicToolBarUI
 	private var rolloverListener:PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#MetalToolBarUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#createContainerListener() */
-	private function createContainerListener():ContainerListener;
+	/*@@@ modifiers=4 */ private function createContainerListener():ContainerListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#createDockingListener() */
-	override private function createDockingListener():MouseInputListener;
+	/*@@@ modifiers=4 */ override private function createDockingListener():MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#createNonRolloverBorder() */
-	override private function createNonRolloverBorder():Border;
+	/*@@@ modifiers=4 */ override private function createNonRolloverBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#createRolloverBorder() */
-	override private function createRolloverBorder():Border;
+	/*@@@ modifiers=4 */ override private function createRolloverBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#createRolloverListener() */
-	private function createRolloverListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createRolloverListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#installListeners() */
-	override private function installListeners():Void;
+	/*@@@ modifiers=4 */ override private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#setBorderToNonRollover(java.awt.Component) */
-	override private function setBorderToNonRollover(c:Component):Void;
+	/*@@@ modifiers=4 */ override private function setBorderToNonRollover(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#setDragOffset(java.awt.Point) */
-	private function setDragOffset(p:Point):Void;
+	/*@@@ modifiers=4 */ private function setDragOffset(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#uninstallListeners() */
-	override private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ override private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToolBarUI.html#update(java.awt.Graphics, javax.swing.JComponent) */
-	override public function update(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function update(g:Graphics, c:JComponent):Void;
 
 }
 

@@ -6,7 +6,6 @@ import java.lang.Object;
 import java.math.BigInteger;
 import java.security.cert.X509Extension;
 import java.util.Date;
-import java.util.Set;
 import javax.security.auth.x500.X500Principal;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html */
@@ -14,34 +13,31 @@ import javax.security.auth.x500.X500Principal;
 extern class X509CRLEntry extends Object, implements X509Extension
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#X509CRLEntry() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#equals(java.lang.Object) */
-	override public function equals(other:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(other:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#getCertificateIssuer() */
-	public function getCertificateIssuer():X500Principal;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#getCriticalExtensionOIDs() */
-	public function getCriticalExtensionOIDs():Set<String>;
+	/*@@@ modifiers=1 */ public function getCertificateIssuer():X500Principal;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#getEncoded() */
-	public function getEncoded():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getEncoded():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#getRevocationDate() */
-	public function getRevocationDate():Date;
+	/*@@@ modifiers=1025 */ public function getRevocationDate():Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#getSerialNumber() */
-	public function getSerialNumber():BigInteger;
+	/*@@@ modifiers=1025 */ public function getSerialNumber():BigInteger;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#hasExtensions() */
-	public function hasExtensions():Bool;
+	/*@@@ modifiers=1025 */ public function hasExtensions():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRLEntry.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1025 */ override public function toString():String;
 
 }
 

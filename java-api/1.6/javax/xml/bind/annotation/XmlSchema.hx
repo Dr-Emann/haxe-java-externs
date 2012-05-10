@@ -10,19 +10,19 @@ import javax.xml.bind.annotation.XmlNsForm;
 extern interface XmlSchema implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlSchema.html#attributeFormDefault() */
-	public function attributeFormDefault():XmlNsForm;
+	/*@@@ modifiers=1025 */ public function attributeFormDefault():XmlNsForm;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlSchema.html#elementFormDefault() */
-	public function elementFormDefault():XmlNsForm;
+	/*@@@ modifiers=1025 */ public function elementFormDefault():XmlNsForm;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlSchema.html#location() */
-	public function location():String;
+	/*@@@ modifiers=1025 */ public function location():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlSchema.html#namespace() */
-	public function namespace():String;
+	/*@@@ modifiers=1025 */ public function namespace():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlSchema.html#xmlns() */
-	public function xmlns():NativeArray<XmlNs>;
+	/*@@@ modifiers=1025 */ public function xmlns():NativeArray<XmlNs>;
 
 }
 

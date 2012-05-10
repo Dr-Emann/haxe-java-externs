@@ -8,20 +8,20 @@ import java.awt.event.ComponentEvent;
 extern class FocusEvent extends ComponentEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusEvent.html#FocusEvent(java.awt.Component, int, boolean, java.awt.Component) */
-	@:overload(function (source:Component, id:Int, temporary:Bool, opposite:Component):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Component, id:Int, temporary:Bool, opposite:Component):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusEvent.html#FocusEvent(java.awt.Component, int, boolean) */
-	@:overload(function (source:Component, id:Int, temporary:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (source:Component, id:Int, temporary:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusEvent.html#FocusEvent(java.awt.Component, int) */
-	public function new(source:Component, id:Int):Void;
+	/*@@@ modifiers=1 */ public function new(source:Component, id:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusEvent.html#getOppositeComponent() */
-	public function getOppositeComponent():Component;
+	/*@@@ modifiers=1 */ public function getOppositeComponent():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusEvent.html#isTemporary() */
-	public function isTemporary():Bool;
+	/*@@@ modifiers=1 */ public function isTemporary():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/FocusEvent.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 }
 

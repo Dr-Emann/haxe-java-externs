@@ -8,7 +8,7 @@ import java.util.EventListener;
 extern interface VetoableChangeListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent) */
-	public function vetoableChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function vetoableChange(evt:PropertyChangeEvent):Void;
 
 }
 

@@ -8,13 +8,13 @@ import javax.swing.event.ListDataEvent;
 extern interface ListDataListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent) */
-	public function contentsChanged(e:ListDataEvent):Void;
+	/*@@@ modifiers=1025 */ public function contentsChanged(e:ListDataEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent) */
-	public function intervalAdded(e:ListDataEvent):Void;
+	/*@@@ modifiers=1025 */ public function intervalAdded(e:ListDataEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent) */
-	public function intervalRemoved(e:ListDataEvent):Void;
+	/*@@@ modifiers=1025 */ public function intervalRemoved(e:ListDataEvent):Void;
 
 }
 

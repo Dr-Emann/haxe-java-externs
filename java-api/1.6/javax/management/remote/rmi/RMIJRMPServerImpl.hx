@@ -13,25 +13,25 @@ import javax.security.auth.Subject;
 extern class RMIJRMPServerImpl extends RMIServerImpl
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#RMIJRMPServerImpl(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory, java.util.Map) */
-	public function new(port:Int, csf:RMIClientSocketFactory, ssf:RMIServerSocketFactory, env:Map<String, Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(port:Int, csf:RMIClientSocketFactory, ssf:RMIServerSocketFactory, env:Map<String, Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#closeClient(javax.management.remote.rmi.RMIConnection) */
-	override private function closeClient(client:RMIConnection):Void;
+	/*@@@ modifiers=4 */ override private function closeClient(client:RMIConnection):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#closeServer() */
-	override private function closeServer():Void;
+	/*@@@ modifiers=4 */ override private function closeServer():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#export() */
-	override private function export():Void;
+	/*@@@ modifiers=4 */ override private function export():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#getProtocol() */
-	override private function getProtocol():String;
+	/*@@@ modifiers=4 */ override private function getProtocol():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#makeClient(java.lang.String, javax.security.auth.Subject) */
-	override private function makeClient(connectionId:String, subject:Subject):RMIConnection;
+	/*@@@ modifiers=4 */ override private function makeClient(connectionId:String, subject:Subject):RMIConnection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIJRMPServerImpl.html#toStub() */
-	override public function toStub():Remote;
+	/*@@@ modifiers=1 */ override public function toStub():Remote;
 
 }
 

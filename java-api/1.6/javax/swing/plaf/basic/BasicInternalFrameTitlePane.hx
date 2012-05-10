@@ -81,70 +81,70 @@ extern class BasicInternalFrameTitlePane extends JComponent
 	private var sizeAction:Action;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#BasicInternalFrameTitlePane(javax.swing.JInternalFrame) */
-	public function new(f:JInternalFrame):Void;
+	/*@@@ modifiers=1 */ public function new(f:JInternalFrame):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#addSubComponents() */
-	private function addSubComponents():Void;
+	/*@@@ modifiers=4 */ private function addSubComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#addSystemMenuItems(javax.swing.JMenu) */
-	private function addSystemMenuItems(systemMenu:JMenu):Void;
+	/*@@@ modifiers=4 */ private function addSystemMenuItems(systemMenu:JMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#assembleSystemMenu() */
-	private function assembleSystemMenu():Void;
+	/*@@@ modifiers=4 */ private function assembleSystemMenu():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#createActions() */
-	private function createActions():Void;
+	/*@@@ modifiers=4 */ private function createActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#createButtons() */
-	private function createButtons():Void;
+	/*@@@ modifiers=4 */ private function createButtons():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#createLayout() */
-	private function createLayout():LayoutManager;
+	/*@@@ modifiers=4 */ private function createLayout():LayoutManager;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#createSystemMenu() */
-	private function createSystemMenu():JMenu;
+	/*@@@ modifiers=4 */ private function createSystemMenu():JMenu;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#createSystemMenuBar() */
-	private function createSystemMenuBar():JMenuBar;
+	/*@@@ modifiers=4 */ private function createSystemMenuBar():JMenuBar;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#enableActions() */
-	private function enableActions():Void;
+	/*@@@ modifiers=4 */ private function enableActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#getTitle(java.lang.String, java.awt.FontMetrics, int) */
-	private function getTitle(text:String, fm:FontMetrics, availTextWidth:Int):String;
+	/*@@@ modifiers=4 */ private function getTitle(text:String, fm:FontMetrics, availTextWidth:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#installTitlePane() */
-	private function installTitlePane():Void;
+	/*@@@ modifiers=4 */ private function installTitlePane():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#paintComponent(java.awt.Graphics) */
-	override public function paintComponent(g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function paintComponent(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#paintTitleBackground(java.awt.Graphics) */
-	private function paintTitleBackground(g:Graphics):Void;
+	/*@@@ modifiers=4 */ private function paintTitleBackground(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#postClosingEvent(javax.swing.JInternalFrame) */
-	private function postClosingEvent(frame:JInternalFrame):Void;
+	/*@@@ modifiers=4 */ private function postClosingEvent(frame:JInternalFrame):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#setButtonIcons() */
-	private function setButtonIcons():Void;
+	/*@@@ modifiers=4 */ private function setButtonIcons():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#showSystemMenu() */
-	private function showSystemMenu():Void;
+	/*@@@ modifiers=4 */ private function showSystemMenu():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 }
 

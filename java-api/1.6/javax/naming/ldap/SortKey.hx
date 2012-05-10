@@ -7,18 +7,18 @@ import java.lang.Object;
 extern class SortKey extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortKey.html#SortKey(java.lang.String) */
-	@:overload(function (attrID:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (attrID:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortKey.html#SortKey(java.lang.String, boolean, java.lang.String) */
-	public function new(attrID:String, ascendingOrder:Bool, matchingRuleID:String):Void;
+	/*@@@ modifiers=1 */ public function new(attrID:String, ascendingOrder:Bool, matchingRuleID:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortKey.html#getAttributeID() */
-	public function getAttributeID():String;
+	/*@@@ modifiers=1 */ public function getAttributeID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortKey.html#getMatchingRuleID() */
-	public function getMatchingRuleID():String;
+	/*@@@ modifiers=1 */ public function getMatchingRuleID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/SortKey.html#isAscending() */
-	public function isAscending():Bool;
+	/*@@@ modifiers=1 */ public function isAscending():Bool;
 
 }
 

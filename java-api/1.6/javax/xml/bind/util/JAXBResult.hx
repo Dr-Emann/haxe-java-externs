@@ -9,12 +9,12 @@ import javax.xml.transform.sax.SAXResult;
 extern class JAXBResult extends SAXResult
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/JAXBResult.html#JAXBResult(javax.xml.bind.JAXBContext) */
-	@:overload(function (context:JAXBContext):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (context:JAXBContext):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/JAXBResult.html#JAXBResult(javax.xml.bind.Unmarshaller) */
-	public function new(context:Unmarshaller):Void;
+	/*@@@ modifiers=1 */ public function new(context:Unmarshaller):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/util/JAXBResult.html#getResult() */
-	public function getResult():Dynamic;
+	/*@@@ modifiers=1 */ public function getResult():Dynamic;
 
 }
 

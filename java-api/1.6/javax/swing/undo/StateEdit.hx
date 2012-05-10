@@ -21,27 +21,27 @@ extern class StateEdit extends AbstractUndoableEdit
 	private var undoRedoName:String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#StateEdit(javax.swing.undo.StateEditable, java.lang.String) */
-	@:overload(function (anObject:StateEditable, name:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (anObject:StateEditable, name:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#StateEdit(javax.swing.undo.StateEditable) */
-	public function new(anObject:StateEditable):Void;
+	/*@@@ modifiers=1 */ public function new(anObject:StateEditable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#end() */
-	public function end():Void;
+	/*@@@ modifiers=1 */ public function end():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#getPresentationName() */
-	override public function getPresentationName():String;
+	/*@@@ modifiers=1 */ override public function getPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#init(javax.swing.undo.StateEditable, java.lang.String) */
-	private function init(anObject:StateEditable, name:String):Void;
+	/*@@@ modifiers=4 */ private function init(anObject:StateEditable, name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#redo() */
-	override public function redo():Void;
+	/*@@@ modifiers=1 */ override public function redo():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#removeRedundantState() */
-	private function removeRedundantState():Void;
+	/*@@@ modifiers=4 */ private function removeRedundantState():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/StateEdit.html#undo.StateEdit.undo() */
-	override public function undo():Void;
+	/*@@@ modifiers=1 */ override public function undo():Void;
 
 }
 

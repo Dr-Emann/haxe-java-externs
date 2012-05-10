@@ -11,38 +11,38 @@ import java.lang.Object;
 extern class Random extends Object, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#Random(long) */
-	@:overload(function (seed:haxe.Int64):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (seed:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#Random() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#next(int) */
-	private function next(bits:Int):Int;
+	/*@@@ modifiers=4 */ private function next(bits:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextBoolean() */
-	public function nextBoolean():Bool;
+	/*@@@ modifiers=1 */ public function nextBoolean():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextBytes(byte[]) */
-	public function nextBytes(bytes:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ public function nextBytes(bytes:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextDouble() */
-	public function nextDouble():StdFloat;
+	/*@@@ modifiers=1 */ public function nextDouble():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextFloat() */
-	public function nextFloat():StdFloat;
+	/*@@@ modifiers=1 */ public function nextFloat():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextGaussian() */
-	public function nextGaussian():StdFloat;
+	/*@@@ modifiers=33 */ public function nextGaussian():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextInt(int) */
-	@:overload(function (n:Int):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (n:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextInt() */
-	public function nextInt():Int;
+	/*@@@ modifiers=1 */ public function nextInt():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#nextLong() */
-	public function nextLong():haxe.Int64;
+	/*@@@ modifiers=1 */ public function nextLong():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Random.html#setSeed(long) */
-	public function setSeed(seed:haxe.Int64):Void;
+	/*@@@ modifiers=33 */ public function setSeed(seed:haxe.Int64):Void;
 
 }
 

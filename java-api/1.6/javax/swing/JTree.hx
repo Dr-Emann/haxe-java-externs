@@ -78,413 +78,413 @@ extern class JTree extends JComponent, implements Scrollable, implements Accessi
 	private var treeModelListener:TreeModelListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree(javax.swing.tree.TreeModel) */
-	@:overload(function (value:TreeModel):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:TreeModel):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree(java.lang.Object[]) */
-	@:overload(function (value:NativeArray<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:NativeArray<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree(java.util.Vector) */
-	@:overload(function (value:Vector<Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:Vector<Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree(java.util.Hashtable) */
-	@:overload(function (value:Hashtable<Dynamic, Dynamic>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:Hashtable<Dynamic, Dynamic>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree(javax.swing.tree.TreeNode) */
-	@:overload(function (value:TreeNode):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (value:TreeNode):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#JTree(javax.swing.tree.TreeNode, boolean) */
-	public function new(root:TreeNode, asksAllowsChildren:Bool):Void;
+	/*@@@ modifiers=1 */ public function new(root:TreeNode, asksAllowsChildren:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addSelectionInterval(int, int) */
-	public function addSelectionInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1 */ public function addSelectionInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addSelectionPath(javax.swing.tree.TreePath) */
-	public function addSelectionPath(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function addSelectionPath(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addSelectionPaths(javax.swing.tree.TreePath[]) */
-	public function addSelectionPaths(paths:NativeArray<TreePath>):Void;
+	/*@@@ modifiers=1 */ public function addSelectionPaths(paths:NativeArray<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addSelectionRow(int) */
-	public function addSelectionRow(row:Int):Void;
+	/*@@@ modifiers=1 */ public function addSelectionRow(row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addSelectionRows(int[]) */
-	public function addSelectionRows(rows:NativeArray<Int>):Void;
+	/*@@@ modifiers=1 */ public function addSelectionRows(rows:NativeArray<Int>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addTreeExpansionListener(javax.swing.event.TreeExpansionListener) */
-	public function addTreeExpansionListener(tel:TreeExpansionListener):Void;
+	/*@@@ modifiers=1 */ public function addTreeExpansionListener(tel:TreeExpansionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener) */
-	public function addTreeSelectionListener(tsl:TreeSelectionListener):Void;
+	/*@@@ modifiers=1 */ public function addTreeSelectionListener(tsl:TreeSelectionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#addTreeWillExpandListener(javax.swing.event.TreeWillExpandListener) */
-	public function addTreeWillExpandListener(tel:TreeWillExpandListener):Void;
+	/*@@@ modifiers=1 */ public function addTreeWillExpandListener(tel:TreeWillExpandListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#cancelEditing() */
-	public function cancelEditing():Void;
+	/*@@@ modifiers=1 */ public function cancelEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#clearSelection() */
-	public function clearSelection():Void;
+	/*@@@ modifiers=1 */ public function clearSelection():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#clearToggledPaths() */
-	private function clearToggledPaths():Void;
+	/*@@@ modifiers=4 */ private function clearToggledPaths():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#collapsePath(javax.swing.tree.TreePath) */
-	public function collapsePath(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function collapsePath(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#collapseRow(int) */
-	public function collapseRow(row:Int):Void;
+	/*@@@ modifiers=1 */ public function collapseRow(row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#convertValueToText(java.lang.Object, boolean, boolean, boolean, int, boolean) */
-	public function convertValueToText(value:Dynamic, selected:Bool, expanded:Bool, leaf:Bool, row:Int, hasFocus:Bool):String;
+	/*@@@ modifiers=1 */ public function convertValueToText(value:Dynamic, selected:Bool, expanded:Bool, leaf:Bool, row:Int, hasFocus:Bool):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#createTreeModel(java.lang.Object) */
-	static private function createTreeModel(value:Dynamic):TreeModel;
+	/*@@@ modifiers=12 */ static private function createTreeModel(value:Dynamic):TreeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#createTreeModelListener() */
-	private function createTreeModelListener():TreeModelListener;
+	/*@@@ modifiers=4 */ private function createTreeModelListener():TreeModelListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#expandPath(javax.swing.tree.TreePath) */
-	public function expandPath(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function expandPath(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#expandRow(int) */
-	public function expandRow(row:Int):Void;
+	/*@@@ modifiers=1 */ public function expandRow(row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#fireTreeCollapsed(javax.swing.tree.TreePath) */
-	public function fireTreeCollapsed(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function fireTreeCollapsed(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#fireTreeExpanded(javax.swing.tree.TreePath) */
-	public function fireTreeExpanded(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function fireTreeExpanded(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#fireTreeWillCollapse(javax.swing.tree.TreePath) */
-	public function fireTreeWillCollapse(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function fireTreeWillCollapse(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#fireTreeWillExpand(javax.swing.tree.TreePath) */
-	public function fireTreeWillExpand(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function fireTreeWillExpand(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#fireValueChanged(javax.swing.event.TreeSelectionEvent) */
-	private function fireValueChanged(e:TreeSelectionEvent):Void;
+	/*@@@ modifiers=4 */ private function fireValueChanged(e:TreeSelectionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getAnchorSelectionPath() */
-	public function getAnchorSelectionPath():TreePath;
+	/*@@@ modifiers=1 */ public function getAnchorSelectionPath():TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getCellEditor() */
-	public function getCellEditor():TreeCellEditor;
+	/*@@@ modifiers=1 */ public function getCellEditor():TreeCellEditor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getCellRenderer() */
-	public function getCellRenderer():TreeCellRenderer;
+	/*@@@ modifiers=1 */ public function getCellRenderer():TreeCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getClosestPathForLocation(int, int) */
-	public function getClosestPathForLocation(x:Int, y:Int):TreePath;
+	/*@@@ modifiers=1 */ public function getClosestPathForLocation(x:Int, y:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getClosestRowForLocation(int, int) */
-	public function getClosestRowForLocation(x:Int, y:Int):Int;
+	/*@@@ modifiers=1 */ public function getClosestRowForLocation(x:Int, y:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getDefaultTreeModel() */
-	static private function getDefaultTreeModel():TreeModel;
+	/*@@@ modifiers=12 */ static private function getDefaultTreeModel():TreeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getDescendantToggledPaths(javax.swing.tree.TreePath) */
-	private function getDescendantToggledPaths(parent:TreePath):Enumeration<TreePath>;
+	/*@@@ modifiers=4 */ private function getDescendantToggledPaths(parent:TreePath):Enumeration<TreePath>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getDragEnabled() */
-	public function getDragEnabled():Bool;
+	/*@@@ modifiers=1 */ public function getDragEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getDropLocation() */
-	public function getDropLocation():JTree_DropLocation;
+	/*@@@ modifiers=17 */ public function getDropLocation():JTree_DropLocation;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getDropMode() */
-	public function getDropMode():DropMode;
+	/*@@@ modifiers=17 */ public function getDropMode():DropMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getEditingPath() */
-	public function getEditingPath():TreePath;
+	/*@@@ modifiers=1 */ public function getEditingPath():TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getExpandedDescendants(javax.swing.tree.TreePath) */
-	public function getExpandedDescendants(parent:TreePath):Enumeration<TreePath>;
+	/*@@@ modifiers=1 */ public function getExpandedDescendants(parent:TreePath):Enumeration<TreePath>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getExpandsSelectedPaths() */
-	public function getExpandsSelectedPaths():Bool;
+	/*@@@ modifiers=1 */ public function getExpandsSelectedPaths():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getInvokesStopCellEditing() */
-	public function getInvokesStopCellEditing():Bool;
+	/*@@@ modifiers=1 */ public function getInvokesStopCellEditing():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getLastSelectedPathComponent() */
-	public function getLastSelectedPathComponent():Dynamic;
+	/*@@@ modifiers=1 */ public function getLastSelectedPathComponent():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getLeadSelectionPath() */
-	public function getLeadSelectionPath():TreePath;
+	/*@@@ modifiers=1 */ public function getLeadSelectionPath():TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getLeadSelectionRow() */
-	public function getLeadSelectionRow():Int;
+	/*@@@ modifiers=1 */ public function getLeadSelectionRow():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getMaxSelectionRow() */
-	public function getMaxSelectionRow():Int;
+	/*@@@ modifiers=1 */ public function getMaxSelectionRow():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getMinSelectionRow() */
-	public function getMinSelectionRow():Int;
+	/*@@@ modifiers=1 */ public function getMinSelectionRow():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getModel() */
-	public function getModel():TreeModel;
+	/*@@@ modifiers=1 */ public function getModel():TreeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getNextMatch(java.lang.String, int, javax.swing.text.Position$Bias) */
-	public function getNextMatch(prefix:String, startingRow:Int, bias:Position_Bias):TreePath;
+	/*@@@ modifiers=1 */ public function getNextMatch(prefix:String, startingRow:Int, bias:Position_Bias):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getPathBetweenRows(int, int) */
-	private function getPathBetweenRows(index0:Int, index1:Int):NativeArray<TreePath>;
+	/*@@@ modifiers=4 */ private function getPathBetweenRows(index0:Int, index1:Int):NativeArray<TreePath>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getPathBounds(javax.swing.tree.TreePath) */
-	public function getPathBounds(path:TreePath):Rectangle;
+	/*@@@ modifiers=1 */ public function getPathBounds(path:TreePath):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getPathForLocation(int, int) */
-	public function getPathForLocation(x:Int, y:Int):TreePath;
+	/*@@@ modifiers=1 */ public function getPathForLocation(x:Int, y:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getPathForRow(int) */
-	public function getPathForRow(row:Int):TreePath;
+	/*@@@ modifiers=1 */ public function getPathForRow(row:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getPreferredScrollableViewportSize() */
-	public function getPreferredScrollableViewportSize():Dimension;
+	/*@@@ modifiers=1 */ public function getPreferredScrollableViewportSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getRowBounds(int) */
-	public function getRowBounds(row:Int):Rectangle;
+	/*@@@ modifiers=1 */ public function getRowBounds(row:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getRowCount() */
-	public function getRowCount():Int;
+	/*@@@ modifiers=1 */ public function getRowCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getRowForLocation(int, int) */
-	public function getRowForLocation(x:Int, y:Int):Int;
+	/*@@@ modifiers=1 */ public function getRowForLocation(x:Int, y:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getRowForPath(javax.swing.tree.TreePath) */
-	public function getRowForPath(path:TreePath):Int;
+	/*@@@ modifiers=1 */ public function getRowForPath(path:TreePath):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getRowHeight() */
-	public function getRowHeight():Int;
+	/*@@@ modifiers=1 */ public function getRowHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getScrollableBlockIncrement(java.awt.Rectangle, int, int) */
-	public function getScrollableBlockIncrement(visibleRect:Rectangle, orientation:Int, direction:Int):Int;
+	/*@@@ modifiers=1 */ public function getScrollableBlockIncrement(visibleRect:Rectangle, orientation:Int, direction:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getScrollableTracksViewportHeight() */
-	public function getScrollableTracksViewportHeight():Bool;
+	/*@@@ modifiers=1 */ public function getScrollableTracksViewportHeight():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getScrollableTracksViewportWidth() */
-	public function getScrollableTracksViewportWidth():Bool;
+	/*@@@ modifiers=1 */ public function getScrollableTracksViewportWidth():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getScrollableUnitIncrement(java.awt.Rectangle, int, int) */
-	public function getScrollableUnitIncrement(visibleRect:Rectangle, orientation:Int, direction:Int):Int;
+	/*@@@ modifiers=1 */ public function getScrollableUnitIncrement(visibleRect:Rectangle, orientation:Int, direction:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getScrollsOnExpand() */
-	public function getScrollsOnExpand():Bool;
+	/*@@@ modifiers=1 */ public function getScrollsOnExpand():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getSelectionCount() */
-	public function getSelectionCount():Int;
+	/*@@@ modifiers=1 */ public function getSelectionCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getSelectionModel() */
-	public function getSelectionModel():TreeSelectionModel;
+	/*@@@ modifiers=1 */ public function getSelectionModel():TreeSelectionModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getSelectionPath() */
-	public function getSelectionPath():TreePath;
+	/*@@@ modifiers=1 */ public function getSelectionPath():TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getSelectionPaths() */
-	public function getSelectionPaths():NativeArray<TreePath>;
+	/*@@@ modifiers=1 */ public function getSelectionPaths():NativeArray<TreePath>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getSelectionRows() */
-	public function getSelectionRows():NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getSelectionRows():NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getShowsRootHandles() */
-	public function getShowsRootHandles():Bool;
+	/*@@@ modifiers=1 */ public function getShowsRootHandles():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getToggleClickCount() */
-	public function getToggleClickCount():Int;
+	/*@@@ modifiers=1 */ public function getToggleClickCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getToolTipText(java.awt.event.MouseEvent) */
-	override public function getToolTipText(event:MouseEvent):String;
+	/*@@@ modifiers=1 */ override public function getToolTipText(event:MouseEvent):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getTreeExpansionListeners() */
-	public function getTreeExpansionListeners():NativeArray<TreeExpansionListener>;
+	/*@@@ modifiers=1 */ public function getTreeExpansionListeners():NativeArray<TreeExpansionListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getTreeSelectionListeners() */
-	public function getTreeSelectionListeners():NativeArray<TreeSelectionListener>;
+	/*@@@ modifiers=1 */ public function getTreeSelectionListeners():NativeArray<TreeSelectionListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getTreeWillExpandListeners() */
-	public function getTreeWillExpandListeners():NativeArray<TreeWillExpandListener>;
+	/*@@@ modifiers=1 */ public function getTreeWillExpandListeners():NativeArray<TreeWillExpandListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getUI() */
-	public function getUI():TreeUI;
+	/*@@@ modifiers=1 */ public function getUI():TreeUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getUIClassID() */
-	override public function getUIClassID():String;
+	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#getVisibleRowCount() */
-	public function getVisibleRowCount():Int;
+	/*@@@ modifiers=1 */ public function getVisibleRowCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#hasBeenExpanded(javax.swing.tree.TreePath) */
-	public function hasBeenExpanded(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ public function hasBeenExpanded(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isCollapsed(int) */
-	@:overload(function (row:Int):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (row:Int):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isCollapsed(javax.swing.tree.TreePath) */
-	public function isCollapsed(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ public function isCollapsed(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isEditable() */
-	public function isEditable():Bool;
+	/*@@@ modifiers=1 */ public function isEditable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isEditing() */
-	public function isEditing():Bool;
+	/*@@@ modifiers=1 */ public function isEditing():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isExpanded(int) */
-	@:overload(function (row:Int):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (row:Int):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isExpanded(javax.swing.tree.TreePath) */
-	public function isExpanded(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ public function isExpanded(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isFixedRowHeight() */
-	public function isFixedRowHeight():Bool;
+	/*@@@ modifiers=1 */ public function isFixedRowHeight():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isLargeModel() */
-	public function isLargeModel():Bool;
+	/*@@@ modifiers=1 */ public function isLargeModel():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isPathEditable(javax.swing.tree.TreePath) */
-	public function isPathEditable(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ public function isPathEditable(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isPathSelected(javax.swing.tree.TreePath) */
-	public function isPathSelected(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ public function isPathSelected(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isRootVisible() */
-	public function isRootVisible():Bool;
+	/*@@@ modifiers=1 */ public function isRootVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isRowSelected(int) */
-	public function isRowSelected(row:Int):Bool;
+	/*@@@ modifiers=1 */ public function isRowSelected(row:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isSelectionEmpty() */
-	public function isSelectionEmpty():Bool;
+	/*@@@ modifiers=1 */ public function isSelectionEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath) */
-	override public function isVisible(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ override public function isVisible(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#makeVisible(javax.swing.tree.TreePath) */
-	public function makeVisible(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function makeVisible(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#paramString() */
-	override private function paramString():String;
+	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeDescendantSelectedPaths(javax.swing.tree.TreePath, boolean) */
-	private function removeDescendantSelectedPaths(path:TreePath, includePath:Bool):Bool;
+	/*@@@ modifiers=4 */ private function removeDescendantSelectedPaths(path:TreePath, includePath:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeDescendantToggledPaths(java.util.Enumeration) */
-	private function removeDescendantToggledPaths(toRemove:Enumeration<TreePath>):Void;
+	/*@@@ modifiers=4 */ private function removeDescendantToggledPaths(toRemove:Enumeration<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeSelectionInterval(int, int) */
-	public function removeSelectionInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1 */ public function removeSelectionInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeSelectionPath(javax.swing.tree.TreePath) */
-	public function removeSelectionPath(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function removeSelectionPath(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeSelectionPaths(javax.swing.tree.TreePath[]) */
-	public function removeSelectionPaths(paths:NativeArray<TreePath>):Void;
+	/*@@@ modifiers=1 */ public function removeSelectionPaths(paths:NativeArray<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeSelectionRow(int) */
-	public function removeSelectionRow(row:Int):Void;
+	/*@@@ modifiers=1 */ public function removeSelectionRow(row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeSelectionRows(int[]) */
-	public function removeSelectionRows(rows:NativeArray<Int>):Void;
+	/*@@@ modifiers=1 */ public function removeSelectionRows(rows:NativeArray<Int>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeTreeExpansionListener(javax.swing.event.TreeExpansionListener) */
-	public function removeTreeExpansionListener(tel:TreeExpansionListener):Void;
+	/*@@@ modifiers=1 */ public function removeTreeExpansionListener(tel:TreeExpansionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener) */
-	public function removeTreeSelectionListener(tsl:TreeSelectionListener):Void;
+	/*@@@ modifiers=1 */ public function removeTreeSelectionListener(tsl:TreeSelectionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeTreeWillExpandListener(javax.swing.event.TreeWillExpandListener) */
-	public function removeTreeWillExpandListener(tel:TreeWillExpandListener):Void;
+	/*@@@ modifiers=1 */ public function removeTreeWillExpandListener(tel:TreeWillExpandListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#scrollPathToVisible(javax.swing.tree.TreePath) */
-	public function scrollPathToVisible(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function scrollPathToVisible(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#scrollRowToVisible(int) */
-	public function scrollRowToVisible(row:Int):Void;
+	/*@@@ modifiers=1 */ public function scrollRowToVisible(row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setAnchorSelectionPath(javax.swing.tree.TreePath) */
-	public function setAnchorSelectionPath(newPath:TreePath):Void;
+	/*@@@ modifiers=1 */ public function setAnchorSelectionPath(newPath:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setCellEditor(javax.swing.tree.TreeCellEditor) */
-	public function setCellEditor(cellEditor:TreeCellEditor):Void;
+	/*@@@ modifiers=1 */ public function setCellEditor(cellEditor:TreeCellEditor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setCellRenderer(javax.swing.tree.TreeCellRenderer) */
-	public function setCellRenderer(x:TreeCellRenderer):Void;
+	/*@@@ modifiers=1 */ public function setCellRenderer(x:TreeCellRenderer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setDragEnabled(boolean) */
-	public function setDragEnabled(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setDragEnabled(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setDropMode(javax.swing.DropMode) */
-	public function setDropMode(dropMode:DropMode):Void;
+	/*@@@ modifiers=17 */ public function setDropMode(dropMode:DropMode):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setEditable(boolean) */
-	public function setEditable(flag:Bool):Void;
+	/*@@@ modifiers=1 */ public function setEditable(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setExpandedState(javax.swing.tree.TreePath, boolean) */
-	private function setExpandedState(path:TreePath, state:Bool):Void;
+	/*@@@ modifiers=4 */ private function setExpandedState(path:TreePath, state:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setExpandsSelectedPaths(boolean) */
-	public function setExpandsSelectedPaths(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setExpandsSelectedPaths(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setInvokesStopCellEditing(boolean) */
-	public function setInvokesStopCellEditing(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setInvokesStopCellEditing(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setLargeModel(boolean) */
-	public function setLargeModel(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setLargeModel(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setLeadSelectionPath(javax.swing.tree.TreePath) */
-	public function setLeadSelectionPath(newPath:TreePath):Void;
+	/*@@@ modifiers=1 */ public function setLeadSelectionPath(newPath:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setModel(javax.swing.tree.TreeModel) */
-	public function setModel(newModel:TreeModel):Void;
+	/*@@@ modifiers=1 */ public function setModel(newModel:TreeModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setRootVisible(boolean) */
-	public function setRootVisible(rootVisible:Bool):Void;
+	/*@@@ modifiers=1 */ public function setRootVisible(rootVisible:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setRowHeight(int) */
-	public function setRowHeight(rowHeight:Int):Void;
+	/*@@@ modifiers=1 */ public function setRowHeight(rowHeight:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setScrollsOnExpand(boolean) */
-	public function setScrollsOnExpand(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setScrollsOnExpand(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setSelectionInterval(int, int) */
-	public function setSelectionInterval(index0:Int, index1:Int):Void;
+	/*@@@ modifiers=1 */ public function setSelectionInterval(index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setSelectionModel(javax.swing.tree.TreeSelectionModel) */
-	public function setSelectionModel(selectionModel:TreeSelectionModel):Void;
+	/*@@@ modifiers=1 */ public function setSelectionModel(selectionModel:TreeSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setSelectionPath(javax.swing.tree.TreePath) */
-	public function setSelectionPath(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function setSelectionPath(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setSelectionPaths(javax.swing.tree.TreePath[]) */
-	public function setSelectionPaths(paths:NativeArray<TreePath>):Void;
+	/*@@@ modifiers=1 */ public function setSelectionPaths(paths:NativeArray<TreePath>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setSelectionRow(int) */
-	public function setSelectionRow(row:Int):Void;
+	/*@@@ modifiers=1 */ public function setSelectionRow(row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setSelectionRows(int[]) */
-	public function setSelectionRows(rows:NativeArray<Int>):Void;
+	/*@@@ modifiers=1 */ public function setSelectionRows(rows:NativeArray<Int>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setShowsRootHandles(boolean) */
-	public function setShowsRootHandles(newValue:Bool):Void;
+	/*@@@ modifiers=1 */ public function setShowsRootHandles(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setToggleClickCount(int) */
-	public function setToggleClickCount(clickCount:Int):Void;
+	/*@@@ modifiers=1 */ public function setToggleClickCount(clickCount:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setUI(javax.swing.plaf.TreeUI) */
-	override public function setUI(ui:TreeUI):Void;
+	/*@@@ modifiers=1 */ override public function setUI(ui:TreeUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setVisibleRowCount(int) */
-	public function setVisibleRowCount(newCount:Int):Void;
+	/*@@@ modifiers=1 */ public function setVisibleRowCount(newCount:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#startEditingAtPath(javax.swing.tree.TreePath) */
-	public function startEditingAtPath(path:TreePath):Void;
+	/*@@@ modifiers=1 */ public function startEditingAtPath(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#stopEditing() */
-	public function stopEditing():Bool;
+	/*@@@ modifiers=1 */ public function stopEditing():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#treeDidChange() */
-	public function treeDidChange():Void;
+	/*@@@ modifiers=1 */ public function treeDidChange():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 }
 

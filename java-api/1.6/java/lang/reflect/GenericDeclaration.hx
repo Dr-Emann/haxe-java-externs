@@ -8,7 +8,7 @@ import java.lang.reflect.TypeVariable;
 extern interface GenericDeclaration
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/GenericDeclaration.html#getTypeParameters() */
-	public function getTypeParameters():NativeArray<TypeVariable<Dynamic>>;
+	/*@@@ modifiers=1025 */ public function getTypeParameters():NativeArray<TypeVariable<Dynamic>>;
 
 }
 

@@ -12,28 +12,28 @@ import java.rmi.server.RMIServerSocketFactory;
 extern class RMISocketFactory extends Object, implements RMIClientSocketFactory, implements RMIServerSocketFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#RMISocketFactory() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#createServerSocket(int) */
-	public function createServerSocket(port:Int):ServerSocket;
+	/*@@@ modifiers=1025 */ public function createServerSocket(port:Int):ServerSocket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#createSocket(java.lang.String, int) */
-	public function createSocket(host:String, port:Int):Socket;
+	/*@@@ modifiers=1025 */ public function createSocket(host:String, port:Int):Socket;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#getDefaultSocketFactory() */
-	static public function getDefaultSocketFactory():RMISocketFactory;
+	/*@@@ modifiers=41 */ static public function getDefaultSocketFactory():RMISocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#getFailureHandler() */
-	static public function getFailureHandler():RMIFailureHandler;
+	/*@@@ modifiers=41 */ static public function getFailureHandler():RMIFailureHandler;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#getSocketFactory() */
-	static public function getSocketFactory():RMISocketFactory;
+	/*@@@ modifiers=41 */ static public function getSocketFactory():RMISocketFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#setFailureHandler(java.rmi.server.RMIFailureHandler) */
-	static public function setFailureHandler(fh:RMIFailureHandler):Void;
+	/*@@@ modifiers=41 */ static public function setFailureHandler(fh:RMIFailureHandler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/server/RMISocketFactory.html#setSocketFactory(java.rmi.server.RMISocketFactory) */
-	static public function setSocketFactory(fac:RMISocketFactory):Void;
+	/*@@@ modifiers=41 */ static public function setSocketFactory(fac:RMISocketFactory):Void;
 
 }
 

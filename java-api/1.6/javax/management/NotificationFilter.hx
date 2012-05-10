@@ -8,7 +8,7 @@ import javax.management.Notification;
 extern interface NotificationFilter implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification) */
-	public function isNotificationEnabled(notification:Notification):Bool;
+	/*@@@ modifiers=1025 */ public function isNotificationEnabled(notification:Notification):Bool;
 
 }
 

@@ -83,141 +83,141 @@ extern class BasicSplitPaneUI extends SplitPaneUI
 	private var keyboardResizeToggleListener:ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#BasicSplitPaneUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider() */
-	public function createDefaultDivider():BasicSplitPaneDivider;
+	/*@@@ modifiers=1 */ public function createDefaultDivider():BasicSplitPaneDivider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultNonContinuousLayoutDivider() */
-	private function createDefaultNonContinuousLayoutDivider():Component;
+	/*@@@ modifiers=4 */ private function createDefaultNonContinuousLayoutDivider():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createFocusListener() */
-	private function createFocusListener():FocusListener;
+	/*@@@ modifiers=4 */ private function createFocusListener():FocusListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createKeyboardDownRightListener() */
-	private function createKeyboardDownRightListener():ActionListener;
+	/*@@@ modifiers=4 */ private function createKeyboardDownRightListener():ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createKeyboardEndListener() */
-	private function createKeyboardEndListener():ActionListener;
+	/*@@@ modifiers=4 */ private function createKeyboardEndListener():ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createKeyboardHomeListener() */
-	private function createKeyboardHomeListener():ActionListener;
+	/*@@@ modifiers=4 */ private function createKeyboardHomeListener():ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createKeyboardResizeToggleListener() */
-	private function createKeyboardResizeToggleListener():ActionListener;
+	/*@@@ modifiers=4 */ private function createKeyboardResizeToggleListener():ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createKeyboardUpLeftListener() */
-	private function createKeyboardUpLeftListener():ActionListener;
+	/*@@@ modifiers=4 */ private function createKeyboardUpLeftListener():ActionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#dragDividerTo(int) */
-	private function dragDividerTo(location:Int):Void;
+	/*@@@ modifiers=4 */ private function dragDividerTo(location:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#finishDraggingTo(int) */
-	private function finishDraggingTo(location:Int):Void;
+	/*@@@ modifiers=4 */ private function finishDraggingTo(location:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#finishedPaintingChildren(javax.swing.JSplitPane, java.awt.Graphics) */
-	override public function finishedPaintingChildren(jc:JSplitPane, g:Graphics):Void;
+	/*@@@ modifiers=1 */ override public function finishedPaintingChildren(jc:JSplitPane, g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getDivider() */
-	public function getDivider():BasicSplitPaneDivider;
+	/*@@@ modifiers=1 */ public function getDivider():BasicSplitPaneDivider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getDividerBorderSize() */
-	private function getDividerBorderSize():Int;
+	/*@@@ modifiers=4 */ private function getDividerBorderSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getDividerLocation(javax.swing.JSplitPane) */
-	override public function getDividerLocation(jc:JSplitPane):Int;
+	/*@@@ modifiers=1 */ override public function getDividerLocation(jc:JSplitPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getInsets(javax.swing.JComponent) */
-	public function getInsets(jc:JComponent):Insets;
+	/*@@@ modifiers=1 */ public function getInsets(jc:JComponent):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getLastDragLocation() */
-	public function getLastDragLocation():Int;
+	/*@@@ modifiers=1 */ public function getLastDragLocation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getMaximumDividerLocation(javax.swing.JSplitPane) */
-	override public function getMaximumDividerLocation(jc:JSplitPane):Int;
+	/*@@@ modifiers=1 */ override public function getMaximumDividerLocation(jc:JSplitPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(jc:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(jc:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getMinimumDividerLocation(javax.swing.JSplitPane) */
-	override public function getMinimumDividerLocation(jc:JSplitPane):Int;
+	/*@@@ modifiers=1 */ override public function getMinimumDividerLocation(jc:JSplitPane):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(jc:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(jc:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getNonContinuousLayoutDivider() */
-	public function getNonContinuousLayoutDivider():Component;
+	/*@@@ modifiers=1 */ public function getNonContinuousLayoutDivider():Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getOrientation() */
-	public function getOrientation():Int;
+	/*@@@ modifiers=1 */ public function getOrientation():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(jc:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(jc:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#getSplitPane() */
-	public function getSplitPane():JSplitPane;
+	/*@@@ modifiers=1 */ public function getSplitPane():JSplitPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout() */
-	public function isContinuousLayout():Bool;
+	/*@@@ modifiers=1 */ public function isContinuousLayout():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, jc:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, jc:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#resetLayoutManager() */
-	private function resetLayoutManager():Void;
+	/*@@@ modifiers=4 */ private function resetLayoutManager():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#resetToPreferredSizes(javax.swing.JSplitPane) */
-	override public function resetToPreferredSizes(jc:JSplitPane):Void;
+	/*@@@ modifiers=1 */ override public function resetToPreferredSizes(jc:JSplitPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#setContinuousLayout(boolean) */
-	public function setContinuousLayout(b:Bool):Void;
+	/*@@@ modifiers=1 */ public function setContinuousLayout(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#setDividerLocation(javax.swing.JSplitPane, int) */
-	override public function setDividerLocation(jc:JSplitPane, location:Int):Void;
+	/*@@@ modifiers=1 */ override public function setDividerLocation(jc:JSplitPane, location:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#setLastDragLocation(int) */
-	public function setLastDragLocation(l:Int):Void;
+	/*@@@ modifiers=1 */ public function setLastDragLocation(l:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#setNonContinuousLayoutDivider(java.awt.Component, boolean) */
-	@:overload(function (newDivider:Component, rememberSizes:Bool):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (newDivider:Component, rememberSizes:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#setNonContinuousLayoutDivider(java.awt.Component) */
-	private function setNonContinuousLayoutDivider(newDivider:Component):Void;
+	/*@@@ modifiers=4 */ private function setNonContinuousLayoutDivider(newDivider:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#setOrientation(int) */
-	public function setOrientation(orientation:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#startDragging() */
-	private function startDragging():Void;
+	/*@@@ modifiers=4 */ private function startDragging():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

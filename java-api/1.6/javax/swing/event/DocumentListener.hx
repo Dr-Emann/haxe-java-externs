@@ -8,13 +8,13 @@ import javax.swing.event.DocumentEvent;
 extern interface DocumentListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent) */
-	public function changedUpdate(e:DocumentEvent):Void;
+	/*@@@ modifiers=1025 */ public function changedUpdate(e:DocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent) */
-	public function insertUpdate(e:DocumentEvent):Void;
+	/*@@@ modifiers=1025 */ public function insertUpdate(e:DocumentEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent) */
-	public function removeUpdate(e:DocumentEvent):Void;
+	/*@@@ modifiers=1025 */ public function removeUpdate(e:DocumentEvent):Void;
 
 }
 

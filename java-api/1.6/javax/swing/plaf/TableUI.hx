@@ -7,7 +7,7 @@ import javax.swing.plaf.ComponentUI;
 extern class TableUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/TableUI.html#TableUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

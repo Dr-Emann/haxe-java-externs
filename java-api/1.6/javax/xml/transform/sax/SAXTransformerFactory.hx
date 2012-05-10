@@ -12,22 +12,22 @@ import org.xml.sax.XMLFilter;
 extern class SAXTransformerFactory extends TransformerFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#SAXTransformerFactory() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler() */
-	public function newTemplatesHandler():TemplatesHandler;
+	/*@@@ modifiers=1025 */ public function newTemplatesHandler():TemplatesHandler;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Source) */
-	@:overload(function (src:Source):TransformerHandler {})
+	/*@@@ modifiers=1025 */ @:overload(function (src:Source):TransformerHandler {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Templates) */
-	@:overload(function (templates:Templates):TransformerHandler {})
+	/*@@@ modifiers=1025 */ @:overload(function (templates:Templates):TransformerHandler {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler() */
-	public function newTransformerHandler():TransformerHandler;
+	/*@@@ modifiers=1025 */ public function newTransformerHandler():TransformerHandler;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Source) */
-	@:overload(function (src:Source):XMLFilter {})
+	/*@@@ modifiers=1025 */ @:overload(function (src:Source):XMLFilter {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Templates) */
-	public function newXMLFilter(templates:Templates):XMLFilter;
+	/*@@@ modifiers=1025 */ public function newXMLFilter(templates:Templates):XMLFilter;
 
 }
 

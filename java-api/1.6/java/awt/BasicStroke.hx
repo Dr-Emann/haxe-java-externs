@@ -3,7 +3,6 @@ package java.awt;
 import java.NativeArray;
 import java.awt.Shape;
 import java.awt.Stroke;
-import java.lang.Number;
 import java.lang.Object;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html */
@@ -11,42 +10,42 @@ import java.lang.Object;
 extern class BasicStroke extends Object, implements Stroke
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#BasicStroke(float, int, int, float) */
-	@:overload(function (width:StdFloat, cap:Int, join:Int, miterlimit:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (width:Single, cap:Int, join:Int, miterlimit:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#BasicStroke(float, int, int) */
-	@:overload(function (width:StdFloat, cap:Int, join:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (width:Single, cap:Int, join:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#BasicStroke(float) */
-	@:overload(function (width:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (width:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#BasicStroke() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#BasicStroke(float, int, int, float, float[], float) */
-	public function new(width:StdFloat, cap:Int, join:Int, miterlimit:StdFloat, dash:NativeArray<StdFloat>, dash_phase:StdFloat):Void;
+	/*@@@ modifiers=1 */ public function new(width:Single, cap:Int, join:Int, miterlimit:Single, dash:NativeArray<Single>, dash_phase:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#createStrokedShape(java.awt.Shape) */
-	public function createStrokedShape(s:Shape):Shape;
+	/*@@@ modifiers=1 */ public function createStrokedShape(s:Shape):Shape;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#getDashArray() */
-	public function getDashArray():NativeArray<StdFloat>;
+	/*@@@ modifiers=1 */ public function getDashArray():NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#getDashPhase() */
-	public function getDashPhase():StdFloat;
+	/*@@@ modifiers=1 */ public function getDashPhase():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#getEndCap() */
-	public function getEndCap():Int;
+	/*@@@ modifiers=1 */ public function getEndCap():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#getLineJoin() */
-	public function getLineJoin():Int;
+	/*@@@ modifiers=1 */ public function getLineJoin():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#getLineWidth() */
-	public function getLineWidth():StdFloat;
+	/*@@@ modifiers=1 */ public function getLineWidth():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#getMiterLimit() */
-	public function getMiterLimit():StdFloat;
+	/*@@@ modifiers=1 */ public function getMiterLimit():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/BasicStroke.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 }
 

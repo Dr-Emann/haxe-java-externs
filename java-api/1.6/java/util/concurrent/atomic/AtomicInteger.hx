@@ -8,60 +8,60 @@ import java.lang.Number;
 extern class AtomicInteger extends Number, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#AtomicInteger() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#AtomicInteger(int) */
-	public function new(initialValue:Int):Void;
+	/*@@@ modifiers=1 */ public function new(initialValue:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#addAndGet(int) */
-	public function addAndGet(delta:Int):Int;
+	/*@@@ modifiers=17 */ public function addAndGet(delta:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#compareAndSet(int, int) */
-	public function compareAndSet(expect:Int, update:Int):Bool;
+	/*@@@ modifiers=17 */ public function compareAndSet(expect:Int, update:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#decrementAndGet() */
-	public function decrementAndGet():Int;
+	/*@@@ modifiers=17 */ public function decrementAndGet():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#doubleValue() */
-	override public function doubleValue():StdFloat;
+	/*@@@ modifiers=1 */ override public function doubleValue():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#floatValue() */
-	override public function floatValue():StdFloat;
+	/*@@@ modifiers=1 */ override public function floatValue():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#get() */
-	public function get():Int;
+	/*@@@ modifiers=17 */ public function get():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#getAndAdd(int) */
-	public function getAndAdd(delta:Int):Int;
+	/*@@@ modifiers=17 */ public function getAndAdd(delta:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#getAndDecrement() */
-	public function getAndDecrement():Int;
+	/*@@@ modifiers=17 */ public function getAndDecrement():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#getAndIncrement() */
-	public function getAndIncrement():Int;
+	/*@@@ modifiers=17 */ public function getAndIncrement():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#getAndSet(int) */
-	public function getAndSet(newValue:Int):Int;
+	/*@@@ modifiers=17 */ public function getAndSet(newValue:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#incrementAndGet() */
-	public function incrementAndGet():Int;
+	/*@@@ modifiers=17 */ public function incrementAndGet():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#intValue() */
-	override public function intValue():Int;
+	/*@@@ modifiers=1 */ override public function intValue():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#lazySet(int) */
-	public function lazySet(newValue:Int):Void;
+	/*@@@ modifiers=17 */ public function lazySet(newValue:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#longValue() */
-	override public function longValue():haxe.Int64;
+	/*@@@ modifiers=1 */ override public function longValue():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#set(int) */
-	public function set(newValue:Int):Void;
+	/*@@@ modifiers=17 */ public function set(newValue:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSet(int, int) */
-	public function weakCompareAndSet(expect:Int, update:Int):Bool;
+	/*@@@ modifiers=17 */ public function weakCompareAndSet(expect:Int, update:Int):Bool;
 
 }
 

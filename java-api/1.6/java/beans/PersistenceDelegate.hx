@@ -10,19 +10,19 @@ import java.lang.Object;
 extern class PersistenceDelegate extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PersistenceDelegate.html#PersistenceDelegate() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PersistenceDelegate.html#initialize(java.lang.Class, java.lang.Object, java.lang.Object, java.beans.Encoder) */
-	private function initialize(type:Class<Dynamic>, oldInstance:Dynamic, newInstance:Dynamic, out:Encoder):Void;
+	/*@@@ modifiers=4 */ private function initialize(type:Class<Dynamic>, oldInstance:Dynamic, newInstance:Dynamic, out:Encoder):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PersistenceDelegate.html#instantiate(java.lang.Object, java.beans.Encoder) */
-	private function instantiate(oldInstance:Dynamic, out:Encoder):Expression;
+	/*@@@ modifiers=1028 */ private function instantiate(oldInstance:Dynamic, out:Encoder):Expression;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PersistenceDelegate.html#mutatesTo(java.lang.Object, java.lang.Object) */
-	private function mutatesTo(oldInstance:Dynamic, newInstance:Dynamic):Bool;
+	/*@@@ modifiers=4 */ private function mutatesTo(oldInstance:Dynamic, newInstance:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/PersistenceDelegate.html#writeObject(java.lang.Object, java.beans.Encoder) */
-	public function writeObject(oldInstance:Dynamic, out:Encoder):Void;
+	/*@@@ modifiers=1 */ public function writeObject(oldInstance:Dynamic, out:Encoder):Void;
 
 }
 

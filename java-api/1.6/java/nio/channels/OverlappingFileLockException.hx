@@ -7,7 +7,7 @@ import java.lang.IllegalStateException;
 extern class OverlappingFileLockException extends IllegalStateException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/OverlappingFileLockException.html#OverlappingFileLockException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

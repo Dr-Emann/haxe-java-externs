@@ -17,31 +17,31 @@ extern class JarURLConnection extends URLConnection
 	private var jarFileURLConnection:URLConnection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#JarURLConnection(java.net.URL) */
-	private function new(url:URL):Void;
+	/*@@@ modifiers=4 */ private function new(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getAttributes() */
-	public function getAttributes():Attributes;
+	/*@@@ modifiers=1 */ public function getAttributes():Attributes;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getCertificates() */
-	public function getCertificates():NativeArray<Certificate>;
+	/*@@@ modifiers=1 */ public function getCertificates():NativeArray<Certificate>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getEntryName() */
-	public function getEntryName():String;
+	/*@@@ modifiers=1 */ public function getEntryName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getJarEntry() */
-	public function getJarEntry():JarEntry;
+	/*@@@ modifiers=1 */ public function getJarEntry():JarEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getJarFile() */
-	public function getJarFile():JarFile;
+	/*@@@ modifiers=1025 */ public function getJarFile():JarFile;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getJarFileURL() */
-	public function getJarFileURL():URL;
+	/*@@@ modifiers=1 */ public function getJarFileURL():URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getMainAttributes() */
-	public function getMainAttributes():Attributes;
+	/*@@@ modifiers=1 */ public function getMainAttributes():Attributes;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/JarURLConnection.html#getManifest() */
-	public function getManifest():Manifest;
+	/*@@@ modifiers=1 */ public function getManifest():Manifest;
 
 }
 

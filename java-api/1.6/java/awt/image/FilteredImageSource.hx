@@ -10,22 +10,22 @@ import java.lang.Object;
 extern class FilteredImageSource extends Object, implements ImageProducer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/FilteredImageSource.html#FilteredImageSource(java.awt.image.ImageProducer, java.awt.image.ImageFilter) */
-	public function new(orig:ImageProducer, imgf:ImageFilter):Void;
+	/*@@@ modifiers=1 */ public function new(orig:ImageProducer, imgf:ImageFilter):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/FilteredImageSource.html#addConsumer(java.awt.image.ImageConsumer) */
-	public function addConsumer(ic:ImageConsumer):Void;
+	/*@@@ modifiers=33 */ public function addConsumer(ic:ImageConsumer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/FilteredImageSource.html#isConsumer(java.awt.image.ImageConsumer) */
-	public function isConsumer(ic:ImageConsumer):Bool;
+	/*@@@ modifiers=33 */ public function isConsumer(ic:ImageConsumer):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/FilteredImageSource.html#removeConsumer(java.awt.image.ImageConsumer) */
-	public function removeConsumer(ic:ImageConsumer):Void;
+	/*@@@ modifiers=33 */ public function removeConsumer(ic:ImageConsumer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/FilteredImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer) */
-	public function requestTopDownLeftRightResend(ic:ImageConsumer):Void;
+	/*@@@ modifiers=1 */ public function requestTopDownLeftRightResend(ic:ImageConsumer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/FilteredImageSource.html#startProduction(java.awt.image.ImageConsumer) */
-	public function startProduction(ic:ImageConsumer):Void;
+	/*@@@ modifiers=1 */ public function startProduction(ic:ImageConsumer):Void;
 
 }
 

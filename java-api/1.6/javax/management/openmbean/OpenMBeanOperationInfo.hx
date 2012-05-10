@@ -9,31 +9,31 @@ import javax.management.openmbean.OpenType;
 extern interface OpenMBeanOperationInfo
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#getDescription() */
-	public function getDescription():String;
+	/*@@@ modifiers=1025 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#getImpact() */
-	public function getImpact():Int;
+	/*@@@ modifiers=1025 */ public function getImpact():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType() */
-	public function getReturnOpenType():OpenType<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getReturnOpenType():OpenType<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType() */
-	public function getReturnType():String;
+	/*@@@ modifiers=1025 */ public function getReturnType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#getSignature() */
-	public function getSignature():NativeArray<MBeanParameterInfo>;
+	/*@@@ modifiers=1025 */ public function getSignature():NativeArray<MBeanParameterInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

@@ -32,10 +32,10 @@ extern class DropMode extends Enum<DropMode>
 	public static var ON_OR_INSERT_COLS:DropMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DropMode.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):DropMode;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):DropMode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DropMode.html#values() */
-	static public function values():NativeArray<DropMode>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<DropMode>;
 
 }
 

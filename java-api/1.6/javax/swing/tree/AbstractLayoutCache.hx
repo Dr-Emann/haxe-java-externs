@@ -31,99 +31,99 @@ extern class AbstractLayoutCache extends Object, implements RowMapper
 	private var rowHeight:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#AbstractLayoutCache() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getBounds(javax.swing.tree.TreePath, java.awt.Rectangle) */
-	public function getBounds(path:TreePath, placeIn:Rectangle):Rectangle;
+	/*@@@ modifiers=1025 */ public function getBounds(path:TreePath, placeIn:Rectangle):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getExpandedState(javax.swing.tree.TreePath) */
-	public function getExpandedState(path:TreePath):Bool;
+	/*@@@ modifiers=1025 */ public function getExpandedState(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getModel() */
-	public function getModel():TreeModel;
+	/*@@@ modifiers=1 */ public function getModel():TreeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getNodeDimensions(java.lang.Object, int, int, boolean, java.awt.Rectangle) */
-	@:overload(function (value:Dynamic, row:Int, depth:Int, expanded:Bool, placeIn:Rectangle):Rectangle {})
+	/*@@@ modifiers=4 */ @:overload(function (value:Dynamic, row:Int, depth:Int, expanded:Bool, placeIn:Rectangle):Rectangle {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getNodeDimensions() */
-	public function getNodeDimensions():AbstractLayoutCache_NodeDimensions;
+	/*@@@ modifiers=1 */ public function getNodeDimensions():AbstractLayoutCache_NodeDimensions;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getPathClosestTo(int, int) */
-	public function getPathClosestTo(x:Int, y:Int):TreePath;
+	/*@@@ modifiers=1025 */ public function getPathClosestTo(x:Int, y:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getPathForRow(int) */
-	public function getPathForRow(row:Int):TreePath;
+	/*@@@ modifiers=1025 */ public function getPathForRow(row:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getPreferredHeight() */
-	public function getPreferredHeight():Int;
+	/*@@@ modifiers=1 */ public function getPreferredHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getPreferredWidth(java.awt.Rectangle) */
-	public function getPreferredWidth(bounds:Rectangle):Int;
+	/*@@@ modifiers=1 */ public function getPreferredWidth(bounds:Rectangle):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getRowCount() */
-	public function getRowCount():Int;
+	/*@@@ modifiers=1025 */ public function getRowCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getRowForPath(javax.swing.tree.TreePath) */
-	public function getRowForPath(path:TreePath):Int;
+	/*@@@ modifiers=1025 */ public function getRowForPath(path:TreePath):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getRowHeight() */
-	public function getRowHeight():Int;
+	/*@@@ modifiers=1 */ public function getRowHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getRowsForPaths(javax.swing.tree.TreePath[]) */
-	public function getRowsForPaths(paths:NativeArray<TreePath>):NativeArray<Int>;
+	/*@@@ modifiers=1 */ public function getRowsForPaths(paths:NativeArray<TreePath>):NativeArray<Int>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getSelectionModel() */
-	public function getSelectionModel():TreeSelectionModel;
+	/*@@@ modifiers=1 */ public function getSelectionModel():TreeSelectionModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getVisibleChildCount(javax.swing.tree.TreePath) */
-	public function getVisibleChildCount(path:TreePath):Int;
+	/*@@@ modifiers=1025 */ public function getVisibleChildCount(path:TreePath):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#getVisiblePathsFrom(javax.swing.tree.TreePath) */
-	public function getVisiblePathsFrom(path:TreePath):Enumeration<TreePath>;
+	/*@@@ modifiers=1025 */ public function getVisiblePathsFrom(path:TreePath):Enumeration<TreePath>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#invalidatePathBounds(javax.swing.tree.TreePath) */
-	public function invalidatePathBounds(path:TreePath):Void;
+	/*@@@ modifiers=1025 */ public function invalidatePathBounds(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#invalidateSizes() */
-	public function invalidateSizes():Void;
+	/*@@@ modifiers=1025 */ public function invalidateSizes():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#isExpanded(javax.swing.tree.TreePath) */
-	public function isExpanded(path:TreePath):Bool;
+	/*@@@ modifiers=1025 */ public function isExpanded(path:TreePath):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#isFixedRowHeight() */
-	private function isFixedRowHeight():Bool;
+	/*@@@ modifiers=4 */ private function isFixedRowHeight():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#isRootVisible() */
-	public function isRootVisible():Bool;
+	/*@@@ modifiers=1 */ public function isRootVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#setExpandedState(javax.swing.tree.TreePath, boolean) */
-	public function setExpandedState(path:TreePath, isExpanded:Bool):Void;
+	/*@@@ modifiers=1025 */ public function setExpandedState(path:TreePath, isExpanded:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#setModel(javax.swing.tree.TreeModel) */
-	public function setModel(newModel:TreeModel):Void;
+	/*@@@ modifiers=1 */ public function setModel(newModel:TreeModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#setNodeDimensions(javax.swing.tree.AbstractLayoutCache$NodeDimensions) */
-	public function setNodeDimensions(nd:AbstractLayoutCache_NodeDimensions):Void;
+	/*@@@ modifiers=1 */ public function setNodeDimensions(nd:AbstractLayoutCache_NodeDimensions):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#setRootVisible(boolean) */
-	public function setRootVisible(rootVisible:Bool):Void;
+	/*@@@ modifiers=1 */ public function setRootVisible(rootVisible:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#setRowHeight(int) */
-	public function setRowHeight(rowHeight:Int):Void;
+	/*@@@ modifiers=1 */ public function setRowHeight(rowHeight:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#setSelectionModel(javax.swing.tree.TreeSelectionModel) */
-	public function setSelectionModel(newLSM:TreeSelectionModel):Void;
+	/*@@@ modifiers=1 */ public function setSelectionModel(newLSM:TreeSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#treeNodesChanged(javax.swing.event.TreeModelEvent) */
-	public function treeNodesChanged(e:TreeModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function treeNodesChanged(e:TreeModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#treeNodesInserted(javax.swing.event.TreeModelEvent) */
-	public function treeNodesInserted(e:TreeModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function treeNodesInserted(e:TreeModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#treeNodesRemoved(javax.swing.event.TreeModelEvent) */
-	public function treeNodesRemoved(e:TreeModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function treeNodesRemoved(e:TreeModelEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/AbstractLayoutCache.html#treeStructureChanged(javax.swing.event.TreeModelEvent) */
-	public function treeStructureChanged(e:TreeModelEvent):Void;
+	/*@@@ modifiers=1025 */ public function treeStructureChanged(e:TreeModelEvent):Void;
 
 }
 

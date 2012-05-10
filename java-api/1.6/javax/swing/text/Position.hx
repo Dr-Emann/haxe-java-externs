@@ -6,7 +6,7 @@ package javax.swing.text;
 extern interface Position
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Position.html#getOffset() */
-	public function getOffset():Int;
+	/*@@@ modifiers=1025 */ public function getOffset():Int;
 
 }
 

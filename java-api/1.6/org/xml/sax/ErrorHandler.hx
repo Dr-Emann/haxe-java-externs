@@ -7,13 +7,13 @@ import org.xml.sax.SAXParseException;
 extern interface ErrorHandler
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException) */
-	public function error(exception:SAXParseException):Void;
+	/*@@@ modifiers=1025 */ public function error(exception:SAXParseException):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException) */
-	public function fatalError(exception:SAXParseException):Void;
+	/*@@@ modifiers=1025 */ public function fatalError(exception:SAXParseException):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException) */
-	public function warning(exception:SAXParseException):Void;
+	/*@@@ modifiers=1025 */ public function warning(exception:SAXParseException):Void;
 
 }
 

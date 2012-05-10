@@ -9,40 +9,40 @@ import javax.script.ScriptEngine;
 extern interface ScriptEngineFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getEngineName() */
-	public function getEngineName():String;
+	/*@@@ modifiers=1025 */ public function getEngineName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getEngineVersion() */
-	public function getEngineVersion():String;
+	/*@@@ modifiers=1025 */ public function getEngineVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getExtensions() */
-	public function getExtensions():List<String>;
+	/*@@@ modifiers=1025 */ public function getExtensions():List<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getLanguageName() */
-	public function getLanguageName():String;
+	/*@@@ modifiers=1025 */ public function getLanguageName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getLanguageVersion() */
-	public function getLanguageVersion():String;
+	/*@@@ modifiers=1025 */ public function getLanguageVersion():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String, java.lang.String, java.lang.String[]) */
-	public function getMethodCallSyntax(obj:String, m:String, args:NativeArray<String>):String;
+	/*@@@ modifiers=1153 */ public function getMethodCallSyntax(obj:String, m:String, args:NativeArray<String>):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getMimeTypes() */
-	public function getMimeTypes():List<String>;
+	/*@@@ modifiers=1025 */ public function getMimeTypes():List<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getNames() */
-	public function getNames():List<String>;
+	/*@@@ modifiers=1025 */ public function getNames():List<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String) */
-	public function getOutputStatement(toDisplay:String):String;
+	/*@@@ modifiers=1025 */ public function getOutputStatement(toDisplay:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getParameter(java.lang.String) */
-	public function getParameter(key:String):Dynamic;
+	/*@@@ modifiers=1025 */ public function getParameter(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String[]) */
-	public function getProgram(statements:NativeArray<String>):String;
+	/*@@@ modifiers=1153 */ public function getProgram(statements:NativeArray<String>):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngineFactory.html#getScriptEngine() */
-	public function getScriptEngine():ScriptEngine;
+	/*@@@ modifiers=1025 */ public function getScriptEngine():ScriptEngine;
 
 }
 

@@ -8,16 +8,16 @@ import java.StdTypes;
 extern interface RowId
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/RowId.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/RowId.html#getBytes() */
-	public function getBytes():NativeArray<Int8>;
+	/*@@@ modifiers=1025 */ public function getBytes():NativeArray<Int8>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/RowId.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/RowId.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

@@ -9,25 +9,25 @@ import java.util.Set;
 extern interface PolicyNode
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#getChildren() */
-	public function getChildren():java.util.Iterator<PolicyNode>;
+	/*@@@ modifiers=1025 */ public function getChildren():java.util.Iterator<PolicyNode>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#getDepth() */
-	public function getDepth():Int;
+	/*@@@ modifiers=1025 */ public function getDepth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#getExpectedPolicies() */
-	public function getExpectedPolicies():Set<String>;
+	/*@@@ modifiers=1025 */ public function getExpectedPolicies():Set<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#getParent() */
-	public function getParent():PolicyNode;
+	/*@@@ modifiers=1025 */ public function getParent():PolicyNode;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#getPolicyQualifiers() */
-	public function getPolicyQualifiers():Set<PolicyQualifierInfo>;
+	/*@@@ modifiers=1025 */ public function getPolicyQualifiers():Set<PolicyQualifierInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#getValidPolicy() */
-	public function getValidPolicy():String;
+	/*@@@ modifiers=1025 */ public function getValidPolicy():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/PolicyNode.html#isCritical() */
-	public function isCritical():Bool;
+	/*@@@ modifiers=1025 */ public function isCritical():Bool;
 
 }
 

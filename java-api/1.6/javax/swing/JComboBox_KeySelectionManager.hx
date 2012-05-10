@@ -8,7 +8,7 @@ import javax.swing.ComboBoxModel;
 extern interface JComboBox_KeySelectionManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.KeySelectionManager.html#selectionForKey(char, javax.swing.ComboBoxModel) */
-	public function selectionForKey(aKey:Char16, aModel:ComboBoxModel):Int;
+	/*@@@ modifiers=1025 */ public function selectionForKey(aKey:Char16, aModel:ComboBoxModel):Int;
 
 }
 

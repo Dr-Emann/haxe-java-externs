@@ -61,6 +61,14 @@ public class MethodComparator implements Comparator<Method> {
 		return result;
 	}
 
+	Class<?> methodAClass = mA.getDeclaringClass();
+	Class<?> methodBClass = mB.getDeclaringClass();
+
+	if (methodAClass.isAssignableFrom(methodBClass))
+	    return -1;
+	else if (methodBClass.isAssignableFrom(methodAClass))
+	    return 1;
+	
 	// Methods are fully equal.
 	//
 
@@ -173,6 +181,20 @@ public class MethodComparator implements Comparator<Method> {
 		    || typeB instanceof WildcardType)
 		return 1;
 
+	    Class<?> classA = (Class<?>) typeA;
+	    Class<?> classB = (Class<?>) typeB;
+	  
+	    // Primitive types first.
+	    //
+
+	    if (classA.isPrimitive() && !classB.isPrimitive())
+		return -1;
+	    else if (!classA.isPrimitive() && classB.isPrimitive())
+		return 1;
+
+	    // Concrete classes last.
+	    //
+	    
 	    if (((Class<?>) typeA).getName().equals(
 		    ((Class<?>) typeB).getName()))
 		return 0;
@@ -181,6 +203,9 @@ public class MethodComparator implements Comparator<Method> {
 	    else if (((Class<?>) typeB).isAssignableFrom((Class<?>) typeA))
 		return 1;
 
+	    // Lexicophically lower names first.
+	    //
+	    
 	    // return -1;
 	    return ((Class<?>) typeA).getName().compareTo(
 		    ((Class<?>) typeB).getName());

@@ -9,10 +9,10 @@ import javax.swing.JInternalFrame;
 extern class InternalFrameFocusTraversalPolicy extends FocusTraversalPolicy
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/InternalFrameFocusTraversalPolicy.html#InternalFrameFocusTraversalPolicy() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/InternalFrameFocusTraversalPolicy.html#getInitialComponent(javax.swing.JInternalFrame) */
-	override public function getInitialComponent(frame:JInternalFrame):Component;
+	/*@@@ modifiers=1 */ override public function getInitialComponent(frame:JInternalFrame):Component;
 
 }
 

@@ -7,10 +7,10 @@ import java.lang.annotation.Annotation;
 extern interface XmlNs implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlNs.html#namespaceURI() */
-	public function namespaceURI():String;
+	/*@@@ modifiers=1025 */ public function namespaceURI():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlNs.html#prefix() */
-	public function prefix():String;
+	/*@@@ modifiers=1025 */ public function prefix():String;
 
 }
 

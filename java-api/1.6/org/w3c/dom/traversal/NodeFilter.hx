@@ -8,7 +8,7 @@ import org.w3c.dom.Node;
 extern interface NodeFilter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/traversal/NodeFilter.html#acceptNode(org.w3c.dom.Node) */
-	public function acceptNode(n:Node):Int16;
+	/*@@@ modifiers=1025 */ public function acceptNode(n:Node):Int16;
 
 }
 

@@ -23,8 +23,9 @@ class ClassDefinition extends TypeDefinition {
     /**
      * 
      */
-    protected ClassDefinition(Class<?> classObject, JavaClass classDocs) {
-	super(classObject, classDocs);
+    protected ClassDefinition(Class<?> classObject, JavaClass classDocs,
+	    String docsBaseUrl) {
+	super(classObject, classDocs, docsBaseUrl);
     }
 
     /**
@@ -37,13 +38,13 @@ class ClassDefinition extends TypeDefinition {
 	// Modifiers, name and type variables.
 	//
 
+	indentWriter.println(String.format("/** @REF %s */", getComment()));
 	indentWriter.printf("@:native(\"%s.%s\")", classObject.getPackage()
 		.getName(), Utils.getNativeName(classObject));
 	if (Utils.isFinal(classObject))
 	    indentWriter.print(" @:final");
 
 	indentWriter.println();
-
 	indentWriter.printf("extern class %s", Utils
 		.convertJavaToHaxeClassName(Utils.getClassName(classObject)));
 
@@ -86,9 +87,11 @@ class ClassDefinition extends TypeDefinition {
 			.equals("java.lang.Number")) {
 	    String name = classObject.getSuperclass().getName();
 
-	    if (name.equals("java.lang.Double")
-		    || name.equals("java.lang.Float"))
+	    if (name.equals("java.lang.Double")) {
+		addDependency("java.lang.Number");
 		indentWriter.print(", implements StdFloat");
+	    } else if (name.equals("java.lang.Float"))
+		indentWriter.print(", implements Single");
 	    else if (name.equals("java.lang.Character"))
 		indentWriter.print(", implements Char16");
 	    else if (name.equals("java.lang.Byte"))
@@ -111,28 +114,36 @@ class ClassDefinition extends TypeDefinition {
 	// implemented interfaces which are not implemented by this class
 	// (deferred implementation which Java allows).
 	//
+	// M.I. -- include missing methods manually, otherwise the argument
+	// names are not extracted.
+	//
 
 	Set<MethodWrapper> methodSet = new TreeSet<MethodWrapper>();
 	for (Method method : classObject.getDeclaredMethods()) {
 	    if (!Utils.isValidMember(method))
 		continue;
+
 	    methodSet.add(new MethodWrapper(method));
 	}
 
-	for (Class<?> implInterface : classObject.getInterfaces()) {
-	    for (Method method : implInterface.getMethods()) {
-		if (!Utils.isValidMember(method)
-			|| method.getGenericParameterTypes().length > 0)
-		    continue;
-
-		MethodWrapper wrapper = new MethodWrapper(method);
-
-		if (!methodSet.contains(wrapper)) {
-		    methodSet.add(wrapper);
-		    break;
-		}
-	    }
-	}
+	// for (Type implInterface : classObject.getGenericInterfaces()) {
+	// Class<?> classObj = null;
+	// if (implInterface instanceof ParameterizedType)
+	// classObj = (Class<?>) ((ParameterizedType) implInterface)
+	// .getRawType();
+	// else
+	// classObj = (Class<?>) implInterface;
+	//
+	// for (Method method : classObj.getDeclaredMethods()) {
+	// if (!Utils.isValidMember(method))
+	// continue;
+	//
+	// MethodWrapper wrapper = new MethodWrapper(method);
+	//
+	// if (!methodSet.contains(wrapper))
+	// methodSet.add(wrapper);
+	// }
+	// }
 
 	// Declared fields.
 	//
@@ -157,10 +168,13 @@ class ClassDefinition extends TypeDefinition {
 	    if (found)
 		continue;
 
-	    if (Utils.isPrivate(field))
-		indentWriter.print("private");
-	    else
+	    indentWriter.println(String.format("/** @REF %s */",
+		    getComment(field)));
+
+	    if (Utils.isPublic(field))
 		indentWriter.print("public");
+	    else
+		indentWriter.print("private");
 
 	    // NOTE: do not make finals inline, because Haxe just replaces the
 	    // value. Inline variables also require initializers.
@@ -196,21 +210,13 @@ class ClassDefinition extends TypeDefinition {
 	    if (!Utils.isValidConstructor(ctor))
 		continue;
 
-	    if (i < lastIndex) {
-		indentWriter.printf("@:overload(function %s {})",
-			convertConstructor(ctor));
-	    } else {
-		if (Utils.isAbstract(classObject) || !Utils.isPublic(ctor))
-		    indentWriter.print("private function new");
-		else
-		    indentWriter.print("public function new");
+	    indentWriter.println(String.format("/** @REF %s */",
+		    getComment(ctor)));
 
-		indentWriter.printf("%s;", convertConstructor(ctor));
-		indentWriter.println();
-	    }
-
-	    indentWriter.println();
+	    indentWriter.println(convertConstructor(ctor, i < lastIndex));
 	}
+
+	indentWriter.println();
 
 	// Methods.
 	//
@@ -240,49 +246,24 @@ class ClassDefinition extends TypeDefinition {
 
 	while (methods.size() > 0) {
 	    String name = methods.get(0).getName();
-	    // boolean staticFlag = Utils.isStatic(methods.get(0));
 	    int numOverloads = 0;
 
 	    while (methods.size() > numOverloads
-		    && methods.get(numOverloads).getName().equals(name)
-	    /* && Utils.isStatic(methods.get(numOverloads)) == staticFlag */)
+		    && methods.get(numOverloads).getName().equals(name))
 		numOverloads++;
 
 	    while (numOverloads-- > 0) {
 		Method method = methods.remove(0);
 
-		if (numOverloads > 0) {
-		    indentWriter.printf("@:overload(function %s {})",
-			    convertMethod(method));
-		} else {
+		indentWriter.println(String.format("/** @REF %s */",
+			getComment(method)));
 
-		    // Overriding annotation.
-		    //
-
-		    if (isOverride(method))
-			indentWriter.print("override ");
-
-		    if (Utils.isPublic(method))
-			indentWriter.print("public");
-		    else if (!Utils.isStatic(method)) {
-			if (method.getName().equals("equals")
-				|| method.getName().equals("clone")
-				|| method.getName().equals("finalize"))
-			    indentWriter.print("public");
-			else
-			    indentWriter.print("private");
-		    } else
-			indentWriter.print("private");
-
-		    if (Utils.isStatic(method))
-			indentWriter.print(" static");
-
-		    indentWriter.printf(" function %s;", convertMethod(method));
-		    indentWriter.println();
-		}
-
-		indentWriter.println();
+		indentWriter.println(convertMethod(method, isOverride(method),
+			numOverloads > 0));
 	    }
+
+	    indentWriter.println();
+
 	}
 
 	// Definition complete.

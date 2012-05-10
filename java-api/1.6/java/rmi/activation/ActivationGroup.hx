@@ -14,30 +14,30 @@ import java.rmi.server.UnicastRemoteObject;
 extern class ActivationGroup extends UnicastRemoteObject, implements ActivationInstantiator
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#ActivationGroup(java.rmi.activation.ActivationGroupID) */
-	private function new(groupID:ActivationGroupID):Void;
+	/*@@@ modifiers=4 */ private function new(groupID:ActivationGroupID):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#activeObject(java.rmi.activation.ActivationID, java.rmi.MarshalledObject) */
-	@:overload(function (id:ActivationID, mobj:MarshalledObject<Remote>):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (id:ActivationID, mobj:MarshalledObject<Remote>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#activeObject(java.rmi.activation.ActivationID, java.rmi.Remote) */
-	public function activeObject(id:ActivationID, obj:Remote):Void;
+	/*@@@ modifiers=1025 */ public function activeObject(id:ActivationID, obj:Remote):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#createGroup(java.rmi.activation.ActivationGroupID, java.rmi.activation.ActivationGroupDesc, long) */
-	static public function createGroup(id:ActivationGroupID, desc:ActivationGroupDesc, incarnation:haxe.Int64):ActivationGroup;
+	/*@@@ modifiers=41 */ static public function createGroup(id:ActivationGroupID, desc:ActivationGroupDesc, incarnation:haxe.Int64):ActivationGroup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#currentGroupID() */
-	static public function currentGroupID():ActivationGroupID;
+	/*@@@ modifiers=41 */ static public function currentGroupID():ActivationGroupID;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#getSystem() */
-	static public function getSystem():ActivationSystem;
+	/*@@@ modifiers=41 */ static public function getSystem():ActivationSystem;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#inactiveGroup() */
-	private function inactiveGroup():Void;
+	/*@@@ modifiers=4 */ private function inactiveGroup():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#inactiveObject(java.rmi.activation.ActivationID) */
-	public function inactiveObject(id:ActivationID):Bool;
+	/*@@@ modifiers=1 */ public function inactiveObject(id:ActivationID):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#setSystem(java.rmi.activation.ActivationSystem) */
-	static public function setSystem(system:ActivationSystem):Void;
+	/*@@@ modifiers=41 */ static public function setSystem(system:ActivationSystem):Void;
 
 }
 

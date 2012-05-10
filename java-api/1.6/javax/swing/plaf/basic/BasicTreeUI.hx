@@ -119,347 +119,347 @@ extern class BasicTreeUI extends TreeUI
 	private var editorHasDifferentSize:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#BasicTreeUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#cancelEditing(javax.swing.JTree) */
-	override public function cancelEditing(tree:JTree):Void;
+	/*@@@ modifiers=1 */ override public function cancelEditing(tree:JTree):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#checkForClickInExpandControl(javax.swing.tree.TreePath, int, int) */
-	private function checkForClickInExpandControl(path:TreePath, mouseX:Int, mouseY:Int):Void;
+	/*@@@ modifiers=4 */ private function checkForClickInExpandControl(path:TreePath, mouseX:Int, mouseY:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#completeEditing(boolean, boolean, boolean) */
-	@:overload(function (messageStop:Bool, messageCancel:Bool, messageTree:Bool):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (messageStop:Bool, messageCancel:Bool, messageTree:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#completeEditing() */
-	private function completeEditing():Void;
+	/*@@@ modifiers=4 */ private function completeEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#completeUIInstall() */
-	private function completeUIInstall():Void;
+	/*@@@ modifiers=4 */ private function completeUIInstall():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#completeUIUninstall() */
-	private function completeUIUninstall():Void;
+	/*@@@ modifiers=4 */ private function completeUIUninstall():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#configureLayoutCache() */
-	private function configureLayoutCache():Void;
+	/*@@@ modifiers=4 */ private function configureLayoutCache():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createCellEditorListener() */
-	private function createCellEditorListener():CellEditorListener;
+	/*@@@ modifiers=4 */ private function createCellEditorListener():CellEditorListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createCellRendererPane() */
-	private function createCellRendererPane():CellRendererPane;
+	/*@@@ modifiers=4 */ private function createCellRendererPane():CellRendererPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createComponentListener() */
-	private function createComponentListener():ComponentListener;
+	/*@@@ modifiers=4 */ private function createComponentListener():ComponentListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createDefaultCellEditor() */
-	private function createDefaultCellEditor():TreeCellEditor;
+	/*@@@ modifiers=4 */ private function createDefaultCellEditor():TreeCellEditor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createDefaultCellRenderer() */
-	private function createDefaultCellRenderer():TreeCellRenderer;
+	/*@@@ modifiers=4 */ private function createDefaultCellRenderer():TreeCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createFocusListener() */
-	private function createFocusListener():FocusListener;
+	/*@@@ modifiers=4 */ private function createFocusListener():FocusListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createKeyListener() */
-	private function createKeyListener():KeyListener;
+	/*@@@ modifiers=4 */ private function createKeyListener():KeyListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createLayoutCache() */
-	private function createLayoutCache():AbstractLayoutCache;
+	/*@@@ modifiers=4 */ private function createLayoutCache():AbstractLayoutCache;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createMouseListener() */
-	private function createMouseListener():MouseListener;
+	/*@@@ modifiers=4 */ private function createMouseListener():MouseListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createNodeDimensions() */
-	private function createNodeDimensions():AbstractLayoutCache_NodeDimensions;
+	/*@@@ modifiers=4 */ private function createNodeDimensions():AbstractLayoutCache_NodeDimensions;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createPropertyChangeListener() */
-	private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createSelectionModelPropertyChangeListener() */
-	private function createSelectionModelPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createSelectionModelPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createTreeExpansionListener() */
-	private function createTreeExpansionListener():TreeExpansionListener;
+	/*@@@ modifiers=4 */ private function createTreeExpansionListener():TreeExpansionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createTreeModelListener() */
-	private function createTreeModelListener():TreeModelListener;
+	/*@@@ modifiers=4 */ private function createTreeModelListener():TreeModelListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createTreeSelectionListener() */
-	private function createTreeSelectionListener():TreeSelectionListener;
+	/*@@@ modifiers=4 */ private function createTreeSelectionListener():TreeSelectionListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(x:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(x:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#drawCentered(java.awt.Component, java.awt.Graphics, javax.swing.Icon, int, int) */
-	private function drawCentered(c:Component, graphics:Graphics, icon:Icon, x:Int, y:Int):Void;
+	/*@@@ modifiers=4 */ private function drawCentered(c:Component, graphics:Graphics, icon:Icon, x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#drawDashedHorizontalLine(java.awt.Graphics, int, int, int) */
-	private function drawDashedHorizontalLine(g:Graphics, y:Int, x1:Int, x2:Int):Void;
+	/*@@@ modifiers=4 */ private function drawDashedHorizontalLine(g:Graphics, y:Int, x1:Int, x2:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#drawDashedVerticalLine(java.awt.Graphics, int, int, int) */
-	private function drawDashedVerticalLine(g:Graphics, x:Int, y1:Int, y2:Int):Void;
+	/*@@@ modifiers=4 */ private function drawDashedVerticalLine(g:Graphics, x:Int, y1:Int, y2:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#ensureRowsAreVisible(int, int) */
-	private function ensureRowsAreVisible(beginRow:Int, endRow:Int):Void;
+	/*@@@ modifiers=4 */ private function ensureRowsAreVisible(beginRow:Int, endRow:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
+	/*@@@ modifiers=1 */ override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getBaselineResizeBehavior(javax.swing.JComponent) */
-	override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
+	/*@@@ modifiers=1 */ override public function getBaselineResizeBehavior(c:JComponent):Component_BaselineResizeBehavior;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getCellEditor() */
-	private function getCellEditor():TreeCellEditor;
+	/*@@@ modifiers=4 */ private function getCellEditor():TreeCellEditor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getCellRenderer() */
-	private function getCellRenderer():TreeCellRenderer;
+	/*@@@ modifiers=4 */ private function getCellRenderer():TreeCellRenderer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getClosestPathForLocation(javax.swing.JTree, int, int) */
-	override public function getClosestPathForLocation(tree:JTree, x:Int, y:Int):TreePath;
+	/*@@@ modifiers=1 */ override public function getClosestPathForLocation(tree:JTree, x:Int, y:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getCollapsedIcon() */
-	public function getCollapsedIcon():Icon;
+	/*@@@ modifiers=1 */ public function getCollapsedIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getEditingPath(javax.swing.JTree) */
-	override public function getEditingPath(tree:JTree):TreePath;
+	/*@@@ modifiers=1 */ override public function getEditingPath(tree:JTree):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getExpandedIcon() */
-	public function getExpandedIcon():Icon;
+	/*@@@ modifiers=1 */ public function getExpandedIcon():Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getHashColor() */
-	private function getHashColor():Color;
+	/*@@@ modifiers=4 */ private function getHashColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getHorizontalLegBuffer() */
-	private function getHorizontalLegBuffer():Int;
+	/*@@@ modifiers=4 */ private function getHorizontalLegBuffer():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getLastChildPath(javax.swing.tree.TreePath) */
-	private function getLastChildPath(parent:TreePath):TreePath;
+	/*@@@ modifiers=4 */ private function getLastChildPath(parent:TreePath):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getLeftChildIndent() */
-	public function getLeftChildIndent():Int;
+	/*@@@ modifiers=1 */ public function getLeftChildIndent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getMaximumSize(javax.swing.JComponent) */
-	override public function getMaximumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMaximumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getMinimumSize(javax.swing.JComponent) */
-	override public function getMinimumSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getMinimumSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getModel() */
-	private function getModel():TreeModel;
+	/*@@@ modifiers=4 */ private function getModel():TreeModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getPathBounds(javax.swing.JTree, javax.swing.tree.TreePath) */
-	override public function getPathBounds(tree:JTree, path:TreePath):Rectangle;
+	/*@@@ modifiers=1 */ override public function getPathBounds(tree:JTree, path:TreePath):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getPathForRow(javax.swing.JTree, int) */
-	override public function getPathForRow(tree:JTree, row:Int):TreePath;
+	/*@@@ modifiers=1 */ override public function getPathForRow(tree:JTree, row:Int):TreePath;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getPreferredMinSize() */
-	public function getPreferredMinSize():Dimension;
+	/*@@@ modifiers=1 */ public function getPreferredMinSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getPreferredSize(javax.swing.JComponent, boolean) */
-	@:overload(function (c:JComponent, checkConsistancy:Bool):Dimension {})
+	/*@@@ modifiers=1 */ @:overload(function (c:JComponent, checkConsistancy:Bool):Dimension {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getPreferredSize(javax.swing.JComponent) */
-	override public function getPreferredSize(c:JComponent):Dimension;
+	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getRightChildIndent() */
-	public function getRightChildIndent():Int;
+	/*@@@ modifiers=1 */ public function getRightChildIndent():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getRowCount(javax.swing.JTree) */
-	override public function getRowCount(tree:JTree):Int;
+	/*@@@ modifiers=1 */ override public function getRowCount(tree:JTree):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getRowForPath(javax.swing.JTree, javax.swing.tree.TreePath) */
-	override public function getRowForPath(tree:JTree, path:TreePath):Int;
+	/*@@@ modifiers=1 */ override public function getRowForPath(tree:JTree, path:TreePath):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getRowHeight() */
-	private function getRowHeight():Int;
+	/*@@@ modifiers=4 */ private function getRowHeight():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getRowX(int, int) */
-	private function getRowX(row:Int, depth:Int):Int;
+	/*@@@ modifiers=4 */ private function getRowX(row:Int, depth:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getSelectionModel() */
-	private function getSelectionModel():TreeSelectionModel;
+	/*@@@ modifiers=4 */ private function getSelectionModel():TreeSelectionModel;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getShowsRootHandles() */
-	private function getShowsRootHandles():Bool;
+	/*@@@ modifiers=4 */ private function getShowsRootHandles():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#getVerticalLegBuffer() */
-	private function getVerticalLegBuffer():Int;
+	/*@@@ modifiers=4 */ private function getVerticalLegBuffer():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#handleExpandControlClick(javax.swing.tree.TreePath, int, int) */
-	private function handleExpandControlClick(path:TreePath, mouseX:Int, mouseY:Int):Void;
+	/*@@@ modifiers=4 */ private function handleExpandControlClick(path:TreePath, mouseX:Int, mouseY:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#installComponents() */
-	private function installComponents():Void;
+	/*@@@ modifiers=4 */ private function installComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isEditable() */
-	private function isEditable():Bool;
+	/*@@@ modifiers=4 */ private function isEditable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isEditing(javax.swing.JTree) */
-	override public function isEditing(tree:JTree):Bool;
+	/*@@@ modifiers=1 */ override public function isEditing(tree:JTree):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isLargeModel() */
-	private function isLargeModel():Bool;
+	/*@@@ modifiers=4 */ private function isLargeModel():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isLeaf(int) */
-	private function isLeaf(row:Int):Bool;
+	/*@@@ modifiers=4 */ private function isLeaf(row:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isLocationInExpandControl(javax.swing.tree.TreePath, int, int) */
-	private function isLocationInExpandControl(path:TreePath, mouseX:Int, mouseY:Int):Bool;
+	/*@@@ modifiers=4 */ private function isLocationInExpandControl(path:TreePath, mouseX:Int, mouseY:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isMultiSelectEvent(java.awt.event.MouseEvent) */
-	private function isMultiSelectEvent(event:MouseEvent):Bool;
+	/*@@@ modifiers=4 */ private function isMultiSelectEvent(event:MouseEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isRootVisible() */
-	private function isRootVisible():Bool;
+	/*@@@ modifiers=4 */ private function isRootVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isToggleEvent(java.awt.event.MouseEvent) */
-	private function isToggleEvent(event:MouseEvent):Bool;
+	/*@@@ modifiers=4 */ private function isToggleEvent(event:MouseEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isToggleSelectionEvent(java.awt.event.MouseEvent) */
-	private function isToggleSelectionEvent(event:MouseEvent):Bool;
+	/*@@@ modifiers=4 */ private function isToggleSelectionEvent(event:MouseEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
-	override public function paint(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paintExpandControl(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, java.awt.Rectangle, javax.swing.tree.TreePath, int, boolean, boolean, boolean) */
-	private function paintExpandControl(g:Graphics, clipBounds:Rectangle, insets:Insets, bounds:Rectangle, path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintExpandControl(g:Graphics, clipBounds:Rectangle, insets:Insets, bounds:Rectangle, path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paintHorizontalLine(java.awt.Graphics, javax.swing.JComponent, int, int, int) */
-	private function paintHorizontalLine(g:Graphics, c:JComponent, y:Int, left:Int, right:Int):Void;
+	/*@@@ modifiers=4 */ private function paintHorizontalLine(g:Graphics, c:JComponent, y:Int, left:Int, right:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paintHorizontalPartOfLeg(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, java.awt.Rectangle, javax.swing.tree.TreePath, int, boolean, boolean, boolean) */
-	private function paintHorizontalPartOfLeg(g:Graphics, clipBounds:Rectangle, insets:Insets, bounds:Rectangle, path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintHorizontalPartOfLeg(g:Graphics, clipBounds:Rectangle, insets:Insets, bounds:Rectangle, path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paintRow(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, java.awt.Rectangle, javax.swing.tree.TreePath, int, boolean, boolean, boolean) */
-	private function paintRow(g:Graphics, clipBounds:Rectangle, insets:Insets, bounds:Rectangle, path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Void;
+	/*@@@ modifiers=4 */ private function paintRow(g:Graphics, clipBounds:Rectangle, insets:Insets, bounds:Rectangle, path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paintVerticalLine(java.awt.Graphics, javax.swing.JComponent, int, int, int) */
-	private function paintVerticalLine(g:Graphics, c:JComponent, x:Int, top:Int, bottom:Int):Void;
+	/*@@@ modifiers=4 */ private function paintVerticalLine(g:Graphics, c:JComponent, x:Int, top:Int, bottom:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#paintVerticalPartOfLeg(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, javax.swing.tree.TreePath) */
-	private function paintVerticalPartOfLeg(g:Graphics, clipBounds:Rectangle, insets:Insets, path:TreePath):Void;
+	/*@@@ modifiers=4 */ private function paintVerticalPartOfLeg(g:Graphics, clipBounds:Rectangle, insets:Insets, path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#pathWasCollapsed(javax.swing.tree.TreePath) */
-	private function pathWasCollapsed(path:TreePath):Void;
+	/*@@@ modifiers=4 */ private function pathWasCollapsed(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#pathWasExpanded(javax.swing.tree.TreePath) */
-	private function pathWasExpanded(path:TreePath):Void;
+	/*@@@ modifiers=4 */ private function pathWasExpanded(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#prepareForUIInstall() */
-	private function prepareForUIInstall():Void;
+	/*@@@ modifiers=4 */ private function prepareForUIInstall():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#prepareForUIUninstall() */
-	private function prepareForUIUninstall():Void;
+	/*@@@ modifiers=4 */ private function prepareForUIUninstall():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#selectPathForEvent(javax.swing.tree.TreePath, java.awt.event.MouseEvent) */
-	private function selectPathForEvent(path:TreePath, event:MouseEvent):Void;
+	/*@@@ modifiers=4 */ private function selectPathForEvent(path:TreePath, event:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setCellEditor(javax.swing.tree.TreeCellEditor) */
-	private function setCellEditor(editor:TreeCellEditor):Void;
+	/*@@@ modifiers=4 */ private function setCellEditor(editor:TreeCellEditor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setCellRenderer(javax.swing.tree.TreeCellRenderer) */
-	private function setCellRenderer(tcr:TreeCellRenderer):Void;
+	/*@@@ modifiers=4 */ private function setCellRenderer(tcr:TreeCellRenderer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setCollapsedIcon(javax.swing.Icon) */
-	public function setCollapsedIcon(newG:Icon):Void;
+	/*@@@ modifiers=1 */ public function setCollapsedIcon(newG:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setEditable(boolean) */
-	private function setEditable(newValue:Bool):Void;
+	/*@@@ modifiers=4 */ private function setEditable(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setExpandedIcon(javax.swing.Icon) */
-	public function setExpandedIcon(newG:Icon):Void;
+	/*@@@ modifiers=1 */ public function setExpandedIcon(newG:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setHashColor(java.awt.Color) */
-	private function setHashColor(color:Color):Void;
+	/*@@@ modifiers=4 */ private function setHashColor(color:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setLargeModel(boolean) */
-	private function setLargeModel(largeModel:Bool):Void;
+	/*@@@ modifiers=4 */ private function setLargeModel(largeModel:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setLeftChildIndent(int) */
-	public function setLeftChildIndent(newAmount:Int):Void;
+	/*@@@ modifiers=1 */ public function setLeftChildIndent(newAmount:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setModel(javax.swing.tree.TreeModel) */
-	private function setModel(model:TreeModel):Void;
+	/*@@@ modifiers=4 */ private function setModel(model:TreeModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setPreferredMinSize(java.awt.Dimension) */
-	public function setPreferredMinSize(newSize:Dimension):Void;
+	/*@@@ modifiers=1 */ public function setPreferredMinSize(newSize:Dimension):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setRightChildIndent(int) */
-	public function setRightChildIndent(newAmount:Int):Void;
+	/*@@@ modifiers=1 */ public function setRightChildIndent(newAmount:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setRootVisible(boolean) */
-	private function setRootVisible(newValue:Bool):Void;
+	/*@@@ modifiers=4 */ private function setRootVisible(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setRowHeight(int) */
-	private function setRowHeight(rowHeight:Int):Void;
+	/*@@@ modifiers=4 */ private function setRowHeight(rowHeight:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setSelectionModel(javax.swing.tree.TreeSelectionModel) */
-	private function setSelectionModel(newLSM:TreeSelectionModel):Void;
+	/*@@@ modifiers=4 */ private function setSelectionModel(newLSM:TreeSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#setShowsRootHandles(boolean) */
-	private function setShowsRootHandles(newValue:Bool):Void;
+	/*@@@ modifiers=4 */ private function setShowsRootHandles(newValue:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#shouldPaintExpandControl(javax.swing.tree.TreePath, int, boolean, boolean, boolean) */
-	private function shouldPaintExpandControl(path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Bool;
+	/*@@@ modifiers=4 */ private function shouldPaintExpandControl(path:TreePath, row:Int, isExpanded:Bool, hasBeenExpanded:Bool, isLeaf:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#startEditing(javax.swing.tree.TreePath, java.awt.event.MouseEvent) */
-	private function startEditing(path:TreePath, event:MouseEvent):Bool;
+	/*@@@ modifiers=4 */ private function startEditing(path:TreePath, event:MouseEvent):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#startEditingAtPath(javax.swing.JTree, javax.swing.tree.TreePath) */
-	override public function startEditingAtPath(tree:JTree, path:TreePath):Void;
+	/*@@@ modifiers=1 */ override public function startEditingAtPath(tree:JTree, path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#stopEditing(javax.swing.JTree) */
-	override public function stopEditing(tree:JTree):Bool;
+	/*@@@ modifiers=1 */ override public function stopEditing(tree:JTree):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#toggleExpandState(javax.swing.tree.TreePath) */
-	private function toggleExpandState(path:TreePath):Void;
+	/*@@@ modifiers=4 */ private function toggleExpandState(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#uninstallComponents() */
-	private function uninstallComponents():Void;
+	/*@@@ modifiers=4 */ private function uninstallComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateCachedPreferredSize() */
-	private function updateCachedPreferredSize():Void;
+	/*@@@ modifiers=4 */ private function updateCachedPreferredSize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateCellEditor() */
-	private function updateCellEditor():Void;
+	/*@@@ modifiers=4 */ private function updateCellEditor():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateDepthOffset() */
-	private function updateDepthOffset():Void;
+	/*@@@ modifiers=4 */ private function updateDepthOffset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateExpandedDescendants(javax.swing.tree.TreePath) */
-	private function updateExpandedDescendants(path:TreePath):Void;
+	/*@@@ modifiers=4 */ private function updateExpandedDescendants(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateLayoutCacheExpandedNodes() */
-	private function updateLayoutCacheExpandedNodes():Void;
+	/*@@@ modifiers=4 */ private function updateLayoutCacheExpandedNodes():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateRenderer() */
-	private function updateRenderer():Void;
+	/*@@@ modifiers=4 */ private function updateRenderer():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#updateSize() */
-	private function updateSize():Void;
+	/*@@@ modifiers=4 */ private function updateSize():Void;
 
 }
 

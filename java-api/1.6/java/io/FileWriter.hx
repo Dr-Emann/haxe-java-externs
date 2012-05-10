@@ -9,15 +9,15 @@ import java.io.OutputStreamWriter;
 extern class FileWriter extends OutputStreamWriter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileWriter.html#FileWriter(java.lang.String) */
-	@:overload(function (fileName:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fileName:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileWriter.html#FileWriter(java.lang.String, boolean) */
-	@:overload(function (fileName:String, append:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fileName:String, append:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileWriter.html#FileWriter(java.io.File) */
-	@:overload(function (fileName:File):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fileName:File):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileWriter.html#FileWriter(java.io.File, boolean) */
-	@:overload(function (fileName:File, append:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (fileName:File, append:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FileWriter.html#FileWriter(java.io.FileDescriptor) */
-	public function new(fileName:FileDescriptor):Void;
+	/*@@@ modifiers=1 */ public function new(fileName:FileDescriptor):Void;
 
 }
 

@@ -1,7 +1,6 @@
 package java.awt.font;
 
 import java.NativeArray;
-import java.lang.Number;
 import java.lang.Object;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html */
@@ -9,40 +8,40 @@ import java.lang.Object;
 extern class LineMetrics extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#LineMetrics() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getAscent() */
-	public function getAscent():StdFloat;
+	/*@@@ modifiers=1025 */ public function getAscent():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getBaselineIndex() */
-	public function getBaselineIndex():Int;
+	/*@@@ modifiers=1025 */ public function getBaselineIndex():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getBaselineOffsets() */
-	public function getBaselineOffsets():NativeArray<StdFloat>;
+	/*@@@ modifiers=1025 */ public function getBaselineOffsets():NativeArray<Single>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getDescent() */
-	public function getDescent():StdFloat;
+	/*@@@ modifiers=1025 */ public function getDescent():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getHeight() */
-	public function getHeight():StdFloat;
+	/*@@@ modifiers=1025 */ public function getHeight():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getLeading() */
-	public function getLeading():StdFloat;
+	/*@@@ modifiers=1025 */ public function getLeading():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getNumChars() */
-	public function getNumChars():Int;
+	/*@@@ modifiers=1025 */ public function getNumChars():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getStrikethroughOffset() */
-	public function getStrikethroughOffset():StdFloat;
+	/*@@@ modifiers=1025 */ public function getStrikethroughOffset():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getStrikethroughThickness() */
-	public function getStrikethroughThickness():StdFloat;
+	/*@@@ modifiers=1025 */ public function getStrikethroughThickness():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getUnderlineOffset() */
-	public function getUnderlineOffset():StdFloat;
+	/*@@@ modifiers=1025 */ public function getUnderlineOffset():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LineMetrics.html#getUnderlineThickness() */
-	public function getUnderlineThickness():StdFloat;
+	/*@@@ modifiers=1025 */ public function getUnderlineThickness():Single;
 
 }
 

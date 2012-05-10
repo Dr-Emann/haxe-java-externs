@@ -206,7 +206,7 @@ public final class Utils {
 	Matcher matcher = Pattern.compile(regex).matcher(name);
 	matcher.matches();
 	return String.format("%s%s", matcher.group(1), matcher.group(2)
-		.replace("_", "$"));
+		.replaceFirst("_", Matcher.quoteReplacement("$")));
     }
 
     /**
@@ -233,7 +233,7 @@ public final class Utils {
      */
     public static boolean isValidClass(Class<?> classObj) {
 	return !classObj.isAnonymousClass() && !classObj.isLocalClass()
-		&& !isPrivate(classObj) && !isInternal(classObj)
+		&& !isPrivate(classObj) /*&& !isInternal(classObj)*/
 		&& isValidHaxeTypeIdentifier(classObj.getSimpleName());
     }
 
@@ -259,12 +259,19 @@ public final class Utils {
 	while (decl.getSuperclass() != null) {
 	    decl = decl.getSuperclass();
 	    for (Field other : decl.getDeclaredFields()) {
-		if (other.equals(field.getName()) && isValidMember(other))
+		if (other.getName().equals(field.getName()) && isValidMember(other))
 		    return false;
 	    }
 	}
 
 	return true;
+    }
+
+    /**
+     * Returns true if the specified string is a Haxe keyword, false otherwise.
+     */
+    public static boolean isHaxeKeyword(String str) {
+	return HAXE_KEYWORDS.contains(str);
     }
 
     /**
@@ -281,7 +288,7 @@ public final class Utils {
      */
     public static boolean isValidHaxeIdentifier(String identifier) {
 	return Pattern.matches(getHaxeIdentifierRegex(), identifier)
-		&& !HAXE_KEYWORDS.contains(identifier);
+		&& !isHaxeKeyword(identifier);
     }
 
     /**

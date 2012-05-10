@@ -8,7 +8,7 @@ import java.lang.annotation.Annotation;
 extern interface XmlEnum implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/XmlEnum.html#value() */
-	public function value():Class<Dynamic>;
+	/*@@@ modifiers=1025 */ public function value():Class<Dynamic>;
 
 }
 

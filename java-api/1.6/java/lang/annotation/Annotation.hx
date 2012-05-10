@@ -7,16 +7,16 @@ import java.lang.Class;
 extern interface Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#annotationType() */
-	public function annotationType():Class<Annotation>;
+	/*@@@ modifiers=1025 */ public function annotationType():Class<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#equals(java.lang.Object) */
-	public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#hashCode() */
-	public function hashCode():Int;
+	/*@@@ modifiers=1025 */ public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html#toString() */
-	public function toString():String;
+	/*@@@ modifiers=1025 */ public function toString():String;
 
 }
 

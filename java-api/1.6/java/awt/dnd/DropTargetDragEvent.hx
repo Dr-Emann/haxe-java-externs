@@ -13,34 +13,34 @@ import java.util.List;
 extern class DropTargetDragEvent extends DropTargetEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#DropTargetDragEvent(java.awt.dnd.DropTargetContext, java.awt.Point, int, int) */
-	public function new(dtc:DropTargetContext, cursorLocn:Point, dropAction:Int, srcActions:Int):Void;
+	/*@@@ modifiers=1 */ public function new(dtc:DropTargetContext, cursorLocn:Point, dropAction:Int, srcActions:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#acceptDrag(int) */
-	public function acceptDrag(dragOperation:Int):Void;
+	/*@@@ modifiers=1 */ public function acceptDrag(dragOperation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#getCurrentDataFlavors() */
-	public function getCurrentDataFlavors():NativeArray<DataFlavor>;
+	/*@@@ modifiers=1 */ public function getCurrentDataFlavors():NativeArray<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#getCurrentDataFlavorsAsList() */
-	public function getCurrentDataFlavorsAsList():List<DataFlavor>;
+	/*@@@ modifiers=1 */ public function getCurrentDataFlavorsAsList():List<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#getDropAction() */
-	public function getDropAction():Int;
+	/*@@@ modifiers=1 */ public function getDropAction():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#getLocation() */
-	public function getLocation():Point;
+	/*@@@ modifiers=1 */ public function getLocation():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#getSourceActions() */
-	public function getSourceActions():Int;
+	/*@@@ modifiers=1 */ public function getSourceActions():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#getTransferable() */
-	public function getTransferable():Transferable;
+	/*@@@ modifiers=1 */ public function getTransferable():Transferable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor) */
-	public function isDataFlavorSupported(df:DataFlavor):Bool;
+	/*@@@ modifiers=1 */ public function isDataFlavorSupported(df:DataFlavor):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetDragEvent.html#rejectDrag() */
-	public function rejectDrag():Void;
+	/*@@@ modifiers=1 */ public function rejectDrag():Void;
 
 }
 

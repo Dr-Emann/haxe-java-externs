@@ -17,46 +17,46 @@ extern class DefaultTableCellRenderer extends JLabel, implements TableCellRender
 	private static var noFocusBorder:Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#DefaultTableCellRenderer() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#firePropertyChange(java.lang.String, boolean, boolean) */
-	@:overload(function (propertyName:String, oldValue:Bool, newValue:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Bool, newValue:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int) */
-	public function getTableCellRendererComponent(table:JTable, value:Dynamic, isSelected:Bool, hasFocus:Bool, row:Int, column:Int):Component;
+	/*@@@ modifiers=1 */ public function getTableCellRendererComponent(table:JTable, value:Dynamic, isSelected:Bool, hasFocus:Bool, row:Int, column:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#invalidate() */
-	override public function invalidate():Void;
+	/*@@@ modifiers=1 */ override public function invalidate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#isOpaque() */
-	override public function isOpaque():Bool;
+	/*@@@ modifiers=1 */ override public function isOpaque():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#repaint(long, int, int, int, int) */
-	@:overload(function (tm:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (tm:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#repaint(java.awt.Rectangle) */
-	@:overload(function (r:Rectangle):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Rectangle):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#repaint() */
-	override public function repaint():Void;
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#revalidate() */
-	override public function revalidate():Void;
+	/*@@@ modifiers=1 */ override public function revalidate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#setBackground(java.awt.Color) */
-	override public function setBackground(c:Color):Void;
+	/*@@@ modifiers=1 */ override public function setBackground(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#setForeground(java.awt.Color) */
-	override public function setForeground(c:Color):Void;
+	/*@@@ modifiers=1 */ override public function setForeground(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#setValue(java.lang.Object) */
-	private function setValue(value:Dynamic):Void;
+	/*@@@ modifiers=4 */ private function setValue(value:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#updateUI() */
-	override public function updateUI():Void;
+	/*@@@ modifiers=1 */ override public function updateUI():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#validate() */
-	override public function validate():Void;
+	/*@@@ modifiers=1 */ override public function validate():Void;
 
 }
 

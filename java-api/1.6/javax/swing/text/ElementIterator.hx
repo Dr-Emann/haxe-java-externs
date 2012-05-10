@@ -10,27 +10,27 @@ import javax.swing.text.Element;
 extern class ElementIterator extends Object, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#ElementIterator(javax.swing.text.Element) */
-	@:overload(function (document:Element):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (document:Element):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#ElementIterator(javax.swing.text.Document) */
-	public function new(document:Document):Void;
+	/*@@@ modifiers=1 */ public function new(document:Document):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=33 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#current() */
-	public function current():Element;
+	/*@@@ modifiers=1 */ public function current():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#depth() */
-	public function depth():Int;
+	/*@@@ modifiers=1 */ public function depth():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#first() */
-	public function first():Element;
+	/*@@@ modifiers=1 */ public function first():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#next() */
-	public function next():Element;
+	/*@@@ modifiers=1 */ public function next():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ElementIterator.html#previous() */
-	public function previous():Element;
+	/*@@@ modifiers=1 */ public function previous():Element;
 
 }
 

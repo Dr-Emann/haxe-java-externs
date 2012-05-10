@@ -12,16 +12,16 @@ import javax.swing.JFrame;
 extern interface InputMethodContext implements InputMethodRequests
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethodContext.html#createInputMethodJFrame(java.lang.String, boolean) */
-	public function createInputMethodJFrame(title:String, attachToInputContext:Bool):JFrame;
+	/*@@@ modifiers=1025 */ public function createInputMethodJFrame(title:String, attachToInputContext:Bool):JFrame;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethodContext.html#createInputMethodWindow(java.lang.String, boolean) */
-	public function createInputMethodWindow(title:String, attachToInputContext:Bool):Window;
+	/*@@@ modifiers=1025 */ public function createInputMethodWindow(title:String, attachToInputContext:Bool):Window;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethodContext.html#dispatchInputMethodEvent(int, java.text.AttributedCharacterIterator, int, java.awt.font.TextHitInfo, java.awt.font.TextHitInfo) */
-	public function dispatchInputMethodEvent(id:Int, text:AttributedCharacterIterator, committedCharacterCount:Int, caret:TextHitInfo, visiblePosition:TextHitInfo):Void;
+	/*@@@ modifiers=1025 */ public function dispatchInputMethodEvent(id:Int, text:AttributedCharacterIterator, committedCharacterCount:Int, caret:TextHitInfo, visiblePosition:TextHitInfo):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/im/spi/InputMethodContext.html#enableClientWindowNotification(java.awt.im.spi.InputMethod, boolean) */
-	public function enableClientWindowNotification(inputMethod:InputMethod, enable:Bool):Void;
+	/*@@@ modifiers=1025 */ public function enableClientWindowNotification(inputMethod:InputMethod, enable:Bool):Void;
 
 }
 

@@ -8,7 +8,7 @@ import javax.management.openmbean.CompositeType;
 extern interface CompositeDataView
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/CompositeDataView.html#toCompositeData(javax.management.openmbean.CompositeType) */
-	public function toCompositeData(ct:CompositeType):CompositeData;
+	/*@@@ modifiers=1025 */ public function toCompositeData(ct:CompositeType):CompositeData;
 
 }
 

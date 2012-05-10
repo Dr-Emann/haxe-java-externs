@@ -7,9 +7,9 @@ import javax.security.auth.login.AccountException;
 extern class AccountExpiredException extends AccountException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/AccountExpiredException.html#AccountExpiredException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/AccountExpiredException.html#AccountExpiredException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

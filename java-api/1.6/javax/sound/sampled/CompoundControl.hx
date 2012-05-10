@@ -9,13 +9,13 @@ import javax.sound.sampled.Control;
 extern class CompoundControl extends Control
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/CompoundControl.html#CompoundControl(javax.sound.sampled.CompoundControl$Type, javax.sound.sampled.Control[]) */
-	private function new(type:CompoundControl_Type, memberControls:NativeArray<Control>):Void;
+	/*@@@ modifiers=4 */ private function new(type:CompoundControl_Type, memberControls:NativeArray<Control>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/CompoundControl.html#getMemberControls() */
-	public function getMemberControls():NativeArray<Control>;
+	/*@@@ modifiers=1 */ public function getMemberControls():NativeArray<Control>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/CompoundControl.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

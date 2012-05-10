@@ -8,13 +8,13 @@ import java.awt.peer.MenuComponentPeer;
 extern interface MenuBarPeer implements MenuComponentPeer
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuBarPeer.html#addHelpMenu(java.awt.Menu) */
-	public function addHelpMenu(m:Menu):Void;
+	/*@@@ modifiers=1025 */ public function addHelpMenu(m:Menu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuBarPeer.html#addMenu(java.awt.Menu) */
-	public function addMenu(m:Menu):Void;
+	/*@@@ modifiers=1025 */ public function addMenu(m:Menu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/MenuBarPeer.html#delMenu(int) */
-	public function delMenu(index:Int):Void;
+	/*@@@ modifiers=1025 */ public function delMenu(index:Int):Void;
 
 }
 

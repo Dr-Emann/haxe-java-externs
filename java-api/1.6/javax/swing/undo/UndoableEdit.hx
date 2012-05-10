@@ -6,37 +6,37 @@ package javax.swing.undo;
 extern interface UndoableEdit
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit) */
-	public function addEdit(anEdit:UndoableEdit):Bool;
+	/*@@@ modifiers=1025 */ public function addEdit(anEdit:UndoableEdit):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#canRedo() */
-	public function canRedo():Bool;
+	/*@@@ modifiers=1025 */ public function canRedo():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#canUndo() */
-	public function canUndo():Bool;
+	/*@@@ modifiers=1025 */ public function canUndo():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#die() */
-	public function die():Void;
+	/*@@@ modifiers=1025 */ public function die():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#getPresentationName() */
-	public function getPresentationName():String;
+	/*@@@ modifiers=1025 */ public function getPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#getRedoPresentationName() */
-	public function getRedoPresentationName():String;
+	/*@@@ modifiers=1025 */ public function getRedoPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#getUndoPresentationName() */
-	public function getUndoPresentationName():String;
+	/*@@@ modifiers=1025 */ public function getUndoPresentationName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#isSignificant() */
-	public function isSignificant():Bool;
+	/*@@@ modifiers=1025 */ public function isSignificant():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#redo() */
-	public function redo():Void;
+	/*@@@ modifiers=1025 */ public function redo():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit) */
-	public function replaceEdit(anEdit:UndoableEdit):Bool;
+	/*@@@ modifiers=1025 */ public function replaceEdit(anEdit:UndoableEdit):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/undo/UndoableEdit.html#undo.UndoableEdit.undo() */
-	public function undo():Void;
+	/*@@@ modifiers=1025 */ public function undo():Void;
 
 }
 

@@ -11,10 +11,10 @@ import javax.swing.event.TreeSelectionListener;
 extern class JTree_TreeSelectionRedirector extends Object, implements Serializable, implements TreeSelectionListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.TreeSelectionRedirector.html#JTree$TreeSelectionRedirector(javax.swing.JTree) */
-	private function new(arg0:JTree):Void;
+	/*@@@ modifiers=4 */ private function new(arg0:JTree):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.TreeSelectionRedirector.html#valueChanged(javax.swing.event.TreeSelectionEvent) */
-	public function valueChanged(e:TreeSelectionEvent):Void;
+	/*@@@ modifiers=1 */ public function valueChanged(e:TreeSelectionEvent):Void;
 
 }
 

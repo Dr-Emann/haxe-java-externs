@@ -9,7 +9,7 @@ import javax.management.remote.JMXServiceURL;
 extern interface JMXConnectorProvider
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorProvider.html#newJMXConnector(javax.management.remote.JMXServiceURL, java.util.Map) */
-	public function newJMXConnector(serviceURL:JMXServiceURL, environment:Map<String, Dynamic>):JMXConnector;
+	/*@@@ modifiers=1025 */ public function newJMXConnector(serviceURL:JMXServiceURL, environment:Map<String, Dynamic>):JMXConnector;
 
 }
 

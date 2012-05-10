@@ -7,7 +7,7 @@ import java.lang.Object;
 extern class JAXBElement_GlobalScope extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.GlobalScope.html#JAXBElement$GlobalScope() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

@@ -20,10 +20,10 @@ extern class GroupLayout_Alignment extends Enum<GroupLayout_Alignment>
 	public static var BASELINE:GroupLayout_Alignment;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/GroupLayout.Alignment.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):GroupLayout_Alignment;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):GroupLayout_Alignment;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/GroupLayout.Alignment.html#values() */
-	static public function values():NativeArray<GroupLayout_Alignment>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<GroupLayout_Alignment>;
 
 }
 

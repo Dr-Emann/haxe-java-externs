@@ -9,37 +9,37 @@ import javax.swing.text.AttributeSet;
 extern interface AccessibleText
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getAfterIndex(int, int) */
-	public function getAfterIndex(part:Int, index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAfterIndex(part:Int, index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getAtIndex(int, int) */
-	public function getAtIndex(part:Int, index:Int):String;
+	/*@@@ modifiers=1025 */ public function getAtIndex(part:Int, index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getBeforeIndex(int, int) */
-	public function getBeforeIndex(part:Int, index:Int):String;
+	/*@@@ modifiers=1025 */ public function getBeforeIndex(part:Int, index:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getCaretPosition() */
-	public function getCaretPosition():Int;
+	/*@@@ modifiers=1025 */ public function getCaretPosition():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getCharCount() */
-	public function getCharCount():Int;
+	/*@@@ modifiers=1025 */ public function getCharCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getCharacterAttribute(int) */
-	public function getCharacterAttribute(i:Int):AttributeSet;
+	/*@@@ modifiers=1025 */ public function getCharacterAttribute(i:Int):AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getCharacterBounds(int) */
-	public function getCharacterBounds(i:Int):Rectangle;
+	/*@@@ modifiers=1025 */ public function getCharacterBounds(i:Int):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getIndexAtPoint(java.awt.Point) */
-	public function getIndexAtPoint(p:Point):Int;
+	/*@@@ modifiers=1025 */ public function getIndexAtPoint(p:Point):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getSelectedText() */
-	public function getSelectedText():String;
+	/*@@@ modifiers=1025 */ public function getSelectedText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getSelectionEnd() */
-	public function getSelectionEnd():Int;
+	/*@@@ modifiers=1025 */ public function getSelectionEnd():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleText.html#getSelectionStart() */
-	public function getSelectionStart():Int;
+	/*@@@ modifiers=1025 */ public function getSelectionStart():Int;
 
 }
 

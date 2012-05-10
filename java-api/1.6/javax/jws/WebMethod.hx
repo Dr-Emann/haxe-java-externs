@@ -7,13 +7,13 @@ import java.lang.annotation.Annotation;
 extern interface WebMethod implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebMethod.html#action() */
-	public function action():String;
+	/*@@@ modifiers=1025 */ public function action():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebMethod.html#exclude() */
-	public function exclude():Bool;
+	/*@@@ modifiers=1025 */ public function exclude():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/jws/WebMethod.html#operationName() */
-	public function operationName():String;
+	/*@@@ modifiers=1025 */ public function operationName():String;
 
 }
 

@@ -19,57 +19,57 @@ extern class StreamTokenizer extends Object
 	public var nval:StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#StreamTokenizer(java.io.InputStream) */
-	@:overload(function (is:InputStream):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (is:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#StreamTokenizer(java.io.Reader) */
-	public function new(is:Reader):Void;
+	/*@@@ modifiers=1 */ public function new(is:Reader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#commentChar(int) */
-	public function commentChar(ch:Int):Void;
+	/*@@@ modifiers=1 */ public function commentChar(ch:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#eolIsSignificant(boolean) */
-	public function eolIsSignificant(flag:Bool):Void;
+	/*@@@ modifiers=1 */ public function eolIsSignificant(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#lineno() */
-	public function lineno():Int;
+	/*@@@ modifiers=1 */ public function lineno():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#lowerCaseMode(boolean) */
-	public function lowerCaseMode(fl:Bool):Void;
+	/*@@@ modifiers=1 */ public function lowerCaseMode(fl:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#nextToken() */
-	public function nextToken():Int;
+	/*@@@ modifiers=1 */ public function nextToken():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#ordinaryChar(int) */
-	public function ordinaryChar(ch:Int):Void;
+	/*@@@ modifiers=1 */ public function ordinaryChar(ch:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#ordinaryChars(int, int) */
-	public function ordinaryChars(low:Int, hi:Int):Void;
+	/*@@@ modifiers=1 */ public function ordinaryChars(low:Int, hi:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#parseNumbers() */
-	public function parseNumbers():Void;
+	/*@@@ modifiers=1 */ public function parseNumbers():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#pushBack() */
-	public function pushBack():Void;
+	/*@@@ modifiers=1 */ public function pushBack():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#quoteChar(int) */
-	public function quoteChar(ch:Int):Void;
+	/*@@@ modifiers=1 */ public function quoteChar(ch:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#resetSyntax() */
-	public function resetSyntax():Void;
+	/*@@@ modifiers=1 */ public function resetSyntax():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#slashSlashComments(boolean) */
-	public function slashSlashComments(flag:Bool):Void;
+	/*@@@ modifiers=1 */ public function slashSlashComments(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#slashStarComments(boolean) */
-	public function slashStarComments(flag:Bool):Void;
+	/*@@@ modifiers=1 */ public function slashStarComments(flag:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#whitespaceChars(int, int) */
-	public function whitespaceChars(low:Int, hi:Int):Void;
+	/*@@@ modifiers=1 */ public function whitespaceChars(low:Int, hi:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StreamTokenizer.html#wordChars(int, int) */
-	public function wordChars(low:Int, hi:Int):Void;
+	/*@@@ modifiers=1 */ public function wordChars(low:Int, hi:Int):Void;
 
 }
 

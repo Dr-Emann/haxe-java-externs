@@ -7,7 +7,7 @@ import javax.swing.plaf.ComponentUI;
 extern class SeparatorUI extends ComponentUI
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/SeparatorUI.html#SeparatorUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

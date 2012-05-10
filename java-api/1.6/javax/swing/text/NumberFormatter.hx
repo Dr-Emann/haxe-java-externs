@@ -9,12 +9,12 @@ import javax.swing.text.InternationalFormatter;
 extern class NumberFormatter extends InternationalFormatter
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/NumberFormatter.html#NumberFormatter(java.text.NumberFormat) */
-	@:overload(function (format:NumberFormat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (format:NumberFormat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/NumberFormatter.html#NumberFormatter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/NumberFormatter.html#setFormat(java.text.Format) */
-	override public function setFormat(format:Format):Void;
+	/*@@@ modifiers=1 */ override public function setFormat(format:Format):Void;
 
 }
 

@@ -7,7 +7,7 @@ import java.lang.IllegalArgumentException;
 extern class UnsupportedAddressTypeException extends IllegalArgumentException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/UnsupportedAddressTypeException.html#UnsupportedAddressTypeException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

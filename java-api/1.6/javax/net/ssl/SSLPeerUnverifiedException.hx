@@ -7,7 +7,7 @@ import javax.net.ssl.SSLException;
 extern class SSLPeerUnverifiedException extends SSLException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLPeerUnverifiedException.html#SSLPeerUnverifiedException(java.lang.String) */
-	public function new(arg0:String):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:String):Void;
 
 }
 

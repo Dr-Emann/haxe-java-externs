@@ -10,21 +10,21 @@ import javax.xml.transform.Source;
 extern class StAXSource extends Object, implements Source
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXSource.html#StAXSource(javax.xml.stream.XMLEventReader) */
-	@:overload(function (xmlEventReader:XMLEventReader):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (xmlEventReader:XMLEventReader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXSource.html#StAXSource(javax.xml.stream.XMLStreamReader) */
-	public function new(xmlEventReader:XMLStreamReader):Void;
+	/*@@@ modifiers=1 */ public function new(xmlEventReader:XMLStreamReader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXSource.html#getSystemId() */
-	public function getSystemId():String;
+	/*@@@ modifiers=1 */ public function getSystemId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXSource.html#getXMLEventReader() */
-	public function getXMLEventReader():XMLEventReader;
+	/*@@@ modifiers=1 */ public function getXMLEventReader():XMLEventReader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXSource.html#getXMLStreamReader() */
-	public function getXMLStreamReader():XMLStreamReader;
+	/*@@@ modifiers=1 */ public function getXMLStreamReader():XMLStreamReader;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/stax/StAXSource.html#setSystemId(java.lang.String) */
-	public function setSystemId(systemId:String):Void;
+	/*@@@ modifiers=1 */ public function setSystemId(systemId:String):Void;
 
 }
 

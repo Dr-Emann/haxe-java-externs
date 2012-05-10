@@ -14,10 +14,10 @@ extern class Resource_AuthenticationType extends Enum<Resource_AuthenticationTyp
 	public static var APPLICATION:Resource_AuthenticationType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/Resource.AuthenticationType.html#valueOf(java.lang.String) */
-	static public function valueOf(arg0:String):Resource_AuthenticationType;
+	/*@@@ modifiers=9 */ static public function valueOf(arg0:String):Resource_AuthenticationType;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/annotation/Resource.AuthenticationType.html#values() */
-	static public function values():NativeArray<Resource_AuthenticationType>;
+	/*@@@ modifiers=9 */ static public function values():NativeArray<Resource_AuthenticationType>;
 
 }
 

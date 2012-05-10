@@ -13,22 +13,22 @@ import javax.print.attribute.SetOfIntegerSyntax;
 extern class PageRanges extends SetOfIntegerSyntax, implements DocAttribute, implements PrintRequestAttribute, implements PrintJobAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#PageRanges(java.lang.String) */
-	@:overload(function (members:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (members:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#PageRanges(int, int) */
-	@:overload(function (lowerBound:Int, upperBound:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (lowerBound:Int, upperBound:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#PageRanges(int) */
-	@:overload(function (members:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (members:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#PageRanges(int[][]) */
-	public function new(members:NativeArray<NativeArray<Int>>):Void;
+	/*@@@ modifiers=1 */ public function new(members:NativeArray<NativeArray<Int>>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#equals(java.lang.Object) */
-	override public function equals(object:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(object:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/PageRanges.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 }
 

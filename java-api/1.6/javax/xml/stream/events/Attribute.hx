@@ -8,16 +8,16 @@ import javax.xml.stream.events.XMLEvent;
 extern interface Attribute implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Attribute.html#getDTDType() */
-	public function getDTDType():String;
+	/*@@@ modifiers=1025 */ public function getDTDType():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Attribute.html#getName() */
-	public function getName():QName;
+	/*@@@ modifiers=1025 */ public function getName():QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Attribute.html#getValue() */
-	public function getValue():String;
+	/*@@@ modifiers=1025 */ public function getValue():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/Attribute.html#isSpecified() */
-	public function isSpecified():Bool;
+	/*@@@ modifiers=1025 */ public function isSpecified():Bool;
 
 }
 

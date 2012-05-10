@@ -8,7 +8,7 @@ import javax.swing.event.ChangeEvent;
 extern interface ChangeListener implements EventListener
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent) */
-	public function stateChanged(e:ChangeEvent):Void;
+	/*@@@ modifiers=1025 */ public function stateChanged(e:ChangeEvent):Void;
 
 }
 

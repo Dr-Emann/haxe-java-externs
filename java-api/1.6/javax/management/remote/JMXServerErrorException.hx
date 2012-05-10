@@ -9,10 +9,10 @@ import java.lang.Throwable;
 extern class JMXServerErrorException extends IOException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServerErrorException.html#JMXServerErrorException(java.lang.String, java.lang.Error) */
-	public function new(s:String, err:Error):Void;
+	/*@@@ modifiers=1 */ public function new(s:String, err:Error):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXServerErrorException.html#getCause() */
-	override public function getCause():Throwable;
+	/*@@@ modifiers=1 */ override public function getCause():Throwable;
 
 }
 

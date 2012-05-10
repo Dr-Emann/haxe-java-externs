@@ -9,7 +9,7 @@ import javax.print.attribute.PrintRequestAttributeSet;
 extern interface MultiDocPrintJob implements DocPrintJob
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/MultiDocPrintJob.html#print.MultiDocPrintJob.print(javax.print.MultiDoc, javax.print.attribute.PrintRequestAttributeSet) */
-	public function print(multiDoc:MultiDoc, attributes:PrintRequestAttributeSet):Void;
+	/*@@@ modifiers=1025 */ public function print(multiDoc:MultiDoc, attributes:PrintRequestAttributeSet):Void;
 
 }
 

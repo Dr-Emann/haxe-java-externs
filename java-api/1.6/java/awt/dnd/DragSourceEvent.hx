@@ -9,21 +9,21 @@ import java.util.EventObject;
 extern class DragSourceEvent extends EventObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceEvent.html#DragSourceEvent(java.awt.dnd.DragSourceContext) */
-	@:overload(function (dsc:DragSourceContext):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (dsc:DragSourceContext):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceEvent.html#DragSourceEvent(java.awt.dnd.DragSourceContext, int, int) */
-	public function new(dsc:DragSourceContext, x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function new(dsc:DragSourceContext, x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceEvent.html#getDragSourceContext() */
-	public function getDragSourceContext():DragSourceContext;
+	/*@@@ modifiers=1 */ public function getDragSourceContext():DragSourceContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceEvent.html#getLocation() */
-	public function getLocation():Point;
+	/*@@@ modifiers=1 */ public function getLocation():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceEvent.html#getX() */
-	public function getX():Int;
+	/*@@@ modifiers=1 */ public function getX():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DragSourceEvent.html#getY() */
-	public function getY():Int;
+	/*@@@ modifiers=1 */ public function getY():Int;
 
 }
 

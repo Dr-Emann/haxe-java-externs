@@ -23,8 +23,8 @@ public class EnumDefinition extends TypeDefinition {
     /**
      * 
      */
-    public EnumDefinition(Class<?> classObject, JavaClass classDocs) {
-	super(classObject, classDocs);
+    public EnumDefinition(Class<?> classObject, JavaClass classDocs, String docsBaseUrl) {
+	super(classObject, classDocs, docsBaseUrl);
     }
 
     /**
@@ -39,6 +39,7 @@ public class EnumDefinition extends TypeDefinition {
 
 	addDependency("java.lang.Enum");
 
+	indentWriter.println(String.format("/** @REF %s */", getComment()));
 	indentWriter.printf("@:native(\"%s.%s\") @:final", classObject
 		.getPackage().getName(), Utils.getNativeName(classObject));
 
@@ -59,6 +60,8 @@ public class EnumDefinition extends TypeDefinition {
 
 	Object[] constants = classObject.getEnumConstants();
 	for (Object constant : constants) {
+	    indentWriter.println(String.format("/** @REF %s#%s */",
+		    getComment(), ((Enum<?>) constant).name()));
 	    indentWriter.printf("public static var %s:%s;",
 		    ((Enum<?>) constant).name(), Utils
 			    .convertJavaToHaxeClassName(Utils
@@ -104,10 +107,13 @@ public class EnumDefinition extends TypeDefinition {
 	    if (found)
 		continue;
 
-	    if (Utils.isPrivate(field))
-		indentWriter.print("private");
-	    else
+	    indentWriter.println(String.format("/** @REF %s */",
+		    getComment(field)));
+
+	    if (Utils.isPublic(field))
 		indentWriter.print("public");
+	    else
+		indentWriter.print("private");
 
 	    // NOTE: do not make finals inline, because Haxe just replaces the
 	    // value. Inline variables also require initializers.
@@ -153,47 +159,24 @@ public class EnumDefinition extends TypeDefinition {
 
 	while (methods.size() > 0) {
 	    String name = methods.get(0).getName();
-	    // boolean staticFlag = Utils.isStatic(methods.get(0));
 	    int numOverloads = 0;
 
 	    while (methods.size() > numOverloads
-		    && methods.get(numOverloads).getName().equals(name)
-	    /* && Utils.isStatic(methods.get(numOverloads)) == staticFlag */)
+		    && methods.get(numOverloads).getName().equals(name))
 		numOverloads++;
 
 	    while (numOverloads-- > 0) {
 		Method method = methods.remove(0);
 
-		if (numOverloads > 0) {
-		    indentWriter.printf("@:overload(function %s {})",
-			    convertMethod(method));
-		} else {
+		indentWriter.println(String.format("/** @REF %s */",
+			getComment(method)));
 
-		    if (Utils.isPublic(method))
-			indentWriter.print("public");
-		    else if (!Utils.isStatic(method)) {
-			if (method.getName().equals("equals")
-				|| method.getName().equals("clone")
-				|| method.getName().equals("finalize"))
-			    indentWriter.print("public");
-			else
-			    indentWriter.print("private");
-		    } else
-			indentWriter.print("private");
-
-		    if (Utils.isStatic(method))
-			indentWriter.print(" static");
-
-		    indentWriter.printf(" function %s;", convertMethod(method));
-		    indentWriter.println();
-		}
-
-		indentWriter.println();
+		indentWriter.println(convertMethod(method, false,
+			numOverloads > 0));
 	    }
-	}
 
-	// Enum constants.
-	//
+	    indentWriter.println();
+	}
 
 	// Definition complete.
 	//

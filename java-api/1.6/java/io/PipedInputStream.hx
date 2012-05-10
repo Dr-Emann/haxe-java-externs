@@ -16,30 +16,30 @@ extern class PipedInputStream extends InputStream
 	private var out:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#PipedInputStream(java.io.PipedOutputStream, int) */
-	@:overload(function (src:PipedOutputStream, pipeSize:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (src:PipedOutputStream, pipeSize:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#PipedInputStream() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#PipedInputStream(int) */
-	@:overload(function (src:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (src:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#PipedInputStream(java.io.PipedOutputStream) */
-	public function new(src:PipedOutputStream):Void;
+	/*@@@ modifiers=1 */ public function new(src:PipedOutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#available() */
-	override public function available():Int;
+	/*@@@ modifiers=33 */ override public function available():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#close() */
-	override public function close():Void;
+	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#connect(java.io.PipedOutputStream) */
-	public function connect(src:PipedOutputStream):Void;
+	/*@@@ modifiers=1 */ public function connect(src:PipedOutputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#read(byte[], int, int) */
-	@:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/*@@@ modifiers=33 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#read() */
-	override public function read():Int;
+	/*@@@ modifiers=33 */ override public function read():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedInputStream.html#receive(int) */
-	private function receive(b:Int):Void;
+	/*@@@ modifiers=36 */ private function receive(b:Int):Void;
 
 }
 

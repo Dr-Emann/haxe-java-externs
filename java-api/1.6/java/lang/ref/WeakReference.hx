@@ -8,9 +8,9 @@ import java.lang.ref.ReferenceQueue;
 extern class WeakReference<T : (Dynamic)> extends Reference<T>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/WeakReference.html#WeakReference(java.lang.Object) */
-	@:overload(function (referent:T):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (referent:T):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ref/WeakReference.html#WeakReference(java.lang.Object, java.lang.ref.ReferenceQueue) */
-	public function new(referent:T, q:ReferenceQueue<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function new(referent:T, q:ReferenceQueue<Dynamic>):Void;
 
 }
 

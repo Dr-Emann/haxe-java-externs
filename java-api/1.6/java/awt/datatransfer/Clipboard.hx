@@ -18,34 +18,34 @@ extern class Clipboard extends Object
 	private var contents:Transferable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#Clipboard(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#addFlavorListener(java.awt.datatransfer.FlavorListener) */
-	public function addFlavorListener(listener:FlavorListener):Void;
+	/*@@@ modifiers=33 */ public function addFlavorListener(listener:FlavorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#getAvailableDataFlavors() */
-	public function getAvailableDataFlavors():NativeArray<DataFlavor>;
+	/*@@@ modifiers=1 */ public function getAvailableDataFlavors():NativeArray<DataFlavor>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#getContents(java.lang.Object) */
-	public function getContents(requestor:Dynamic):Transferable;
+	/*@@@ modifiers=33 */ public function getContents(requestor:Dynamic):Transferable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#getData(java.awt.datatransfer.DataFlavor) */
-	public function getData(flavor:DataFlavor):Dynamic;
+	/*@@@ modifiers=1 */ public function getData(flavor:DataFlavor):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#getFlavorListeners() */
-	public function getFlavorListeners():NativeArray<FlavorListener>;
+	/*@@@ modifiers=33 */ public function getFlavorListeners():NativeArray<FlavorListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#isDataFlavorAvailable(java.awt.datatransfer.DataFlavor) */
-	public function isDataFlavorAvailable(flavor:DataFlavor):Bool;
+	/*@@@ modifiers=1 */ public function isDataFlavorAvailable(flavor:DataFlavor):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#removeFlavorListener(java.awt.datatransfer.FlavorListener) */
-	public function removeFlavorListener(listener:FlavorListener):Void;
+	/*@@@ modifiers=33 */ public function removeFlavorListener(listener:FlavorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/Clipboard.html#setContents(java.awt.datatransfer.Transferable, java.awt.datatransfer.ClipboardOwner) */
-	public function setContents(contents:Transferable, owner:ClipboardOwner):Void;
+	/*@@@ modifiers=33 */ public function setContents(contents:Transferable, owner:ClipboardOwner):Void;
 
 }
 

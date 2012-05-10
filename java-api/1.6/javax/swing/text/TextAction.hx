@@ -11,16 +11,16 @@ import javax.swing.text.JTextComponent;
 extern class TextAction extends AbstractAction
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TextAction.html#TextAction(java.lang.String) */
-	public function new(name:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TextAction.html#augmentList(javax.swing.Action[], javax.swing.Action[]) */
-	static public function augmentList(list1:NativeArray<Action>, list2:NativeArray<Action>):NativeArray<Action>;
+	/*@@@ modifiers=25 */ static public function augmentList(list1:NativeArray<Action>, list2:NativeArray<Action>):NativeArray<Action>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TextAction.html#getFocusedComponent() */
-	private function getFocusedComponent():JTextComponent;
+	/*@@@ modifiers=20 */ private function getFocusedComponent():JTextComponent;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/TextAction.html#getTextComponent(java.awt.event.ActionEvent) */
-	private function getTextComponent(e:ActionEvent):JTextComponent;
+	/*@@@ modifiers=20 */ private function getTextComponent(e:ActionEvent):JTextComponent;
 
 }
 

@@ -13,13 +13,13 @@ import javax.xml.crypto.dsig.keyinfo.KeyInfo;
 extern class KeySelector extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/KeySelector.html#KeySelector() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/KeySelector.html#select(javax.xml.crypto.dsig.keyinfo.KeyInfo, javax.xml.crypto.KeySelector$Purpose, javax.xml.crypto.AlgorithmMethod, javax.xml.crypto.XMLCryptoContext) */
-	public function select(keyInfo:KeyInfo, purpose:KeySelector_Purpose, method:AlgorithmMethod, context:XMLCryptoContext):KeySelectorResult;
+	/*@@@ modifiers=1025 */ public function select(keyInfo:KeyInfo, purpose:KeySelector_Purpose, method:AlgorithmMethod, context:XMLCryptoContext):KeySelectorResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/KeySelector.html#singletonKeySelector(java.security.Key) */
-	static public function singletonKeySelector(key:Key):KeySelector;
+	/*@@@ modifiers=9 */ static public function singletonKeySelector(key:Key):KeySelector;
 
 }
 

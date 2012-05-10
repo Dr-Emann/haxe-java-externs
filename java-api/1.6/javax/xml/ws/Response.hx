@@ -8,7 +8,7 @@ import java.util.concurrent.Future;
 extern interface Response<T : (Dynamic)> implements Future<T>
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Response.html#getContext() */
-	public function getContext():Map<String, Dynamic>;
+	/*@@@ modifiers=1025 */ public function getContext():Map<String, Dynamic>;
 
 }
 

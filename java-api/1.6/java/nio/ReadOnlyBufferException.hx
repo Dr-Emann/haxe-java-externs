@@ -7,7 +7,7 @@ import java.lang.UnsupportedOperationException;
 extern class ReadOnlyBufferException extends UnsupportedOperationException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ReadOnlyBufferException.html#ReadOnlyBufferException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

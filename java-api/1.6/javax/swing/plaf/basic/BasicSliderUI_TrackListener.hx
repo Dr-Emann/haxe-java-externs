@@ -18,22 +18,22 @@ extern class BasicSliderUI_TrackListener extends MouseInputAdapter
 	private var currentMouseY:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#BasicSliderUI$TrackListener(javax.swing.plaf.basic.BasicSliderUI) */
-	public function new(arg0:BasicSliderUI):Void;
+	/*@@@ modifiers=1 */ public function new(arg0:BasicSliderUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#mouseDragged(java.awt.event.MouseEvent) */
-	override public function mouseDragged(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseDragged(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#mouseMoved(java.awt.event.MouseEvent) */
-	override public function mouseMoved(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseMoved(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#mousePressed(java.awt.event.MouseEvent) */
-	override public function mousePressed(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mousePressed(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#mouseReleased(java.awt.event.MouseEvent) */
-	override public function mouseReleased(e:MouseEvent):Void;
+	/*@@@ modifiers=1 */ override public function mouseReleased(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#shouldScroll(int) */
-	public function shouldScroll(direction:Int):Bool;
+	/*@@@ modifiers=1 */ public function shouldScroll(direction:Int):Bool;
 
 }
 

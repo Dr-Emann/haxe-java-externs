@@ -13,33 +13,33 @@ import javax.swing.undo.UndoableEdit;
 extern class StringContent extends Object, implements AbstractDocument_Content, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#StringContent(int) */
-	@:overload(function (initialLength:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (initialLength:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#StringContent() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#createPosition(int) */
-	public function createPosition(offset:Int):Position;
+	/*@@@ modifiers=1 */ public function createPosition(offset:Int):Position;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#getChars(int, int, javax.swing.text.Segment) */
-	public function getChars(where:Int, len:Int, chars:Segment):Void;
+	/*@@@ modifiers=1 */ public function getChars(where:Int, len:Int, chars:Segment):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#getPositionsInRange(java.util.Vector, int, int) */
-	private function getPositionsInRange(v:Vector<Dynamic>, offset:Int, length:Int):Vector<Dynamic>;
+	/*@@@ modifiers=4 */ private function getPositionsInRange(v:Vector<Dynamic>, offset:Int, length:Int):Vector<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#getString(int, int) */
-	public function getString(where:Int, len:Int):String;
+	/*@@@ modifiers=1 */ public function getString(where:Int, len:Int):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#insertString(int, java.lang.String) */
-	public function insertString(where:Int, str:String):UndoableEdit;
+	/*@@@ modifiers=1 */ public function insertString(where:Int, str:String):UndoableEdit;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#length() */
-	public function length():Int;
+	/*@@@ modifiers=1 */ public function length():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#remove(int, int) */
-	public function remove(where:Int, nitems:Int):UndoableEdit;
+	/*@@@ modifiers=1 */ public function remove(where:Int, nitems:Int):UndoableEdit;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StringContent.html#updateUndoPositions(java.util.Vector) */
-	private function updateUndoPositions(positions:Vector<Dynamic>):Void;
+	/*@@@ modifiers=4 */ private function updateUndoPositions(positions:Vector<Dynamic>):Void;
 
 }
 

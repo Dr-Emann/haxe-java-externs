@@ -1,7 +1,6 @@
 package javax.swing.plaf;
 
 import java.awt.Color;
-import java.lang.Number;
 import javax.swing.plaf.UIResource;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ColorUIResource.html */
@@ -9,13 +8,13 @@ import javax.swing.plaf.UIResource;
 extern class ColorUIResource extends Color, implements UIResource
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ColorUIResource.html#ColorUIResource(int, int, int) */
-	@:overload(function (r:Int, g:Int, b:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Int, g:Int, b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ColorUIResource.html#ColorUIResource(int) */
-	@:overload(function (rgb:Int):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (rgb:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ColorUIResource.html#ColorUIResource(float, float, float) */
-	@:overload(function (r:StdFloat, g:StdFloat, b:StdFloat):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (r:Single, g:Single, b:Single):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/ColorUIResource.html#ColorUIResource(java.awt.Color) */
-	public function new(rgb:Color):Void;
+	/*@@@ modifiers=1 */ public function new(rgb:Color):Void;
 
 }
 

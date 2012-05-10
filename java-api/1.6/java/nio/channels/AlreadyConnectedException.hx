@@ -7,7 +7,7 @@ import java.lang.IllegalStateException;
 extern class AlreadyConnectedException extends IllegalStateException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/AlreadyConnectedException.html#AlreadyConnectedException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

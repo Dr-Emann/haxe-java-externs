@@ -8,34 +8,34 @@ import javax.swing.text.Document;
 extern interface Element
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getAttributes() */
-	public function getAttributes():AttributeSet;
+	/*@@@ modifiers=1025 */ public function getAttributes():AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getDocument() */
-	public function getDocument():Document;
+	/*@@@ modifiers=1025 */ public function getDocument():Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getElement(int) */
-	public function getElement(index:Int):Element;
+	/*@@@ modifiers=1025 */ public function getElement(index:Int):Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getElementCount() */
-	public function getElementCount():Int;
+	/*@@@ modifiers=1025 */ public function getElementCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getElementIndex(int) */
-	public function getElementIndex(offset:Int):Int;
+	/*@@@ modifiers=1025 */ public function getElementIndex(offset:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getEndOffset() */
-	public function getEndOffset():Int;
+	/*@@@ modifiers=1025 */ public function getEndOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1025 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getParentElement() */
-	public function getParentElement():Element;
+	/*@@@ modifiers=1025 */ public function getParentElement():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#getStartOffset() */
-	public function getStartOffset():Int;
+	/*@@@ modifiers=1025 */ public function getStartOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/Element.html#isLeaf() */
-	public function isLeaf():Bool;
+	/*@@@ modifiers=1025 */ public function isLeaf():Bool;
 
 }
 

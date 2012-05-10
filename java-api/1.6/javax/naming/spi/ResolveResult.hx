@@ -15,29 +15,29 @@ extern class ResolveResult extends Object, implements Serializable
 	private var remainingName:Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#ResolveResult(java.lang.Object, java.lang.String) */
-	@:overload(function (robj:Dynamic, rcomp:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (robj:Dynamic, rcomp:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#ResolveResult(java.lang.Object, javax.naming.Name) */
-	@:overload(function (robj:Dynamic, rcomp:Name):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (robj:Dynamic, rcomp:Name):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#ResolveResult() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#appendRemainingComponent(java.lang.String) */
-	public function appendRemainingComponent(name:String):Void;
+	/*@@@ modifiers=1 */ public function appendRemainingComponent(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#appendRemainingName(javax.naming.Name) */
-	public function appendRemainingName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function appendRemainingName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#getRemainingName() */
-	public function getRemainingName():Name;
+	/*@@@ modifiers=1 */ public function getRemainingName():Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#getResolvedObj() */
-	public function getResolvedObj():Dynamic;
+	/*@@@ modifiers=1 */ public function getResolvedObj():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#setRemainingName(javax.naming.Name) */
-	public function setRemainingName(name:Name):Void;
+	/*@@@ modifiers=1 */ public function setRemainingName(name:Name):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/ResolveResult.html#setResolvedObj(java.lang.Object) */
-	public function setResolvedObj(obj:Dynamic):Void;
+	/*@@@ modifiers=1 */ public function setResolvedObj(obj:Dynamic):Void;
 
 }
 

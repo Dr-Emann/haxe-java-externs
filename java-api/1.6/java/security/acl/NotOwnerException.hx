@@ -7,7 +7,7 @@ import java.lang.Exception;
 extern class NotOwnerException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/acl/NotOwnerException.html#NotOwnerException() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 }
 

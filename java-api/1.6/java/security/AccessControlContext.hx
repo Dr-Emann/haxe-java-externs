@@ -11,21 +11,21 @@ import java.security.ProtectionDomain;
 extern class AccessControlContext extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlContext.html#AccessControlContext(java.security.ProtectionDomain[]) */
-	@:overload(function (context:NativeArray<ProtectionDomain>):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (context:NativeArray<ProtectionDomain>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlContext.html#AccessControlContext(java.security.AccessControlContext, java.security.DomainCombiner) */
-	public function new(acc:AccessControlContext, combiner:DomainCombiner):Void;
+	/*@@@ modifiers=1 */ public function new(acc:AccessControlContext, combiner:DomainCombiner):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlContext.html#checkPermission(java.security.Permission) */
-	public function checkPermission(perm:Permission):Void;
+	/*@@@ modifiers=1 */ public function checkPermission(perm:Permission):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlContext.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlContext.html#getDomainCombiner() */
-	public function getDomainCombiner():DomainCombiner;
+	/*@@@ modifiers=1 */ public function getDomainCombiner():DomainCombiner;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AccessControlContext.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 }
 

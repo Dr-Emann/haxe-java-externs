@@ -17,37 +17,43 @@ extern class VolatileImage extends Image, implements Transparency
 	private var transparency:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#VolatileImage() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#contentsLost() */
-	public function contentsLost():Bool;
+	/*@@@ modifiers=1025 */ public function contentsLost():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#createGraphics() */
-	public function createGraphics():Graphics2D;
+	/*@@@ modifiers=1025 */ public function createGraphics():Graphics2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getCapabilities() */
-	override public function getCapabilities():ImageCapabilities;
+	/*@@@ modifiers=1025 */ @:overload(function ():ImageCapabilities {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Image.html#getCapabilities(java.awt.GraphicsConfiguration) */
+	/*@@@ modifiers=1 */ override public function getCapabilities(gc:GraphicsConfiguration):ImageCapabilities;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getGraphics() */
-	override public function getGraphics():Graphics;
+	/*@@@ modifiers=1 */ override public function getGraphics():Graphics;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getHeight() */
-	override public function getHeight():Int;
+	/*@@@ modifiers=1025 */ @:overload(function ():Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Image.html#getHeight(java.awt.image.ImageObserver) */
+	/*@@@ modifiers=1025 */ override public function getHeight(observer:ImageObserver):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getSnapshot() */
-	public function getSnapshot():BufferedImage;
+	/*@@@ modifiers=1025 */ public function getSnapshot():BufferedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getSource() */
-	override public function getSource():ImageProducer;
+	/*@@@ modifiers=1 */ override public function getSource():ImageProducer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getTransparency() */
-	public function getTransparency():Int;
+	/*@@@ modifiers=1 */ public function getTransparency():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#getWidth() */
-	override public function getWidth():Int;
+	/*@@@ modifiers=1025 */ @:overload(function ():Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Image.html#getWidth(java.awt.image.ImageObserver) */
+	/*@@@ modifiers=1025 */ override public function getWidth(observer:ImageObserver):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/VolatileImage.html#validate(java.awt.GraphicsConfiguration) */
-	public function validate(gc:GraphicsConfiguration):Int;
+	/*@@@ modifiers=1025 */ public function validate(gc:GraphicsConfiguration):Int;
 
 }
 

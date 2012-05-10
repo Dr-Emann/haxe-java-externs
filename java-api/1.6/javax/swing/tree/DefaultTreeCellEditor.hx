@@ -63,81 +63,81 @@ extern class DefaultTreeCellEditor extends Object, implements ActionListener, im
 	private var font:Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#DefaultTreeCellEditor(javax.swing.JTree, javax.swing.tree.DefaultTreeCellRenderer, javax.swing.tree.TreeCellEditor) */
-	@:overload(function (tree:JTree, renderer:DefaultTreeCellRenderer, editor:TreeCellEditor):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (tree:JTree, renderer:DefaultTreeCellRenderer, editor:TreeCellEditor):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#DefaultTreeCellEditor(javax.swing.JTree, javax.swing.tree.DefaultTreeCellRenderer) */
-	public function new(tree:JTree, renderer:DefaultTreeCellRenderer):Void;
+	/*@@@ modifiers=1 */ public function new(tree:JTree, renderer:DefaultTreeCellRenderer):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#actionPerformed(java.awt.event.ActionEvent) */
-	public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener) */
-	public function addCellEditorListener(l:CellEditorListener):Void;
+	/*@@@ modifiers=1 */ public function addCellEditorListener(l:CellEditorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#canEditImmediately(java.util.EventObject) */
-	private function canEditImmediately(event:EventObject):Bool;
+	/*@@@ modifiers=4 */ private function canEditImmediately(event:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#cancelCellEditing() */
-	public function cancelCellEditing():Void;
+	/*@@@ modifiers=1 */ public function cancelCellEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#createContainer() */
-	private function createContainer():Container;
+	/*@@@ modifiers=4 */ private function createContainer():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#createTreeCellEditor() */
-	private function createTreeCellEditor():TreeCellEditor;
+	/*@@@ modifiers=4 */ private function createTreeCellEditor():TreeCellEditor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#determineOffset(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int) */
-	private function determineOffset(tree:JTree, value:Dynamic, isSelected:Bool, expanded:Bool, leaf:Bool, row:Int):Void;
+	/*@@@ modifiers=4 */ private function determineOffset(tree:JTree, value:Dynamic, isSelected:Bool, expanded:Bool, leaf:Bool, row:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#getBorderSelectionColor() */
-	public function getBorderSelectionColor():Color;
+	/*@@@ modifiers=1 */ public function getBorderSelectionColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorListeners() */
-	public function getCellEditorListeners():NativeArray<CellEditorListener>;
+	/*@@@ modifiers=1 */ public function getCellEditorListeners():NativeArray<CellEditorListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorValue() */
-	public function getCellEditorValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getCellEditorValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#getFont() */
-	public function getFont():Font;
+	/*@@@ modifiers=1 */ public function getFont():Font;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int) */
-	public function getTreeCellEditorComponent(tree:JTree, value:Dynamic, isSelected:Bool, expanded:Bool, leaf:Bool, row:Int):Component;
+	/*@@@ modifiers=1 */ public function getTreeCellEditorComponent(tree:JTree, value:Dynamic, isSelected:Bool, expanded:Bool, leaf:Bool, row:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#inHitRegion(int, int) */
-	private function inHitRegion(x:Int, y:Int):Bool;
+	/*@@@ modifiers=4 */ private function inHitRegion(x:Int, y:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#isCellEditable(java.util.EventObject) */
-	public function isCellEditable(event:EventObject):Bool;
+	/*@@@ modifiers=1 */ public function isCellEditable(event:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#prepareForEditing() */
-	private function prepareForEditing():Void;
+	/*@@@ modifiers=4 */ private function prepareForEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener) */
-	public function removeCellEditorListener(l:CellEditorListener):Void;
+	/*@@@ modifiers=1 */ public function removeCellEditorListener(l:CellEditorListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#setBorderSelectionColor(java.awt.Color) */
-	public function setBorderSelectionColor(newColor:Color):Void;
+	/*@@@ modifiers=1 */ public function setBorderSelectionColor(newColor:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#setFont(java.awt.Font) */
-	public function setFont(font:Font):Void;
+	/*@@@ modifiers=1 */ public function setFont(font:Font):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#setTree(javax.swing.JTree) */
-	private function setTree(newTree:JTree):Void;
+	/*@@@ modifiers=4 */ private function setTree(newTree:JTree):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#shouldSelectCell(java.util.EventObject) */
-	public function shouldSelectCell(event:EventObject):Bool;
+	/*@@@ modifiers=1 */ public function shouldSelectCell(event:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#shouldStartEditingTimer(java.util.EventObject) */
-	private function shouldStartEditingTimer(event:EventObject):Bool;
+	/*@@@ modifiers=4 */ private function shouldStartEditingTimer(event:EventObject):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#startEditingTimer() */
-	private function startEditingTimer():Void;
+	/*@@@ modifiers=4 */ private function startEditingTimer():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing() */
-	public function stopCellEditing():Bool;
+	/*@@@ modifiers=1 */ public function stopCellEditing():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#valueChanged(javax.swing.event.TreeSelectionEvent) */
-	public function valueChanged(e:TreeSelectionEvent):Void;
+	/*@@@ modifiers=1 */ public function valueChanged(e:TreeSelectionEvent):Void;
 
 }
 

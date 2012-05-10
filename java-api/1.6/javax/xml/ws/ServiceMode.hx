@@ -8,7 +8,7 @@ import javax.xml.ws.Service_Mode;
 extern interface ServiceMode implements Annotation
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/ServiceMode.html#value() */
-	public function value():Service_Mode;
+	/*@@@ modifiers=1025 */ public function value():Service_Mode;
 
 }
 

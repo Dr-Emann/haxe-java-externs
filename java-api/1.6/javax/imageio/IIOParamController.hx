@@ -7,7 +7,7 @@ import javax.imageio.IIOParam;
 extern interface IIOParamController
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/IIOParamController.html#activate(javax.imageio.IIOParam) */
-	public function activate(param:IIOParam):Bool;
+	/*@@@ modifiers=1025 */ public function activate(param:IIOParam):Bool;
 
 }
 

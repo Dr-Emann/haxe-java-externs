@@ -8,7 +8,7 @@ import javax.xml.crypto.Data;
 extern interface NodeSetData implements Data
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/NodeSetData.html#iterator() */
-	public function iterator():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1025 */ public function iterator():java.util.Iterator<Dynamic>;
 
 }
 

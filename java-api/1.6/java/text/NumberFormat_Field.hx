@@ -7,10 +7,10 @@ import java.text.Format_Field;
 extern class NumberFormat_Field extends Format_Field
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.Field.html#NumberFormat$Field(java.lang.String) */
-	private function new(name:String):Void;
+	/*@@@ modifiers=4 */ private function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.Field.html#readResolve() */
-	override private function readResolve():Dynamic;
+	/*@@@ modifiers=4 */ override private function readResolve():Dynamic;
 
 }
 

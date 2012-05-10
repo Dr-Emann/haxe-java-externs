@@ -24,84 +24,84 @@ import javax.xml.stream.events.StartElement;
 extern class XMLEventFactory extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#XMLEventFactory() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	@:overload(function (prefix:String, namespaceURI:String, localName:String, value:String):Attribute {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceURI:String, localName:String, value:String):Attribute {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createAttribute(java.lang.String, java.lang.String) */
-	@:overload(function (localName:String, value:String):Attribute {})
+	/*@@@ modifiers=1025 */ @:overload(function (localName:String, value:String):Attribute {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createAttribute(javax.xml.namespace.QName, java.lang.String) */
-	public function createAttribute(name:QName, value:String):Attribute;
+	/*@@@ modifiers=1025 */ public function createAttribute(name:QName, value:String):Attribute;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createCData(java.lang.String) */
-	public function createCData(content:String):Characters;
+	/*@@@ modifiers=1025 */ public function createCData(content:String):Characters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createCharacters(java.lang.String) */
-	public function createCharacters(content:String):Characters;
+	/*@@@ modifiers=1025 */ public function createCharacters(content:String):Characters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createComment(java.lang.String) */
-	public function createComment(text:String):Comment;
+	/*@@@ modifiers=1025 */ public function createComment(text:String):Comment;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createDTD(java.lang.String) */
-	public function createDTD(dtd:String):DTD;
+	/*@@@ modifiers=1025 */ public function createDTD(dtd:String):DTD;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createEndDocument() */
-	public function createEndDocument():EndDocument;
+	/*@@@ modifiers=1025 */ public function createEndDocument():EndDocument;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createEndElement(java.lang.String, java.lang.String, java.lang.String, java.util.Iterator) */
-	@:overload(function (prefix:String, namespaceUri:String, localName:String, namespaces:java.util.Iterator<Dynamic>):EndElement {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceUri:String, localName:String, namespaces:java.util.Iterator<Dynamic>):EndElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createEndElement(java.lang.String, java.lang.String, java.lang.String) */
-	@:overload(function (prefix:String, namespaceUri:String, localName:String):EndElement {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceUri:String, localName:String):EndElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createEndElement(javax.xml.namespace.QName, java.util.Iterator) */
-	public function createEndElement(name:QName, namespaces:java.util.Iterator<Dynamic>):EndElement;
+	/*@@@ modifiers=1025 */ public function createEndElement(name:QName, namespaces:java.util.Iterator<Dynamic>):EndElement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createEntityReference(java.lang.String, javax.xml.stream.events.EntityDeclaration) */
-	public function createEntityReference(name:String, declaration:EntityDeclaration):EntityReference;
+	/*@@@ modifiers=1025 */ public function createEntityReference(name:String, declaration:EntityDeclaration):EntityReference;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createIgnorableSpace(java.lang.String) */
-	public function createIgnorableSpace(content:String):Characters;
+	/*@@@ modifiers=1025 */ public function createIgnorableSpace(content:String):Characters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createNamespace(java.lang.String, java.lang.String) */
-	@:overload(function (prefix:String, namespaceUri:String):Namespace {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceUri:String):Namespace {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createNamespace(java.lang.String) */
-	public function createNamespace(namespaceURI:String):Namespace;
+	/*@@@ modifiers=1025 */ public function createNamespace(namespaceURI:String):Namespace;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createProcessingInstruction(java.lang.String, java.lang.String) */
-	public function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
+	/*@@@ modifiers=1025 */ public function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createSpace(java.lang.String) */
-	public function createSpace(content:String):Characters;
+	/*@@@ modifiers=1025 */ public function createSpace(content:String):Characters;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartDocument(java.lang.String, java.lang.String, boolean) */
-	@:overload(function (encoding:String, version:String, standalone:Bool):StartDocument {})
+	/*@@@ modifiers=1025 */ @:overload(function (encoding:String, version:String, standalone:Bool):StartDocument {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartDocument(java.lang.String, java.lang.String) */
-	@:overload(function (encoding:String, version:String):StartDocument {})
+	/*@@@ modifiers=1025 */ @:overload(function (encoding:String, version:String):StartDocument {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartDocument(java.lang.String) */
-	@:overload(function (encoding:String):StartDocument {})
+	/*@@@ modifiers=1025 */ @:overload(function (encoding:String):StartDocument {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartDocument() */
-	public function createStartDocument():StartDocument;
+	/*@@@ modifiers=1025 */ public function createStartDocument():StartDocument;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String, java.lang.String, java.lang.String, java.util.Iterator, java.util.Iterator, javax.xml.namespace.NamespaceContext) */
-	@:overload(function (prefix:String, namespaceUri:String, localName:String, attributes:java.util.Iterator<Dynamic>, namespaces:java.util.Iterator<Dynamic>, context:NamespaceContext):StartElement {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceUri:String, localName:String, attributes:java.util.Iterator<Dynamic>, namespaces:java.util.Iterator<Dynamic>, context:NamespaceContext):StartElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String, java.lang.String, java.lang.String, java.util.Iterator, java.util.Iterator) */
-	@:overload(function (prefix:String, namespaceUri:String, localName:String, attributes:java.util.Iterator<Dynamic>, namespaces:java.util.Iterator<Dynamic>):StartElement {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceUri:String, localName:String, attributes:java.util.Iterator<Dynamic>, namespaces:java.util.Iterator<Dynamic>):StartElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String, java.lang.String, java.lang.String) */
-	@:overload(function (prefix:String, namespaceUri:String, localName:String):StartElement {})
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String, namespaceUri:String, localName:String):StartElement {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#createStartElement(javax.xml.namespace.QName, java.util.Iterator, java.util.Iterator) */
-	public function createStartElement(name:QName, attributes:java.util.Iterator<Dynamic>, namespaces:java.util.Iterator<Dynamic>):StartElement;
+	/*@@@ modifiers=1025 */ public function createStartElement(name:QName, attributes:java.util.Iterator<Dynamic>, namespaces:java.util.Iterator<Dynamic>):StartElement;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#newFactory(java.lang.String, java.lang.ClassLoader) */
-	@:overload(function (factoryId:String, classLoader:ClassLoader):XMLEventFactory {})
+	/*@@@ modifiers=9 */ @:overload(function (factoryId:String, classLoader:ClassLoader):XMLEventFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#newFactory() */
-	static public function newFactory():XMLEventFactory;
+	/*@@@ modifiers=9 */ static public function newFactory():XMLEventFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#newInstance(java.lang.String, java.lang.ClassLoader) */
-	@:overload(function (factoryId:String, classLoader:ClassLoader):XMLEventFactory {})
+	/*@@@ modifiers=9 */ @:overload(function (factoryId:String, classLoader:ClassLoader):XMLEventFactory {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#newInstance() */
-	static public function newInstance():XMLEventFactory;
+	/*@@@ modifiers=9 */ static public function newInstance():XMLEventFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLEventFactory.html#setLocation(javax.xml.stream.Location) */
-	public function setLocation(location:Location):Void;
+	/*@@@ modifiers=1025 */ public function setLocation(location:Location):Void;
 
 }
 

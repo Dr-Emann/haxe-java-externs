@@ -15,103 +15,100 @@ import java.lang.Object;
 extern class Line2D extends Object, implements Shape, implements Cloneable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#Line2D() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#contains(double, double, double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#contains(double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#contains(java.awt.geom.Point2D) */
-	@:overload(function (p:Point2D):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (p:Point2D):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#contains(java.awt.geom.Rectangle2D) */
-	public function contains(r:Rectangle2D):Bool;
+	/*@@@ modifiers=1 */ public function contains(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getBounds() */
-	public function getBounds():Rectangle;
-
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getBounds2D() */
-	public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ public function getBounds():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getP1() */
-	public function getP1():Point2D;
+	/*@@@ modifiers=1025 */ public function getP1():Point2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getP2() */
-	public function getP2():Point2D;
+	/*@@@ modifiers=1025 */ public function getP2():Point2D;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getPathIterator(java.awt.geom.AffineTransform) */
-	@:overload(function (at:AffineTransform):PathIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getPathIterator(java.awt.geom.AffineTransform, double) */
-	public function getPathIterator(at:AffineTransform, flatness:StdFloat):PathIterator;
+	/*@@@ modifiers=1 */ @:overload(function (at:AffineTransform, flatness:StdFloat):PathIterator {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getPathIterator(java.awt.geom.AffineTransform) */
+	/*@@@ modifiers=1 */ public function getPathIterator(at:AffineTransform):PathIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getX1() */
-	public function getX1():StdFloat;
+	/*@@@ modifiers=1025 */ public function getX1():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getX2() */
-	public function getX2():StdFloat;
+	/*@@@ modifiers=1025 */ public function getX2():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getY1() */
-	public function getY1():StdFloat;
+	/*@@@ modifiers=1025 */ public function getY1():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#getY2() */
-	public function getY2():StdFloat;
+	/*@@@ modifiers=1025 */ public function getY2():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#intersects(double, double, double, double) */
-	@:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#intersects(java.awt.geom.Rectangle2D) */
-	public function intersects(r:Rectangle2D):Bool;
+	/*@@@ modifiers=1 */ public function intersects(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#intersectsLine(double, double, double, double) */
-	@:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Bool {})
+	/*@@@ modifiers=1 */ @:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#intersectsLine(java.awt.geom.Line2D) */
-	public function intersectsLine(l:Line2D):Bool;
+	/*@@@ modifiers=1 */ public function intersectsLine(l:Line2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#linesIntersect(double, double, double, double, double, double, double, double) */
-	static public function linesIntersect(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, x3:StdFloat, y3:StdFloat, x4:StdFloat, y4:StdFloat):Bool;
+	/*@@@ modifiers=9 */ static public function linesIntersect(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, x3:StdFloat, y3:StdFloat, x4:StdFloat, y4:StdFloat):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptLineDist(double, double) */
-	@:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptLineDist(java.awt.geom.Point2D) */
-	@:overload(function (pt:Point2D):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (pt:Point2D):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptLineDist(double, double, double, double, double, double) */
-	static public function ptLineDist(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
+	/*@@@ modifiers=9 */ static public function ptLineDist(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptLineDistSq(double, double) */
-	@:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptLineDistSq(java.awt.geom.Point2D) */
-	@:overload(function (pt:Point2D):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (pt:Point2D):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptLineDistSq(double, double, double, double, double, double) */
-	static public function ptLineDistSq(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
+	/*@@@ modifiers=9 */ static public function ptLineDistSq(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptSegDist(double, double) */
-	@:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptSegDist(java.awt.geom.Point2D) */
-	@:overload(function (pt:Point2D):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (pt:Point2D):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptSegDist(double, double, double, double, double, double) */
-	static public function ptSegDist(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
+	/*@@@ modifiers=9 */ static public function ptSegDist(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptSegDistSq(double, double) */
-	@:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (px:StdFloat, py:StdFloat):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptSegDistSq(java.awt.geom.Point2D) */
-	@:overload(function (pt:Point2D):StdFloat {})
+	/*@@@ modifiers=1 */ @:overload(function (pt:Point2D):StdFloat {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#ptSegDistSq(double, double, double, double, double, double) */
-	static public function ptSegDistSq(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
+	/*@@@ modifiers=9 */ static public function ptSegDistSq(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#relativeCCW(double, double) */
-	@:overload(function (px:StdFloat, py:StdFloat):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (px:StdFloat, py:StdFloat):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#relativeCCW(java.awt.geom.Point2D) */
-	@:overload(function (p:Point2D):Int {})
+	/*@@@ modifiers=1 */ @:overload(function (p:Point2D):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#relativeCCW(double, double, double, double, double, double) */
-	static public function relativeCCW(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):Int;
+	/*@@@ modifiers=9 */ static public function relativeCCW(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(double, double, double, double) */
-	@:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
+	/*@@@ modifiers=1025 */ @:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(java.awt.geom.Point2D, java.awt.geom.Point2D) */
-	@:overload(function (p1:Point2D, p2:Point2D):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (p1:Point2D, p2:Point2D):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(java.awt.geom.Line2D) */
-	public function setLine(l:Line2D):Void;
+	/*@@@ modifiers=1 */ public function setLine(l:Line2D):Void;
 
 }
 

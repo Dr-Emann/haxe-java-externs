@@ -9,16 +9,16 @@ import javax.swing.JComponent;
 extern class AncestorEvent extends AWTEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/AncestorEvent.html#AncestorEvent(javax.swing.JComponent, int, java.awt.Container, java.awt.Container) */
-	public function new(source:JComponent, id:Int, ancestor:Container, ancestorParent:Container):Void;
+	/*@@@ modifiers=1 */ public function new(source:JComponent, id:Int, ancestor:Container, ancestorParent:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/AncestorEvent.html#getAncestor() */
-	public function getAncestor():Container;
+	/*@@@ modifiers=1 */ public function getAncestor():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/AncestorEvent.html#getAncestorParent() */
-	public function getAncestorParent():Container;
+	/*@@@ modifiers=1 */ public function getAncestorParent():Container;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/AncestorEvent.html#getComponent() */
-	public function getComponent():JComponent;
+	/*@@@ modifiers=1 */ public function getComponent():JComponent;
 
 }
 

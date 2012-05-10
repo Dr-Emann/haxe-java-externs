@@ -11,22 +11,22 @@ import javax.xml.stream.events.XMLEvent;
 extern interface StartElement implements XMLEvent
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartElement.html#getAttributeByName(javax.xml.namespace.QName) */
-	public function getAttributeByName(name:QName):Attribute;
+	/*@@@ modifiers=1025 */ public function getAttributeByName(name:QName):Attribute;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartElement.html#getAttributes() */
-	public function getAttributes():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getAttributes():java.util.Iterator<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartElement.html#getName() */
-	public function getName():QName;
+	/*@@@ modifiers=1025 */ public function getName():QName;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartElement.html#getNamespaceContext() */
-	public function getNamespaceContext():NamespaceContext;
+	/*@@@ modifiers=1025 */ public function getNamespaceContext():NamespaceContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String) */
-	public function getNamespaceURI(prefix:String):String;
+	/*@@@ modifiers=1025 */ public function getNamespaceURI(prefix:String):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/events/StartElement.html#getNamespaces() */
-	public function getNamespaces():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getNamespaces():java.util.Iterator<Dynamic>;
 
 }
 

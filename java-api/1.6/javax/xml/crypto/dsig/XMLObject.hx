@@ -8,16 +8,16 @@ import javax.xml.crypto.XMLStructure;
 extern interface XMLObject implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/XMLObject.html#getContent() */
-	public function getContent():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getContent():List<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/XMLObject.html#getEncoding() */
-	public function getEncoding():String;
+	/*@@@ modifiers=1025 */ public function getEncoding():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/XMLObject.html#getId() */
-	public function getId():String;
+	/*@@@ modifiers=1025 */ public function getId():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/XMLObject.html#getMimeType() */
-	public function getMimeType():String;
+	/*@@@ modifiers=1025 */ public function getMimeType():String;
 
 }
 

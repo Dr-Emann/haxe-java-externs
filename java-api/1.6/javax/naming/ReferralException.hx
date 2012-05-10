@@ -9,23 +9,23 @@ import javax.naming.NamingException;
 extern class ReferralException extends NamingException
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#ReferralException(java.lang.String) */
-	@:overload(function (explanation:String):Void {})
+	/*@@@ modifiers=4 */ @:overload(function (explanation:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#ReferralException() */
-	private function new():Void;
+	/*@@@ modifiers=4 */ private function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#getReferralContext(java.util.Hashtable) */
-	@:overload(function (env:Hashtable<Dynamic, Dynamic>):Context {})
+	/*@@@ modifiers=1025 */ @:overload(function (env:Hashtable<Dynamic, Dynamic>):Context {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#getReferralContext() */
-	public function getReferralContext():Context;
+	/*@@@ modifiers=1025 */ public function getReferralContext():Context;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#getReferralInfo() */
-	public function getReferralInfo():Dynamic;
+	/*@@@ modifiers=1025 */ public function getReferralInfo():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#retryReferral() */
-	public function retryReferral():Void;
+	/*@@@ modifiers=1025 */ public function retryReferral():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ReferralException.html#skipReferral() */
-	public function skipReferral():Bool;
+	/*@@@ modifiers=1025 */ public function skipReferral():Bool;
 
 }
 

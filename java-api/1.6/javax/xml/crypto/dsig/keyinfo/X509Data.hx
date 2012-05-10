@@ -8,7 +8,7 @@ import javax.xml.crypto.XMLStructure;
 extern interface X509Data implements XMLStructure
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent() */
-	public function getContent():List<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getContent():List<Dynamic>;
 
 }
 

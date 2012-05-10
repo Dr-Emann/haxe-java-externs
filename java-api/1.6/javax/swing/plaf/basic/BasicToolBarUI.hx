@@ -74,139 +74,139 @@ extern class BasicToolBarUI extends ToolBarUI, implements SwingConstants
 	private var rightKey:KeyStroke;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#BasicToolBarUI() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#canDock(java.awt.Component, java.awt.Point) */
-	public function canDock(c:Component, p:Point):Bool;
+	/*@@@ modifiers=1 */ public function canDock(c:Component, p:Point):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createDockingListener() */
-	private function createDockingListener():MouseInputListener;
+	/*@@@ modifiers=4 */ private function createDockingListener():MouseInputListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createDragWindow(javax.swing.JToolBar) */
-	private function createDragWindow(toolbar:JToolBar):BasicToolBarUI_DragWindow;
+	/*@@@ modifiers=4 */ private function createDragWindow(toolbar:JToolBar):BasicToolBarUI_DragWindow;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(javax.swing.JToolBar) */
-	private function createFloatingFrame(toolbar:JToolBar):JFrame;
+	/*@@@ modifiers=4 */ private function createFloatingFrame(toolbar:JToolBar):JFrame;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingWindow(javax.swing.JToolBar) */
-	private function createFloatingWindow(toolbar:JToolBar):RootPaneContainer;
+	/*@@@ modifiers=4 */ private function createFloatingWindow(toolbar:JToolBar):RootPaneContainer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createFrameListener() */
-	private function createFrameListener():WindowListener;
+	/*@@@ modifiers=4 */ private function createFrameListener():WindowListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createNonRolloverBorder() */
-	private function createNonRolloverBorder():Border;
+	/*@@@ modifiers=4 */ private function createNonRolloverBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createPropertyListener() */
-	private function createPropertyListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ private function createPropertyListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createRolloverBorder() */
-	private function createRolloverBorder():Border;
+	/*@@@ modifiers=4 */ private function createRolloverBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createToolBarContListener() */
-	private function createToolBarContListener():ContainerListener;
+	/*@@@ modifiers=4 */ private function createToolBarContListener():ContainerListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createToolBarFocusListener() */
-	private function createToolBarFocusListener():FocusListener;
+	/*@@@ modifiers=4 */ private function createToolBarFocusListener():FocusListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#createUI(javax.swing.JComponent) */
-	static public function createUI(c:JComponent):ComponentUI;
+	/*@@@ modifiers=9 */ static public function createUI(c:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#dragTo(java.awt.Point, java.awt.Point) */
-	private function dragTo(position:Point, origin:Point):Void;
+	/*@@@ modifiers=4 */ private function dragTo(position:Point, origin:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#floatAt(java.awt.Point, java.awt.Point) */
-	private function floatAt(position:Point, origin:Point):Void;
+	/*@@@ modifiers=4 */ private function floatAt(position:Point, origin:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#getDockingColor() */
-	public function getDockingColor():Color;
+	/*@@@ modifiers=1 */ public function getDockingColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#getFloatingColor() */
-	public function getFloatingColor():Color;
+	/*@@@ modifiers=1 */ public function getFloatingColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#getNonRolloverBorder(javax.swing.AbstractButton) */
-	private function getNonRolloverBorder(b:AbstractButton):Border;
+	/*@@@ modifiers=4 */ private function getNonRolloverBorder(b:AbstractButton):Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#getRolloverBorder(javax.swing.AbstractButton) */
-	private function getRolloverBorder(b:AbstractButton):Border;
+	/*@@@ modifiers=4 */ private function getRolloverBorder(b:AbstractButton):Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installComponents() */
-	private function installComponents():Void;
+	/*@@@ modifiers=4 */ private function installComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installDefaults() */
-	private function installDefaults():Void;
+	/*@@@ modifiers=4 */ private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installKeyboardActions() */
-	private function installKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function installKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installListeners() */
-	private function installListeners():Void;
+	/*@@@ modifiers=4 */ private function installListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installNonRolloverBorders(javax.swing.JComponent) */
-	private function installNonRolloverBorders(c:JComponent):Void;
+	/*@@@ modifiers=4 */ private function installNonRolloverBorders(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installNormalBorders(javax.swing.JComponent) */
-	private function installNormalBorders(c:JComponent):Void;
+	/*@@@ modifiers=4 */ private function installNormalBorders(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installRolloverBorders(javax.swing.JComponent) */
-	private function installRolloverBorders(c:JComponent):Void;
+	/*@@@ modifiers=4 */ private function installRolloverBorders(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#installUI(javax.swing.JComponent) */
-	override public function installUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating() */
-	public function isFloating():Bool;
+	/*@@@ modifiers=1 */ public function isFloating():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders() */
-	public function isRolloverBorders():Bool;
+	/*@@@ modifiers=1 */ public function isRolloverBorders():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#navigateFocusedComp(int) */
-	private function navigateFocusedComp(direction:Int):Void;
+	/*@@@ modifiers=4 */ private function navigateFocusedComp(direction:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#paintDragWindow(java.awt.Graphics) */
-	private function paintDragWindow(g:Graphics):Void;
+	/*@@@ modifiers=4 */ private function paintDragWindow(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setBorderToNonRollover(java.awt.Component) */
-	private function setBorderToNonRollover(c:Component):Void;
+	/*@@@ modifiers=4 */ private function setBorderToNonRollover(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setBorderToNormal(java.awt.Component) */
-	private function setBorderToNormal(c:Component):Void;
+	/*@@@ modifiers=4 */ private function setBorderToNormal(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setBorderToRollover(java.awt.Component) */
-	private function setBorderToRollover(c:Component):Void;
+	/*@@@ modifiers=4 */ private function setBorderToRollover(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setDockingColor(java.awt.Color) */
-	public function setDockingColor(c:Color):Void;
+	/*@@@ modifiers=1 */ public function setDockingColor(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setFloating(boolean, java.awt.Point) */
-	public function setFloating(b:Bool, p:Point):Void;
+	/*@@@ modifiers=1 */ public function setFloating(b:Bool, p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingColor(java.awt.Color) */
-	public function setFloatingColor(c:Color):Void;
+	/*@@@ modifiers=1 */ public function setFloatingColor(c:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingLocation(int, int) */
-	public function setFloatingLocation(x:Int, y:Int):Void;
+	/*@@@ modifiers=1 */ public function setFloatingLocation(x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setOrientation(int) */
-	public function setOrientation(orientation:Int):Void;
+	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setRolloverBorders(boolean) */
-	public function setRolloverBorders(rollover:Bool):Void;
+	/*@@@ modifiers=1 */ public function setRolloverBorders(rollover:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#uninstallComponents() */
-	private function uninstallComponents():Void;
+	/*@@@ modifiers=4 */ private function uninstallComponents():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#uninstallDefaults() */
-	private function uninstallDefaults():Void;
+	/*@@@ modifiers=4 */ private function uninstallDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#uninstallKeyboardActions() */
-	private function uninstallKeyboardActions():Void;
+	/*@@@ modifiers=4 */ private function uninstallKeyboardActions():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#uninstallListeners() */
-	private function uninstallListeners():Void;
+	/*@@@ modifiers=4 */ private function uninstallListeners():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#uninstallUI(javax.swing.JComponent) */
-	override public function uninstallUI(c:JComponent):Void;
+	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;
 
 }
 

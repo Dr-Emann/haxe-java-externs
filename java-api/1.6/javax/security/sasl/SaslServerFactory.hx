@@ -10,10 +10,10 @@ import javax.security.sasl.SaslServer;
 extern interface SaslServerFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/SaslServerFactory.html#createSaslServer(java.lang.String, java.lang.String, java.lang.String, java.util.Map, javax.security.auth.callback.CallbackHandler) */
-	public function createSaslServer(mechanism:String, protocol:String, serverName:String, props:Map<String, Dynamic>, cbh:CallbackHandler):SaslServer;
+	/*@@@ modifiers=1025 */ public function createSaslServer(mechanism:String, protocol:String, serverName:String, props:Map<String, Dynamic>, cbh:CallbackHandler):SaslServer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/SaslServerFactory.html#getMechanismNames(java.util.Map) */
-	public function getMechanismNames(props:Map<String, Dynamic>):NativeArray<String>;
+	/*@@@ modifiers=1025 */ public function getMechanismNames(props:Map<String, Dynamic>):NativeArray<String>;
 
 }
 

@@ -10,15 +10,15 @@ import java.lang.reflect.Method;
 extern class MethodDescriptor extends FeatureDescriptor
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/MethodDescriptor.html#MethodDescriptor(java.lang.reflect.Method) */
-	@:overload(function (method:Method):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (method:Method):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/MethodDescriptor.html#MethodDescriptor(java.lang.reflect.Method, java.beans.ParameterDescriptor[]) */
-	public function new(method:Method, parameterDescriptors:NativeArray<ParameterDescriptor>):Void;
+	/*@@@ modifiers=1 */ public function new(method:Method, parameterDescriptors:NativeArray<ParameterDescriptor>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/MethodDescriptor.html#getMethod() */
-	public function getMethod():Method;
+	/*@@@ modifiers=33 */ public function getMethod():Method;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/MethodDescriptor.html#getParameterDescriptors() */
-	public function getParameterDescriptors():NativeArray<ParameterDescriptor>;
+	/*@@@ modifiers=1 */ public function getParameterDescriptors():NativeArray<ParameterDescriptor>;
 
 }
 

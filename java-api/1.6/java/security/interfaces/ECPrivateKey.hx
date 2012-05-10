@@ -9,7 +9,7 @@ import java.security.interfaces.ECKey;
 extern interface ECPrivateKey implements PrivateKey, implements ECKey
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPrivateKey.html#getS() */
-	public function getS():BigInteger;
+	/*@@@ modifiers=1025 */ public function getS():BigInteger;
 
 }
 

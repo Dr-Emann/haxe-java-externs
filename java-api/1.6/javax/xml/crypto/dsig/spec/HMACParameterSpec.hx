@@ -8,10 +8,10 @@ import javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
 extern class HMACParameterSpec extends Object, implements SignatureMethodParameterSpec
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#HMACParameterSpec(int) */
-	public function new(outputLength:Int):Void;
+	/*@@@ modifiers=1 */ public function new(outputLength:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#getOutputLength() */
-	public function getOutputLength():Int;
+	/*@@@ modifiers=1 */ public function getOutputLength():Int;
 
 }
 

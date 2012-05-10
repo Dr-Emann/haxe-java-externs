@@ -10,19 +10,19 @@ import javax.sql.RowSetMetaData;
 extern interface RowSetInternal
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetInternal.html#getConnection() */
-	public function getConnection():Connection;
+	/*@@@ modifiers=1025 */ public function getConnection():Connection;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetInternal.html#getOriginal() */
-	public function getOriginal():ResultSet;
+	/*@@@ modifiers=1025 */ public function getOriginal():ResultSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetInternal.html#getOriginalRow() */
-	public function getOriginalRow():ResultSet;
+	/*@@@ modifiers=1025 */ public function getOriginalRow():ResultSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetInternal.html#getParams() */
-	public function getParams():NativeArray<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getParams():NativeArray<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData) */
-	public function setMetaData(md:RowSetMetaData):Void;
+	/*@@@ modifiers=1025 */ public function setMetaData(md:RowSetMetaData):Void;
 
 }
 

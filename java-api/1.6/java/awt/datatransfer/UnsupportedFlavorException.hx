@@ -8,7 +8,7 @@ import java.lang.Exception;
 extern class UnsupportedFlavorException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/datatransfer/UnsupportedFlavorException.html#UnsupportedFlavorException(java.awt.datatransfer.DataFlavor) */
-	public function new(flavor:DataFlavor):Void;
+	/*@@@ modifiers=1 */ public function new(flavor:DataFlavor):Void;
 
 }
 

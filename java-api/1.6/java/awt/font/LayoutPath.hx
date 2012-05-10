@@ -8,13 +8,13 @@ import java.lang.Object;
 extern class LayoutPath extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LayoutPath.html#LayoutPath() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LayoutPath.html#pathToPoint(java.awt.geom.Point2D, boolean, java.awt.geom.Point2D) */
-	public function pathToPoint(location:Point2D, preceding:Bool, point:Point2D):Void;
+	/*@@@ modifiers=1025 */ public function pathToPoint(location:Point2D, preceding:Bool, point:Point2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/LayoutPath.html#pointToPath(java.awt.geom.Point2D, java.awt.geom.Point2D) */
-	public function pointToPath(point:Point2D, location:Point2D):Bool;
+	/*@@@ modifiers=1025 */ public function pointToPath(point:Point2D, location:Point2D):Bool;
 
 }
 

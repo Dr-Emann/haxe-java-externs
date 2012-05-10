@@ -1,6 +1,5 @@
 package javax.sound.sampled;
 
-import java.lang.Number;
 import java.lang.Object;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html */
@@ -8,34 +7,34 @@ import java.lang.Object;
 extern class ReverbType extends Object
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#ReverbType(java.lang.String, int, float, int, float, int) */
-	private function new(name:String, earlyReflectionDelay:Int, earlyReflectionIntensity:StdFloat, lateReflectionDelay:Int, lateReflectionIntensity:StdFloat, decayTime:Int):Void;
+	/*@@@ modifiers=4 */ private function new(name:String, earlyReflectionDelay:Int, earlyReflectionIntensity:Single, lateReflectionDelay:Int, lateReflectionIntensity:Single, decayTime:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=17 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#getDecayTime() */
-	public function getDecayTime():Int;
+	/*@@@ modifiers=17 */ public function getDecayTime():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#getEarlyReflectionDelay() */
-	public function getEarlyReflectionDelay():Int;
+	/*@@@ modifiers=17 */ public function getEarlyReflectionDelay():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#getEarlyReflectionIntensity() */
-	public function getEarlyReflectionIntensity():StdFloat;
+	/*@@@ modifiers=17 */ public function getEarlyReflectionIntensity():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#getLateReflectionDelay() */
-	public function getLateReflectionDelay():Int;
+	/*@@@ modifiers=17 */ public function getLateReflectionDelay():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#getLateReflectionIntensity() */
-	public function getLateReflectionIntensity():StdFloat;
+	/*@@@ modifiers=17 */ public function getLateReflectionIntensity():Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=17 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/ReverbType.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=17 */ override public function toString():String;
 
 }
 

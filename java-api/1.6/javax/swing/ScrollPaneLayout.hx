@@ -50,61 +50,61 @@ extern class ScrollPaneLayout extends Object, implements LayoutManager, implemen
 	private var hsbPolicy:Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#ScrollPaneLayout() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#addLayoutComponent(java.lang.String, java.awt.Component) */
-	public function addLayoutComponent(s:String, c:Component):Void;
+	/*@@@ modifiers=1 */ public function addLayoutComponent(s:String, c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#addSingletonComponent(java.awt.Component, java.awt.Component) */
-	private function addSingletonComponent(oldC:Component, newC:Component):Component;
+	/*@@@ modifiers=4 */ private function addSingletonComponent(oldC:Component, newC:Component):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getColumnHeader() */
-	public function getColumnHeader():JViewport;
+	/*@@@ modifiers=1 */ public function getColumnHeader():JViewport;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getCorner(java.lang.String) */
-	public function getCorner(key:String):Component;
+	/*@@@ modifiers=1 */ public function getCorner(key:String):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getHorizontalScrollBar() */
-	public function getHorizontalScrollBar():JScrollBar;
+	/*@@@ modifiers=1 */ public function getHorizontalScrollBar():JScrollBar;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getHorizontalScrollBarPolicy() */
-	public function getHorizontalScrollBarPolicy():Int;
+	/*@@@ modifiers=1 */ public function getHorizontalScrollBarPolicy():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getRowHeader() */
-	public function getRowHeader():JViewport;
+	/*@@@ modifiers=1 */ public function getRowHeader():JViewport;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getVerticalScrollBar() */
-	public function getVerticalScrollBar():JScrollBar;
+	/*@@@ modifiers=1 */ public function getVerticalScrollBar():JScrollBar;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getVerticalScrollBarPolicy() */
-	public function getVerticalScrollBarPolicy():Int;
+	/*@@@ modifiers=1 */ public function getVerticalScrollBarPolicy():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getViewport() */
-	public function getViewport():JViewport;
+	/*@@@ modifiers=1 */ public function getViewport():JViewport;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#getViewportBorderBounds(javax.swing.JScrollPane) */
-	public function getViewportBorderBounds(scrollpane:JScrollPane):Rectangle;
+	/*@@@ modifiers=1 */ public function getViewportBorderBounds(scrollpane:JScrollPane):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#layoutContainer(java.awt.Container) */
-	public function layoutContainer(parent:Container):Void;
+	/*@@@ modifiers=1 */ public function layoutContainer(parent:Container):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#minimumLayoutSize(java.awt.Container) */
-	public function minimumLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1 */ public function minimumLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#preferredLayoutSize(java.awt.Container) */
-	public function preferredLayoutSize(parent:Container):Dimension;
+	/*@@@ modifiers=1 */ public function preferredLayoutSize(parent:Container):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#removeLayoutComponent(java.awt.Component) */
-	public function removeLayoutComponent(c:Component):Void;
+	/*@@@ modifiers=1 */ public function removeLayoutComponent(c:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#setHorizontalScrollBarPolicy(int) */
-	public function setHorizontalScrollBarPolicy(x:Int):Void;
+	/*@@@ modifiers=1 */ public function setHorizontalScrollBarPolicy(x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#setVerticalScrollBarPolicy(int) */
-	public function setVerticalScrollBarPolicy(x:Int):Void;
+	/*@@@ modifiers=1 */ public function setVerticalScrollBarPolicy(x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ScrollPaneLayout.html#syncWithScrollPane(javax.swing.JScrollPane) */
-	public function syncWithScrollPane(sp:JScrollPane):Void;
+	/*@@@ modifiers=1 */ public function syncWithScrollPane(sp:JScrollPane):Void;
 
 }
 

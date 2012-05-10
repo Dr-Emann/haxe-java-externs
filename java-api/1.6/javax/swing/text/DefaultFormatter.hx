@@ -13,49 +13,49 @@ import javax.swing.text.NavigationFilter;
 extern class DefaultFormatter extends JFormattedTextField_AbstractFormatter, implements Cloneable, implements Serializable
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#DefaultFormatter() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#clone() */
-	override public function clone():Dynamic;
+	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#getAllowsInvalid() */
-	public function getAllowsInvalid():Bool;
+	/*@@@ modifiers=1 */ public function getAllowsInvalid():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#getCommitsOnValidEdit() */
-	public function getCommitsOnValidEdit():Bool;
+	/*@@@ modifiers=1 */ public function getCommitsOnValidEdit():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#getDocumentFilter() */
-	override private function getDocumentFilter():DocumentFilter;
+	/*@@@ modifiers=4 */ override private function getDocumentFilter():DocumentFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#getNavigationFilter() */
-	override private function getNavigationFilter():NavigationFilter;
+	/*@@@ modifiers=4 */ override private function getNavigationFilter():NavigationFilter;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#getOverwriteMode() */
-	public function getOverwriteMode():Bool;
+	/*@@@ modifiers=1 */ public function getOverwriteMode():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#getValueClass() */
-	public function getValueClass():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getValueClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#install(javax.swing.JFormattedTextField) */
-	override public function install(ftf:JFormattedTextField):Void;
+	/*@@@ modifiers=1 */ override public function install(ftf:JFormattedTextField):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#setAllowsInvalid(boolean) */
-	public function setAllowsInvalid(allowsInvalid:Bool):Void;
+	/*@@@ modifiers=1 */ public function setAllowsInvalid(allowsInvalid:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#setCommitsOnValidEdit(boolean) */
-	public function setCommitsOnValidEdit(commit:Bool):Void;
+	/*@@@ modifiers=1 */ public function setCommitsOnValidEdit(commit:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#setOverwriteMode(boolean) */
-	public function setOverwriteMode(overwriteMode:Bool):Void;
+	/*@@@ modifiers=1 */ public function setOverwriteMode(overwriteMode:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#setValueClass(java.lang.Class) */
-	public function setValueClass(valueClass:Class<Dynamic>):Void;
+	/*@@@ modifiers=1 */ public function setValueClass(valueClass:Class<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#stringToValue(java.lang.String) */
-	override public function stringToValue(string:String):Dynamic;
+	/*@@@ modifiers=1 */ override public function stringToValue(string:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultFormatter.html#valueToString(java.lang.Object) */
-	override public function valueToString(value:Dynamic):String;
+	/*@@@ modifiers=1 */ override public function valueToString(value:Dynamic):String;
 
 }
 

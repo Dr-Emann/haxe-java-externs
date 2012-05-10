@@ -11,12 +11,12 @@ import javax.xml.soap.SOAPFaultElement;
 extern interface Detail implements SOAPFaultElement
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Detail.html#addDetailEntry(javax.xml.namespace.QName) */
-	@:overload(function (qname:QName):DetailEntry {})
+	/*@@@ modifiers=1025 */ @:overload(function (qname:QName):DetailEntry {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Detail.html#addDetailEntry(javax.xml.soap.Name) */
-	public function addDetailEntry(name:Name):DetailEntry;
+	/*@@@ modifiers=1025 */ public function addDetailEntry(name:Name):DetailEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Detail.html#getDetailEntries() */
-	public function getDetailEntries():java.util.Iterator<Dynamic>;
+	/*@@@ modifiers=1025 */ public function getDetailEntries():java.util.Iterator<Dynamic>;
 
 }
 

@@ -15,70 +15,70 @@ extern class Method extends AccessibleObject, implements GenericDeclaration, imp
 {
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#equals(java.lang.Object) */
-	override public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getAnnotation(java.lang.Class) */
-	override public function getAnnotation<T>(annotationClass:Class<T>):T;
+	/*@@@ modifiers=1 */ override public function getAnnotation<T>(annotationClass:Class<T>):T;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getDeclaredAnnotations() */
-	override public function getDeclaredAnnotations():NativeArray<Annotation>;
+	/*@@@ modifiers=1 */ override public function getDeclaredAnnotations():NativeArray<Annotation>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getDeclaringClass() */
-	public function getDeclaringClass():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getDeclaringClass():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getDefaultValue() */
-	public function getDefaultValue():Dynamic;
+	/*@@@ modifiers=1 */ public function getDefaultValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getExceptionTypes() */
-	public function getExceptionTypes():NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=1 */ public function getExceptionTypes():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getGenericExceptionTypes() */
-	public function getGenericExceptionTypes():NativeArray<Type>;
+	/*@@@ modifiers=1 */ public function getGenericExceptionTypes():NativeArray<Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getGenericParameterTypes() */
-	public function getGenericParameterTypes():NativeArray<Type>;
+	/*@@@ modifiers=1 */ public function getGenericParameterTypes():NativeArray<Type>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getGenericReturnType() */
-	public function getGenericReturnType():Type;
+	/*@@@ modifiers=1 */ public function getGenericReturnType():Type;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getModifiers() */
-	public function getModifiers():Int;
+	/*@@@ modifiers=1 */ public function getModifiers():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=1 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getParameterAnnotations() */
-	public function getParameterAnnotations():NativeArray<NativeArray<Annotation>>;
+	/*@@@ modifiers=1 */ public function getParameterAnnotations():NativeArray<NativeArray<Annotation>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getParameterTypes() */
-	public function getParameterTypes():NativeArray<Class<Dynamic>>;
+	/*@@@ modifiers=1 */ public function getParameterTypes():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getReturnType() */
-	public function getReturnType():Class<Dynamic>;
+	/*@@@ modifiers=1 */ public function getReturnType():Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#getTypeParameters() */
-	public function getTypeParameters():NativeArray<TypeVariable<Method>>;
+	/*@@@ modifiers=1 */ public function getTypeParameters():NativeArray<TypeVariable<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#hashCode() */
-	override public function hashCode():Int;
+	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#invoke(java.lang.Object, java.lang.Object[]) */
-	public function invoke(obj:Dynamic, args:NativeArray<Dynamic>):Dynamic;
+	/*@@@ modifiers=129 */ public function invoke(obj:Dynamic, args:NativeArray<Dynamic>):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#isBridge() */
-	public function isBridge():Bool;
+	/*@@@ modifiers=1 */ public function isBridge():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#isSynthetic() */
-	public function isSynthetic():Bool;
+	/*@@@ modifiers=1 */ public function isSynthetic():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#isVarArgs() */
-	public function isVarArgs():Bool;
+	/*@@@ modifiers=1 */ public function isVarArgs():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#toGenericString() */
-	public function toGenericString():String;
+	/*@@@ modifiers=1 */ public function toGenericString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html#toString() */
-	override public function toString():String;
+	/*@@@ modifiers=1 */ override public function toString():String;
 
 }
 

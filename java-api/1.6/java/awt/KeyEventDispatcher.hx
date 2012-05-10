@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 extern interface KeyEventDispatcher
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyEventDispatcher.html#dispatchKeyEvent(java.awt.event.KeyEvent) */
-	public function dispatchKeyEvent(e:KeyEvent):Bool;
+	/*@@@ modifiers=1025 */ public function dispatchKeyEvent(e:KeyEvent):Bool;
 
 }
 

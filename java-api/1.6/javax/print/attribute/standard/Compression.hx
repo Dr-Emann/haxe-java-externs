@@ -11,19 +11,19 @@ import javax.print.attribute.EnumSyntax;
 extern class Compression extends EnumSyntax, implements DocAttribute
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/Compression.html#Compression(int) */
-	private function new(value:Int):Void;
+	/*@@@ modifiers=4 */ private function new(value:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/Compression.html#getCategory() */
-	public function getCategory():Class<Attribute>;
+	/*@@@ modifiers=17 */ public function getCategory():Class<Attribute>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/Compression.html#getEnumValueTable() */
-	override private function getEnumValueTable():NativeArray<EnumSyntax>;
+	/*@@@ modifiers=4 */ override private function getEnumValueTable():NativeArray<EnumSyntax>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/Compression.html#getName() */
-	public function getName():String;
+	/*@@@ modifiers=17 */ public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/attribute/standard/Compression.html#getStringTable() */
-	override private function getStringTable():NativeArray<String>;
+	/*@@@ modifiers=4 */ override private function getStringTable():NativeArray<String>;
 
 }
 

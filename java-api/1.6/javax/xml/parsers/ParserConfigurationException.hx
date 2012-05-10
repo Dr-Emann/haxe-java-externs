@@ -7,9 +7,9 @@ import java.lang.Exception;
 extern class ParserConfigurationException extends Exception
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/ParserConfigurationException.html#ParserConfigurationException() */
-	@:overload(function ():Void {})
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/ParserConfigurationException.html#ParserConfigurationException(java.lang.String) */
-	public function new(msg:String):Void;
+	/*@@@ modifiers=1 */ public function new(msg:String):Void;
 
 }
 

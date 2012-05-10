@@ -7,7 +7,7 @@ import java.security.BasicPermission;
 extern class LoggingPermission extends BasicPermission
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/logging/LoggingPermission.html#LoggingPermission(java.lang.String, java.lang.String) */
-	public function new(name:String, actions:String):Void;
+	/*@@@ modifiers=1 */ public function new(name:String, actions:String):Void;
 
 }
 

@@ -8,7 +8,7 @@ import java.security.ProtectionDomain;
 extern interface DomainCombiner
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/DomainCombiner.html#combine(java.security.ProtectionDomain[], java.security.ProtectionDomain[]) */
-	public function combine(currentDomains:NativeArray<ProtectionDomain>, assignedDomains:NativeArray<ProtectionDomain>):NativeArray<ProtectionDomain>;
+	/*@@@ modifiers=1025 */ public function combine(currentDomains:NativeArray<ProtectionDomain>, assignedDomains:NativeArray<ProtectionDomain>):NativeArray<ProtectionDomain>;
 
 }
 

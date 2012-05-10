@@ -15,79 +15,79 @@ import javax.accessibility.AccessibleContext;
 extern class MenuItem extends MenuComponent, implements Accessible
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#MenuItem(java.lang.String) */
-	@:overload(function (label:String):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (label:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#MenuItem(java.lang.String, java.awt.MenuShortcut) */
-	@:overload(function (label:String, s:MenuShortcut):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (label:String, s:MenuShortcut):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#MenuItem() */
-	public function new():Void;
+	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#addActionListener(java.awt.event.ActionListener) */
-	public function addActionListener(l:ActionListener):Void;
+	/*@@@ modifiers=33 */ public function addActionListener(l:ActionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#addNotify() */
-	public function addNotify():Void;
+	/*@@@ modifiers=1 */ public function addNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#deleteShortcut() */
-	public function deleteShortcut():Void;
+	/*@@@ modifiers=1 */ public function deleteShortcut():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#disable() */
-	public function disable():Void;
+	/*@@@ modifiers=33 */ public function disable():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#disableEvents(long) */
-	private function disableEvents(eventsToDisable:haxe.Int64):Void;
+	/*@@@ modifiers=20 */ private function disableEvents(eventsToDisable:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#enable(boolean) */
-	@:overload(function (b:Bool):Void {})
+	/*@@@ modifiers=1 */ @:overload(function (b:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#enable() */
-	public function enable():Void;
+	/*@@@ modifiers=33 */ public function enable():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#enableEvents(long) */
-	private function enableEvents(eventsToEnable:haxe.Int64):Void;
+	/*@@@ modifiers=20 */ private function enableEvents(eventsToEnable:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#getAccessibleContext() */
-	override public function getAccessibleContext():AccessibleContext;
+	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#getActionCommand() */
-	public function getActionCommand():String;
+	/*@@@ modifiers=1 */ public function getActionCommand():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#getActionListeners() */
-	public function getActionListeners():NativeArray<ActionListener>;
+	/*@@@ modifiers=33 */ public function getActionListeners():NativeArray<ActionListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#getLabel() */
-	public function getLabel():String;
+	/*@@@ modifiers=1 */ public function getLabel():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#getListeners(java.lang.Class) */
-	public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
+	/*@@@ modifiers=1 */ public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#getShortcut() */
-	public function getShortcut():MenuShortcut;
+	/*@@@ modifiers=1 */ public function getShortcut():MenuShortcut;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#isEnabled() */
-	public function isEnabled():Bool;
+	/*@@@ modifiers=1 */ public function isEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#paramString() */
-	override public function paramString():String;
+	/*@@@ modifiers=1 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#processActionEvent(java.awt.event.ActionEvent) */
-	private function processActionEvent(e:ActionEvent):Void;
+	/*@@@ modifiers=4 */ private function processActionEvent(e:ActionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#processEvent(java.awt.AWTEvent) */
-	override private function processEvent(e:AWTEvent):Void;
+	/*@@@ modifiers=4 */ override private function processEvent(e:AWTEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#removeActionListener(java.awt.event.ActionListener) */
-	public function removeActionListener(l:ActionListener):Void;
+	/*@@@ modifiers=33 */ public function removeActionListener(l:ActionListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#setActionCommand(java.lang.String) */
-	public function setActionCommand(command:String):Void;
+	/*@@@ modifiers=1 */ public function setActionCommand(command:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#setEnabled(boolean) */
-	public function setEnabled(b:Bool):Void;
+	/*@@@ modifiers=33 */ public function setEnabled(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#setLabel(java.lang.String) */
-	public function setLabel(label:String):Void;
+	/*@@@ modifiers=33 */ public function setLabel(label:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuItem.html#setShortcut(java.awt.MenuShortcut) */
-	public function setShortcut(s:MenuShortcut):Void;
+	/*@@@ modifiers=1 */ public function setShortcut(s:MenuShortcut):Void;
 
 }
 
