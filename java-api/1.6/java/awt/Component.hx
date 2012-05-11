@@ -181,7 +181,7 @@ extern class Component extends Object, implements ImageObserver, implements Menu
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#firePropertyChange(java.lang.String, short, short) */
 	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int16, newValue:Int16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4 */ private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#getAccessibleContext() */
 	/*@@@ modifiers=1 */ public function getAccessibleContext():AccessibleContext;
@@ -435,14 +435,12 @@ extern class Component extends Object, implements ImageObserver, implements Menu
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list(java.io.PrintStream, int) */
 	/*@@@ modifiers=1 */ @:overload(function (out:PrintStream, indent:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list(java.io.PrintWriter, int) */
-	/*@@@ modifiers=1 */ @:overload(function (out:PrintWriter, indent:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list(java.io.PrintStream) */
-	/*@@@ modifiers=1 */ @:overload(function (out:PrintStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list(java.io.PrintWriter) */
 	/*@@@ modifiers=1 */ @:overload(function (out:PrintWriter):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list() */
 	/*@@@ modifiers=1 */ public function list():Void;
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list(java.io.PrintStream, int) */
+	/*@@@ modifiers=1 */ @:overload(function (out:PrintStream, indent:Int):Void {})
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#locate(int, int) */
 	/*@@@ modifiers=1 */ public function locate(x:Int, y:Int):Component;
@@ -525,10 +523,10 @@ extern class Component extends Object, implements ImageObserver, implements Menu
 	/*@@@ modifiers=4 */ private function processInputMethodEvent(e:InputMethodEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processKeyEvent(java.awt.event.KeyEvent) */
-	/*@@@ modifiers=4 */ private function processKeyEvent(e:KeyEvent):Void;
+	/*@@@ modifiers=4 */ public function processKeyEvent(e:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processMouseEvent(java.awt.event.MouseEvent) */
-	/*@@@ modifiers=4 */ private function processMouseEvent(e:MouseEvent):Void;
+	/*@@@ modifiers=4 */ public function processMouseEvent(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processMouseMotionEvent(java.awt.event.MouseEvent) */
 	/*@@@ modifiers=4 */ private function processMouseMotionEvent(e:MouseEvent):Void;

@@ -25,7 +25,9 @@ extern class URLStreamHandler extends Object
 	/*@@@ modifiers=36 */ private function getHostAddress(u:URL):InetAddress;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#hashCode(java.net.URL) */
-	/*@@@ modifiers=4 */ override private function hashCode(u:URL):Int;
+	/*@@@ modifiers=4 */ @:overload(function (u:URL):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#hashCode() */
+	/*@@@ modifiers=257 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLStreamHandler.html#hostsEqual(java.net.URL, java.net.URL) */
 	/*@@@ modifiers=4 */ private function hostsEqual(u1:URL, u2:URL):Bool;

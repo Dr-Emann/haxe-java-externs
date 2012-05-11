@@ -37,22 +37,14 @@ extern class PrintWriter extends Writer
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Writer {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence, start:Int, end:Int):PrintWriter {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(char) */
 	/*@@@ modifiers=1 */ @:overload(function (c:Char16):PrintWriter {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(char) */
 	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(char) */
-	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Writer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence):PrintWriter {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=4161 */ override public function append(csq:CharSequence):Writer;
-
+	/*@@@ modifiers=4161 */ override public function append(csq:CharSequence):Appendable;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#checkError() */
 	/*@@@ modifiers=1 */ public function checkError():Bool;
 

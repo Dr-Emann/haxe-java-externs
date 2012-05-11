@@ -4,6 +4,7 @@ import java.NativeArray;
 import java.awt.Component;
 import java.awt.ComponentOrientation;
 import java.awt.Point;
+import java.awt.PopupMenu;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeListener;
 import javax.accessibility.Accessible;
@@ -42,7 +43,9 @@ extern class JMenu extends JMenuItem, implements Accessible, implements MenuElem
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#add(javax.swing.Action) */
 	/*@@@ modifiers=1 */ @:overload(function (a:Action):JMenuItem {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#add(javax.swing.JMenuItem) */
-	/*@@@ modifiers=1 */ override public function add(menuItem:JMenuItem):JMenuItem;
+	/*@@@ modifiers=1 */ @:overload(function add(menuItem:JMenuItem):JMenuItem {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#addMenuListener(javax.swing.event.MenuListener) */
 	/*@@@ modifiers=1 */ public function addMenuListener(l:MenuListener):Void;
@@ -63,7 +66,9 @@ extern class JMenu extends JMenuItem, implements Accessible, implements MenuElem
 	/*@@@ modifiers=4 */ private function createWinListener(p:JPopupMenu):JMenu_WinListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#doClick(int) */
-	/*@@@ modifiers=1 */ override public function doClick(pressTime:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function doClick(pressTime:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractButton.html#doClick() */
+	/*@@@ modifiers=1 */ override public function doClick():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#fireMenuCanceled() */
 	/*@@@ modifiers=4 */ private function fireMenuCanceled():Void;
@@ -145,7 +150,7 @@ extern class JMenu extends JMenuItem, implements Accessible, implements MenuElem
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#processKeyEvent(java.awt.event.KeyEvent) */
-	/*@@@ modifiers=4 */ override private function processKeyEvent(evt:KeyEvent):Void;
+	/*@@@ modifiers=4 */ override public function processKeyEvent(evt:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (pos:Int):Void {})

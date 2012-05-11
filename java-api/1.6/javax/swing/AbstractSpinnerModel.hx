@@ -32,5 +32,16 @@ extern class AbstractSpinnerModel extends Object, implements SpinnerModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractSpinnerModel.html#removeChangeListener(javax.swing.event.ChangeListener) */
 	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerModel.html#getNextValue() */
+	/*@@@ modifiers=1025 */ public function getNextValue():Dynamic;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerModel.html#getPreviousValue() */
+	/*@@@ modifiers=1025 */ public function getPreviousValue():Dynamic;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerModel.html#getValue() */
+	/*@@@ modifiers=1025 */ public function getValue():Dynamic;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerModel.html#setValue(java.lang.Object) */
+	/*@@@ modifiers=1025 */ public function setValue(value:Dynamic):Void;
 }
 

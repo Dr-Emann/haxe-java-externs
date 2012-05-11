@@ -66,8 +66,10 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=1 */ public function computeVisibleRect(visibleRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#contains(int, int) */
-	/*@@@ modifiers=1 */ override public function contains(x:Int, y:Int):Bool;
-
+	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#contains(java.awt.Point) */
+	/*@@@ modifiers=1 */ override public function contains(p:Point):Bool;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#createToolTip() */
 	/*@@@ modifiers=1 */ public function createToolTip():JToolTip;
 
@@ -82,7 +84,9 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#firePropertyChange(java.lang.String, char, char) */
 	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Char16, newValue:Char16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#firePropertyChange(java.lang.String, int, int) */
-	/*@@@ modifiers=1 */ override public function firePropertyChange(propertyName:String, oldValue:Int, newValue:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int, newValue:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
+	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#fireVetoableChange(java.lang.String, java.lang.Object, java.lang.Object) */
 	/*@@@ modifiers=4 */ private function fireVetoableChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
@@ -118,7 +122,9 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=1 */ public function getBorder():Border;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getBounds(java.awt.Rectangle) */
-	/*@@@ modifiers=1 */ override public function getBounds(rv:Rectangle):Rectangle;
+	/*@@@ modifiers=1 */ @:overload(function (rv:Rectangle):Rectangle {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#getBounds() */
+	/*@@@ modifiers=1 */ override public function getBounds():Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getClientProperty(java.lang.Object) */
 	/*@@@ modifiers=17 */ public function getClientProperty(key:Dynamic):Dynamic;
@@ -167,7 +173,9 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=1 */ override public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getLocation(java.awt.Point) */
-	/*@@@ modifiers=1 */ override public function getLocation(rv:Point):Point;
+	/*@@@ modifiers=1 */ @:overload(function getLocation(rv:Point):Point {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#getLocation() */
+	/*@@@ modifiers=1 */ override public function getLocation():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getMaximumSize() */
 	/*@@@ modifiers=1 */ override public function getMaximumSize():Dimension;
@@ -191,7 +199,9 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=1 */ public function getRootPane():JRootPane;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getSize(java.awt.Dimension) */
-	/*@@@ modifiers=1 */ override public function getSize(rv:Dimension):Dimension;
+	/*@@@ modifiers=1 */ @:overload(function (rv:Dimension):Dimension {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#getSize() */
+	/*@@@ modifiers=1 */ override public function getSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getToolTipLocation(java.awt.event.MouseEvent) */
 	/*@@@ modifiers=1 */ public function getToolTipLocation(event:MouseEvent):Point;
@@ -300,10 +310,10 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=4 */ private function processKeyBinding(ks:KeyStroke, e:KeyEvent, condition:Int, pressed:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#processKeyEvent(java.awt.event.KeyEvent) */
-	/*@@@ modifiers=4 */ override private function processKeyEvent(e:KeyEvent):Void;
+	/*@@@ modifiers=4 */ override public function processKeyEvent(e:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#processMouseEvent(java.awt.event.MouseEvent) */
-	/*@@@ modifiers=4 */ override private function processMouseEvent(e:MouseEvent):Void;
+	/*@@@ modifiers=4 */ override public function processMouseEvent(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#processMouseMotionEvent(java.awt.event.MouseEvent) */
 	/*@@@ modifiers=4 */ override private function processMouseMotionEvent(e:MouseEvent):Void;
@@ -328,7 +338,9 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#repaint(long, int, int, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (tm:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#repaint(java.awt.Rectangle) */
-	/*@@@ modifiers=1 */ override public function repaint(r:Rectangle):Void;
+	/*@@@ modifiers=1 */ @:overload(function (r:Rectangle):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#repaint() */
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#requestDefaultFocus() */
 	/*@@@ modifiers=1 */ public function requestDefaultFocus():Bool;
@@ -431,7 +443,7 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=1 */ public function setTransferHandler(newHandler:TransferHandler):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
-	/*@@@ modifiers=4 */ private function setUI(newUI:ComponentUI):Void;
+	/*@@@ modifiers=4 */ public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setVerifyInputWhenFocusTarget(boolean) */
 	/*@@@ modifiers=1 */ public function setVerifyInputWhenFocusTarget(verifyInputWhenFocusTarget:Bool):Void;

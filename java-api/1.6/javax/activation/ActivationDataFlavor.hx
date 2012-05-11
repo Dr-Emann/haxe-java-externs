@@ -15,7 +15,9 @@ extern class ActivationDataFlavor extends DataFlavor
 	/*@@@ modifiers=1 */ public function new(arg0:Class<Dynamic>, arg1:String, arg2:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/ActivationDataFlavor.html#equals(java.awt.datatransfer.DataFlavor) */
-	/*@@@ modifiers=1 */ override public function equals(arg0:DataFlavor):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (arg0:DataFlavor):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/activation/ActivationDataFlavor.html#getHumanPresentableName() */
 	/*@@@ modifiers=1 */ override public function getHumanPresentableName():String;

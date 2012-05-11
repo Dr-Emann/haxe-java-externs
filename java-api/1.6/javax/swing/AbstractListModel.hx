@@ -39,5 +39,10 @@ extern class AbstractListModel extends Object, implements ListModel, implements 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener) */
 	/*@@@ modifiers=1 */ public function removeListDataListener(l:ListDataListener):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListModel.html#getElementAt(int) */
+	/*@@@ modifiers=1025 */ public function getElementAt(index:Int):Dynamic;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/ListModel.html#getSize() */
+	/*@@@ modifiers=1025 */ public function getSize():Int;
 }
 

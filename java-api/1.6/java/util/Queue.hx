@@ -22,7 +22,7 @@ extern interface Queue<E : (Dynamic)> implements Collection<E>
 	/*@@@ modifiers=1025 */ public function poll():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#remove() */
-	/*@@@ modifiers=1025 */ public function remove():E;
+	/*@@@ modifiers=1025 */ // TODO: public function remove():E;
 
 }
 

@@ -22,7 +22,9 @@ extern class AbstractList<E : (Dynamic)> extends AbstractCollection<E>, implemen
 	/*@@@ modifiers=1 */ override public function add(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractList.html#addAll(int, java.util.Collection) */
-	/*@@@ modifiers=1 */ override public function addAll(index:Int, c:Collection<E>):Bool;
+	/*@@@ modifiers=1 */ @:overload(function addAll(index:Int, c:Collection<E>):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractCollection.html#addAll(java.util.Collection) */
+	/*@@@ modifiers=1 */ override public function addAll(c:Collection<E>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractList.html#clear() */
 	/*@@@ modifiers=1 */ override public function clear():Void;
@@ -51,7 +53,9 @@ extern class AbstractList<E : (Dynamic)> extends AbstractCollection<E>, implemen
 	/*@@@ modifiers=1 */ public function listIterator():ListIterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractList.html#remove(int) */
-	/*@@@ modifiers=1 */ override public function remove(index:Int):E;
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractCollection.html#remove(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function remove(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractList.html#removeRange(int, int) */
 	/*@@@ modifiers=4 */ private function removeRange(fromIndex:Int, toIndex:Int):Void;

@@ -109,5 +109,8 @@ extern class AbstractUnmarshallerImpl extends Object, implements Unmarshaller
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/helpers/AbstractUnmarshallerImpl.html#unmarshal(org.xml.sax.InputSource) */
 	/*@@@ modifiers=17 */ public function unmarshal(source:InputSource):Dynamic;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/Unmarshaller.html#getUnmarshallerHandler() */
+	/*@@@ modifiers=1025 */ public function getUnmarshallerHandler():UnmarshallerHandler;
+
 }
 

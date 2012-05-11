@@ -55,7 +55,7 @@ extern class ResourceBundle extends Object
 	/*@@@ modifiers=17 */ public function getStringArray(key:String):NativeArray<String>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#handleGetObject(java.lang.String) */
-	/*@@@ modifiers=1028 */ private function handleGetObject(key:String):Dynamic;
+	/*@@@ modifiers=1028 */ public function handleGetObject(key:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ResourceBundle.html#handleKeySet() */
 	/*@@@ modifiers=4 */ private function handleKeySet():Set<String>;

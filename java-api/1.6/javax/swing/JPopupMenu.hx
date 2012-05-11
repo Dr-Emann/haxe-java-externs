@@ -5,6 +5,9 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Insets;
+import java.awt.MenuComponent;
+import java.awt.MenuContainer;
+import java.awt.PopupMenu;
 import java.awt.event.FocusEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -35,8 +38,10 @@ extern class JPopupMenu extends JComponent, implements Accessible, implements Me
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#add(javax.swing.Action) */
 	/*@@@ modifiers=1 */ @:overload(function (a:Action):JMenuItem {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#add(javax.swing.JMenuItem) */
-	/*@@@ modifiers=1 */ override public function add(menuItem:JMenuItem):JMenuItem;
-
+	/*@@@ modifiers=1 */ @:overload(function (menuItem:JMenuItem):JMenuItem {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#addMenuKeyListener(javax.swing.event.MenuKeyListener) */
 	/*@@@ modifiers=1 */ public function addMenuKeyListener(l:MenuKeyListener):Void;
 
@@ -65,7 +70,9 @@ extern class JPopupMenu extends JComponent, implements Accessible, implements Me
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getComponent() */
-	/*@@@ modifiers=1 */ override public function getComponent():Component;
+	/*@@@ modifiers=1 */ @:overload(function ():Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getComponent(int) */
+	/*@@@ modifiers=1 */ override public function getComponent(n:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#getComponentAtIndex(int) */
 	/*@@@ modifiers=1 */ public function getComponentAtIndex(i:Int):Component;
@@ -141,10 +148,14 @@ extern class JPopupMenu extends JComponent, implements Accessible, implements Me
 	/*@@@ modifiers=4 */ override private function processKeyEvent(evt:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#processMouseEvent(java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	/*@@@ modifiers=1 */ override public function processMouseEvent(event:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
-
+	/*@@@ modifiers=1 */ @:overload(function (event:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#processMouseEvent(java.awt.event.MouseEvent) */
+	/*@@@ modifiers=4 */ override public function processMouseEvent(e:MouseEvent):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#remove(int) */
-	/*@@@ modifiers=1 */ override public function remove(pos:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (pos:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#removeMenuKeyListener(javax.swing.event.MenuKeyListener) */
 	/*@@@ modifiers=1 */ public function removeMenuKeyListener(l:MenuKeyListener):Void;

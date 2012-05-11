@@ -79,5 +79,10 @@ extern class DatagramSocketImpl extends Object, implements SocketOptions
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/DatagramSocketImpl.html#setTimeToLive(int) */
 	/*@@@ modifiers=1028 */ private function setTimeToLive(ttl:Int):Void;
 
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketOptions.html#getOption(int) */
+	/*@@@ modifiers=1025 */ public function getOption(optID:Int):Dynamic;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketOptions.html#setOption(int, java.lang.Object) */
+	/*@@@ modifiers=1025 */ public function setOption(optID:Int, value:Dynamic):Void;
 }
 

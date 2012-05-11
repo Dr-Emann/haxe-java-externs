@@ -13,7 +13,7 @@ extern class ListResourceBundle extends ResourceBundle
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#getContents() */
-	/*@@@ modifiers=1028 */ private function getContents():NativeArray<NativeArray<Dynamic>>;
+	/*@@@ modifiers=1028 */ public function getContents():NativeArray<NativeArray<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ListResourceBundle.html#getKeys() */
 	/*@@@ modifiers=1 */ override public function getKeys():Enumeration<String>;

@@ -25,10 +25,10 @@ extern class ByteBuffer extends Buffer, implements Comparable<ByteBuffer>
 	/*@@@ modifiers=9 */ static public function allocateDirect(capacity:Int):ByteBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html#array() */
-	/*@@@ modifiers=4161 */ @:overload(function ():Dynamic {})
+	/*@@@ modifiers=17 */  @:overload(function ():NativeArray<Int8> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html#array() */
-	/*@@@ modifiers=17 */ override public function array():NativeArray<Int8>;
-
+	/*@@@ modifiers=4161 */ override public function array():Dynamic;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html#arrayOffset() */
 	/*@@@ modifiers=17 */ override public function arrayOffset():Int;
 

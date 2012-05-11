@@ -4,6 +4,9 @@ import java.NativeArray;
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Insets;
+import java.awt.MenuComponent;
+import java.awt.MenuContainer;
+import java.awt.PopupMenu;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import javax.accessibility.Accessible;
@@ -14,6 +17,7 @@ import javax.swing.KeyStroke;
 import javax.swing.MenuElement;
 import javax.swing.MenuSelectionManager;
 import javax.swing.SingleSelectionModel;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.MenuBarUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html */
@@ -24,7 +28,9 @@ extern class JMenuBar extends JComponent, implements Accessible, implements Menu
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#add(javax.swing.JMenu) */
-	/*@@@ modifiers=1 */ override public function add(c:JMenu):JMenu;
+	/*@@@ modifiers=1 */ @:overload(function (c:JMenu):JMenu {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#addNotify() */
 	/*@@@ modifiers=1 */ override public function addNotify():Void;
@@ -33,7 +39,9 @@ extern class JMenuBar extends JComponent, implements Accessible, implements Menu
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#getComponent() */
-	/*@@@ modifiers=1 */ override public function getComponent():Component;
+	/*@@@ modifiers=1 */ @:overload(function ():Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getComponent(int) */
+	/*@@@ modifiers=1 */ override public function getComponent(n:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#getComponentAtIndex(int) */
 	/*@@@ modifiers=1 */ public function getComponentAtIndex(i:Int):Component;
@@ -84,10 +92,14 @@ extern class JMenuBar extends JComponent, implements Accessible, implements Menu
 	/*@@@ modifiers=4 */ override private function processKeyBinding(ks:KeyStroke, e:KeyEvent, condition:Int, pressed:Bool):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#processKeyEvent(java.awt.event.KeyEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	/*@@@ modifiers=1 */ override public function processKeyEvent(e:KeyEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
+	/*@@@ modifiers=1 */ @:overload(function (e:KeyEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processKeyEvent(java.awt.event.KeyEvent) */
+	/*@@@ modifiers=4 */ override public function processKeyEvent(e:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#processMouseEvent(java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	/*@@@ modifiers=1 */ override public function processMouseEvent(event:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
+	/*@@@ modifiers=1 */ @:overload(function (event:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processMouseEvent(java.awt.event.MouseEvent) */
+	/*@@@ modifiers=4 */ override public function processMouseEvent(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#removeNotify() */
 	/*@@@ modifiers=1 */ override public function removeNotify():Void;
@@ -108,7 +120,9 @@ extern class JMenuBar extends JComponent, implements Accessible, implements Menu
 	/*@@@ modifiers=1 */ public function setSelectionModel(model:SingleSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#setUI(javax.swing.plaf.MenuBarUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:MenuBarUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:MenuBarUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuBar.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

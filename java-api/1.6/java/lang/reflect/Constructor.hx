@@ -48,7 +48,7 @@ extern class Constructor<T : (Dynamic)> extends AccessibleObject, implements Gen
 	/*@@@ modifiers=1 */ public function getParameterTypes():NativeArray<Class<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#getTypeParameters() */
-	/*@@@ modifiers=1 */ public function getTypeParameters():NativeArray<TypeVariable<Constructor<Dynamic>>>;
+	/*@@@ modifiers=1 */ public function getTypeParameters():NativeArray<TypeVariable<Dynamic>>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Constructor.html#hashCode() */
 	/*@@@ modifiers=1 */ override public function hashCode():Int;

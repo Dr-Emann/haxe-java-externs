@@ -39,5 +39,7 @@ extern class ActivationGroup extends UnicastRemoteObject, implements ActivationI
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationGroup.html#setSystem(java.rmi.activation.ActivationSystem) */
 	/*@@@ modifiers=41 */ static public function setSystem(system:ActivationSystem):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/rmi/activation/ActivationInstantiator.html#newInstance(java.rmi.activation.ActivationID, java.rmi.activation.ActivationDesc) */
+	/*@@@ modifiers=1025 */ public function newInstance(id:ActivationID, desc:ActivationDesc):MarshalledObject<Remote>;
 }
 

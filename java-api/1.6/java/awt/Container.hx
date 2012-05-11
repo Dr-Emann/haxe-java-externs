@@ -37,7 +37,9 @@ extern class Container extends Component
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#add(java.lang.String, java.awt.Component) */
 	/*@@@ modifiers=1 */ @:overload(function (name:String, comp:Component):Component {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#add(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function add(comp:Component):Component;
+	/*@@@ modifiers=1 */ @:overload(function add(comp:Component):Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#addContainerListener(java.awt.event.ContainerListener) */
 	/*@@@ modifiers=33 */ public function addContainerListener(l:ContainerListener):Void;
@@ -121,7 +123,9 @@ extern class Container extends Component
 	/*@@@ modifiers=1 */ override public function getMinimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getMousePosition(boolean) */
-	/*@@@ modifiers=1 */ override public function getMousePosition(allowChildren:Bool):Point;
+	/*@@@ modifiers=1 */ @:overload(function (allowChildren:Bool):Point {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#getMousePosition() */
+	/*@@@ modifiers=1 */ override public function getMousePosition():Point;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getPreferredSize() */
 	/*@@@ modifiers=1 */ override public function getPreferredSize():Dimension;
@@ -135,10 +139,10 @@ extern class Container extends Component
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#isAncestorOf(java.awt.Component) */
 	/*@@@ modifiers=1 */ public function isAncestorOf(c:Component):Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#isFocusCycleRoot(java.awt.Container) */
-	/*@@@ modifiers=1 */ @:overload(function (container:Container):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#isFocusCycleRoot() */
-	/*@@@ modifiers=1 */ override public function isFocusCycleRoot():Bool;
+	/*@@@ modifiers=1 */ @:overload(function ():Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#isFocusCycleRoot(java.awt.Container) */
+	/*@@@ modifiers=1 */ override public function isFocusCycleRoot(container:Container):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#isFocusTraversalPolicyProvider() */
 	/*@@@ modifiers=17 */ public function isFocusTraversalPolicyProvider():Bool;
@@ -149,10 +153,10 @@ extern class Container extends Component
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#layout() */
 	/*@@@ modifiers=1 */ override public function layout():Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#list(java.io.PrintStream, int) */
-	/*@@@ modifiers=1 */ @:overload(function (out:PrintStream, indent:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#list(java.io.PrintWriter, int) */
-	/*@@@ modifiers=1 */ override public function list(out:PrintWriter, indent:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (out:PrintWriter, indent:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#list() */
+	/*@@@ modifiers=1 */ override public function list():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#locate(int, int) */
 	/*@@@ modifiers=1 */ override public function locate(x:Int, y:Int):Component;
@@ -187,7 +191,9 @@ extern class Container extends Component
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(comp:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function (comp:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#removeAll() */
 	/*@@@ modifiers=1 */ public function removeAll():Void;

@@ -18,22 +18,16 @@ extern class CharBuffer extends Buffer, implements Comparable<CharBuffer>, imple
 	/*@@@ modifiers=9 */ static public function allocate(capacity:Int):CharBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence, start:Int, end:Int):CharBuffer {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(char) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Char16):CharBuffer {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(char) */
 	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence):CharBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#append(java.lang.CharSequence) */
 	/*@@@ modifiers=4161 */ public function append(csq:CharSequence):Appendable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#array() */
-	/*@@@ modifiers=4161 */ @:overload(function ():Dynamic {})
+	/*@@@ modifiers=17 */ @:overload(function ():NativeArray<Char16> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#array() */
-	/*@@@ modifiers=17 */ override public function array():NativeArray<Char16>;
+	/*@@@ modifiers=4161 */ override public function array():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/CharBuffer.html#arrayOffset() */
 	/*@@@ modifiers=17 */ override public function arrayOffset():Int;

@@ -88,5 +88,10 @@ extern class SocketImpl extends Object, implements SocketOptions
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketImpl.html#toString() */
 	/*@@@ modifiers=1 */ override public function toString():String;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketOptions.html#getOption(int) */
+	/*@@@ modifiers=1025 */ public function getOption(optID:Int):Dynamic;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/SocketOptions.html#setOption(int, java.lang.Object) */
+	/*@@@ modifiers=1025 */ public function setOption(optID:Int, value:Dynamic):Void;
 }
 
