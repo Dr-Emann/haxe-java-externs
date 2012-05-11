@@ -1,9 +1,9 @@
-package javax.security.auth.callback;
+package javax.security.auth._callback;
 
 import java.NativeArray;
 import java.io.Serializable;
 import java.lang.Object;
-import javax.security.auth.callback.Callback;
+import javax.security.auth._callback.Callback;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/ChoiceCallback.html */
 @:native("javax.security.auth.callback.ChoiceCallback")

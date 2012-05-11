@@ -6,6 +6,7 @@ import javax.accessibility.AccessibleContext;
 import javax.swing.JComponent;
 import javax.swing.SpinnerModel;
 import javax.swing.event.ChangeListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.SpinnerUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.html */
@@ -66,7 +67,9 @@ extern class JSpinner extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function setModel(model:SpinnerModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.html#setUI(javax.swing.plaf.SpinnerUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:SpinnerUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:SpinnerUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSpinner.html#setValue(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function setValue(value:Dynamic):Void;

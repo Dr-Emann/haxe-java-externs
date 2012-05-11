@@ -37,6 +37,7 @@ import javax.swing.event.TableColumnModelEvent;
 import javax.swing.event.TableColumnModelListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.TableUI;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellEditor;
@@ -558,7 +559,9 @@ extern class JTable extends JComponent, implements TableModelListener, implement
 	/*@@@ modifiers=1 */ public function setTableHeader(tableHeader:JTableHeader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#setUI(javax.swing.plaf.TableUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:TableUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:TableUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#setUpdateSelectionOnSort(boolean) */
 	/*@@@ modifiers=1 */ public function setUpdateSelectionOnSort(update:Bool):Void;

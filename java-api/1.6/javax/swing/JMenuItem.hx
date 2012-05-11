@@ -17,6 +17,7 @@ import javax.swing.event.MenuDragMouseEvent;
 import javax.swing.event.MenuDragMouseListener;
 import javax.swing.event.MenuKeyEvent;
 import javax.swing.event.MenuKeyListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.MenuItemUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html */
@@ -76,7 +77,9 @@ extern class JMenuItem extends AbstractButton, implements Accessible, implements
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#getComponent() */
-	/*@@@ modifiers=1 */ override public function getComponent():Component;
+	/*@@@ modifiers=1 */ @:overload(function ():Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getComponent(int) */
+	/*@@@ modifiers=1 */ override public function getComponent(n:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#getMenuDragMouseListeners() */
 	/*@@@ modifiers=1 */ public function getMenuDragMouseListeners():NativeArray<MenuDragMouseListener>;
@@ -103,7 +106,9 @@ extern class JMenuItem extends AbstractButton, implements Accessible, implements
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#processKeyEvent(java.awt.event.KeyEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	/*@@@ modifiers=1 */ override public function processKeyEvent(e:KeyEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
+	/*@@@ modifiers=1 */ @:overload(function (e:KeyEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processKeyEvent(java.awt.event.KeyEvent) */
+	/*@@@ modifiers=4 */ override public function processKeyEvent(e:KeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#processMenuDragMouseEvent(javax.swing.event.MenuDragMouseEvent) */
 	/*@@@ modifiers=1 */ public function processMenuDragMouseEvent(e:MenuDragMouseEvent):Void;
@@ -112,7 +117,9 @@ extern class JMenuItem extends AbstractButton, implements Accessible, implements
 	/*@@@ modifiers=1 */ public function processMenuKeyEvent(e:MenuKeyEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#processMouseEvent(java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager) */
-	/*@@@ modifiers=1 */ override public function processMouseEvent(e:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void;
+	/*@@@ modifiers=1 */ @:overload(function (e:MouseEvent, path:NativeArray<MenuElement>, manager:MenuSelectionManager):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#processMouseEvent(java.awt.event.MouseEvent) */
+	/*@@@ modifiers=4 */ override public function processMouseEvent(e:MouseEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#removeMenuDragMouseListener(javax.swing.event.MenuDragMouseListener) */
 	/*@@@ modifiers=1 */ public function removeMenuDragMouseListener(l:MenuDragMouseListener):Void;
@@ -133,7 +140,9 @@ extern class JMenuItem extends AbstractButton, implements Accessible, implements
 	/*@@@ modifiers=1 */ override public function setModel(newModel:ButtonModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#setUI(javax.swing.plaf.MenuItemUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:MenuItemUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:MenuItemUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenuItem.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

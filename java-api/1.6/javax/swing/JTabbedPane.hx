@@ -14,6 +14,7 @@ import javax.swing.SingleSelectionModel;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.TabbedPaneUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html */
@@ -221,8 +222,10 @@ extern class JTabbedPane extends JComponent, implements Serializable, implements
 	/*@@@ modifiers=1 */ public function setToolTipTextAt(index:Int, toolTipText:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#setUI(javax.swing.plaf.TabbedPaneUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:TabbedPaneUI):Void;
-
+	/*@@@ modifiers=1 */ @:overload(function (ui:TabbedPaneUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;
 

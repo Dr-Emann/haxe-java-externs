@@ -2,7 +2,7 @@ package javax.security.sasl;
 
 import java.io.Serializable;
 import java.lang.Object;
-import javax.security.auth.callback.Callback;
+import javax.security.auth._callback.Callback;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/AuthorizeCallback.html */
 @:native("javax.security.sasl.AuthorizeCallback")

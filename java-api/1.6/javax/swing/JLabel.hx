@@ -8,6 +8,7 @@ import javax.accessibility.AccessibleContext;
 import javax.swing.Icon;
 import javax.swing.JComponent;
 import javax.swing.SwingConstants;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.LabelUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html */
@@ -114,7 +115,9 @@ extern class JLabel extends JComponent, implements SwingConstants, implements Ac
 	/*@@@ modifiers=1 */ public function setText(text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setUI(javax.swing.plaf.LabelUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:LabelUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:LabelUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setVerticalAlignment(int) */
 	/*@@@ modifiers=1 */ public function setVerticalAlignment(alignment:Int):Void;

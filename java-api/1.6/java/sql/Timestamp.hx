@@ -12,22 +12,26 @@ extern class Timestamp extends Date
 	/*@@@ modifiers=1 */ public function new(year:Int, month:Int, date:Int, hour:Int, minute:Int, second:Int, nano:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#after(java.sql.Timestamp) */
-	/*@@@ modifiers=1 */ override public function after(ts:Timestamp):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (ts:Timestamp):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Date.html#after(java.util.Date) */
+	/*@@@ modifiers=1 */ override public function after(when:Date):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#before(java.sql.Timestamp) */
-	/*@@@ modifiers=1 */ override public function before(ts:Timestamp):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (ts:Timestamp):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Date.html#before(java.util.Date) */
+	/*@@@ modifiers=1 */ override public function before(when:Date):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#compareTo(java.lang.Object) */
 	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Int {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#compareTo(java.util.Date) */
-	/*@@@ modifiers=1 */ @:overload(function (o:Date):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#compareTo(java.sql.Timestamp) */
-	/*@@@ modifiers=1 */ override public function compareTo(ts:Timestamp):Int;
+	/*@@@ modifiers=1 */ @:overload(function (ts:Timestamp):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#compareTo(java.util.Date) */
+	/*@@@ modifiers=1 */ override public function compareTo(o:Date):Int;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#equals(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (ts:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#equals(java.sql.Timestamp) */
-	/*@@@ modifiers=1 */ override public function equals(ts:Timestamp):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (ts:Timestamp):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function equals(ts:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Timestamp.html#getNanos() */
 	/*@@@ modifiers=1 */ public function getNanos():Int;

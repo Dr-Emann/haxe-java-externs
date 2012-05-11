@@ -10,6 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.JLayeredPane;
 import javax.swing.JMenuBar;
 import javax.swing.JRootPane_DefaultAction;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.RootPaneUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html */
@@ -122,7 +123,9 @@ extern class JRootPane extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function setMenuBar(menu:JMenuBar):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setUI(javax.swing.plaf.RootPaneUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:RootPaneUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:RootPaneUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JRootPane.html#setWindowDecorationStyle(int) */
 	/*@@@ modifiers=1 */ public function setWindowDecorationStyle(windowDecorationStyle:Int):Void;

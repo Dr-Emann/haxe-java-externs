@@ -29,13 +29,13 @@ extern class ConcurrentLinkedQueue<E : (Dynamic)> extends AbstractQueue<E>, impl
 	/*@@@ modifiers=1 */ override public function iterator():java.util.Iterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#offer(java.lang.Object) */
-	/*@@@ modifiers=1 */ public function offer(e:E):Bool;
+	/*@@@ modifiers=1 */ override public function offer(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#peek() */
-	/*@@@ modifiers=1 */ public function peek():E;
+	/*@@@ modifiers=1 */ override public function peek():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#poll() */
-	/*@@@ modifiers=1 */ public function poll():E;
+	/*@@@ modifiers=1 */ override public function poll():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#remove(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function remove(o:Dynamic):Bool;

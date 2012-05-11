@@ -48,5 +48,10 @@ extern class AbstractScriptEngine extends Object, implements ScriptEngine
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/AbstractScriptEngine.html#setContext(javax.script.ScriptContext) */
 	/*@@@ modifiers=1 */ public function setContext(ctxt:ScriptContext):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngine.html#createBindings() */
+	/*@@@ modifiers=1025 */ public function createBindings():Bindings;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngine.html#getFactory() */
+	/*@@@ modifiers=1025 */ public function getFactory():ScriptEngineFactory;
 }
 

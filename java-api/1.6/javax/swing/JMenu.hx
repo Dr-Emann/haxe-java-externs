@@ -3,6 +3,7 @@ package javax.swing;
 import java.NativeArray;
 import java.awt.Component;
 import java.awt.ComponentOrientation;
+import java.awt.MenuComponent;
 import java.awt.Point;
 import java.awt.PopupMenu;
 import java.awt.event.KeyEvent;
@@ -83,7 +84,9 @@ extern class JMenu extends JMenuItem, implements Accessible, implements MenuElem
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#getComponent() */
-	/*@@@ modifiers=1 */ override public function getComponent():Component;
+	/*@@@ modifiers=1 */ @:overload(function ():Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getComponent(int) */
+	/*@@@ modifiers=1 */ override public function getComponent(n:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#getDelay() */
 	/*@@@ modifiers=1 */ public function getDelay():Int;
@@ -157,7 +160,9 @@ extern class JMenu extends JMenuItem, implements Accessible, implements MenuElem
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#remove(java.awt.Component) */
 	/*@@@ modifiers=1 */ @:overload(function (c:Component):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#remove(javax.swing.JMenuItem) */
-	/*@@@ modifiers=1 */ override public function remove(item:JMenuItem):Void;
+	/*@@@ modifiers=1 */ @:overload(function (item:JMenuItem):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#removeAll() */
 	/*@@@ modifiers=1 */ override public function removeAll():Void;

@@ -4,6 +4,7 @@ import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.JComponent;
 import javax.swing.SwingConstants;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.SeparatorUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html */
@@ -34,7 +35,9 @@ extern class JSeparator extends JComponent, implements SwingConstants, implement
 	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#setUI(javax.swing.plaf.SeparatorUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:SeparatorUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:SeparatorUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

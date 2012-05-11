@@ -5,6 +5,7 @@ import javax.accessibility.AccessibleContext;
 import javax.swing.JComponent;
 import javax.swing.JDesktopPane;
 import javax.swing.JInternalFrame;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.DesktopIconUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html */
@@ -33,7 +34,9 @@ extern class JInternalFrame_JDesktopIcon extends JComponent, implements Accessib
 	/*@@@ modifiers=1 */ public function setInternalFrame(f:JInternalFrame):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#setUI(javax.swing.plaf.DesktopIconUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:DesktopIconUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:DesktopIconUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

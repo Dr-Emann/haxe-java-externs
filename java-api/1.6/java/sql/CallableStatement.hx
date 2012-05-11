@@ -187,117 +187,171 @@ extern interface CallableStatement implements PreparedStatement
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setAsciiStream(java.lang.String, java.io.InputStream, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:InputStream, arg2:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setAsciiStream(java.lang.String, java.io.InputStream) */
-	/*@@@ modifiers=1025 */ public function setAsciiStream(arg0:String, arg1:InputStream):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:InputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setAsciiStream(int, java.io.InputStream) */
+	/*@@@ modifiers=1025 */ public function setAsciiStream(arg0:Int, arg1:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBigDecimal(java.lang.String, java.math.BigDecimal) */
-	/*@@@ modifiers=1025 */ public function setBigDecimal(parameterName:String, x:BigDecimal):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:BigDecimal):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setBigDecimal(int, java.math.BigDecimal) */
+	/*@@@ modifiers=1025 */ public function setBigDecimal(parameterIndex:Int, x:BigDecimal):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBinaryStream(java.lang.String, java.io.InputStream, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:InputStream, arg2:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBinaryStream(java.lang.String, java.io.InputStream, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:InputStream, arg2:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBinaryStream(java.lang.String, java.io.InputStream) */
-	/*@@@ modifiers=1025 */ public function setBinaryStream(arg0:String, arg1:InputStream):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:InputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setBinaryStream(int, java.io.InputStream) */
+	/*@@@ modifiers=1025 */ public function setBinaryStream(arg0:Int, arg1:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBlob(java.lang.String, java.io.InputStream, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, inputStream:InputStream, length:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBlob(java.lang.String, java.io.InputStream) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, inputStream:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBlob(java.lang.String, java.sql.Blob) */
-	/*@@@ modifiers=1025 */ public function setBlob(parameterName:String, x:Blob):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Blob):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setBlob(int, java.sql.Blob) */
+	/*@@@ modifiers=1025 */ public function setBlob(parameterIndex:Int, x:Blob):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBoolean(java.lang.String, boolean) */
-	/*@@@ modifiers=1025 */ public function setBoolean(parameterName:String, x:Bool):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setBoolean(int, boolean) */
+	/*@@@ modifiers=1025 */ public function setBoolean(parameterIndex:Int, x:Bool):Void;
 
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setByte(java.lang.String, byte) */
-	/*@@@ modifiers=1025 */ public function setByte(parameterName:String, x:Int8):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Int8):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setByte(int, byte) */
+	/*@@@ modifiers=1025 */ public function setByte(parameterIndex:Int, x:Int8):Void;
+
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setBytes(java.lang.String, byte[]) */
-	/*@@@ modifiers=1025 */ public function setBytes(parameterName:String, x:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:NativeArray<Int8>):Void {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setBytes(int, byte[]) */
+	/*@@@ modifiers=1025 */ public function setBytes(parameterIndex:Int, x:NativeArray<Int8>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setCharacterStream(java.lang.String, java.io.Reader, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:Reader, arg2:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setCharacterStream(java.lang.String, java.io.Reader, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:Reader, arg2:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setCharacterStream(java.lang.String, java.io.Reader) */
-	/*@@@ modifiers=1025 */ public function setCharacterStream(arg0:String, arg1:Reader):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (arg0:String, arg1:Reader):Void {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setCharacterStream(int, java.io.Reader) */
+	/*@@@ modifiers=1025 */ public function setCharacterStream(arg0:Int, arg1:Reader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setClob(java.lang.String, java.io.Reader, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, reader:Reader, length:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setClob(java.lang.String, java.io.Reader) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, reader:Reader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setClob(java.lang.String, java.sql.Clob) */
-	/*@@@ modifiers=1025 */ public function setClob(parameterName:String, x:Clob):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Clob):Void {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setClob(int, java.sql.Clob) */
+	/*@@@ modifiers=1025 */ public function setClob(parameterIndex:Int, x:Clob):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setDate(java.lang.String, java.sql.Date, java.util.Calendar) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Date, cal:Calendar):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setDate(java.lang.String, java.sql.Date) */
-	/*@@@ modifiers=1025 */ public function setDate(parameterName:String, x:Date):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Date):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setDate(int, java.sql.Date) */
+	/*@@@ modifiers=1025 */ public function setDate(parameterIndex:Int, x:Date):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setDouble(java.lang.String, double) */
-	/*@@@ modifiers=1025 */ public function setDouble(parameterName:String, x:StdFloat):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setDouble(int, double) */
+	/*@@@ modifiers=1025 */ public function setDouble(parameterIndex:Int, x:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setFloat(java.lang.String, float) */
-	/*@@@ modifiers=1025 */ public function setFloat(parameterName:String, x:Single):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Single):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setFloat(int, float) */
+	/*@@@ modifiers=1025 */ public function setFloat(parameterIndex:Int, x:Single):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setInt(java.lang.String, int) */
-	/*@@@ modifiers=1025 */ public function setInt(parameterName:String, x:Int):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setInt(int, int) */
+	/*@@@ modifiers=1025 */ public function setInt(parameterIndex:Int, x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setLong(java.lang.String, long) */
-	/*@@@ modifiers=1025 */ public function setLong(parameterName:String, x:haxe.Int64):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:haxe.Int64):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setLong(int, long) */
+	/*@@@ modifiers=1025 */ public function setLong(parameterIndex:Int, x:haxe.Int64):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNCharacterStream(java.lang.String, java.io.Reader, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, value:Reader, length:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNCharacterStream(java.lang.String, java.io.Reader) */
-	/*@@@ modifiers=1025 */ public function setNCharacterStream(parameterName:String, value:Reader):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, value:Reader):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setNCharacterStream(int, java.io.Reader) */
+	/*@@@ modifiers=1025 */ public function setNCharacterStream(parameterIndex:Int, value:Reader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNClob(java.lang.String, java.io.Reader, long) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, reader:Reader, length:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNClob(java.lang.String, java.io.Reader) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, reader:Reader):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNClob(java.lang.String, java.sql.NClob) */
-	/*@@@ modifiers=1025 */ public function setNClob(parameterName:String, value:NClob):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, value:NClob):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setNClob(int, java.sql.NClob) */
+	/*@@@ modifiers=1025 */ public function setNClob(parameterIndex:Int, value:NClob):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNString(java.lang.String, java.lang.String) */
-	/*@@@ modifiers=1025 */ public function setNString(parameterName:String, value:String):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, value:String):Void {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setNString(int, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function setNString(parameterIndex:Int, value:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNull(java.lang.String, int, java.lang.String) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, sqlType:Int, typeName:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setNull(java.lang.String, int) */
-	/*@@@ modifiers=1025 */ public function setNull(parameterName:String, sqlType:Int):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, sqlType:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setNull(int, int) */
+	/*@@@ modifiers=1025 */ public function setNull(parameterIndex:Int, sqlType:Int):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setObject(java.lang.String, java.lang.Object, int, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Dynamic, targetSqlType:Int, scale:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setObject(java.lang.String, java.lang.Object, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Dynamic, targetSqlType:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setObject(java.lang.String, java.lang.Object) */
-	/*@@@ modifiers=1025 */ public function setObject(parameterName:String, x:Dynamic):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setObject(int, java.lang.Object) */
+	/*@@@ modifiers=1025 */ public function setObject(parameterIndex:Int, x:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setRowId(java.lang.String, java.sql.RowId) */
-	/*@@@ modifiers=1025 */ public function setRowId(parameterName:String, x:RowId):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:RowId):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setRowId(int, java.sql.RowId) */
+	/*@@@ modifiers=1025 */ public function setRowId(parameterIndex:Int, x:RowId):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setSQLXML(java.lang.String, java.sql.SQLXML) */
-	/*@@@ modifiers=1025 */ public function setSQLXML(parameterName:String, xmlObject:SQLXML):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, xmlObject:SQLXML):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setSQLXML(int, java.sql.SQLXML) */
+	/*@@@ modifiers=1025 */ public function setSQLXML(parameterIndex:Int, xmlObject:SQLXML):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setShort(java.lang.String, short) */
-	/*@@@ modifiers=1025 */ public function setShort(parameterName:String, x:Int16):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Int16):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setShort(int, short) */
+	/*@@@ modifiers=1025 */ public function setShort(parameterIndex:Int, x:Int16):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setString(java.lang.String, java.lang.String) */
-	/*@@@ modifiers=1025 */ public function setString(parameterName:String, x:String):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setString(int, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function setString(parameterIndex:Int, x:String):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setTime(java.lang.String, java.sql.Time, java.util.Calendar) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Time, cal:Calendar):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setTime(java.lang.String, java.sql.Time) */
-	/*@@@ modifiers=1025 */ public function setTime(parameterName:String, x:Time):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Time):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setTime(int, java.sql.Time) */
+	/*@@@ modifiers=1025 */ public function setTime(parameterIndex:Int, x:Time):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setTimestamp(java.lang.String, java.sql.Timestamp, java.util.Calendar) */
 	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Timestamp, cal:Calendar):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setTimestamp(java.lang.String, java.sql.Timestamp) */
-	/*@@@ modifiers=1025 */ public function setTimestamp(parameterName:String, x:Timestamp):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, x:Timestamp):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setTimestamp(int, java.sql.Timestamp) */
+	/*@@@ modifiers=1025 */ public function setTimestamp(parameterIndex:Int, x:Timestamp):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#setURL(java.lang.String, java.net.URL) */
-	/*@@@ modifiers=1025 */ public function setURL(parameterName:String, val:URL):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (parameterName:String, val:URL):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#setURL(int, java.net.URL) */
+	/*@@@ modifiers=1025 */ public function setURL(parameterIndex:Int, x:URL):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/CallableStatement.html#wasNull() */
 	/*@@@ modifiers=1025 */ public function wasNull():Bool;
 

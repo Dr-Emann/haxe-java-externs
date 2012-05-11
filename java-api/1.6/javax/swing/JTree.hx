@@ -19,6 +19,7 @@ import javax.swing.event.TreeModelListener;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.event.TreeWillExpandListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.TreeUI;
 import javax.swing.text.Position_Bias;
 import javax.swing.tree.TreeCellEditor;
@@ -469,7 +470,9 @@ extern class JTree extends JComponent, implements Scrollable, implements Accessi
 	/*@@@ modifiers=1 */ public function setToggleClickCount(clickCount:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setUI(javax.swing.plaf.TreeUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:TreeUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:TreeUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#setVisibleRowCount(int) */
 	/*@@@ modifiers=1 */ public function setVisibleRowCount(newCount:Int):Void;

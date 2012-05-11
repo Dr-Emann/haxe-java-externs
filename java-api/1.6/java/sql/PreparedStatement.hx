@@ -28,19 +28,27 @@ import java.util.Calendar;
 extern interface PreparedStatement implements Statement
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#addBatch() */
-	/*@@@ modifiers=1025 */ public function addBatch():Void;
+	/*@@@ modifiers=1025 */ @:overload(function ():Void {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html#addBatch(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function addBatch(sql:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#clearParameters() */
 	/*@@@ modifiers=1025 */ public function clearParameters():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#execute() */
-	/*@@@ modifiers=1025 */ public function execute():Bool;
+	/*@@@ modifiers=1025 */ @:overload(function ():Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html#execute(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function execute(sql:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#executeQuery() */
-	/*@@@ modifiers=1025 */ public function executeQuery():ResultSet;
+	/*@@@ modifiers=1025 */ @:overload(function ():ResultSet {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html#executeQuery(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function executeQuery(sql:String):ResultSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#executeUpdate() */
-	/*@@@ modifiers=1025 */ public function executeUpdate():Int;
+	/*@@@ modifiers=1025 */ @:overload(function ():Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html#executeUpdate(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function executeUpdate(sql:String):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/PreparedStatement.html#getMetaData() */
 	/*@@@ modifiers=1025 */ public function getMetaData():ResultSetMetaData;

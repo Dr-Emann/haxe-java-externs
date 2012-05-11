@@ -4,6 +4,7 @@ import java.awt.LayoutManager;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.JComponent;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.PanelUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPanel.html */
@@ -32,7 +33,9 @@ extern class JPanel extends JComponent, implements Accessible
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPanel.html#setUI(javax.swing.plaf.PanelUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:PanelUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:PanelUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPanel.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

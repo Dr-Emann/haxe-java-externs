@@ -1,4 +1,4 @@
-package javax.security.auth.callback;
+package javax.security.auth._callback;
 
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/Callback.html */

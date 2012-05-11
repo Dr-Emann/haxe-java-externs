@@ -21,6 +21,7 @@ import javax.swing.ListCellRenderer;
 import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
 import javax.swing.event.PopupMenuListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ComboBoxUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.html */
@@ -262,7 +263,9 @@ extern class JComboBox extends JComponent, implements ItemSelectable, implements
 	/*@@@ modifiers=1 */ public function setSelectedItem(anObject:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.html#setUI(javax.swing.plaf.ComboBoxUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ComboBoxUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ComboBoxUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.html#showPopup() */
 	/*@@@ modifiers=1 */ public function showPopup():Void;

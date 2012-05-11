@@ -20,6 +20,7 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ButtonUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractButton.html */
@@ -298,7 +299,9 @@ extern class AbstractButton extends JComponent, implements ItemSelectable, imple
 	/*@@@ modifiers=1 */ public function setText(text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractButton.html#setUI(javax.swing.plaf.ButtonUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ButtonUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ButtonUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractButton.html#setVerticalAlignment(int) */
 	/*@@@ modifiers=1 */ public function setVerticalAlignment(alignment:Int):Void;

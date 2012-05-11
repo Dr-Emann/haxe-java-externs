@@ -6,6 +6,7 @@ import java.lang.Number;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.JComponent;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.SplitPaneUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html */
@@ -151,7 +152,9 @@ extern class JSplitPane extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function setTopComponent(comp:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#setUI(javax.swing.plaf.SplitPaneUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:SplitPaneUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:SplitPaneUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

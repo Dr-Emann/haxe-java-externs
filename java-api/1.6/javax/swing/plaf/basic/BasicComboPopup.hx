@@ -26,7 +26,7 @@ extern class BasicComboPopup extends JPopupMenu, implements ComboPopup
 	private var comboBox:JComboBox;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#list */
-	private var list:JList;
+	//private var list:JList;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboPopup.html#scroller */
 	private var scroller:JScrollPane;

@@ -20,6 +20,7 @@ import javax.swing.JRootPane;
 import javax.swing.RootPaneContainer;
 import javax.swing.WindowConstants;
 import javax.swing.event.InternalFrameListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.InternalFrameUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html */
@@ -285,7 +286,9 @@ extern class JInternalFrame extends JComponent, implements Accessible, implement
 	/*@@@ modifiers=1 */ public function setTitle(title:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#setUI(javax.swing.plaf.InternalFrameUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:InternalFrameUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:InternalFrameUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#show() */
 	/*@@@ modifiers=1 */ override public function show():Void;

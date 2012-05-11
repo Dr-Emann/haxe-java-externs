@@ -10,6 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ProgressBarUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html */
@@ -130,7 +131,9 @@ extern class JProgressBar extends JComponent, implements SwingConstants, impleme
 	/*@@@ modifiers=1 */ public function setStringPainted(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setUI(javax.swing.plaf.ProgressBarUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ProgressBarUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ProgressBarUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#setValue(int) */
 	/*@@@ modifiers=1 */ public function setValue(n:Int):Void;

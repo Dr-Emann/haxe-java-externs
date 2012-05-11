@@ -11,6 +11,7 @@ import javax.swing.JScrollBar;
 import javax.swing.JViewport;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.Border;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ScrollPaneUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollPane.html */
@@ -144,7 +145,9 @@ extern class JScrollPane extends JComponent, implements ScrollPaneConstants, imp
 	/*@@@ modifiers=1 */ public function setRowHeaderView(view:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollPane.html#setUI(javax.swing.plaf.ScrollPaneUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ScrollPaneUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ScrollPaneUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollPane.html#setVerticalScrollBar(javax.swing.JScrollBar) */
 	/*@@@ modifiers=1 */ public function setVerticalScrollBar(verticalScrollBar:JScrollBar):Void;

@@ -4,7 +4,7 @@ import java.util.Date;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Date.html */
 @:native("java.sql.Date")
-extern class Date extends Date
+extern class Date extends java.util.Date
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/sql/Date.html#Date(long) */
 	/*@@@ modifiers=1 */ @:overload(function (date:haxe.Int64):Void {})

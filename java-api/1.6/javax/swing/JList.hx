@@ -17,6 +17,7 @@ import javax.swing.ListModel;
 import javax.swing.ListSelectionModel;
 import javax.swing.Scrollable;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ListUI;
 import javax.swing.text.Position_Bias;
 
@@ -237,7 +238,9 @@ extern class JList extends JComponent, implements Scrollable, implements Accessi
 	/*@@@ modifiers=1 */ public function setSelectionModel(selectionModel:ListSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.html#setUI(javax.swing.plaf.ListUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ListUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ListUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.html#setValueIsAdjusting(boolean) */
 	/*@@@ modifiers=1 */ public function setValueIsAdjusting(b:Bool):Void;

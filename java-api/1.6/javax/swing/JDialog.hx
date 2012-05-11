@@ -8,6 +8,7 @@ import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
 import java.awt.LayoutManager;
+import java.awt.MenuComponent;
 import java.awt.Window;
 import java.awt.event.WindowEvent;
 import javax.accessibility.Accessible;
@@ -115,10 +116,14 @@ extern class JDialog extends Dialog, implements WindowConstants, implements Acce
 	/*@@@ modifiers=4 */ override private function processWindowEvent(e:WindowEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDialog.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(comp:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function remove(comp:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDialog.html#repaint(long, int, int, int, int) */
-	/*@@@ modifiers=1 */ override public function repaint(time:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function repaint(time:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#repaint() */
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDialog.html#setContentPane(java.awt.Container) */
 	/*@@@ modifiers=1 */ public function setContentPane(contentPane:Container):Void;

@@ -40,7 +40,9 @@ extern class AbstractSelectableChannel extends SelectableChannel
 	/*@@@ modifiers=17 */ override public function provider():SelectorProvider;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/spi/AbstractSelectableChannel.html#register(java.nio.channels.Selector, int, java.lang.Object) */
-	/*@@@ modifiers=17 */ override public function register(sel:Selector, ops:Int, att:Dynamic):SelectionKey;
+	/*@@@ modifiers=17 */ @:overload(function (sel:Selector, ops:Int, att:Dynamic):SelectionKey {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector, int) */
+	/*@@@ modifiers=17 */ override public function register(sel:Selector, ops:Int):SelectionKey;
 
 }
 

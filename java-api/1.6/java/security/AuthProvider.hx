@@ -3,7 +3,7 @@ package java.security;
 import java.lang.Number;
 import java.security.Provider;
 import javax.security.auth.Subject;
-import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth._callback.CallbackHandler;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/security/AuthProvider.html */
 @:native("java.security.AuthProvider")

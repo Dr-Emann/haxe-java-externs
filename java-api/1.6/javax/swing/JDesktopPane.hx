@@ -7,6 +7,7 @@ import javax.accessibility.AccessibleContext;
 import javax.swing.DesktopManager;
 import javax.swing.JInternalFrame;
 import javax.swing.JLayeredPane;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.DesktopPaneUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html */
@@ -68,7 +69,9 @@ extern class JDesktopPane extends JLayeredPane, implements Accessible
 	/*@@@ modifiers=1 */ public function setSelectedFrame(f:JInternalFrame):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html#setUI(javax.swing.plaf.DesktopPaneUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:DesktopPaneUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:DesktopPaneUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

@@ -53,9 +53,7 @@ extern class ConcurrentSkipListMap<K : (Dynamic), V : (Dynamic)> extends Abstrac
 	/*@@@ modifiers=1 */ public function descendingKeySet():NavigableSet<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap() */
-	/*@@@ modifiers=1 */ @:overload(function ():ConcurrentNavigableMap<K, V> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap() */
-	/*@@@ modifiers=4161 */ public function descendingMap():NavigableMap<Dynamic, Dynamic>;
+	/*@@@ modifiers=4161 */ public function descendingMap():NavigableMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#entrySet() */
 	/*@@@ modifiers=1 */ override public function entrySet():Set<Map_Entry<K, V>>;
@@ -79,13 +77,9 @@ extern class ConcurrentSkipListMap<K : (Dynamic), V : (Dynamic)> extends Abstrac
 	/*@@@ modifiers=1 */ override public function get(key:Dynamic):V;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object, boolean) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic, p1:Bool):NavigableMap<Dynamic, Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object, boolean) */
-	/*@@@ modifiers=1 */ @:overload(function (toKey:K, inclusive:Bool):ConcurrentNavigableMap<K, V> {})
+	/*@@@ modifiers=1 */ @:overload(function (toKey:K, inclusive:Bool):NavigableMap<K, V> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (toKey:K):ConcurrentNavigableMap<K, V> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object) */
-	/*@@@ modifiers=4161 */ public function headMap(p0:Dynamic):SortedMap<Dynamic, Dynamic>;
+	/*@@@ modifiers=1 */ public function headMap(toKey:K):SortedMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function higherEntry(key:K):Map_Entry<K, V>;
@@ -97,9 +91,7 @@ extern class ConcurrentSkipListMap<K : (Dynamic), V : (Dynamic)> extends Abstrac
 	/*@@@ modifiers=1 */ override public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#keySet() */
-	/*@@@ modifiers=4161 */ @:overload(function ():Set<Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#keySet() */
-	/*@@@ modifiers=1 */ override public function keySet():NavigableSet<K>;
+	/*@@@ modifiers=1 */ override public function keySet():Set<K>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry() */
 	/*@@@ modifiers=1 */ public function lastEntry():Map_Entry<K, V>;
@@ -142,22 +134,14 @@ extern class ConcurrentSkipListMap<K : (Dynamic), V : (Dynamic)> extends Abstrac
 	/*@@@ modifiers=1 */ override public function size():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object, boolean, java.lang.Object, boolean) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic, p1:Bool, p2:Dynamic, p3:Bool):NavigableMap<Dynamic, Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object, boolean, java.lang.Object, boolean) */
-	/*@@@ modifiers=1 */ @:overload(function (fromKey:K, fromInclusive:Bool, toKey:K, toInclusive:Bool):ConcurrentNavigableMap<K, V> {})
+	/*@@@ modifiers=1 */ @:overload(function (fromKey:K, fromInclusive:Bool, toKey:K, toInclusive:Bool):NavigableMap<K, V> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic, p1:Dynamic):SortedMap<Dynamic, Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function subMap(fromKey:K, toKey:K):ConcurrentNavigableMap<K, V>;
+	/*@@@ modifiers=1 */ public function subMap(fromKey:K, toKey:K):SortedMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object, boolean) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic, p1:Bool):NavigableMap<Dynamic, Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object, boolean) */
-	/*@@@ modifiers=1 */ @:overload(function (fromKey:K, inclusive:Bool):ConcurrentNavigableMap<K, V> {})
+	/*@@@ modifiers=1 */ @:overload(function (fromKey:K, inclusive:Bool):NavigableMap<K, V> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):SortedMap<Dynamic, Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(java.lang.Object) */
-	/*@@@ modifiers=1 */ public function tailMap(fromKey:K):ConcurrentNavigableMap<K, V>;
+	/*@@@ modifiers=1 */ public function tailMap(fromKey:K):SortedMap<K, V>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#values() */
 	/*@@@ modifiers=1 */ override public function values():Collection<V>;

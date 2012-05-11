@@ -32,9 +32,9 @@ extern class ConcurrentSkipListSet<E : (Dynamic)> extends AbstractSet<E>, implem
 	/*@@@ modifiers=1 */ override public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#clone() */
-	/*@@@ modifiers=4161 */ @:overload(function ():Dynamic {})
+	/*@@@ modifiers=1 */ @:overload(function ():ConcurrentSkipListSet<E> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#clone() */
-	/*@@@ modifiers=1 */ override public function clone():ConcurrentSkipListSet<E>;
+	/*@@@ modifiers=4161 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#comparator() */
 	/*@@@ modifiers=1 */ public function comparator():Comparator<Dynamic>;
@@ -62,8 +62,8 @@ extern class ConcurrentSkipListSet<E : (Dynamic)> extends AbstractSet<E>, implem
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object) */
 	/*@@@ modifiers=1 */ @:overload(function (toElement:E):NavigableSet<E> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object) */
-	/*@@@ modifiers=4161 */ public function headSet(p0:Dynamic):SortedSet<Dynamic>;
-
+	/*@@@ modifiers=4161 */ public function headSet(p0:E):SortedSet<E>;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function higher(e:E):E;
 
@@ -97,16 +97,13 @@ extern class ConcurrentSkipListSet<E : (Dynamic)> extends AbstractSet<E>, implem
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object, boolean, java.lang.Object, boolean) */
 	/*@@@ modifiers=1 */ @:overload(function (fromElement:E, fromInclusive:Bool, toElement:E, toInclusive:Bool):NavigableSet<E> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic, p1:Dynamic):SortedSet<Dynamic> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function subSet(fromElement:E, toElement:E):NavigableSet<E>;
+	/*@@@ modifiers=1 */ public function subSet(fromElement:E, toElement:E):SortedSet<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object, boolean) */
 	/*@@@ modifiers=1 */ @:overload(function (fromElement:E, inclusive:Bool):NavigableSet<E> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (fromElement:E):NavigableSet<E> {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object) */
-	/*@@@ modifiers=4161 */ public function tailSet(p0:Dynamic):SortedSet<Dynamic>;
+	/*@@@ modifiers=1 */ public function tailSet(fromElement:E):SortedSet<E>;
+
 
 }
 

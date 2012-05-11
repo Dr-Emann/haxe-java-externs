@@ -8,6 +8,7 @@ import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.BoundedRangeModel;
 import javax.swing.JComponent;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ScrollBarUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollBar.html */
@@ -113,7 +114,9 @@ extern class JScrollBar extends JComponent, implements Adjustable, implements Ac
 	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollBar.html#setUI(javax.swing.plaf.ScrollBarUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ScrollBarUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ScrollBarUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollBar.html#setUnitIncrement(int) */
 	/*@@@ modifiers=1 */ public function setUnitIncrement(unitIncrement:Int):Void;

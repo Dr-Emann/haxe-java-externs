@@ -11,6 +11,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.TableColumnModelEvent;
 import javax.swing.event.TableColumnModelListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.TableHeaderUI;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
@@ -149,7 +150,9 @@ extern class JTableHeader extends JComponent, implements TableColumnModelListene
 	/*@@@ modifiers=1 */ public function setTable(table:JTable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setUI(javax.swing.plaf.TableHeaderUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:TableHeaderUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:TableHeaderUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#setUpdateTableInRealTime(boolean) */
 	/*@@@ modifiers=1 */ public function setUpdateTableInRealTime(flag:Bool):Void;

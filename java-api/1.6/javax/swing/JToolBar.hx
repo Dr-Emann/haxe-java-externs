@@ -12,6 +12,7 @@ import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.SwingConstants;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ToolBarUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html */
@@ -99,7 +100,9 @@ extern class JToolBar extends JComponent, implements SwingConstants, implements 
 	/*@@@ modifiers=1 */ public function setRollover(rollover:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setUI(javax.swing.plaf.ToolBarUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ToolBarUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ToolBarUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#updateUI() */
 	/*@@@ modifiers=1 */ override public function updateUI():Void;

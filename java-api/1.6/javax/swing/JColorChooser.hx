@@ -10,6 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.colorchooser.AbstractColorChooserPanel;
 import javax.swing.colorchooser.ColorSelectionModel;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ColorChooserUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JColorChooser.html */
@@ -79,7 +80,9 @@ extern class JColorChooser extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function setSelectionModel(newModel:ColorSelectionModel):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JColorChooser.html#setUI(javax.swing.plaf.ColorChooserUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ColorChooserUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ColorChooserUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JColorChooser.html#showDialog(java.awt.Component, java.lang.String, java.awt.Color) */
 	/*@@@ modifiers=9 */ static public function showDialog(component:Component, title:String, initialColor:Color):Color;

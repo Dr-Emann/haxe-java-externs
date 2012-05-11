@@ -15,6 +15,7 @@ import javax.swing.JComponent;
 import javax.swing.JViewport_ViewListener;
 import javax.swing.border.Border;
 import javax.swing.event.ChangeListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.ViewportUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html */
@@ -135,7 +136,9 @@ extern class JViewport extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function setScrollMode(mode:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#setUI(javax.swing.plaf.ViewportUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:ViewportUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:ViewportUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#setView(java.awt.Component) */
 	/*@@@ modifiers=1 */ public function setView(view:Component):Void;

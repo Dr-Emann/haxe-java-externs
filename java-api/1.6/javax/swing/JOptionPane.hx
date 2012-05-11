@@ -10,6 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.JDesktopPane;
 import javax.swing.JDialog;
 import javax.swing.JInternalFrame;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.OptionPaneUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JOptionPane.html */
@@ -163,7 +164,9 @@ extern class JOptionPane extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function setSelectionValues(newValues:NativeArray<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JOptionPane.html#setUI(javax.swing.plaf.OptionPaneUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:OptionPaneUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:OptionPaneUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JOptionPane.html#setValue(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function setValue(newValue:Dynamic):Void;

@@ -11,6 +11,7 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.SliderUI;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html */
@@ -171,7 +172,9 @@ extern class JSlider extends JComponent, implements SwingConstants, implements A
 	/*@@@ modifiers=1 */ public function setSnapToTicks(b:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setUI(javax.swing.plaf.SliderUI) */
-	/*@@@ modifiers=1 */ override public function setUI(ui:SliderUI):Void;
+	/*@@@ modifiers=1 */ @:overload(function (ui:SliderUI):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#setUI(javax.swing.plaf.ComponentUI) */
+	/*@@@ modifiers=4 */ override public function setUI(newUI:ComponentUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#setValue(int) */
 	/*@@@ modifiers=1 */ public function setValue(n:Int):Void;
