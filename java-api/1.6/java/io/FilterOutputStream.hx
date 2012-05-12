@@ -22,10 +22,10 @@ extern class FilterOutputStream extends OutputStream
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(byte[], int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(int) */
-	/*@@@ modifiers=1 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(byte[]) */
-	/*@@@ modifiers=1 */ override public function write(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html#write(int) */
+	/*@@@ modifiers=1 */ override public function write(b:Int):Void;
 
 }
 

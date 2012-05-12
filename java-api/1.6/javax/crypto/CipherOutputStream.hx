@@ -23,10 +23,10 @@ extern class CipherOutputStream extends FilterOutputStream
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/CipherOutputStream.html#write(byte[], int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (arg0:NativeArray<Int8>, arg1:Int, arg2:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/CipherOutputStream.html#write(int) */
-	/*@@@ modifiers=1 */ @:overload(function (arg0:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/CipherOutputStream.html#write(byte[]) */
-	/*@@@ modifiers=1 */ override public function write(arg0:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ @:overload(function write(arg0:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/crypto/CipherOutputStream.html#write(int) */
+	/*@@@ modifiers=1 */ override function write(arg0:Int):Void;
 
 }
 

@@ -28,18 +28,18 @@ extern class ComponentColorModel extends ColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#equals(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getAlpha(int) */
-	/*@@@ modifiers=1 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getAlpha(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getAlpha(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getAlpha(int) */
+	/*@@@ modifiers=1 */ override function getAlpha(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getAlphaRaster(java.awt.image.WritableRaster) */
 	/*@@@ modifiers=1 */ override public function getAlphaRaster(raster:WritableRaster):WritableRaster;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getBlue(int) */
-	/*@@@ modifiers=1 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getBlue(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getBlue(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getBlue(int) */
+	/*@@@ modifiers=1 */ override public function getBlue(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getComponents(int, int[], int) */
 	/*@@@ modifiers=1 */ @:overload(function (pixel:Int, components:NativeArray<Int>, offset:Int):NativeArray<Int> {})
@@ -58,10 +58,10 @@ extern class ComponentColorModel extends ColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getDataElements(int, java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function getDataElements(rgb:Int, pixel:Dynamic):Dynamic;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getGreen(int) */
-	/*@@@ modifiers=1 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getGreen(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getGreen(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getGreen(int) */
+	/*@@@ modifiers=1 */ override public function getGreen(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getNormalizedComponents(int[], int, float[], int) */
 	/*@@@ modifiers=1 */ @:overload(function (components:NativeArray<Int>, offset:Int, normComponents:NativeArray<Single>, normOffset:Int):NativeArray<Single> {})

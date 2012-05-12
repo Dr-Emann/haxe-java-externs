@@ -24,67 +24,33 @@ extern class StringBuilder extends AbstractStringBuilder, implements Serializabl
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char[], int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (str:NativeArray<Char16>, offset:Int, len:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char[], int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (str:NativeArray<Char16>, offset:Int, len:Int):StringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence, start:Int, end:Int):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence, start:Int, end:Int):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (s:CharSequence, start:Int, end:Int):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(boolean) */
 	/*@@@ modifiers=4161 */ @:overload(function (b:Bool):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(boolean) */
-	/*@@@ modifiers=1 */ @:overload(function (b:Bool):StringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char) */
-	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char) */
 	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Char16):StringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(double) */
-	/*@@@ modifiers=1 */ @:overload(function (d:StdFloat):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(double) */
 	/*@@@ modifiers=4161 */ @:overload(function (d:StdFloat):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(float) */
 	/*@@@ modifiers=4161 */ @:overload(function (f:Single):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(float) */
-	/*@@@ modifiers=1 */ @:overload(function (f:Single):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(int) */
 	/*@@@ modifiers=4161 */ @:overload(function (i:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(int) */
-	/*@@@ modifiers=1 */ @:overload(function (i:Int):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(long) */
 	/*@@@ modifiers=4161 */ @:overload(function (lng:haxe.Int64):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(long) */
-	/*@@@ modifiers=1 */ @:overload(function (lng:haxe.Int64):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.Object) */
 	/*@@@ modifiers=4161 */ @:overload(function (obj:Dynamic):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (obj:Dynamic):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char[]) */
 	/*@@@ modifiers=4161 */ @:overload(function (str:NativeArray<Char16>):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(char[]) */
-	/*@@@ modifiers=1 */ @:overload(function (str:NativeArray<Char16>):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.CharSequence) */
 	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=1 */ @:overload(function (s:CharSequence):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.String) */
 	/*@@@ modifiers=4161 */ @:overload(function (str:String):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.String) */
-	/*@@@ modifiers=1 */ @:overload(function (str:String):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.StringBuffer) */
-	/*@@@ modifiers=4161 */ @:overload(function (sb:StringBuffer):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#append(java.lang.StringBuffer) */
-	/*@@@ modifiers=1 */ override public function append(sb:StringBuffer):StringBuilder;
-
+	/*@@@ modifiers=4161 */ override public function append(sb:StringBuffer):AbstractStringBuilder;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#appendCodePoint(int) */
-	/*@@@ modifiers=4161 */ @:overload(function (codePoint:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#appendCodePoint(int) */
-	/*@@@ modifiers=1 */ override public function appendCodePoint(codePoint:Int):StringBuilder;
+	/*@@@ modifiers=4161 */ override public function append(codePoint:Int):AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#capacity() */
 	/*@@@ modifiers=4161 */ override public function capacity():Int;
@@ -102,12 +68,8 @@ extern class StringBuilder extends AbstractStringBuilder, implements Serializabl
 	/*@@@ modifiers=4161 */ override public function codePointCount(p0:Int, p1:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#delete(int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (start:Int, end:Int):StringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#delete(int, int) */
 	/*@@@ modifiers=4161 */ override public function delete(start:Int, end:Int):AbstractStringBuilder;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#deleteCharAt(int) */
-	/*@@@ modifiers=4161 */ @:overload(function (index:Int):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#deleteCharAt(int) */
 	/*@@@ modifiers=1 */ override public function deleteCharAt(index:Int):StringBuilder;
 
@@ -124,52 +86,28 @@ extern class StringBuilder extends AbstractStringBuilder, implements Serializabl
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, char[], int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (index:Int, str:NativeArray<Char16>, offset:Int, len:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, char[], int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (index:Int, str:NativeArray<Char16>, offset:Int, len:Int):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (dstOffset:Int, s:CharSequence, start:Int, end:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (dstOffset:Int, s:CharSequence, start:Int, end:Int):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, boolean) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, b:Bool):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, boolean) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, b:Bool):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, char) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, c:Char16):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, char) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, c:Char16):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, double) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, d:StdFloat):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, double) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, d:StdFloat):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, float) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, f:Single):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, float) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, f:Single):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, i:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, i:Int):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, long) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, l:haxe.Int64):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, long) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, l:haxe.Int64):StringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, obj:Dynamic):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.Object) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, obj:Dynamic):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, char[]) */
 	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, str:NativeArray<Char16>):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, char[]) */
-	/*@@@ modifiers=1 */ @:overload(function (offset:Int, str:NativeArray<Char16>):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.CharSequence) */
 	/*@@@ modifiers=4161 */ @:overload(function (dstOffset:Int, s:CharSequence):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.CharSequence) */
-	/*@@@ modifiers=1 */ @:overload(function (dstOffset:Int, s:CharSequence):StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.String) */
-	/*@@@ modifiers=4161 */ @:overload(function (offset:Int, str:String):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#insert(int, java.lang.String) */
-	/*@@@ modifiers=1 */ override public function insert(offset:Int, str:String):StringBuilder;
+	/*@@@ modifiers=4161 */ override public function insert(offset:Int, str:String):AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#lastIndexOf(java.lang.String, int) */
 	/*@@@ modifiers=1 */ @:overload(function (str:String, fromIndex:Int):Int {})
@@ -183,12 +121,8 @@ extern class StringBuilder extends AbstractStringBuilder, implements Serializabl
 	/*@@@ modifiers=4161 */ override public function offsetByCodePoints(p0:Int, p1:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#replace(int, int, java.lang.String) */
-	/*@@@ modifiers=1 */ @:overload(function (start:Int, end:Int, str:String):StringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#replace(int, int, java.lang.String) */
 	/*@@@ modifiers=4161 */ override public function replace(start:Int, end:Int, str:String):AbstractStringBuilder;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#reverse() */
-	/*@@@ modifiers=1 */ @:overload(function ():StringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#reverse() */
 	/*@@@ modifiers=4161 */ override public function reverse():AbstractStringBuilder;
 

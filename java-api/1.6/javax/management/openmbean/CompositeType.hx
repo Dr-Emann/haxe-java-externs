@@ -19,7 +19,9 @@ extern class CompositeType extends OpenType<CompositeData>
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/CompositeType.html#getDescription(java.lang.String) */
-	/*@@@ modifiers=1 */ override public function getDescription(itemName:String):String;
+	/*@@@ modifiers=1 */ @:overload(function (itemName:String):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/OpenType.html#getDescription() */
+	/*@@@ modifiers=1 */ override public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/CompositeType.html#getType(java.lang.String) */
 	/*@@@ modifiers=1 */ public function getType(itemName:String):OpenType<Dynamic>;

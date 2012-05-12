@@ -39,12 +39,12 @@ extern class Writer extends Object, implements Appendable, implements Closeable,
 	/*@@@ modifiers=1025 */ @:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html#write(java.lang.String, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (str:String, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html#write(int) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html#write(char[]) */
 	/*@@@ modifiers=1 */ @:overload(function (cbuf:NativeArray<Char16>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html#write(java.lang.String) */
-	/*@@@ modifiers=1 */ public function write(str:String):Void;
+	/*@@@ modifiers=1 */ @:overload(function (str:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html#write(int) */
+	/*@@@ modifiers=1 */ public function write(c:Int):Void;
 
 }
 

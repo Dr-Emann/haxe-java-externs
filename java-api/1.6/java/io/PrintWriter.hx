@@ -36,10 +36,6 @@ extern class PrintWriter extends Writer
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (csq:CharSequence, start:Int, end:Int):Appendable {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (csq:CharSequence, start:Int, end:Int):PrintWriter {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(char) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Char16):PrintWriter {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(char) */
 	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#append(java.lang.CharSequence) */
@@ -114,12 +110,12 @@ extern class PrintWriter extends Writer
 	/*@@@ modifiers=1 */ @:overload(function (buf:NativeArray<Char16>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#write(java.lang.String, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (s:String, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#write(int) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#write(char[]) */
 	/*@@@ modifiers=1 */ @:overload(function (buf:NativeArray<Char16>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#write(java.lang.String) */
-	/*@@@ modifiers=1 */ override public function write(s:String):Void;
+	/*@@@ modifiers=1 */ @:overload(function (s:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html#write(int) */
+	/*@@@ modifiers=1 */ override public function write(c:Int):Void;
 
 }
 
