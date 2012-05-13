@@ -32,7 +32,9 @@ extern class NumberFormat extends Format
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#format(double) */
 	/*@@@ modifiers=17 */ @:overload(function (number:StdFloat):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#format(long) */
-	/*@@@ modifiers=17 */ override public function format(number:haxe.Int64):String;
+	/*@@@ modifiers=17 */ @:overload(function (number:haxe.Int64):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#format(java.lang.Object) */
+	/*@@@ modifiers=17 */ override public function format(obj:Dynamic):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#getAvailableLocales() */
 	/*@@@ modifiers=9 */ static public function getAvailableLocales():NativeArray<Locale>;
@@ -89,11 +91,11 @@ extern class NumberFormat extends Format
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#isParseIntegerOnly() */
 	/*@@@ modifiers=1 */ public function isParseIntegerOnly():Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#parse(java.lang.String, java.text.ParsePosition) */
-	/*@@@ modifiers=1025 */ @:overload(function (source:String, parsePosition:ParsePosition):Number {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#parse(java.lang.String) */
-	/*@@@ modifiers=1 */ public function parse(source:String):Number;
-
+	/*@@@ modifiers=1 */ @:overload(function (source:String):Number {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#parse(java.lang.String, java.text.ParsePosition) */
+	/*@@@ modifiers=1025 */ public function parse(source:String, parsePosition:ParsePosition):Number;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#parseObject(java.lang.String, java.text.ParsePosition) */
 	/*@@@ modifiers=17 */ override public function parseObject(source:String, pos:ParsePosition):Dynamic;
 

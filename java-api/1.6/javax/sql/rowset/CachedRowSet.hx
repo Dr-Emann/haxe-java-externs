@@ -42,7 +42,9 @@ extern interface CachedRowSet implements RowSet, implements Joinable
 	/*@@@ modifiers=1025 */ public function createShared():RowSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/CachedRowSet.html#execute(java.sql.Connection) */
-	/*@@@ modifiers=1025 */ public function execute(conn:Connection):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (conn:Connection):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/RowSet.html#execute() */
+	/*@@@ modifiers=1025 */ public function execute():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sql/rowset/CachedRowSet.html#getKeyColumns() */
 	/*@@@ modifiers=1025 */ public function getKeyColumns():NativeArray<Int>;

@@ -67,10 +67,10 @@ extern interface Deque<E : (Dynamic)> implements Queue<E>
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#push(java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function push(e:E):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#remove(java.lang.Object) */
-	/*@@@ modifiers=1025 */ @:overload(function (o:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#remove() */
-	/*@@@ modifiers=1025 */ public function remove():E;
+	/*@@@ modifiers=1025 */ @:overload(function ():E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#remove(java.lang.Object) */
+	/*@@@ modifiers=1025 */ public function remove(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#removeFirst() */
 	/*@@@ modifiers=1025 */ public function removeFirst():E;

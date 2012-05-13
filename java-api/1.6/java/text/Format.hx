@@ -26,10 +26,10 @@ extern class Format extends Object, implements Serializable, implements Cloneabl
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#formatToCharacterIterator(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function formatToCharacterIterator(obj:Dynamic):AttributedCharacterIterator;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#parseObject(java.lang.String, java.text.ParsePosition) */
-	/*@@@ modifiers=1025 */ @:overload(function (source:String, pos:ParsePosition):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#parseObject(java.lang.String) */
-	/*@@@ modifiers=1 */ public function parseObject(source:String):Dynamic;
+	/*@@@ modifiers=1 */ @:overload(function (source:String):Dynamic {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#parseObject(java.lang.String, java.text.ParsePosition) */
+	/*@@@ modifiers=1025 */ public function parseObject(source:String, pos:ParsePosition):Dynamic;
 
 }
 

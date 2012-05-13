@@ -45,16 +45,18 @@ extern interface BlockingDeque<E : (Dynamic)> implements BlockingQueue<E>, imple
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#peek() */
 	/*@@@ modifiers=1025 */ public function peek():E;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#poll(long, java.util.concurrent.TimeUnit) */
-	/*@@@ modifiers=1025 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):E {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#poll() */
 	/*@@@ modifiers=1025 */ public function poll():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#pollFirst(long, java.util.concurrent.TimeUnit) */
-	/*@@@ modifiers=1025 */ public function pollFirst(timeout:haxe.Int64, unit:TimeUnit):E;
+	/*@@@ modifiers=1025 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#pollFirst() */
+	/*@@@ modifiers=1025 */ public function pollFirst():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#pollLast(long, java.util.concurrent.TimeUnit) */
-	/*@@@ modifiers=1025 */ public function pollLast(timeout:haxe.Int64, unit:TimeUnit):E;
+	/*@@@ modifiers=1025 */ @:overload(function pollLast(timeout:haxe.Int64, unit:TimeUnit):E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Deque.html#pollLast() */
+	/*@@@ modifiers=1025 */ public function pollLast():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#push(java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function push(e:E):Void;
@@ -68,10 +70,10 @@ extern interface BlockingDeque<E : (Dynamic)> implements BlockingQueue<E>, imple
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#putLast(java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function putLast(e:E):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object) */
-	/*@@@ modifiers=1025 */ @:overload(function (o:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#remove() */
-	/*@@@ modifiers=1025 */ public function remove():E;
+	/*@@@ modifiers=1025 */ @:overload(function ():E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object) */
+	/*@@@ modifiers=1025 */ public function remove(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingDeque.html#removeFirstOccurrence(java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function removeFirstOccurrence(o:Dynamic):Bool;

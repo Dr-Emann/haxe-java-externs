@@ -10,8 +10,10 @@ import java.awt.LayoutManager;
 extern interface LayoutManager2 implements LayoutManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager2.html#addLayoutComponent(java.awt.Component, java.lang.Object) */
-	/*@@@ modifiers=1025 */ public function addLayoutComponent(comp:Component, constraints:Dynamic):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function (comp:Component, constraints:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager.html#addLayoutComponent(java.lang.String, java.awt.Component) */
+	/*@@@ modifiers=1025 */ public function addLayoutComponent(name:String, comp:Component):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LayoutManager2.html#getLayoutAlignmentX(java.awt.Container) */
 	/*@@@ modifiers=1025 */ public function getLayoutAlignmentX(target:Container):Single;
 

@@ -206,10 +206,10 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getToolTipLocation(java.awt.event.MouseEvent) */
 	/*@@@ modifiers=1 */ public function getToolTipLocation(event:MouseEvent):Point;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getToolTipText(java.awt.event.MouseEvent) */
-	/*@@@ modifiers=1 */ @:overload(function (event:MouseEvent):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getToolTipText() */
-	/*@@@ modifiers=1 */ public function getToolTipText():String;
+	/*@@@ modifiers=1 */ @:overload(function ():String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getToolTipText(java.awt.event.MouseEvent) */
+	/*@@@ modifiers=1 */ public function getToolTipText(event:MouseEvent):String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#getTopLevelAncestor() */
 	/*@@@ modifiers=1 */ public function getTopLevelAncestor():Container;

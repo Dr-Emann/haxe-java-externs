@@ -115,10 +115,10 @@ extern class View extends Object, implements SwingConstants
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#modelToView(int, javax.swing.text.Position$Bias, int, javax.swing.text.Position$Bias, java.awt.Shape) */
 	/*@@@ modifiers=1 */ @:overload(function (p0:Int, b0:Position_Bias, p1:Int, b1:Position_Bias, a:Shape):Shape {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) */
-	/*@@@ modifiers=1025 */ @:overload(function (pos:Int, a:Shape, b:Position_Bias):Shape {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#modelToView(int, java.awt.Shape) */
-	/*@@@ modifiers=1 */ public function modelToView(pos:Int, a:Shape):Shape;
+	/*@@@ modifiers=1 */ @:overload(function (pos:Int, a:Shape):Shape {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) */
+	/*@@@ modifiers=1025 */ public function modelToView(pos:Int, a:Shape, b:Position_Bias):Shape;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#paint(java.awt.Graphics, java.awt.Shape) */
 	/*@@@ modifiers=1025 */ public function paint(g:Graphics, allocation:Shape):Void;
@@ -150,10 +150,10 @@ extern class View extends Object, implements SwingConstants
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#updateLayout(javax.swing.event.DocumentEvent$ElementChange, javax.swing.event.DocumentEvent, java.awt.Shape) */
 	/*@@@ modifiers=4 */ private function updateLayout(ec:DocumentEvent_ElementChange, e:DocumentEvent, a:Shape):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]) */
-	/*@@@ modifiers=1025 */ @:overload(function (x:Single, y:Single, a:Shape, biasReturn:NativeArray<Position_Bias>):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#viewToModel(float, float, java.awt.Shape) */
-	/*@@@ modifiers=1 */ public function viewToModel(x:Single, y:Single, a:Shape):Int;
+	/*@@@ modifiers=1 */ @:overload(function (x:Single, y:Single, a:Shape):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]) */
+	/*@@@ modifiers=1025 */ public function viewToModel(x:Single, y:Single, a:Shape, biasReturn:NativeArray<Position_Bias>):Int;
 
 }
 

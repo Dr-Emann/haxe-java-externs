@@ -17,11 +17,11 @@ extern class Collator extends Object, implements Comparator<Dynamic>, implements
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#clone() */
 	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#compare(java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (o1:Dynamic, o2:Dynamic):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#compare(java.lang.String, java.lang.String) */
-	/*@@@ modifiers=1025 */ public function compare(source:String, target:String):Int;
-
+	/*@@@ modifiers=1025 */ @:overload(function (source:String, target:String):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#compare(java.lang.Object, java.lang.Object) */
+	/*@@@ modifiers=1 */ public function compare(o1:Dynamic, o2:Dynamic):Int;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#equals(java.lang.String, java.lang.String) */
 	/*@@@ modifiers=1 */ @:overload(function (source:String, target:String):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#equals(java.lang.Object) */

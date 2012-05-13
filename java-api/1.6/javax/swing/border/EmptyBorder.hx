@@ -29,10 +29,10 @@ extern class EmptyBorder extends AbstractBorder, implements Serializable
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/EmptyBorder.html#getBorderInsets(java.awt.Component, java.awt.Insets) */
 	/*@@@ modifiers=1 */ @:overload(function (c:Component, insets:Insets):Insets {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/EmptyBorder.html#getBorderInsets(java.awt.Component) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Component):Insets {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/EmptyBorder.html#getBorderInsets() */
-	/*@@@ modifiers=1 */ override public function getBorderInsets():Insets;
+	/*@@@ modifiers=1 */ @:overload(function ():Insets {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/EmptyBorder.html#getBorderInsets(java.awt.Component) */
+	/*@@@ modifiers=1 */ override public function getBorderInsets(c:Component):Insets;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/EmptyBorder.html#isBorderOpaque() */
 	/*@@@ modifiers=1 */ override public function isBorderOpaque():Bool;

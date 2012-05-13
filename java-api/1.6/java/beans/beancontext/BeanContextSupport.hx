@@ -144,7 +144,7 @@ extern class BeanContextSupport extends BeanContextChildSupport, implements Bean
 	/*@@@ modifiers=1 */ public function getResourceAsStream(name:String, bcc:BeanContextChild):InputStream;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#initialize() */
-	/*@@@ modifiers=36 */ private function initialize():Void;
+	/*@@@ modifiers=36 */ public function initialize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/beancontext/BeanContextSupport.html#instantiateChild(java.lang.String) */
 	/*@@@ modifiers=1 */ public function instantiateChild(beanName:String):Dynamic;

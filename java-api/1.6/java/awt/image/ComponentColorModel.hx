@@ -68,15 +68,15 @@ extern class ComponentColorModel extends ColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getNormalizedComponents(java.lang.Object, float[], int) */
 	/*@@@ modifiers=1 */ override public function getNormalizedComponents(pixel:Dynamic, normComponents:NativeArray<Single>, normOffset:Int):NativeArray<Single>;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getRGB(int) */
-	/*@@@ modifiers=1 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getRGB(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getRGB(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getRGB(int) */
+	/*@@@ modifiers=1 */ override public function getRGB(pixel:Int):Int;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getRed(int) */
-	/*@@@ modifiers=1 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getRed(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getRed(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getRed(int) */
+	/*@@@ modifiers=1 */ override public function getRed(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/ComponentColorModel.html#getUnnormalizedComponents(float[], int, int[], int) */
 	/*@@@ modifiers=1 */ override public function getUnnormalizedComponents(normComponents:NativeArray<Single>, normOffset:Int, components:NativeArray<Int>, offset:Int):NativeArray<Int>;

@@ -123,7 +123,7 @@ extern class StringBuffer extends AbstractStringBuilder, implements Serializable
 	/*@@@ modifiers=4161 */ override public function replace(start:Int, end:Int, str:String):AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#reverse() */
-	/*@@@ modifiers=4161 */ Override public function ():AbstractStringBuilder;
+	/*@@@ modifiers=4161 */ override public function reverse():AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#setCharAt(int, char) */
 	/*@@@ modifiers=33 */ override public function setCharAt(index:Int, ch:Char16):Void;

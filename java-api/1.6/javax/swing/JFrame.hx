@@ -7,6 +7,8 @@ import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
 import java.awt.Image;
 import java.awt.LayoutManager;
+import java.awt.MenuComponent;
+import java.awt.PopupMenu;
 import java.awt.event.WindowEvent;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
@@ -89,10 +91,14 @@ extern class JFrame extends Frame, implements WindowConstants, implements Access
 	/*@@@ modifiers=4 */ override private function processWindowEvent(e:WindowEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFrame.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(comp:Component):Void;
-
+	/*@@@ modifiers=1 */ @:overload(function (comp:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Frame.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=1 */ override public function remove(m:MenuComponent):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFrame.html#repaint(long, int, int, int, int) */
-	/*@@@ modifiers=1 */ override public function repaint(time:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function repaint(time:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#repaint() */
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFrame.html#setContentPane(java.awt.Container) */
 	/*@@@ modifiers=1 */ public function setContentPane(contentPane:Container):Void;

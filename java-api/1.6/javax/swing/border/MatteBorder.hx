@@ -30,11 +30,11 @@ extern class MatteBorder extends EmptyBorder
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/MatteBorder.html#getBorderInsets(java.awt.Component, java.awt.Insets) */
 	/*@@@ modifiers=1 */ @:overload(function (c:Component, insets:Insets):Insets {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/MatteBorder.html#getBorderInsets(java.awt.Component) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Component):Insets {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/MatteBorder.html#getBorderInsets() */
-	/*@@@ modifiers=1 */ override public function getBorderInsets():Insets;
-
+	/*@@@ modifiers=1 */ @:overload(function ():Insets {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/MatteBorder.html#getBorderInsets(java.awt.Component) */
+	/*@@@ modifiers=1 */ override public function getBorderInsets(c:Component):Insets;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/border/MatteBorder.html#getMatteColor() */
 	/*@@@ modifiers=1 */ public function getMatteColor():Color;
 

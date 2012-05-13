@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.LayoutManager;
+import java.awt.PopupMenu;
 import java.beans.PropertyChangeListener;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
@@ -29,7 +30,9 @@ extern class JToolBar extends JComponent, implements SwingConstants, implements 
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#add(javax.swing.Action) */
-	/*@@@ modifiers=1 */ override public function add(a:Action):JButton;
+	/*@@@ modifiers=1 */ @:overload(function add(a:Action):JButton {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#addImpl(java.awt.Component, java.lang.Object, int) */
 	/*@@@ modifiers=4 */ override private function addImpl(comp:Component, constraints:Dynamic, index:Int):Void;

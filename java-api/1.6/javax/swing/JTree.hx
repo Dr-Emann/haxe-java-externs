@@ -356,7 +356,9 @@ extern class JTree extends JComponent, implements Scrollable, implements Accessi
 	/*@@@ modifiers=1 */ public function isSelectionEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath) */
-	/*@@@ modifiers=1 */ override public function isVisible(path:TreePath):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (path:TreePath):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#isVisible() */
+	/*@@@ modifiers=1 */ override public function isVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#makeVisible(javax.swing.tree.TreePath) */
 	/*@@@ modifiers=1 */ public function makeVisible(path:TreePath):Void;

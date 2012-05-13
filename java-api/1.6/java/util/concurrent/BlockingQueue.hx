@@ -25,7 +25,9 @@ extern interface BlockingQueue<E : (Dynamic)> implements Queue<E>
 	/*@@@ modifiers=1025 */ public function offer(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingQueue.html#poll(long, java.util.concurrent.TimeUnit) */
-	/*@@@ modifiers=1025 */ public function poll(timeout:haxe.Int64, unit:TimeUnit):E;
+	/*@@@ modifiers=1025 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Queue.html#poll() */
+	/*@@@ modifiers=1025 */ public function poll():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/BlockingQueue.html#put(java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function put(e:E):Void;

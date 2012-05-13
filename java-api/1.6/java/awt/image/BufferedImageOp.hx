@@ -14,10 +14,10 @@ extern interface BufferedImageOp
 	/*@@@ modifiers=1025 */ public function createCompatibleDestImage(src:BufferedImage, destCM:ColorModel):BufferedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImageOp.html#filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage) */
-	/*@@@ modifiers=1025 */ public function filter(src:BufferedImage, dest:BufferedImage):BufferedImage;
+	/*@@@ modifiers=1025 */ //TODO: public function filter(src:BufferedImage, dest:BufferedImage):BufferedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImageOp.html#getBounds2D(java.awt.image.BufferedImage) */
-	/*@@@ modifiers=1025 */ public function getBounds2D(src:BufferedImage):Rectangle2D;
+	/*@@@ modifiers=1025 */ //TODO: public function getBounds2D(src:BufferedImage):Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImageOp.html#getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D) */
 	/*@@@ modifiers=1025 */ public function getPoint2D(srcPt:Point2D, dstPt:Point2D):Point2D;
