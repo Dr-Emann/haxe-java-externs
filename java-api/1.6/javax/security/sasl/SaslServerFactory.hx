@@ -2,7 +2,7 @@ package javax.security.sasl;
 
 import java.NativeArray;
 import java.util.Map;
-import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth._callback.CallbackHandler;
 import javax.security.sasl.SaslServer;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/SaslServerFactory.html */

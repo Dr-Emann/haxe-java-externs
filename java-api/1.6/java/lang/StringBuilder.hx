@@ -50,7 +50,7 @@ extern class StringBuilder extends AbstractStringBuilder, implements Serializabl
 	/*@@@ modifiers=4161 */ override public function append(s:CharSequence):Appendable;
 	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#appendCodePoint(int) */
-	/*@@@ modifiers=4161 */ override public function append(codePoint:Int):AbstractStringBuilder;
+	/*@@@ modifiers=4161 */ override public function appendCodePoint(codePoint:Int):AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#capacity() */
 	/*@@@ modifiers=4161 */ override public function capacity():Int;

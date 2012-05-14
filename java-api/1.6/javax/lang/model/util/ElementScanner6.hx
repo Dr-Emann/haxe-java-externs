@@ -26,19 +26,19 @@ extern class ElementScanner6<R : (Dynamic), P : (Dynamic)> extends AbstractEleme
 	/*@@@ modifiers=17 */ public function scan(e:Element):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/util/ElementScanner6.html#visitExecutable(javax.lang.model.element.ExecutableElement, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function visitExecutable(e:ExecutableElement, p:P):R;
+	/*@@@ modifiers=1 */ override public function visitExecutable(e:ExecutableElement, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/util/ElementScanner6.html#visitPackage(javax.lang.model.element.PackageElement, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function visitPackage(e:PackageElement, p:P):R;
+	/*@@@ modifiers=1 */ override public function visitPackage(e:PackageElement, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/util/ElementScanner6.html#visitType(javax.lang.model.element.TypeElement, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function visitType(e:TypeElement, p:P):R;
+	/*@@@ modifiers=1 */ override public function visitType(e:TypeElement, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/util/ElementScanner6.html#visitTypeParameter(javax.lang.model.element.TypeParameterElement, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function visitTypeParameter(e:TypeParameterElement, p:P):R;
+	/*@@@ modifiers=1 */ override public function visitTypeParameter(e:TypeParameterElement, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/util/ElementScanner6.html#visitVariable(javax.lang.model.element.VariableElement, java.lang.Object) */
-	/*@@@ modifiers=1 */ public function visitVariable(e:VariableElement, p:P):R;
+	/*@@@ modifiers=1 */ override public function visitVariable(e:VariableElement, p:P):R;
 
 }
 

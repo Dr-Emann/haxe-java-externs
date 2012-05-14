@@ -4,7 +4,7 @@ import java.NativeArray;
 import java.lang.Object;
 import java.util.Enumeration;
 import java.util.Map;
-import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth._callback.CallbackHandler;
 import javax.security.sasl.SaslClient;
 import javax.security.sasl.SaslClientFactory;
 import javax.security.sasl.SaslServer;
