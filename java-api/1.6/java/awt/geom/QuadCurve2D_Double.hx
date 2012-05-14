@@ -34,7 +34,7 @@ extern class QuadCurve2D_Double extends QuadCurve2D, implements Serializable
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.Double.html#getCtrlPt() */
 	/*@@@ modifiers=1 */ override public function getCtrlPt():Point2D;

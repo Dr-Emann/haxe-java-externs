@@ -27,7 +27,7 @@ extern class Ellipse2D_Float extends Ellipse2D, implements Serializable
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.Float.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.Float.html#getHeight() */
 	/*@@@ modifiers=1 */ override public function getHeight():StdFloat;

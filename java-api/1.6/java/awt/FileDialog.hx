@@ -37,7 +37,7 @@ extern class FileDialog extends Dialog
 	/*@@@ modifiers=1 */ public function getMode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FileDialog.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/FileDialog.html#setDirectory(java.lang.String) */
 	/*@@@ modifiers=1 */ public function setDirectory(dir:String):Void;

@@ -35,7 +35,7 @@ extern class Path2D_Float extends Path2D, implements Serializable
 	/*@@@ modifiers=49 */ override public function curveTo(x1:Single, y1:Single, x2:Single, y2:Single, x3:Single, y3:Single):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Float.html#getBounds2D() */
-	/*@@@ modifiers=49 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=49 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Float.html#getPathIterator(java.awt.geom.AffineTransform) */
 	/*@@@ modifiers=1 */ override public function getPathIterator(at:AffineTransform):PathIterator;

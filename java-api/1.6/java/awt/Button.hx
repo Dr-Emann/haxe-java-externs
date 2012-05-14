@@ -40,7 +40,7 @@ extern class Button extends Component, implements Accessible
 	/*@@@ modifiers=1 */ override public function getListeners<T>(listenerType:Class<T>):NativeArray<T>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Button.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Button.html#processActionEvent(java.awt.event.ActionEvent) */
 	/*@@@ modifiers=4 */ private function processActionEvent(e:ActionEvent):Void;

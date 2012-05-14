@@ -62,7 +62,7 @@ extern class TextArea extends TextComponent
 	/*@@@ modifiers=1 */ override public function minimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/TextArea.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/TextArea.html#preferredSize(int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (rows:Int, columns:Int):Dimension {})

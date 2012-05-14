@@ -23,13 +23,13 @@ extern class Canvas extends Component, implements Accessible
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Canvas.html#createBufferStrategy(int, java.awt.BufferCapabilities) */
 	/*@@@ modifiers=1 */ @:overload(function (numBuffers:Int, caps:BufferCapabilities):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Canvas.html#createBufferStrategy(int) */
-	/*@@@ modifiers=1 */ override public function createBufferStrategy(numBuffers:Int):Void;
+	/*@@@ modifiers=1 */ public function createBufferStrategy(numBuffers:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Canvas.html#getAccessibleContext() */
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Canvas.html#getBufferStrategy() */
-	/*@@@ modifiers=1 */ override public function getBufferStrategy():BufferStrategy;
+	/*@@@ modifiers=1 */ public function getBufferStrategy():BufferStrategy;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Canvas.html#paint(java.awt.Graphics) */
 	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;

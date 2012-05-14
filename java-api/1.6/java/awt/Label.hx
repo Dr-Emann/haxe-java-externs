@@ -28,7 +28,7 @@ extern class Label extends Component, implements Accessible
 	/*@@@ modifiers=1 */ public function getText():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Label.html#setAlignment(int) */
 	/*@@@ modifiers=33 */ public function setAlignment(alignment:Int):Void;

@@ -1,6 +1,7 @@
 package java.awt;
 
 import java.NativeArray;
+import java.awt.Cursor;
 import java.awt.GraphicsConfiguration;
 import java.awt.Image;
 import java.awt.MenuBar;
@@ -60,7 +61,7 @@ extern class Frame extends Window, implements MenuContainer
 	/*@@@ modifiers=1 */ public function isUndecorated():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Frame.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Frame.html#remove(java.awt.MenuComponent) */
 	/*@@@ modifiers=1 */ override public function remove(m:MenuComponent):Void;
@@ -69,7 +70,9 @@ extern class Frame extends Window, implements MenuContainer
 	/*@@@ modifiers=1 */ override public function removeNotify():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Frame.html#setCursor(int) */
-	/*@@@ modifiers=1 */ override public function setCursor(cursorType:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (cursorType:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#setCursor(java.awt.Cursor) */
+	/*@@@ modifiers=1 */ override public function setCursor(cursor:Cursor):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Frame.html#setExtendedState(int) */
 	/*@@@ modifiers=1 */ public function setExtendedState(state:Int):Void;

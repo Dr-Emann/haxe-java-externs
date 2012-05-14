@@ -2,7 +2,7 @@ package javax.security.auth.spi;
 
 import java.util.Map;
 import javax.security.auth.Subject;
-import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth._callback.CallbackHandler;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/spi/LoginModule.html */
 @:native("javax.security.auth.spi.LoginModule")

@@ -40,7 +40,7 @@ extern class CubicCurve2D_Double extends CubicCurve2D, implements Serializable
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/CubicCurve2D.Double.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/CubicCurve2D.Double.html#getCtrlP1() */
 	/*@@@ modifiers=1 */ override public function getCtrlP1():Point2D;
@@ -79,7 +79,9 @@ extern class CubicCurve2D_Double extends CubicCurve2D, implements Serializable
 	/*@@@ modifiers=1 */ override public function getY2():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/CubicCurve2D.Double.html#setCurve(double, double, double, double, double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function setCurve(x1:StdFloat, y1:StdFloat, ctrlx1:StdFloat, ctrly1:StdFloat, ctrlx2:StdFloat, ctrly2:StdFloat, x2:StdFloat, y2:StdFloat):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x1:StdFloat, y1:StdFloat, ctrlx1:StdFloat, ctrly1:StdFloat, ctrlx2:StdFloat, ctrly2:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.CubicCurve2D) */
+	/*@@@ modifiers=1 */ override public function setCurve(c:CubicCurve2D):Void;
 
 }
 

@@ -6,6 +6,7 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.ItemSelectable;
 import java.awt.MenuComponent;
+import java.awt.PopupMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -28,7 +29,9 @@ extern class List extends Component, implements ItemSelectable, implements Acces
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#add(java.lang.String, int) */
 	/*@@@ modifiers=1 */ @:overload(function (item:String, index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#add(java.lang.String) */
-	/*@@@ modifiers=1 */ override public function add(item:String):Void;
+	/*@@@ modifiers=1 */ @:overload(function (item:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#addActionListener(java.awt.event.ActionListener) */
 	/*@@@ modifiers=33 */ public function addActionListener(l:ActionListener):Void;
@@ -132,7 +135,7 @@ extern class List extends Component, implements ItemSelectable, implements Acces
 	/*@@@ modifiers=1 */ override public function minimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#preferredSize(int) */
 	/*@@@ modifiers=1 */ @:overload(function (rows:Int):Dimension {})

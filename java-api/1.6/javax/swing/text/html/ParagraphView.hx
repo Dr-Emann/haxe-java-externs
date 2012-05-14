@@ -11,7 +11,7 @@ import javax.swing.text.html.StyleSheet;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/ParagraphView.html */
 @:native("javax.swing.text.html.ParagraphView")
-extern class ParagraphView extends ParagraphView
+extern class ParagraphView extends javax.swing.text.ParagraphView
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/ParagraphView.html#ParagraphView(javax.swing.text.Element) */
 	/*@@@ modifiers=1 */ public function new(elem:Element):Void;

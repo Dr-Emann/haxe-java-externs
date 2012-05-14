@@ -2,7 +2,7 @@ package javax.security.auth.login;
 
 import java.lang.Object;
 import javax.security.auth.Subject;
-import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth._callback.CallbackHandler;
 import javax.security.auth.login.Configuration;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/auth/login/LoginContext.html */

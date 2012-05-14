@@ -63,7 +63,7 @@ extern class TextField extends TextComponent
 	/*@@@ modifiers=1 */ override public function minimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/TextField.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/TextField.html#preferredSize(int) */
 	/*@@@ modifiers=1 */ @:overload(function (columns:Int):Dimension {})

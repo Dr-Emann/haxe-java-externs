@@ -24,18 +24,18 @@ extern class DirectColorModel extends PackedColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#createCompatibleWritableRaster(int, int) */
 	/*@@@ modifiers=17 */ override public function createCompatibleWritableRaster(w:Int, h:Int):WritableRaster;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getAlpha(int) */
-	/*@@@ modifiers=17 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getAlpha(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getAlpha(inData:Dynamic):Int;
-
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getAlpha(int) */
+	/*@@@ modifiers=17 */ override public function getAlpha(pixel:Int):Int;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getAlphaMask() */
 	/*@@@ modifiers=17 */ public function getAlphaMask():Int;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getBlue(int) */
-	/*@@@ modifiers=17 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getBlue(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getBlue(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getBlue(int) */
+	/*@@@ modifiers=17 */ override public function getBlue(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getBlueMask() */
 	/*@@@ modifiers=17 */ public function getBlueMask():Int;
@@ -53,10 +53,10 @@ extern class DirectColorModel extends PackedColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getDataElements(int, java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function getDataElements(rgb:Int, pixel:Dynamic):Dynamic;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getGreen(int) */
-	/*@@@ modifiers=17 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getGreen(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getGreen(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getGreen(int) */
+	/*@@@ modifiers=17 */ override public function getGreen(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getGreenMask() */
 	/*@@@ modifiers=17 */ public function getGreenMask():Int;
@@ -66,10 +66,10 @@ extern class DirectColorModel extends PackedColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRGB(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function getRGB(inData:Dynamic):Int;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRed(int) */
-	/*@@@ modifiers=17 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRed(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getRed(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRed(int) */
+	/*@@@ modifiers=17 */ override public function getRed(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRedMask() */
 	/*@@@ modifiers=17 */ public function getRedMask():Int;

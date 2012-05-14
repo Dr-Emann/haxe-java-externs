@@ -2,7 +2,7 @@ package java.security;
 
 import java.lang.Object;
 import java.security.KeyStore_ProtectionParameter;
-import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth._callback.CallbackHandler;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.CallbackHandlerProtection.html */
 @:native("java.security.KeyStore.CallbackHandlerProtection")

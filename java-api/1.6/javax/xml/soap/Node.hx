@@ -5,7 +5,7 @@ import org.w3c.dom.Node;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Node.html */
 @:native("javax.xml.soap.Node")
-extern interface Node implements Node
+extern interface Node implements org.w3c.dom.Node
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Node.html#detachNode() */
 	/*@@@ modifiers=1025 */ public function detachNode():Void;

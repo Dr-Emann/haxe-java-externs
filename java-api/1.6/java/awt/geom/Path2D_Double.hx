@@ -33,7 +33,7 @@ extern class Path2D_Double extends Path2D, implements Serializable
 	/*@@@ modifiers=49 */ override public function curveTo(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, x3:StdFloat, y3:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Double.html#getBounds2D() */
-	/*@@@ modifiers=49 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=49 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Double.html#getPathIterator(java.awt.geom.AffineTransform) */
 	/*@@@ modifiers=1 */ override public function getPathIterator(at:AffineTransform):PathIterator;

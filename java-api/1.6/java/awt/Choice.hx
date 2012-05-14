@@ -5,6 +5,7 @@ import java.awt.AWTEvent;
 import java.awt.Component;
 import java.awt.ItemSelectable;
 import java.awt.MenuComponent;
+import java.awt.PopupMenu;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.lang.Class;
@@ -19,7 +20,9 @@ extern class Choice extends Component, implements ItemSelectable, implements Acc
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#add(java.lang.String) */
-	/*@@@ modifiers=1 */ override public function add(item:String):Void;
+	/*@@@ modifiers=1 */ @:overload(function (item:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#addItem(java.lang.String) */
 	/*@@@ modifiers=1 */ public function addItem(item:String):Void;
@@ -61,7 +64,7 @@ extern class Choice extends Component, implements ItemSelectable, implements Acc
 	/*@@@ modifiers=1 */ public function insert(item:String, index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#processEvent(java.awt.AWTEvent) */
 	/*@@@ modifiers=4 */ override private function processEvent(e:AWTEvent):Void;

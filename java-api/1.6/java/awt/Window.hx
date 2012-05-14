@@ -67,7 +67,7 @@ extern class Window extends Container, implements Accessible
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#createBufferStrategy(int, java.awt.BufferCapabilities) */
 	/*@@@ modifiers=1 */ @:overload(function (numBuffers:Int, caps:BufferCapabilities):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#createBufferStrategy(int) */
-	/*@@@ modifiers=1 */ override public function createBufferStrategy(numBuffers:Int):Void;
+	/*@@@ modifiers=1 */ public function createBufferStrategy(numBuffers:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#dispose() */
 	/*@@@ modifiers=1 */ public function dispose():Void;
@@ -76,7 +76,7 @@ extern class Window extends Container, implements Accessible
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#getBufferStrategy() */
-	/*@@@ modifiers=1 */ override public function getBufferStrategy():BufferStrategy;
+	/*@@@ modifiers=1 */ public function getBufferStrategy():BufferStrategy;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#getFocusCycleRootAncestor() */
 	/*@@@ modifiers=17 */ override public function getFocusCycleRootAncestor():Container;
@@ -151,7 +151,9 @@ extern class Window extends Container, implements Accessible
 	/*@@@ modifiers=1 */ public function isAlwaysOnTopSupported():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#isFocusCycleRoot() */
-	/*@@@ modifiers=17 */ override public function isFocusCycleRoot():Bool;
+	/*@@@ modifiers=17 */ @:overload(function ():Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#isFocusCycleRoot(java.awt.Container) */
+	/*@@@ modifiers=1 */ override public function isFocusCycleRoot(container:Container):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Window.html#isFocusableWindow() */
 	/*@@@ modifiers=17 */ public function isFocusableWindow():Bool;

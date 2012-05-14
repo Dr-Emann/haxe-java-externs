@@ -14,7 +14,7 @@ import javax.tools.FileObject;
 extern class ForwardingFileObject<F : (FileObject)> extends Object, implements FileObject
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#fileObject */
-	private static var fileObject:F;
+	//private static var fileObject:F;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingFileObject.html#ForwardingFileObject(javax.tools.FileObject) */
 	/*@@@ modifiers=4 */ private function new(fileObject:F):Void;

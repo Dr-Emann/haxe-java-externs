@@ -1,7 +1,7 @@
 package javax.security.sasl;
 
 import java.NativeArray;
-import javax.security.auth.callback.ChoiceCallback;
+import javax.security.auth._callback.ChoiceCallback;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/RealmChoiceCallback.html */
 @:native("javax.security.sasl.RealmChoiceCallback")

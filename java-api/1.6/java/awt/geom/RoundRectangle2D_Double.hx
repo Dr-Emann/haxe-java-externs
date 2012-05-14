@@ -39,7 +39,7 @@ extern class RoundRectangle2D_Double extends RoundRectangle2D, implements Serial
 	/*@@@ modifiers=1 */ override public function getArcWidth():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RoundRectangle2D.Double.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RoundRectangle2D.Double.html#getHeight() */
 	/*@@@ modifiers=1 */ override public function getHeight():StdFloat;

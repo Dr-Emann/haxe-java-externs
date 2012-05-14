@@ -19,13 +19,13 @@ extern class AWTEvent extends EventObject
 	/*@@@ modifiers=1 */ public function new(event:Event):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#consume() */
-	/*@@@ modifiers=4 */ private function consume():Void;
+	/*@@@ modifiers=4 */ public function consume():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#getID() */
 	/*@@@ modifiers=1 */ public function getID():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#isConsumed() */
-	/*@@@ modifiers=4 */ private function isConsumed():Bool;
+	/*@@@ modifiers=4 */ public function isConsumed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/AWTEvent.html#paramString() */
 	/*@@@ modifiers=1 */ public function paramString():String;

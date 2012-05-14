@@ -38,7 +38,7 @@ extern class MenuComponent extends Object, implements Serializable
 	/*@@@ modifiers=20 */ private function getTreeLock():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuComponent.html#paramString() */
-	/*@@@ modifiers=4 */ private function paramString():String;
+	/*@@@ modifiers=4 */ public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MenuComponent.html#postEvent(java.awt.Event) */
 	/*@@@ modifiers=1 */ public function postEvent(evt:Event):Bool;

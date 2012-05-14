@@ -485,7 +485,7 @@ extern class Component extends Object, implements ImageObserver, implements Menu
 	/*@@@ modifiers=1 */ public function paintAll(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#paramString() */
-	/*@@@ modifiers=4 */ private function paramString():String;
+	/*@@@ modifiers=4 */ public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#postEvent(java.awt.Event) */
 	/*@@@ modifiers=1 */ public function postEvent(e:Event):Bool;

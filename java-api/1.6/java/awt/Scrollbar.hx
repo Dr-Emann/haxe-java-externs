@@ -70,7 +70,7 @@ extern class Scrollbar extends Component, implements Adjustable, implements Acce
 	/*@@@ modifiers=1 */ public function getVisibleAmount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Scrollbar.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Scrollbar.html#processAdjustmentEvent(java.awt.event.AdjustmentEvent) */
 	/*@@@ modifiers=4 */ private function processAdjustmentEvent(e:AdjustmentEvent):Void;

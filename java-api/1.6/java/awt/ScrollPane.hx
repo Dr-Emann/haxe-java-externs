@@ -30,7 +30,7 @@ extern class ScrollPane extends Container, implements Accessible
 	/*@@@ modifiers=1 */ override public function doLayout():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#eventTypeEnabled(int) */
-	/*@@@ modifiers=4 */ override private function eventTypeEnabled(type:Int):Bool;
+	/*@@@ modifiers=4 */ private function eventTypeEnabled(type:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/ScrollPane.html#getAccessibleContext() */
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;

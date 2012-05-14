@@ -64,7 +64,7 @@ extern class Dialog extends Window
 	/*@@@ modifiers=1 */ public function isUndecorated():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dialog.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dialog.html#setModal(boolean) */
 	/*@@@ modifiers=1 */ public function setModal(modal:Bool):Void;

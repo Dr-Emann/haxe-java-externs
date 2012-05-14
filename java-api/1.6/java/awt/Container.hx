@@ -171,7 +171,7 @@ extern class Container extends Component
 	/*@@@ modifiers=1 */ public function paintComponents(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#preferredSize() */
 	/*@@@ modifiers=1 */ override public function preferredSize():Dimension;

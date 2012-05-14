@@ -21,7 +21,7 @@ extern class DefaultTreeCellRenderer extends JLabel, implements TreeCellRenderer
 	private var selected:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#hasFocus */
-	private var hasFocus:Bool;
+	//private var hasFocus:Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#closedIcon */
 	private var closedIcon:Icon;

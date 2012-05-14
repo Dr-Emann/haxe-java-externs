@@ -1,6 +1,6 @@
 package javax.security.sasl;
 
-import javax.security.auth.callback.TextInputCallback;
+import javax.security.auth._callback.TextInputCallback;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/security/sasl/RealmCallback.html */
 @:native("javax.security.sasl.RealmCallback")

@@ -16,7 +16,7 @@ import javax.tools.JavaFileObject_Kind;
 extern class ForwardingJavaFileManager<M : (JavaFileManager)> extends Object, implements JavaFileManager
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingJavaFileManager.html#fileManager */
-	private static var fileManager:M;
+	//private static var fileManager:M;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/tools/ForwardingJavaFileManager.html#ForwardingJavaFileManager(javax.tools.JavaFileManager) */
 	/*@@@ modifiers=4 */ private function new(fileManager:M):Void;

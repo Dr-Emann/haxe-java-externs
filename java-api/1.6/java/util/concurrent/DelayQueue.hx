@@ -40,12 +40,10 @@ extern class DelayQueue<E : (Delayed)> extends AbstractQueue<E>, implements Bloc
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#offer(java.lang.Object) */
 	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed) */
-	/*@@@ modifiers=1 */ public function offer(e:E):Bool;
+	/*@@@ modifiers=1 */ override public function offer(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#peek() */
-	/*@@@ modifiers=1 */ @:overload(function ():E {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#peek() */
-	/*@@@ modifiers=4161 */ public function peek():Dynamic;
+	/*@@@ modifiers=1 */ override public function peek():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#poll(long, java.util.concurrent.TimeUnit) */
 	/*@@@ modifiers=4161 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):Dynamic {})
@@ -54,7 +52,7 @@ extern class DelayQueue<E : (Delayed)> extends AbstractQueue<E>, implements Bloc
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#poll() */
 	/*@@@ modifiers=4161 */ @:overload(function ():Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#poll() */
-	/*@@@ modifiers=1 */ public function poll():E;
+	/*@@@ modifiers=1 */ override public function poll():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/DelayQueue.html#put(java.lang.Object) */
 	/*@@@ modifiers=4161 */ @:overload(function (p0:Dynamic):Void {})

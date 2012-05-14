@@ -30,7 +30,7 @@ extern class Line2D_Float extends Line2D, implements Serializable
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.Float.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.Float.html#getP1() */
 	/*@@@ modifiers=1 */ override public function getP1():Point2D;
