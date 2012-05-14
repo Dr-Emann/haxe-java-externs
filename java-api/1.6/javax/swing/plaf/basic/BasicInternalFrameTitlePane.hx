@@ -127,7 +127,7 @@ extern class BasicInternalFrameTitlePane extends JComponent
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#paintComponent(java.awt.Graphics) */
 	/*@@@ modifiers=1 */ override public function paintComponent(g:Graphics):Void;
-
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#paintTitleBackground(java.awt.Graphics) */
 	/*@@@ modifiers=4 */ private function paintTitleBackground(g:Graphics):Void;
 

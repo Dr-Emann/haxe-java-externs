@@ -4,6 +4,7 @@ import java.NativeArray;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -428,7 +429,9 @@ extern class JTable extends JComponent, implements TableModelListener, implement
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#print(javax.swing.JTable$PrintMode) */
 	/*@@@ modifiers=1 */ @:overload(function (printMode:JTable_PrintMode):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#print() */
-	/*@@@ modifiers=1 */ override public function print():Bool;
+	/*@@@ modifiers=1 */ @:overload(function print():Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#print(java.awt.Graphics) */
+	/*@@@ modifiers=1 */ override public function print(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#processKeyBinding(javax.swing.KeyStroke, java.awt.event.KeyEvent, int, boolean) */
 	/*@@@ modifiers=4 */ override private function processKeyBinding(ks:KeyStroke, e:KeyEvent, condition:Int, pressed:Bool):Bool;

@@ -6,6 +6,7 @@ import java.awt.Color;
 import java.awt.ComponentOrientation;
 import java.awt.Dimension;
 import java.awt.Insets;
+import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.InputMethodEvent;
@@ -181,7 +182,9 @@ extern class JTextComponent extends JComponent, implements Scrollable, implement
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.html#print(java.text.MessageFormat, java.text.MessageFormat) */
 	/*@@@ modifiers=1 */ @:overload(function (headerFormat:MessageFormat, footerFormat:MessageFormat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.html#print() */
-	/*@@@ modifiers=1 */ override public function print():Bool;
+	/*@@@ modifiers=1 */ @:overload(function print():Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#print(java.awt.Graphics) */
+	/*@@@ modifiers=1 */ override public function print(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.html#processInputMethodEvent(java.awt.event.InputMethodEvent) */
 	/*@@@ modifiers=4 */ override private function processInputMethodEvent(e:InputMethodEvent):Void;

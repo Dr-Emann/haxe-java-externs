@@ -3,6 +3,7 @@ package javax.swing;
 import java.NativeArray;
 import java.awt.Component;
 import java.awt.Graphics;
+import java.awt.MenuComponent;
 import java.lang.Integer;
 import java.util.Hashtable;
 import javax.accessibility.Accessible;
@@ -76,7 +77,9 @@ extern class JLayeredPane extends JComponent, implements Accessible
 	/*@@@ modifiers=9 */ static public function putLayer(c:JComponent, layer:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLayeredPane.html#remove(int) */
-	/*@@@ modifiers=1 */ override public function remove(index:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLayeredPane.html#removeAll() */
 	/*@@@ modifiers=1 */ override public function removeAll():Void;

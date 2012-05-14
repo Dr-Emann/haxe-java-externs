@@ -6,6 +6,7 @@ import java.awt.Container;
 import java.awt.Cursor;
 import java.awt.Graphics;
 import java.awt.LayoutManager;
+import java.awt.MenuComponent;
 import java.awt.Rectangle;
 import java.lang.Integer;
 import javax.accessibility.Accessible;
@@ -161,7 +162,9 @@ extern class JInternalFrame extends JComponent, implements Accessible, implement
 	/*@@@ modifiers=1 */ public function isClosed():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#isFocusCycleRoot() */
-	/*@@@ modifiers=17 */ override public function isFocusCycleRoot():Bool;
+	/*@@@ modifiers=17 */ @:overload(function ():Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#isFocusCycleRoot(java.awt.Container) */
+	/*@@@ modifiers=1 */ override public function isFocusCycleRoot(container:Container):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#isIcon() */
 	/*@@@ modifiers=1 */ public function isIcon():Bool;
@@ -194,13 +197,15 @@ extern class JInternalFrame extends JComponent, implements Accessible, implement
 	/*@@@ modifiers=1 */ public function pack():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#paintComponent(java.awt.Graphics) */
-	/*@@@ modifiers=4 */ override private function paintComponent(g:Graphics):Void;
+	/*@@@ modifiers=4 */ override public function paintComponent(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#paramString() */
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(comp:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function (comp:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#removeInternalFrameListener(javax.swing.event.InternalFrameListener) */
 	/*@@@ modifiers=1 */ public function removeInternalFrameListener(l:InternalFrameListener):Void;

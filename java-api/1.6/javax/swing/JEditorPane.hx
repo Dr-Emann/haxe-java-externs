@@ -3,6 +3,7 @@ package javax.swing;
 import java.NativeArray;
 import java.awt.Dimension;
 import java.io.InputStream;
+import java.io.Reader;
 import java.lang.ClassLoader;
 import java.net.URL;
 import javax.accessibility.AccessibleContext;
@@ -79,7 +80,9 @@ extern class JEditorPane extends JTextComponent
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JEditorPane.html#read(java.io.InputStream, java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function read(_in:InputStream, desc:Dynamic):Void;
+	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, desc:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.html#read(java.io.Reader, java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function read(_in:Reader, desc:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String, java.lang.String, java.lang.ClassLoader) */
 	/*@@@ modifiers=9 */ @:overload(function (type:String, classname:String, loader:ClassLoader):Void {})

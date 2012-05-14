@@ -24,7 +24,9 @@ extern class Rectangle2D extends RectangularShape
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#contains(double, double, double, double) */
 	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#contains(double, double) */
-	/*@@@ modifiers=1 */ override public function contains(x:StdFloat, y:StdFloat):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#contains(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function contains(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#createIntersection(java.awt.geom.Rectangle2D) */
 	/*@@@ modifiers=1025 */ public function createIntersection(r:Rectangle2D):Rectangle2D;
@@ -36,7 +38,7 @@ extern class Rectangle2D extends RectangularShape
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#getPathIterator(java.awt.geom.AffineTransform, double) */
 	/*@@@ modifiers=1 */ @:overload(function (at:AffineTransform, flatness:StdFloat):PathIterator {})
@@ -50,7 +52,9 @@ extern class Rectangle2D extends RectangularShape
 	/*@@@ modifiers=9 */ static public function intersect(src1:Rectangle2D, src2:Rectangle2D, dest:Rectangle2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#intersects(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function intersects(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#intersects(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function intersects(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#intersectsLine(double, double, double, double) */
 	/*@@@ modifiers=1 */ @:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Bool {})
@@ -63,7 +67,9 @@ extern class Rectangle2D extends RectangularShape
 	/*@@@ modifiers=1 */ public function outcode(p:Point2D):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#setFrame(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function setFrame(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#setFrame(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function setFrame(r:Rectangle2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#setRect(double, double, double, double) */
 	/*@@@ modifiers=1025 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void {})

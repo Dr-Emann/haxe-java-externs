@@ -41,7 +41,9 @@ extern class Dimension extends Dimension2D, implements Serializable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dimension.html#setSize(int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (width:Int, height:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dimension.html#setSize(java.awt.Dimension) */
-	/*@@@ modifiers=1 */ override public function setSize(d:Dimension):Void;
+	/*@@@ modifiers=1 */ @:overload(function (d:Dimension):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Dimension2D.html#setSize(java.awt.geom.Dimension2D) */
+	/*@@@ modifiers=1 */ override public function setSize(d:Dimension2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Dimension.html#toString() */
 	/*@@@ modifiers=1 */ override public function toString():String;

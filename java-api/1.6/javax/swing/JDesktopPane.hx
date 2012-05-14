@@ -2,6 +2,7 @@ package javax.swing;
 
 import java.NativeArray;
 import java.awt.Component;
+import java.awt.MenuComponent;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.DesktopManager;
@@ -48,7 +49,9 @@ extern class JDesktopPane extends JLayeredPane, implements Accessible
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html#remove(int) */
-	/*@@@ modifiers=1 */ override public function remove(index:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html#removeAll() */
 	/*@@@ modifiers=1 */ override public function removeAll():Void;

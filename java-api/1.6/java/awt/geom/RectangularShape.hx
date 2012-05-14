@@ -29,6 +29,9 @@ extern class RectangularShape extends Object, implements Shape, implements Clone
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#getBounds() */
 	/*@@@ modifiers=1 */ public function getBounds():Rectangle;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getBounds2D() */
+	/*@@@ modifiers=1025 */ public function getBounds2D():Rectangle2D;
+
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#getCenterX() */
 	/*@@@ modifiers=1 */ public function getCenterX():StdFloat;
 
@@ -54,7 +57,9 @@ extern class RectangularShape extends Object, implements Shape, implements Clone
 	/*@@@ modifiers=1 */ public function getMinY():StdFloat;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#getPathIterator(java.awt.geom.AffineTransform, double) */
-	/*@@@ modifiers=1 */ public function getPathIterator(at:AffineTransform, flatness:StdFloat):PathIterator;
+	/*@@@ modifiers=1 */ @:overload(function (at:AffineTransform, flatness:StdFloat):PathIterator {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform) */
+	/*@@@ modifiers=1025 */ public function getPathIterator(at:AffineTransform):PathIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#getWidth() */
 	/*@@@ modifiers=1025 */ public function getWidth():StdFloat;

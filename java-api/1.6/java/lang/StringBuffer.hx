@@ -41,12 +41,12 @@ extern class StringBuffer extends AbstractStringBuilder, implements Serializable
 	/*@@@ modifiers=4161 */ @:overload(function (obj:Dynamic):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(char[]) */
 	/*@@@ modifiers=4161 */ @:overload(function (str:NativeArray<Char16>):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.String) */
 	/*@@@ modifiers=4161 */ @:overload(function (str:String):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.StringBuffer) */
-	/*@@@ modifiers=4161 */ override public function append(sb:StringBuffer):AbstractStringBuilder;
+	/*@@@ modifiers=4161 */ @:overload(function (sb:StringBuffer):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#append(java.lang.CharSequence) */
+	/*@@@ modifiers=4161 */ override public function append(s:CharSequence):Appendable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html#appendCodePoint(int) */
 	/*@@@ modifiers=4161 */ override public function appendCodePoint(codePoint:Int):AbstractStringBuilder;

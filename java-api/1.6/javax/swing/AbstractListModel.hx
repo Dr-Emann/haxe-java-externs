@@ -22,7 +22,7 @@ extern class AbstractListModel extends Object, implements ListModel, implements 
 	/*@@@ modifiers=1 */ public function addListDataListener(l:ListDataListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#fireContentsChanged(java.lang.Object, int, int) */
-	/*@@@ modifiers=4 */ private function fireContentsChanged(source:Dynamic, index0:Int, index1:Int):Void;
+	/*@@@ modifiers=4 */ public function fireContentsChanged(source:Dynamic, index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#fireIntervalAdded(java.lang.Object, int, int) */
 	/*@@@ modifiers=4 */ private function fireIntervalAdded(source:Dynamic, index0:Int, index1:Int):Void;

@@ -16,13 +16,9 @@ extern class AbstractStringBuilder extends Object, implements Appendable, implem
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(char[], int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (str:NativeArray<Char16>, offset:Int, len:Int):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.CharSequence, int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (s:CharSequence, start:Int, end:Int):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.CharSequence, int, int) */
 	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence, start:Int, end:Int):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(boolean) */
 	/*@@@ modifiers=1 */ @:overload(function (b:Bool):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(char) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Char16):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(char) */
 	/*@@@ modifiers=4161 */ @:overload(function (c:Char16):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(double) */
@@ -37,14 +33,12 @@ extern class AbstractStringBuilder extends Object, implements Appendable, implem
 	/*@@@ modifiers=1 */ @:overload(function (obj:Dynamic):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(char[]) */
 	/*@@@ modifiers=1 */ @:overload(function (str:NativeArray<Char16>):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=1 */ @:overload(function (s:CharSequence):AbstractStringBuilder {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.CharSequence) */
-	/*@@@ modifiers=4161 */ @:overload(function (s:CharSequence):Appendable {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.String) */
 	/*@@@ modifiers=1 */ @:overload(function (str:String):AbstractStringBuilder {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.StringBuffer) */
-	/*@@@ modifiers=1 */ public function append(sb:StringBuffer):AbstractStringBuilder;
+	/*@@@ modifiers=1 */ @:overload(function (sb:StringBuffer):AbstractStringBuilder {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#append(java.lang.CharSequence) */
+	/*@@@ modifiers=4161 */ public function append(s:CharSequence):Appendable;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/AbstractStringBuilder.html#appendCodePoint(int) */
 	/*@@@ modifiers=1 */ public function appendCodePoint(codePoint:Int):AbstractStringBuilder;

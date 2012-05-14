@@ -7,6 +7,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Insets;
 import java.awt.LayoutManager;
+import java.awt.MenuComponent;
 import java.awt.Point;
 import java.awt.Rectangle;
 import javax.accessibility.Accessible;
@@ -109,13 +110,17 @@ extern class JViewport extends JComponent, implements Accessible
 	/*@@@ modifiers=4 */ override private function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(child:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function (child:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#removeChangeListener(javax.swing.event.ChangeListener) */
 	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#repaint(long, int, int, int, int) */
-	/*@@@ modifiers=1 */ override public function repaint(tm:haxe.Int64, x:Int, y:Int, w:Int, h:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (tm:haxe.Int64, x:Int, y:Int, w:Int, h:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#repaint() */
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#reshape(int, int, int, int) */
 	/*@@@ modifiers=1 */ override public function reshape(x:Int, y:Int, w:Int, h:Int):Void;

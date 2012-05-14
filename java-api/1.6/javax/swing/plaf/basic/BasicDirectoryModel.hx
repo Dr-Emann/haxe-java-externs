@@ -23,7 +23,9 @@ extern class BasicDirectoryModel extends AbstractListModel, implements PropertyC
 	/*@@@ modifiers=1 */ public function contains(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#fireContentsChanged() */
-	/*@@@ modifiers=1 */ override public function fireContentsChanged():Void;
+	/*@@@ modifiers=1 */ @:overload(function ():Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractListModel.html#fireContentsChanged(java.lang.Object, int, int) */
+	/*@@@ modifiers=4 */ override public function fireContentsChanged(source:Dynamic, index0:Int, index1:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
 	/*@@@ modifiers=4 */ private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
@@ -32,7 +34,7 @@ extern class BasicDirectoryModel extends AbstractListModel, implements PropertyC
 	/*@@@ modifiers=1 */ public function getDirectories():Vector<File>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#getElementAt(int) */
-	/*@@@ modifiers=1 */ public function getElementAt(index:Int):Dynamic;
+	/*@@@ modifiers=1 */ override public function getElementAt(index:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#getFiles() */
 	/*@@@ modifiers=1 */ public function getFiles():Vector<File>;
@@ -41,7 +43,7 @@ extern class BasicDirectoryModel extends AbstractListModel, implements PropertyC
 	/*@@@ modifiers=1 */ public function getPropertyChangeListeners():NativeArray<PropertyChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#getSize() */
-	/*@@@ modifiers=1 */ public function getSize():Int;
+	/*@@@ modifiers=1 */ override public function getSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#indexOf(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function indexOf(o:Dynamic):Int;

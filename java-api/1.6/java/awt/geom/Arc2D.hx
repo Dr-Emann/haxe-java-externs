@@ -38,7 +38,7 @@ extern class Arc2D extends RectangularShape
 	/*@@@ modifiers=1 */ public function getArcType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#getBounds2D() */
-	/*@@@ modifiers=1 */ public function getBounds2D():Rectangle2D;
+	/*@@@ modifiers=1 */ override public function getBounds2D():Rectangle2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#getEndPoint() */
 	/*@@@ modifiers=1 */ public function getEndPoint():Point2D;
@@ -53,7 +53,9 @@ extern class Arc2D extends RectangularShape
 	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#intersects(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function intersects(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#intersects(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function intersects(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#makeBounds(double, double, double, double) */
 	/*@@@ modifiers=1028 */ private function makeBounds(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Rectangle2D;
@@ -61,24 +63,24 @@ extern class Arc2D extends RectangularShape
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setAngleExtent(double) */
 	/*@@@ modifiers=1025 */ public function setAngleExtent(angExt:StdFloat):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setAngleStart(double) */
-	/*@@@ modifiers=1025 */ @:overload(function (angSt:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setAngleStart(java.awt.geom.Point2D) */
-	/*@@@ modifiers=1 */ public function setAngleStart(p:Point2D):Void;
+	/*@@@ modifiers=1 */ @:overload(function (p:Point2D):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setAngleStart(double) */
+	/*@@@ modifiers=1025 */ public function setAngleStart(angSt:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setAngles(double, double, double, double) */
 	/*@@@ modifiers=1 */ @:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setAngles(java.awt.geom.Point2D, java.awt.geom.Point2D) */
 	/*@@@ modifiers=1 */ public function setAngles(p1:Point2D, p2:Point2D):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setArc(double, double, double, double, double, double, int) */
-	/*@@@ modifiers=1025 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, angSt:StdFloat, angExt:StdFloat, closure:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Point2D, java.awt.geom.Dimension2D, double, double, int) */
 	/*@@@ modifiers=1 */ @:overload(function (loc:Point2D, size:Dimension2D, angSt:StdFloat, angExt:StdFloat, closure:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Rectangle2D, double, double, int) */
 	/*@@@ modifiers=1 */ @:overload(function (rect:Rectangle2D, angSt:StdFloat, angExt:StdFloat, closure:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Arc2D) */
-	/*@@@ modifiers=1 */ public function setArc(a:Arc2D):Void;
+	/*@@@ modifiers=1 */ @:overload(function (a:Arc2D):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setArc(double, double, double, double, double, double, int) */
+	/*@@@ modifiers=1025 */ public function setArc(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat, angSt:StdFloat, angExt:StdFloat, closure:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setArcByCenter(double, double, double, double, double, int) */
 	/*@@@ modifiers=1 */ public function setArcByCenter(x:StdFloat, y:StdFloat, radius:StdFloat, angSt:StdFloat, angExt:StdFloat, closure:Int):Void;
@@ -90,7 +92,9 @@ extern class Arc2D extends RectangularShape
 	/*@@@ modifiers=1 */ public function setArcType(type:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Arc2D.html#setFrame(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function setFrame(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#setFrame(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function setFrame(r:Rectangle2D):Void;
 
 }
 

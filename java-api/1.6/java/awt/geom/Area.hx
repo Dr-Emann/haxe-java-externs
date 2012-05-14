@@ -38,7 +38,9 @@ extern class Area extends Object, implements Shape, implements Cloneable
 	/*@@@ modifiers=1 */ public function createTransformedArea(t:AffineTransform):Area;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Area.html#equals(java.awt.geom.Area) */
-	/*@@@ modifiers=1 */ override public function equals(other:Area):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (other:Area):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Area.html#exclusiveOr(java.awt.geom.Area) */
 	/*@@@ modifiers=1 */ public function exclusiveOr(rhs:Area):Void;

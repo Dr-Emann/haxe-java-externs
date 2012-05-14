@@ -5,6 +5,7 @@ import java.awt.AWTEvent;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.ItemSelectable;
+import java.awt.MenuComponent;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -150,7 +151,9 @@ extern class List extends Component, implements ItemSelectable, implements Acces
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (position:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#remove(java.lang.String) */
-	/*@@@ modifiers=33 */ override public function remove(item:String):Void;
+	/*@@@ modifiers=33 */ @:overload(function (item:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/List.html#removeActionListener(java.awt.event.ActionListener) */
 	/*@@@ modifiers=33 */ public function removeActionListener(l:ActionListener):Void;

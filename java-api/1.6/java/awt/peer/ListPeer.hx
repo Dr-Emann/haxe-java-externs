@@ -24,11 +24,15 @@ extern interface ListPeer implements ComponentPeer
 	/*@@@ modifiers=1025 */ public function deselect(index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ListPeer.html#getMinimumSize(int) */
-	/*@@@ modifiers=1025 */ public function getMinimumSize(rows:Int):Dimension;
+	/*@@@ modifiers=1025 */ @:overload(function (rows:Int):Dimension {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ComponentPeer.html#getMinimumSize() */
+	/*@@@ modifiers=1025 */ public function getMinimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ListPeer.html#getPreferredSize(int) */
-	/*@@@ modifiers=1025 */ public function getPreferredSize(rows:Int):Dimension;
-
+	/*@@@ modifiers=1025 */ @:overload(function (rows:Int):Dimension {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ComponentPeer.html#getPreferredSize() */
+	/*@@@ modifiers=1025 */ public function getPreferredSize():Dimension;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ListPeer.html#getSelectedIndexes() */
 	/*@@@ modifiers=1025 */ public function getSelectedIndexes():NativeArray<Int>;
 
@@ -36,10 +40,14 @@ extern interface ListPeer implements ComponentPeer
 	/*@@@ modifiers=1025 */ public function makeVisible(index:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ListPeer.html#minimumSize(int) */
-	/*@@@ modifiers=1025 */ public function minimumSize(v:Int):Dimension;
+	/*@@@ modifiers=1025 */ @:overload(function (v:Int):Dimension {})
+		/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ComponentPeer.html#minimumSize() */
+	/*@@@ modifiers=1025 */ public function minimumSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ListPeer.html#preferredSize(int) */
-	/*@@@ modifiers=1025 */ public function preferredSize(v:Int):Dimension;
+	/*@@@ modifiers=1025 */ @:overload(function (v:Int):Dimension {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ComponentPeer.html#preferredSize() */
+	/*@@@ modifiers=1025 */ public function preferredSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/peer/ListPeer.html#removeAll() */
 	/*@@@ modifiers=1025 */ public function removeAll():Void;

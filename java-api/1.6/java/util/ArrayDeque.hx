@@ -90,10 +90,10 @@ extern class ArrayDeque<E : (Dynamic)> extends AbstractCollection<E>, implements
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayDeque.html#push(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function push(e:E):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayDeque.html#remove(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (o:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayDeque.html#remove() */
-	/*@@@ modifiers=1 */ override public function remove():E;
+	/*@@@ modifiers=1 */ @:overload(function ():E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayDeque.html#remove(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function remove(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/ArrayDeque.html#removeFirst() */
 	/*@@@ modifiers=1 */ public function removeFirst():E;

@@ -117,7 +117,9 @@ extern class JFileChooser extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function getIcon(f:File):Icon;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFileChooser.html#getName(java.io.File) */
-	/*@@@ modifiers=1 */ override public function getName(f:File):String;
+	/*@@@ modifiers=1 */ @:overload(function (f:File):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#getName() */
+	/*@@@ modifiers=1 */ override public function getName():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFileChooser.html#getSelectedFile() */
 	/*@@@ modifiers=1 */ public function getSelectedFile():File;

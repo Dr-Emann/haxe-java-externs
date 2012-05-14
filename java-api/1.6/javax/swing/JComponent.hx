@@ -278,7 +278,7 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=4 */ private function paintChildren(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#paintComponent(java.awt.Graphics) */
-	/*@@@ modifiers=4 */ private function paintComponent(g:Graphics):Void;
+	/*@@@ modifiers=4 */ public function paintComponent(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#paintImmediately(int, int, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int, w:Int, h:Int):Void {})

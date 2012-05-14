@@ -4,6 +4,7 @@ import java.NativeArray;
 import java.awt.AWTEvent;
 import java.awt.Component;
 import java.awt.ItemSelectable;
+import java.awt.MenuComponent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.lang.Class;
@@ -71,7 +72,9 @@ extern class Choice extends Component, implements ItemSelectable, implements Acc
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (position:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#remove(java.lang.String) */
-	/*@@@ modifiers=1 */ override public function remove(item:String):Void;
+	/*@@@ modifiers=1 */ @:overload(function (item:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Choice.html#removeAll() */
 	/*@@@ modifiers=1 */ public function removeAll():Void;

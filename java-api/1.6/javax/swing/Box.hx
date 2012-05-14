@@ -43,7 +43,7 @@ extern class Box extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Box.html#paintComponent(java.awt.Graphics) */
-	/*@@@ modifiers=4 */ override private function paintComponent(g:Graphics):Void;
+	/*@@@ modifiers=4 */ override public function paintComponent(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Box.html#setLayout(java.awt.LayoutManager) */
 	/*@@@ modifiers=1 */ override public function setLayout(l:LayoutManager):Void;

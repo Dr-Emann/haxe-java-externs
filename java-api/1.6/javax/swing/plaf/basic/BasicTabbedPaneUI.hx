@@ -158,10 +158,10 @@ extern class BasicTabbedPaneUI extends TabbedPaneUI, implements SwingConstants
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#expandTabRunsArray() */
 	/*@@@ modifiers=4 */ private function expandTabRunsArray():Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaseline(javax.swing.JComponent, int, int) */
-	/*@@@ modifiers=1 */ @:overload(function (c:JComponent, width:Int, height:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaseline(int) */
-	/*@@@ modifiers=4 */ override private function getBaseline(tab:Int):Int;
+	/*@@@ modifiers=4 */ @:overload(function (tab:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaseline(javax.swing.JComponent, int, int) */
+	/*@@@ modifiers=1 */ override public function getBaseline(c:JComponent, width:Int, height:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#getBaselineOffset() */
 	/*@@@ modifiers=4 */ private function getBaselineOffset():Int;

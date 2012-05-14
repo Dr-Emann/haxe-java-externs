@@ -21,9 +21,7 @@ extern class RowSorterEvent extends EventObject
 	/*@@@ modifiers=1 */ public function getPreviousRowCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/RowSorterEvent.html#getSource() */
-	/*@@@ modifiers=4161 */ @:overload(function ():Dynamic {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/RowSorterEvent.html#getSource() */
-	/*@@@ modifiers=1 */ override public function getSource():RowSorter<Dynamic>;
+	/*@@@ modifiers=4161 */ override public function getSource():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/event/RowSorterEvent.html#getType() */
 	/*@@@ modifiers=1 */ public function getType():RowSorterEvent_Type;

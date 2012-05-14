@@ -48,8 +48,10 @@ extern class Graphics2D extends Graphics
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics2D.html#drawImage(java.awt.image.BufferedImage, java.awt.image.BufferedImageOp, int, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (img:BufferedImage, op:BufferedImageOp, x:Int, y:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics2D.html#drawImage(java.awt.Image, java.awt.geom.AffineTransform, java.awt.image.ImageObserver) */
-	/*@@@ modifiers=1025 */ override public function drawImage(img:Image, xform:AffineTransform, obs:ImageObserver):Bool;
-
+	/*@@@ modifiers=1025 */ @:overload(function (img:Image, xform:AffineTransform, obs:ImageObserver):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#drawImage(java.awt.Image, int, int, java.awt.image.ImageObserver) */
+	/*@@@ modifiers=1025 */ override public function drawImage(img:Image, x:Int, y:Int, observer:ImageObserver):Bool;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics2D.html#drawRenderableImage(java.awt.image.renderable.RenderableImage, java.awt.geom.AffineTransform) */
 	/*@@@ modifiers=1025 */ public function drawRenderableImage(img:RenderableImage, xform:AffineTransform):Void;
 

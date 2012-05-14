@@ -3,6 +3,9 @@ package javax.swing;
 import java.NativeArray;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.MenuComponent;
+import java.awt.Point;
+import java.awt.PopupMenu;
 import java.awt.Rectangle;
 import java.awt.event.MouseEvent;
 import java.io.Serializable;
@@ -49,7 +52,10 @@ extern class JTabbedPane extends JComponent, implements Serializable, implements
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#add(java.lang.String, java.awt.Component) */
 	/*@@@ modifiers=1 */ @:overload(function (title:String, component:Component):Component {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#add(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function add(component:Component):Component;
+	/*@@@ modifiers=1 */ @:overload(function (component:Component):Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#add(java.awt.PopupMenu) */
+	/*@@@ modifiers=33 */ override public function add(popup:PopupMenu):Void;
+
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#addChangeListener(javax.swing.event.ChangeListener) */
 	/*@@@ modifiers=1 */ public function addChangeListener(l:ChangeListener):Void;
@@ -80,7 +86,9 @@ extern class JTabbedPane extends JComponent, implements Serializable, implements
 	/*@@@ modifiers=1 */ public function getChangeListeners():NativeArray<ChangeListener>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#getComponentAt(int) */
-	/*@@@ modifiers=1 */ override public function getComponentAt(index:Int):Component;
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):Component {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getComponentAt(java.awt.Point) */
+	/*@@@ modifiers=1 */ override public function getComponentAt(p:Point):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#getDisabledIconAt(int) */
 	/*@@@ modifiers=1 */ public function getDisabledIconAt(index:Int):Icon;
@@ -162,7 +170,9 @@ extern class JTabbedPane extends JComponent, implements Serializable, implements
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(component:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function (component:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#removeAll() */
 	/*@@@ modifiers=1 */ override public function removeAll():Void;

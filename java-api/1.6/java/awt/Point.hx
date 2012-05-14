@@ -41,7 +41,9 @@ extern class Point extends Point2D, implements Serializable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (x:Int, y:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#setLocation(java.awt.Point) */
-	/*@@@ modifiers=1 */ override public function setLocation(p:Point):Void;
+	/*@@@ modifiers=1 */ @:overload(function (p:Point):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Point2D.html#setLocation(java.awt.geom.Point2D) */
+	/*@@@ modifiers=1 */ override public function setLocation(p:Point2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Point.html#toString() */
 	/*@@@ modifiers=1 */ override public function toString():String;

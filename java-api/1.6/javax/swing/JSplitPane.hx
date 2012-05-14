@@ -2,6 +2,7 @@ package javax.swing;
 
 import java.awt.Component;
 import java.awt.Graphics;
+import java.awt.MenuComponent;
 import java.lang.Number;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
@@ -108,7 +109,9 @@ extern class JSplitPane extends JComponent, implements Accessible
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(component:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function (component:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#removeAll() */
 	/*@@@ modifiers=1 */ override public function removeAll():Void;

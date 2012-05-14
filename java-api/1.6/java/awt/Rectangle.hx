@@ -3,6 +3,7 @@ package java.awt;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Shape;
+import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.io.Serializable;
 import java.lang.Number;
@@ -43,7 +44,9 @@ extern class Rectangle extends Rectangle2D, implements Shape, implements Seriali
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#add(java.awt.Point) */
 	/*@@@ modifiers=1 */ @:overload(function (pt:Point):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#add(java.awt.Rectangle) */
-	/*@@@ modifiers=1 */ override public function add(r:Rectangle):Void;
+	/*@@@ modifiers=1 */ @:overload(function (r:Rectangle):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#add(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function add(r:Rectangle2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#contains(int, int, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (X:Int, Y:Int, W:Int, H:Int):Bool {})
@@ -52,7 +55,9 @@ extern class Rectangle extends Rectangle2D, implements Shape, implements Seriali
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#contains(java.awt.Point) */
 	/*@@@ modifiers=1 */ @:overload(function (p:Point):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#contains(java.awt.Rectangle) */
-	/*@@@ modifiers=1 */ override public function contains(r:Rectangle):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (r:Rectangle):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#contains(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function contains(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#createIntersection(java.awt.geom.Rectangle2D) */
 	/*@@@ modifiers=1 */ override public function createIntersection(r:Rectangle2D):Rectangle2D;
@@ -97,7 +102,9 @@ extern class Rectangle extends Rectangle2D, implements Shape, implements Seriali
 	/*@@@ modifiers=1 */ public function intersection(r:Rectangle):Rectangle;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#intersects(java.awt.Rectangle) */
-	/*@@@ modifiers=1 */ override public function intersects(r:Rectangle):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (r:Rectangle):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#intersects(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function intersects(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#isEmpty() */
 	/*@@@ modifiers=1 */ override public function isEmpty():Bool;
@@ -106,7 +113,9 @@ extern class Rectangle extends Rectangle2D, implements Shape, implements Seriali
 	/*@@@ modifiers=1 */ public function move(x:Int, y:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#outcode(double, double) */
-	/*@@@ modifiers=1 */ override public function outcode(x:StdFloat, y:StdFloat):Int;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#outcode(java.awt.geom.Point2D) */
+	/*@@@ modifiers=1 */ override public function outcode(p:Point2D):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#reshape(int, int, int, int) */
 	/*@@@ modifiers=1 */ public function reshape(x:Int, y:Int, width:Int, height:Int):Void;
@@ -125,7 +134,9 @@ extern class Rectangle extends Rectangle2D, implements Shape, implements Seriali
 	/*@@@ modifiers=1 */ public function setLocation(p:Point):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#setRect(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function setRect(x:StdFloat, y:StdFloat, width:StdFloat, height:StdFloat):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, width:StdFloat, height:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#setRect(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function setRect(r:Rectangle2D):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Rectangle.html#setSize(int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (width:Int, height:Int):Void {})
