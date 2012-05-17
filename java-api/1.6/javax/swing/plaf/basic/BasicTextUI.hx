@@ -107,7 +107,7 @@ extern class BasicTextUI extends TextUI, implements ViewFactory
 	/*@@@ modifiers=4 */ private function paintSafely(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	/*@@@ modifiers=4 */ private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ public function propertyChange(evt:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextUI.html#setView(javax.swing.text.View) */
 	/*@@@ modifiers=20 */ private function setView(v:View):Void;

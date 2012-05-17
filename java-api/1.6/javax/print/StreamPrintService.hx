@@ -39,7 +39,7 @@ extern class StreamPrintService extends Object, implements PrintService
 	/*@@@ modifiers=1025 */ public function createPrintJob():DocPrintJob;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/PrintService.html#equals(java.lang.Object) */
-	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
+	/*@@@ modifiers=1025 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/PrintService.html#getAttribute(java.lang.Class) */
 	/*@@@ modifiers=1025 */ public function getAttribute<T>(category:Class<T>):T;
@@ -69,7 +69,7 @@ extern class StreamPrintService extends Object, implements PrintService
 	/*@@@ modifiers=1025 */ public function getUnsupportedAttributes(flavor:DocFlavor, attributes:AttributeSet):AttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/PrintService.html#hashCode() */
-	/*@@@ modifiers=1025 */ public function hashCode():Int;
+	/*@@@ modifiers=1025 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/print/PrintService.html#isAttributeCategorySupported(java.lang.Class) */
 	/*@@@ modifiers=1025 */ public function isAttributeCategorySupported(category:Class<Attribute>):Bool;

@@ -47,7 +47,9 @@ extern class Ellipse2D_Float extends Ellipse2D, implements Serializable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.Float.html#setFrame(double, double, double, double) */
 	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.Float.html#setFrame(float, float, float, float) */
-	/*@@@ modifiers=1 */ override public function setFrame(x:Single, y:Single, w:Single, h:Single):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x:Single, y:Single, w:Single, h:Single):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#setFrame(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function setFrame(r:Rectangle2D):Void;
 
 }
 

@@ -68,17 +68,12 @@ extern class ReentrantReadWriteLock extends Object, implements ReadWriteLock, im
 	/*@@@ modifiers=1 */ public function isWriteLockedByCurrentThread():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock() */
-	/*@@@ modifiers=1 */ @:overload(function ():ReentrantReadWriteLock_ReadLock {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock() */
 	/*@@@ modifiers=4161 */ public function readLock():Lock;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#toString() */
 	/*@@@ modifiers=1 */ override public function toString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock() */
-	/*@@@ modifiers=4161 */ @:overload(function ():Lock {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock() */
-	/*@@@ modifiers=1 */ public function writeLock():ReentrantReadWriteLock_WriteLock;
-
+	/*@@@ modifiers=4161 */ public function writeLock():Lock;
 }
 

@@ -47,7 +47,7 @@ extern class DefaultTableModel extends AbstractTableModel, implements Serializab
 	/*@@@ modifiers=12 */ static private function convertToVector(arg0:NativeArray<NativeArray<Dynamic>>):Vector<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableModel.html#getColumnCount() */
-	/*@@@ modifiers=1 */ public function getColumnCount():Int;
+	/*@@@ modifiers=1 */ override public function getColumnCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableModel.html#getColumnName(int) */
 	/*@@@ modifiers=1 */ override public function getColumnName(column:Int):String;
@@ -56,10 +56,10 @@ extern class DefaultTableModel extends AbstractTableModel, implements Serializab
 	/*@@@ modifiers=1 */ public function getDataVector():Vector<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableModel.html#getRowCount() */
-	/*@@@ modifiers=1 */ public function getRowCount():Int;
+	/*@@@ modifiers=1 */ override public function getRowCount():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableModel.html#getValueAt(int, int) */
-	/*@@@ modifiers=1 */ public function getValueAt(row:Int, column:Int):Dynamic;
+	/*@@@ modifiers=1 */ override public function getValueAt(row:Int, column:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableModel.html#insertRow(int, java.lang.Object[]) */
 	/*@@@ modifiers=1 */ @:overload(function (row:Int, rowData:NativeArray<Dynamic>):Void {})

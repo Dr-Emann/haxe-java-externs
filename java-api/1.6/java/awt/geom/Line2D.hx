@@ -106,12 +106,12 @@ extern class Line2D extends Object, implements Shape, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#relativeCCW(double, double, double, double, double, double) */
 	/*@@@ modifiers=9 */ static public function relativeCCW(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat, px:StdFloat, py:StdFloat):Int;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(double, double, double, double) */
-	/*@@@ modifiers=1025 */ @:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(java.awt.geom.Point2D, java.awt.geom.Point2D) */
 	/*@@@ modifiers=1 */ @:overload(function (p1:Point2D, p2:Point2D):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(java.awt.geom.Line2D) */
-	/*@@@ modifiers=1 */ public function setLine(l:Line2D):Void;
+	/*@@@ modifiers=1 */ @:overload(function (l:Line2D):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.html#setLine(double, double, double, double) */
+	/*@@@ modifiers=1025 */ public function setLine(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void;
 
 }
 

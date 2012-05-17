@@ -49,10 +49,12 @@ extern class MetalToggleButtonUI extends BasicToggleButtonUI
 	/*@@@ modifiers=4 */ override private function paintIcon(g:Graphics, b:AbstractButton, iconRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToggleButtonUI.html#paintText(java.awt.Graphics, javax.swing.JComponent, java.awt.Rectangle, java.lang.String) */
-	/*@@@ modifiers=4 */ override private function paintText(g:Graphics, c:JComponent, textRect:Rectangle, text:String):Void;
+	/*@@@ modifiers=4 */ @:overload(function (g:Graphics, c:JComponent, textRect:Rectangle, text:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#paintText(java.awt.Graphics, javax.swing.AbstractButton, java.awt.Rectangle, java.lang.String) */
+	/*@@@ modifiers=4 */ override private function paintText(g:Graphics, b:AbstractButton, textRect:Rectangle, text:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToggleButtonUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override public function uninstallDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToggleButtonUI.html#update(java.awt.Graphics, javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function update(g:Graphics, c:JComponent):Void;

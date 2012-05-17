@@ -32,7 +32,7 @@ extern class HTMLEditorKit_InsertHTMLTextAction extends HTMLEditorKit_HTMLTextAc
 	/*@@@ modifiers=1 */ public function new(name:String, html:String, parentTag:HTML_Tag, addTag:HTML_Tag):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#actionPerformed(java.awt.event.ActionEvent) */
-	/*@@@ modifiers=1 */ public function actionPerformed(ae:ActionEvent):Void;
+	/*@@@ modifiers=1 */ override public function actionPerformed(ae:ActionEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#insertAtBoundary(javax.swing.JEditorPane, javax.swing.text.html.HTMLDocument, int, javax.swing.text.Element, java.lang.String, javax.swing.text.html.HTML$Tag, javax.swing.text.html.HTML$Tag) */
 	/*@@@ modifiers=4 */ private function insertAtBoundary(editor:JEditorPane, doc:HTMLDocument, offset:Int, insertElement:Element, html:String, parentTag:HTML_Tag, addTag:HTML_Tag):Void;

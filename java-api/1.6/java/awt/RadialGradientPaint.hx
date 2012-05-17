@@ -35,7 +35,7 @@ extern class RadialGradientPaint extends MultipleGradientPaint
 	/*@@@ modifiers=1 */ public function new(center:Rectangle2D, radius:NativeArray<Single>, fractions:NativeArray<Color>, colors:MultipleGradientPaint_CycleMethod):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/RadialGradientPaint.html#createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints) */
-	/*@@@ modifiers=1 */ public function createContext(cm:ColorModel, deviceBounds:Rectangle, userBounds:Rectangle2D, transform:AffineTransform, hints:RenderingHints):PaintContext;
+	/*@@@ modifiers=1 */ override public function createContext(cm:ColorModel, deviceBounds:Rectangle, userBounds:Rectangle2D, transform:AffineTransform, hints:RenderingHints):PaintContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/RadialGradientPaint.html#getCenterPoint() */
 	/*@@@ modifiers=1 */ public function getCenterPoint():Point2D;

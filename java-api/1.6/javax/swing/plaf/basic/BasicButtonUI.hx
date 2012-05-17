@@ -57,7 +57,7 @@ extern class BasicButtonUI extends ButtonUI
 	/*@@@ modifiers=4 */ private function getTextShiftOffset():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#installDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ private function installDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ public function installDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#installKeyboardActions(javax.swing.AbstractButton) */
 	/*@@@ modifiers=4 */ private function installKeyboardActions(b:AbstractButton):Void;
@@ -89,7 +89,7 @@ extern class BasicButtonUI extends ButtonUI
 	/*@@@ modifiers=4 */ private function setTextShiftOffset():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ public function uninstallDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#uninstallKeyboardActions(javax.swing.AbstractButton) */
 	/*@@@ modifiers=4 */ private function uninstallKeyboardActions(b:AbstractButton):Void;

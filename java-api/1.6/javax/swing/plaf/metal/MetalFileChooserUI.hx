@@ -28,7 +28,7 @@ extern class MetalFileChooserUI extends BasicFileChooserUI
 	/*@@@ modifiers=4 */ private function addControlButtons():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.html#createActionMap() */
-	/*@@@ modifiers=4 */ override private function createActionMap():ActionMap;
+	/*@@@ modifiers=4 */ private function createActionMap():ActionMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.html#createDetailsView(javax.swing.JFileChooser) */
 	/*@@@ modifiers=4 */ private function createDetailsView(fc:JFileChooser):JPanel;
@@ -61,7 +61,7 @@ extern class MetalFileChooserUI extends BasicFileChooserUI
 	/*@@@ modifiers=1 */ override public function ensureFileIsVisible(fc:JFileChooser, f:File):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.html#getActionMap() */
-	/*@@@ modifiers=4 */ override private function getActionMap():ActionMap;
+	/*@@@ modifiers=4 */ private function getActionMap():ActionMap;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.html#getApproveButton(javax.swing.JFileChooser) */
 	/*@@@ modifiers=4 */ override private function getApproveButton(fc:JFileChooser):JButton;

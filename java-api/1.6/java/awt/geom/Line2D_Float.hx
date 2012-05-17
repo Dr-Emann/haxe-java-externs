@@ -50,10 +50,9 @@ extern class Line2D_Float extends Line2D, implements Serializable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.Float.html#getY2() */
 	/*@@@ modifiers=1 */ override public function getY2():StdFloat;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.Float.html#setLine(double, double, double, double) */
-	/*@@@ modifiers=1 */ @:overload(function (x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.Float.html#setLine(float, float, float, float) */
-	/*@@@ modifiers=1 */ override public function setLine(x1:Single, y1:Single, x2:Single, y2:Single):Void;
-
+	/*@@@ modifiers=1 */ @:overload(function (x1:Single, y1:Single, x2:Single, y2:Single):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Line2D.Float.html#setLine(double, double, double, double) */
+	/*@@@ modifiers=1 */ override public function setLine(x1:StdFloat, y1:StdFloat, x2:StdFloat, y2:StdFloat):Void;
 }
 

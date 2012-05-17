@@ -15,7 +15,9 @@ extern class Ellipse2D extends RectangularShape
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.html#contains(double, double, double, double) */
 	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.html#contains(double, double) */
-	/*@@@ modifiers=1 */ override public function contains(x:StdFloat, y:StdFloat):Bool;
+	/*@@@ modifiers=1 */ @:overload(function contains(x:StdFloat, y:StdFloat):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#contains(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function contains(r:Rectangle2D):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.html#equals(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;

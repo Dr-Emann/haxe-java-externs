@@ -19,13 +19,13 @@ extern class MetalFileChooserUI_FilterComboBoxModel extends AbstractListModel, i
 	/*@@@ modifiers=4 */ private function new(arg0:MetalFileChooserUI):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxModel.html#getElementAt(int) */
-	/*@@@ modifiers=1 */ public function getElementAt(index:Int):Dynamic;
+	/*@@@ modifiers=1 */ override public function getElementAt(index:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxModel.html#getSelectedItem() */
 	/*@@@ modifiers=1 */ public function getSelectedItem():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxModel.html#getSize() */
-	/*@@@ modifiers=1 */ public function getSize():Int;
+	/*@@@ modifiers=1 */ override public function getSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxModel.html#propertyChange(java.beans.PropertyChangeEvent) */
 	/*@@@ modifiers=1 */ public function propertyChange(e:PropertyChangeEvent):Void;

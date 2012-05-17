@@ -45,10 +45,10 @@ extern class DefaultListModel extends AbstractListModel
 	/*@@@ modifiers=1 */ public function get(index:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultListModel.html#getElementAt(int) */
-	/*@@@ modifiers=1 */ public function getElementAt(index:Int):Dynamic;
+	/*@@@ modifiers=1 */ override public function getElementAt(index:Int):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultListModel.html#getSize() */
-	/*@@@ modifiers=1 */ public function getSize():Int;
+	/*@@@ modifiers=1 */ override public function getSize():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultListModel.html#indexOf(java.lang.Object, int) */
 	/*@@@ modifiers=1 */ @:overload(function (elem:Dynamic, index:Int):Int {})

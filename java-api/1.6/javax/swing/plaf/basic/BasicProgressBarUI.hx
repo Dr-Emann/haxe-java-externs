@@ -99,10 +99,10 @@ extern class BasicProgressBarUI extends ProgressBarUI
 	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicProgressBarUI.html#paintDeterminate(java.awt.Graphics, javax.swing.JComponent) */
-	/*@@@ modifiers=4 */ private function paintDeterminate(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=4 */ public function paintDeterminate(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicProgressBarUI.html#paintIndeterminate(java.awt.Graphics, javax.swing.JComponent) */
-	/*@@@ modifiers=4 */ private function paintIndeterminate(g:Graphics, c:JComponent):Void;
+	/*@@@ modifiers=4 */ public function paintIndeterminate(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicProgressBarUI.html#paintString(java.awt.Graphics, int, int, int, int, int, java.awt.Insets) */
 	/*@@@ modifiers=4 */ private function paintString(g:Graphics, x:Int, y:Int, width:Int, height:Int, amountFull:Int, b:Insets):Void;

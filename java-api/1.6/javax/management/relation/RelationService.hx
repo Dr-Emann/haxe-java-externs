@@ -90,7 +90,9 @@ extern class RelationService extends NotificationBroadcasterSupport, implements 
 	/*@@@ modifiers=1 */ public function getRoles(relationId:String, roleNameArray:NativeArray<String>):RoleResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationService.html#handleNotification(javax.management.Notification, java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function handleNotification(notif:Notification, handback:Dynamic):Void;
+	/*@@@ modifiers=1 */ @:overload(function (notif:Notification, handback:Dynamic):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationBroadcasterSupport.html#handleNotification(javax.management.NotificationListener, javax.management.Notification, java.lang.Object) */
+	/*@@@ modifiers=4 */ override public function handleNotification(listener:NotificationListener, notif:Notification, handback:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/relation/RelationService.html#hasRelation(java.lang.String) */
 	/*@@@ modifiers=1 */ public function hasRelation(relationId:String):Boolean;

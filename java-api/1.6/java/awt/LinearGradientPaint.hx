@@ -29,7 +29,7 @@ extern class LinearGradientPaint extends MultipleGradientPaint
 	/*@@@ modifiers=1 */ public function new(startX:Single, startY:Single, endX:Single, endY:Single, fractions:NativeArray<Single>, colors:NativeArray<Color>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LinearGradientPaint.html#createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints) */
-	/*@@@ modifiers=1 */ public function createContext(cm:ColorModel, deviceBounds:Rectangle, userBounds:Rectangle2D, transform:AffineTransform, hints:RenderingHints):PaintContext;
+	/*@@@ modifiers=1 */ override public function createContext(cm:ColorModel, deviceBounds:Rectangle, userBounds:Rectangle2D, transform:AffineTransform, hints:RenderingHints):PaintContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/LinearGradientPaint.html#getEndPoint() */
 	/*@@@ modifiers=1 */ public function getEndPoint():Point2D;

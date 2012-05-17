@@ -50,7 +50,9 @@ extern class Rectangle2D_Double extends Rectangle2D, implements Serializable
 	/*@@@ modifiers=1 */ override public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.Double.html#outcode(double, double) */
-	/*@@@ modifiers=1 */ override public function outcode(x:StdFloat, y:StdFloat):Int;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.html#outcode(java.awt.geom.Point2D) */
+	/*@@@ modifiers=1 */ override public function outcode(p:Point2D):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Rectangle2D.Double.html#setRect(double, double, double, double) */
 	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void {})

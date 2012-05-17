@@ -28,7 +28,9 @@ extern class MetalTreeUI extends BasicTreeUI
 	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTreeUI.html#isLocationInExpandControl(int, int, int, int) */
-	/*@@@ modifiers=4 */ override private function isLocationInExpandControl(row:Int, rowLevel:Int, mouseX:Int, mouseY:Int):Bool;
+	/*@@@ modifiers=4 */ @:overload(function (row:Int, rowLevel:Int, mouseX:Int, mouseY:Int):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#isLocationInExpandControl(javax.swing.tree.TreePath, int, int) */
+	/*@@@ modifiers=4 */ override private function isLocationInExpandControl(path:TreePath, mouseX:Int, mouseY:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTreeUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;

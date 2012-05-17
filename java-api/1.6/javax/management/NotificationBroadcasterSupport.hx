@@ -29,7 +29,7 @@ extern class NotificationBroadcasterSupport extends Object, implements Notificat
 	/*@@@ modifiers=1 */ public function getNotificationInfo():NativeArray<MBeanNotificationInfo>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationBroadcasterSupport.html#handleNotification(javax.management.NotificationListener, javax.management.Notification, java.lang.Object) */
-	/*@@@ modifiers=4 */ private function handleNotification(listener:NotificationListener, notif:Notification, handback:Dynamic):Void;
+	/*@@@ modifiers=4 */ public function handleNotification(listener:NotificationListener, notif:Notification, handback:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/NotificationBroadcasterSupport.html#removeNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) */
 	/*@@@ modifiers=1 */ @:overload(function (listener:NotificationListener, filter:NotificationFilter, handback:Dynamic):Void {})

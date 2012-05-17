@@ -43,7 +43,7 @@ extern class MLet extends URLClassLoader, implements MLetMBean, implements MBean
 	/*@@@ modifiers=1 */ override public function addURL(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLet.html#check(java.lang.String, java.net.URL, java.lang.String, javax.management.loading.MLetContent) */
-	/*@@@ modifiers=4 */ override private function check(version:String, codebase:URL, jarfile:String, mlet:MLetContent):URL;
+	/*@@@ modifiers=4 */ private function check(version:String, codebase:URL, jarfile:String, mlet:MLetContent):URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLet.html#findClass(java.lang.String) */
 	/*@@@ modifiers=4 */ override private function findClass(name:String):Class<Dynamic>;
@@ -63,7 +63,9 @@ extern class MLet extends URLClassLoader, implements MLetMBean, implements MBean
 	/*@@@ modifiers=1 */ override public function getURLs():NativeArray<URL>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLet.html#loadClass(java.lang.String, javax.management.loading.ClassLoaderRepository) */
-	/*@@@ modifiers=33 */ override public function loadClass(name:String, clr:ClassLoaderRepository):Class<Dynamic>;
+	/*@@@ modifiers=33 */ @:overload(function (name:String, clr:ClassLoaderRepository):Class<Dynamic> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#loadClass(java.lang.String) */
+	/*@@@ modifiers=1 */ override public function loadClass(name:String):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/loading/MLet.html#postDeregister() */
 	/*@@@ modifiers=1 */ public function postDeregister():Void;

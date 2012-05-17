@@ -84,8 +84,6 @@ extern class QuadCurve2D extends Object, implements Shape, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#intersects(java.awt.geom.Rectangle2D) */
 	/*@@@ modifiers=1 */ public function intersects(r:Rectangle2D):Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#setCurve(double, double, double, double, double, double) */
-	/*@@@ modifiers=1025 */ @:overload(function (x1:StdFloat, y1:StdFloat, ctrlx:StdFloat, ctrly:StdFloat, x2:StdFloat, y2:StdFloat):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#setCurve(java.awt.geom.Point2D, java.awt.geom.Point2D, java.awt.geom.Point2D) */
 	/*@@@ modifiers=1 */ @:overload(function (p1:Point2D, cp:Point2D, p2:Point2D):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#setCurve(double[], int) */
@@ -93,7 +91,9 @@ extern class QuadCurve2D extends Object, implements Shape, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#setCurve(java.awt.geom.Point2D[], int) */
 	/*@@@ modifiers=1 */ @:overload(function (pts:NativeArray<Point2D>, offset:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#setCurve(java.awt.geom.QuadCurve2D) */
-	/*@@@ modifiers=1 */ public function setCurve(c:QuadCurve2D):Void;
+	/*@@@ modifiers=1 */ @:overload(function (c:QuadCurve2D):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#setCurve(double, double, double, double, double, double) */
+	/*@@@ modifiers=1025 */ public function setCurve(x1:StdFloat, y1:StdFloat, ctrlx:StdFloat, ctrly:StdFloat, x2:StdFloat, y2:StdFloat):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#solveQuadratic(double[], double[]) */
 	/*@@@ modifiers=9 */ @:overload(function (eqn:NativeArray<StdFloat>, res:NativeArray<StdFloat>):Int {})
@@ -106,6 +106,9 @@ extern class QuadCurve2D extends Object, implements Shape, implements Cloneable
 	/*@@@ modifiers=9 */ @:overload(function (src:NativeArray<StdFloat>, srcoff:Int, left:NativeArray<StdFloat>, leftoff:Int, right:NativeArray<StdFloat>, rightoff:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/QuadCurve2D.html#subdivide(java.awt.geom.QuadCurve2D, java.awt.geom.QuadCurve2D, java.awt.geom.QuadCurve2D) */
 	/*@@@ modifiers=9 */ static public function subdivide(src:QuadCurve2D, left:QuadCurve2D, right:QuadCurve2D):Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getBounds2D() */
+	/*@@@ modifiers=1025 */ public function getBounds2D():Rectangle2D;
 
 }
 

@@ -24,7 +24,7 @@ extern class URLClassLoader extends SecureClassLoader
 	/*@@@ modifiers=1 */ public function new(urls:NativeArray<URL>, parent:ClassLoader):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLClassLoader.html#addURL(java.net.URL) */
-	/*@@@ modifiers=4 */ private function addURL(url:URL):Void;
+	/*@@@ modifiers=4 */ public function addURL(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLClassLoader.html#definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL) */
 	/*@@@ modifiers=4 */ override private function definePackage(name:String, man:Manifest, url:URL):Package;

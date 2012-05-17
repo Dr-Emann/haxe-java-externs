@@ -45,7 +45,9 @@ extern class Ellipse2D_Double extends Ellipse2D, implements Serializable
 	/*@@@ modifiers=1 */ override public function isEmpty():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.Double.html#setFrame(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function setFrame(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#setFrame(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function setFrame(r:Rectangle2D):Void;
 
 }
 
