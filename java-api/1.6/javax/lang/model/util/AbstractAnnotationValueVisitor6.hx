@@ -8,6 +8,7 @@ import javax.lang.model.element.AnnotationValue;
 import javax.lang.model.element.AnnotationValueVisitor;
 import javax.lang.model.element.VariableElement;
 import javax.lang.model.type.TypeMirror;
+import java.util.List;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/util/AbstractAnnotationValueVisitor6.html */
 @:native("javax.lang.model.util.AbstractAnnotationValueVisitor6")
@@ -28,7 +29,7 @@ extern class AbstractAnnotationValueVisitor6<R : (Dynamic), P : (Dynamic)> exten
 	/*@@@ modifiers=1025 */ public function visitAnnotation(a:AnnotationMirror, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List, java.lang.Object) */
-	/*@@@ modifiers=1025 */ public function visitArray(vals:List<AnnotationValue>, p:P):R;
+	/*@@@ modifiers=1025 */ public function visitArray(vals:java.util.List<AnnotationValue>, p:P):R;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean, java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function visitBoolean(b:Bool, p:P):R;

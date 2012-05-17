@@ -24,16 +24,16 @@ extern class SpinnerDateModel extends AbstractSpinnerModel, implements Serializa
 	/*@@@ modifiers=1 */ public function getEnd():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerDateModel.html#getNextValue() */
-	/*@@@ modifiers=1 */ public function getNextValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getNextValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerDateModel.html#getPreviousValue() */
-	/*@@@ modifiers=1 */ public function getPreviousValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getPreviousValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerDateModel.html#getStart() */
 	/*@@@ modifiers=1 */ public function getStart():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerDateModel.html#getValue() */
-	/*@@@ modifiers=1 */ public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerDateModel.html#setCalendarField(int) */
 	/*@@@ modifiers=1 */ public function setCalendarField(calendarField:Int):Void;
@@ -45,7 +45,7 @@ extern class SpinnerDateModel extends AbstractSpinnerModel, implements Serializa
 	/*@@@ modifiers=1 */ public function setStart(start:Comparable<Dynamic>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerDateModel.html#setValue(java.lang.Object) */
-	/*@@@ modifiers=1 */ public function setValue(value:Dynamic):Void;
+	/*@@@ modifiers=1 */ override public function setValue(value:Dynamic):Void;
 
 }
 

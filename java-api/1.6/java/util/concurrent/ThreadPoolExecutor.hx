@@ -33,13 +33,13 @@ extern class ThreadPoolExecutor extends AbstractExecutorService
 	/*@@@ modifiers=1 */ public function allowsCoreThreadTimeOut():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#awaitTermination(long, java.util.concurrent.TimeUnit) */
-	/*@@@ modifiers=1 */ public function awaitTermination(timeout:haxe.Int64, unit:TimeUnit):Bool;
+	/*@@@ modifiers=1 */ override public function awaitTermination(timeout:haxe.Int64, unit:TimeUnit):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#beforeExecute(java.lang.Thread, java.lang.Runnable) */
 	/*@@@ modifiers=4 */ private function beforeExecute(t:Thread, r:Runnable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#execute(java.lang.Runnable) */
-	/*@@@ modifiers=1 */ public function execute(command:Runnable):Void;
+	/*@@@ modifiers=1 */ override public function execute(command:Runnable):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#finalize() */
 	/*@@@ modifiers=4 */ override public function finalize():Void;
@@ -78,10 +78,10 @@ extern class ThreadPoolExecutor extends AbstractExecutorService
 	/*@@@ modifiers=1 */ public function getThreadFactory():ThreadFactory;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#isShutdown() */
-	/*@@@ modifiers=1 */ public function isShutdown():Bool;
+	/*@@@ modifiers=1 */ override public function isShutdown():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#isTerminated() */
-	/*@@@ modifiers=1 */ public function isTerminated():Bool;
+	/*@@@ modifiers=1 */ override public function isTerminated():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#isTerminating() */
 	/*@@@ modifiers=1 */ public function isTerminating():Bool;
@@ -114,10 +114,10 @@ extern class ThreadPoolExecutor extends AbstractExecutorService
 	/*@@@ modifiers=1 */ public function setThreadFactory(threadFactory:ThreadFactory):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#shutdown() */
-	/*@@@ modifiers=1 */ public function shutdown():Void;
+	/*@@@ modifiers=1 */ override public function shutdown():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#shutdownNow() */
-	/*@@@ modifiers=1 */ public function shutdownNow():List<Runnable>;
+	/*@@@ modifiers=1 */ override public function shutdownNow():List<Runnable>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ThreadPoolExecutor.html#terminated() */
 	/*@@@ modifiers=4 */ private function terminated():Void;

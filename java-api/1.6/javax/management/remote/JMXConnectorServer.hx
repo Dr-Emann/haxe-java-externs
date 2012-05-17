@@ -58,5 +58,19 @@ extern class JMXConnectorServer extends NotificationBroadcasterSupport, implemen
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServer.html#toJMXConnector(java.util.Map) */
 	/*@@@ modifiers=1 */ public function toJMXConnector(env:Map<String, Dynamic>):JMXConnector;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXAddressable.html#getAddress() */
+	/*@@@ modifiers=1025 */ public function getAddress():JMXServiceURL;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#getAttributes() */
+	/*@@@ modifiers=1025 */ public function getAttributes():Map<String, Dynamic>;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#isActive() */
+	/*@@@ modifiers=1025 */ public function isActive():Bool;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#start() */
+	/*@@@ modifiers=1025 */ public function start():Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/JMXConnectorServerMBean.html#stop() */
+	/*@@@ modifiers=1025 */ public function stop():Void;
 }
 

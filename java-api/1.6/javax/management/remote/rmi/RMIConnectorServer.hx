@@ -29,22 +29,22 @@ extern class RMIConnectorServer extends JMXConnectorServer
 	/*@@@ modifiers=4 */ override private function connectionOpened(connectionId:String, message:String, userData:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#getAddress() */
-	/*@@@ modifiers=1 */ public function getAddress():JMXServiceURL;
+	/*@@@ modifiers=1 */ override public function getAddress():JMXServiceURL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#getAttributes() */
-	/*@@@ modifiers=1 */ public function getAttributes():Map<String, Dynamic>;
+	/*@@@ modifiers=1 */ override public function getAttributes():Map<String, Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#isActive() */
-	/*@@@ modifiers=33 */ public function isActive():Bool;
+	/*@@@ modifiers=33 */ override public function isActive():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder) */
 	/*@@@ modifiers=33 */ override public function setMBeanServerForwarder(mbsf:MBeanServerForwarder):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#start() */
-	/*@@@ modifiers=33 */ public function start():Void;
+	/*@@@ modifiers=33 */ override public function start():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#stop() */
-	/*@@@ modifiers=1 */ public function stop():Void;
+	/*@@@ modifiers=1 */ override public function stop():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#toJMXConnector(java.util.Map) */
 	/*@@@ modifiers=1 */ override public function toJMXConnector(env:Map<String, Dynamic>):JMXConnector;

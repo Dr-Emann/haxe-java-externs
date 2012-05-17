@@ -12,7 +12,7 @@ extern class StyledEditorKit_ForegroundAction extends StyledEditorKit_StyledText
 	/*@@@ modifiers=1 */ public function new(nm:String, fg:Color):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.ForegroundAction.html#actionPerformed(java.awt.event.ActionEvent) */
-	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ override public function actionPerformed(e:ActionEvent):Void;
 
 }
 

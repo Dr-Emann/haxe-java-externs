@@ -11,7 +11,7 @@ extern class StyledEditorKit_FontSizeAction extends StyledEditorKit_StyledTextAc
 	/*@@@ modifiers=1 */ public function new(nm:String, size:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.FontSizeAction.html#actionPerformed(java.awt.event.ActionEvent) */
-	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ override public function actionPerformed(e:ActionEvent):Void;
 
 }
 

@@ -51,10 +51,10 @@ extern class StringWriter extends Writer
 	/*@@@ modifiers=1 */ @:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(java.lang.String, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (str:String, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(int) */
-	/*@@@ modifiers=1 */ @:overload(function (c:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(java.lang.String) */
-	/*@@@ modifiers=1 */ override public function write(str:String):Void;
+	/*@@@ modifiers=1 */ @:overload(function (str:String):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringWriter.html#write(int) */
+	/*@@@ modifiers=1 */ override public function write(c:Int):Void;
 
 }
 

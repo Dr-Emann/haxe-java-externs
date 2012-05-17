@@ -45,15 +45,15 @@ extern class PriorityBlockingQueue<E : (Dynamic)> extends AbstractQueue<E>, impl
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/PriorityBlockingQueue.html#offer(java.lang.Object, long, java.util.concurrent.TimeUnit) */
 	/*@@@ modifiers=1 */ @:overload(function (e:E, timeout:haxe.Int64, unit:TimeUnit):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/PriorityBlockingQueue.html#offer(java.lang.Object) */
-	/*@@@ modifiers=1 */ public function offer(e:E):Bool;
+	/*@@@ modifiers=1 */ override public function offer(e:E):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/PriorityBlockingQueue.html#peek() */
-	/*@@@ modifiers=1 */ public function peek():E;
+	/*@@@ modifiers=1 */ override public function peek():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/PriorityBlockingQueue.html#poll(long, java.util.concurrent.TimeUnit) */
 	/*@@@ modifiers=1 */ @:overload(function (timeout:haxe.Int64, unit:TimeUnit):E {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/PriorityBlockingQueue.html#poll() */
-	/*@@@ modifiers=1 */ public function poll():E;
+	/*@@@ modifiers=1 */ override public function poll():E;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/PriorityBlockingQueue.html#put(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function put(e:E):Void;

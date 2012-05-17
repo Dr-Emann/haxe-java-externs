@@ -25,19 +25,19 @@ extern class SpinnerNumberModel extends AbstractSpinnerModel, implements Seriali
 	/*@@@ modifiers=1 */ public function getMinimum():Comparable<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#getNextValue() */
-	/*@@@ modifiers=1 */ public function getNextValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getNextValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#getNumber() */
 	/*@@@ modifiers=1 */ public function getNumber():Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#getPreviousValue() */
-	/*@@@ modifiers=1 */ public function getPreviousValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getPreviousValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#getStepSize() */
 	/*@@@ modifiers=1 */ public function getStepSize():Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#getValue() */
-	/*@@@ modifiers=1 */ public function getValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#setMaximum(java.lang.Comparable) */
 	/*@@@ modifiers=1 */ public function setMaximum(maximum:Comparable<Dynamic>):Void;
@@ -49,7 +49,7 @@ extern class SpinnerNumberModel extends AbstractSpinnerModel, implements Seriali
 	/*@@@ modifiers=1 */ public function setStepSize(stepSize:Number):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/SpinnerNumberModel.html#setValue(java.lang.Object) */
-	/*@@@ modifiers=1 */ public function setValue(value:Dynamic):Void;
+	/*@@@ modifiers=1 */ override public function setValue(value:Dynamic):Void;
 
 }
 

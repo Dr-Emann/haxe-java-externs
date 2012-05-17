@@ -31,7 +31,7 @@ extern class MidiMessage extends Object, implements Cloneable
 	/*@@@ modifiers=1 */ public function getStatus():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#setMessage(byte[], int) */
-	/*@@@ modifiers=4 */ private function setMessage(data:NativeArray<Int8>, length:Int):Void;
+	/*@@@ modifiers=4 */ public function setMessage(data:NativeArray<Int8>, length:Int):Void;
 
 }
 

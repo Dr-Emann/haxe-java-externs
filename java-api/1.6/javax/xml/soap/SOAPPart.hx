@@ -8,10 +8,23 @@ import javax.xml.soap.Node;
 import javax.xml.soap.SOAPElement;
 import javax.xml.soap.SOAPEnvelope;
 import javax.xml.transform.Source;
+import org.w3c.dom.Attr;
+import org.w3c.dom.CDATASection;
+import org.w3c.dom.Comment;
 import org.w3c.dom.Document;
+import org.w3c.dom.DocumentFragment;
+import org.w3c.dom.DocumentType;
+import org.w3c.dom.DOMConfiguration;
+import org.w3c.dom.DOMImplementation;
+import org.w3c.dom.Element;
+import org.w3c.dom.EntityReference;
 import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.w3c.dom.ProcessingInstruction;
+import org.w3c.dom.Text;
 import org.w3c.dom.UserDataHandler;
+
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPPart.html */
 @:native("javax.xml.soap.SOAPPart")
@@ -66,13 +79,13 @@ extern class SOAPPart extends Object, implements Document, implements Node
 	/*@@@ modifiers=1025 */ public function setMimeHeader(name:String, value:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#appendChild(org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function appendChild(newChild:Node):Node;
+	/*@@@ modifiers=1025 */ public function appendChild(newChild:org.w3c.dom.Node):org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#cloneNode(boolean) */
-	/*@@@ modifiers=1025 */ public function cloneNode(deep:Bool):Node;
+	/*@@@ modifiers=1025 */ public function cloneNode(deep:Bool):org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#compareDocumentPosition(org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function compareDocumentPosition(other:Node):Int16;
+	/*@@@ modifiers=1025 */ public function compareDocumentPosition(other:org.w3c.dom.Node):Int16;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getAttributes() */
 	/*@@@ modifiers=1025 */ public function getAttributes():NamedNodeMap;
@@ -87,10 +100,10 @@ extern class SOAPPart extends Object, implements Document, implements Node
 	/*@@@ modifiers=1025 */ public function getFeature(feature:String, version:String):Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getFirstChild() */
-	/*@@@ modifiers=1025 */ public function getFirstChild():Node;
+	/*@@@ modifiers=1025 */ public function getFirstChild():org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getLastChild() */
-	/*@@@ modifiers=1025 */ public function getLastChild():Node;
+	/*@@@ modifiers=1025 */ public function getLastChild():org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getLocalName() */
 	/*@@@ modifiers=1025 */ public function getLocalName():String;
@@ -99,7 +112,7 @@ extern class SOAPPart extends Object, implements Document, implements Node
 	/*@@@ modifiers=1025 */ public function getNamespaceURI():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getNextSibling() */
-	/*@@@ modifiers=1025 */ public function getNextSibling():Node;
+	/*@@@ modifiers=1025 */ public function getNextSibling():org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getNodeName() */
 	/*@@@ modifiers=1025 */ public function getNodeName():String;
@@ -114,13 +127,13 @@ extern class SOAPPart extends Object, implements Document, implements Node
 	/*@@@ modifiers=1025 */ public function getOwnerDocument():Document;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getParentNode() */
-	/*@@@ modifiers=1025 */ public function getParentNode():Node;
+	/*@@@ modifiers=1025 */ public function getParentNode():org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getPrefix() */
 	/*@@@ modifiers=1025 */ public function getPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getPreviousSibling() */
-	/*@@@ modifiers=1025 */ public function getPreviousSibling():Node;
+	/*@@@ modifiers=1025 */ public function getPreviousSibling():org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getTextContent() */
 	/*@@@ modifiers=1025 */ public function getTextContent():String;
@@ -135,16 +148,16 @@ extern class SOAPPart extends Object, implements Document, implements Node
 	/*@@@ modifiers=1025 */ public function hasChildNodes():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#insertBefore(org.w3c.dom.Node, org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function insertBefore(newChild:Node, refChild:Node):Node;
+	/*@@@ modifiers=1025 */ public function insertBefore(newChild:org.w3c.dom.Node, refChild:org.w3c.dom.Node):org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String) */
 	/*@@@ modifiers=1025 */ public function isDefaultNamespace(namespaceURI:String):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#isEqualNode(org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function isEqualNode(arg:Node):Bool;
+	/*@@@ modifiers=1025 */ public function isEqualNode(arg:org.w3c.dom.Node):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#isSameNode(org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function isSameNode(other:Node):Bool;
+	/*@@@ modifiers=1025 */ public function isSameNode(other:org.w3c.dom.Node):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#isSupported(java.lang.String, java.lang.String) */
 	/*@@@ modifiers=1025 */ public function isSupported(feature:String, version:String):Bool;
@@ -159,10 +172,10 @@ extern class SOAPPart extends Object, implements Document, implements Node
 	/*@@@ modifiers=1025 */ public function normalize():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#removeChild(org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function removeChild(oldChild:Node):Node;
+	/*@@@ modifiers=1025 */ public function removeChild(oldChild:org.w3c.dom.Node):org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#replaceChild(org.w3c.dom.Node, org.w3c.dom.Node) */
-	/*@@@ modifiers=1025 */ public function replaceChild(newChild:Node, oldChild:Node):Node;
+	/*@@@ modifiers=1025 */ public function replaceChild(newChild:org.w3c.dom.Node, oldChild:org.w3c.dom.Node):org.w3c.dom.Node;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#setNodeValue(java.lang.String) */
 	/*@@@ modifiers=1025 */ public function setNodeValue(nodeValue:String):Void;
@@ -193,5 +206,98 @@ extern class SOAPPart extends Object, implements Document, implements Node
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/Node.html#setValue(java.lang.String) */
 	/*@@@ modifiers=1025 */ public function setValue(value:String):Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node) */
+	/*@@@ modifiers=1025 */ public function adoptNode(source:org.w3c.dom.Node):org.w3c.dom.Node;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createAttribute(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createAttribute(name:String):Attr;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createAttributeNS(java.lang.String, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createAttributeNS(namespaceURI:String, qualifiedName:String):Attr;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createCDATASection(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createCDATASection(data:String):CDATASection;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createComment(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createComment(data:String):Comment;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createDocumentFragment() */
+	/*@@@ modifiers=1025 */ public function createDocumentFragment():DocumentFragment;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createElement(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createElement(tagName:String):Element;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createElementNS(java.lang.String, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createElementNS(namespaceURI:String, qualifiedName:String):Element;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createEntityReference(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createEntityReference(name:String):EntityReference;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#createTextNode(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function createTextNode(data:String):Text;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getDoctype() */
+	/*@@@ modifiers=1025 */ public function getDoctype():DocumentType;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getDocumentElement() */
+	/*@@@ modifiers=1025 */ public function getDocumentElement():Element;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getDocumentURI() */
+	/*@@@ modifiers=1025 */ public function getDocumentURI():String;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getDomConfig() */
+	/*@@@ modifiers=1025 */ public function getDomConfig():DOMConfiguration;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getElementById(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function getElementById(elementId:String):Element;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function getElementsByTagName(tagname:String):NodeList;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function getElementsByTagNameNS(namespaceURI:String, localName:String):NodeList;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getImplementation() */
+	/*@@@ modifiers=1025 */ public function getImplementation():DOMImplementation;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getInputEncoding() */
+	/*@@@ modifiers=1025 */ public function getInputEncoding():String;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getStrictErrorChecking() */
+	/*@@@ modifiers=1025 */ public function getStrictErrorChecking():Bool;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getXmlEncoding() */
+	/*@@@ modifiers=1025 */ public function getXmlEncoding():String;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getXmlStandalone() */
+	/*@@@ modifiers=1025 */ public function getXmlStandalone():Bool;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#getXmlVersion() */
+	/*@@@ modifiers=1025 */ public function getXmlVersion():String;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#importNode(org.w3c.dom.Node, boolean) */
+	/*@@@ modifiers=1025 */ public function importNode(importedNode:org.w3c.dom.Node, deep:Bool):org.w3c.dom.Node;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#normalizeDocument() */
+	/*@@@ modifiers=1025 */ public function normalizeDocument():Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node, java.lang.String, java.lang.String) */
+	/*@@@ modifiers=1025 */ public function renameNode(n:org.w3c.dom.Node, namespaceURI:String, qualifiedName:String):org.w3c.dom.Node;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#setDocumentURI(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function setDocumentURI(documentURI:String):Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#setStrictErrorChecking(boolean) */
+	/*@@@ modifiers=1025 */ public function setStrictErrorChecking(strictErrorChecking:Bool):Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#setXmlStandalone(boolean) */
+	/*@@@ modifiers=1025 */ public function setXmlStandalone(xmlStandalone:Bool):Void;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html#setXmlVersion(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function setXmlVersion(xmlVersion:String):Void;
 }
 

@@ -36,7 +36,7 @@ extern class Encoder extends Object
 	/*@@@ modifiers=1 */ public function writeExpression(oldExp:Expression):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/Encoder.html#writeObject(java.lang.Object) */
-	/*@@@ modifiers=4 */ private function writeObject(o:Dynamic):Void;
+	/*@@@ modifiers=4 */ public function writeObject(o:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/beans/Encoder.html#writeStatement(java.beans.Statement) */
 	/*@@@ modifiers=1 */ public function writeStatement(oldStm:Statement):Void;

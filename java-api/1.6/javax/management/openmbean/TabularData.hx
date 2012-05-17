@@ -17,16 +17,16 @@ extern interface TabularData
 	/*@@@ modifiers=1025 */ public function clear():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#containsKey(java.lang.Object[]) */
-	/*@@@ modifiers=1025 */ public function containsKey(key:NativeArray<Dynamic>):Bool;
+	/*@@@ modifiers=1025 */ //TODO: public function containsKey(key:NativeArray<Dynamic>):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#containsValue(javax.management.openmbean.CompositeData) */
-	/*@@@ modifiers=1025 */ public function containsValue(value:CompositeData):Bool;
+	/*@@@ modifiers=1025 */ //TODO: public function containsValue(value:CompositeData):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#equals(java.lang.Object) */
 	/*@@@ modifiers=1025 */ public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#get(java.lang.Object[]) */
-	/*@@@ modifiers=1025 */ public function get(key:NativeArray<Dynamic>):CompositeData;
+	/*@@@ modifiers=1025 */ //TODO: public function get(key:NativeArray<Dynamic>):CompositeData;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#getTabularType() */
 	/*@@@ modifiers=1025 */ public function getTabularType():TabularType;
@@ -41,13 +41,13 @@ extern interface TabularData
 	/*@@@ modifiers=1025 */ public function keySet():Set<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#put(javax.management.openmbean.CompositeData) */
-	/*@@@ modifiers=1025 */ public function put(value:CompositeData):Void;
+	/*@@@ modifiers=1025 */ //TODO: public function put(value:CompositeData):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#putAll(javax.management.openmbean.CompositeData[]) */
-	/*@@@ modifiers=1025 */ public function putAll(values:NativeArray<CompositeData>):Void;
+	/*@@@ modifiers=1025 */ //TODO: public function putAll(values:NativeArray<CompositeData>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#remove(java.lang.Object[]) */
-	/*@@@ modifiers=1025 */ public function remove(key:NativeArray<Dynamic>):CompositeData;
+	/*@@@ modifiers=1025 */ //TODO: public function remove(key:NativeArray<Dynamic>):CompositeData;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/openmbean/TabularData.html#size() */
 	/*@@@ modifiers=1025 */ public function size():Int;

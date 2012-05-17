@@ -16,10 +16,10 @@ extern class ShapeGraphicAttribute extends GraphicAttribute
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ShapeGraphicAttribute.html#draw(java.awt.Graphics2D, float, float) */
 	/*@@@ modifiers=1 */ override public function draw(graphics:Graphics2D, x:Single, y:Single):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ShapeGraphicAttribute.html#equals(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (rhs:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ShapeGraphicAttribute.html#equals(java.awt.font.ShapeGraphicAttribute) */
-	/*@@@ modifiers=1 */ override public function equals(rhs:ShapeGraphicAttribute):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (rhs:ShapeGraphicAttribute):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ShapeGraphicAttribute.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function equals(rhs:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ShapeGraphicAttribute.html#getAdvance() */
 	/*@@@ modifiers=1 */ override public function getAdvance():Single;

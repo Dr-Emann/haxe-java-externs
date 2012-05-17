@@ -66,7 +66,9 @@ extern class LinkedList<E : (Dynamic)> extends AbstractSequentialList<E>, implem
 	/*@@@ modifiers=1 */ override public function lastIndexOf(o:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#listIterator(int) */
-	/*@@@ modifiers=1 */ override public function listIterator(index:Int):ListIterator<E>;
+	/*@@@ modifiers=1 */ @:overload(function (index:Int):ListIterator<E> {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/AbstractList.html#listIterator() */
+	/*@@@ modifiers=1 */ override public function listIterator():ListIterator<E>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#offer(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function offer(e:E):Bool;
@@ -103,10 +105,10 @@ extern class LinkedList<E : (Dynamic)> extends AbstractSequentialList<E>, implem
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):E {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (o:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove() */
-	/*@@@ modifiers=1 */ override public function remove():E;
+	/*@@@ modifiers=1 */ @:overload(function ():E {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#remove(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function remove(o:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html#removeFirst() */
 	/*@@@ modifiers=1 */ public function removeFirst():E;

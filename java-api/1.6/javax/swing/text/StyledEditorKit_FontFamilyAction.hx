@@ -11,7 +11,7 @@ extern class StyledEditorKit_FontFamilyAction extends StyledEditorKit_StyledText
 	/*@@@ modifiers=1 */ public function new(nm:String, family:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.FontFamilyAction.html#actionPerformed(java.awt.event.ActionEvent) */
-	/*@@@ modifiers=1 */ public function actionPerformed(e:ActionEvent):Void;
+	/*@@@ modifiers=1 */ override public function actionPerformed(e:ActionEvent):Void;
 
 }
 

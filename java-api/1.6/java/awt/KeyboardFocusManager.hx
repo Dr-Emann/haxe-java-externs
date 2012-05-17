@@ -54,11 +54,11 @@ extern class KeyboardFocusManager extends Object, implements KeyEventDispatcher,
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#dispatchKeyEvent(java.awt.event.KeyEvent) */
 	/*@@@ modifiers=1025 */ public function dispatchKeyEvent(e:KeyEvent):Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#downFocusCycle(java.awt.Container) */
-	/*@@@ modifiers=1025 */ @:overload(function (aContainer:Container):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#downFocusCycle() */
-	/*@@@ modifiers=17 */ public function downFocusCycle():Void;
-
+	/*@@@ modifiers=17 */ @:overload(function ():Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#downFocusCycle(java.awt.Container) */
+	/*@@@ modifiers=1025 */ public function downFocusCycle(aContainer:Container):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#enqueueKeyEvents(long, java.awt.Component) */
 	/*@@@ modifiers=1028 */ private function enqueueKeyEvents(after:haxe.Int64, untilFocused:Component):Void;
 
@@ -68,15 +68,15 @@ extern class KeyboardFocusManager extends Object, implements KeyEventDispatcher,
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#fireVetoableChange(java.lang.String, java.lang.Object, java.lang.Object) */
 	/*@@@ modifiers=4 */ private function fireVetoableChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#focusNextComponent(java.awt.Component) */
-	/*@@@ modifiers=1025 */ @:overload(function (aComponent:Component):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#focusNextComponent() */
-	/*@@@ modifiers=17 */ public function focusNextComponent():Void;
+	/*@@@ modifiers=17 */ @:overload(function ():Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#focusNextComponent(java.awt.Component) */
+	/*@@@ modifiers=1025 */ public function focusNextComponent(aComponent:Component):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#focusPreviousComponent(java.awt.Component) */
-	/*@@@ modifiers=1025 */ @:overload(function (aComponent:Component):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#focusPreviousComponent() */
-	/*@@@ modifiers=17 */ public function focusPreviousComponent():Void;
+	/*@@@ modifiers=17 */ @:overload(function ():Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#focusPreviousComponent(java.awt.Component) */
+	/*@@@ modifiers=1025 */ public function focusPreviousComponent(aComponent:Component):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#getActiveWindow() */
 	/*@@@ modifiers=1 */ public function getActiveWindow():Window;
@@ -182,10 +182,9 @@ extern class KeyboardFocusManager extends Object, implements KeyEventDispatcher,
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#setGlobalPermanentFocusOwner(java.awt.Component) */
 	/*@@@ modifiers=4 */ private function setGlobalPermanentFocusOwner(permanentFocusOwner:Component):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#upFocusCycle(java.awt.Component) */
-	/*@@@ modifiers=1025 */ @:overload(function (aComponent:Component):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#upFocusCycle() */
-	/*@@@ modifiers=17 */ public function upFocusCycle():Void;
-
+	/*@@@ modifiers=17 */ @:overload(function ():Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/KeyboardFocusManager.html#upFocusCycle(java.awt.Component) */
+	/*@@@ modifiers=1025 */ public function upFocusCycle(aComponent:Component):Void ;
 }
 

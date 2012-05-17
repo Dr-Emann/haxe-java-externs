@@ -71,7 +71,7 @@ extern class StringBuilder extends AbstractStringBuilder, implements Serializabl
 	/*@@@ modifiers=4161 */ override public function delete(start:Int, end:Int):AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#deleteCharAt(int) */
-	/*@@@ modifiers=1 */ override public function deleteCharAt(index:Int):StringBuilder;
+	/*@@@ modifiers=1 */ override public function deleteCharAt(index:Int):AbstractStringBuilder;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html#ensureCapacity(int) */
 	/*@@@ modifiers=4161 */ override public function ensureCapacity(p0:Int):Void;

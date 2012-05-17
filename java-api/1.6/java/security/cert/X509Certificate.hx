@@ -9,6 +9,7 @@ import java.security.cert.X509Extension;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import javax.security.auth.x500.X500Principal;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html */
@@ -83,5 +84,16 @@ extern class X509Certificate extends Certificate, implements X509Extension
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html#getVersion() */
 	/*@@@ modifiers=1025 */ public function getVersion():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Extension.html#getCriticalExtensionOIDs() */
+	/*@@@ modifiers=1025 */ public function getCriticalExtensionOIDs():Set<String>;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function getExtensionValue(oid:String):NativeArray<Int8>;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs() */
+	/*@@@ modifiers=1025 */ public function getNonCriticalExtensionOIDs():Set<String>;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension() */
+	/*@@@ modifiers=1025 */ public function hasUnsupportedCriticalExtension():Bool;
 }
 

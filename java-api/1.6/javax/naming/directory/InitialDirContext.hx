@@ -25,12 +25,16 @@ extern class InitialDirContext extends InitialContext, implements DirContext
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#bind(java.lang.String, java.lang.Object, javax.naming.directory.Attributes) */
 	/*@@@ modifiers=1 */ @:overload(function (name:String, obj:Dynamic, attrs:Attributes):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#bind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes) */
-	/*@@@ modifiers=1 */ override public function bind(name:Name, obj:Dynamic, attrs:Attributes):Void;
+	/*@@@ modifiers=1 */ @:overload(function (name:Name, obj:Dynamic, attrs:Attributes):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/InitialContext.html#bind(javax.naming.Name, java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function bind(name:Name, obj:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#createSubcontext(java.lang.String, javax.naming.directory.Attributes) */
 	/*@@@ modifiers=1 */ @:overload(function (name:String, attrs:Attributes):DirContext {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#createSubcontext(javax.naming.Name, javax.naming.directory.Attributes) */
-	/*@@@ modifiers=1 */ override public function createSubcontext(name:Name, attrs:Attributes):DirContext;
+	/*@@@ modifiers=1 */ @:overload(function (name:Name, attrs:Attributes):DirContext {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/InitialContext.html#createSubcontext(javax.naming.Name) */
+	/*@@@ modifiers=1 */ override public function createSubcontext(name:Name):Context;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#getAttributes(java.lang.String, java.lang.String[]) */
 	/*@@@ modifiers=1 */ @:overload(function (name:String, attrIds:NativeArray<String>):Attributes {})
@@ -63,7 +67,9 @@ extern class InitialDirContext extends InitialContext, implements DirContext
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#rebind(java.lang.String, java.lang.Object, javax.naming.directory.Attributes) */
 	/*@@@ modifiers=1 */ @:overload(function (name:String, obj:Dynamic, attrs:Attributes):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#rebind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes) */
-	/*@@@ modifiers=1 */ override public function rebind(name:Name, obj:Dynamic, attrs:Attributes):Void;
+	/*@@@ modifiers=1 */ @:overload(function (name:Name, obj:Dynamic, attrs:Attributes):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/InitialContext.html#rebind(javax.naming.Name, java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function rebind(name:Name, obj:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/InitialDirContext.html#search(java.lang.String, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls) */
 	/*@@@ modifiers=1 */ @:overload(function (name:String, filterExpr:String, filterArgs:NativeArray<Dynamic>, cons:SearchControls):NamingEnumeration<SearchResult> {})

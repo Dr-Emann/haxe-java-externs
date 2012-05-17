@@ -68,7 +68,9 @@ extern interface SOAPElement implements Node, implements Element
 	/*@@@ modifiers=1025 */ public function getNamespacePrefixes():java.util.Iterator<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElement.html#getNamespaceURI(java.lang.String) */
-	/*@@@ modifiers=1025 */ public function getNamespaceURI(prefix:String):String;
+	/*@@@ modifiers=1025 */ @:overload(function (prefix:String):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getNamespaceURI() */
+	/*@@@ modifiers=1025 */ public function getNamespaceURI():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElement.html#getVisibleNamespacePrefixes() */
 	/*@@@ modifiers=1025 */ public function getVisibleNamespacePrefixes():java.util.Iterator<Dynamic>;
@@ -76,7 +78,9 @@ extern interface SOAPElement implements Node, implements Element
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElement.html#removeAttribute(javax.xml.namespace.QName) */
 	/*@@@ modifiers=1025 */ @:overload(function (qname:QName):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElement.html#removeAttribute(javax.xml.soap.Name) */
-	/*@@@ modifiers=1025 */ public function removeAttribute(name:Name):Bool;
+	/*@@@ modifiers=1025 */ @:overload(function (name:Name):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html#removeAttribute(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function removeAttribute(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPElement.html#removeContents() */
 	/*@@@ modifiers=1025 */ public function removeContents():Void;

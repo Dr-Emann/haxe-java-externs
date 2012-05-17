@@ -18,12 +18,12 @@ extern class StringMonitor extends Monitor, implements StringMonitorMBean
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/StringMonitor.html#getDerivedGauge(javax.management.ObjectName) */
 	/*@@@ modifiers=4161 */ @:overload(function (object:ObjectName):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/StringMonitor.html#getDerivedGauge() */
-	/*@@@ modifiers=33 */ override public function getDerivedGauge():String;
+	/*@@@ modifiers=33 */ public function getDerivedGauge():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/StringMonitor.html#getDerivedGaugeTimeStamp(javax.management.ObjectName) */
 	/*@@@ modifiers=33 */ @:overload(function (object:ObjectName):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/StringMonitor.html#getDerivedGaugeTimeStamp() */
-	/*@@@ modifiers=33 */ override public function getDerivedGaugeTimeStamp():haxe.Int64;
+	/*@@@ modifiers=33 */ public function getDerivedGaugeTimeStamp():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/StringMonitor.html#getNotificationInfo() */
 	/*@@@ modifiers=1 */ override public function getNotificationInfo():NativeArray<MBeanNotificationInfo>;

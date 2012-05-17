@@ -2,6 +2,7 @@ package javax.xml.crypto.dsig;
 
 import java.lang.Object;
 import java.security.Provider;
+import java.security.spec.AlgorithmParameterSpec;
 import javax.xml.crypto.XMLCryptoContext;
 import javax.xml.crypto.XMLStructure;
 import javax.xml.crypto.dsig.Transform;
@@ -38,5 +39,15 @@ extern class TransformService extends Object, implements Transform
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/TransformService.html#marshalParams(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) */
 	/*@@@ modifiers=1025 */ public function marshalParams(parent:XMLStructure, context:XMLCryptoContext):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/Transform.html#getParameterSpec() */
+	/*@@@ modifiers=1025 */ public function getParameterSpec():AlgorithmParameterSpec;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext, java.io.OutputStream) */
+	/*@@@ modifiers=1025 */ @:overload(function (data:Data, context:XMLCryptoContext, os:OutputStream):Data {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext) */
+	/*@@@ modifiers=1025 */ public function transform(data:Data, context:XMLCryptoContext):Data;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String) */
+	/*@@@ modifiers=1025 */ public function isFeatureSupported(feature:String):Bool;
 }
 

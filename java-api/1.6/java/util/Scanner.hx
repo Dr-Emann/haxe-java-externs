@@ -113,10 +113,8 @@ extern class Scanner extends Object, implements java.util.Iterator<String>
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html#next(java.util.regex.Pattern) */
 	/*@@@ modifiers=1 */ @:overload(function (pattern:Pattern):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html#next() */
-	/*@@@ modifiers=1 */ @:overload(function ():String {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html#next() */
-	/*@@@ modifiers=4161 */ public function next():Dynamic;
-
+	/*@@@ modifiers=1 */ public function next():String;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html#nextBigDecimal() */
 	/*@@@ modifiers=1 */ public function nextBigDecimal():BigDecimal;
 

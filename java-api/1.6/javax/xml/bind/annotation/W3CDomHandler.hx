@@ -19,15 +19,11 @@ extern class W3CDomHandler extends Object, implements DomHandler<Element, DOMRes
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#createUnmarshaller(javax.xml.bind.ValidationEventHandler) */
-	/*@@@ modifiers=1 */ @:overload(function (errorHandler:ValidationEventHandler):DOMResult {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#createUnmarshaller(javax.xml.bind.ValidationEventHandler) */
-	/*@@@ modifiers=4161 */ public function createUnmarshaller(errorHandler:ValidationEventHandler):Result;
+	/*@@@ modifiers=1 */ public function createUnmarshaller(errorHandler:ValidationEventHandler):DOMResult;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#getBuilder() */
 	/*@@@ modifiers=1 */ public function getBuilder():DocumentBuilder;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#getElement(javax.xml.transform.Result) */
-	/*@@@ modifiers=4161 */ @:overload(function (p0:Result):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#getElement(javax.xml.transform.dom.DOMResult) */
 	/*@@@ modifiers=1 */ public function getElement(r:DOMResult):Element;
 
