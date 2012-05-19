@@ -1,5 +1,6 @@
 package javax.swing;
 
+import java.awt.event.ActionEvent;
 import java.NativeArray;
 import java.beans.PropertyChangeListener;
 import java.io.Serializable;
@@ -56,5 +57,7 @@ extern class AbstractAction extends Object, implements Action, implements Clonea
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractAction.html#setEnabled(boolean) */
 	/*@@@ modifiers=1 */ public function setEnabled(newValue:Bool):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent) */
+	/*@@@ modifiers=1025 */ public function actionPerformed(e:ActionEvent):Void;
 }
 

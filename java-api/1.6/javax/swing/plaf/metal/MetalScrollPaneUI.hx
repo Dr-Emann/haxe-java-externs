@@ -26,7 +26,9 @@ extern class MetalScrollPaneUI extends BasicScrollPaneUI
 	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners(javax.swing.JScrollPane) */
-	/*@@@ modifiers=1 */ override public function uninstallListeners(scrollPane:JScrollPane):Void;
+	/*@@@ modifiers=1 */ @:overload(function (scrollPane:JScrollPane):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallListeners(javax.swing.JComponent) */
+	/*@@@ modifiers=4 */ override public function uninstallListeners(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallUI(javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;

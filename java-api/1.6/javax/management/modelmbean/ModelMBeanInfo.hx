@@ -33,7 +33,7 @@ extern interface ModelMBeanInfo
 	/*@@@ modifiers=1025 */ public function getDescription():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptor(java.lang.String, java.lang.String) */
-	/*@@@ modifiers=1025 */ public function getDescriptor(inDescriptorName:String, inDescriptorType:String):Descriptor;
+	/*@@@ modifiers=1025 */ //TODO: public function getDescriptor(inDescriptorName:String, inDescriptorType:String):Descriptor;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptors(java.lang.String) */
 	/*@@@ modifiers=1025 */ public function getDescriptors(inDescriptorType:String):NativeArray<Descriptor>;

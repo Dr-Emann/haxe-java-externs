@@ -4,6 +4,7 @@ import java.NativeArray;
 import java.StdTypes;
 import java.io.PipedWriter;
 import java.io.Reader;
+import java.nio.CharBuffer;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html */
 @:native("java.io.PipedReader")
@@ -27,7 +28,9 @@ extern class PipedReader extends Reader
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#read(char[], int, int) */
 	/*@@@ modifiers=33 */ @:overload(function (cbuf:NativeArray<Char16>, off:Int, len:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#read() */
-	/*@@@ modifiers=33 */ override public function read():Int;
+	/*@@@ modifiers=33 */ @:overload(function ():Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(java.nio.CharBuffer) */
+	/*@@@ modifiers=1 */ override public function read(target:CharBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/PipedReader.html#ready() */
 	/*@@@ modifiers=33 */ override public function ready():Bool;

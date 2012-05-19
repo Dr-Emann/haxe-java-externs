@@ -101,7 +101,7 @@ extern class AbstractWriter extends Object
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractWriter.html#write(java.lang.String) */
 	/*@@@ modifiers=4 */ @:overload(function (content:String):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractWriter.html#write() */
-	/*@@@ modifiers=1028 */ private function write():Void;
+	/*@@@ modifiers=1028 */ public function write():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/AbstractWriter.html#writeAttributes(javax.swing.text.AttributeSet) */
 	/*@@@ modifiers=4 */ private function writeAttributes(attr:AttributeSet):Void;

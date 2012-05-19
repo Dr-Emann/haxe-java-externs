@@ -101,7 +101,9 @@ extern class MetalTabbedPaneUI extends BasicTabbedPaneUI
 	/*@@@ modifiers=4 */ override private function shouldPadTabRun(tabPlacement:Int, run:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTabbedPaneUI.html#shouldRotateTabRuns(int, int) */
-	/*@@@ modifiers=4 */ override private function shouldRotateTabRuns(tabPlacement:Int, selectedRun:Int):Bool;
+	/*@@@ modifiers=4 */ @:overload(function (tabPlacement:Int, selectedRun:Int):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#shouldRotateTabRuns(int) */
+	/*@@@ modifiers=4 */ override private function shouldRotateTabRuns(tabPlacement:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalTabbedPaneUI.html#update(java.awt.Graphics, javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function update(g:Graphics, c:JComponent):Void;

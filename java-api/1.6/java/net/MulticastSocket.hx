@@ -44,7 +44,9 @@ extern class MulticastSocket extends DatagramSocket
 	/*@@@ modifiers=1 */ public function leaveGroup(mcastaddr:InetAddress):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/MulticastSocket.html#send(java.net.DatagramPacket, byte) */
-	/*@@@ modifiers=1 */ override public function send(p:DatagramPacket, ttl:Int8):Void;
+	/*@@@ modifiers=1 */ @:overload(function (p:DatagramPacket, ttl:Int8):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/DatagramSocket.html#send(java.net.DatagramPacket) */
+	/*@@@ modifiers=1 */ override public function send(p:DatagramPacket):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/MulticastSocket.html#setInterface(java.net.InetAddress) */
 	/*@@@ modifiers=1 */ public function setInterface(inf:InetAddress):Void;

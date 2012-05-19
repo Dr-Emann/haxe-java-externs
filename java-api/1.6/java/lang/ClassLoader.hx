@@ -30,7 +30,7 @@ extern class ClassLoader extends Object
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#defineClass(byte[], int, int) */
 	/*@@@ modifiers=20 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Class<Dynamic> {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#defineClass(java.lang.String, java.nio.ByteBuffer, java.security.ProtectionDomain) */
-	/*@@@ modifiers=20 */ private function defineClass(name:String, b:ByteBuffer, protectionDomain:ProtectionDomain):Class<Dynamic>;
+	/*@@@ modifiers=20 */ public function defineClass(name:String, b:ByteBuffer, protectionDomain:ProtectionDomain):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#definePackage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.net.URL) */
 	/*@@@ modifiers=4 */ private function definePackage(name:String, specTitle:String, specVersion:String, specVendor:String, implTitle:String, implVersion:String, implVendor:String, sealBase:URL):Package;
@@ -45,10 +45,10 @@ extern class ClassLoader extends Object
 	/*@@@ modifiers=20 */ private function findLoadedClass(name:String):Class<Dynamic>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findResource(java.lang.String) */
-	/*@@@ modifiers=4 */ private function findResource(name:String):URL;
+	/*@@@ modifiers=4 */ public function findResource(name:String):URL;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findResources(java.lang.String) */
-	/*@@@ modifiers=4 */ private function findResources(name:String):Enumeration<URL>;
+	/*@@@ modifiers=4 */ public function findResources(name:String):Enumeration<URL>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#findSystemClass(java.lang.String) */
 	/*@@@ modifiers=20 */ private function findSystemClass(name:String):Class<Dynamic>;

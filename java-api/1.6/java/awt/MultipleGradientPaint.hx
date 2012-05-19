@@ -6,6 +6,8 @@ import java.awt.MultipleGradientPaint_ColorSpaceType;
 import java.awt.MultipleGradientPaint_CycleMethod;
 import java.awt.Paint;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.ColorModel;
 import java.lang.Object;
 
 /** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MultipleGradientPaint.html */
@@ -31,5 +33,7 @@ extern class MultipleGradientPaint extends Object, implements Paint
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/MultipleGradientPaint.html#getTransparency() */
 	/*@@@ modifiers=17 */ public function getTransparency():Int;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Paint.html#createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints) */
+	/*@@@ modifiers=1025 */ public function createContext(cm:ColorModel, deviceBounds:Rectangle, userBounds:Rectangle2D, xform:AffineTransform, hints:RenderingHints):PaintContext;
 }
 

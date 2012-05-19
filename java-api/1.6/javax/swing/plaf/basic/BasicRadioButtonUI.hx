@@ -29,10 +29,10 @@ extern class BasicRadioButtonUI extends BasicToggleButtonUI
 	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#getPropertyPrefix() */
-	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override public function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#installDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ override private function installDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override public function installDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#paint(java.awt.Graphics, javax.swing.JComponent) */
 	/*@@@ modifiers=33 */ override public function paint(g:Graphics, c:JComponent):Void;

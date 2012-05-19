@@ -37,7 +37,7 @@ extern class DefaultCellEditor extends AbstractCellEditor, implements TableCellE
 	/*@@@ modifiers=1 */ override public function cancelCellEditing():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultCellEditor.html#getCellEditorValue() */
-	/*@@@ modifiers=1 */ public function getCellEditorValue():Dynamic;
+	/*@@@ modifiers=1 */ override public function getCellEditorValue():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultCellEditor.html#getClickCountToStart() */
 	/*@@@ modifiers=1 */ public function getClickCountToStart():Int;

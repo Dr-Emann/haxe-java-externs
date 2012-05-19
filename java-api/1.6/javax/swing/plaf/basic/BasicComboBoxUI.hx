@@ -91,7 +91,7 @@ extern class BasicComboBoxUI extends ComboBoxUI
 	/*@@@ modifiers=1 */ public function configureArrowButton():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxUI.html#configureEditor() */
-	/*@@@ modifiers=4 */ private function configureEditor():Void;
+	/*@@@ modifiers=4 */ public function configureEditor():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxUI.html#createArrowButton() */
 	/*@@@ modifiers=4 */ private function createArrowButton():JButton;
@@ -118,7 +118,7 @@ extern class BasicComboBoxUI extends ComboBoxUI
 	/*@@@ modifiers=4 */ private function createPopup():ComboPopup;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxUI.html#createPropertyChangeListener() */
-	/*@@@ modifiers=4 */ private function createPropertyChangeListener():PropertyChangeListener;
+	/*@@@ modifiers=4 */ public function createPropertyChangeListener():PropertyChangeListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxUI.html#createRenderer() */
 	/*@@@ modifiers=4 */ private function createRenderer():ListCellRenderer;
@@ -211,7 +211,7 @@ extern class BasicComboBoxUI extends ComboBoxUI
 	/*@@@ modifiers=1 */ public function unconfigureArrowButton():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxUI.html#unconfigureEditor() */
-	/*@@@ modifiers=4 */ private function unconfigureEditor():Void;
+	/*@@@ modifiers=4 */ public function unconfigureEditor():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicComboBoxUI.html#uninstallComponents() */
 	/*@@@ modifiers=4 */ private function uninstallComponents():Void;

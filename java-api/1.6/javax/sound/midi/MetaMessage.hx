@@ -23,7 +23,9 @@ extern class MetaMessage extends MidiMessage
 	/*@@@ modifiers=1 */ public function getType():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MetaMessage.html#setMessage(int, byte[], int) */
-	/*@@@ modifiers=1 */ override public function setMessage(type:Int, data:NativeArray<Int8>, length:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (type:Int, data:NativeArray<Int8>, length:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#setMessage(byte[], int) */
+	/*@@@ modifiers=4 */ override public function setMessage(data:NativeArray<Int8>, length:Int):Void;
 
 }
 

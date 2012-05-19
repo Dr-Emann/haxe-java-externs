@@ -5,6 +5,7 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Graphics;
 import java.awt.LayoutManager;
+import java.awt.MenuComponent;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.JLayeredPane;
@@ -64,13 +65,17 @@ extern class JApplet extends Applet, implements Accessible, implements RootPaneC
 	/*@@@ modifiers=4 */ private function isRootPaneCheckingEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JApplet.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JApplet.html#remove(java.awt.Component) */
-	/*@@@ modifiers=1 */ override public function remove(comp:Component):Void;
+	/*@@@ modifiers=1 */ @:overload(function (comp:Component):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#remove(java.awt.MenuComponent) */
+	/*@@@ modifiers=33 */ override public function remove(popup:MenuComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JApplet.html#repaint(long, int, int, int, int) */
-	/*@@@ modifiers=1 */ override public function repaint(time:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (time:haxe.Int64, x:Int, y:Int, width:Int, height:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#repaint() */
+	/*@@@ modifiers=1 */ override public function repaint():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JApplet.html#setContentPane(java.awt.Container) */
 	/*@@@ modifiers=1 */ public function setContentPane(contentPane:Container):Void;

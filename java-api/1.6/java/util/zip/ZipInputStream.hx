@@ -30,7 +30,9 @@ extern class ZipInputStream extends InflaterInputStream, implements ZipConstants
 	/*@@@ modifiers=1 */ public function getNextEntry():ZipEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#read(byte[], int, int) */
-	/*@@@ modifiers=1 */ override public function read(b:NativeArray<Int8>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#read() */
+	/*@@@ modifiers=1 */ override public function read():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipInputStream.html#skip(long) */
 	/*@@@ modifiers=1 */ override public function skip(n:haxe.Int64):haxe.Int64;

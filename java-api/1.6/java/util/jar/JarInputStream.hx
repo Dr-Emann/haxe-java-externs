@@ -30,7 +30,9 @@ extern class JarInputStream extends ZipInputStream
 	/*@@@ modifiers=1 */ public function getNextJarEntry():JarEntry;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarInputStream.html#read(byte[], int, int) */
-	/*@@@ modifiers=1 */ override public function read(b:NativeArray<Int8>, off:Int, len:Int):Int;
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#read() */
+	/*@@@ modifiers=1 */ override public function read():Int;
 
 }
 

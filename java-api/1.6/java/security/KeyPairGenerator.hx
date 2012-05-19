@@ -34,12 +34,12 @@ extern class KeyPairGenerator extends KeyPairGeneratorSpi
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGenerator.html#initialize(int, java.security.SecureRandom) */
 	/*@@@ modifiers=1 */ @:overload(function (keysize:Int, random:SecureRandom):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) */
-	/*@@@ modifiers=1 */ @:overload(function (params:AlgorithmParameterSpec, random:SecureRandom):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGenerator.html#initialize(int) */
 	/*@@@ modifiers=1 */ @:overload(function (keysize:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec) */
-	/*@@@ modifiers=1 */ override public function initialize(params:AlgorithmParameterSpec):Void;
+	/*@@@ modifiers=1 */ @:overload(function (params:AlgorithmParameterSpec):Void { } )
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) */
+	/*@@@ modifiers=1 */ override public function initialize(params:AlgorithmParameterSpec, random:SecureRandom):Void;
 
 }
 

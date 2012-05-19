@@ -32,11 +32,12 @@ extern class DateFormat extends Format
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
 	/*@@@ modifiers=17 */ @:overload(function (obj:Dynamic, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.util.Date, java.lang.StringBuffer, java.text.FieldPosition) */
-	/*@@@ modifiers=1025 */ @:overload(function (date:Date, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.util.Date) */
-	/*@@@ modifiers=17 */ override public function format(date:Date):String;
-
+	/*@@@ modifiers=17 */ @:overload(function (date:Date):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.util.Date, java.lang.StringBuffer, java.text.FieldPosition) */
+	/*@@@ modifiers=1025 */ override public function format(date:Date, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer;
+	
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#getAvailableLocales() */
 	/*@@@ modifiers=9 */ static public function getAvailableLocales():NativeArray<Locale>;
 
@@ -79,10 +80,10 @@ extern class DateFormat extends Format
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#isLenient() */
 	/*@@@ modifiers=1 */ public function isLenient():Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#parse(java.lang.String, java.text.ParsePosition) */
-	/*@@@ modifiers=1025 */ @:overload(function (source:String, pos:ParsePosition):Date {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#parse(java.lang.String) */
-	/*@@@ modifiers=1 */ public function parse(source:String):Date;
+	/*@@@ modifiers=1 */ @:overload(function (source:String):Date {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#parse(java.lang.String, java.text.ParsePosition) */
+	/*@@@ modifiers=1025 */ public function parse(source:String, pos:ParsePosition):Date;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#parseObject(java.lang.String, java.text.ParsePosition) */
 	/*@@@ modifiers=1 */ override public function parseObject(source:String, pos:ParsePosition):Dynamic;

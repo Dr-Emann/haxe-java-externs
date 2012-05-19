@@ -19,10 +19,10 @@ extern class LdapName extends Object, implements Name
 	/*@@@ modifiers=1 */ @:overload(function (posn:Int, comp:String):Name {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/LdapName.html#add(int, javax.naming.ldap.Rdn) */
 	/*@@@ modifiers=1 */ @:overload(function (posn:Int, comp:Rdn):Name {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/LdapName.html#add(java.lang.String) */
-	/*@@@ modifiers=1 */ @:overload(function (comp:String):Name {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/LdapName.html#add(javax.naming.ldap.Rdn) */
-	/*@@@ modifiers=1 */ public function add(comp:Rdn):Name;
+	/*@@@ modifiers=1 */ @:overload(function (comp:Rdn):Name {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/LdapName.html#add(java.lang.String) */
+	/*@@@ modifiers=1 */ public function add(comp:String):Name;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/ldap/LdapName.html#addAll(int, java.util.List) */
 	/*@@@ modifiers=1 */ @:overload(function (posn:Int, suffixRdns:List<Rdn>):Name {})

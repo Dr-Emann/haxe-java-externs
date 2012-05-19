@@ -28,7 +28,9 @@ extern class ParagraphView extends FlowView, implements TabExpander
 	/*@@@ modifiers=4 */ private function adjustRow(r:ParagraphView_Row, desiredSpan:Int, x:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ParagraphView.html#breakView(int, float, java.awt.Shape) */
-	/*@@@ modifiers=1 */ override public function breakView(axis:Int, len:Single, a:Shape):View;
+	/*@@@ modifiers=1 */ @:overload(function (axis:Int, len:Single, a:Shape):View {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#breakView(int, int, float, float) */
+	/*@@@ modifiers=1 */ override public function breakView(axis:Int, offset:Int, pos:Single, len:Single):View;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ParagraphView.html#changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory) */
 	/*@@@ modifiers=1 */ override public function changedUpdate(changes:DocumentEvent, a:Shape, f:ViewFactory):Void;
@@ -46,7 +48,9 @@ extern class ParagraphView extends FlowView, implements TabExpander
 	/*@@@ modifiers=1 */ override public function getAlignment(axis:Int):Single;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ParagraphView.html#getBreakWeight(int, float) */
-	/*@@@ modifiers=1 */ override public function getBreakWeight(axis:Int, len:Single):Int;
+	/*@@@ modifiers=1 */ @:overload(function (axis:Int, len:Single):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/View.html#getBreakWeight(int, float, float) */
+	/*@@@ modifiers=1 */ override public function getBreakWeight(axis:Int, pos:Single, len:Single):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/ParagraphView.html#getClosestPositionTo(int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[], int, int) */
 	/*@@@ modifiers=4 */ private function getClosestPositionTo(pos:Int, b:Position_Bias, a:Shape, direction:Int, biasRet:NativeArray<Position_Bias>, rowIndex:Int, x:Int):Int;

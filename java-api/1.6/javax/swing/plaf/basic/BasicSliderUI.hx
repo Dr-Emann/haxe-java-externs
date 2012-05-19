@@ -193,7 +193,7 @@ extern class BasicSliderUI extends SliderUI
 	/*@@@ modifiers=4 */ private function getThumbSize():Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.html#getTickLength() */
-	/*@@@ modifiers=4 */ private function getTickLength():Int;
+	/*@@@ modifiers=4 */ public function getTickLength():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicSliderUI.html#getWidthOfHighValueLabel() */
 	/*@@@ modifiers=4 */ private function getWidthOfHighValueLabel():Int;

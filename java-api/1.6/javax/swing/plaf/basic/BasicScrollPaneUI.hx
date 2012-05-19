@@ -69,7 +69,7 @@ extern class BasicScrollPaneUI extends ScrollPaneUI, implements ScrollPaneConsta
 	/*@@@ modifiers=4 */ private function installKeyboardActions(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#installListeners(javax.swing.JScrollPane) */
-	/*@@@ modifiers=4 */ private function installListeners(c:JScrollPane):Void;
+	/*@@@ modifiers=4 */ public function installListeners(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#installUI(javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function installUI(x:JComponent):Void;
@@ -87,7 +87,7 @@ extern class BasicScrollPaneUI extends ScrollPaneUI, implements ScrollPaneConsta
 	/*@@@ modifiers=4 */ private function uninstallKeyboardActions(c:JScrollPane):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallListeners(javax.swing.JComponent) */
-	/*@@@ modifiers=4 */ private function uninstallListeners(c:JComponent):Void;
+	/*@@@ modifiers=4 */ public function uninstallListeners(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicScrollPaneUI.html#uninstallUI(javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;

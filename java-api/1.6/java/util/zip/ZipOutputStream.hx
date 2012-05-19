@@ -36,7 +36,9 @@ extern class ZipOutputStream extends DeflaterOutputStream, implements ZipConstan
 	/*@@@ modifiers=1 */ public function setMethod(method:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/ZipOutputStream.html#write(byte[], int, int) */
-	/*@@@ modifiers=33 */ override public function write(b:NativeArray<Int8>, off:Int, len:Int):Void;
+	/*@@@ modifiers=33 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/DeflaterOutputStream.html#write(int) */
+	/*@@@ modifiers=1 */ override public function write(b:Int):Void;
 
 }
 

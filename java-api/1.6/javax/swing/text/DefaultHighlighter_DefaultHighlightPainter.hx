@@ -18,7 +18,7 @@ extern class DefaultHighlighter_DefaultHighlightPainter extends LayeredHighlight
 	/*@@@ modifiers=1 */ public function getColor():Color;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#paint(java.awt.Graphics, int, int, java.awt.Shape, javax.swing.text.JTextComponent) */
-	/*@@@ modifiers=1 */ public function paint(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent):Void;
+	/*@@@ modifiers=1 */ override public function paint(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#paintLayer(java.awt.Graphics, int, int, java.awt.Shape, javax.swing.text.JTextComponent, javax.swing.text.View) */
 	/*@@@ modifiers=1 */ override public function paintLayer(g:Graphics, offs0:Int, offs1:Int, bounds:Shape, c:JTextComponent, view:View):Shape;

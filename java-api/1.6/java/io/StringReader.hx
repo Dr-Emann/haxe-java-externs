@@ -28,7 +28,6 @@ extern class StringReader extends Reader
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(java.nio.CharBuffer) */
 	/*@@@ modifiers=1 */ override public function read(target:CharBuffer):Int;
 
-
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/StringReader.html#ready() */
 	/*@@@ modifiers=1 */ override public function ready():Bool;
 

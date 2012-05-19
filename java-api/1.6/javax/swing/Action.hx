@@ -24,6 +24,5 @@ extern interface Action implements ActionListener
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/Action.html#setEnabled(boolean) */
 	/*@@@ modifiers=1025 */ public function setEnabled(b:Bool):Void;
-
 }
 

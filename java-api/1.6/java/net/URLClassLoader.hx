@@ -27,7 +27,9 @@ extern class URLClassLoader extends SecureClassLoader
 	/*@@@ modifiers=4 */ public function addURL(url:URL):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLClassLoader.html#definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL) */
-	/*@@@ modifiers=4 */ override private function definePackage(name:String, man:Manifest, url:URL):Package;
+	/*@@@ modifiers=4 */ @:overload(function (name:String, man:Manifest, url:URL):Package {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html#definePackage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.net.URL) */
+	/*@@@ modifiers=4 */ override private function definePackage(name:String, specTitle:String, specVersion:String, specVendor:String, implTitle:String, implVersion:String, implVendor:String, sealBase:URL):Package;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLClassLoader.html#findClass(java.lang.String) */
 	/*@@@ modifiers=4 */ override private function findClass(name:String):Class<Dynamic>;

@@ -36,10 +36,10 @@ extern class TextLayout extends Object, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.html#draw(java.awt.Graphics2D, float, float) */
 	/*@@@ modifiers=1 */ public function draw(g2:Graphics2D, x:Single, y:Single):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.html#equals(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (obj:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.html#equals(java.awt.font.TextLayout) */
-	/*@@@ modifiers=1 */ override public function equals(rhs:TextLayout):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (rhs:TextLayout):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/TextLayout.html#getAdvance() */
 	/*@@@ modifiers=1 */ public function getAdvance():Single;
