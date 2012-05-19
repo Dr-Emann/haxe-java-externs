@@ -25,7 +25,8 @@ extern class GZIPInputStream extends InflaterInputStream
 	/*@@@ modifiers=1 */ override public function close():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/GZIPInputStream.html#read(byte[], int, int) */
-	/*@@@ modifiers=1 */ override public function read(buf:NativeArray<Int8>, off:Int, len:Int):Int;
-
+	/*@@@ modifiers=1 */ @:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/InflaterInputStream.html#read() */
+	/*@@@ modifiers=1 */ override public function read():Int;
 }
 

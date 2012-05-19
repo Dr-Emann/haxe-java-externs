@@ -35,7 +35,9 @@ extern class SimpleDateFormat extends DateFormat
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html#format(java.util.Date, java.lang.StringBuffer, java.text.FieldPosition) */
-	/*@@@ modifiers=1 */ override public function format(date:Date, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer;
+	/*@@@ modifiers=1 */ @:overload(function (date:Date, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
+	/*@@@ modifiers=17 */ override public function format(obj:Dynamic, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html#formatToCharacterIterator(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function formatToCharacterIterator(obj:Dynamic):AttributedCharacterIterator;

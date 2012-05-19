@@ -35,10 +35,10 @@ extern class Path2D_Double extends Path2D, implements Serializable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Double.html#getBounds2D() */
 	/*@@@ modifiers=49 */ override public function getBounds2D():Rectangle2D;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Double.html#getPathIterator(java.awt.geom.AffineTransform) */
-	/*@@@ modifiers=1 */ @:overload(function (at:AffineTransform):PathIterator {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#getPathIterator(java.awt.geom.AffineTransform, double) */
-	/*@@@ modifiers=1 */ override public function getPathIterator(at:AffineTransform, flatness:StdFloat):PathIterator;
+	/*@@@ modifiers=1 */ @:overload(function (at:AffineTransform, flatness:StdFloat):PathIterator {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Double.html#getPathIterator(java.awt.geom.AffineTransform) */
+	/*@@@ modifiers=1 */ override public function getPathIterator(at:AffineTransform):PathIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.Double.html#lineTo(double, double) */
 	/*@@@ modifiers=49 */ override public function lineTo(x:StdFloat, y:StdFloat):Void;

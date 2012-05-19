@@ -11,7 +11,7 @@ extern interface EntityResolver2 implements EntityResolver
 	/*@@@ modifiers=1025 */ public function getExternalSubset(name:String, baseURI:String):InputSource;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) */
-	/*@@@ modifiers=1025 */ public function resolveEntity(name:String, publicId:String, baseURI:String, systemId:String):InputSource;
+	/*@@@ modifiers=1025 */ //TODO: public function resolveEntity(name:String, publicId:String, baseURI:String, systemId:String):InputSource;
 
 }
 

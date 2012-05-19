@@ -2,6 +2,7 @@ package java.awt.geom;
 
 import java.awt.geom.AffineTransform;
 import java.awt.geom.PathIterator;
+import java.awt.geom.Rectangle2D;
 import java.awt.geom.RectangularShape;
 import java.lang.Number;
 
@@ -29,7 +30,9 @@ extern class Ellipse2D extends RectangularShape
 	/*@@@ modifiers=1 */ override public function hashCode():Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Ellipse2D.html#intersects(double, double, double, double) */
-	/*@@@ modifiers=1 */ override public function intersects(x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/RectangularShape.html#intersects(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1 */ override public function intersects(r:Rectangle2D):Bool;
 
 }
 

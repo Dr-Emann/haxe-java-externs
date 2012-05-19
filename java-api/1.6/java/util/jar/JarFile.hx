@@ -24,7 +24,7 @@ extern class JarFile extends ZipFile
 	/*@@@ modifiers=1 */ public function new(name:String):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#entries() */
-	/*@@@ modifiers=1 */ override public function entries():Enumeration<JarEntry>;
+	/*@@@ modifiers=1 */ override public function entries():Enumeration<ZipEntry>; //override public function entries():Enumeration<JarEntry>;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/jar/JarFile.html#getEntry(java.lang.String) */
 	/*@@@ modifiers=1 */ override public function getEntry(name:String):ZipEntry;

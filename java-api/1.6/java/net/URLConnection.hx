@@ -90,11 +90,11 @@ extern class URLConnection extends Object
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLConnection.html#getFileNameMap() */
 	/*@@@ modifiers=41 */ static public function getFileNameMap():FileNameMap;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderField(int) */
-	/*@@@ modifiers=1 */ @:overload(function (n:Int):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderField(java.lang.String) */
-	/*@@@ modifiers=1 */ public function getHeaderField(name:String):String;
-
+	/*@@@ modifiers=1 */ @:overload(function (name:String):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderField(int) */
+	/*@@@ modifiers=1 */ public function getHeaderField(n:Int):String;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String, long) */
 	/*@@@ modifiers=1 */ public function getHeaderFieldDate(name:String, Default:haxe.Int64):haxe.Int64;
 

@@ -17,10 +17,10 @@ extern class ImageGraphicAttribute extends GraphicAttribute
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ImageGraphicAttribute.html#draw(java.awt.Graphics2D, float, float) */
 	/*@@@ modifiers=1 */ override public function draw(graphics:Graphics2D, x:Single, y:Single):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ImageGraphicAttribute.html#equals(java.lang.Object) */
-	/*@@@ modifiers=1 */ @:overload(function (rhs:Dynamic):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ImageGraphicAttribute.html#equals(java.awt.font.ImageGraphicAttribute) */
-	/*@@@ modifiers=1 */ override public function equals(rhs:ImageGraphicAttribute):Bool;
+	/*@@@ modifiers=1 */ @:overload(function (rhs:ImageGraphicAttribute):Bool {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ImageGraphicAttribute.html#equals(java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function equals(rhs:Dynamic):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/font/ImageGraphicAttribute.html#getAdvance() */
 	/*@@@ modifiers=1 */ override public function getAdvance():Single;

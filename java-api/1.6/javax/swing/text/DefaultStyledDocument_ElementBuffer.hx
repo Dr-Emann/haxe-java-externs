@@ -22,7 +22,9 @@ extern class DefaultStyledDocument_ElementBuffer extends Object, implements Seri
 	/*@@@ modifiers=4 */ private function changeUpdate():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element, javax.swing.text.Element) */
-	/*@@@ modifiers=1 */ override public function clone(parent:Element, clonee:Element):Element;
+	/*@@@ modifiers=1 */ @:overload(function (parent:Element, clonee:Element):Element {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#clone() */
+	/*@@@ modifiers=260 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#getRootElement() */
 	/*@@@ modifiers=1 */ public function getRootElement():Element;

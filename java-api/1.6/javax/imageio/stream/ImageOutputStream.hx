@@ -15,10 +15,10 @@ extern interface ImageOutputStream implements ImageInputStream, implements DataO
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStream.html#write(byte[], int, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStream.html#write(int) */
-	/*@@@ modifiers=1025 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStream.html#write(byte[]) */
-	/*@@@ modifiers=1025 */ public function write(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (b:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStream.html#write(int) */
+	/*@@@ modifiers=1025 */ public function write(b:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStream.html#writeBit(int) */
 	/*@@@ modifiers=1025 */ public function writeBit(bit:Int):Void;

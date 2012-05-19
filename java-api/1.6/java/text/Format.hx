@@ -18,10 +18,10 @@ extern class Format extends Object, implements Serializable, implements Cloneabl
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#clone() */
 	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
-	/*@@@ modifiers=1025 */ @:overload(function (obj:Dynamic, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#format(java.lang.Object) */
-	/*@@@ modifiers=17 */ public function format(obj:Dynamic):String;
+	/*@@@ modifiers=17 */ @:overload(function (obj:Dynamic):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
+	/*@@@ modifiers=1025 */ public function format(obj:Dynamic, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#formatToCharacterIterator(java.lang.Object) */
 	/*@@@ modifiers=1 */ public function formatToCharacterIterator(obj:Dynamic):AttributedCharacterIterator;

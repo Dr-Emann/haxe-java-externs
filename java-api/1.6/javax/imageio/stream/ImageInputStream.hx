@@ -131,10 +131,10 @@ extern interface ImageInputStream implements DataInput
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStream.html#setByteOrder(java.nio.ByteOrder) */
 	/*@@@ modifiers=1025 */ public function setByteOrder(byteOrder:ByteOrder):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStream.html#skipBytes(int) */
-	/*@@@ modifiers=1025 */ @:overload(function (n:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStream.html#skipBytes(long) */
-	/*@@@ modifiers=1025 */ public function skipBytes(n:haxe.Int64):haxe.Int64;
+	/*@@@ modifiers=1025 */ @:overload(function (n:haxe.Int64):haxe.Int64 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStream.html#skipBytes(int) */
+	/*@@@ modifiers=1025 */ public function skipBytes(n:Int):Int;
 
 }
 

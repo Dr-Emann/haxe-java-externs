@@ -10,11 +10,11 @@ extern interface DataOutput
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(byte[], int, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(int) */
-	/*@@@ modifiers=1025 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(byte[]) */
-	/*@@@ modifiers=1025 */ public function write(b:NativeArray<Int8>):Void;
-
+	/*@@@ modifiers=1025 */ @:overload(function write(b:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#write(int) */
+	/*@@@ modifiers=1025 */ public function write(b:Int):Void;
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/DataOutput.html#writeBoolean(boolean) */
 	/*@@@ modifiers=1025 */ public function writeBoolean(v:Bool):Void;
 

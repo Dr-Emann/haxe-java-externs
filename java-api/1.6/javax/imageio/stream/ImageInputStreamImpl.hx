@@ -153,10 +153,9 @@ extern class ImageInputStreamImpl extends Object, implements ImageInputStream
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStreamImpl.html#setByteOrder(java.nio.ByteOrder) */
 	/*@@@ modifiers=1 */ public function setByteOrder(byteOrder:ByteOrder):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(int) */
-	/*@@@ modifiers=1 */ @:overload(function (n:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(long) */
-	/*@@@ modifiers=1 */ public function skipBytes(n:haxe.Int64):haxe.Int64;
-
+	/*@@@ modifiers=1 */ @:overload(function (n:haxe.Int64):haxe.Int64 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(int) */
+	/*@@@ modifiers=1 */ public function skipBytes(n:Int):Int;
 }
 

@@ -26,6 +26,8 @@ extern class Path2D extends Object, implements Shape, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#closePath() */
 	/*@@@ modifiers=49 */ public function closePath():Void;
 
+#if static_conflict
+
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#contains(double, double, double, double) */
 	/*@@@ modifiers=17 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#contains(double, double) */
@@ -42,7 +44,9 @@ extern class Path2D extends Object, implements Shape, implements Cloneable
 	/*@@@ modifiers=9 */ @:overload(function (pi:PathIterator, p:Point2D):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator, java.awt.geom.Rectangle2D) */
 	/*@@@ modifiers=9 */ static public function contains(pi:PathIterator, r:Rectangle2D):Bool;
-
+	
+#end
+	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#createTransformedShape(java.awt.geom.AffineTransform) */
 	/*@@@ modifiers=49 */ public function createTransformedShape(at:AffineTransform):Shape;
 
@@ -56,10 +60,14 @@ extern class Path2D extends Object, implements Shape, implements Cloneable
 	/*@@@ modifiers=49 */ public function getCurrentPoint():Point2D;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#getPathIterator(java.awt.geom.AffineTransform, double) */
-	/*@@@ modifiers=1 */ public function getPathIterator(at:AffineTransform, flatness:StdFloat):PathIterator;
+	/*@@@ modifiers=1 */ @:overload(function (at:AffineTransform, flatness:StdFloat):PathIterator {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform) */
+	/*@@@ modifiers=1025 */ public function getPathIterator(at:AffineTransform):PathIterator;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#getWindingRule() */
 	/*@@@ modifiers=49 */ public function getWindingRule():Int;
+
+#if static_conflict
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#intersects(double, double, double, double) */
 	/*@@@ modifiers=17 */ @:overload(function (x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
@@ -69,6 +77,8 @@ extern class Path2D extends Object, implements Shape, implements Cloneable
 	/*@@@ modifiers=9 */ @:overload(function (pi:PathIterator, x:StdFloat, y:StdFloat, w:StdFloat, h:StdFloat):Bool {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator, java.awt.geom.Rectangle2D) */
 	/*@@@ modifiers=9 */ static public function intersects(pi:PathIterator, r:Rectangle2D):Bool;
+
+#end
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#lineTo(double, double) */
 	/*@@@ modifiers=1025 */ public function lineTo(x:StdFloat, y:StdFloat):Void;
@@ -88,5 +98,13 @@ extern class Path2D extends Object, implements Shape, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/Path2D.html#transform(java.awt.geom.AffineTransform) */
 	/*@@@ modifiers=1025 */ public function transform(at:AffineTransform):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#contains(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1025 */ public function contains(r:Rectangle2D):Bool;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getBounds2D() */
+	/*@@@ modifiers=1025 */ public function getBounds2D():Rectangle2D;
+
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#intersects(java.awt.geom.Rectangle2D) */
+	/*@@@ modifiers=1025 */ public function intersects(r:Rectangle2D):Bool;
 }
 

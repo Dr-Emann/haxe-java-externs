@@ -61,10 +61,10 @@ extern class DirectColorModel extends PackedColorModel
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getGreenMask() */
 	/*@@@ modifiers=17 */ public function getGreenMask():Int;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRGB(int) */
-	/*@@@ modifiers=17 */ @:overload(function (pixel:Int):Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRGB(java.lang.Object) */
-	/*@@@ modifiers=1 */ override public function getRGB(inData:Dynamic):Int;
+	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRGB(int) */
+	/*@@@ modifiers=17 */ override public function getRGB(pixel:Int):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/DirectColorModel.html#getRed(java.lang.Object) */
 	/*@@@ modifiers=1 */ @:overload(function (inData:Dynamic):Int {})

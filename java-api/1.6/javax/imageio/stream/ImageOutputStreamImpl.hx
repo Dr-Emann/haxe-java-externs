@@ -22,7 +22,7 @@ extern class ImageOutputStreamImpl extends ImageInputStreamImpl, implements Imag
 	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStreamImpl.html#write(int) */
 	/*@@@ modifiers=1025 */ public function write(b:Int):Void;
-	
+
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStreamImpl.html#writeBit(int) */
 	/*@@@ modifiers=1 */ public function writeBit(bit:Int):Void;
 
@@ -79,5 +79,9 @@ extern class ImageOutputStreamImpl extends ImageInputStreamImpl, implements Imag
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageOutputStreamImpl.html#writeUTF(java.lang.String) */
 	/*@@@ modifiers=1 */ public function writeUTF(s:String):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(long) */
+	/*@@@ modifiers=1 */ @:overload(function (n:haxe.Int64):haxe.Int64 {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(int) */
+	/*@@@ modifiers=1 */ override public function skipBytes(n:Int):Int;
 }
 

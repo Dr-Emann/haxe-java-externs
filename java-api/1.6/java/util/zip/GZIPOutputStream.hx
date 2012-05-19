@@ -22,7 +22,9 @@ extern class GZIPOutputStream extends DeflaterOutputStream
 	/*@@@ modifiers=1 */ override public function finish():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/GZIPOutputStream.html#write(byte[], int, int) */
-	/*@@@ modifiers=33 */ override public function write(buf:NativeArray<Int8>, off:Int, len:Int):Void;
+	/*@@@ modifiers=33 */ @:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/zip/DeflaterOutputStream.html#write(int) */
+	/*@@@ modifiers=1 */ override public function write(b:Int):Void;
 
 }
 

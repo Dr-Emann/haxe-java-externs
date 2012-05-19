@@ -34,7 +34,9 @@ extern class DocumentParser extends Parser
 	/*@@@ modifiers=4 */ override private function handleText(data:NativeArray<Char16>):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/DocumentParser.html#parser.DocumentParser.parse(java.io.Reader, javax.swing.text.html.HTMLEditorKit$ParserCallback, boolean) */
-	/*@@@ modifiers=1 */ override public function parse(_in:Reader, _callback:HTMLEditorKit_ParserCallback, ignoreCharSet:Bool):Void;
+	/*@@@ modifiers=1 */ @:overload(function (_in:Reader, _callback:HTMLEditorKit_ParserCallback, ignoreCharSet:Bool):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/html/parser/Parser.html#parser.Parser.parse(java.io.Reader) */
+	/*@@@ modifiers=33 */ override public function parse(_in:Reader):Void;
 
 }
 

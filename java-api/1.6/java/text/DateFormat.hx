@@ -30,13 +30,12 @@ extern class DateFormat extends Format
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#equals(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
-	/*@@@ modifiers=17 */ @:overload(function (obj:Dynamic, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.util.Date) */
 	/*@@@ modifiers=17 */ @:overload(function (date:Date):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.util.Date, java.lang.StringBuffer, java.text.FieldPosition) */
-	/*@@@ modifiers=1025 */ override public function format(date:Date, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer;
-	
+	/*@@@ modifiers=1025 */ @:overload(function (date:Date, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
+	/*@@@ modifiers=17 */ override public function format(obj:Dynamic, toAppendTo:StringBuffer, fieldPosition:FieldPosition):StringBuffer;
 	
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/DateFormat.html#getAvailableLocales() */
 	/*@@@ modifiers=9 */ static public function getAvailableLocales():NativeArray<Locale>;

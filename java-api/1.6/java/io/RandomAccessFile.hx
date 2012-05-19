@@ -94,10 +94,10 @@ extern class RandomAccessFile extends Object, implements DataOutput, implements 
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/RandomAccessFile.html#write(byte[], int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/RandomAccessFile.html#write(int) */
-	/*@@@ modifiers=257 */ @:overload(function (b:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/RandomAccessFile.html#write(byte[]) */
-	/*@@@ modifiers=1 */ public function write(b:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ @:overload(function (b:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/RandomAccessFile.html#write(int) */
+	/*@@@ modifiers=257 */ public function write(b:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/RandomAccessFile.html#writeBoolean(boolean) */
 	/*@@@ modifiers=17 */ public function writeBoolean(v:Bool):Void;

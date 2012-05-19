@@ -24,5 +24,7 @@ extern class DropTargetAdapter extends Object, implements DropTargetListener
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetAdapter.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent) */
 	/*@@@ modifiers=1 */ public function dropActionChanged(dtde:DropTargetDragEvent):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent) */
+	/*@@@ modifiers=1025 */ public function drop(dtde:DropTargetDropEvent):Void;
 }
 

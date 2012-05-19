@@ -68,10 +68,10 @@ extern class Graphics extends Object
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#drawOval(int, int, int, int) */
 	/*@@@ modifiers=1025 */ public function drawOval(x:Int, y:Int, width:Int, height:Int):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#drawPolygon(int[], int[], int) */
-	/*@@@ modifiers=1025 */ @:overload(function (xPoints:NativeArray<Int>, yPoints:NativeArray<Int>, nPoints:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#drawPolygon(java.awt.Polygon) */
-	/*@@@ modifiers=1 */ public function drawPolygon(p:Polygon):Void;
+	/*@@@ modifiers=1 */ @:overload(function (p:Polygon):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#drawPolygon(int[], int[], int) */
+	/*@@@ modifiers=1025 */ public function drawPolygon(xPoints:NativeArray<Int>, yPoints:NativeArray<Int>, nPoints:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#drawPolyline(int[], int[], int) */
 	/*@@@ modifiers=1025 */ public function drawPolyline(xPoints:NativeArray<Int>, yPoints:NativeArray<Int>, nPoints:Int):Void;
@@ -96,10 +96,10 @@ extern class Graphics extends Object
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#fillOval(int, int, int, int) */
 	/*@@@ modifiers=1025 */ public function fillOval(x:Int, y:Int, width:Int, height:Int):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#fillPolygon(int[], int[], int) */
-	/*@@@ modifiers=1025 */ @:overload(function (xPoints:NativeArray<Int>, yPoints:NativeArray<Int>, nPoints:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#fillPolygon(java.awt.Polygon) */
-	/*@@@ modifiers=1 */ public function fillPolygon(p:Polygon):Void;
+	/*@@@ modifiers=1 */ @:overload(function (p:Polygon):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#fillPolygon(int[], int[], int) */
+	/*@@@ modifiers=1025 */ public function fillPolygon(xPoints:NativeArray<Int>, yPoints:NativeArray<Int>, nPoints:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html#fillRect(int, int, int, int) */
 	/*@@@ modifiers=1025 */ public function fillRect(x:Int, y:Int, width:Int, height:Int):Void;

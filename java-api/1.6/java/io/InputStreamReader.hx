@@ -32,7 +32,7 @@ extern class InputStreamReader extends Reader
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStreamReader.html#read() */
 	/*@@@ modifiers=1 */ @:overload(function ():Int {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(java.nio.CharBuffer) */
-	/*@@@ modifiers=1 */ public function read(target:CharBuffer):Int;
+	/*@@@ modifiers=1 */ override public function read(target:CharBuffer):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/InputStreamReader.html#ready() */
 	/*@@@ modifiers=1 */ override public function ready():Bool;

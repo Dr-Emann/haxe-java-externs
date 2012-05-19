@@ -10,7 +10,7 @@ extern class InheritableThreadLocal<T : (Dynamic)> extends ThreadLocal<T>
 	/*@@@ modifiers=1 */ public function new():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/lang/InheritableThreadLocal.html#childValue(java.lang.Object) */
-	/*@@@ modifiers=4 */ override private function childValue(parentValue:T):T;
+	/*@@@ modifiers=4 */ private function childValue(parentValue:T):T;
 
 }
 

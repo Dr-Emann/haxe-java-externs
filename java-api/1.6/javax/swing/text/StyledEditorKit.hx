@@ -35,7 +35,7 @@ extern class StyledEditorKit extends DefaultEditorKit
 	/*@@@ modifiers=1 */ public function getCharacterAttributeRun():Element;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.html#getInputAttributes() */
-	/*@@@ modifiers=1 */ override public function getInputAttributes():MutableAttributeSet;
+	/*@@@ modifiers=1 */ public function getInputAttributes():MutableAttributeSet;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/StyledEditorKit.html#getViewFactory() */
 	/*@@@ modifiers=1 */ override public function getViewFactory():ViewFactory;

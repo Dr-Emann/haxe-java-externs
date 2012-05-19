@@ -12,7 +12,8 @@ import javax.naming.spi.StateFactory;
 extern interface DirStateFactory implements StateFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/DirStateFactory.html#getStateToBind(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable, javax.naming.directory.Attributes) */
-	/*@@@ modifiers=1025 */ public function getStateToBind(obj:Dynamic, name:Name, nameCtx:Context, environment:Hashtable<Dynamic, Dynamic>, inAttrs:Attributes):DirStateFactory_Result;
-
+	/*@@@ modifiers=1025 */ @:overload(function (obj:Dynamic, name:Name, nameCtx:Context, environment:Hashtable<Dynamic, Dynamic>, inAttrs:Attributes):DirStateFactory_Result {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/spi/StateFactory.html#getStateToBind(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable) */
+	/*@@@ modifiers=1025 */ public function getStateToBind(obj:Dynamic, name:Name, nameCtx:Context, environment:Hashtable<Dynamic, Dynamic>):Dynamic;
 }
 
