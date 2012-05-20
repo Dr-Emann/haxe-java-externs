@@ -51,7 +51,7 @@ extern class BasicButtonUI extends ButtonUI
 	/*@@@ modifiers=1 */ override public function getPreferredSize(c:JComponent):Dimension;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#getPropertyPrefix() */
-	/*@@@ modifiers=4 */ private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ public function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#getTextShiftOffset() */
 	/*@@@ modifiers=4 */ private function getTextShiftOffset():Int;

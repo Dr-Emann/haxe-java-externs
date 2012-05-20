@@ -57,7 +57,7 @@ extern class JTextPane extends JEditorPane
 	/*@@@ modifiers=1 */ public function insertIcon(g:Icon):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextPane.html#removeStyle(java.lang.String) */
 	/*@@@ modifiers=1 */ public function removeStyle(nm:String):Void;

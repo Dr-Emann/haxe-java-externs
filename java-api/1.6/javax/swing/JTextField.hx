@@ -86,7 +86,7 @@ extern class JTextField extends JTextComponent, implements SwingConstants
 	/*@@@ modifiers=1 */ override public function isValidateRoot():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextField.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextField.html#postActionEvent() */
 	/*@@@ modifiers=1 */ public function postActionEvent():Void;

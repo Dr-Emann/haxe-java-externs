@@ -67,7 +67,7 @@ extern class DefaultTreeCellRenderer extends JLabel, implements TreeCellRenderer
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, short, short) */
 	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int16, newValue:Int16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundNonSelectionColor() */
 	/*@@@ modifiers=1 */ public function getBackgroundNonSelectionColor():Color;

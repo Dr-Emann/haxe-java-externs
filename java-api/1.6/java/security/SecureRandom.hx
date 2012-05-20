@@ -42,10 +42,10 @@ extern class SecureRandom extends Random
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html#nextBytes(byte[]) */
 	/*@@@ modifiers=33 */ override public function nextBytes(bytes:NativeArray<Int8>):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html#setSeed(long) */
-	/*@@@ modifiers=1 */ @:overload(function (seed:haxe.Int64):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html#setSeed(byte[]) */
-	/*@@@ modifiers=33 */ override public function setSeed(seed:NativeArray<Int8>):Void;
+	/*@@@ modifiers=33 */ @:overload(function (seed:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html#setSeed(long) */
+	/*@@@ modifiers=1 */ override function setSeed(seed:haxe.Int64):Void;
 
 }
 

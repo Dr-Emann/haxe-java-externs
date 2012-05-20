@@ -77,7 +77,7 @@ extern class JEditorPane extends JTextComponent
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JEditorPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JEditorPane.html#read(java.io.InputStream, java.lang.Object) */
 	/*@@@ modifiers=1 */ @:overload(function (_in:InputStream, desc:Dynamic):Void {})

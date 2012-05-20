@@ -46,7 +46,7 @@ extern class JDesktopPane extends JLayeredPane, implements Accessible
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JDesktopPane.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})

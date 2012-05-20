@@ -16,7 +16,9 @@ extern class RuleBasedCollator extends Collator
 	/*@@@ modifiers=1 */ override public function clone():Dynamic;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/RuleBasedCollator.html#compare(java.lang.String, java.lang.String) */
-	/*@@@ modifiers=33 */ override public function compare(source:String, target:String):Int;
+	/*@@@ modifiers=33 */ @:overload(function (source:String, target:String):Int {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Collator.html#compare(java.lang.Object, java.lang.Object) */
+	/*@@@ modifiers=1 */ override public function compare(o1:Dynamic, o2:Dynamic):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/RuleBasedCollator.html#equals(java.lang.Object) */
 	/*@@@ modifiers=1 */ override public function equals(obj:Dynamic):Bool;

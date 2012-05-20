@@ -46,7 +46,9 @@ extern class MetalToggleButtonUI extends BasicToggleButtonUI
 	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, b:AbstractButton, viewRect:Rectangle, textRect:Rectangle, iconRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToggleButtonUI.html#paintIcon(java.awt.Graphics, javax.swing.AbstractButton, java.awt.Rectangle) */
-	/*@@@ modifiers=4 */ override private function paintIcon(g:Graphics, b:AbstractButton, iconRect:Rectangle):Void;
+	/*@@@ modifiers=4 */ @:overload(function (g:Graphics, b:AbstractButton, iconRect:Rectangle):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#paintIcon(java.awt.Graphics, javax.swing.JComponent, java.awt.Rectangle) */
+	/*@@@ modifiers=4 */ override private function paintIcon(g:Graphics, c:JComponent, iconRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalToggleButtonUI.html#paintText(java.awt.Graphics, javax.swing.JComponent, java.awt.Rectangle, java.lang.String) */
 	/*@@@ modifiers=4 */ @:overload(function (g:Graphics, c:JComponent, textRect:Rectangle, text:String):Void {})

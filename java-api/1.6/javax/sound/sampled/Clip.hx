@@ -22,7 +22,9 @@ extern interface Clip implements DataLine
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioFormat, byte[], int, int) */
 	/*@@@ modifiers=1025 */ @:overload(function (format:AudioFormat, data:NativeArray<Int8>, offset:Int, bufferSize:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioInputStream) */
-	/*@@@ modifiers=1025 */ public function open(stream:AudioInputStream):Void;
+	/*@@@ modifiers=1025 */ @:overload(function (stream:AudioInputStream):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Line.html#open() */
+	/*@@@ modifiers=1025 */ public function open():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/Clip.html#setFramePosition(int) */
 	/*@@@ modifiers=1025 */ public function setFramePosition(frames:Int):Void;

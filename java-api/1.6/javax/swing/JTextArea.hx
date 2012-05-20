@@ -85,7 +85,7 @@ extern class JTextArea extends JTextComponent
 	/*@@@ modifiers=1 */ public function insert(str:String, pos:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextArea.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextArea.html#replaceRange(java.lang.String, int, int) */
 	/*@@@ modifiers=1 */ public function replaceRange(str:String, start:Int, end:Int):Void;

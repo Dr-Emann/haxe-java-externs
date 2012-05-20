@@ -19,12 +19,12 @@ extern class CounterMonitor extends Monitor, implements CounterMonitorMBean
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGauge(javax.management.ObjectName) */
 	/*@@@ modifiers=4161 */ @:overload(function (object:ObjectName):Dynamic {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGauge() */
-	/*@@@ modifiers=33 */ override public function getDerivedGauge():Number;
+	/*@@@ modifiers=33 */ public function getDerivedGauge():Number;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGaugeTimeStamp(javax.management.ObjectName) */
 	/*@@@ modifiers=33 */ @:overload(function (object:ObjectName):haxe.Int64 {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGaugeTimeStamp() */
-	/*@@@ modifiers=33 */ override public function getDerivedGaugeTimeStamp():haxe.Int64;
+	/*@@@ modifiers=33 */ public function getDerivedGaugeTimeStamp():haxe.Int64;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/management/monitor/CounterMonitor.html#getDifferenceMode() */
 	/*@@@ modifiers=33 */ public function getDifferenceMode():Bool;

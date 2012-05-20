@@ -128,7 +128,7 @@ extern class JOptionPane extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function getWantsInput():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JOptionPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JOptionPane.html#selectInitialValue() */
 	/*@@@ modifiers=1 */ public function selectInitialValue():Void;

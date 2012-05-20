@@ -18,7 +18,7 @@ extern interface DirContext implements Context
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/DirContext.html#bind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes) */
 	/*@@@ modifiers=1025 */ @:overload(function (name:Name, obj:Dynamic, attrs:Attributes):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/Context.html#bind(javax.naming.Name, java.lang.Object) */
-	/*@@@ modifiers=1025 */ override public function bind(name:Name, obj:Dynamic):Void;
+	/*@@@ modifiers=1025 */ public function bind(name:Name, obj:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/naming/directory/DirContext.html#createSubcontext(java.lang.String, javax.naming.directory.Attributes) */
 	/*@@@ modifiers=1025 */ @:overload(function (name:String, attrs:Attributes):DirContext {})

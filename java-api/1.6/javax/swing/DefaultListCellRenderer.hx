@@ -37,7 +37,7 @@ extern class DefaultListCellRenderer extends JLabel, implements ListCellRenderer
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultListCellRenderer.html#firePropertyChange(java.lang.String, short, short) */
 	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int16, newValue:Int16):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultListCellRenderer.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/DefaultListCellRenderer.html#getListCellRendererComponent(javax.swing.JList, java.lang.Object, int, boolean, boolean) */
 	/*@@@ modifiers=1 */ public function getListCellRendererComponent(list:JList, value:Dynamic, index:Int, isSelected:Bool, cellHasFocus:Bool):Component;

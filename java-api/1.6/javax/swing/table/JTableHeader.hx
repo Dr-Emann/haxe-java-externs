@@ -120,7 +120,7 @@ extern class JTableHeader extends JComponent, implements TableColumnModelListene
 	/*@@@ modifiers=4 */ private function initializeLocalVars():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/JTableHeader.html#resizeAndRepaint() */
 	/*@@@ modifiers=1 */ public function resizeAndRepaint():Void;

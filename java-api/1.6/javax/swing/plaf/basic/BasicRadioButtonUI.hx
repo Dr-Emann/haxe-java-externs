@@ -38,10 +38,12 @@ extern class BasicRadioButtonUI extends BasicToggleButtonUI
 	/*@@@ modifiers=33 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#paintFocus(java.awt.Graphics, java.awt.Rectangle, java.awt.Dimension) */
-	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, textRect:Rectangle, size:Dimension):Void;
+	/*@@@ modifiers=4 */ @:overload(function (g:Graphics, textRect:Rectangle, size:Dimension):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#paintFocus(java.awt.Graphics, javax.swing.AbstractButton, java.awt.Rectangle, java.awt.Rectangle, java.awt.Rectangle) */
+	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, b:AbstractButton, viewRect:Rectangle, textRect:Rectangle, iconRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicRadioButtonUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override public function uninstallDefaults(b:AbstractButton):Void;
 
 }
 

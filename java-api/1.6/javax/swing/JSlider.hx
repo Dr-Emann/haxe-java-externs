@@ -124,7 +124,7 @@ extern class JSlider extends JComponent, implements SwingConstants, implements A
 	/*@@@ modifiers=1 */ public function getValueIsAdjusting():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSlider.html#removeChangeListener(javax.swing.event.ChangeListener) */
 	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;

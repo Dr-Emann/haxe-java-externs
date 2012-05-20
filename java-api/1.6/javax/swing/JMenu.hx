@@ -150,7 +150,7 @@ extern class JMenu extends JMenuItem, implements Accessible, implements MenuElem
 	/*@@@ modifiers=1 */ override public function menuSelectionChanged(isIncluded:Bool):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JMenu.html#processKeyEvent(java.awt.event.KeyEvent) */
 	/*@@@ modifiers=4 */ override public function processKeyEvent(evt:KeyEvent):Void;

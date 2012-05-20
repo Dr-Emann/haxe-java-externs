@@ -1,5 +1,6 @@
 package javax.swing;
 
+import java.awt.Component;
 import javax.accessibility.Accessible;
 import javax.accessibility.AccessibleContext;
 import javax.swing.JComponent;
@@ -16,7 +17,9 @@ extern class JToolTip extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ override public function getAccessibleContext():AccessibleContext;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getComponent() */
-	/*@@@ modifiers=1 */ override public function getComponent():JComponent;
+	/*@@@ modifiers=1 */ @:overload(function ():JComponent {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html#getComponent(int) */
+	/*@@@ modifiers=1 */ override public function getComponent(n:Int):Component;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#getTipText() */
 	/*@@@ modifiers=1 */ public function getTipText():String;
@@ -28,7 +31,7 @@ extern class JToolTip extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolTip.html#setComponent(javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ public function setComponent(c:JComponent):Void;

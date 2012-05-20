@@ -30,7 +30,9 @@ extern class ChoiceFormat extends NumberFormat
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/ChoiceFormat.html#format(long, java.lang.StringBuffer, java.text.FieldPosition) */
 	/*@@@ modifiers=1 */ @:overload(function (number:haxe.Int64, toAppendTo:StringBuffer, status:FieldPosition):StringBuffer {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#format(java.lang.Object) */
-	/*@@@ modifiers=17 */ override public function format(obj:Dynamic):String;
+	/*@@@ modifiers=17 */ @:overload(function (obj:Dynamic):String {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
+	/*@@@ modifiers=1 */ override public function format(number:Dynamic, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/ChoiceFormat.html#getFormats() */
 	/*@@@ modifiers=1 */ public function getFormats():NativeArray<Dynamic>;

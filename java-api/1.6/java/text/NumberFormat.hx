@@ -34,7 +34,7 @@ extern class NumberFormat extends Format
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/Format.html#format(java.lang.Object) */
 	/*@@@ modifiers=17 */ @:overload(function (obj:Dynamic):String {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) */
-	/*@@@ modifiers=1 */ public function format(number:Dynamic, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer;
+	/*@@@ modifiers=1 */ override public function format(number:Dynamic, toAppendTo:StringBuffer, pos:FieldPosition):StringBuffer;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/text/NumberFormat.html#getAvailableLocales() */
 	/*@@@ modifiers=9 */ static public function getAvailableLocales():NativeArray<Locale>;

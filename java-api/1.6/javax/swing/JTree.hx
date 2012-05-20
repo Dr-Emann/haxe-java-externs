@@ -364,7 +364,7 @@ extern class JTree extends JComponent, implements Scrollable, implements Accessi
 	/*@@@ modifiers=1 */ public function makeVisible(path:TreePath):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTree.html#removeDescendantSelectedPaths(javax.swing.tree.TreePath, boolean) */
 	/*@@@ modifiers=4 */ private function removeDescendantSelectedPaths(path:TreePath, includePath:Bool):Bool;

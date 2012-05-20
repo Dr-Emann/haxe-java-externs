@@ -116,5 +116,7 @@ extern class CubicCurve2D extends Object, implements Shape, implements Cloneable
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D, java.awt.geom.CubicCurve2D, java.awt.geom.CubicCurve2D) */
 	/*@@@ modifiers=9 */ static public function subdivide(src:CubicCurve2D, left:CubicCurve2D, right:CubicCurve2D):Void;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Shape.html#getBounds2D() */
+	/*@@@ modifiers=1025 */ public function getBounds2D():Rectangle2D;
 }
 

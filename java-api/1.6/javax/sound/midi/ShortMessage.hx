@@ -36,7 +36,9 @@ extern class ShortMessage extends MidiMessage
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/ShortMessage.html#setMessage(int, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (status:Int, data1:Int, data2:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/ShortMessage.html#setMessage(int) */
-	/*@@@ modifiers=1 */ override public function setMessage(status:Int):Void;
+	/*@@@ modifiers=1 */ @:overload(function (status:Int):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/sound/midi/MidiMessage.html#setMessage(byte[], int) */
+	/*@@@ modifiers=4 */ override public function setMessage(data:NativeArray<Int8>, length:Int):Void;
 
 }
 

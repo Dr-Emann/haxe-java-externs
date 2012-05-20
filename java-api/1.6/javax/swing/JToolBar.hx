@@ -82,7 +82,7 @@ extern class JToolBar extends JComponent, implements SwingConstants, implements 
 	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JToolBar.html#setBorderPainted(boolean) */
 	/*@@@ modifiers=1 */ public function setBorderPainted(b:Bool):Void;

@@ -27,7 +27,7 @@ extern class BasicEditorPaneUI extends BasicTextUI
 	/*@@@ modifiers=1 */ override public function installUI(c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	/*@@@ modifiers=4 */ override private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ override public function propertyChange(evt:PropertyChangeEvent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#uninstallUI(javax.swing.JComponent) */
 	/*@@@ modifiers=1 */ override public function uninstallUI(c:JComponent):Void;

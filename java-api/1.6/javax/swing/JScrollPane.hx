@@ -115,7 +115,7 @@ extern class JScrollPane extends JComponent, implements ScrollPaneConstants, imp
 	/*@@@ modifiers=1 */ public function isWheelScrollingEnabled():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JScrollPane.html#setColumnHeader(javax.swing.JViewport) */
 	/*@@@ modifiers=1 */ public function setColumnHeader(columnHeader:JViewport):Void;

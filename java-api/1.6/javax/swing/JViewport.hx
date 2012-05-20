@@ -57,7 +57,7 @@ extern class JViewport extends JComponent, implements Accessible
 	/*@@@ modifiers=4 */ private function createViewListener():JViewport_ViewListener;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#fireStateChanged() */
 	/*@@@ modifiers=4 */ private function fireStateChanged():Void;
@@ -107,7 +107,7 @@ extern class JViewport extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JViewport.html#remove(java.awt.Component) */
 	/*@@@ modifiers=1 */ @:overload(function (child:Component):Void {})

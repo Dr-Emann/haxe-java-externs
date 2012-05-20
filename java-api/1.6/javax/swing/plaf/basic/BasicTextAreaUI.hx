@@ -41,7 +41,7 @@ extern class BasicTextAreaUI extends BasicTextUI
 	/*@@@ modifiers=4 */ override private function installDefaults():Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#propertyChange(java.beans.PropertyChangeEvent) */
-	/*@@@ modifiers=4 */ override private function propertyChange(evt:PropertyChangeEvent):Void;
+	/*@@@ modifiers=4 */ override public function propertyChange(evt:PropertyChangeEvent):Void;
 
 }
 

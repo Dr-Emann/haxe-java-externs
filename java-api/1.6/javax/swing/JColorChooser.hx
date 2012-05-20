@@ -55,7 +55,7 @@ extern class JColorChooser extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JColorChooser.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JColorChooser.html#removeChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel) */
 	/*@@@ modifiers=1 */ public function removeChooserPanel(panel:AbstractColorChooserPanel):AbstractColorChooserPanel;

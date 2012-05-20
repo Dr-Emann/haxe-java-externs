@@ -49,5 +49,8 @@ extern class AbstractCellEditor extends Object, implements CellEditor, implement
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractCellEditor.html#stopCellEditing() */
 	/*@@@ modifiers=1 */ public function stopCellEditing():Bool;
 
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/CellEditor.html#getCellEditorValue() */
+	/*@@@ modifiers=1025 */ public function getCellEditorValue():Dynamic;
+
 }
 

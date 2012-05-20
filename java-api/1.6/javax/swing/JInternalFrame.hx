@@ -200,7 +200,7 @@ extern class JInternalFrame extends JComponent, implements Accessible, implement
 	/*@@@ modifiers=4 */ override public function paintComponent(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JInternalFrame.html#remove(java.awt.Component) */
 	/*@@@ modifiers=1 */ @:overload(function (comp:Component):Void {})

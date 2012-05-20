@@ -16,5 +16,5 @@ extern class ActivationGroup_Stub extends RemoteStub,  implements ActivationInst
 	public function new(ref:RemoteRef):Void;
 
 	/** */
-	public function newInstance(id:ActivationID, desc:ActivationDesc):MarshalledObject<Dynamic>;
+	public function newInstance(id:ActivationID, desc:ActivationDesc):MarshalledObject<Remote>;
 }

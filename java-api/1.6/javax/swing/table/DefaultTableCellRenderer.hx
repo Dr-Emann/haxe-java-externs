@@ -22,7 +22,7 @@ extern class DefaultTableCellRenderer extends JLabel, implements TableCellRender
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#firePropertyChange(java.lang.String, boolean, boolean) */
 	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Bool, newValue:Bool):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/table/DefaultTableCellRenderer.html#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int) */
 	/*@@@ modifiers=1 */ public function getTableCellRendererComponent(table:JTable, value:Dynamic, isSelected:Bool, hasFocus:Bool, row:Int, column:Int):Component;

@@ -13,7 +13,9 @@ import java.awt.image.renderable.RenderedImageFactory;
 extern interface ContextualRenderedImageFactory implements RenderedImageFactory
 {
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/ContextualRenderedImageFactory.html#create(java.awt.image.renderable.RenderContext, java.awt.image.renderable.ParameterBlock) */
-	/*@@@ modifiers=1025 */ public function create(renderContext:RenderContext, paramBlock:ParameterBlock):RenderedImage;
+	/*@@@ modifiers=1025 */ @:overload(function (renderContext:RenderContext, paramBlock:ParameterBlock):RenderedImage {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock, java.awt.RenderingHints) */
+	/*@@@ modifiers=1025 */ public function create(paramBlock:ParameterBlock, hints:RenderingHints):RenderedImage;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/image/renderable/ContextualRenderedImageFactory.html#getBounds2D(java.awt.image.renderable.ParameterBlock) */
 	/*@@@ modifiers=1025 */ public function getBounds2D(paramBlock:ParameterBlock):Rectangle2D;

@@ -54,10 +54,10 @@ extern class ObjectOutputStream extends OutputStream, implements ObjectOutput, i
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(byte[], int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (buf:NativeArray<Int8>, off:Int, len:Int):Void {})
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(int) */
-	/*@@@ modifiers=1 */ @:overload(function (val:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(byte[]) */
-	/*@@@ modifiers=1 */ override public function write(buf:NativeArray<Int8>):Void;
+	/*@@@ modifiers=1 */ @:overload(function (buf:NativeArray<Int8>):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#write(int) */
+	/*@@@ modifiers=1 */ override public function write(val:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/io/ObjectOutputStream.html#writeBoolean(boolean) */
 	/*@@@ modifiers=1 */ public function writeBoolean(val:Bool):Void;

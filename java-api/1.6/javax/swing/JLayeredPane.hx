@@ -71,7 +71,7 @@ extern class JLayeredPane extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ override public function paint(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLayeredPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLayeredPane.html#putLayer(javax.swing.JComponent, int) */
 	/*@@@ modifiers=9 */ static public function putLayer(c:JComponent, layer:Int):Void;

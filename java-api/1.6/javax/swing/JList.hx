@@ -176,7 +176,7 @@ extern class JList extends JComponent, implements Scrollable, implements Accessi
 	/*@@@ modifiers=1 */ public function locationToIndex(location:Point):Int;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JList.html#removeListSelectionListener(javax.swing.event.ListSelectionListener) */
 	/*@@@ modifiers=1 */ public function removeListSelectionListener(listener:ListSelectionListener):Void;

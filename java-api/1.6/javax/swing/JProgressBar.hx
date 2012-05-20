@@ -101,7 +101,7 @@ extern class JProgressBar extends JComponent, implements SwingConstants, impleme
 	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JProgressBar.html#removeChangeListener(javax.swing.event.ChangeListener) */
 	/*@@@ modifiers=1 */ public function removeChangeListener(l:ChangeListener):Void;

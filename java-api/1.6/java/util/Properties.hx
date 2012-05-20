@@ -32,10 +32,10 @@ extern class Properties extends Hashtable<Dynamic, Dynamic>
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#list(java.io.PrintWriter) */
 	/*@@@ modifiers=1 */ public function list(out:PrintWriter):Void;
 
-	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.InputStream) */
-	/*@@@ modifiers=33 */ @:overload(function (inStream:InputStream):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.Reader) */
-	/*@@@ modifiers=33 */ public function load(reader:Reader):Void;
+	/*@@@ modifiers=33 */ @:overload(function (reader:Reader):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#load(java.io.InputStream) */
+	/*@@@ modifiers=33 */ public function load(inStream:InputStream):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html#loadFromXML(java.io.InputStream) */
 	/*@@@ modifiers=33 */ public function loadFromXML(_in:InputStream):Void;

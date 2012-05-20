@@ -191,7 +191,7 @@ extern class JComboBox extends JComponent, implements ItemSelectable, implements
 	/*@@@ modifiers=1 */ public function isPopupVisible():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.html#processKeyEvent(java.awt.event.KeyEvent) */
 	/*@@@ modifiers=1 */ override public function processKeyEvent(e:KeyEvent):Void;

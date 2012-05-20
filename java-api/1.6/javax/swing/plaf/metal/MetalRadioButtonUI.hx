@@ -44,10 +44,12 @@ extern class MetalRadioButtonUI extends BasicRadioButtonUI
 	/*@@@ modifiers=33 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#paintFocus(java.awt.Graphics, java.awt.Rectangle, java.awt.Dimension) */
-	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, t:Rectangle, d:Dimension):Void;
+	/*@@@ modifiers=4 */ @:overload(function (g:Graphics, t:Rectangle, d:Dimension):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#paintFocus(java.awt.Graphics, javax.swing.AbstractButton, java.awt.Rectangle, java.awt.Rectangle, java.awt.Rectangle) */
+	/*@@@ modifiers=4 */ override private function paintFocus(g:Graphics, b:AbstractButton, viewRect:Rectangle, textRect:Rectangle, iconRect:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override public function uninstallDefaults(b:AbstractButton):Void;
 
 }
 

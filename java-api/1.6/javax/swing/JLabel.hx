@@ -83,7 +83,7 @@ extern class JLabel extends JComponent, implements SwingConstants, implements Ac
 	/*@@@ modifiers=1 */ override public function imageUpdate(img:Image, infoflags:Int, x:Int, y:Int, w:Int, h:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html#setDisabledIcon(javax.swing.Icon) */
 	/*@@@ modifiers=1 */ public function setDisabledIcon(disabledIcon:Icon):Void;

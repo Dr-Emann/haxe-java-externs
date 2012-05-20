@@ -40,7 +40,7 @@ extern class JCheckBoxMenuItem extends JMenuItem, implements SwingConstants, imp
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBoxMenuItem.html#setState(boolean) */
 	/*@@@ modifiers=33 */ public function setState(b:Bool):Void;

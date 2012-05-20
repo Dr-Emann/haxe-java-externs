@@ -34,7 +34,7 @@ extern class JButton extends AbstractButton, implements Accessible
 	/*@@@ modifiers=1 */ public function isDefaultCapable():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JButton.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JButton.html#removeNotify() */
 	/*@@@ modifiers=1 */ override public function removeNotify():Void;

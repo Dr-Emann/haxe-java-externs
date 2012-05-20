@@ -18,7 +18,7 @@ extern class BasicToggleButtonUI extends BasicButtonUI
 	/*@@@ modifiers=9 */ static public function createUI(b:JComponent):ComponentUI;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToggleButtonUI.html#getPropertyPrefix() */
-	/*@@@ modifiers=4 */ override private function getPropertyPrefix():String;
+	/*@@@ modifiers=4 */ override public function getPropertyPrefix():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToggleButtonUI.html#getTextShiftOffset() */
 	/*@@@ modifiers=4 */ override private function getTextShiftOffset():Int;
@@ -27,7 +27,9 @@ extern class BasicToggleButtonUI extends BasicButtonUI
 	/*@@@ modifiers=1 */ override public function paint(g:Graphics, c:JComponent):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicToggleButtonUI.html#paintIcon(java.awt.Graphics, javax.swing.AbstractButton, java.awt.Rectangle) */
-	/*@@@ modifiers=4 */ override private function paintIcon(g:Graphics, b:AbstractButton, iconRect:Rectangle):Void;
+	/*@@@ modifiers=4 */ @:overload(function (g:Graphics, b:AbstractButton, iconRect:Rectangle):Void {})
+	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/basic/BasicButtonUI.html#paintIcon(java.awt.Graphics, javax.swing.JComponent, java.awt.Rectangle) */
+	/*@@@ modifiers=4 */ override private function paintIcon(g:Graphics, c:JComponent, iconRect:Rectangle):Void;
 
 }
 

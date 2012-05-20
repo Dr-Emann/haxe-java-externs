@@ -48,7 +48,7 @@ extern class JPasswordField extends JTextField
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPasswordField.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPasswordField.html#setEchoChar(char) */
 	/*@@@ modifiers=1 */ public function setEchoChar(c:Char16):Void;

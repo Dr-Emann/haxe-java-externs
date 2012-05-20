@@ -104,7 +104,7 @@ extern class JSplitPane extends JComponent, implements Accessible
 	/*@@@ modifiers=4 */ override private function paintChildren(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSplitPane.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})

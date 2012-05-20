@@ -22,7 +22,7 @@ extern class MetalCheckBoxUI extends MetalRadioButtonUI
 	/*@@@ modifiers=1 */ override public function installDefaults(b:AbstractButton):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalCheckBoxUI.html#uninstallDefaults(javax.swing.AbstractButton) */
-	/*@@@ modifiers=4 */ override private function uninstallDefaults(b:AbstractButton):Void;
+	/*@@@ modifiers=4 */ override public function uninstallDefaults(b:AbstractButton):Void;
 
 }
 

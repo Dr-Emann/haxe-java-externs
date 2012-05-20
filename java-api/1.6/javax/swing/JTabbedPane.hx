@@ -165,7 +165,7 @@ extern class JTabbedPane extends JComponent, implements Serializable, implements
 	/*@@@ modifiers=1 */ public function isEnabledAt(index:Int):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTabbedPane.html#remove(int) */
 	/*@@@ modifiers=1 */ @:overload(function (index:Int):Void {})

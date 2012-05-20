@@ -29,7 +29,7 @@ extern class JSeparator extends JComponent, implements SwingConstants, implement
 	/*@@@ modifiers=1 */ override public function getUIClassID():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JSeparator.html#setOrientation(int) */
 	/*@@@ modifiers=1 */ public function setOrientation(orientation:Int):Void;

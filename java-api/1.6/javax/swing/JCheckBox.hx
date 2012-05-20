@@ -37,7 +37,7 @@ extern class JCheckBox extends JToggleButton, implements Accessible
 	/*@@@ modifiers=1 */ public function isBorderPaintedFlat():Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBox.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JCheckBox.html#setBorderPaintedFlat(boolean) */
 	/*@@@ modifiers=1 */ public function setBorderPaintedFlat(b:Bool):Void;

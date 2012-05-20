@@ -201,7 +201,7 @@ extern class AbstractButton extends JComponent, implements ItemSelectable, imple
 	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractButton.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/AbstractButton.html#removeActionListener(java.awt.event.ActionListener) */
 	/*@@@ modifiers=1 */ public function removeActionListener(l:ActionListener):Void;

@@ -86,7 +86,7 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#firePropertyChange(java.lang.String, int, int) */
 	/*@@@ modifiers=1 */ @:overload(function (propertyName:String, oldValue:Int, newValue:Int):Void {})
 	/** @REF http://docs.oracle.com/javase/6/docs/api/java/awt/Component.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object) */
-	/*@@@ modifiers=4 */ override private function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
+	/*@@@ modifiers=4 */ override public function firePropertyChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#fireVetoableChange(java.lang.String, java.lang.Object, java.lang.Object) */
 	/*@@@ modifiers=4 */ private function fireVetoableChange(propertyName:String, oldValue:Dynamic, newValue:Dynamic):Void;
@@ -286,7 +286,7 @@ extern class JComponent extends Container, implements Serializable, implements T
 	/*@@@ modifiers=1 */ public function paintImmediately(r:Rectangle):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JComponent.html#print(java.awt.Graphics) */
 	/*@@@ modifiers=1 */ override public function print(g:Graphics):Void;

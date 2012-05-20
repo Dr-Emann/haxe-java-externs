@@ -412,7 +412,7 @@ extern class JTable extends JComponent, implements TableModelListener, implement
 	/*@@@ modifiers=1 */ public function moveColumn(column:Int, targetColumn:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.html#prepareEditor(javax.swing.table.TableCellEditor, int, int) */
 	/*@@@ modifiers=1 */ public function prepareEditor(editor:TableCellEditor, row:Int, column:Int):Component;

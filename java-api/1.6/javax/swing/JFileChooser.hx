@@ -155,7 +155,7 @@ extern class JFileChooser extends JComponent, implements Accessible
 	/*@@@ modifiers=1 */ public function isTraversable(f:File):Bool;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFileChooser.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JFileChooser.html#removeActionListener(java.awt.event.ActionListener) */
 	/*@@@ modifiers=1 */ public function removeActionListener(l:ActionListener):Void;

@@ -172,7 +172,7 @@ extern class JTextComponent extends JComponent, implements Scrollable, implement
 	/*@@@ modifiers=1 */ public function moveCaretPosition(pos:Int):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/text/JTextComponent.html#paste() */
 	/*@@@ modifiers=1 */ public function paste():Void;

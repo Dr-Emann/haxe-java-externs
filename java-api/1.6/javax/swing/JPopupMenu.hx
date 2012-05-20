@@ -139,7 +139,7 @@ extern class JPopupMenu extends JComponent, implements Accessible, implements Me
 	/*@@@ modifiers=4 */ override private function paintBorder(g:Graphics):Void;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#paramString() */
-	/*@@@ modifiers=4 */ override private function paramString():String;
+	/*@@@ modifiers=4 */ override public function paramString():String;
 
 	/** @REF http://docs.oracle.com/javase/6/docs/api/javax/swing/JPopupMenu.html#processFocusEvent(java.awt.event.FocusEvent) */
 	/*@@@ modifiers=4 */ override private function processFocusEvent(evt:FocusEvent):Void;
